@@ -5,17 +5,16 @@ import base64
 import json
 import re
 import os
-import emoji # Moved to top-level for global visibility
+import emoji
 from urllib.parse import urlparse, parse_qs, unquote, quote, urlunparse
 
 # --- Configuration ---
 SUBSCRIPTION_LIST_FILE = "Subscription-List.txt"
 OUTPUT_DIR_SPLITTED = "../Splitted-By-Protocol"
 OUTPUT_FILE_ALL_SUB = "../All_Configs_Sub.txt"
-GEO_API_URL = "http://ip-api.com/json/"
-REQUEST_TIMEOUT = 10  # seconds
-GEO_API_CONCURRENCY = 40 # Max concurrent requests
-MAX_RETRIES = 3 # Max retries for Geo API
+GEO_API_BATCH_URL = "http://ip-api.com/batch"
+REQUEST_TIMEOUT = 20  # Increased timeout for batch requests
+MAX_RETRIES = 3
 
 # --- Protocol Definitions & Validation Whitelists ---
 VALID_SS_METHODS = {
@@ -30,46 +29,41 @@ PROTOCOLS = {
     "ss": "ss://", "ssr": "ssr://", "tuic": "tuic://", "hy2": "hy2://"
 }
 
-# --- In-memory Caches ---
-geo_cache = {}
-
 def get_flag(country_code):
     """Converts a country code to a flag emoji."""
     if not country_code or country_code == "N/A":
         return "❓"
     return emoji.emojize(f":{country_code.upper()}:")
 
-async def get_geolocation_with_retry(session, host, semaphore):
-    """Fetches geolocation with retries and exponential backoff."""
-    if host in geo_cache:
-        return geo_cache[host]
+async def get_geolocation_in_batch(session, hosts):
+    """Fetches geolocation for a list of hosts using the batch API."""
+    geo_cache = {}
+    unique_hosts = list(set(hosts))
+    chunks = [unique_hosts[i:i + 100] for i in range(0, len(unique_hosts), 100)] # ip-api.com batch limit is 100
 
-    async with semaphore:
+    for chunk in chunks:
         for attempt in range(MAX_RETRIES):
             try:
-                async with session.get(f"{GEO_API_URL}{host}?fields=countryCode,query", timeout=REQUEST_TIMEOUT) as response:
+                async with session.post(GEO_API_BATCH_URL, json=chunk, timeout=REQUEST_TIMEOUT) as response:
                     if response.status == 200:
                         data = await response.json()
-                        country_code = data.get("countryCode", "N/A")
-                        geo_cache[host] = country_code
-                        return country_code
-                    # If rate-limited or other server error, prepare to retry
-                    if response.status in [429, 500, 502, 503, 504]:
-                        await asyncio.sleep(2 ** attempt) # Exponential backoff: 1, 2, 4s
-                        continue
-                    # For other client errors, don't retry
-                    break
+                        for item in data:
+                            if item['status'] == 'success':
+                                geo_cache[item['query']] = item.get('countryCode', 'N/A')
+                            else:
+                                geo_cache[item['query']] = 'N/A'
+                        break # Success, exit retry loop for this chunk
+                    await asyncio.sleep(2 ** attempt) # Exponential backoff
             except (aiohttp.ClientError, asyncio.TimeoutError):
                 await asyncio.sleep(2 ** attempt)
-    
-    geo_cache[host] = "N/A" # Cache failure to avoid retrying for the same host
-    return "N/A"
+        else: # If all retries fail for a chunk
+            for host in chunk:
+                if host not in geo_cache:
+                    geo_cache[host] = 'N/A'
+    return geo_cache
 
 def parse_and_validate_config(line):
-    """
-    Parses, validates, and generates a unique key for a config link.
-    Returns a dictionary with parsed info and the key, or None.
-    """
+    """Parses, validates, and generates a unique key for a config link."""
     line = line.strip()
     if not line: return None, None
 
@@ -84,11 +78,12 @@ def parse_and_validate_config(line):
             vmess_data = json.loads(vmess_json_str)
             host, port, user_id = vmess_data.get("add"), vmess_data.get("port"), vmess_data.get("id")
             transport = vmess_data.get("net", "tcp")
+            security = "tls" if vmess_data.get("tls") in ["tls", True] else "none"
             
             if not all([host, port, user_id]) or transport not in VALID_V_TRANSPORTS: return None, None
             
-            result = {'protocol': 'vmess', 'host': host, 'port': port, 'transport': transport, 'data': vmess_data}
-            unique_key = ("vmess", str(host).lower(), port, user_id, transport, vmess_data.get("path", ""), vmess_data.get("host", ""))
+            result = {'protocol': 'vmess', 'host': host, 'port': port, 'transport': transport, 'security': security, 'data': vmess_data}
+            unique_key = ("vmess", str(host).lower(), port, user_id, transport, vmess_data.get("path", ""), vmess_data.get("host", ""), security)
 
         elif protocol_name in ["vless", "trojan"]:
             parsed_url = urlparse(line)
@@ -167,20 +162,19 @@ async def main():
         valid_configs = list(unique_configs_map.values())
         print(f"Found {len(valid_configs)} unique and valid configs. Starting geolocation...")
 
-        semaphore = asyncio.Semaphore(GEO_API_CONCURRENCY)
-        geo_tasks = [get_geolocation_with_retry(session, cfg['host'], semaphore) for cfg in valid_configs]
-        geo_results = await asyncio.gather(*geo_tasks)
-        print("Geolocation fetching complete.")
+        all_hosts = [cfg['host'] for cfg in valid_configs]
+        geo_data = await get_geolocation_in_batch(session, all_hosts)
+        print(f"Geolocation fetching complete. Successfully located {sum(1 for v in geo_data.values() if v != 'N/A')} hosts.")
 
         processed_by_protocol = {name: [] for name in PROTOCOLS.keys()}
         all_processed_configs = []
 
-        for i, config in enumerate(valid_configs):
-            country_code = geo_results[i]
+        for config in valid_configs:
+            country_code = geo_data.get(config['host'], 'N/A')
             flag = get_flag(country_code)
             
             name_parts = [config['protocol'].upper()]
-            if config['protocol'] in ['vless', 'trojan']:
+            if config['protocol'] in ['vless', 'vmess', 'trojan']:
                 name_parts.append(config['transport'].upper())
                 if config['security'] != 'none': name_parts.append(config['security'].upper())
             if config['protocol'] == 'ss' and config['method']:
@@ -189,7 +183,6 @@ async def main():
             name_parts.extend([flag, f"{config['host']}:{config['port']}"])
             new_name = "-".join(name_parts)
             
-            # --- Correctly generate final config link ---
             if config['protocol'] == 'vmess':
                 vmess_data = config['data']
                 vmess_data['ps'] = new_name
