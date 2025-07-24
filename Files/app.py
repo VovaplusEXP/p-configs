@@ -5,7 +5,7 @@ import base64
 import json
 import re
 import os
-import emoji
+import ipaddress
 from urllib.parse import urlparse, parse_qs, unquote, quote, urlunparse
 
 # --- Configuration ---
@@ -13,7 +13,7 @@ SUBSCRIPTION_LIST_FILE = "Subscription-List.txt"
 OUTPUT_DIR_SPLITTED = "../Splitted-By-Protocol"
 OUTPUT_FILE_ALL_SUB = "../All_Configs_Sub.txt"
 GEO_API_BATCH_URL = "http://ip-api.com/batch"
-REQUEST_TIMEOUT = 20  # Increased timeout for batch requests
+REQUEST_TIMEOUT = 20
 MAX_RETRIES = 3
 
 # --- Protocol Definitions & Validation Whitelists ---
@@ -22,26 +22,44 @@ VALID_SS_METHODS = {
     "xchacha20-ietf-poly1305", "aes-256-cfb", "aes-128-cfb",
     "camellia-256-cfb", "camellia-128-cfb", "rc4-md5"
 }
-VALID_V_TRANSPORTS = {"tcp", "ws", "grpc", "kcp", "http"}
+VALID_V_TRANSPORTS = {"tcp", "ws", "grpc", "kcp", "http", "xhttp"}
 VALID_V_SECURITY = {"none", "tls", "reality"}
 PROTOCOLS = {
     "vless": "vless://", "vmess": "vmess://", "trojan": "trojan://",
     "ss": "ss://", "ssr": "ssr://", "tuic": "tuic://", "hy2": "hy2://"
 }
 
+def is_public_ip(host):
+    """Check if the host is a public IP address."""
+    if not host:
+        return False
+    try:
+        ip = ipaddress.ip_address(host)
+        return ip.is_global and not ip.is_private and not ip.is_reserved and not ip.is_loopback
+    except ValueError:
+        return True
+
 def format_country_info(country_code):
-    """Converts a country code to a 'FLAG(CODE)' format."""
-    if not country_code or country_code == "N/A":
-        return "❓(XX)"
+    """Converts a country code to a 'FLAG(CODE)' format using Unicode ordinals."""
+    if not isinstance(country_code, str) or len(country_code) != 2 or not country_code.isalpha():
+        return "🌐(XX)"
     
-    flag = emoji.emojize(f":{country_code.upper()}:", language='alias')
-    return f"{flag}({country_code.upper()})"
+    try:
+        # Formula to convert two-letter country code to regional indicator symbols
+        # 0x1F1E6 is the offset for 'A'
+        flag = chr(ord(country_code[0].upper()) - ord('A') + 0x1F1E6) + \
+               chr(ord(country_code[1].upper()) - ord('A') + 0x1F1E6)
+        return f"{flag}({country_code.upper()})"
+    except Exception:
+        return f"🌐({country_code.upper()})"
 
 async def get_geolocation_in_batch(session, hosts):
-    """Fetches geolocation for a list of hosts using the batch API."""
+    """Fetches geolocation for a list of public hosts using the batch API."""
     geo_cache = {}
-    unique_hosts = list(set(hosts))
-    chunks = [unique_hosts[i:i + 100] for i in range(0, len(unique_hosts), 100)] # ip-api.com batch limit is 100
+    public_hosts = list(set([h for h in hosts if is_public_ip(h)]))
+    
+    payload = [{"query": h, "fields": "query,countryCode,status"} for h in public_hosts]
+    chunks = [payload[i:i + 100] for i in range(0, len(payload), 100)]
 
     for chunk in chunks:
         for attempt in range(MAX_RETRIES):
@@ -50,18 +68,15 @@ async def get_geolocation_in_batch(session, hosts):
                     if response.status == 200:
                         data = await response.json()
                         for item in data:
-                            if item['status'] == 'success':
-                                geo_cache[item['query']] = item.get('countryCode', 'N/A')
-                            else:
-                                geo_cache[item['query']] = 'N/A'
-                        break # Success, exit retry loop for this chunk
-                    await asyncio.sleep(2 ** attempt) # Exponential backoff
+                            geo_cache[item['query']] = item.get('countryCode', 'N/A') if item.get('status') == 'success' else 'N/A'
+                        break
+                    await asyncio.sleep(2 ** attempt)
             except (aiohttp.ClientError, asyncio.TimeoutError):
                 await asyncio.sleep(2 ** attempt)
-        else: # If all retries fail for a chunk
-            for host in chunk:
-                if host not in geo_cache:
-                    geo_cache[host] = 'N/A'
+        else:
+            for item in chunk:
+                if item['query'] not in geo_cache:
+                    geo_cache[item['query']] = 'N/A'
     return geo_cache
 
 def parse_and_validate_config(line):
@@ -97,7 +112,6 @@ def parse_and_validate_config(line):
             security = qs.get("security", ["none"])[0]
             sni = qs.get("sni", [""])[0]
 
-            # More reliable security detection: infer TLS only if SNI is present.
             if security == 'none' and sni:
                 security = 'tls'
 
@@ -120,7 +134,7 @@ def parse_and_validate_config(line):
             result = {'protocol': 'ss', 'host': host, 'port': port, 'transport': 'tcp', 'security': 'none', 'method': method}
             unique_key = ("ss", str(host).lower(), port, method, password)
         
-        else: # Basic validation for other protocols
+        else:
             parsed_url = urlparse(line)
             host, port, user_id = parsed_url.hostname, parsed_url.port, parsed_url.username
             if not all([host, port, user_id]): return None, None
@@ -172,14 +186,13 @@ async def main():
 
         all_hosts = [cfg['host'] for cfg in valid_configs]
         geo_data = await get_geolocation_in_batch(session, all_hosts)
-        print(f"Geolocation fetching complete. Successfully located {sum(1 for v in geo_data.values() if v != 'N/A')} hosts.")
+        print(f"Geolocation fetching complete. Successfully located {sum(1 for v in geo_data.values() if v != 'N/A')} of {len(all_hosts)} hosts.")
 
         processed_by_protocol = {name: [] for name in PROTOCOLS.keys()}
         all_processed_configs = []
 
         for config in valid_configs:
-            country_code = geo_data.get(config['host'], 'N/A')
-            country_info = format_country_info(country_code)
+            country_info = format_country_info(geo_data.get(config['host'], 'N/A'))
             
             name_parts = [config['protocol'].upper()]
             if config['protocol'] in ['vless', 'vmess', 'trojan']:
