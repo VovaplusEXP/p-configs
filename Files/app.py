@@ -34,8 +34,7 @@ def format_country_info(country_code):
     if not country_code or country_code == "N/A":
         return "❓(XX)"
     
-    flag = emoji.emojize(f":{country_code.upper()}:")
-    # If emojize fails, it returns the input string like :UK:. The code is the important part.
+    flag = emoji.emojize(f":{country_code.upper()}:", language='alias')
     return f"{flag}({country_code.upper()})"
 
 async def get_geolocation_in_batch(session, hosts):
@@ -96,10 +95,16 @@ def parse_and_validate_config(line):
             qs = parse_qs(parsed_url.query)
             transport = qs.get("type", ["tcp"])[0]
             security = qs.get("security", ["none"])[0]
+            sni = qs.get("sni", [""])[0]
+
+            # More reliable security detection: infer TLS only if SNI is present.
+            if security == 'none' and sni:
+                security = 'tls'
+
             if transport not in VALID_V_TRANSPORTS or security not in VALID_V_SECURITY: return None, None
             
             result = {'protocol': protocol_name, 'host': host, 'port': port, 'transport': transport, 'security': security, 'method': None}
-            unique_key = (protocol_name, str(host).lower(), port, user_id, transport, security, qs.get("path", [""])[0], qs.get("sni", [""])[0])
+            unique_key = (protocol_name, str(host).lower(), port, user_id, transport, security, qs.get("path", [""])[0], sni)
 
         elif protocol_name == "ss":
             parsed_url = urlparse(line)
