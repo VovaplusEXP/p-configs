@@ -29,11 +29,14 @@ PROTOCOLS = {
     "ss": "ss://", "ssr": "ssr://", "tuic": "tuic://", "hy2": "hy2://"
 }
 
-def get_flag(country_code):
-    """Converts a country code to a flag emoji."""
+def format_country_info(country_code):
+    """Converts a country code to a 'FLAG(CODE)' format."""
     if not country_code or country_code == "N/A":
-        return "❓"
-    return emoji.emojize(f":{country_code.upper()}:")
+        return "❓(XX)"
+    
+    flag = emoji.emojize(f":{country_code.upper()}:")
+    # If emojize fails, it returns the input string like :UK:. The code is the important part.
+    return f"{flag}({country_code.upper()})"
 
 async def get_geolocation_in_batch(session, hosts):
     """Fetches geolocation for a list of hosts using the batch API."""
@@ -171,7 +174,7 @@ async def main():
 
         for config in valid_configs:
             country_code = geo_data.get(config['host'], 'N/A')
-            flag = get_flag(country_code)
+            country_info = format_country_info(country_code)
             
             name_parts = [config['protocol'].upper()]
             if config['protocol'] in ['vless', 'vmess', 'trojan']:
@@ -180,7 +183,7 @@ async def main():
             if config['protocol'] == 'ss' and config['method']:
                 name_parts.append(config['method'].replace('-ietf', '').replace('aes-256-gcm', 'A256GCM').replace('chacha20-poly1305', 'C20P'))
 
-            name_parts.extend([flag, f"{config['host']}:{config['port']}"])
+            name_parts.extend([country_info, f"{config['host']}:{config['port']}"])
             new_name = "-".join(name_parts)
             
             if config['protocol'] == 'vmess':
