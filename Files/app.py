@@ -5,6 +5,7 @@ import base64
 import json
 import re
 import os
+import emoji
 from urllib.parse import urlparse, parse_qs, unquote, quote, urlunparse
 
 # --- Configuration ---
