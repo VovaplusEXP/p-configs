@@ -5,6 +5,7 @@ import base64
 import json
 import re
 import os
+import emoji # Moved to top-level for global visibility
 from urllib.parse import urlparse, parse_qs, unquote, quote, urlunparse
 
 # --- Configuration ---
@@ -13,8 +14,8 @@ OUTPUT_DIR_SPLITTED = "../Splitted-By-Protocol"
 OUTPUT_FILE_ALL_SUB = "../All_Configs_Sub.txt"
 GEO_API_URL = "http://ip-api.com/json/"
 REQUEST_TIMEOUT = 10  # seconds
-# Rate limit for the Geo API to avoid getting blocked (requests per second)
-GEO_API_CONCURRENCY = 40
+GEO_API_CONCURRENCY = 40 # Max concurrent requests
+MAX_RETRIES = 3 # Max retries for Geo API
 
 # --- Protocol Definitions & Validation Whitelists ---
 VALID_SS_METHODS = {
@@ -34,127 +35,109 @@ geo_cache = {}
 
 def get_flag(country_code):
     """Converts a country code to a flag emoji."""
-    return emoji.emojize(f":{country_code.upper()}:", language='alias') if country_code and country_code != "N/A" else "❓"
+    if not country_code or country_code == "N/A":
+        return "❓"
+    return emoji.emojize(f":{country_code.upper()}:")
 
-async def get_geolocation(session, host, semaphore):
-    """Fetches geolocation for a host, using a cache and a semaphore to limit concurrency."""
+async def get_geolocation_with_retry(session, host, semaphore):
+    """Fetches geolocation with retries and exponential backoff."""
     if host in geo_cache:
         return geo_cache[host]
-    
+
     async with semaphore:
-        try:
-            async with session.get(f"{GEO_API_URL}{host}?fields=countryCode,query", timeout=REQUEST_TIMEOUT) as response:
-                if response.status == 200:
-                    data = await response.json()
-                    country_code = data.get("countryCode", "N/A")
-                    geo_cache[host] = country_code
-                    return country_code
-                # If status is not 200, we still cache it as N/A to avoid retries
-                geo_cache[host] = "N/A"
-                return "N/A"
-        except (aiohttp.ClientError, asyncio.TimeoutError):
-            geo_cache[host] = "N/A"
-            return "N/A"
+        for attempt in range(MAX_RETRIES):
+            try:
+                async with session.get(f"{GEO_API_URL}{host}?fields=countryCode,query", timeout=REQUEST_TIMEOUT) as response:
+                    if response.status == 200:
+                        data = await response.json()
+                        country_code = data.get("countryCode", "N/A")
+                        geo_cache[host] = country_code
+                        return country_code
+                    # If rate-limited or other server error, prepare to retry
+                    if response.status in [429, 500, 502, 503, 504]:
+                        await asyncio.sleep(2 ** attempt) # Exponential backoff: 1, 2, 4s
+                        continue
+                    # For other client errors, don't retry
+                    break
+            except (aiohttp.ClientError, asyncio.TimeoutError):
+                await asyncio.sleep(2 ** attempt)
+    
+    geo_cache[host] = "N/A" # Cache failure to avoid retrying for the same host
+    return "N/A"
 
 def parse_and_validate_config(line):
     """
-    Parses and validates a config link.
-    Returns a dictionary with parsed info and a unique key, or None if invalid.
+    Parses, validates, and generates a unique key for a config link.
+    Returns a dictionary with parsed info and the key, or None.
     """
     line = line.strip()
-    if not line:
-        return None, None
+    if not line: return None, None
 
     protocol_name = next((name for name, prefix in PROTOCOLS.items() if line.startswith(prefix)), None)
-    if not protocol_name:
-        return None, None
+    if not protocol_name: return None, None
 
-    result = None
+    result = {}
     unique_key = None
     try:
         if protocol_name == "vmess":
-            decoded_json = base64.b64decode(line[len("vmess://"):]).decode('utf-8')
-            vmess_data = json.loads(decoded_json)
-            host = vmess_data.get("add")
-            port = vmess_data.get("port")
-            user_id = vmess_data.get("id")
+            vmess_json_str = base64.b64decode(line[len("vmess://"):]).decode('utf-8')
+            vmess_data = json.loads(vmess_json_str)
+            host, port, user_id = vmess_data.get("add"), vmess_data.get("port"), vmess_data.get("id")
             transport = vmess_data.get("net", "tcp")
-            path = vmess_data.get("path", "")
-            sni = vmess_data.get("host", "")
-            security = "tls" if vmess_data.get("tls") == "tls" else "none"
             
-            if not all([host, port, user_id]) or transport not in VALID_V_TRANSPORTS:
-                raise ValueError("Invalid VMess fields")
+            if not all([host, port, user_id]) or transport not in VALID_V_TRANSPORTS: return None, None
             
-            result = {'protocol': 'vmess', 'host': host, 'port': port, 'transport': transport, 'security': security, 'method': None}
-            unique_key = ("vmess", host, port, user_id, transport, path, sni)
+            result = {'protocol': 'vmess', 'host': host, 'port': port, 'transport': transport, 'data': vmess_data}
+            unique_key = ("vmess", str(host).lower(), port, user_id, transport, vmess_data.get("path", ""), vmess_data.get("host", ""))
 
         elif protocol_name in ["vless", "trojan"]:
             parsed_url = urlparse(line)
-            host = parsed_url.hostname
-            port = parsed_url.port
-            user_id = parsed_url.username
-            if not all([host, port, user_id]):
-                raise ValueError("Missing host, port, or user_id")
+            host, port, user_id = parsed_url.hostname, parsed_url.port, parsed_url.username
+            if not all([host, port, user_id]): return None, None
             
             qs = parse_qs(parsed_url.query)
             transport = qs.get("type", ["tcp"])[0]
             security = qs.get("security", ["none"])[0]
-            path = qs.get("path", [""])[0]
-            sni = qs.get("sni", [""])[0]
-
-            if transport not in VALID_V_TRANSPORTS or security not in VALID_V_SECURITY:
-                raise ValueError("Invalid transport or security")
+            if transport not in VALID_V_TRANSPORTS or security not in VALID_V_SECURITY: return None, None
             
             result = {'protocol': protocol_name, 'host': host, 'port': port, 'transport': transport, 'security': security, 'method': None}
-            unique_key = (protocol_name, host, port, user_id, transport, security, path, sni)
+            unique_key = (protocol_name, str(host).lower(), port, user_id, transport, security, qs.get("path", [""])[0], qs.get("sni", [""])[0])
 
         elif protocol_name == "ss":
             parsed_url = urlparse(line)
-            host = parsed_url.hostname
-            port = parsed_url.port
-            if not host or not port:
-                raise ValueError("Missing host or port")
+            host, port = parsed_url.hostname, parsed_url.port
+            if not host or not port: return None, None
             
-            try:
-                userinfo = base64.b64decode(parsed_url.username + "==").decode('utf-8')
-            except:
-                userinfo = unquote(parsed_url.username)
-
+            try: userinfo = base64.b64decode(parsed_url.username + "==").decode('utf-8')
+            except: userinfo = unquote(parsed_url.username)
+            
             method, password = userinfo.split(':', 1)
-            if method not in VALID_SS_METHODS:
-                raise ValueError(f"Invalid SS method: {method}")
+            if method not in VALID_SS_METHODS: return None, None
             
             result = {'protocol': 'ss', 'host': host, 'port': port, 'transport': 'tcp', 'security': 'none', 'method': method}
-            unique_key = ("ss", host, port, method, password)
+            unique_key = ("ss", str(host).lower(), port, method, password)
         
-        # Basic validation for other protocols
-        elif protocol_name in ["hy2", "tuic", "ssr"]:
+        else: # Basic validation for other protocols
             parsed_url = urlparse(line)
-            host = parsed_url.hostname
-            port = parsed_url.port
-            user_id = parsed_url.username
-            if not all([host, port, user_id]):
-                raise ValueError("Missing host, port or user_id")
+            host, port, user_id = parsed_url.hostname, parsed_url.port, parsed_url.username
+            if not all([host, port, user_id]): return None, None
             result = {'protocol': protocol_name, 'host': host, 'port': port, 'transport': 'udp', 'security': 'none', 'method': None}
-            unique_key = (protocol_name, host, port, user_id)
+            unique_key = (protocol_name, str(host).lower(), port, user_id)
 
-    except Exception:
-        return None, None
+    except Exception: return None, None
 
     if result:
         result['original_line'] = line
         return result, unique_key
-    
     return None, None
 
 async def fetch_subs(session, unique_configs_map):
-    """Reads subscription list, fetches configs, and performs smart deduplication."""
+    """Fetches configs and performs smart deduplication."""
     try:
         async with aiofiles.open(SUBSCRIPTION_LIST_FILE, mode='r', encoding='utf-8') as f:
             urls = [line.strip() for line in await f.readlines() if line.strip()]
     except FileNotFoundError:
-        print(f"Warning: {SUBSCRIPTION_LIST_FILE} not found. No configs will be fetched.")
+        print(f"Warning: {SUBSCRIPTION_LIST_FILE} not found.")
         return
 
     async def fetch(url):
@@ -162,18 +145,14 @@ async def fetch_subs(session, unique_configs_map):
             async with session.get(url, timeout=REQUEST_TIMEOUT) as response:
                 if response.status == 200:
                     content = await response.text()
-                    try:
-                        decoded_content = base64.b64decode(content).decode('utf-8')
-                        lines = decoded_content.splitlines()
-                    except Exception:
-                        lines = content.splitlines()
+                    try: lines = base64.b64decode(content).decode('utf-8').splitlines()
+                    except: lines = content.splitlines()
                     
                     for line in lines:
                         parsed_config, unique_key = parse_and_validate_config(line)
                         if parsed_config and unique_key not in unique_configs_map:
                             unique_configs_map[unique_key] = parsed_config
-        except Exception as e:
-            print(f"Warning: Error fetching {url}: {e}")
+        except Exception as e: print(f"Warning: Error fetching {url}: {e}")
 
     await asyncio.gather(*(fetch(url) for url in urls))
 
@@ -181,18 +160,15 @@ async def main():
     print("Starting config processing...")
     os.makedirs(OUTPUT_DIR_SPLITTED, exist_ok=True)
     
-    # Use a dictionary for smart deduplication
     unique_configs_map = {}
-    
     async with aiohttp.ClientSession() as session:
         await fetch_subs(session, unique_configs_map)
         
         valid_configs = list(unique_configs_map.values())
         print(f"Found {len(valid_configs)} unique and valid configs. Starting geolocation...")
 
-        # Semaphore to limit concurrency for the Geo API
         semaphore = asyncio.Semaphore(GEO_API_CONCURRENCY)
-        geo_tasks = [get_geolocation(session, cfg['host'], semaphore) for cfg in valid_configs]
+        geo_tasks = [get_geolocation_with_retry(session, cfg['host'], semaphore) for cfg in valid_configs]
         geo_results = await asyncio.gather(*geo_tasks)
         print("Geolocation fetching complete.")
 
@@ -204,25 +180,28 @@ async def main():
             flag = get_flag(country_code)
             
             name_parts = [config['protocol'].upper()]
-            
-            if config['protocol'] in ['vless', 'vmess', 'trojan']:
+            if config['protocol'] in ['vless', 'trojan']:
                 name_parts.append(config['transport'].upper())
-                if config['security'] != 'none':
-                    name_parts.append(config['security'].upper())
-
+                if config['security'] != 'none': name_parts.append(config['security'].upper())
             if config['protocol'] == 'ss' and config['method']:
-                short_method = config['method'].replace('-ietf', '').replace('aes-256-gcm', 'A256GCM').replace('chacha20-poly1305', 'C20P')
-                name_parts.append(short_method)
+                name_parts.append(config['method'].replace('-ietf', '').replace('aes-256-gcm', 'A256GCM').replace('chacha20-poly1305', 'C20P'))
 
             name_parts.extend([flag, f"{config['host']}:{config['port']}"])
             new_name = "-".join(name_parts)
             
-            try:
-                parts = list(urlparse(config['original_line']))
-                parts[5] = quote(new_name)
-                new_line = urlunparse(parts)
-            except Exception:
-                new_line = re.sub(r'#.*', '', config['original_line']) + '#' + quote(new_name)
+            # --- Correctly generate final config link ---
+            if config['protocol'] == 'vmess':
+                vmess_data = config['data']
+                vmess_data['ps'] = new_name
+                new_json_str = json.dumps(vmess_data, sort_keys=True)
+                new_line = "vmess://" + base64.b64encode(new_json_str.encode('utf-8')).decode('utf-8')
+            else:
+                try:
+                    parts = list(urlparse(config['original_line']))
+                    parts[5] = quote(new_name)
+                    new_line = urlunparse(parts)
+                except Exception:
+                    new_line = re.sub(r'#.*', '', config['original_line']) + '#' + quote(new_name)
             
             processed_by_protocol[config['protocol']].append(new_line)
             all_processed_configs.append(new_line)
@@ -245,10 +224,6 @@ async def main():
     print("Processing finished successfully.")
 
 if __name__ == "__main__":
-    # This is needed for Windows compatibility with aiohttp
     if os.name == 'nt':
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-    
-    # We need to import emoji here as it's only used in main
-    import emoji
     asyncio.run(main())
