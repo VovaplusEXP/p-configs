@@ -62,4 +62,4 @@ Contributions are welcome! If you have a new feature idea, a bug to report, or a
 
 ## 📄 License
 
-The scripts in this repository are released under the MIT License. The generated configuration lists are collections of publicly available data and are provided as-is.
+The scripts and all other content in this repository are released under the **GNU General Public License v3.0**. The generated configuration lists are collections of publicly available data and are provided as-is under the terms of this license.
