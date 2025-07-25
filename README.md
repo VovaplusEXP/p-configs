@@ -26,7 +26,6 @@ These lists contain one configuration link per line. Ideal for clients that supp
 | **VMess** | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol/vmess.txt` | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Secure/vmess.txt` |
 | **Trojan** | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol/trojan.txt` | (N/A) |
 | **SS** | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol/ss.txt` | (N/A) |
-| **All** | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/All_Configs_Sub.txt` | (N/A) |
 
 ### Base64-Encoded Lists
 
@@ -45,7 +44,6 @@ These lists contain all configurations for a given protocol, joined together and
 - `Splitted-By-Protocol-Secure/`: Contains plain-text lists of only VLESS/VMess configs with TLS/REALITY.
 - `Splitted-By-Protocol-Base64/`: Contains Base64-encoded versions of the primary lists.
 - `Splitted-By-Protocol-Secure-Base64/`: Contains Base64-encoded versions of the secure-only lists.
-- `All_Configs_Sub.txt`: A single file containing all processed plain-text configs.
 
 ## 🛠️ How It Works (For Developers)
 
