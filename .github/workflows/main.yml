@@ -30,6 +30,10 @@ jobs:
         working-directory: ./Files
         run: python app.py
 
+      - name: Run secure filtering script
+        working-directory: ./Files
+        run: python filter_secure.py
+
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
