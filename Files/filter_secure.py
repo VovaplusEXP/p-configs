@@ -1,5 +1,6 @@
 import os
-import glob
+import json
+import base64
 
 # --- Configuration ---
 SOURCE_DIR = "../Splitted-By-Protocol"
@@ -11,7 +12,8 @@ SECURE_KEYWORDS = ["-TLS", "-REALITY"]
 def filter_secure_configs():
     """
     Reads generated config files and creates new ones containing only
-    configs with TLS or REALITY encryption.
+    configs with TLS or REALITY encryption. It specifically handles
+    the Base64-encoded nature of VMess links.
     """
     if not os.path.exists(SOURCE_DIR):
         print(f"Warning: Source directory '{SOURCE_DIR}' not found. Skipping.")
@@ -31,9 +33,32 @@ def filter_secure_configs():
         secure_configs = []
         with open(source_path, 'r', encoding='utf-8') as f:
             for line in f:
-                # Check if any of the keywords are in the config's name part
-                if any(keyword in line for keyword in SECURE_KEYWORDS):
-                    secure_configs.append(line.strip())
+                line = line.strip()
+                if not line:
+                    continue
+
+                is_secure = False
+                # VMess requires special handling due to Base64 encoding
+                if filename == "vmess.txt" and line.startswith("vmess://"):
+                    try:
+                        b64_part = line[len("vmess://"):]
+                        # Add padding if necessary
+                        b64_part += '=' * (-len(b64_part) % 4)
+                        json_str = base64.b64decode(b64_part).decode('utf-8')
+                        vmess_data = json.loads(json_str)
+                        name = vmess_data.get("ps", "")
+                        if any(keyword in name for keyword in SECURE_KEYWORDS):
+                            is_secure = True
+                    except Exception:
+                        # Ignore malformed VMess links
+                        continue
+                else:
+                    # For VLESS and others, a simple substring check is enough
+                    if any(keyword in line for keyword in SECURE_KEYWORDS):
+                        is_secure = True
+                
+                if is_secure:
+                    secure_configs.append(line)
         
         if secure_configs:
             with open(dest_path, 'w', encoding='utf-8') as f:
