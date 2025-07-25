@@ -6,7 +6,7 @@ SOURCE_DIR = "../Splitted-By-Protocol"
 DEST_DIR = "../Splitted-By-Protocol-Secure"
 PROTOCOLS_TO_FILTER = ["vless.txt", "vmess.txt"]
 # Keywords that indicate a secure connection in the config name
-SECURE_KEYWORDS = ["-TLS-", "-REALITY-"]
+SECURE_KEYWORDS = ["-TLS", "-REALITY"]
 
 def filter_secure_configs():
     """
