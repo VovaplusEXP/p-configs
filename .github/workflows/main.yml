@@ -34,12 +34,16 @@ jobs:
         working-directory: ./Files
         run: python filter_secure.py
 
+      - name: Create Base64-encoded lists
+        working-directory: ./Files
+        run: python create_base64_lists.py
+
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "✅ Updated configs"
           branch: main
-          file_pattern: "**/*.txt" # Only commit the generated .txt files
+          file_pattern: "**/*.txt" # This will commit all .txt files in all subdirectories
           commit_user_name: "GitHub Actions Bot"
           commit_user_email: "actions@github.com"
           commit_author: "GitHub Actions Bot <actions@github.com>"
