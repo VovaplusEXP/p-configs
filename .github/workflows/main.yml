@@ -38,16 +38,12 @@ jobs:
         working-directory: ./Files
         run: python generate_clash_profile.py
 
-            - name: Generate Clash Meta profile
-        working-directory: ./Files
-        run: python generate_clash_profile.py
-
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "✅ Updated configs and Clash profiles"
           branch: main
-          file_pattern: "**/*.txt **/*.yaml" # Commit both txt and yaml files
+          file_pattern: "**/*.txt **/*.yaml"
           commit_user_name: "GitHub Actions Bot"
           commit_user_email: "actions@github.com"
           commit_author: "GitHub Actions Bot <actions@github.com>"
