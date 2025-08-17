@@ -34,16 +34,20 @@ jobs:
         working-directory: ./Files
         run: python filter_secure.py
 
-      - name: Create Base64-encoded lists
+      - name: Generate Clash Meta profile
         working-directory: ./Files
-        run: python create_base64_lists.py
+        run: python generate_clash_profile.py
+
+            - name: Generate Clash Meta profile
+        working-directory: ./Files
+        run: python generate_clash_profile.py
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "✅ Updated configs"
+          commit_message: "✅ Updated configs and Clash profiles"
           branch: main
-          file_pattern: "**/*.txt" # This will commit all .txt files in all subdirectories
+          file_pattern: "**/*.txt **/*.yaml" # Commit both txt and yaml files
           commit_user_name: "GitHub Actions Bot"
           commit_user_email: "actions@github.com"
           commit_author: "GitHub Actions Bot <actions@github.com>"
