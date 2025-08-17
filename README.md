@@ -1,63 +1,65 @@
-# P-Configs: Curated and Optimized Proxy Configurations
+# V2Ray/Clash Config Aggregator
 
-This repository automatically gathers, cleans, validates, and enriches proxy configurations from various public sources. It is designed to provide fresh, high-quality, and de-duplicated lists for use in various proxy clients.
+This repository automatically aggregates, deduplicates, and enriches V2Ray, Shadowsocks, and Trojan configurations from various public sources. The primary goal is to provide clean, up-to-date, and informative subscription lists and Clash Meta profiles.
 
-## ✨ Features
+The lists are automatically updated every 6 hours via GitHub Actions.
 
-- **Automatic Updates**: The lists are automatically updated via GitHub Actions every 6 hours, ensuring you always have the freshest configs.
-- **Smart Deduplication**: An intelligent deduplication process ensures that only functionally unique servers remain, ignoring cosmetic differences like names.
-- **Informative Naming**: Configurations are automatically renamed to a standard, informative format: `PROTOCOL-TRANSPORT-ENCRYPTION-FLAG(COUNTRY_CODE)-HOST:PORT`.
-- **Geo-IP Location**: Server locations are identified using a batch IP geolocation API to provide country information for most servers.
-- **Multiple Formats**: Lists are provided in both plain-text (one config per line) and Base64-encoded formats for maximum client compatibility.
-- **Secure-Only Lists**: For VLESS and VMess, separate lists are generated containing only configurations that use `TLS` or `REALITY` encryption.
-- **Validation**: Basic validation is performed on all configs to filter out malformed or invalid entries.
+---
 
-## 🚀 How to Use (Subscription Links)
+## Subscription & Profile Links
 
-Copy the link for the list you want to use and add it as a new subscription in your proxy client (e.g., Nekoray, v2rayN, Clash, etc.).
+All links point to the `main` branch and provide the raw file content.
 
-### Plain-Text Lists
+### 🔵 Clash Meta Profiles
 
-These lists contain one configuration link per line. Ideal for clients that support this format.
+These are advanced profiles for **Clash Meta for Android** and other compatible clients. They include smart proxy groups (`url-test` and `fallback`) that automatically check for access to Google's AI Studio.
 
-| Protocol | Standard List | Secure-Only List (TLS/REALITY) |
-| :--- | :--- | :--- |
-| **VLESS** | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol/vless.txt` | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Secure/vless.txt` |
-| **VMess** | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol/vmess.txt` | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Secure/vmess.txt` |
-| **Trojan** | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol/trojan.txt` | (N/A) |
-| **SS** | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol/ss.txt` | (N/A) |
+| Protocol | Profile Link |
+| :--- | :--- |
+| **VLESS (Secure)** | [vless.yaml](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Clash-Profiles/vless.yaml) |
+| **VMess (Secure)** | [vmess.yaml](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Clash-Profiles/vmess.yaml) |
+| **Shadowsocks** | [ss.yaml](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Clash-Profiles/ss.yaml) |
+| **Trojan** | [trojan.yaml](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Clash-Profiles/trojan.yaml) |
 
-### Base64-Encoded Lists
+---
 
-These lists contain all configurations for a given protocol, joined together and encoded in Base64. This is the most widely supported format.
+### 🟡 Base64 Encoded Subscriptions
 
-| Protocol | Standard List (Base64) | Secure-Only List (Base64) |
-| :--- | :--- | :--- |
-| **VLESS** | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Base64/vless.txt` | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Secure-Base64/vless.txt` |
-| **VMess** | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Base64/vmess.txt` | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Secure-Base64/vmess.txt` |
-| **Trojan** | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Base64/trojan.txt` | (N/A) |
-| **SS** | `https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Base64/ss.txt` | (N/A) |
+Standard Base64 encoded lists, suitable for most clients.
 
-## 📁 Directory Structure
+#### Standard Lists
+| Protocol | Subscription Link |
+| :--- | :--- |
+| **VLESS** | [vless.txt](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Base64/vless.txt) |
+| **VMess** | [vmess.txt](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Base64/vmess.txt) |
+| **Shadowsocks** | [ss.txt](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Base64/ss.txt) |
+| **Trojan** | [trojan.txt](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Base64/trojan.txt) |
+| **Hysteria2** | [hy2.txt](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Base64/hy2.txt) |
+| **TUIC** | [tuic.txt](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Base64/tuic.txt) |
 
-- `Splitted-By-Protocol/`: Contains the primary, plain-text lists, separated by protocol.
-- `Splitted-By-Protocol-Secure/`: Contains plain-text lists of only VLESS/VMess configs with TLS/REALITY.
-- `Splitted-By-Protocol-Base64/`: Contains Base64-encoded versions of the primary lists.
-- `Splitted-By-Protocol-Secure-Base64/`: Contains Base64-encoded versions of the secure-only lists.
+#### Secure Lists (TLS/REALITY only)
+| Protocol | Subscription Link |
+| :--- | :--- |
+| **VLESS (Secure)** | [vless.txt](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Secure-Base64/vless.txt) |
+| **VMess (Secure)** | [vmess.txt](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Secure-Base64/vmess.txt) |
 
-## 🛠️ How It Works (For Developers)
+---
 
-The entire process is orchestrated by the `.github/workflows/main.yml` GitHub Actions workflow, which runs on a schedule.
+### ⚪ Plain Text Config Lists
 
-1.  **`Files/app.py`**: The main script is executed. It reads subscription URLs from `Files/Subscription-List.txt`, fetches all configs, performs smart deduplication in memory, validates them, enriches them with Geo-IP data, and writes the primary lists to `Splitted-By-Protocol/`.
-2.  **`Files/filter_secure.py`**: This script runs next. It reads the lists generated in the previous step and creates a new set of lists in `Splitted-By-Protocol-Secure/`, containing only configs that explicitly use TLS or REALITY.
-3.  **`Files/create_base64_lists.py`**: This final script reads all the plain-text lists generated by the previous two steps and creates Base64-encoded versions of them.
-4.  **Commit**: The GitHub Action commits all the generated and updated `.txt` files back to the repository.
+Raw, unencoded config links. Useful for debugging or manual import.
 
-## 🤝 Contributing
+#### Standard Lists
+- **VLESS:** [vless.txt](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol/vless.txt)
+- **VMess:** [vmess.txt](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol/vmess.txt)
+- **Shadowsocks:** [ss.txt](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol/ss.txt)
+- **Trojan:** [trojan.txt](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol/trojan.txt)
+- **Hysteria2:** [hy2.txt](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol/hy2.txt)
+- **TUIC:** [tuic.txt](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol/tuic.txt)
 
-Contributions are welcome! If you have a new feature idea, a bug to report, or a list of high-quality subscription sources to add, please open an issue or a pull request.
+#### Secure Lists (TLS/REALITY only)
+- **VLESS (Secure):** [vless.txt](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Secure/vless.txt)
+- **VMess (Secure):** [vmess.txt](https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Secure/vmess.txt)
 
-## 📄 License
-
-The scripts and all other content in this repository are released under the **GNU General Public License v3.0**. The generated configuration lists are collections of publicly available data and are provided as-is under the terms of this license.
+---
+*This repository is fully automated. All files are generated by scripts.*
