@@ -11,7 +11,7 @@ from urllib.parse import urlparse, parse_qs, unquote, quote, urlunparse
 # --- Configuration ---
 SUBSCRIPTION_LIST_FILE = "Subscription-List.txt"
 OUTPUT_DIR_SPLITTED = "../Splitted-By-Protocol"
-OUTPUT_FILE_ALL_SUB = "../All_Configs_Sub.txt"
+# OUTPUT_FILE_ALL_SUB = "../All_Configs_Sub.txt" # This is a temporary file, should not be a constant
 GEO_API_BATCH_URL = "http://ip-api.com/batch"
 REQUEST_TIMEOUT = 20
 MAX_RETRIES = 3
@@ -45,8 +45,6 @@ def format_country_info(country_code):
         return "🌐(XX)"
     
     try:
-        # Formula to convert two-letter country code to regional indicator symbols
-        # 0x1F1E6 is the offset for 'A'
         flag = chr(ord(country_code[0].upper()) - ord('A') + 0x1F1E6) + \
                chr(ord(country_code[1].upper()) - ord('A') + 0x1F1E6)
         return f"{flag}({country_code.upper()})"
@@ -223,17 +221,14 @@ async def main():
     print("Writing processed configs to files...")
     for protocol_name, configs in processed_by_protocol.items():
         if configs:
-            file_path = os.path.join(OUTPUT_DIR_SPLITTED, f"{protocol_name}.txt")
-            async with aiofiles.open(file_path, mode='w', encoding='utf-8') as f:
+            # Write plain text file
+            file_path_plain = os.path.join(OUTPUT_DIR_SPLITTED, f"{protocol_name}.txt")
+            async with aiofiles.open(file_path_plain, mode='w', encoding='utf-8') as f:
                 await f.write('\n'.join(configs))
-            print(f"  - Wrote {len(configs)} configs to {file_path}")
+            print(f"  - Wrote {len(configs)} configs to {file_path_plain}")
 
-    if all_processed_configs:
-        async with aiofiles.open(OUTPUT_FILE_ALL_SUB, mode='w', encoding='utf-8') as f:
-            combined_text = '\n'.join(all_processed_configs)
-            encoded_bytes = base64.b64encode(combined_text.encode('utf-8'))
-            await f.write(encoded_bytes.decode('utf-8'))
-        print(f"Wrote {len(all_processed_configs)} configs to {OUTPUT_FILE_ALL_SUB} (Base64 encoded).")
+    # This script no longer creates any combined subscription files.
+    # That is handled by create_base64_lists.py
 
     print("Processing finished successfully.")
 
