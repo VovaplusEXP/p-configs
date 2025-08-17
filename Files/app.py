@@ -115,7 +115,7 @@ def parse_and_validate_config(line):
             if transport not in VALID_V_TRANSPORTS or security not in VALID_V_SECURITY: return None, None
             
             result = {'protocol': protocol_name, 'host': host, 'port': port, 'transport': transport, 'security': security, 'method': None}
-            unique_key = (protocol_name, str(host).lower(), port, user_id, transport, security, qs.get("path", [""`)[0], sni)
+            unique_key = (protocol_name, str(host).lower(), port, user_id, transport, security, qs.get("path", [""])[0], sni)
 
         elif protocol_name == "ss":
             parsed_url = urlparse(line)
@@ -187,7 +187,6 @@ async def main():
 
         processed_by_protocol = {name: [] for name in PROTOCOLS.keys()}
         
-        # --- NEW: Set to track used names to prevent duplicates for Clash ---
         used_names = set()
 
         for config in valid_configs:
@@ -202,7 +201,6 @@ async def main():
 
             name_parts.extend([country_info, f"{config['host']}:{config['port']}"])
             
-            # --- NEW: Name collision handling ---
             base_name = "-".join(name_parts)
             new_name = base_name
             counter = 1
@@ -210,7 +208,6 @@ async def main():
                 new_name = f"{base_name}_{counter}"
                 counter += 1
             used_names.add(new_name)
-            # --- END NEW ---
 
             if config['protocol'] == 'vmess':
                 vmess_data = config['data']
