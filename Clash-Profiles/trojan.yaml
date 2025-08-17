@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
+- name: TROJAN-TCP-TLS-🇭🇰(HK)-155.117.228.70:26193
+  type: trojan
+  server: 155.117.228.70
+  port: 26193
+  uuid: 7367d04e-4c59-4dff-a50e-12e730a09891
+  network: tcp
+  tls: true
+  servername: 155.117.228.70
 - name: TROJAN-TCP-TLS-🌐(XX)-us.blazeppn.info:443
   type: trojan
   server: us.blazeppn.info
@@ -13,7 +21,7 @@ proxies:
   network: tcp
   tls: true
   servername: us.blazeppn.info
-- name: TROJAN-TCP-TLS-🌐(XX)-185.208.207.217:443
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
   type: trojan
   server: 185.208.207.217
   port: 443
@@ -29,7 +37,7 @@ proxies:
   network: tcp
   tls: true
   servername: rc8.freeguard.org
-- name: TROJAN-TCP-TLS-🌐(XX)-103.252.116.138:443
+- name: TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
   type: trojan
   server: 103.252.116.138
   port: 443
@@ -113,7 +121,7 @@ proxies:
   network: tcp
   tls: false
   servername: www.baidu.com
-- name: TROJAN-TCP-TLS-🌐(XX)-36.156.102.67:22006
+- name: TROJAN-TCP-TLS-🇨🇳(CN)-36.156.102.67:22006
   type: trojan
   server: 36.156.102.67
   port: 22006
@@ -169,7 +177,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🌐(XX)-103.116.7.103:2083
+- name: TROJAN-WS-TLS-🇺🇸(US)-103.116.7.103:2083
   type: trojan
   server: 103.116.7.103
   port: 2083
@@ -205,7 +213,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🌐(XX)-77.232.140.114:2053
+- name: TROJAN-WS-TLS-🇦🇪(AE)-77.232.140.114:2053
   type: trojan
   server: 77.232.140.114
   port: 2053
@@ -229,7 +237,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🌐(XX)-5.182.85.255:2096
+- name: TROJAN-WS-TLS-🇷🇺(RU)-5.182.85.255:2096
   type: trojan
   server: 5.182.85.255
   port: 2096
@@ -241,7 +249,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🇷🇺(RU)-45.67.215.95:443
+- name: TROJAN-WS-TLS-🌐(XX)-45.67.215.95:443
   type: trojan
   server: 45.67.215.95
   port: 443
@@ -265,7 +273,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🌐(XX)-5.182.84.229:2087
+- name: TROJAN-WS-TLS-🇷🇺(RU)-5.182.84.229:2087
   type: trojan
   server: 5.182.84.229
   port: 2087
@@ -277,7 +285,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🌐(XX)-176.124.223.92:443
+- name: TROJAN-WS-TLS-🇨🇳(CN)-176.124.223.92:443
   type: trojan
   server: 176.124.223.92
   port: 443
@@ -301,7 +309,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🌐(XX)-92.243.74.23:2096
+- name: TROJAN-WS-TLS-🇰🇭(KH)-92.243.74.23:2096
   type: trojan
   server: 92.243.74.23
   port: 2096
@@ -313,7 +321,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🇰🇭(KH)-92.243.74.3:8443
+- name: TROJAN-WS-TLS-🌐(XX)-92.243.74.3:8443
   type: trojan
   server: 92.243.74.3
   port: 8443
@@ -325,7 +333,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-135.84.74.27:8443
+- name: TROJAN-WS-TLS-🌐(XX)-135.84.74.27:8443
   type: trojan
   server: 135.84.74.27
   port: 8443
@@ -349,7 +357,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🇭🇰(HK)-104.129.167.255:8443
+- name: TROJAN-WS-TLS-🌐(XX)-104.129.167.255:8443
   type: trojan
   server: 104.129.167.255
   port: 8443
@@ -361,7 +369,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🌐(XX)-66.81.247.88:2083
+- name: TROJAN-WS-TLS-🇺🇸(US)-66.81.247.88:2083
   type: trojan
   server: 66.81.247.88
   port: 2083
@@ -445,7 +453,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🌐(XX)-63.141.128.66:2087
+- name: TROJAN-WS-TLS-🇺🇸(US)-63.141.128.66:2087
   type: trojan
   server: 63.141.128.66
   port: 2087
@@ -457,7 +465,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🌐(XX)-167.68.5.248:2087
+- name: TROJAN-WS-TLS-🇺🇸(US)-167.68.5.248:2087
   type: trojan
   server: 167.68.5.248
   port: 2087
@@ -481,7 +489,7 @@ proxies:
     path: /
     headers:
       Host: torjan.xn--xhq44j.eu.org
-- name: TROJAN-WS-TLS-🌐(XX)-104.129.166.131:8443
+- name: TROJAN-WS-TLS-🇭🇰(HK)-104.129.166.131:8443
   type: trojan
   server: 104.129.166.131
   port: 8443
@@ -505,7 +513,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🌐(XX)-130.250.137.63:2083
+- name: TROJAN-WS-TLS-🇺🇸(US)-130.250.137.63:2083
   type: trojan
   server: 130.250.137.63
   port: 2083
@@ -517,7 +525,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🌐(XX)-66.81.247.230:2096
+- name: TROJAN-WS-TLS-🇺🇸(US)-66.81.247.230:2096
   type: trojan
   server: 66.81.247.230
   port: 2096
@@ -529,7 +537,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🌐(XX)-192.0.54.221:2083
+- name: TROJAN-WS-TLS-🇺🇸(US)-192.0.54.221:2083
   type: trojan
   server: 192.0.54.221
   port: 2083
@@ -541,7 +549,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🌐(XX)-209.94.90.87:2087
+- name: TROJAN-WS-TLS-🇺🇸(US)-209.94.90.87:2087
   type: trojan
   server: 209.94.90.87
   port: 2087
@@ -553,46 +561,6 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgc.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
-  type: trojan
-  server: 172.67.181.173
-  port: 443
-  uuid: f282b878-8711-45a1-8c69-5564172123c1
-  network: ws
-  tls: true
-  servername: vpn.stupidworld.web.id
-  ws-opts:
-    path: /Stupid-World/103.106.228.126-2053
-    headers:
-      Host: vpn.stupidworld.web.id
-- name: TROJAN-TCP-TLS-🇭🇰(HK)-155.117.228.70:26193
-  type: trojan
-  server: 155.117.228.70
-  port: 26193
-  uuid: 7367d04e-4c59-4dff-a50e-12e730a09891
-  network: tcp
-  tls: true
-  servername: 155.117.228.70
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-104.248.18.1:1935
-  type: trojan
-  server: 104.248.18.1
-  port: 1935
-  uuid: 6gZh2JbfhQ
-  network: tcp
-  tls: true
-  servername: x1-germany-digitalocean-v2.devefun.org
-- name: TROJAN-WS-TLS-🇨🇦(CA)-104.17.148.22:443
-  type: trojan
-  server: 104.17.148.22
-  port: 443
-  uuid: ZU%290ryc%24VSrG
-  network: ws
-  tls: true
-  servername: uk2WbO0iKx3IyI4i9WjdYU6Y-O28ET7o.pagEs.DeV
-  ws-opts:
-    path: /trg2dhGAnG15ULOP7i?ed=2560
-    headers:
-      Host: uk2WbO0iKx3IyI4i9WjdYU6Y-O28ET7o.pagEs.DeV
 - name: TROJAN-WS-TLS-🌐(XX)-www.speedtest.net:2083
   type: trojan
   server: www.speedtest.net
@@ -605,6 +573,30 @@ proxies:
     path: /trLb3dWHIEtHE7MPUs/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=
     headers:
       Host: FreemnM.paNOtosu.StORe
+- name: TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
+  type: trojan
+  server: 172.67.181.173
+  port: 443
+  uuid: f282b878-8711-45a1-8c69-5564172123c1
+  network: ws
+  tls: true
+  servername: vpn.stupidworld.web.id
+  ws-opts:
+    path: /Stupid-World/103.106.228.126-2053
+    headers:
+      Host: vpn.stupidworld.web.id
+- name: TROJAN-WS-TLS-🇨🇦(CA)-104.17.148.22:443
+  type: trojan
+  server: 104.17.148.22
+  port: 443
+  uuid: ZU%290ryc%24VSrG
+  network: ws
+  tls: true
+  servername: uk2WbO0iKx3IyI4i9WjdYU6Y-O28ET7o.pagEs.DeV
+  ws-opts:
+    path: /trg2dhGAnG15ULOP7i?ed=2560
+    headers:
+      Host: uk2WbO0iKx3IyI4i9WjdYU6Y-O28ET7o.pagEs.DeV
 - name: TROJAN-TCP-TLS-🇨🇦(CA)-104.18.3.108:8443
   type: trojan
   server: 104.18.3.108
@@ -613,7 +605,7 @@ proxies:
   network: tcp
   tls: false
   servername: ocost-dy.wmlefl.cc
-- name: TROJAN-TCP-TLS-🌐(XX)-66.81.247.230:2096
+- name: TROJAN-TCP-TLS-🇺🇸(US)-66.81.247.230:2096
   type: trojan
   server: 66.81.247.230
   port: 2096
@@ -621,7 +613,7 @@ proxies:
   network: tcp
   tls: false
   servername: epgc.aimercc.dpdns.org
-- name: TROJAN-TCP-TLS-🌐(XX)-176.124.223.92:443
+- name: TROJAN-TCP-TLS-🇨🇳(CN)-176.124.223.92:443
   type: trojan
   server: 176.124.223.92
   port: 443
@@ -629,7 +621,7 @@ proxies:
   network: tcp
   tls: false
   servername: epgc.aimercc.dpdns.org
-- name: TROJAN-TCP-TLS-🇰🇭(KH)-92.243.74.3:8443
+- name: TROJAN-TCP-TLS-🌐(XX)-92.243.74.3:8443
   type: trojan
   server: 92.243.74.3
   port: 8443
@@ -645,7 +637,7 @@ proxies:
   network: tcp
   tls: false
   servername: epgc.aimercc.dpdns.org
-- name: TROJAN-TCP-TLS-🌐(XX)-5.182.84.229:2087
+- name: TROJAN-TCP-TLS-🇷🇺(RU)-5.182.84.229:2087
   type: trojan
   server: 5.182.84.229
   port: 2087
@@ -653,7 +645,7 @@ proxies:
   network: tcp
   tls: false
   servername: epgc.aimercc.dpdns.org
-- name: TROJAN-TCP-TLS-🌐(XX)-103.116.7.103:2083
+- name: TROJAN-TCP-TLS-🇺🇸(US)-103.116.7.103:2083
   type: trojan
   server: 103.116.7.103
   port: 2083
@@ -669,7 +661,7 @@ proxies:
   network: tcp
   tls: false
   servername: epgc.aimercc.dpdns.org
-- name: TROJAN-TCP-TLS-🌐(XX)-5.182.85.255:2096
+- name: TROJAN-TCP-TLS-🇷🇺(RU)-5.182.85.255:2096
   type: trojan
   server: 5.182.85.255
   port: 2096
@@ -693,6 +685,14 @@ proxies:
   network: tcp
   tls: false
   servername: vpn.stupidworld.web.id
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-104.248.18.1:1935
+  type: trojan
+  server: 104.248.18.1
+  port: 1935
+  uuid: 6gZh2JbfhQ
+  network: tcp
+  tls: true
+  servername: x1-germany-digitalocean-v2.devefun.org
 - name: TROJAN-WS-🌐(XX)-asia.artunnel57.host:80
   type: trojan
   server: asia.artunnel57.host
@@ -737,7 +737,7 @@ proxies:
   network: tcp
   tls: true
   servername: vzwzasc.cn
-- name: TROJAN-TCP-REALITY-🌐(XX)-176.32.39.29:443
+- name: TROJAN-TCP-REALITY-🇷🇺(RU)-176.32.39.29:443
   type: trojan
   server: 176.32.39.29
   port: 443
@@ -777,7 +777,7 @@ proxies:
   network: grpc
   tls: true
   servername: teo.history-paint.art
-- name: TROJAN-WS-TLS-🇸🇬(SG)-146.190.87.238:443
+- name: TROJAN-WS-TLS-🌐(XX)-146.190.87.238:443
   type: trojan
   server: 146.190.87.238
   port: 443
@@ -789,7 +789,7 @@ proxies:
     path: /
     headers:
       Host: aka.ms
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.70.33.164:22222
+- name: TROJAN-TCP-TLS-🌐(XX)-3.70.33.164:22222
   type: trojan
   server: 3.70.33.164
   port: 22222
@@ -1037,7 +1037,7 @@ proxies:
     path: /profile/telegram@ssrsub
     headers:
       Host: cdn-node-oss-99.paofu.de
-- name: TROJAN-WS-🌐(XX)-79.137.195.203:2053
+- name: TROJAN-WS-🇳🇱(NL)-79.137.195.203:2053
   type: trojan
   server: 79.137.195.203
   port: 2053
@@ -1049,7 +1049,7 @@ proxies:
     path: /TELEGRAM_BYA_CHANEL_RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS?ed=2048
     headers:
       Host: 79.137.195.203
-- name: TROJAN-TCP-TLS-🌐(XX)-94.131.20.3:443
+- name: TROJAN-TCP-TLS-🇺🇸(US)-94.131.20.3:443
   type: trojan
   server: 94.131.20.3
   port: 443
@@ -1065,7 +1065,7 @@ proxies:
   network: tcp
   tls: true
   servername: us2.vpn.ong
-- name: TROJAN-TCP-TLS-🌐(XX)-91.195.240.94:443
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-91.195.240.94:443
   type: trojan
   server: 91.195.240.94
   port: 443
@@ -1117,7 +1117,7 @@ proxies:
     path: /profile/telegram@ssrsub
     headers:
       Host: cdn-node-oss-99.paofu.de
-- name: TROJAN-WS-🌐(XX)-79.137.195.203:443
+- name: TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
   type: trojan
   server: 79.137.195.203
   port: 443
@@ -1185,7 +1185,7 @@ proxies:
   network: tcp
   tls: true
   servername: www.baidu.com
-- name: TROJAN-TCP-TLS-🌐(XX)-43.206.140.241:443
+- name: TROJAN-TCP-TLS-🇯🇵(JP)-43.206.140.241:443
   type: trojan
   server: 43.206.140.241
   port: 443
@@ -1273,7 +1273,7 @@ proxies:
     path: /profile/telegram@ssrsub
     headers:
       Host: cdn-node-oss-99.paofu.de
-- name: TROJAN-TCP-TLS-🇨🇳(CN)-111.47.212.170:20139
+- name: TROJAN-TCP-TLS-🌐(XX)-111.47.212.170:20139
   type: trojan
   server: 111.47.212.170
   port: 20139
@@ -1281,7 +1281,7 @@ proxies:
   network: tcp
   tls: true
   servername: z139.hongkongnode.top
-- name: TROJAN-TCP-TLS-🇨🇳(CN)-111.47.212.170:63985
+- name: TROJAN-TCP-TLS-🌐(XX)-111.47.212.170:63985
   type: trojan
   server: 111.47.212.170
   port: 63985
@@ -1373,7 +1373,7 @@ proxies:
     path: /profile/telegram@ssrsub
     headers:
       Host: cdn-node-oss-99.paofu.de
-- name: TROJAN-WS-TLS-🌐(XX)-69.84.182.18:8443
+- name: TROJAN-WS-TLS-🇺🇸(US)-69.84.182.18:8443
   type: trojan
   server: 69.84.182.18
   port: 8443
@@ -1565,7 +1565,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgb.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🌐(XX)-108.165.152.66:2083
+- name: TROJAN-WS-TLS-🇮🇳(IN)-108.165.152.66:2083
   type: trojan
   server: 108.165.152.66
   port: 2083
@@ -1577,7 +1577,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgb.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-160.79.105.160:8443
+- name: TROJAN-WS-TLS-🌐(XX)-160.79.105.160:8443
   type: trojan
   server: 160.79.105.160
   port: 8443
@@ -1613,7 +1613,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgb.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🇨🇦(CA)-172.67.77.127:443
+- name: TROJAN-WS-TLS-🌐(XX)-172.67.77.127:443
   type: trojan
   server: 172.67.77.127
   port: 443
@@ -1673,7 +1673,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgb.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-199.34.228.178:8443
+- name: TROJAN-WS-TLS-🌐(XX)-199.34.228.178:8443
   type: trojan
   server: 199.34.228.178
   port: 8443
@@ -1685,7 +1685,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgb.aimercc.dpdns.org
-- name: TROJAN-WS-TLS-🌐(XX)-27.50.48.189:2083
+- name: TROJAN-WS-TLS-🇭🇰(HK)-27.50.48.189:2083
   type: trojan
   server: 27.50.48.189
   port: 2083
@@ -1721,7 +1721,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: epgb.aimercc.dpdns.org
-- name: TROJAN-TCP-TLS-🌐(XX)-70.34.206.32:443
+- name: TROJAN-TCP-TLS-🇸🇪(SE)-70.34.206.32:443
   type: trojan
   server: 70.34.206.32
   port: 443
@@ -1729,7 +1729,7 @@ proxies:
   network: tcp
   tls: true
   servername: z-v2-077787.kailib.com
-- name: TROJAN-TCP-TLS-🌐(XX)-95.179.245.249:443
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-95.179.245.249:443
   type: trojan
   server: 95.179.245.249
   port: 443
@@ -1749,7 +1749,7 @@ proxies:
     path: /?--Telegram--Viturey--Telegram--Viturey--
     headers:
       Host: muddy-frost-4e2d.vpnetwork3567.workers.dev
-- name: TROJAN-WS-🌐(XX)-79.137.195.203:8080
+- name: TROJAN-WS-🇳🇱(NL)-79.137.195.203:8080
   type: trojan
   server: 79.137.195.203
   port: 8080
@@ -1761,7 +1761,7 @@ proxies:
     path: /TELEGRAM_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-jKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JkVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKvPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
     headers:
       Host: 79.137.195.203
-- name: TROJAN-TCP-TLS-🌐(XX)-35.77.216.3:443
+- name: TROJAN-TCP-TLS-🇯🇵(JP)-35.77.216.3:443
   type: trojan
   server: 35.77.216.3
   port: 443
@@ -1769,7 +1769,7 @@ proxies:
   network: tcp
   tls: true
   servername: broker.superpokemon.com
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.68.13.106:1935
+- name: TROJAN-TCP-TLS-🌐(XX)-51.68.13.106:1935
   type: trojan
   server: 51.68.13.106
   port: 1935
@@ -1777,7 +1777,7 @@ proxies:
   network: tcp
   tls: true
   servername: x1fr-ovh.devefun.net
-- name: TROJAN-WS-🌐(XX)-79.137.195.203:53391
+- name: TROJAN-WS-🇳🇱(NL)-79.137.195.203:53391
   type: trojan
   server: 79.137.195.203
   port: 53391
@@ -1789,7 +1789,7 @@ proxies:
     path: /RK_VPS?ed=2048
     headers:
       Host: 79.137.195.203
-- name: TROJAN-WS-🌐(XX)-79.137.195.203:882
+- name: TROJAN-WS-🇳🇱(NL)-79.137.195.203:882
   type: trojan
   server: 79.137.195.203
   port: 882
@@ -1801,7 +1801,7 @@ proxies:
     path: /TELEGRAM_BYA_CHANEL_RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS?ed=2048
     headers:
       Host: 79.137.195.203
-- name: TROJAN-WS-🌐(XX)-79.137.195.203:2020
+- name: TROJAN-WS-🇳🇱(NL)-79.137.195.203:2020
   type: trojan
   server: 79.137.195.203
   port: 2020
@@ -1813,7 +1813,7 @@ proxies:
     path: /TELEGRAM_BYA_CHANEL_RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS?ed=2048
     headers:
       Host: 79.137.195.203
-- name: TROJAN-GRPC-REALITY-🌐(XX)-79.137.195.203:8080
+- name: TROJAN-GRPC-REALITY-🇳🇱(NL)-79.137.195.203:8080
   type: trojan
   server: 79.137.195.203
   port: 8080
@@ -1869,7 +1869,7 @@ proxies:
     path: /TELEGRAM_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-jKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JkVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKvPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
     headers:
       Host: www.zula.ir
-- name: TROJAN-WS-🌐(XX)-79.137.195.203:443
+- name: TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
   type: trojan
   server: 79.137.195.203
   port: 443
@@ -1881,7 +1881,7 @@ proxies:
     path: /TELEGRAM_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
     headers:
       Host: 79.137.195.203
-- name: TROJAN-TCP-🌐(XX)-104.16.130.249:443
+- name: TROJAN-TCP-🇨🇦(CA)-104.16.130.249:443
   type: trojan
   server: 104.16.130.249
   port: 443
@@ -1941,7 +1941,7 @@ proxies:
   network: tcp
   tls: false
   servername: 104.17.148.22
-- name: TROJAN-WS-🌐(XX)-79.137.195.203:443
+- name: TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
   type: trojan
   server: 79.137.195.203
   port: 443
@@ -2025,7 +2025,7 @@ proxies:
     path: /TELEGRAM_BYA_CHANEL_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
     headers:
       Host: www.zula.ir
-- name: TROJAN-WS-🌐(XX)-79.137.195.203:443
+- name: TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
   type: trojan
   server: 79.137.195.203
   port: 443
@@ -2189,7 +2189,7 @@ proxies:
   network: tcp
   tls: false
   servername: pAges.dEv.
-- name: TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.108:443
+- name: TROJAN-WS-TLS-🌐(XX)-104.21.72.108:443
   type: trojan
   server: 104.21.72.108
   port: 443
@@ -2245,7 +2245,7 @@ proxies:
     path: /Neoxide-X/194.87.62.236-443
     headers:
       Host: vipren.biz.id
-- name: TROJAN-WS-TLS-🌐(XX)-104.16.225.24:443
+- name: TROJAN-WS-TLS-🇨🇦(CA)-104.16.225.24:443
   type: trojan
   server: 104.16.225.24
   port: 443
@@ -2265,7 +2265,7 @@ proxies:
   network: tcp
   tls: false
   servername: ha.lii2010.us.kg
-- name: TROJAN-TCP-TLS-🌐(XX)-162.159.128.104:443
+- name: TROJAN-TCP-TLS-🇨🇦(CA)-162.159.128.104:443
   type: trojan
   server: 162.159.128.104
   port: 443
@@ -2273,7 +2273,7 @@ proxies:
   network: tcp
   tls: false
   servername: ha.lii2010.us.kg
-- name: TROJAN-WS-TLS-🌐(XX)-104.18.34.21:2053
+- name: TROJAN-WS-TLS-🇨🇦(CA)-104.18.34.21:2053
   type: trojan
   server: 104.18.34.21
   port: 2053
@@ -2285,7 +2285,7 @@ proxies:
     path: /trEjWhhuRjwiMwSbDN/ZGUucmFkaWNhbGx5LnBybw==
     headers:
       Host: bpB-worKER-paneL1-e4p.pAGes.dEV
-- name: TROJAN-TCP-TLS-🌐(XX)-104.21.30.195:443
+- name: TROJAN-TCP-TLS-🇨🇦(CA)-104.21.30.195:443
   type: trojan
   server: 104.21.30.195
   port: 443
@@ -2293,7 +2293,7 @@ proxies:
   network: tcp
   tls: true
   servername: 403b3611-99BC-43B7-88D7-26eD5d0825a9-3.PagES.DEv
-- name: TROJAN-WS-TLS-🌐(XX)-104.26.4.60:443
+- name: TROJAN-WS-TLS-🇨🇦(CA)-104.26.4.60:443
   type: trojan
   server: 104.26.4.60
   port: 443
@@ -2313,7 +2313,7 @@ proxies:
   network: tcp
   tls: true
   servername: cf.090227.xyz
-- name: TROJAN-TCP-TLS-🌐(XX)-23.227.60.8:443
+- name: TROJAN-TCP-TLS-🇨🇦(CA)-23.227.60.8:443
   type: trojan
   server: 23.227.60.8
   port: 443
@@ -2409,7 +2409,7 @@ proxies:
     path: /profile/telegram@ssrsub
     headers:
       Host: cdn-node-oss-99.paofu.de
-- name: TROJAN-WS-TLS-🌐(XX)-104.16.159.3:443
+- name: TROJAN-WS-TLS-🇨🇦(CA)-104.16.159.3:443
   type: trojan
   server: 104.16.159.3
   port: 443
@@ -2421,7 +2421,7 @@ proxies:
     path: 6b777a91
     headers:
       Host: bangladeshipatri.com
-- name: TROJAN-TCP-TLS-🌐(XX)-94.131.20.3:443
+- name: TROJAN-TCP-TLS-🇺🇸(US)-94.131.20.3:443
   type: trojan
   server: 94.131.20.3
   port: 443
@@ -2437,7 +2437,7 @@ proxies:
   network: tcp
   tls: true
   servername: x1ams-scaleway.devefun.net
-- name: TROJAN-WS-TLS-🌐(XX)-104.21.72.109:443
+- name: TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443
   type: trojan
   server: 104.21.72.109
   port: 443
@@ -2449,7 +2449,7 @@ proxies:
     path: /Stupid-World/103.106.228.126-2053
     headers:
       Host: vpn.stupidworld.web.id
-- name: TROJAN-WS-TLS-🌐(XX)-104.21.72.109:443
+- name: TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443
   type: trojan
   server: 104.21.72.109
   port: 443
@@ -2697,7 +2697,7 @@ proxies:
     path: /TELEGRAM_BYA_CHANEL_RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS?ed=2048
     headers:
       Host: www.zula.ir
-- name: TROJAN-TCP-TLS-🇨🇭(CH)-141.227.138.29:1935
+- name: TROJAN-TCP-TLS-🌐(XX)-141.227.138.29:1935
   type: trojan
   server: 141.227.138.29
   port: 1935
@@ -2713,7 +2713,7 @@ proxies:
   network: tcp
   tls: false
   servername: spdnetvip.get-service.ir
-- name: TROJAN-TCP-TLS-🌐(XX)-104.19.57.183:2096
+- name: TROJAN-TCP-TLS-🇨🇦(CA)-104.19.57.183:2096
   type: trojan
   server: 104.19.57.183
   port: 2096
@@ -2721,7 +2721,7 @@ proxies:
   network: tcp
   tls: true
   servername: juzi8186-sr1.pages.dev
-- name: TROJAN-TCP-TLS-🌐(XX)-3.76.154.119:443
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.76.154.119:443
   type: trojan
   server: 3.76.154.119
   port: 443
@@ -2805,7 +2805,7 @@ proxies:
     path: /trLwW5jwrnymnOdqki?ed=2560
     headers:
       Host: 104.17.148.22
-- name: TROJAN-WS-TLS-🌐(XX)-104.18.2.108:8443
+- name: TROJAN-WS-TLS-🇨🇦(CA)-104.18.2.108:8443
   type: trojan
   server: 104.18.2.108
   port: 8443
@@ -2849,7 +2849,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-13.36.252.221:22222
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.252.221:22222
   type: trojan
   server: 13.36.252.221
   port: 22222
@@ -2857,7 +2857,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-13.37.161.123:22222
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.161.123:22222
   type: trojan
   server: 13.37.161.123
   port: 22222
@@ -2865,7 +2865,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.204.11:22222
+- name: TROJAN-TCP-TLS-🌐(XX)-13.37.204.11:22222
   type: trojan
   server: 13.37.204.11
   port: 22222
@@ -2889,7 +2889,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-13.39.54.25:22222
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.54.25:22222
   type: trojan
   server: 13.39.54.25
   port: 22222
@@ -2905,7 +2905,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.45.174:22222
+- name: TROJAN-TCP-TLS-🌐(XX)-15.188.45.174:22222
   type: trojan
   server: 15.188.45.174
   port: 22222
@@ -2913,7 +2913,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-15.236.169.140:22222
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.169.140:22222
   type: trojan
   server: 15.236.169.140
   port: 22222
@@ -2929,7 +2929,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.5.224:22222
+- name: TROJAN-TCP-TLS-🌐(XX)-15.236.5.224:22222
   type: trojan
   server: 15.236.5.224
   port: 22222
@@ -2969,7 +2969,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.158.32.88:22222
+- name: TROJAN-TCP-TLS-🌐(XX)-18.158.32.88:22222
   type: trojan
   server: 18.158.32.88
   port: 22222
@@ -2977,7 +2977,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-18.184.151.107:22222
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.184.151.107:22222
   type: trojan
   server: 18.184.151.107
   port: 22222
@@ -2993,7 +2993,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-18.193.140.121:22222
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.193.140.121:22222
   type: trojan
   server: 18.193.140.121
   port: 22222
@@ -3009,7 +3009,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.121.145.31:22222
+- name: TROJAN-TCP-TLS-🌐(XX)-3.121.145.31:22222
   type: trojan
   server: 3.121.145.31
   port: 22222
@@ -3057,7 +3057,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.74.185.110:22222
+- name: TROJAN-TCP-TLS-🌐(XX)-3.74.185.110:22222
   type: trojan
   server: 3.74.185.110
   port: 22222
@@ -3081,7 +3081,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-3.76.184.58:22222
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.76.184.58:22222
   type: trojan
   server: 3.76.184.58
   port: 22222
@@ -3105,7 +3105,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-35.180.10.37:22222
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.180.10.37:22222
   type: trojan
   server: 35.180.10.37
   port: 22222
@@ -3113,7 +3113,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-35.181.13.3:22222
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.13.3:22222
   type: trojan
   server: 35.181.13.3
   port: 22222
@@ -3145,7 +3145,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-35.181.23.234:22222
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.23.234:22222
   type: trojan
   server: 35.181.23.234
   port: 22222
@@ -3185,7 +3185,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-51.44.56.77:22222
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.56.77:22222
   type: trojan
   server: 51.44.56.77
   port: 22222
@@ -3209,7 +3209,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-52.47.183.143:22222
+- name: TROJAN-TCP-TLS-🌐(XX)-52.47.183.143:22222
   type: trojan
   server: 52.47.183.143
   port: 22222
@@ -3225,7 +3225,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-63.177.155.28:22222
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.177.155.28:22222
   type: trojan
   server: 63.177.155.28
   port: 22222
@@ -3233,7 +3233,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-63.177.18.31:22222
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.177.18.31:22222
   type: trojan
   server: 63.177.18.31
   port: 22222
@@ -3241,7 +3241,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.177.30.247:22222
+- name: TROJAN-TCP-TLS-🌐(XX)-63.177.30.247:22222
   type: trojan
   server: 63.177.30.247
   port: 22222
@@ -3249,7 +3249,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-63.178.125.65:22222
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.178.125.65:22222
   type: trojan
   server: 63.178.125.65
   port: 22222
@@ -3313,7 +3313,7 @@ proxies:
     path: /TELEGRAM_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
     headers:
       Host: www.zula.ir
-- name: TROJAN-WS-🌐(XX)-79.137.195.203:443
+- name: TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
   type: trojan
   server: 79.137.195.203
   port: 443
@@ -3625,7 +3625,7 @@ proxies:
     path: /trjx5pNUl8ZquVi8r5/NDQuMjI0LjI0LjkxLDE4LjE4My4xNTguMjEx?ed?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN
     headers:
       Host: SchQqn0yHRRS34QN3a2k4i6G9xap1TpH.pAgEs.dEV
-- name: TROJAN-WS-🌐(XX)-79.137.195.203:443
+- name: TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
   type: trojan
   server: 79.137.195.203
   port: 443
@@ -3637,7 +3637,7 @@ proxies:
     path: /TELEGRAM_BYA_CHANEL_RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS?ed=2048
     headers:
       Host: 79.137.195.203
-- name: TROJAN-WS-🌐(XX)-79.137.195.203:2053
+- name: TROJAN-WS-🇳🇱(NL)-79.137.195.203:2053
   type: trojan
   server: 79.137.195.203
   port: 2053
@@ -3673,7 +3673,7 @@ proxies:
     path: /TELEGRAM_BYA_CHANEL_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
     headers:
       Host: www.zula.ir
-- name: TROJAN-WS-🌐(XX)-79.137.195.203:8443
+- name: TROJAN-WS-🇳🇱(NL)-79.137.195.203:8443
   type: trojan
   server: 79.137.195.203
   port: 8443
@@ -3685,7 +3685,7 @@ proxies:
     path: /TELEGRAM_BYA_CHANEL_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
     headers:
       Host: 79.137.195.203
-- name: TROJAN-WS-🌐(XX)-79.137.195.203:443
+- name: TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
   type: trojan
   server: 79.137.195.203
   port: 443
@@ -3697,7 +3697,7 @@ proxies:
     path: /TELEGRAM_BYA_CHANEL_RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS?ed=2048
     headers:
       Host: 79.137.195.203
-- name: TROJAN-GRPC-🌐(XX)-79.137.195.203:882
+- name: TROJAN-GRPC-🇳🇱(NL)-79.137.195.203:882
   type: trojan
   server: 79.137.195.203
   port: 882
@@ -3729,7 +3729,7 @@ proxies:
     path: /TELEGRAM_BYA_CHANEL_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
     headers:
       Host: www.zula.ir
-- name: TROJAN-TCP-TLS-🇹🇷(TR)-193.124.46.134:8441
+- name: TROJAN-TCP-TLS-🌐(XX)-193.124.46.134:8441
   type: trojan
   server: 193.124.46.134
   port: 8441
@@ -3741,10 +3741,11 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-TCP-TLS-🇭🇰(HK)-155.117.228.70:26193
   - TROJAN-TCP-TLS-🌐(XX)-us.blazeppn.info:443
-  - TROJAN-TCP-TLS-🌐(XX)-185.208.207.217:443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
   - TROJAN-TCP-TLS-🇺🇸(US)-192.3.107.252:443
-  - TROJAN-TCP-TLS-🌐(XX)-103.252.116.138:443
+  - TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
   - TROJAN-TCP-TLS-🇨🇳(CN)-36.156.102.125:447
   - TROJAN-TCP-TLS-🇨🇳(CN)-36.156.102.125:444
   - TROJAN-TCP-TLS-🇨🇳(CN)-36.156.102.78:409
@@ -3754,70 +3755,69 @@ proxy-groups:
   - TROJAN-TCP-TLS-🇨🇳(CN)-36.156.102.125:406
   - TROJAN-WS-TLS-🌐(XX)-172.67.214.21:443
   - TROJAN-TCP-TLS-🇨🇳(CN)-36.156.102.125:347
-  - TROJAN-TCP-TLS-🌐(XX)-36.156.102.67:22006
+  - TROJAN-TCP-TLS-🇨🇳(CN)-36.156.102.67:22006
   - TROJAN-WS-TLS-🇭🇺(HU)-141.11.203.168:443
   - TROJAN-WS-TLS-🇺🇸(US)-103.116.7.100:2087
   - TROJAN-WS-TLS-🌐(XX)-103.116.7.189:443
   - TROJAN-WS-TLS-🇺🇸(US)-103.116.7.235:443
-  - TROJAN-WS-TLS-🌐(XX)-103.116.7.103:2083
+  - TROJAN-WS-TLS-🇺🇸(US)-103.116.7.103:2083
   - TROJAN-WS-TLS-🇰🇿(KZ)-194.76.18.129:443
   - TROJAN-WS-TLS-🇷🇺(RU)-5.182.84.9:2087
-  - TROJAN-WS-TLS-🌐(XX)-77.232.140.114:2053
+  - TROJAN-WS-TLS-🇦🇪(AE)-77.232.140.114:2053
   - TROJAN-WS-TLS-🇷🇺(RU)-5.182.84.244:443
-  - TROJAN-WS-TLS-🌐(XX)-5.182.85.255:2096
-  - TROJAN-WS-TLS-🇷🇺(RU)-45.67.215.95:443
+  - TROJAN-WS-TLS-🇷🇺(RU)-5.182.85.255:2096
+  - TROJAN-WS-TLS-🌐(XX)-45.67.215.95:443
   - TROJAN-WS-TLS-🇷🇺(RU)-5.182.84.52:2083
-  - TROJAN-WS-TLS-🌐(XX)-5.182.84.229:2087
-  - TROJAN-WS-TLS-🌐(XX)-176.124.223.92:443
+  - TROJAN-WS-TLS-🇷🇺(RU)-5.182.84.229:2087
+  - TROJAN-WS-TLS-🇨🇳(CN)-176.124.223.92:443
   - TROJAN-WS-TLS-🇰🇭(KH)-92.243.75.49:2087
-  - TROJAN-WS-TLS-🌐(XX)-92.243.74.23:2096
-  - TROJAN-WS-TLS-🇰🇭(KH)-92.243.74.3:8443
-  - TROJAN-WS-TLS-🇺🇸(US)-135.84.74.27:8443
+  - TROJAN-WS-TLS-🇰🇭(KH)-92.243.74.23:2096
+  - TROJAN-WS-TLS-🌐(XX)-92.243.74.3:8443
+  - TROJAN-WS-TLS-🌐(XX)-135.84.74.27:8443
   - TROJAN-WS-TLS-🇺🇸(US)-167.68.4.199:2053
-  - TROJAN-WS-TLS-🇭🇰(HK)-104.129.167.255:8443
-  - TROJAN-WS-TLS-🌐(XX)-66.81.247.88:2083
+  - TROJAN-WS-TLS-🌐(XX)-104.129.167.255:8443
+  - TROJAN-WS-TLS-🇺🇸(US)-66.81.247.88:2083
   - TROJAN-WS-TLS-🌐(XX)-135.84.74.254:2083
   - TROJAN-WS-TLS-🇺🇸(US)-155.46.213.38:2083
   - TROJAN-WS-TLS-🇺🇸(US)-216.24.57.30:443
   - TROJAN-WS-TLS-🇨🇦(CA)-104.18.3.108:8443
   - TROJAN-WS-TLS-🇺🇸(US)-199.34.228.164:2087
   - TROJAN-WS-TLS-🇺🇸(US)-192.200.160.35:2083
-  - TROJAN-WS-TLS-🌐(XX)-63.141.128.66:2087
-  - TROJAN-WS-TLS-🌐(XX)-167.68.5.248:2087
+  - TROJAN-WS-TLS-🇺🇸(US)-63.141.128.66:2087
+  - TROJAN-WS-TLS-🇺🇸(US)-167.68.5.248:2087
   - TROJAN-WS-TLS-🇺🇸(US)-198.62.62.67:443
-  - TROJAN-WS-TLS-🌐(XX)-104.129.166.131:8443
+  - TROJAN-WS-TLS-🇭🇰(HK)-104.129.166.131:8443
   - TROJAN-WS-TLS-🇺🇸(US)-198.62.62.61:2083
-  - TROJAN-WS-TLS-🌐(XX)-130.250.137.63:2083
-  - TROJAN-WS-TLS-🌐(XX)-66.81.247.230:2096
-  - TROJAN-WS-TLS-🌐(XX)-192.0.54.221:2083
-  - TROJAN-WS-TLS-🌐(XX)-209.94.90.87:2087
-  - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
-  - TROJAN-TCP-TLS-🇭🇰(HK)-155.117.228.70:26193
-  - TROJAN-TCP-TLS-🇩🇪(DE)-104.248.18.1:1935
-  - TROJAN-WS-TLS-🇨🇦(CA)-104.17.148.22:443
+  - TROJAN-WS-TLS-🇺🇸(US)-130.250.137.63:2083
+  - TROJAN-WS-TLS-🇺🇸(US)-66.81.247.230:2096
+  - TROJAN-WS-TLS-🇺🇸(US)-192.0.54.221:2083
+  - TROJAN-WS-TLS-🇺🇸(US)-209.94.90.87:2087
   - TROJAN-WS-TLS-🌐(XX)-www.speedtest.net:2083
+  - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.17.148.22:443
   - TROJAN-TCP-TLS-🇨🇦(CA)-104.18.3.108:8443
-  - TROJAN-TCP-TLS-🌐(XX)-66.81.247.230:2096
-  - TROJAN-TCP-TLS-🌐(XX)-176.124.223.92:443
-  - TROJAN-TCP-TLS-🇰🇭(KH)-92.243.74.3:8443
+  - TROJAN-TCP-TLS-🇺🇸(US)-66.81.247.230:2096
+  - TROJAN-TCP-TLS-🇨🇳(CN)-176.124.223.92:443
+  - TROJAN-TCP-TLS-🌐(XX)-92.243.74.3:8443
   - TROJAN-TCP-TLS-🌐(XX)-135.84.74.254:2083
-  - TROJAN-TCP-TLS-🌐(XX)-5.182.84.229:2087
-  - TROJAN-TCP-TLS-🌐(XX)-103.116.7.103:2083
+  - TROJAN-TCP-TLS-🇷🇺(RU)-5.182.84.229:2087
+  - TROJAN-TCP-TLS-🇺🇸(US)-103.116.7.103:2083
   - TROJAN-TCP-TLS-🇺🇸(US)-103.116.7.100:2087
-  - TROJAN-TCP-TLS-🌐(XX)-5.182.85.255:2096
+  - TROJAN-TCP-TLS-🇷🇺(RU)-5.182.85.255:2096
   - TROJAN-TCP-TLS-🌐(XX)-172.67.214.21:443
   - TROJAN-TCP-TLS-🇨🇦(CA)-172.67.181.173:443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-104.248.18.1:1935
   - TROJAN-WS-🌐(XX)-asia.artunnel57.host:80
   - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.33.108:22223
   - TROJAN-TCP-TLS-🇩🇪(DE)-18.192.138.0:22223
   - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.129.207:22223
   - TROJAN-TCP-TLS-🇺🇸(US)-104.149.155.13:443
-  - TROJAN-TCP-REALITY-🌐(XX)-176.32.39.29:443
+  - TROJAN-TCP-REALITY-🇷🇺(RU)-176.32.39.29:443
   - TROJAN-WS-TLS-🌐(XX)-maradona_vpn14.history-paint.art:443
   - TROJAN-WS-TLS-🌐(XX)-maradona_vpn10.history-paint.art:443
   - TROJAN-GRPC-TLS-🌐(XX)-maradona_vpn.history-paint.art:443
-  - TROJAN-WS-TLS-🇸🇬(SG)-146.190.87.238:443
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.33.164:22222
+  - TROJAN-WS-TLS-🌐(XX)-146.190.87.238:443
+  - TROJAN-TCP-TLS-🌐(XX)-3.70.33.164:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.33.108:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-18.192.138.0:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.129.207:22222
@@ -3842,21 +3842,21 @@ proxy-groups:
   - TROJAN-WS-TLS-🌐(XX)-cdns.doon.eu.org:8443
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-ssrsub.cloudflare.182682.xyz:8443
-  - TROJAN-WS-🌐(XX)-79.137.195.203:2053
-  - TROJAN-TCP-TLS-🌐(XX)-94.131.20.3:443
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:2053
+  - TROJAN-TCP-TLS-🇺🇸(US)-94.131.20.3:443
   - TROJAN-TCP-TLS-🌐(XX)-us2.vpn.ong:443
-  - TROJAN-TCP-TLS-🌐(XX)-91.195.240.94:443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-91.195.240.94:443
   - TROJAN-TCP-TLS-🌐(XX)-srwes1-confeg.sbs:56679
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-fastcup.net:8443
   - TROJAN-WS-TLS-🌐(XX)-pubg.ac:8443
-  - TROJAN-WS-🌐(XX)-79.137.195.203:443
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
   - TROJAN-WS-TLS-🌐(XX)-172.67.207.27:443
   - TROJAN-WS-TLS-🌐(XX)-cdns.doon.eu.org:8443
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-ssrsub.cloudflare.182682.xyz:8443
   - TROJAN-TCP-TLS-🌐(XX)-36.151.251.24:32765
-  - TROJAN-TCP-TLS-🌐(XX)-43.206.140.241:443
+  - TROJAN-TCP-TLS-🇯🇵(JP)-43.206.140.241:443
   - TROJAN-TCP-TLS-🌐(XX)-stirring-parakeet.shiner427.skin:443
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-fastcup.net:8443
@@ -3864,8 +3864,8 @@ proxy-groups:
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-fastcup.net:8443
   - TROJAN-WS-TLS-🌐(XX)-pubg.ac:8443
-  - TROJAN-TCP-TLS-🇨🇳(CN)-111.47.212.170:20139
-  - TROJAN-TCP-TLS-🇨🇳(CN)-111.47.212.170:63985
+  - TROJAN-TCP-TLS-🌐(XX)-111.47.212.170:20139
+  - TROJAN-TCP-TLS-🌐(XX)-111.47.212.170:63985
   - TROJAN-WS-TLS-🌐(XX)-cdns.doon.eu.org:8443
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-ssrsub.cloudflare.182682.xyz:8443
@@ -3873,7 +3873,7 @@ proxy-groups:
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-ssrsub.cloudflare.182682.xyz:8443
   - TROJAN-WS-TLS-🇺🇸(US)-69.84.182.108:8443
-  - TROJAN-WS-TLS-🌐(XX)-69.84.182.18:8443
+  - TROJAN-WS-TLS-🇺🇸(US)-69.84.182.18:8443
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-fastcup.net:8443
@@ -3891,49 +3891,49 @@ proxy-groups:
   - TROJAN-TCP-TLS-🇸🇪(SE)-141.227.160.167:1935
   - TROJAN-WS-TLS-🇺🇸(US)-103.116.7.133:2083
   - TROJAN-WS-TLS-🇨🇦(CA)-104.19.60.99:2087
-  - TROJAN-WS-TLS-🌐(XX)-108.165.152.66:2083
-  - TROJAN-WS-TLS-🇺🇸(US)-160.79.105.160:8443
+  - TROJAN-WS-TLS-🇮🇳(IN)-108.165.152.66:2083
+  - TROJAN-WS-TLS-🌐(XX)-160.79.105.160:8443
   - TROJAN-WS-TLS-🇺🇸(US)-167.68.4.7:2053
   - TROJAN-WS-TLS-🇨🇦(CA)-172.64.34.52:2096
-  - TROJAN-WS-TLS-🇨🇦(CA)-172.67.77.127:443
+  - TROJAN-WS-TLS-🌐(XX)-172.67.77.127:443
   - TROJAN-WS-TLS-🇨🇦(CA)-173.245.59.109:2087
   - TROJAN-WS-TLS-🇦🇲(AM)-188.164.159.22:2096
   - TROJAN-WS-TLS-🇦🇲(AM)-188.164.159.43:2083
   - TROJAN-WS-TLS-🇺🇸(US)-192.200.160.35:2083
-  - TROJAN-WS-TLS-🇺🇸(US)-199.34.228.178:8443
-  - TROJAN-WS-TLS-🌐(XX)-27.50.48.189:2083
+  - TROJAN-WS-TLS-🌐(XX)-199.34.228.178:8443
+  - TROJAN-WS-TLS-🇭🇰(HK)-27.50.48.189:2083
   - TROJAN-WS-TLS-🇱🇺(LU)-45.80.209.25:81
   - TROJAN-WS-TLS-🇷🇺(RU)-5.182.84.52:2083
-  - TROJAN-TCP-TLS-🌐(XX)-70.34.206.32:443
-  - TROJAN-TCP-TLS-🌐(XX)-95.179.245.249:443
+  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.206.32:443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-95.179.245.249:443
   - TROJAN-WS-TLS-🌐(XX)-muddy-frost-4e2d.vpnetwork3567.workers.dev:443
-  - TROJAN-WS-🌐(XX)-79.137.195.203:8080
-  - TROJAN-TCP-TLS-🌐(XX)-35.77.216.3:443
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.68.13.106:1935
-  - TROJAN-WS-🌐(XX)-79.137.195.203:53391
-  - TROJAN-WS-🌐(XX)-79.137.195.203:882
-  - TROJAN-WS-🌐(XX)-79.137.195.203:2020
-  - TROJAN-GRPC-REALITY-🌐(XX)-79.137.195.203:8080
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:8080
+  - TROJAN-TCP-TLS-🇯🇵(JP)-35.77.216.3:443
+  - TROJAN-TCP-TLS-🌐(XX)-51.68.13.106:1935
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:53391
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:882
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:2020
+  - TROJAN-GRPC-REALITY-🇳🇱(NL)-79.137.195.203:8080
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
   - TROJAN-WS-🌐(XX)-www.zula.ir:80
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
   - TROJAN-WS-🌐(XX)-www.zula.ir:80
-  - TROJAN-WS-🌐(XX)-79.137.195.203:443
-  - TROJAN-TCP-🌐(XX)-104.16.130.249:443
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
+  - TROJAN-TCP-🇨🇦(CA)-104.16.130.249:443
   - TROJAN-TCP-🌐(XX)-185.148.104.114:443
   - TROJAN-TCP-🇪🇪(EE)-45.80.108.245:443
   - TROJAN-TCP-🇳🇱(NL)-94.242.229.89:443
   - TROJAN-TCP-🇨🇦(CA)-104.17.148.22:443
   - TROJAN-WS-TLS-🇨🇦(CA)-104.17.148.22:443
   - TROJAN-TCP-🇨🇦(CA)-104.17.148.22:443
-  - TROJAN-WS-🌐(XX)-79.137.195.203:443
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
   - TROJAN-WS-🌐(XX)-www.speedtest.net:8880
   - TROJAN-WS-🌐(XX)-www.zula.ir:8880
   - TROJAN-WS-🌐(XX)-www.speedtest.net:8880
   - TROJAN-WS-🌐(XX)-www.zula.ir:8880
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
   - TROJAN-WS-🌐(XX)-www.zula.ir:80
-  - TROJAN-WS-🌐(XX)-79.137.195.203:443
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
   - TROJAN-WS-🌐(XX)-www.zula.ir:80
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
@@ -3947,19 +3947,19 @@ proxy-groups:
   - TROJAN-WS-TLS-🇭🇰(HK)-103.160.204.1:443
   - TROJAN-WS-TLS-🇨🇦(CA)-104.20.19.168:2083
   - TROJAN-TCP-TLS-🌐(XX)-104.21.69.44:443
-  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.108:443
+  - TROJAN-WS-TLS-🌐(XX)-104.21.72.108:443
   - TROJAN-WS-TLS-🇨🇦(CA)-162.159.128.233:8443
   - TROJAN-WS-TLS-🌐(XX)-172.67.204.84:443
   - TROJAN-GRPC-TLS-🇮🇷(IR)-109.230.91.202:443
   - TROJAN-WS-TLS-🌐(XX)-vipren.biz.id:443
-  - TROJAN-WS-TLS-🌐(XX)-104.16.225.24:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.16.225.24:443
   - TROJAN-TCP-TLS-🇨🇦(CA)-104.18.69.126:443
-  - TROJAN-TCP-TLS-🌐(XX)-162.159.128.104:443
-  - TROJAN-WS-TLS-🌐(XX)-104.18.34.21:2053
-  - TROJAN-TCP-TLS-🌐(XX)-104.21.30.195:443
-  - TROJAN-WS-TLS-🌐(XX)-104.26.4.60:443
+  - TROJAN-TCP-TLS-🇨🇦(CA)-162.159.128.104:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.18.34.21:2053
+  - TROJAN-TCP-TLS-🇨🇦(CA)-104.21.30.195:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.26.4.60:443
   - TROJAN-TCP-TLS-🇨🇦(CA)-162.159.152.227:443
-  - TROJAN-TCP-TLS-🌐(XX)-23.227.60.8:443
+  - TROJAN-TCP-TLS-🇨🇦(CA)-23.227.60.8:443
   - TROJAN-WS-TLS-🌐(XX)-www.vpslook.com:443
   - TROJAN-XHTTP-TLS-🇳🇱(NL)-194.147.33.207:443
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
@@ -3968,11 +3968,11 @@ proxy-groups:
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-fastcup.net:8443
   - TROJAN-WS-TLS-🌐(XX)-pubg.ac:8443
-  - TROJAN-WS-TLS-🌐(XX)-104.16.159.3:443
-  - TROJAN-TCP-TLS-🌐(XX)-94.131.20.3:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.16.159.3:443
+  - TROJAN-TCP-TLS-🇺🇸(US)-94.131.20.3:443
   - TROJAN-TCP-TLS-🇳🇱(NL)-51.15.86.181:1935
-  - TROJAN-WS-TLS-🌐(XX)-104.21.72.109:443
-  - TROJAN-WS-TLS-🌐(XX)-104.21.72.109:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443
   - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
   - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
   - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
@@ -3993,10 +3993,10 @@ proxy-groups:
   - TROJAN-WS-TLS-🌐(XX)-www.speedtest.net:443
   - TROJAN-WS-🌐(XX)-www.speedtest.net:8880
   - TROJAN-WS-🌐(XX)-www.zula.ir:8880
-  - TROJAN-TCP-TLS-🇨🇭(CH)-141.227.138.29:1935
+  - TROJAN-TCP-TLS-🌐(XX)-141.227.138.29:1935
   - TROJAN-TCP-🌐(XX)-spdnetvip.get-service.ir:1496
-  - TROJAN-TCP-TLS-🌐(XX)-104.19.57.183:2096
-  - TROJAN-TCP-TLS-🌐(XX)-3.76.154.119:443
+  - TROJAN-TCP-TLS-🇨🇦(CA)-104.19.57.183:2096
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.154.119:443
   - TROJAN-TCP-TLS-🇨🇿(CZ)-85.255.9.247:1935
   - TROJAN-WS-🌐(XX)-www.speedtest.net:8880
   - TROJAN-WS-🌐(XX)-www.zula.ir:8880
@@ -4004,69 +4004,69 @@ proxy-groups:
   - TROJAN-WS-🌐(XX)-www.zula.ir:8880
   - TROJAN-TCP-TLS-🌐(XX)-x7-sweden-amazon-v2-ku4u8.devefun.org:1935
   - TROJAN-WS-🇨🇦(CA)-104.17.148.22:80
-  - TROJAN-WS-TLS-🌐(XX)-104.18.2.108:8443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.18.2.108:8443
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.77.162.60:22223
   - TROJAN-TCP-TLS-🇬🇧(GB)-35.178.160.100:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.126.85:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.247.35:22222
-  - TROJAN-TCP-TLS-🌐(XX)-13.36.252.221:22222
-  - TROJAN-TCP-TLS-🌐(XX)-13.37.161.123:22222
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.204.11:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.252.221:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.161.123:22222
+  - TROJAN-TCP-TLS-🌐(XX)-13.37.204.11:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.28.15:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.45.108:22222
-  - TROJAN-TCP-TLS-🌐(XX)-13.39.54.25:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.54.25:22222
   - TROJAN-TCP-TLS-🇬🇧(GB)-13.42.217.95:22222
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.45.174:22222
-  - TROJAN-TCP-TLS-🌐(XX)-15.236.169.140:22222
+  - TROJAN-TCP-TLS-🌐(XX)-15.188.45.174:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.169.140:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.29.84:22222
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.5.224:22222
+  - TROJAN-TCP-TLS-🌐(XX)-15.236.5.224:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.73.219:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.9.13:22222
   - TROJAN-TCP-TLS-🌐(XX)-18.153.87.172:22222
   - TROJAN-TCP-TLS-🌐(XX)-18.158.145.222:22222
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.158.32.88:22222
-  - TROJAN-TCP-TLS-🌐(XX)-18.184.151.107:22222
+  - TROJAN-TCP-TLS-🌐(XX)-18.158.32.88:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.184.151.107:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-18.185.152.164:22222
-  - TROJAN-TCP-TLS-🌐(XX)-18.193.140.121:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.140.121:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-18.197.119.26:22222
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.121.145.31:22222
+  - TROJAN-TCP-TLS-🌐(XX)-3.121.145.31:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.124.179.125:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.127.24.12:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.108.25:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.73.5:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.72.137.245:22222
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.74.185.110:22222
+  - TROJAN-TCP-TLS-🌐(XX)-3.74.185.110:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.75.161.52:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.75.2.219:22222
-  - TROJAN-TCP-TLS-🌐(XX)-3.76.184.58:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.184.58:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.77.162.60:22222
   - TROJAN-TCP-TLS-🌐(XX)-35.157.236.123:22222
-  - TROJAN-TCP-TLS-🌐(XX)-35.180.10.37:22222
-  - TROJAN-TCP-TLS-🌐(XX)-35.181.13.3:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.10.37:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.13.3:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.140:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.20.21:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.215.179:22222
-  - TROJAN-TCP-TLS-🌐(XX)-35.181.23.234:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.23.234:22222
   - TROJAN-TCP-TLS-🇸🇪(SE)-51.21.59.141:22222
   - TROJAN-TCP-TLS-🇬🇧(GB)-51.24.26.140:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.118.76:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.198.145:22222
-  - TROJAN-TCP-TLS-🌐(XX)-51.44.56.77:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.56.77:22222
   - TROJAN-TCP-TLS-🌐(XX)-52.28.160.100:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.154.155:22222
-  - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.183.143:22222
+  - TROJAN-TCP-TLS-🌐(XX)-52.47.183.143:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.67.30:22222
-  - TROJAN-TCP-TLS-🌐(XX)-63.177.155.28:22222
-  - TROJAN-TCP-TLS-🌐(XX)-63.177.18.31:22222
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.177.30.247:22222
-  - TROJAN-TCP-TLS-🌐(XX)-63.178.125.65:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.177.155.28:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.177.18.31:22222
+  - TROJAN-TCP-TLS-🌐(XX)-63.177.30.247:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.125.65:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.134.70:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.27.188:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.73.31:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.81.0:22222
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
   - TROJAN-WS-🌐(XX)-www.zula.ir:80
-  - TROJAN-WS-🌐(XX)-79.137.195.203:443
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
   - TROJAN-WS-TLS-🇨🇦(CA)-162.159.152.11:443
   - TROJAN-WS-TLS-🇪🇸(ES)-109.234.211.66:8443
   - TROJAN-TCP-TLS-🌐(XX)-pl-1.stunnel.cc:8441
@@ -4103,16 +4103,16 @@ proxy-groups:
   - TROJAN-TCP-TLS-🌐(XX)-f.522226.xyz:45601
   - TROJAN-TCP-TLS-🇷🇺(RU)-31.172.67.242:43118
   - TROJAN-WS-TLS-🇨🇦(CA)-104.21.80.1:443
-  - TROJAN-WS-🌐(XX)-79.137.195.203:443
-  - TROJAN-WS-🌐(XX)-79.137.195.203:2053
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:2053
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
   - TROJAN-WS-🌐(XX)-www.zula.ir:80
-  - TROJAN-WS-🌐(XX)-79.137.195.203:8443
-  - TROJAN-WS-🌐(XX)-79.137.195.203:443
-  - TROJAN-GRPC-🌐(XX)-79.137.195.203:882
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:8443
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
+  - TROJAN-GRPC-🇳🇱(NL)-79.137.195.203:882
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
   - TROJAN-WS-🌐(XX)-www.zula.ir:80
-  - TROJAN-TCP-TLS-🇹🇷(TR)-193.124.46.134:8441
+  - TROJAN-TCP-TLS-🌐(XX)-193.124.46.134:8441
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Gemini 2.5 Pro
@@ -4127,10 +4127,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-TCP-TLS-🇭🇰(HK)-155.117.228.70:26193
   - TROJAN-TCP-TLS-🌐(XX)-us.blazeppn.info:443
-  - TROJAN-TCP-TLS-🌐(XX)-185.208.207.217:443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
   - TROJAN-TCP-TLS-🇺🇸(US)-192.3.107.252:443
-  - TROJAN-TCP-TLS-🌐(XX)-103.252.116.138:443
+  - TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
   - TROJAN-TCP-TLS-🇨🇳(CN)-36.156.102.125:447
   - TROJAN-TCP-TLS-🇨🇳(CN)-36.156.102.125:444
   - TROJAN-TCP-TLS-🇨🇳(CN)-36.156.102.78:409
@@ -4140,70 +4141,69 @@ proxy-groups:
   - TROJAN-TCP-TLS-🇨🇳(CN)-36.156.102.125:406
   - TROJAN-WS-TLS-🌐(XX)-172.67.214.21:443
   - TROJAN-TCP-TLS-🇨🇳(CN)-36.156.102.125:347
-  - TROJAN-TCP-TLS-🌐(XX)-36.156.102.67:22006
+  - TROJAN-TCP-TLS-🇨🇳(CN)-36.156.102.67:22006
   - TROJAN-WS-TLS-🇭🇺(HU)-141.11.203.168:443
   - TROJAN-WS-TLS-🇺🇸(US)-103.116.7.100:2087
   - TROJAN-WS-TLS-🌐(XX)-103.116.7.189:443
   - TROJAN-WS-TLS-🇺🇸(US)-103.116.7.235:443
-  - TROJAN-WS-TLS-🌐(XX)-103.116.7.103:2083
+  - TROJAN-WS-TLS-🇺🇸(US)-103.116.7.103:2083
   - TROJAN-WS-TLS-🇰🇿(KZ)-194.76.18.129:443
   - TROJAN-WS-TLS-🇷🇺(RU)-5.182.84.9:2087
-  - TROJAN-WS-TLS-🌐(XX)-77.232.140.114:2053
+  - TROJAN-WS-TLS-🇦🇪(AE)-77.232.140.114:2053
   - TROJAN-WS-TLS-🇷🇺(RU)-5.182.84.244:443
-  - TROJAN-WS-TLS-🌐(XX)-5.182.85.255:2096
-  - TROJAN-WS-TLS-🇷🇺(RU)-45.67.215.95:443
+  - TROJAN-WS-TLS-🇷🇺(RU)-5.182.85.255:2096
+  - TROJAN-WS-TLS-🌐(XX)-45.67.215.95:443
   - TROJAN-WS-TLS-🇷🇺(RU)-5.182.84.52:2083
-  - TROJAN-WS-TLS-🌐(XX)-5.182.84.229:2087
-  - TROJAN-WS-TLS-🌐(XX)-176.124.223.92:443
+  - TROJAN-WS-TLS-🇷🇺(RU)-5.182.84.229:2087
+  - TROJAN-WS-TLS-🇨🇳(CN)-176.124.223.92:443
   - TROJAN-WS-TLS-🇰🇭(KH)-92.243.75.49:2087
-  - TROJAN-WS-TLS-🌐(XX)-92.243.74.23:2096
-  - TROJAN-WS-TLS-🇰🇭(KH)-92.243.74.3:8443
-  - TROJAN-WS-TLS-🇺🇸(US)-135.84.74.27:8443
+  - TROJAN-WS-TLS-🇰🇭(KH)-92.243.74.23:2096
+  - TROJAN-WS-TLS-🌐(XX)-92.243.74.3:8443
+  - TROJAN-WS-TLS-🌐(XX)-135.84.74.27:8443
   - TROJAN-WS-TLS-🇺🇸(US)-167.68.4.199:2053
-  - TROJAN-WS-TLS-🇭🇰(HK)-104.129.167.255:8443
-  - TROJAN-WS-TLS-🌐(XX)-66.81.247.88:2083
+  - TROJAN-WS-TLS-🌐(XX)-104.129.167.255:8443
+  - TROJAN-WS-TLS-🇺🇸(US)-66.81.247.88:2083
   - TROJAN-WS-TLS-🌐(XX)-135.84.74.254:2083
   - TROJAN-WS-TLS-🇺🇸(US)-155.46.213.38:2083
   - TROJAN-WS-TLS-🇺🇸(US)-216.24.57.30:443
   - TROJAN-WS-TLS-🇨🇦(CA)-104.18.3.108:8443
   - TROJAN-WS-TLS-🇺🇸(US)-199.34.228.164:2087
   - TROJAN-WS-TLS-🇺🇸(US)-192.200.160.35:2083
-  - TROJAN-WS-TLS-🌐(XX)-63.141.128.66:2087
-  - TROJAN-WS-TLS-🌐(XX)-167.68.5.248:2087
+  - TROJAN-WS-TLS-🇺🇸(US)-63.141.128.66:2087
+  - TROJAN-WS-TLS-🇺🇸(US)-167.68.5.248:2087
   - TROJAN-WS-TLS-🇺🇸(US)-198.62.62.67:443
-  - TROJAN-WS-TLS-🌐(XX)-104.129.166.131:8443
+  - TROJAN-WS-TLS-🇭🇰(HK)-104.129.166.131:8443
   - TROJAN-WS-TLS-🇺🇸(US)-198.62.62.61:2083
-  - TROJAN-WS-TLS-🌐(XX)-130.250.137.63:2083
-  - TROJAN-WS-TLS-🌐(XX)-66.81.247.230:2096
-  - TROJAN-WS-TLS-🌐(XX)-192.0.54.221:2083
-  - TROJAN-WS-TLS-🌐(XX)-209.94.90.87:2087
-  - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
-  - TROJAN-TCP-TLS-🇭🇰(HK)-155.117.228.70:26193
-  - TROJAN-TCP-TLS-🇩🇪(DE)-104.248.18.1:1935
-  - TROJAN-WS-TLS-🇨🇦(CA)-104.17.148.22:443
+  - TROJAN-WS-TLS-🇺🇸(US)-130.250.137.63:2083
+  - TROJAN-WS-TLS-🇺🇸(US)-66.81.247.230:2096
+  - TROJAN-WS-TLS-🇺🇸(US)-192.0.54.221:2083
+  - TROJAN-WS-TLS-🇺🇸(US)-209.94.90.87:2087
   - TROJAN-WS-TLS-🌐(XX)-www.speedtest.net:2083
+  - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.17.148.22:443
   - TROJAN-TCP-TLS-🇨🇦(CA)-104.18.3.108:8443
-  - TROJAN-TCP-TLS-🌐(XX)-66.81.247.230:2096
-  - TROJAN-TCP-TLS-🌐(XX)-176.124.223.92:443
-  - TROJAN-TCP-TLS-🇰🇭(KH)-92.243.74.3:8443
+  - TROJAN-TCP-TLS-🇺🇸(US)-66.81.247.230:2096
+  - TROJAN-TCP-TLS-🇨🇳(CN)-176.124.223.92:443
+  - TROJAN-TCP-TLS-🌐(XX)-92.243.74.3:8443
   - TROJAN-TCP-TLS-🌐(XX)-135.84.74.254:2083
-  - TROJAN-TCP-TLS-🌐(XX)-5.182.84.229:2087
-  - TROJAN-TCP-TLS-🌐(XX)-103.116.7.103:2083
+  - TROJAN-TCP-TLS-🇷🇺(RU)-5.182.84.229:2087
+  - TROJAN-TCP-TLS-🇺🇸(US)-103.116.7.103:2083
   - TROJAN-TCP-TLS-🇺🇸(US)-103.116.7.100:2087
-  - TROJAN-TCP-TLS-🌐(XX)-5.182.85.255:2096
+  - TROJAN-TCP-TLS-🇷🇺(RU)-5.182.85.255:2096
   - TROJAN-TCP-TLS-🌐(XX)-172.67.214.21:443
   - TROJAN-TCP-TLS-🇨🇦(CA)-172.67.181.173:443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-104.248.18.1:1935
   - TROJAN-WS-🌐(XX)-asia.artunnel57.host:80
   - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.33.108:22223
   - TROJAN-TCP-TLS-🇩🇪(DE)-18.192.138.0:22223
   - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.129.207:22223
   - TROJAN-TCP-TLS-🇺🇸(US)-104.149.155.13:443
-  - TROJAN-TCP-REALITY-🌐(XX)-176.32.39.29:443
+  - TROJAN-TCP-REALITY-🇷🇺(RU)-176.32.39.29:443
   - TROJAN-WS-TLS-🌐(XX)-maradona_vpn14.history-paint.art:443
   - TROJAN-WS-TLS-🌐(XX)-maradona_vpn10.history-paint.art:443
   - TROJAN-GRPC-TLS-🌐(XX)-maradona_vpn.history-paint.art:443
-  - TROJAN-WS-TLS-🇸🇬(SG)-146.190.87.238:443
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.33.164:22222
+  - TROJAN-WS-TLS-🌐(XX)-146.190.87.238:443
+  - TROJAN-TCP-TLS-🌐(XX)-3.70.33.164:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.33.108:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-18.192.138.0:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.129.207:22222
@@ -4228,21 +4228,21 @@ proxy-groups:
   - TROJAN-WS-TLS-🌐(XX)-cdns.doon.eu.org:8443
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-ssrsub.cloudflare.182682.xyz:8443
-  - TROJAN-WS-🌐(XX)-79.137.195.203:2053
-  - TROJAN-TCP-TLS-🌐(XX)-94.131.20.3:443
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:2053
+  - TROJAN-TCP-TLS-🇺🇸(US)-94.131.20.3:443
   - TROJAN-TCP-TLS-🌐(XX)-us2.vpn.ong:443
-  - TROJAN-TCP-TLS-🌐(XX)-91.195.240.94:443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-91.195.240.94:443
   - TROJAN-TCP-TLS-🌐(XX)-srwes1-confeg.sbs:56679
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-fastcup.net:8443
   - TROJAN-WS-TLS-🌐(XX)-pubg.ac:8443
-  - TROJAN-WS-🌐(XX)-79.137.195.203:443
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
   - TROJAN-WS-TLS-🌐(XX)-172.67.207.27:443
   - TROJAN-WS-TLS-🌐(XX)-cdns.doon.eu.org:8443
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-ssrsub.cloudflare.182682.xyz:8443
   - TROJAN-TCP-TLS-🌐(XX)-36.151.251.24:32765
-  - TROJAN-TCP-TLS-🌐(XX)-43.206.140.241:443
+  - TROJAN-TCP-TLS-🇯🇵(JP)-43.206.140.241:443
   - TROJAN-TCP-TLS-🌐(XX)-stirring-parakeet.shiner427.skin:443
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-fastcup.net:8443
@@ -4250,8 +4250,8 @@ proxy-groups:
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-fastcup.net:8443
   - TROJAN-WS-TLS-🌐(XX)-pubg.ac:8443
-  - TROJAN-TCP-TLS-🇨🇳(CN)-111.47.212.170:20139
-  - TROJAN-TCP-TLS-🇨🇳(CN)-111.47.212.170:63985
+  - TROJAN-TCP-TLS-🌐(XX)-111.47.212.170:20139
+  - TROJAN-TCP-TLS-🌐(XX)-111.47.212.170:63985
   - TROJAN-WS-TLS-🌐(XX)-cdns.doon.eu.org:8443
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-ssrsub.cloudflare.182682.xyz:8443
@@ -4259,7 +4259,7 @@ proxy-groups:
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-ssrsub.cloudflare.182682.xyz:8443
   - TROJAN-WS-TLS-🇺🇸(US)-69.84.182.108:8443
-  - TROJAN-WS-TLS-🌐(XX)-69.84.182.18:8443
+  - TROJAN-WS-TLS-🇺🇸(US)-69.84.182.18:8443
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-fastcup.net:8443
@@ -4277,49 +4277,49 @@ proxy-groups:
   - TROJAN-TCP-TLS-🇸🇪(SE)-141.227.160.167:1935
   - TROJAN-WS-TLS-🇺🇸(US)-103.116.7.133:2083
   - TROJAN-WS-TLS-🇨🇦(CA)-104.19.60.99:2087
-  - TROJAN-WS-TLS-🌐(XX)-108.165.152.66:2083
-  - TROJAN-WS-TLS-🇺🇸(US)-160.79.105.160:8443
+  - TROJAN-WS-TLS-🇮🇳(IN)-108.165.152.66:2083
+  - TROJAN-WS-TLS-🌐(XX)-160.79.105.160:8443
   - TROJAN-WS-TLS-🇺🇸(US)-167.68.4.7:2053
   - TROJAN-WS-TLS-🇨🇦(CA)-172.64.34.52:2096
-  - TROJAN-WS-TLS-🇨🇦(CA)-172.67.77.127:443
+  - TROJAN-WS-TLS-🌐(XX)-172.67.77.127:443
   - TROJAN-WS-TLS-🇨🇦(CA)-173.245.59.109:2087
   - TROJAN-WS-TLS-🇦🇲(AM)-188.164.159.22:2096
   - TROJAN-WS-TLS-🇦🇲(AM)-188.164.159.43:2083
   - TROJAN-WS-TLS-🇺🇸(US)-192.200.160.35:2083
-  - TROJAN-WS-TLS-🇺🇸(US)-199.34.228.178:8443
-  - TROJAN-WS-TLS-🌐(XX)-27.50.48.189:2083
+  - TROJAN-WS-TLS-🌐(XX)-199.34.228.178:8443
+  - TROJAN-WS-TLS-🇭🇰(HK)-27.50.48.189:2083
   - TROJAN-WS-TLS-🇱🇺(LU)-45.80.209.25:81
   - TROJAN-WS-TLS-🇷🇺(RU)-5.182.84.52:2083
-  - TROJAN-TCP-TLS-🌐(XX)-70.34.206.32:443
-  - TROJAN-TCP-TLS-🌐(XX)-95.179.245.249:443
+  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.206.32:443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-95.179.245.249:443
   - TROJAN-WS-TLS-🌐(XX)-muddy-frost-4e2d.vpnetwork3567.workers.dev:443
-  - TROJAN-WS-🌐(XX)-79.137.195.203:8080
-  - TROJAN-TCP-TLS-🌐(XX)-35.77.216.3:443
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.68.13.106:1935
-  - TROJAN-WS-🌐(XX)-79.137.195.203:53391
-  - TROJAN-WS-🌐(XX)-79.137.195.203:882
-  - TROJAN-WS-🌐(XX)-79.137.195.203:2020
-  - TROJAN-GRPC-REALITY-🌐(XX)-79.137.195.203:8080
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:8080
+  - TROJAN-TCP-TLS-🇯🇵(JP)-35.77.216.3:443
+  - TROJAN-TCP-TLS-🌐(XX)-51.68.13.106:1935
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:53391
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:882
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:2020
+  - TROJAN-GRPC-REALITY-🇳🇱(NL)-79.137.195.203:8080
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
   - TROJAN-WS-🌐(XX)-www.zula.ir:80
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
   - TROJAN-WS-🌐(XX)-www.zula.ir:80
-  - TROJAN-WS-🌐(XX)-79.137.195.203:443
-  - TROJAN-TCP-🌐(XX)-104.16.130.249:443
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
+  - TROJAN-TCP-🇨🇦(CA)-104.16.130.249:443
   - TROJAN-TCP-🌐(XX)-185.148.104.114:443
   - TROJAN-TCP-🇪🇪(EE)-45.80.108.245:443
   - TROJAN-TCP-🇳🇱(NL)-94.242.229.89:443
   - TROJAN-TCP-🇨🇦(CA)-104.17.148.22:443
   - TROJAN-WS-TLS-🇨🇦(CA)-104.17.148.22:443
   - TROJAN-TCP-🇨🇦(CA)-104.17.148.22:443
-  - TROJAN-WS-🌐(XX)-79.137.195.203:443
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
   - TROJAN-WS-🌐(XX)-www.speedtest.net:8880
   - TROJAN-WS-🌐(XX)-www.zula.ir:8880
   - TROJAN-WS-🌐(XX)-www.speedtest.net:8880
   - TROJAN-WS-🌐(XX)-www.zula.ir:8880
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
   - TROJAN-WS-🌐(XX)-www.zula.ir:80
-  - TROJAN-WS-🌐(XX)-79.137.195.203:443
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
   - TROJAN-WS-🌐(XX)-www.zula.ir:80
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
@@ -4333,19 +4333,19 @@ proxy-groups:
   - TROJAN-WS-TLS-🇭🇰(HK)-103.160.204.1:443
   - TROJAN-WS-TLS-🇨🇦(CA)-104.20.19.168:2083
   - TROJAN-TCP-TLS-🌐(XX)-104.21.69.44:443
-  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.108:443
+  - TROJAN-WS-TLS-🌐(XX)-104.21.72.108:443
   - TROJAN-WS-TLS-🇨🇦(CA)-162.159.128.233:8443
   - TROJAN-WS-TLS-🌐(XX)-172.67.204.84:443
   - TROJAN-GRPC-TLS-🇮🇷(IR)-109.230.91.202:443
   - TROJAN-WS-TLS-🌐(XX)-vipren.biz.id:443
-  - TROJAN-WS-TLS-🌐(XX)-104.16.225.24:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.16.225.24:443
   - TROJAN-TCP-TLS-🇨🇦(CA)-104.18.69.126:443
-  - TROJAN-TCP-TLS-🌐(XX)-162.159.128.104:443
-  - TROJAN-WS-TLS-🌐(XX)-104.18.34.21:2053
-  - TROJAN-TCP-TLS-🌐(XX)-104.21.30.195:443
-  - TROJAN-WS-TLS-🌐(XX)-104.26.4.60:443
+  - TROJAN-TCP-TLS-🇨🇦(CA)-162.159.128.104:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.18.34.21:2053
+  - TROJAN-TCP-TLS-🇨🇦(CA)-104.21.30.195:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.26.4.60:443
   - TROJAN-TCP-TLS-🇨🇦(CA)-162.159.152.227:443
-  - TROJAN-TCP-TLS-🌐(XX)-23.227.60.8:443
+  - TROJAN-TCP-TLS-🇨🇦(CA)-23.227.60.8:443
   - TROJAN-WS-TLS-🌐(XX)-www.vpslook.com:443
   - TROJAN-XHTTP-TLS-🇳🇱(NL)-194.147.33.207:443
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
@@ -4354,11 +4354,11 @@ proxy-groups:
   - TROJAN-WS-TLS-🌐(XX)-csgo.com:8443
   - TROJAN-WS-TLS-🌐(XX)-fastcup.net:8443
   - TROJAN-WS-TLS-🌐(XX)-pubg.ac:8443
-  - TROJAN-WS-TLS-🌐(XX)-104.16.159.3:443
-  - TROJAN-TCP-TLS-🌐(XX)-94.131.20.3:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.16.159.3:443
+  - TROJAN-TCP-TLS-🇺🇸(US)-94.131.20.3:443
   - TROJAN-TCP-TLS-🇳🇱(NL)-51.15.86.181:1935
-  - TROJAN-WS-TLS-🌐(XX)-104.21.72.109:443
-  - TROJAN-WS-TLS-🌐(XX)-104.21.72.109:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443
   - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
   - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
   - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
@@ -4379,10 +4379,10 @@ proxy-groups:
   - TROJAN-WS-TLS-🌐(XX)-www.speedtest.net:443
   - TROJAN-WS-🌐(XX)-www.speedtest.net:8880
   - TROJAN-WS-🌐(XX)-www.zula.ir:8880
-  - TROJAN-TCP-TLS-🇨🇭(CH)-141.227.138.29:1935
+  - TROJAN-TCP-TLS-🌐(XX)-141.227.138.29:1935
   - TROJAN-TCP-🌐(XX)-spdnetvip.get-service.ir:1496
-  - TROJAN-TCP-TLS-🌐(XX)-104.19.57.183:2096
-  - TROJAN-TCP-TLS-🌐(XX)-3.76.154.119:443
+  - TROJAN-TCP-TLS-🇨🇦(CA)-104.19.57.183:2096
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.154.119:443
   - TROJAN-TCP-TLS-🇨🇿(CZ)-85.255.9.247:1935
   - TROJAN-WS-🌐(XX)-www.speedtest.net:8880
   - TROJAN-WS-🌐(XX)-www.zula.ir:8880
@@ -4390,69 +4390,69 @@ proxy-groups:
   - TROJAN-WS-🌐(XX)-www.zula.ir:8880
   - TROJAN-TCP-TLS-🌐(XX)-x7-sweden-amazon-v2-ku4u8.devefun.org:1935
   - TROJAN-WS-🇨🇦(CA)-104.17.148.22:80
-  - TROJAN-WS-TLS-🌐(XX)-104.18.2.108:8443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.18.2.108:8443
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.77.162.60:22223
   - TROJAN-TCP-TLS-🇬🇧(GB)-35.178.160.100:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.126.85:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.247.35:22222
-  - TROJAN-TCP-TLS-🌐(XX)-13.36.252.221:22222
-  - TROJAN-TCP-TLS-🌐(XX)-13.37.161.123:22222
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.204.11:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.252.221:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.161.123:22222
+  - TROJAN-TCP-TLS-🌐(XX)-13.37.204.11:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.28.15:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.45.108:22222
-  - TROJAN-TCP-TLS-🌐(XX)-13.39.54.25:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.54.25:22222
   - TROJAN-TCP-TLS-🇬🇧(GB)-13.42.217.95:22222
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.45.174:22222
-  - TROJAN-TCP-TLS-🌐(XX)-15.236.169.140:22222
+  - TROJAN-TCP-TLS-🌐(XX)-15.188.45.174:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.169.140:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.29.84:22222
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.5.224:22222
+  - TROJAN-TCP-TLS-🌐(XX)-15.236.5.224:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.73.219:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.9.13:22222
   - TROJAN-TCP-TLS-🌐(XX)-18.153.87.172:22222
   - TROJAN-TCP-TLS-🌐(XX)-18.158.145.222:22222
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.158.32.88:22222
-  - TROJAN-TCP-TLS-🌐(XX)-18.184.151.107:22222
+  - TROJAN-TCP-TLS-🌐(XX)-18.158.32.88:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.184.151.107:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-18.185.152.164:22222
-  - TROJAN-TCP-TLS-🌐(XX)-18.193.140.121:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.140.121:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-18.197.119.26:22222
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.121.145.31:22222
+  - TROJAN-TCP-TLS-🌐(XX)-3.121.145.31:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.124.179.125:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.127.24.12:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.108.25:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.73.5:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.72.137.245:22222
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.74.185.110:22222
+  - TROJAN-TCP-TLS-🌐(XX)-3.74.185.110:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.75.161.52:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.75.2.219:22222
-  - TROJAN-TCP-TLS-🌐(XX)-3.76.184.58:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.184.58:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.77.162.60:22222
   - TROJAN-TCP-TLS-🌐(XX)-35.157.236.123:22222
-  - TROJAN-TCP-TLS-🌐(XX)-35.180.10.37:22222
-  - TROJAN-TCP-TLS-🌐(XX)-35.181.13.3:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.10.37:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.13.3:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.140:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.20.21:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.215.179:22222
-  - TROJAN-TCP-TLS-🌐(XX)-35.181.23.234:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.23.234:22222
   - TROJAN-TCP-TLS-🇸🇪(SE)-51.21.59.141:22222
   - TROJAN-TCP-TLS-🇬🇧(GB)-51.24.26.140:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.118.76:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.198.145:22222
-  - TROJAN-TCP-TLS-🌐(XX)-51.44.56.77:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.56.77:22222
   - TROJAN-TCP-TLS-🌐(XX)-52.28.160.100:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.154.155:22222
-  - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.183.143:22222
+  - TROJAN-TCP-TLS-🌐(XX)-52.47.183.143:22222
   - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.67.30:22222
-  - TROJAN-TCP-TLS-🌐(XX)-63.177.155.28:22222
-  - TROJAN-TCP-TLS-🌐(XX)-63.177.18.31:22222
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.177.30.247:22222
-  - TROJAN-TCP-TLS-🌐(XX)-63.178.125.65:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.177.155.28:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.177.18.31:22222
+  - TROJAN-TCP-TLS-🌐(XX)-63.177.30.247:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.125.65:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.134.70:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.27.188:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.73.31:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.81.0:22222
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
   - TROJAN-WS-🌐(XX)-www.zula.ir:80
-  - TROJAN-WS-🌐(XX)-79.137.195.203:443
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
   - TROJAN-WS-TLS-🇨🇦(CA)-162.159.152.11:443
   - TROJAN-WS-TLS-🇪🇸(ES)-109.234.211.66:8443
   - TROJAN-TCP-TLS-🌐(XX)-pl-1.stunnel.cc:8441
@@ -4489,15 +4489,15 @@ proxy-groups:
   - TROJAN-TCP-TLS-🌐(XX)-f.522226.xyz:45601
   - TROJAN-TCP-TLS-🇷🇺(RU)-31.172.67.242:43118
   - TROJAN-WS-TLS-🇨🇦(CA)-104.21.80.1:443
-  - TROJAN-WS-🌐(XX)-79.137.195.203:443
-  - TROJAN-WS-🌐(XX)-79.137.195.203:2053
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:2053
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
   - TROJAN-WS-🌐(XX)-www.zula.ir:80
-  - TROJAN-WS-🌐(XX)-79.137.195.203:8443
-  - TROJAN-WS-🌐(XX)-79.137.195.203:443
-  - TROJAN-GRPC-🌐(XX)-79.137.195.203:882
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:8443
+  - TROJAN-WS-🇳🇱(NL)-79.137.195.203:443
+  - TROJAN-GRPC-🇳🇱(NL)-79.137.195.203:882
   - TROJAN-WS-🌐(XX)-www.speedtest.net:80
   - TROJAN-WS-🌐(XX)-www.zula.ir:80
-  - TROJAN-TCP-TLS-🇹🇷(TR)-193.124.46.134:8441
+  - TROJAN-TCP-TLS-🌐(XX)-193.124.46.134:8441
 rules:
 - MATCH, 📲 TROJAN-Selector
