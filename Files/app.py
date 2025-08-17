@@ -11,7 +11,6 @@ from urllib.parse import urlparse, parse_qs, unquote, quote, urlunparse
 # --- Configuration ---
 SUBSCRIPTION_LIST_FILE = "Subscription-List.txt"
 OUTPUT_DIR_SPLITTED = "../Splitted-By-Protocol"
-# OUTPUT_FILE_ALL_SUB = "../All_Configs_Sub.txt" # This is a temporary file, should not be a constant
 GEO_API_BATCH_URL = "http://ip-api.com/batch"
 REQUEST_TIMEOUT = 20
 MAX_RETRIES = 3
@@ -116,7 +115,7 @@ def parse_and_validate_config(line):
             if transport not in VALID_V_TRANSPORTS or security not in VALID_V_SECURITY: return None, None
             
             result = {'protocol': protocol_name, 'host': host, 'port': port, 'transport': transport, 'security': security, 'method': None}
-            unique_key = (protocol_name, str(host).lower(), port, user_id, transport, security, qs.get("path", [""])[0], sni)
+            unique_key = (protocol_name, str(host).lower(), port, user_id, transport, security, qs.get("path", [""`)[0], sni)
 
         elif protocol_name == "ss":
             parsed_url = urlparse(line)
@@ -187,7 +186,9 @@ async def main():
         print(f"Geolocation fetching complete. Successfully located {sum(1 for v in geo_data.values() if v != 'N/A')} of {len(all_hosts)} hosts.")
 
         processed_by_protocol = {name: [] for name in PROTOCOLS.keys()}
-        all_processed_configs = []
+        
+        # --- NEW: Set to track used names to prevent duplicates for Clash ---
+        used_names = set()
 
         for config in valid_configs:
             country_info = format_country_info(geo_data.get(config['host'], 'N/A'))
@@ -200,8 +201,17 @@ async def main():
                 name_parts.append(config['method'].replace('-ietf', '').replace('aes-256-gcm', 'A256GCM').replace('chacha20-poly1305', 'C20P'))
 
             name_parts.extend([country_info, f"{config['host']}:{config['port']}"])
-            new_name = "-".join(name_parts)
             
+            # --- NEW: Name collision handling ---
+            base_name = "-".join(name_parts)
+            new_name = base_name
+            counter = 1
+            while new_name in used_names:
+                new_name = f"{base_name}_{counter}"
+                counter += 1
+            used_names.add(new_name)
+            # --- END NEW ---
+
             if config['protocol'] == 'vmess':
                 vmess_data = config['data']
                 vmess_data['ps'] = new_name
@@ -215,20 +225,17 @@ async def main():
                 except Exception:
                     new_line = re.sub(r'#.*', '', config['original_line']) + '#' + quote(new_name)
             
+            if config['protocol'] not in processed_by_protocol:
+                processed_by_protocol[config['protocol']] = []
             processed_by_protocol[config['protocol']].append(new_line)
-            all_processed_configs.append(new_line)
 
     print("Writing processed configs to files...")
     for protocol_name, configs in processed_by_protocol.items():
         if configs:
-            # Write plain text file
             file_path_plain = os.path.join(OUTPUT_DIR_SPLITTED, f"{protocol_name}.txt")
             async with aiofiles.open(file_path_plain, mode='w', encoding='utf-8') as f:
                 await f.write('\n'.join(configs))
             print(f"  - Wrote {len(configs)} configs to {file_path_plain}")
-
-    # This script no longer creates any combined subscription files.
-    # That is handled by create_base64_lists.py
 
     print("Processing finished successfully.")
 
