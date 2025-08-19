@@ -4,10 +4,19 @@ allow-lan: false
 mode: rule
 log-level: info
 external-controller: 0.0.0.0:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  default-nameserver:
+  - 1.1.1.1
+  - 1.0.0.1
+  fallback:
+  - 8.8.8.8
+  - 8.8.4.4
 proxies:
-- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124:443
+- name: VMESS-WS-TLS-🇵🇱(PL)-146.59.55.50:443
   type: vmess
-  server: 57.129.24.124
+  server: 146.59.55.50
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -17,22 +26,22 @@ proxies:
   ws-opts:
     path: /linkvws
     headers:
-      Host: aveiror.com
-  servername: aveiror.com
-- name: VMESS-WS-TLS-🌐(XX)-rak1ding.89060004.xyz:2083
+      Host: o.metuji.com
+  servername: o.metuji.com
+- name: VMESS-WS-TLS-🇨🇦(CA)-15.235.50.172:443
   type: vmess
-  server: rak1ding.89060004.xyz
-  port: 2083
-  uuid: 75d96365-1229-4fc4-dbda-855717f876cf
+  server: 15.235.50.172
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   network: ws
   tls: true
   ws-opts:
-    path: /
+    path: /linkvws
     headers:
-      Host: rak1d3.988988.shop
-  servername: rak1d3.988988.shop
+      Host: baradiha.com
+  servername: baradiha.com
 - name: VMESS-WS-TLS-🇨🇦(CA)-23.162.200.227:443
   type: vmess
   server: 23.162.200.227
@@ -47,9 +56,9 @@ proxies:
     headers:
       Host: ''
   servername: ''
-- name: VMESS-WS-TLS-🌐(XX)-57.129.24.125:443
+- name: VMESS-WS-TLS-🇺🇸(US)-38.99.82.193:443
   type: vmess
-  server: 57.129.24.125
+  server: 38.99.82.193
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -59,8 +68,64 @@ proxies:
   ws-opts:
     path: /linkvws
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: tilebani.com
+  servername: tilebani.com
+- name: VMESS-WS-TLS-🇨🇦(CA)-15.235.83.227:443
+  type: vmess
+  server: 15.235.83.227
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mankadmu.com
+  servername: mankadmu.com
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.25.20:443
+  type: vmess
+  server: 57.129.25.20
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 1
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: 57.129.25.20
+  servername: 57.129.25.20
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.64.238:443
+  type: vmess
+  server: 57.129.64.238
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: kapelleng.com
+  servername: kapelleng.com
+- name: VMESS-WS-TLS-🇰🇷(KR)-202.79.161.188:443
+  type: vmess
+  server: 202.79.161.188
+  port: 443
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /path/170733132233
+    headers:
+      Host: www.32278117.xyz
+  servername: www.32278117.xyz
 - name: VMESS-WS-TLS-🇨🇦(CA)-134.195.198.147:443
   type: vmess
   server: 134.195.198.147
@@ -75,6 +140,132 @@ proxies:
     headers:
       Host: inna.cfd
   servername: inna.cfd
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.25.22:443
+  type: vmess
+  server: 57.129.25.22
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: o.metuji.com
+  servername: o.metuji.com
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124:443
+  type: vmess
+  server: 57.129.24.124
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aveiror.com
+  servername: aveiror.com
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.25.25:443
+  type: vmess
+  server: 57.129.25.25
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: f.khilei.com
+  servername: f.khilei.com
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.28.65:443
+  type: vmess
+  server: 57.129.28.65
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: kapelleng.com
+  servername: kapelleng.com
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.24.125:443
+  type: vmess
+  server: 57.129.24.125
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: VMESS-WS-TLS-🌐(XX)-57.129.28.69:443
+  type: vmess
+  server: 57.129.28.69
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: baradiha.com
+  servername: baradiha.com
+- name: VMESS-WS-TLS-🇨🇦(CA)-15.235.83.228:443
+  type: vmess
+  server: 15.235.83.228
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+  servername: ''
+- name: VMESS-WS-TLS-🌐(XX)-vc.fly.dev:443
+  type: vmess
+  server: vc.fly.dev
+  port: 443
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  alterId: 32
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /vc
+    headers:
+      Host: vc.fly.dev
+  servername: vc.fly.dev
+- name: VMESS-WS-TLS-🌐(XX)-rak1ding.89060004.xyz:2083
+  type: vmess
+  server: rak1ding.89060004.xyz
+  port: 2083
+  uuid: 75d96365-1229-4fc4-dbda-855717f876cf
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: rak1d3.988988.shop
+  servername: rak1d3.988988.shop
 - name: VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2096
   type: vmess
   server: cc2dash.89060004.xyz
@@ -117,7 +308,7 @@ proxies:
     headers:
       Host: cc2dash.89060004.xyz
   servername: cc2dash.89060004.xyz
-- name: VMESS-WS-TLS-🇨🇦(CA)-104.21.3.189:2053
+- name: VMESS-WS-TLS-🌐(XX)-104.21.3.189:2053
   type: vmess
   server: 104.21.3.189
   port: 2053
@@ -145,7 +336,7 @@ proxies:
     headers:
       Host: cc2d3.89060004.xyz
   servername: cc2d3.89060004.xyz
-- name: VMESS-WS-TLS-🌐(XX)-203.30.191.19:443
+- name: VMESS-WS-TLS-🇧🇿(BZ)-203.30.191.19:443
   type: vmess
   server: 203.30.191.19
   port: 443
@@ -215,7 +406,7 @@ proxies:
     headers:
       Host: 202.61.141.130
   servername: 202.61.141.130
-- name: VMESS-WS-TLS-🇸🇬(SG)-103.253.26.20:443
+- name: VMESS-WS-TLS-🌐(XX)-103.253.26.20:443
   type: vmess
   server: 103.253.26.20
   port: 443
@@ -243,6 +434,174 @@ proxies:
     headers:
       Host: test13.huvicloud.com
   servername: test13.huvicloud.com
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124:443_1
+  type: vmess
+  server: 57.129.24.124
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aveiror.com
+  servername: aveiror.com
+- name: VMESS-WS-TLS-🌐(XX)-141.101.113.6:443
+  type: vmess
+  server: 141.101.113.6
+  port: 443
+  uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
+    headers:
+      Host: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
+  servername: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
+- name: VMESS-WS-TLS-🇨🇦(CA)-104.25.174.85:443
+  type: vmess
+  server: 104.25.174.85
+  port: 443
+  uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
+    headers:
+      Host: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
+  servername: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.24.125:443_1
+  type: vmess
+  server: 57.129.24.125
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.24.125:443_2
+  type: vmess
+  server: 57.129.24.125
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aveiror.com
+  servername: aveiror.com
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.25.25:443_1
+  type: vmess
+  server: 57.129.25.25
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: f.khiLEi.coM
+  servername: f.khiLEi.coM
+- name: VMESS-WS-TLS-🌐(XX)-v2ray.codefyinc.com:443
+  type: vmess
+  server: v2ray.codefyinc.com
+  port: 443
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /vmessws
+    headers:
+      Host: v2ray.codefyinc.com
+  servername: v2ray.codefyinc.com
+- name: VMESS-WS-TLS-🌐(XX)-www.speedtest.net:443
+  type: vmess
+  server: www.speedtest.net
+  port: 443
+  uuid: b7acf44f-3c3a-430c-8ed0-fb64ccc9a13a
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /linkvkwss
+    headers:
+      Host: BLaZE-fRA-64.BLaZECLOuD.sitE
+  servername: BLaZE-fRA-64.BLaZECLOuD.sitE
+- name: VMESS-WS-TLS-🌐(XX)-ip.sb:443
+  type: vmess
+  server: ip.sb
+  port: 443
+  uuid: 28548ef7-983d-4ee8-8bd6-7d71d905b5a2
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /28548ef7-983d-4ee8-8bd6-7d71d905b5a2-vmess
+    headers:
+      Host: fr.atlen.dpdns.org
+  servername: fr.atlen.dpdns.org
+- name: VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2083_2
+  type: vmess
+  server: cc2dash.89060004.xyz
+  port: 2083
+  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: cc2d3.89060004.xyz
+  servername: cc2d3.89060004.xyz
+- name: VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2096_2
+  type: vmess
+  server: cc2dash.89060004.xyz
+  port: 2096
+  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: cc2dash.89060004.xyz
+  servername: cc2dash.89060004.xyz
+- name: VMESS-WS-TLS-🇺🇸(US)-188.114.99.48:443
+  type: vmess
+  server: 188.114.99.48
+  port: 443
+  uuid: for-MahsaNG-vpn-only
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /--tel---mahsa_net---/
+    headers:
+      Host: Q7.19kalA.co
+  servername: Q7.19kalA.co
 - name: VMESS-WS-TLS-🌐(XX)-hk2.lrzdx.uk:443
   type: vmess
   server: hk2.lrzdx.uk
@@ -327,7 +686,7 @@ proxies:
     headers:
       Host: gs03-1.guoshi1520.com
   servername: gs03-1.guoshi1520.com
-- name: VMESS-WS-TLS-🌐(XX)-104.19.32.0:443
+- name: VMESS-WS-TLS-🇨🇦(CA)-104.19.32.0:443
   type: vmess
   server: 104.19.32.0
   port: 443
@@ -439,7 +798,7 @@ proxies:
     headers:
       Host: xcmg19.dtkj0328.com
   servername: xcmg19.dtkj0328.com
-- name: VMESS-WS-TLS-🌐(XX)-172.67.198.187:443
+- name: VMESS-WS-TLS-🇨🇦(CA)-172.67.198.187:443
   type: vmess
   server: 172.67.198.187
   port: 443
@@ -523,317 +882,61 @@ proxies:
     headers:
       Host: xcf036.facai2024.com
   servername: xcf036.facai2024.com
-- name: VMESS-WS-TLS-🌐(XX)-v2ray.codefyinc.com:443
+- name: VMESS-WS-TLS-🌐(XX)-join.melodyfreenet2.shop:443
   type: vmess
-  server: v2ray.codefyinc.com
+  server: join.melodyfreenet2.shop
   port: 443
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  uuid: 50ef0b23-f14b-459f-97aa-d0f346189d2a
   alterId: 0
   cipher: auto
   network: ws
   tls: true
   ws-opts:
-    path: /vmessws
-    headers:
-      Host: v2ray.codefyinc.com
-  servername: v2ray.codefyinc.com
-- name: VMESS-WS-TLS-🌐(XX)-www.speedtest.net:443
-  type: vmess
-  server: www.speedtest.net
-  port: 443
-  uuid: b7acf44f-3c3a-430c-8ed0-fb64ccc9a13a
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /linkvkwss
-    headers:
-      Host: BLaZE-fRA-64.BLaZECLOuD.sitE
-  servername: BLaZE-fRA-64.BLaZECLOuD.sitE
-- name: VMESS-WS-TLS-🌐(XX)-ip.sb:443
-  type: vmess
-  server: ip.sb
-  port: 443
-  uuid: 28548ef7-983d-4ee8-8bd6-7d71d905b5a2
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /28548ef7-983d-4ee8-8bd6-7d71d905b5a2-vmess
-    headers:
-      Host: fr.atlen.dpdns.org
-  servername: fr.atlen.dpdns.org
-- name: VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2083_2
-  type: vmess
-  server: cc2dash.89060004.xyz
-  port: 2083
-  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: cc2d3.89060004.xyz
-  servername: cc2d3.89060004.xyz
-- name: VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2096_2
-  type: vmess
-  server: cc2dash.89060004.xyz
-  port: 2096
-  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: cc2dash.89060004.xyz
-  servername: cc2dash.89060004.xyz
-- name: VMESS-WS-TLS-🇺🇸(US)-188.114.99.48:443
-  type: vmess
-  server: 188.114.99.48
-  port: 443
-  uuid: for-MahsaNG-vpn-only
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /--tel---mahsa_net---/
-    headers:
-      Host: Q7.19kalA.co
-  servername: Q7.19kalA.co
-- name: VMESS-WS-TLS-🇵🇱(PL)-146.59.55.50:443
-  type: vmess
-  server: 146.59.55.50
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: o.metuji.com
-  servername: o.metuji.com
-- name: VMESS-WS-TLS-🇨🇦(CA)-15.235.50.172:443
-  type: vmess
-  server: 15.235.50.172
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: baradiha.com
-  servername: baradiha.com
-- name: VMESS-WS-TLS-🌐(XX)-38.99.82.193:443
-  type: vmess
-  server: 38.99.82.193
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: tilebani.com
-  servername: tilebani.com
-- name: VMESS-WS-TLS-🇨🇦(CA)-15.235.83.227:443
-  type: vmess
-  server: 15.235.83.227
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: mankadmu.com
-  servername: mankadmu.com
-- name: VMESS-WS-TLS-🌐(XX)-57.129.25.20:443
-  type: vmess
-  server: 57.129.25.20
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: 57.129.25.20
-  servername: 57.129.25.20
-- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.64.238:443
-  type: vmess
-  server: 57.129.64.238
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: kapelleng.com
-  servername: kapelleng.com
-- name: VMESS-WS-TLS-🌐(XX)-202.79.161.188:443
-  type: vmess
-  server: 202.79.161.188
-  port: 443
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /path/170733132233
-    headers:
-      Host: www.32278117.xyz
-  servername: www.32278117.xyz
-- name: VMESS-WS-TLS-🌐(XX)-57.129.25.22:443
-  type: vmess
-  server: 57.129.25.22
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: o.metuji.com
-  servername: o.metuji.com
-- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124:443_1
-  type: vmess
-  server: 57.129.24.124
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aveiror.com
-  servername: aveiror.com
-- name: VMESS-WS-TLS-🌐(XX)-57.129.25.25:443
-  type: vmess
-  server: 57.129.25.25
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: f.khilei.com
-  servername: f.khilei.com
-- name: VMESS-WS-TLS-🌐(XX)-57.129.28.65:443
-  type: vmess
-  server: 57.129.28.65
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: kapelleng.com
-  servername: kapelleng.com
-- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.28.69:443
-  type: vmess
-  server: 57.129.28.69
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: baradiha.com
-  servername: baradiha.com
-- name: VMESS-WS-TLS-🌐(XX)-15.235.83.228:443
-  type: vmess
-  server: 15.235.83.228
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /linkvws
+    path: /mail/
     headers:
       Host: ''
   servername: ''
-- name: VMESS-WS-TLS-🌐(XX)-vc.fly.dev:443
+- name: VMESS-WS-TLS-🌐(XX)-mkh3.blanku.me:443
   type: vmess
-  server: vc.fly.dev
+  server: mkh3.blanku.me
   port: 443
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  alterId: 32
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /vc
-    headers:
-      Host: vc.fly.dev
-  servername: vc.fly.dev
-- name: VMESS-WS-TLS-🌐(XX)-104.25.174.85:443
-  type: vmess
-  server: 104.25.174.85
-  port: 443
-  uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+  uuid: 245e7c23-0057-47a4-f2f0-07772e3338fa
   alterId: 0
   cipher: auto
   network: ws
   tls: true
   ws-opts:
-    path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
+    path: /wss26268?ed=2048
     headers:
-      Host: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
-  servername: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
-- name: VMESS-WS-TLS-🇺🇸(US)-141.101.113.6:443
+      Host: freeservice.blanku.me
+  servername: freeservice.blanku.me
+- name: VMESS-WS-TLS-🌐(XX)-mute-math-d64e.0e503992ad7026.WOrKERs.deV:443
   type: vmess
-  server: 141.101.113.6
+  server: mute-math-d64e.0e503992ad7026.WOrKERs.deV
   port: 443
-  uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   network: ws
   tls: true
   ws-opts:
-    path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
+    path: /aveiror.com:443/linkvws
     headers:
-      Host: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
-  servername: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
-- name: VMESS-WS-TLS-🌐(XX)-57.129.24.125:443_1
+      Host: mute-math-d64e.0e503992ad7026.woRKERS.DeV
+  servername: mute-math-d64e.0e503992ad7026.woRKERS.DeV
+- name: VMESS-GRPC-TLS-🌐(XX)-cf2.serikadeh.ir:443
   type: vmess
-  server: 57.129.24.125
+  server: cf2.serikadeh.ir
+  port: 443
+  uuid: 2ad98d2b-5d49-415c-9bfe-5b0873578fd0
+  alterId: 0
+  cipher: auto
+  network: grpc
+  tls: true
+  servername: cf2.serikadeh.ir
+- name: VMESS-WS-TLS-🇨🇦(CA)-172.67.71.160:443
+  type: vmess
+  server: 172.67.71.160
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -843,11 +946,53 @@ proxies:
   ws-opts:
     path: /linkvws
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: VMESS-WS-TLS-🌐(XX)-57.129.24.125:443_2
+      Host: nelly.homes
+  servername: nelly.homes
+- name: VMESS-WS-TLS-🌐(XX)-aio.unlimited.biz.id:443
   type: vmess
-  server: 57.129.24.125
+  server: aio.unlimited.biz.id
+  port: 443
+  uuid: f282b878-8711-45a1-8c69-5564172123c1
+  alterId: 0
+  cipher: zero
+  network: ws
+  tls: true
+  ws-opts:
+    path: /aioproxybot/129.150.49.58-18650
+    headers:
+      Host: aio.unlimited.biz.id
+  servername: aio.unlimited.biz.id
+- name: VMESS-WS-TLS-🌐(XX)-www.speedtest.net:443_1
+  type: vmess
+  server: www.speedtest.net
+  port: 443
+  uuid: a4df089f-3c1c-4cf7-9a5f-ab6d2212136c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /appsvws
+    headers:
+      Host: v2-kiava.kiava.workers.dev
+  servername: v2-kiava.kiava.workers.dev
+- name: VMESS-WS-TLS-🌐(XX)-tr1.iranz.me:443
+  type: vmess
+  server: tr1.iranz.me
+  port: 443
+  uuid: 1145b8f1-72b9-4e3c-aede-1b884f56537d
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: tr1.iranz.me
+  servername: tr1.iranz.me
+- name: VMESS-WS-TLS-🌐(XX)-sinaazizpor.cozwao.worKERs.dEv:443
+  type: vmess
+  server: sinaazizpor.cozwao.worKERs.dEv
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -855,24 +1000,10 @@ proxies:
   network: ws
   tls: true
   ws-opts:
-    path: /linkvws
+    path: /nelly.homes/linkvws
     headers:
-      Host: aveiror.com
-  servername: aveiror.com
-- name: VMESS-WS-TLS-🌐(XX)-57.129.25.25:443_1
-  type: vmess
-  server: 57.129.25.25
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: f.khiLEi.coM
-  servername: f.khiLEi.coM
+      Host: sinaazizpor.cozwao.wORKeRs.dev
+  servername: sinaazizpor.cozwao.wORKeRs.dev
 - name: VMESS-WS-TLS-🇵🇱(PL)-146.59.55.50:443_1
   type: vmess
   server: 146.59.55.50
@@ -999,7 +1130,7 @@ proxies:
     headers:
       Host: xcvfgt6.999854.xyz
   servername: xcvfgt6.999854.xyz
-- name: VMESS-WS-TLS-🌐(XX)-199.181.197.60:443
+- name: VMESS-WS-TLS-🇺🇸(US)-199.181.197.60:443
   type: vmess
   server: 199.181.197.60
   port: 443
@@ -1027,142 +1158,6 @@ proxies:
     headers:
       Host: cc2dash.89060004.xyz
   servername: cc2dash.89060004.xyz
-- name: VMESS-WS-TLS-🌐(XX)-join.melodyfreenet2.shop:443
-  type: vmess
-  server: join.melodyfreenet2.shop
-  port: 443
-  uuid: 50ef0b23-f14b-459f-97aa-d0f346189d2a
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /mail/
-    headers:
-      Host: ''
-  servername: ''
-- name: VMESS-WS-TLS-🌐(XX)-mkh3.blanku.me:443
-  type: vmess
-  server: mkh3.blanku.me
-  port: 443
-  uuid: 245e7c23-0057-47a4-f2f0-07772e3338fa
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /wss26268?ed=2048
-    headers:
-      Host: freeservice.blanku.me
-  servername: freeservice.blanku.me
-- name: VMESS-WS-TLS-🌐(XX)-mute-math-d64e.0e503992ad7026.WOrKERs.deV:443
-  type: vmess
-  server: mute-math-d64e.0e503992ad7026.WOrKERs.deV
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /aveiror.com:443/linkvws
-    headers:
-      Host: mute-math-d64e.0e503992ad7026.woRKERS.DeV
-  servername: mute-math-d64e.0e503992ad7026.woRKERS.DeV
-- name: VMESS-GRPC-TLS-🌐(XX)-cf2.serikadeh.ir:443
-  type: vmess
-  server: cf2.serikadeh.ir
-  port: 443
-  uuid: 2ad98d2b-5d49-415c-9bfe-5b0873578fd0
-  alterId: 0
-  cipher: auto
-  network: grpc
-  tls: true
-  servername: cf2.serikadeh.ir
-- name: VMESS-WS-TLS-🇨🇦(CA)-172.67.71.160:443
-  type: vmess
-  server: 172.67.71.160
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: nelly.homes
-  servername: nelly.homes
-- name: VMESS-WS-TLS-🇨🇦(CA)-172.66.40.99:443
-  type: vmess
-  server: 172.66.40.99
-  port: 443
-  uuid: 13-telegram-id---vpnf22
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2
-    headers:
-      Host: z.looloolooloo.com
-  servername: z.looloolooloo.com
-- name: VMESS-WS-TLS-🌐(XX)-aio.unlimited.biz.id:443
-  type: vmess
-  server: aio.unlimited.biz.id
-  port: 443
-  uuid: f282b878-8711-45a1-8c69-5564172123c1
-  alterId: 0
-  cipher: zero
-  network: ws
-  tls: true
-  ws-opts:
-    path: /aioproxybot/129.150.49.58-18650
-    headers:
-      Host: aio.unlimited.biz.id
-  servername: aio.unlimited.biz.id
-- name: VMESS-WS-TLS-🌐(XX)-www.speedtest.net:443_1
-  type: vmess
-  server: www.speedtest.net
-  port: 443
-  uuid: a4df089f-3c1c-4cf7-9a5f-ab6d2212136c
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /appsvws
-    headers:
-      Host: v2-kiava.kiava.workers.dev
-  servername: v2-kiava.kiava.workers.dev
-- name: VMESS-WS-TLS-🌐(XX)-tr1.iranz.me:443
-  type: vmess
-  server: tr1.iranz.me
-  port: 443
-  uuid: 1145b8f1-72b9-4e3c-aede-1b884f56537d
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: tr1.iranz.me
-  servername: tr1.iranz.me
-- name: VMESS-WS-TLS-🌐(XX)-sinaazizpor.cozwao.worKERs.dEv:443
-  type: vmess
-  server: sinaazizpor.cozwao.worKERs.dEv
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  ws-opts:
-    path: /nelly.homes/linkvws
-    headers:
-      Host: sinaazizpor.cozwao.wORKeRs.dev
-  servername: sinaazizpor.cozwao.wORKeRs.dev
 - name: VMESS-WS-TLS-🌐(XX)-lix523052.gGfF.NeT:443
   type: vmess
   server: lix523052.gGfF.NeT
@@ -1177,7 +1172,7 @@ proxies:
     headers:
       Host: lix523052.GgfF.nET
   servername: lix523052.GgfF.nET
-- name: VMESS-WS-TLS-🌐(XX)-57.129.24.125:443_3
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.24.125:443_3
   type: vmess
   server: 57.129.24.125
   port: 443
@@ -1191,7 +1186,7 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: VMESS-WS-TLS-🌐(XX)-57.129.25.20:443_1
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.25.20:443_1
   type: vmess
   server: 57.129.25.20
   port: 443
@@ -1219,7 +1214,7 @@ proxies:
     headers:
       Host: ad80f8ec-4861-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
   servername: ad80f8ec-4861-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
-- name: VMESS-WS-TLS-🇳🇱(NL)-92.112.126.22:8443
+- name: VMESS-WS-TLS-🌐(XX)-92.112.126.22:8443
   type: vmess
   server: 92.112.126.22
   port: 8443
@@ -1289,7 +1284,7 @@ proxies:
     headers:
       Host: save-knowledge-switches-directions.trycloudflare.com
   servername: save-knowledge-switches-directions.trycloudflare.com
-- name: VMESS-GRPC-TLS-🌐(XX)-104.18.26.164:443
+- name: VMESS-GRPC-TLS-🇨🇦(CA)-104.18.26.164:443
   type: vmess
   server: 104.18.26.164
   port: 443
@@ -1299,7 +1294,7 @@ proxies:
   network: grpc
   tls: true
   servername: ''
-- name: VMESS-WS-TLS-🌐(XX)-104.21.16.100:2053
+- name: VMESS-WS-TLS-🇨🇦(CA)-104.21.16.100:2053
   type: vmess
   server: 104.21.16.100
   port: 2053
@@ -1313,7 +1308,7 @@ proxies:
     headers:
       Host: qurantv.iribquran.com
   servername: qurantv.iribquran.com
-- name: VMESS-WS-TLS-🇨🇦(CA)-104.21.3.189:2053_1
+- name: VMESS-WS-TLS-🌐(XX)-104.21.3.189:2053_1
   type: vmess
   server: 104.21.3.189
   port: 2053
@@ -1453,7 +1448,7 @@ proxies:
     headers:
       Host: fastxv.pages.dev
   servername: fastxv.pages.dev
-- name: VMESS-WS-TLS-🌐(XX)-172.67.131.27:2053
+- name: VMESS-WS-TLS-🇨🇦(CA)-172.67.131.27:2053
   type: vmess
   server: 172.67.131.27
   port: 2053
@@ -1481,7 +1476,7 @@ proxies:
     headers:
       Host: afrhms07.xfixedfloat.cfd
   servername: afrhms07.xfixedfloat.cfd
-- name: VMESS-WS-TLS-🌐(XX)-172.67.170.13:443
+- name: VMESS-WS-TLS-🇨🇦(CA)-172.67.170.13:443
   type: vmess
   server: 172.67.170.13
   port: 443
@@ -1495,7 +1490,7 @@ proxies:
     headers:
       Host: glweidf.sbs
   servername: glweidf.sbs
-- name: VMESS-WS-TLS-🌐(XX)-172.67.207.26:443
+- name: VMESS-WS-TLS-🇨🇦(CA)-172.67.207.26:443
   type: vmess
   server: 172.67.207.26
   port: 443
@@ -1799,34 +1794,73 @@ proxies:
     headers:
       Host: hicai5u.huvicloud.com
   servername: hicai5u.huvicloud.com
+- name: VMESS-WS-TLS-🇨🇦(CA)-172.66.40.99:443
+  type: vmess
+  server: 172.66.40.99
+  port: 443
+  uuid: 13-telegram-id---vpnf22
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  ws-opts:
+    path: /telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2
+    headers:
+      Host: z.looloolooloo.com
+  servername: z.looloolooloo.com
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124:443
-  - VMESS-WS-TLS-🌐(XX)-rak1ding.89060004.xyz:2083
+  - VMESS-WS-TLS-🇵🇱(PL)-146.59.55.50:443
+  - VMESS-WS-TLS-🇨🇦(CA)-15.235.50.172:443
   - VMESS-WS-TLS-🇨🇦(CA)-23.162.200.227:443
-  - VMESS-WS-TLS-🌐(XX)-57.129.24.125:443
+  - VMESS-WS-TLS-🇺🇸(US)-38.99.82.193:443
+  - VMESS-WS-TLS-🇨🇦(CA)-15.235.83.227:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.25.20:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.64.238:443
+  - VMESS-WS-TLS-🇰🇷(KR)-202.79.161.188:443
   - VMESS-WS-TLS-🇨🇦(CA)-134.195.198.147:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.25.22:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.25.25:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.28.65:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.125:443
+  - VMESS-WS-TLS-🌐(XX)-57.129.28.69:443
+  - VMESS-WS-TLS-🇨🇦(CA)-15.235.83.228:443
+  - VMESS-WS-TLS-🌐(XX)-vc.fly.dev:443
+  - VMESS-WS-TLS-🌐(XX)-rak1ding.89060004.xyz:2083
   - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2096
   - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2096_1
   - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2083
-  - VMESS-WS-TLS-🇨🇦(CA)-104.21.3.189:2053
+  - VMESS-WS-TLS-🌐(XX)-104.21.3.189:2053
   - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2083_1
-  - VMESS-WS-TLS-🌐(XX)-203.30.191.19:443
+  - VMESS-WS-TLS-🇧🇿(BZ)-203.30.191.19:443
   - VMESS-WS-TLS-🌐(XX)-vjp1.0bad.com:443
   - VMESS-WS-TLS-🌐(XX)-vjp3.0bad.com:443
   - VMESS-WS-TLS-🇸🇬(SG)-103.253.26.134:443
   - VMESS-WS-TLS-🇺🇸(US)-202.61.141.130:443
-  - VMESS-WS-TLS-🇸🇬(SG)-103.253.26.20:443
+  - VMESS-WS-TLS-🌐(XX)-103.253.26.20:443
   - VMESS-WS-TLS-🌐(XX)-test13.huvicloud.com:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124:443_1
+  - VMESS-WS-TLS-🌐(XX)-141.101.113.6:443
+  - VMESS-WS-TLS-🇨🇦(CA)-104.25.174.85:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.125:443_1
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.125:443_2
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.25.25:443_1
+  - VMESS-WS-TLS-🌐(XX)-v2ray.codefyinc.com:443
+  - VMESS-WS-TLS-🌐(XX)-www.speedtest.net:443
+  - VMESS-WS-TLS-🌐(XX)-ip.sb:443
+  - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2083_2
+  - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2096_2
+  - VMESS-WS-TLS-🇺🇸(US)-188.114.99.48:443
   - VMESS-WS-TLS-🌐(XX)-hk2.lrzdx.uk:443
   - VMESS-WS-TLS-🌐(XX)-a.886968.xyz:21369
   - VMESS-WS-TLS-🌐(XX)-cloudgetservice.mcloudservice.site:443
   - VMESS-WS-TLS-🌐(XX)-ray.skymirror.cc:443
   - VMESS-WS-TLS-🌐(XX)-xcf037.facai2024.com:443
   - VMESS-WS-TLS-🌐(XX)-gs03-1.guoshi1520.com:443
-  - VMESS-WS-TLS-🌐(XX)-104.19.32.0:443
+  - VMESS-WS-TLS-🇨🇦(CA)-104.19.32.0:443
   - VMESS-WS-TLS-🌐(XX)-xc125-1.meiziba5566.com:443
   - VMESS-WS-TLS-🌐(XX)-time.is:443
   - VMESS-WS-TLS-🌐(XX)-xc115-1.meiziba5566.com:443
@@ -1834,37 +1868,21 @@ proxy-groups:
   - VMESS-WS-TLS-🌐(XX)-tk.hzlt.tkddns.xyz:22643
   - VMESS-WS-TLS-🌐(XX)-3sdfgvcxxx.938.pp.ua:443
   - VMESS-WS-TLS-🌐(XX)-xcmg19.dtkj0328.com:443
-  - VMESS-WS-TLS-🌐(XX)-172.67.198.187:443
+  - VMESS-WS-TLS-🇨🇦(CA)-172.67.198.187:443
   - VMESS-WS-TLS-🇨🇦(CA)-104.17.137.127:443
   - VMESS-WS-TLS-🌐(XX)-hk2.lrzdx.uk:443_1
   - VMESS-WS-TLS-🌐(XX)-u8.huvicloud.com:443
   - VMESS-WS-TLS-🌐(XX)-xcf029.facai2024.com:443
   - VMESS-WS-TLS-🌐(XX)-xcf036.facai2024.com:443
-  - VMESS-WS-TLS-🌐(XX)-v2ray.codefyinc.com:443
-  - VMESS-WS-TLS-🌐(XX)-www.speedtest.net:443
-  - VMESS-WS-TLS-🌐(XX)-ip.sb:443
-  - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2083_2
-  - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2096_2
-  - VMESS-WS-TLS-🇺🇸(US)-188.114.99.48:443
-  - VMESS-WS-TLS-🇵🇱(PL)-146.59.55.50:443
-  - VMESS-WS-TLS-🇨🇦(CA)-15.235.50.172:443
-  - VMESS-WS-TLS-🌐(XX)-38.99.82.193:443
-  - VMESS-WS-TLS-🇨🇦(CA)-15.235.83.227:443
-  - VMESS-WS-TLS-🌐(XX)-57.129.25.20:443
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.64.238:443
-  - VMESS-WS-TLS-🌐(XX)-202.79.161.188:443
-  - VMESS-WS-TLS-🌐(XX)-57.129.25.22:443
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124:443_1
-  - VMESS-WS-TLS-🌐(XX)-57.129.25.25:443
-  - VMESS-WS-TLS-🌐(XX)-57.129.28.65:443
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.28.69:443
-  - VMESS-WS-TLS-🌐(XX)-15.235.83.228:443
-  - VMESS-WS-TLS-🌐(XX)-vc.fly.dev:443
-  - VMESS-WS-TLS-🌐(XX)-104.25.174.85:443
-  - VMESS-WS-TLS-🇺🇸(US)-141.101.113.6:443
-  - VMESS-WS-TLS-🌐(XX)-57.129.24.125:443_1
-  - VMESS-WS-TLS-🌐(XX)-57.129.24.125:443_2
-  - VMESS-WS-TLS-🌐(XX)-57.129.25.25:443_1
+  - VMESS-WS-TLS-🌐(XX)-join.melodyfreenet2.shop:443
+  - VMESS-WS-TLS-🌐(XX)-mkh3.blanku.me:443
+  - VMESS-WS-TLS-🌐(XX)-mute-math-d64e.0e503992ad7026.WOrKERs.deV:443
+  - VMESS-GRPC-TLS-🌐(XX)-cf2.serikadeh.ir:443
+  - VMESS-WS-TLS-🇨🇦(CA)-172.67.71.160:443
+  - VMESS-WS-TLS-🌐(XX)-aio.unlimited.biz.id:443
+  - VMESS-WS-TLS-🌐(XX)-www.speedtest.net:443_1
+  - VMESS-WS-TLS-🌐(XX)-tr1.iranz.me:443
+  - VMESS-WS-TLS-🌐(XX)-sinaazizpor.cozwao.worKERs.dEv:443
   - VMESS-WS-TLS-🇵🇱(PL)-146.59.55.50:443_1
   - VMESS-WS-TLS-🌐(XX)-1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top:443
   - VMESS-WS-TLS-🌐(XX)-b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top:443
@@ -1874,30 +1892,20 @@ proxy-groups:
   - VMESS-WS-TLS-🇺🇸(US)-205.233.181.3:443
   - VMESS-WS-TLS-🇨🇦(CA)-104.18.149.76:443
   - VMESS-WS-TLS-🇨🇦(CA)-172.67.170.147:443
-  - VMESS-WS-TLS-🌐(XX)-199.181.197.60:443
+  - VMESS-WS-TLS-🇺🇸(US)-199.181.197.60:443
   - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2083_3
-  - VMESS-WS-TLS-🌐(XX)-join.melodyfreenet2.shop:443
-  - VMESS-WS-TLS-🌐(XX)-mkh3.blanku.me:443
-  - VMESS-WS-TLS-🌐(XX)-mute-math-d64e.0e503992ad7026.WOrKERs.deV:443
-  - VMESS-GRPC-TLS-🌐(XX)-cf2.serikadeh.ir:443
-  - VMESS-WS-TLS-🇨🇦(CA)-172.67.71.160:443
-  - VMESS-WS-TLS-🇨🇦(CA)-172.66.40.99:443
-  - VMESS-WS-TLS-🌐(XX)-aio.unlimited.biz.id:443
-  - VMESS-WS-TLS-🌐(XX)-www.speedtest.net:443_1
-  - VMESS-WS-TLS-🌐(XX)-tr1.iranz.me:443
-  - VMESS-WS-TLS-🌐(XX)-sinaazizpor.cozwao.worKERs.dEv:443
   - VMESS-WS-TLS-🌐(XX)-lix523052.gGfF.NeT:443
-  - VMESS-WS-TLS-🌐(XX)-57.129.24.125:443_3
-  - VMESS-WS-TLS-🌐(XX)-57.129.25.20:443_1
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.125:443_3
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.25.20:443_1
   - VMESS-WS-TLS-🌐(XX)-8103.shomaparvazroyadetonnist-bypassishere.lat:8103
-  - VMESS-WS-TLS-🇳🇱(NL)-92.112.126.22:8443
+  - VMESS-WS-TLS-🌐(XX)-92.112.126.22:8443
   - VMESS-WS-TLS-🇿🇦(ZA)-102.132.188.2:443
   - VMESS-WS-TLS-🇬🇧(GB)-102.177.189.101:443
   - VMESS-WS-TLS-🇨🇦(CA)-104.16.0.0:443
   - VMESS-WS-TLS-🇨🇦(CA)-104.16.0.10:443
-  - VMESS-GRPC-TLS-🌐(XX)-104.18.26.164:443
-  - VMESS-WS-TLS-🌐(XX)-104.21.16.100:2053
-  - VMESS-WS-TLS-🇨🇦(CA)-104.21.3.189:2053_1
+  - VMESS-GRPC-TLS-🇨🇦(CA)-104.18.26.164:443
+  - VMESS-WS-TLS-🇨🇦(CA)-104.21.16.100:2053
+  - VMESS-WS-TLS-🌐(XX)-104.21.3.189:2053_1
   - VMESS-WS-TLS-🇨🇦(CA)-104.21.55.234:443
   - VMESS-WS-TLS-🇭🇰(HK)-118.107.244.80:443
   - VMESS-WS-TLS-🇭🇰(HK)-118.107.245.15:443
@@ -1907,10 +1915,10 @@ proxy-groups:
   - VMESS-WS-TLS-🇯🇵(JP)-134.122.196.62:30004
   - VMESS-WS-TLS-🇺🇸(US)-141.193.213.137:8443
   - VMESS-WS-TLS-🇨🇦(CA)-162.159.129.129:443
-  - VMESS-WS-TLS-🌐(XX)-172.67.131.27:2053
+  - VMESS-WS-TLS-🇨🇦(CA)-172.67.131.27:2053
   - VMESS-WS-TLS-🇨🇦(CA)-172.67.164.164:443
-  - VMESS-WS-TLS-🌐(XX)-172.67.170.13:443
-  - VMESS-WS-TLS-🌐(XX)-172.67.207.26:443
+  - VMESS-WS-TLS-🇨🇦(CA)-172.67.170.13:443
+  - VMESS-WS-TLS-🇨🇦(CA)-172.67.207.26:443
   - VMESS-WS-TLS-🇳🇱(NL)-193.29.181.38:8443
   - VMESS-WS-TLS-🇫🇷(FR)-194.9.172.65:443
   - VMESS-WS-TLS-🇭🇰(HK)-198.44.179.185:1081
@@ -1932,6 +1940,7 @@ proxy-groups:
   - VMESS-WS-TLS-🌐(XX)-fr-2.stunnel.cc:8443
   - VMESS-WS-TLS-🌐(XX)-frankfurt03.zgjok.com:443
   - VMESS-WS-TLS-🌐(XX)-hicai5u.huvicloud.com:443
+  - VMESS-WS-TLS-🇨🇦(CA)-172.66.40.99:443
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Gemini 2.5 Pro
@@ -1946,30 +1955,55 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124:443
-  - VMESS-WS-TLS-🌐(XX)-rak1ding.89060004.xyz:2083
+  - VMESS-WS-TLS-🇵🇱(PL)-146.59.55.50:443
+  - VMESS-WS-TLS-🇨🇦(CA)-15.235.50.172:443
   - VMESS-WS-TLS-🇨🇦(CA)-23.162.200.227:443
-  - VMESS-WS-TLS-🌐(XX)-57.129.24.125:443
+  - VMESS-WS-TLS-🇺🇸(US)-38.99.82.193:443
+  - VMESS-WS-TLS-🇨🇦(CA)-15.235.83.227:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.25.20:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.64.238:443
+  - VMESS-WS-TLS-🇰🇷(KR)-202.79.161.188:443
   - VMESS-WS-TLS-🇨🇦(CA)-134.195.198.147:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.25.22:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.25.25:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.28.65:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.125:443
+  - VMESS-WS-TLS-🌐(XX)-57.129.28.69:443
+  - VMESS-WS-TLS-🇨🇦(CA)-15.235.83.228:443
+  - VMESS-WS-TLS-🌐(XX)-vc.fly.dev:443
+  - VMESS-WS-TLS-🌐(XX)-rak1ding.89060004.xyz:2083
   - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2096
   - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2096_1
   - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2083
-  - VMESS-WS-TLS-🇨🇦(CA)-104.21.3.189:2053
+  - VMESS-WS-TLS-🌐(XX)-104.21.3.189:2053
   - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2083_1
-  - VMESS-WS-TLS-🌐(XX)-203.30.191.19:443
+  - VMESS-WS-TLS-🇧🇿(BZ)-203.30.191.19:443
   - VMESS-WS-TLS-🌐(XX)-vjp1.0bad.com:443
   - VMESS-WS-TLS-🌐(XX)-vjp3.0bad.com:443
   - VMESS-WS-TLS-🇸🇬(SG)-103.253.26.134:443
   - VMESS-WS-TLS-🇺🇸(US)-202.61.141.130:443
-  - VMESS-WS-TLS-🇸🇬(SG)-103.253.26.20:443
+  - VMESS-WS-TLS-🌐(XX)-103.253.26.20:443
   - VMESS-WS-TLS-🌐(XX)-test13.huvicloud.com:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124:443_1
+  - VMESS-WS-TLS-🌐(XX)-141.101.113.6:443
+  - VMESS-WS-TLS-🇨🇦(CA)-104.25.174.85:443
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.125:443_1
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.125:443_2
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.25.25:443_1
+  - VMESS-WS-TLS-🌐(XX)-v2ray.codefyinc.com:443
+  - VMESS-WS-TLS-🌐(XX)-www.speedtest.net:443
+  - VMESS-WS-TLS-🌐(XX)-ip.sb:443
+  - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2083_2
+  - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2096_2
+  - VMESS-WS-TLS-🇺🇸(US)-188.114.99.48:443
   - VMESS-WS-TLS-🌐(XX)-hk2.lrzdx.uk:443
   - VMESS-WS-TLS-🌐(XX)-a.886968.xyz:21369
   - VMESS-WS-TLS-🌐(XX)-cloudgetservice.mcloudservice.site:443
   - VMESS-WS-TLS-🌐(XX)-ray.skymirror.cc:443
   - VMESS-WS-TLS-🌐(XX)-xcf037.facai2024.com:443
   - VMESS-WS-TLS-🌐(XX)-gs03-1.guoshi1520.com:443
-  - VMESS-WS-TLS-🌐(XX)-104.19.32.0:443
+  - VMESS-WS-TLS-🇨🇦(CA)-104.19.32.0:443
   - VMESS-WS-TLS-🌐(XX)-xc125-1.meiziba5566.com:443
   - VMESS-WS-TLS-🌐(XX)-time.is:443
   - VMESS-WS-TLS-🌐(XX)-xc115-1.meiziba5566.com:443
@@ -1977,37 +2011,21 @@ proxy-groups:
   - VMESS-WS-TLS-🌐(XX)-tk.hzlt.tkddns.xyz:22643
   - VMESS-WS-TLS-🌐(XX)-3sdfgvcxxx.938.pp.ua:443
   - VMESS-WS-TLS-🌐(XX)-xcmg19.dtkj0328.com:443
-  - VMESS-WS-TLS-🌐(XX)-172.67.198.187:443
+  - VMESS-WS-TLS-🇨🇦(CA)-172.67.198.187:443
   - VMESS-WS-TLS-🇨🇦(CA)-104.17.137.127:443
   - VMESS-WS-TLS-🌐(XX)-hk2.lrzdx.uk:443_1
   - VMESS-WS-TLS-🌐(XX)-u8.huvicloud.com:443
   - VMESS-WS-TLS-🌐(XX)-xcf029.facai2024.com:443
   - VMESS-WS-TLS-🌐(XX)-xcf036.facai2024.com:443
-  - VMESS-WS-TLS-🌐(XX)-v2ray.codefyinc.com:443
-  - VMESS-WS-TLS-🌐(XX)-www.speedtest.net:443
-  - VMESS-WS-TLS-🌐(XX)-ip.sb:443
-  - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2083_2
-  - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2096_2
-  - VMESS-WS-TLS-🇺🇸(US)-188.114.99.48:443
-  - VMESS-WS-TLS-🇵🇱(PL)-146.59.55.50:443
-  - VMESS-WS-TLS-🇨🇦(CA)-15.235.50.172:443
-  - VMESS-WS-TLS-🌐(XX)-38.99.82.193:443
-  - VMESS-WS-TLS-🇨🇦(CA)-15.235.83.227:443
-  - VMESS-WS-TLS-🌐(XX)-57.129.25.20:443
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.64.238:443
-  - VMESS-WS-TLS-🌐(XX)-202.79.161.188:443
-  - VMESS-WS-TLS-🌐(XX)-57.129.25.22:443
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124:443_1
-  - VMESS-WS-TLS-🌐(XX)-57.129.25.25:443
-  - VMESS-WS-TLS-🌐(XX)-57.129.28.65:443
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.28.69:443
-  - VMESS-WS-TLS-🌐(XX)-15.235.83.228:443
-  - VMESS-WS-TLS-🌐(XX)-vc.fly.dev:443
-  - VMESS-WS-TLS-🌐(XX)-104.25.174.85:443
-  - VMESS-WS-TLS-🇺🇸(US)-141.101.113.6:443
-  - VMESS-WS-TLS-🌐(XX)-57.129.24.125:443_1
-  - VMESS-WS-TLS-🌐(XX)-57.129.24.125:443_2
-  - VMESS-WS-TLS-🌐(XX)-57.129.25.25:443_1
+  - VMESS-WS-TLS-🌐(XX)-join.melodyfreenet2.shop:443
+  - VMESS-WS-TLS-🌐(XX)-mkh3.blanku.me:443
+  - VMESS-WS-TLS-🌐(XX)-mute-math-d64e.0e503992ad7026.WOrKERs.deV:443
+  - VMESS-GRPC-TLS-🌐(XX)-cf2.serikadeh.ir:443
+  - VMESS-WS-TLS-🇨🇦(CA)-172.67.71.160:443
+  - VMESS-WS-TLS-🌐(XX)-aio.unlimited.biz.id:443
+  - VMESS-WS-TLS-🌐(XX)-www.speedtest.net:443_1
+  - VMESS-WS-TLS-🌐(XX)-tr1.iranz.me:443
+  - VMESS-WS-TLS-🌐(XX)-sinaazizpor.cozwao.worKERs.dEv:443
   - VMESS-WS-TLS-🇵🇱(PL)-146.59.55.50:443_1
   - VMESS-WS-TLS-🌐(XX)-1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top:443
   - VMESS-WS-TLS-🌐(XX)-b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top:443
@@ -2017,30 +2035,20 @@ proxy-groups:
   - VMESS-WS-TLS-🇺🇸(US)-205.233.181.3:443
   - VMESS-WS-TLS-🇨🇦(CA)-104.18.149.76:443
   - VMESS-WS-TLS-🇨🇦(CA)-172.67.170.147:443
-  - VMESS-WS-TLS-🌐(XX)-199.181.197.60:443
+  - VMESS-WS-TLS-🇺🇸(US)-199.181.197.60:443
   - VMESS-WS-TLS-🌐(XX)-cc2dash.89060004.xyz:2083_3
-  - VMESS-WS-TLS-🌐(XX)-join.melodyfreenet2.shop:443
-  - VMESS-WS-TLS-🌐(XX)-mkh3.blanku.me:443
-  - VMESS-WS-TLS-🌐(XX)-mute-math-d64e.0e503992ad7026.WOrKERs.deV:443
-  - VMESS-GRPC-TLS-🌐(XX)-cf2.serikadeh.ir:443
-  - VMESS-WS-TLS-🇨🇦(CA)-172.67.71.160:443
-  - VMESS-WS-TLS-🇨🇦(CA)-172.66.40.99:443
-  - VMESS-WS-TLS-🌐(XX)-aio.unlimited.biz.id:443
-  - VMESS-WS-TLS-🌐(XX)-www.speedtest.net:443_1
-  - VMESS-WS-TLS-🌐(XX)-tr1.iranz.me:443
-  - VMESS-WS-TLS-🌐(XX)-sinaazizpor.cozwao.worKERs.dEv:443
   - VMESS-WS-TLS-🌐(XX)-lix523052.gGfF.NeT:443
-  - VMESS-WS-TLS-🌐(XX)-57.129.24.125:443_3
-  - VMESS-WS-TLS-🌐(XX)-57.129.25.20:443_1
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.125:443_3
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.25.20:443_1
   - VMESS-WS-TLS-🌐(XX)-8103.shomaparvazroyadetonnist-bypassishere.lat:8103
-  - VMESS-WS-TLS-🇳🇱(NL)-92.112.126.22:8443
+  - VMESS-WS-TLS-🌐(XX)-92.112.126.22:8443
   - VMESS-WS-TLS-🇿🇦(ZA)-102.132.188.2:443
   - VMESS-WS-TLS-🇬🇧(GB)-102.177.189.101:443
   - VMESS-WS-TLS-🇨🇦(CA)-104.16.0.0:443
   - VMESS-WS-TLS-🇨🇦(CA)-104.16.0.10:443
-  - VMESS-GRPC-TLS-🌐(XX)-104.18.26.164:443
-  - VMESS-WS-TLS-🌐(XX)-104.21.16.100:2053
-  - VMESS-WS-TLS-🇨🇦(CA)-104.21.3.189:2053_1
+  - VMESS-GRPC-TLS-🇨🇦(CA)-104.18.26.164:443
+  - VMESS-WS-TLS-🇨🇦(CA)-104.21.16.100:2053
+  - VMESS-WS-TLS-🌐(XX)-104.21.3.189:2053_1
   - VMESS-WS-TLS-🇨🇦(CA)-104.21.55.234:443
   - VMESS-WS-TLS-🇭🇰(HK)-118.107.244.80:443
   - VMESS-WS-TLS-🇭🇰(HK)-118.107.245.15:443
@@ -2050,10 +2058,10 @@ proxy-groups:
   - VMESS-WS-TLS-🇯🇵(JP)-134.122.196.62:30004
   - VMESS-WS-TLS-🇺🇸(US)-141.193.213.137:8443
   - VMESS-WS-TLS-🇨🇦(CA)-162.159.129.129:443
-  - VMESS-WS-TLS-🌐(XX)-172.67.131.27:2053
+  - VMESS-WS-TLS-🇨🇦(CA)-172.67.131.27:2053
   - VMESS-WS-TLS-🇨🇦(CA)-172.67.164.164:443
-  - VMESS-WS-TLS-🌐(XX)-172.67.170.13:443
-  - VMESS-WS-TLS-🌐(XX)-172.67.207.26:443
+  - VMESS-WS-TLS-🇨🇦(CA)-172.67.170.13:443
+  - VMESS-WS-TLS-🇨🇦(CA)-172.67.207.26:443
   - VMESS-WS-TLS-🇳🇱(NL)-193.29.181.38:8443
   - VMESS-WS-TLS-🇫🇷(FR)-194.9.172.65:443
   - VMESS-WS-TLS-🇭🇰(HK)-198.44.179.185:1081
@@ -2075,5 +2083,13 @@ proxy-groups:
   - VMESS-WS-TLS-🌐(XX)-fr-2.stunnel.cc:8443
   - VMESS-WS-TLS-🌐(XX)-frankfurt03.zgjok.com:443
   - VMESS-WS-TLS-🌐(XX)-hicai5u.huvicloud.com:443
+  - VMESS-WS-TLS-🇨🇦(CA)-172.66.40.99:443
+rule-providers:
+  adblock:
+    type: http
+    url: https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/refs/heads/master/Filters/rules.txt
+    behavior: domain
+    interval: 86400
 rules:
+- RULE-SET,adblock,REJECT
 - MATCH, 📲 VMESS-Selector
