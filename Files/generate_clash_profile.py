@@ -25,8 +25,28 @@ BASE_PROFILE_STRUCTURE = {
     "mode": "rule",
     "log-level": "info",
     "external-controller": "0.0.0.0:9090",
+    "dns": {
+        "enable": True,
+        "listen": "0.0.0.0:53",
+        "default-nameserver": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ],
+        "fallback": [
+            "8.8.8.8",
+            "8.8.4.4"
+        ]
+    },
     "proxies": [],
     "proxy-groups": [],
+    "rule-providers": {
+        "adblock": {
+            "type": "http",
+            "url": "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/refs/heads/master/Filters/rules.txt",
+            "behavior": "domain",
+            "interval": 86400
+        }
+    },
     "rules": [] # Will be populated dynamically
 }
 
@@ -128,7 +148,10 @@ def generate_profiles():
         profile["proxies"] = all_proxies
         
         selector_name = f"📲 {protocol.upper()}-Selector"
-        profile["rules"] = [f"MATCH, {selector_name}"]
+        profile["rules"] = [
+            "RULE-SET,adblock,REJECT",
+            f"MATCH, {selector_name}"
+        ]
 
         # Create smart groups for this protocol
         auto_select_group = {
