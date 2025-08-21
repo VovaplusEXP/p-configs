@@ -32,36 +32,27 @@ def create_v2ray_config(proxy_line, local_socks_port, worker_id):
         security = qs.get("security", ["none"])[0]
         network_type = qs.get("type", ["tcp"])[0]
 
-        # Base stream settings
-        stream_settings = {
-            "network": network_type,
-            "security": security
-        }
-
-        # FIX 2: Use modern "host" parameter for wsSettings
+        stream_settings = {"network": network_type, "security": security}
+        
         if network_type == "ws":
-            stream_settings["wsSettings"] = {
-                "path": qs.get("path", ["/"])[0],
-                "host": qs.get("host", [qs.get("sni", [parsed_url.hostname])[0]])[0]
-            }
+            stream_settings["wsSettings"] = {"path": qs.get("path", ["/"])[0], "host": qs.get("host", [qs.get("sni", [parsed_url.hostname])[0]])[0]}
         elif network_type == "grpc":
             stream_settings["grpcSettings"] = {"serviceName": qs.get("serviceName", [""])[0]}
 
+        # FIX 1: Allow insecure connections for both TLS and REALITY
         if security == "tls":
-            stream_settings["tlsSettings"] = {"serverName": qs.get("sni", [parsed_url.hostname])[0]}
+            stream_settings["tlsSettings"] = {"serverName": qs.get("sni", [parsed_url.hostname])[0], "allowInsecure": True}
         elif security == "reality":
             pbk = qs.get("pbk", [""])[0]
             sid = qs.get("sid", [""])[0]
             if not pbk: return None
-            stream_settings["realitySettings"] = {"serverName": qs.get("sni", [parsed_url.hostname])[0], "publicKey": pbk, "shortId": sid, "fingerprint": qs.get("fp", ["chrome"])[0]}
+            stream_settings["realitySettings"] = {"serverName": qs.get("sni", [parsed_url.hostname])[0], "publicKey": pbk, "shortId": sid, "fingerprint": qs.get("fp", ["chrome"])[0], "allowInsecure": True}
 
         if protocol == "vless":
             user_obj = {"id": parsed_url.username, "encryption": "none", "flow": qs.get("flow", [""])[0]}
             outbound_config = {"protocol": "vless", "settings": {"vnext": [{"address": parsed_url.hostname, "port": parsed_url.port, "users": [user_obj]}]}, "streamSettings": stream_settings}
-        
         elif protocol == "trojan":
             outbound_config = {"protocol": "trojan", "settings": {"servers": [{"address": parsed_url.hostname, "port": parsed_url.port, "password": parsed_url.username}]}, "streamSettings": stream_settings}
-
         elif protocol == "vmess":
             b64_part = proxy_line[len("vmess://"):]
             b64_part += '=' * (-len(b64_part) % 4)
@@ -71,26 +62,30 @@ def create_v2ray_config(proxy_line, local_socks_port, worker_id):
             if vmess_network == "ws":
                 vmess_stream_settings["wsSettings"] = {"path": vmess_data.get("path", "/"), "host": vmess_data.get("host", vmess_data.get("add"))}
             if vmess_data.get("tls") == "tls":
-                vmess_stream_settings["tlsSettings"] = {"serverName": vmess_data.get("host", vmess_data.get("add"))}
+                vmess_stream_settings["tlsSettings"] = {"serverName": vmess_data.get("host", vmess_data.get("add")), "allowInsecure": True}
             outbound_config = {"protocol": "vmess", "settings": {"vnext": [{"address": vmess_data.get("add"), "port": int(vmess_data.get("port")), "users": [{"id": vmess_data.get("id"), "alterId": int(vmess_data.get("aid")), "security": vmess_data.get("scy", "auto")}]}]}, "streamSettings": vmess_stream_settings}
-        
         elif protocol == "ss":
             userinfo_b64 = parsed_url.username
             userinfo_b64 += "=" * (-len(userinfo_b64) % 4)
             userinfo = base64.b64decode(userinfo_b64).decode('utf-8')
             method, password = userinfo.split(':', 1)
             outbound_config = {"protocol": "shadowsocks", "settings": {"servers": [{"address": parsed_url.hostname, "port": parsed_url.port, "method": method, "password": password}]}}
-        
         elif protocol == "hy2":
-            outbound_config = {"protocol": "hysteria2", "settings": {"servers": [{"address": parsed_url.hostname, "port": parsed_url.port, "password": parsed_url.username}]}, "streamSettings": {"network": "udp", "security": "tls", "tlsSettings": {"serverName": qs.get("sni", [parsed_url.hostname])[0], "alpn": ["h3"]}}}
+            outbound_config = {"protocol": "hysteria2", "settings": {"servers": [{"address": parsed_url.hostname, "port": parsed_url.port, "password": parsed_url.username}]}, "streamSettings": {"network": "udp", "security": "tls", "tlsSettings": {"serverName": qs.get("sni", [parsed_url.hostname])[0], "alpn": ["h3"], "allowInsecure": True}}}
 
     except Exception: return None
     if not outbound_config: return None
-    config = {"inbounds": [{"listen": "127.0.0.1", "port": local_socks_port, "protocol": "socks", "settings": {"auth": "noauth", "udp": True}}], "outbounds": [outbound_config]}
+    
+    # FIX 2: Suppress noisy info-level logs from Xray
+    config = {
+        "log": {"loglevel": "warning"},
+        "inbounds": [{"listen": "127.0.0.1", "port": local_socks_port, "protocol": "socks", "settings": {"auth": "noauth", "udp": True}}],
+        "outbounds": [outbound_config]
+    }
     with open(config_path, 'w') as f: json.dump(config, f)
     return config_path
 
-# --- Worker Function (No changes needed) ---
+# --- Worker & Main Functions (No changes needed) ---
 def kill_process_and_children(proc):
     try:
         parent = psutil.Process(proc.pid)
@@ -130,7 +125,6 @@ def test_proxy(proxy_line, worker_id):
     if os.path.exists(config_file): os.remove(config_file)
     return speed, proxy_line, status
 
-# --- Main Execution (No changes needed) ---
 def main():
     if not os.path.exists(V2RAY_EXECUTABLE_PATH):
         print(f"Error: Xray executable not found at '{V2RAY_EXECUTABLE_PATH}'")
