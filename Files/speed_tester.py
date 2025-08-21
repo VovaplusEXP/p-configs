@@ -22,10 +22,11 @@ REQUEST_TIMEOUT_SECONDS = 20
 BASE_SOCKS_PORT = 10800
 
 # --- V2Ray/Xray Config Generation ---
-def create_v2ray_config(proxy_line, local_socks_port, worker_id):
+# FIX: The function now accepts a unique 'task_id' for the config file name
+def create_v2ray_config(proxy_line, local_socks_port, task_id):
     protocol = proxy_line.split("://")[0]
     outbound_config = None
-    config_path = f"v2ray_config_worker_{worker_id}.json"
+    config_path = f"v2ray_config_task_{task_id}.json"
     try:
         parsed_url = urlparse(proxy_line)
         qs = parse_qs(parsed_url.query)
@@ -39,7 +40,6 @@ def create_v2ray_config(proxy_line, local_socks_port, worker_id):
         elif network_type == "grpc":
             stream_settings["grpcSettings"] = {"serviceName": qs.get("serviceName", [""])[0]}
 
-        # FIX 1: Allow insecure connections for both TLS and REALITY
         if security == "tls":
             stream_settings["tlsSettings"] = {"serverName": qs.get("sni", [parsed_url.hostname])[0], "allowInsecure": True}
         elif security == "reality":
@@ -76,7 +76,6 @@ def create_v2ray_config(proxy_line, local_socks_port, worker_id):
     except Exception: return None
     if not outbound_config: return None
     
-    # FIX 2: Suppress noisy info-level logs from Xray
     config = {
         "log": {"loglevel": "warning"},
         "inbounds": [{"listen": "127.0.0.1", "port": local_socks_port, "protocol": "socks", "settings": {"auth": "noauth", "udp": True}}],
@@ -85,7 +84,7 @@ def create_v2ray_config(proxy_line, local_socks_port, worker_id):
     with open(config_path, 'w') as f: json.dump(config, f)
     return config_path
 
-# --- Worker & Main Functions (No changes needed) ---
+# --- Worker Function ---
 def kill_process_and_children(proc):
     try:
         parent = psutil.Process(proc.pid)
@@ -93,11 +92,14 @@ def kill_process_and_children(proc):
         parent.kill()
     except psutil.NoSuchProcess: pass
 
-def test_proxy(proxy_line, worker_id):
-    local_socks_port = BASE_SOCKS_PORT + worker_id
-    config_file = create_v2ray_config(proxy_line, local_socks_port, worker_id)
+# FIX: The function now accepts a unique 'task_id' for file naming, and a 'worker_slot_id' for port allocation
+def test_proxy(proxy_line, worker_slot_id, task_id):
+    local_socks_port = BASE_SOCKS_PORT + worker_slot_id
+    config_file = create_v2ray_config(proxy_line, local_socks_port, task_id)
     if not config_file: return 0, proxy_line, "Malformed"
+    
     process = subprocess.Popen([os.path.abspath(V2RAY_EXECUTABLE_PATH), "run", "-c", config_file])
+    
     is_ready = False
     for _ in range(15):
         time.sleep(0.5)
@@ -106,6 +108,7 @@ def test_proxy(proxy_line, worker_id):
                 is_ready = True
                 break
         except (socket.timeout, ConnectionRefusedError): continue
+    
     speed = 0
     status = "Timeout"
     if is_ready:
@@ -121,10 +124,12 @@ def test_proxy(proxy_line, worker_id):
         except requests.exceptions.RequestException as e:
             status = f"Error ({type(e).__name__})"
         except Exception: status = "Unknown Error"
+    
     kill_process_and_children(process)
     if os.path.exists(config_file): os.remove(config_file)
     return speed, proxy_line, status
 
+# --- Main Execution ---
 def main():
     if not os.path.exists(V2RAY_EXECUTABLE_PATH):
         print(f"Error: Xray executable not found at '{V2RAY_EXECUTABLE_PATH}'")
@@ -143,13 +148,14 @@ def main():
             continue
         fast_proxies = []
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-            futures = {executor.submit(test_proxy, proxy, i % MAX_WORKERS): proxy for i, proxy in enumerate(proxies_to_test)}
+            # FIX: Pass the worker slot ID (i % MAX_WORKERS) and the unique task ID (i) to the worker
+            futures = {executor.submit(test_proxy, proxy, i % MAX_WORKERS, i): proxy for i, proxy in enumerate(proxies_to_test)}
             for i, future in enumerate(as_completed(futures)):
                 speed, proxy_line, status = future.result()
                 if status == "OK":
                     fast_proxies.append(proxy_line)
                 print(f"\r  - Tested {i+1}/{len(proxies_to_test)} | Status: {status} ({speed:.2f} Mbps) | Fast found: {len(fast_proxies)}   ", end="", flush=True)
-        print()
+        print() 
         if fast_proxies:
             print(f"  - Found {len(fast_proxies)} fast proxies. Overwriting '{source_path}'.")
             with open(source_path, 'w', encoding='utf-8') as f:
