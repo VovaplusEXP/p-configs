@@ -30,35 +30,33 @@ def create_v2ray_config(proxy_line, local_socks_port, worker_id):
         parsed_url = urlparse(proxy_line)
         qs = parse_qs(parsed_url.query)
         security = qs.get("security", ["none"])[0]
+        network_type = qs.get("type", ["tcp"])[0]
 
         # Base stream settings
         stream_settings = {
-            "network": qs.get("type", ["tcp"])[0],
-            "security": security,
-            "wsSettings": {"path": qs.get("path", ["/"])[0], "headers": {"Host": qs.get("host", [parsed_url.hostname])[0]}} if qs.get("type", ["tcp"])[0] == "ws" else {},
-            "grpcSettings": {"serviceName": qs.get("serviceName", [""])[0]} if qs.get("type", ["tcp"])[0] == "grpc" else {}
+            "network": network_type,
+            "security": security
         }
 
-        # Handle TLS and REALITY correctly
+        # FIX 2: Use modern "host" parameter for wsSettings
+        if network_type == "ws":
+            stream_settings["wsSettings"] = {
+                "path": qs.get("path", ["/"])[0],
+                "host": qs.get("host", [qs.get("sni", [parsed_url.hostname])[0]])[0]
+            }
+        elif network_type == "grpc":
+            stream_settings["grpcSettings"] = {"serviceName": qs.get("serviceName", [""])[0]}
+
         if security == "tls":
             stream_settings["tlsSettings"] = {"serverName": qs.get("sni", [parsed_url.hostname])[0]}
         elif security == "reality":
             pbk = qs.get("pbk", [""])[0]
             sid = qs.get("sid", [""])[0]
-            if not pbk or not sid: return None # Invalid REALITY config
-            stream_settings["realitySettings"] = {
-                "serverName": qs.get("sni", [parsed_url.hostname])[0],
-                "publicKey": pbk,
-                "shortId": sid,
-                "fingerprint": qs.get("fp", ["chrome"])[0]
-            }
+            if not pbk: return None
+            stream_settings["realitySettings"] = {"serverName": qs.get("sni", [parsed_url.hostname])[0], "publicKey": pbk, "shortId": sid, "fingerprint": qs.get("fp", ["chrome"])[0]}
 
         if protocol == "vless":
-            user_obj = {
-                "id": parsed_url.username,
-                "encryption": "none", # FIX 1: Explicitly set encryption to none
-                "flow": qs.get("flow", [""])[0]
-            }
+            user_obj = {"id": parsed_url.username, "encryption": "none", "flow": qs.get("flow", [""])[0]}
             outbound_config = {"protocol": "vless", "settings": {"vnext": [{"address": parsed_url.hostname, "port": parsed_url.port, "users": [user_obj]}]}, "streamSettings": stream_settings}
         
         elif protocol == "trojan":
@@ -68,7 +66,13 @@ def create_v2ray_config(proxy_line, local_socks_port, worker_id):
             b64_part = proxy_line[len("vmess://"):]
             b64_part += '=' * (-len(b64_part) % 4)
             vmess_data = json.loads(base64.b64decode(b64_part).decode('utf-8'))
-            outbound_config = {"protocol": "vmess", "settings": {"vnext": [{"address": vmess_data.get("add"), "port": int(vmess_data.get("port")), "users": [{"id": vmess_data.get("id"), "alterId": int(vmess_data.get("aid")), "security": vmess_data.get("scy", "auto")}]}]}, "streamSettings": {"network": vmess_data.get("net"), "security": "tls" if vmess_data.get("tls") == "tls" else "none", "tlsSettings": {"serverName": vmess_data.get("host", vmess_data.get("add"))} if vmess_data.get("tls") == "tls" else {}, "wsSettings": {"path": vmess_data.get("path", "/"), "headers": {"Host": vmess_data.get("host", vmess_data.get("add"))}} if vmess_data.get("net") == "ws" else {}}}
+            vmess_network = vmess_data.get("net", "tcp")
+            vmess_stream_settings = {"network": vmess_network, "security": "tls" if vmess_data.get("tls") == "tls" else "none"}
+            if vmess_network == "ws":
+                vmess_stream_settings["wsSettings"] = {"path": vmess_data.get("path", "/"), "host": vmess_data.get("host", vmess_data.get("add"))}
+            if vmess_data.get("tls") == "tls":
+                vmess_stream_settings["tlsSettings"] = {"serverName": vmess_data.get("host", vmess_data.get("add"))}
+            outbound_config = {"protocol": "vmess", "settings": {"vnext": [{"address": vmess_data.get("add"), "port": int(vmess_data.get("port")), "users": [{"id": vmess_data.get("id"), "alterId": int(vmess_data.get("aid")), "security": vmess_data.get("scy", "auto")}]}]}, "streamSettings": vmess_stream_settings}
         
         elif protocol == "ss":
             userinfo_b64 = parsed_url.username
