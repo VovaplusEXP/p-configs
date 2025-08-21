@@ -56,7 +56,7 @@ def create_v2ray_config(proxy_line):
                 "protocol": "trojan",
                 "settings": {"servers": [{"address": parsed_url.hostname, "port": parsed_url.port, "password": parsed_url.username}]},
                 "streamSettings": {"network": qs.get("type", ["tcp"])[0], "security": qs.get("security", ["none"])[0], "tlsSettings": {"serverName": qs.get("sni", [parsed_url.hostname])[0]} if qs.get("security", ["none"])[0] == "tls" else {}, "wsSettings": {"path": qs.get("path", ["/"])[0]} if qs.get("type", ["tcp"])[0] == "ws" else {}}
-
+            }
         elif protocol == "ss":
             parsed_url = urlparse(proxy_line)
             userinfo_b64 = parsed_url.username
