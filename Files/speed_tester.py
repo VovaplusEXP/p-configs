@@ -37,6 +37,7 @@ def create_v2ray_config(proxy_line):
                 "protocol": "vless",
                 "settings": {"vnext": [{"address": parsed_url.hostname, "port": parsed_url.port, "users": [{"id": parsed_url.username, "flow": qs.get("flow", [""])[0]}]}]},
                 "streamSettings": {"network": qs.get("type", ["tcp"])[0], "security": qs.get("security", ["none"])[0], "tlsSettings": {"serverName": qs.get("sni", [parsed_url.hostname])[0]} if qs.get("security", ["none"])[0] == "tls" else {}, "wsSettings": {"path": qs.get("path", ["/"])[0]} if qs.get("type", ["tcp"])[0] == "ws" else {}}
+            }
         
         elif protocol == "vmess":
             b64_part = proxy_line[len("vmess://"):]
