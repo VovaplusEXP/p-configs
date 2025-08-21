@@ -26,28 +26,37 @@ jobs:
         working-directory: ./Files
         run: pip install -r requirements.txt
 
-      - name: Run main processing script
-        working-directory: ./Files
-        run: python app.py
+      - name: Download and set up Xray
+        run: |
+          wget -O xray.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
+          unzip xray.zip xray
+          chmod +x xray
 
-      - name: Run secure filtering script
+      - name: Run main processing script (Fetch & Split)
         working-directory: ./Files
-        run: python filter_secure.py
+        run: python3 app.py
+
+      - name: Run speed test script (Filter by Speed)
+        working-directory: ./Files
+        run: python3 speed_tester.py
+
+      - name: Run secure filtering script (Filter by TLS/REALITY)
+        working-directory: ./Files
+        run: python3 filter_secure.py
 
       - name: Create per-protocol Base64 lists
         working-directory: ./Files
-        run: python create_base64_lists.py
+        run: python3 create_base_64_lists.py
 
       - name: Generate Clash Meta profile
         working-directory: ./Files
-        run: python generate_clash_profile.py
+        run: python3 generate_clash_profile.py
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "✅ Updated configs and profiles"
           branch: main
-          # This pattern commits all txt/yaml files in subdirectories
           file_pattern: "**/*.txt **/*.yaml"
           commit_user_name: "GitHub Actions Bot"
           commit_user_email: "actions@github.com"
