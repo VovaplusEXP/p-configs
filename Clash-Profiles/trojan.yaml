@@ -22,6 +22,18 @@ proxies:
   network: tcp
   tls: true
   servername: us.blazeppn.info
+- name: TROJAN-WS-TLS-🇨🇦(CA)-92.53.189.194:2096
+  type: trojan
+  server: 92.53.189.194
+  port: 2096
+  uuid: ttfang
+  network: ws
+  tls: true
+  servername: ttfang.fange.me
+  ws-opts:
+    path: Telegram
+    headers:
+      Host: ttfang.fange.me
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
   type: trojan
   server: 185.208.207.217
@@ -30,11 +42,23 @@ proxies:
   network: tcp
   tls: true
   servername: dus.freeguard.org
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.124.220.30:22223
+- name: TROJAN-WS-TLS-🇩🇪(DE)-89.116.46.194:2096
   type: trojan
-  server: 3.124.220.30
-  port: 22223
-  uuid: telegram-id-directvpn
+  server: 89.116.46.194
+  port: 2096
+  uuid: ttfang
+  network: ws
+  tls: true
+  servername: ttfang.fange.me
+  ws-opts:
+    path: Telegram
+    headers:
+      Host: ttfang.fange.me
+- name: TROJAN-TCP-TLS-🌐(XX)-63.179.46.50:22222
+  type: trojan
+  server: 63.179.46.50
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
@@ -50,14 +74,14 @@ proxies:
     path: Telegram
     headers:
       Host: ttfang.fange.me
-- name: TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
+- name: TROJAN-TCP-TLS-🌐(XX)-63.179.46.50:22223
   type: trojan
-  server: 103.252.116.138
-  port: 443
-  uuid: 2ee85121-31de-4581-a492-eb00f606e392
+  server: 63.179.46.50
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: hk.freeguard.org
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🌐(XX)-aio.zipzap.biz.id:443
   type: trojan
   server: aio.zipzap.biz.id
@@ -82,7 +106,15 @@ proxies:
     path: /Stupid-World/103.106.228.126-2053
     headers:
       Host: vpn.stupidworld.web.id
-- name: TROJAN-TCP-TLS-🌐(XX)-192.3.107.252:443
+- name: TROJAN-TCP-TLS-🌐(XX)-103.252.116.138:443
+  type: trojan
+  server: 103.252.116.138
+  port: 443
+  uuid: 2ee85121-31de-4581-a492-eb00f606e392
+  network: tcp
+  tls: true
+  servername: hk.freeguard.org
+- name: TROJAN-TCP-TLS-🇺🇸(US)-192.3.107.252:443
   type: trojan
   server: 192.3.107.252
   port: 443
@@ -90,6 +122,18 @@ proxies:
   network: tcp
   tls: true
   servername: rc8.freeguard.org
+- name: TROJAN-WS-TLS-🇨🇦(CA)-104.26.4.60:443
+  type: trojan
+  server: 104.26.4.60
+  port: 443
+  uuid: bpb-trojan
+  network: ws
+  tls: true
+  servername: zamim340.ggff.net
+  ws-opts:
+    path: /tr?ed=2560
+    headers:
+      Host: zamim340.ggff.net
 - name: TROJAN-TCP-TLS-🇸🇪(SE)-45.91.171.116:443
   type: trojan
   server: 45.91.171.116
@@ -98,18 +142,6 @@ proxies:
   network: tcp
   tls: true
   servername: sto.freeguard.org
-- name: TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443_1
-  type: trojan
-  server: 104.21.72.109
-  port: 443
-  uuid: f282b878-8711-45a1-8c69-5564172123c1
-  network: ws
-  tls: true
-  servername: vpn.stupidworld.web.id
-  ws-opts:
-    path: /Stupid-World/103.106.228.126-2053?--TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY
-    headers:
-      Host: vpn.stupidworld.web.id
 - name: TROJAN-WS-TLS-🌐(XX)-172.67.181.173:443_6
   type: trojan
   server: 172.67.181.173
@@ -122,21 +154,33 @@ proxies:
     path: /Stupid-World/103.106.228.126-2053?*VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY*
     headers:
       Host: vpn.stupidworld.web.id
-- name: TROJAN-WS-TLS-🇩🇪(DE)-45.159.217.194:2096
+- name: TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443
   type: trojan
-  server: 45.159.217.194
+  server: 104.21.72.109
+  port: 443
+  uuid: f282b878-8711-45a1-8c69-5564172123c1
+  network: ws
+  tls: true
+  servername: vpn.stupidworld.web.id
+  ws-opts:
+    path: /Stupid-World/103.106.228.126-2053
+    headers:
+      Host: vpn.stupidworld.web.id
+- name: TROJAN-WS-TLS-🇦🇲(AM)-5.10.214.216:2096
+  type: trojan
+  server: 5.10.214.216
   port: 2096
   uuid: ttfang
   network: ws
   tls: true
   servername: ttfang.fange.me
   ws-opts:
-    path: Telegram
+    path: /Telegram🇨🇳
     headers:
       Host: ttfang.fange.me
-- name: TROJAN-WS-TLS-🇩🇪(DE)-89.116.46.194:2096
+- name: TROJAN-WS-TLS-🇩🇪(DE)-45.159.217.194:2096
   type: trojan
-  server: 89.116.46.194
+  server: 45.159.217.194
   port: 2096
   uuid: ttfang
   network: ws
@@ -158,14 +202,18 @@ proxies:
     path: Telegram
     headers:
       Host: ttfang.fange.me
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-213.108.198.158:8441
+- name: TROJAN-WS-TLS-🇺🇸(US)-66.225.252.194:2096
   type: trojan
-  server: 213.108.198.158
-  port: 8441
-  uuid: tunnel-astrovpn_official92
-  network: tcp
+  server: 66.225.252.194
+  port: 2096
+  uuid: ttfang
+  network: ws
   tls: true
-  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
+  servername: ttfang.fange.me
+  ws-opts:
+    path: Telegram🇨🇳
+    headers:
+      Host: ttfang.fange.me
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-51.91.97.39:8441
   type: trojan
   server: 51.91.97.39
@@ -179,20 +227,24 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - TROJAN-TCP-TLS-🌐(XX)-us.blazeppn.info:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-92.53.189.194:2096
   - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.124.220.30:22223
+  - TROJAN-WS-TLS-🇩🇪(DE)-89.116.46.194:2096
+  - TROJAN-TCP-TLS-🌐(XX)-63.179.46.50:22222
   - TROJAN-WS-TLS-🇺🇸(US)-72.167.243.194:2096
-  - TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
+  - TROJAN-TCP-TLS-🌐(XX)-63.179.46.50:22223
   - TROJAN-WS-TLS-🌐(XX)-aio.zipzap.biz.id:443
   - TROJAN-WS-TLS-🌐(XX)-172.67.181.173:443
-  - TROJAN-TCP-TLS-🌐(XX)-192.3.107.252:443
+  - TROJAN-TCP-TLS-🌐(XX)-103.252.116.138:443
+  - TROJAN-TCP-TLS-🇺🇸(US)-192.3.107.252:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.26.4.60:443
   - TROJAN-TCP-TLS-🇸🇪(SE)-45.91.171.116:443
-  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443_1
   - TROJAN-WS-TLS-🌐(XX)-172.67.181.173:443_6
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443
+  - TROJAN-WS-TLS-🇦🇲(AM)-5.10.214.216:2096
   - TROJAN-WS-TLS-🇩🇪(DE)-45.159.217.194:2096
-  - TROJAN-WS-TLS-🇩🇪(DE)-89.116.46.194:2096
   - TROJAN-WS-TLS-🇨🇼(CW)-5.10.247.194:2096
-  - TROJAN-TCP-TLS-🇩🇪(DE)-213.108.198.158:8441
+  - TROJAN-WS-TLS-🇺🇸(US)-66.225.252.194:2096
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.91.97.39:8441
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
@@ -209,20 +261,24 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-TLS-🌐(XX)-us.blazeppn.info:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-92.53.189.194:2096
   - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.124.220.30:22223
+  - TROJAN-WS-TLS-🇩🇪(DE)-89.116.46.194:2096
+  - TROJAN-TCP-TLS-🌐(XX)-63.179.46.50:22222
   - TROJAN-WS-TLS-🇺🇸(US)-72.167.243.194:2096
-  - TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
+  - TROJAN-TCP-TLS-🌐(XX)-63.179.46.50:22223
   - TROJAN-WS-TLS-🌐(XX)-aio.zipzap.biz.id:443
   - TROJAN-WS-TLS-🌐(XX)-172.67.181.173:443
-  - TROJAN-TCP-TLS-🌐(XX)-192.3.107.252:443
+  - TROJAN-TCP-TLS-🌐(XX)-103.252.116.138:443
+  - TROJAN-TCP-TLS-🇺🇸(US)-192.3.107.252:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.26.4.60:443
   - TROJAN-TCP-TLS-🇸🇪(SE)-45.91.171.116:443
-  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443_1
   - TROJAN-WS-TLS-🌐(XX)-172.67.181.173:443_6
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443
+  - TROJAN-WS-TLS-🇦🇲(AM)-5.10.214.216:2096
   - TROJAN-WS-TLS-🇩🇪(DE)-45.159.217.194:2096
-  - TROJAN-WS-TLS-🇩🇪(DE)-89.116.46.194:2096
   - TROJAN-WS-TLS-🇨🇼(CW)-5.10.247.194:2096
-  - TROJAN-TCP-TLS-🇩🇪(DE)-213.108.198.158:8441
+  - TROJAN-WS-TLS-🇺🇸(US)-66.225.252.194:2096
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.91.97.39:8441
 rule-providers:
   adblock:
