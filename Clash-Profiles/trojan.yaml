@@ -14,6 +14,34 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
+  type: trojan
+  server: 198.46.152.83
+  port: 443
+  uuid: 2ee85121-31de-4581-a492-eb00f606e392
+  network: tcp
+  tls: true
+  servername: sj3.freeguard.org
+- name: TROJAN-TCP-TLS-🌐(XX)-63.177.223.15:22223
+  type: trojan
+  server: 63.177.223.15
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443_1
+  type: trojan
+  server: aio.proxybox.dpdns.org
+  port: 443
+  uuid: 318cab24-ec99-40a6-a54a-0db9c661a3d0
+  network: ws
+  tls: true
+  servername: aio.proxybox.dpdns.org
+  ws-opts:
+    path: 188.34.160.97-2053
+    headers:
+      Host: aio.proxybox.dpdns.org
 - name: TROJAN-TCP-TLS-🌐(XX)-uk-03.allhubb.info:8443
   type: trojan
   server: uk-03.allhubb.info
@@ -34,14 +62,14 @@ proxies:
     path: /Stupid-World/103.106.228.126-2053
     headers:
       Host: vpn.stupidworld.web.id
-- name: TROJAN-TCP-TLS-🇸🇪(SE)-45.91.171.116:443
+- name: TROJAN-TCP-TLS-🌐(XX)-63.177.223.15:22222
   type: trojan
-  server: 45.91.171.116
-  port: 443
-  uuid: 2ee85121-31de-4581-a492-eb00f606e392
+  server: 63.177.223.15
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: sto.freeguard.org
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-TCP-TLS-🇬🇧(GB)-51.195.255.103:8443
   type: trojan
   server: 51.195.255.103
@@ -50,7 +78,7 @@ proxies:
   network: tcp
   tls: true
   servername: uk-03.allhubb.info
-- name: TROJAN-TCP-TLS-🌐(XX)-185.208.207.217:443
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
   type: trojan
   server: 185.208.207.217
   port: 443
@@ -58,22 +86,6 @@ proxies:
   network: tcp
   tls: true
   servername: dus.freeguard.org
-- name: TROJAN-TCP-TLS-🌐(XX)-63.177.223.143:22222
-  type: trojan
-  server: 63.177.223.143
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-63.177.223.143:22223
-  type: trojan
-  server: 63.177.223.143
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
 - name: TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
   type: trojan
   server: 103.252.116.138
@@ -82,14 +94,22 @@ proxies:
   network: tcp
   tls: true
   servername: hk.freeguard.org
-- name: TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
+- name: TROJAN-TCP-TLS-🌐(XX)-45.91.171.116:443
   type: trojan
-  server: 198.46.152.83
+  server: 45.91.171.116
   port: 443
   uuid: 2ee85121-31de-4581-a492-eb00f606e392
   network: tcp
   tls: true
-  servername: sj3.freeguard.org
+  servername: sto.freeguard.org
+- name: TROJAN-TCP-TLS-🌐(XX)-111.47.212.170:63985
+  type: trojan
+  server: 111.47.212.170
+  port: 63985
+  uuid: 7fec5d9d-4a06-377f-9fc3-6c1fef6a7f4b
+  network: tcp
+  tls: true
+  servername: x74.flybar.work
 - name: TROJAN-TCP-TLS-🇺🇸(US)-192.3.107.252:443
   type: trojan
   server: 192.3.107.252
@@ -98,90 +118,22 @@ proxies:
   network: tcp
   tls: true
   servername: rc8.freeguard.org
-- name: TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443_1
-  type: trojan
-  server: 104.21.72.109
-  port: 443
-  uuid: f282b878-8711-45a1-8c69-5564172123c1
-  network: ws
-  tls: true
-  servername: vpn.stupidworld.web.id
-  ws-opts:
-    path: /Stupid-World/103.106.228.126-2053?--TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY
-    headers:
-      Host: vpn.stupidworld.web.id
-- name: TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443
-  type: trojan
-  server: 104.21.72.109
-  port: 443
-  uuid: f282b878-8711-45a1-8c69-5564172123c1
-  network: ws
-  tls: true
-  servername: vpn.stupidworld.web.id
-  ws-opts:
-    path: /Stupid-World/103.106.228.126-2053
-    headers:
-      Host: vpn.stupidworld.web.id
-- name: TROJAN-TCP-TLS-🌐(XX)-sg4.6n6.net:443_2
-  type: trojan
-  server: sg4.6n6.net
-  port: 443
-  uuid: c623a730-48a2-11f0-b6c7-1239d0255272
-  network: tcp
-  tls: true
-  servername: sg4.6n6.net
-- name: TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443
-  type: trojan
-  server: aio.proxybox.dpdns.org
-  port: 443
-  uuid: 318cab24-ec99-40a6-a54a-0db9c661a3d0
-  network: ws
-  tls: true
-  servername: aio.proxybox.dpdns.org
-  ws-opts:
-    path: 188.34.160.97-2053
-    headers:
-      Host: aio.proxybox.dpdns.org
-- name: TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443_4
-  type: trojan
-  server: 172.67.181.173
-  port: 443
-  uuid: f282b878-8711-45a1-8c69-5564172123c1
-  network: ws
-  tls: true
-  servername: vpn.stupidworld.web.id
-  ws-opts:
-    path: /Stupid-World/103.106.228.126-2053?*VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY*
-    headers:
-      Host: vpn.stupidworld.web.id
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.122.111.46:22222
-  type: trojan
-  server: 3.122.111.46
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
+  - TROJAN-TCP-TLS-🌐(XX)-63.177.223.15:22223
+  - TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443_1
   - TROJAN-TCP-TLS-🌐(XX)-uk-03.allhubb.info:8443
   - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
-  - TROJAN-TCP-TLS-🇸🇪(SE)-45.91.171.116:443
+  - TROJAN-TCP-TLS-🌐(XX)-63.177.223.15:22222
   - TROJAN-TCP-TLS-🇬🇧(GB)-51.195.255.103:8443
-  - TROJAN-TCP-TLS-🌐(XX)-185.208.207.217:443
-  - TROJAN-TCP-TLS-🌐(XX)-63.177.223.143:22222
-  - TROJAN-TCP-TLS-🌐(XX)-63.177.223.143:22223
+  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
   - TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
-  - TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
+  - TROJAN-TCP-TLS-🌐(XX)-45.91.171.116:443
+  - TROJAN-TCP-TLS-🌐(XX)-111.47.212.170:63985
   - TROJAN-TCP-TLS-🇺🇸(US)-192.3.107.252:443
-  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443_1
-  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443
-  - TROJAN-TCP-TLS-🌐(XX)-sg4.6n6.net:443_2
-  - TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443
-  - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443_4
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.122.111.46:22222
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Gemini 2.5 Pro
@@ -196,22 +148,18 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
+  - TROJAN-TCP-TLS-🌐(XX)-63.177.223.15:22223
+  - TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443_1
   - TROJAN-TCP-TLS-🌐(XX)-uk-03.allhubb.info:8443
   - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
-  - TROJAN-TCP-TLS-🇸🇪(SE)-45.91.171.116:443
+  - TROJAN-TCP-TLS-🌐(XX)-63.177.223.15:22222
   - TROJAN-TCP-TLS-🇬🇧(GB)-51.195.255.103:8443
-  - TROJAN-TCP-TLS-🌐(XX)-185.208.207.217:443
-  - TROJAN-TCP-TLS-🌐(XX)-63.177.223.143:22222
-  - TROJAN-TCP-TLS-🌐(XX)-63.177.223.143:22223
+  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
   - TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
-  - TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
+  - TROJAN-TCP-TLS-🌐(XX)-45.91.171.116:443
+  - TROJAN-TCP-TLS-🌐(XX)-111.47.212.170:63985
   - TROJAN-TCP-TLS-🇺🇸(US)-192.3.107.252:443
-  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443_1
-  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443
-  - TROJAN-TCP-TLS-🌐(XX)-sg4.6n6.net:443_2
-  - TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443
-  - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443_4
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.122.111.46:22222
 rule-providers:
   adblock:
     type: http
