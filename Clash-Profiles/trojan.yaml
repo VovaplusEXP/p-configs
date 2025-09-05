@@ -14,6 +14,30 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-TCP-TLS-🌐(XX)-103.252.116.138:443
+  type: trojan
+  server: 103.252.116.138
+  port: 443
+  uuid: 2ee85121-31de-4581-a492-eb00f606e392
+  network: tcp
+  tls: true
+  servername: hk.freeguard.org
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
+  type: trojan
+  server: 185.208.207.217
+  port: 443
+  uuid: 2ee85121-31de-4581-a492-eb00f606e392
+  network: tcp
+  tls: true
+  servername: dus.freeguard.org
+- name: TROJAN-TCP-TLS-🇸🇪(SE)-45.91.171.116:443
+  type: trojan
+  server: 45.91.171.116
+  port: 443
+  uuid: 2ee85121-31de-4581-a492-eb00f606e392
+  network: tcp
+  tls: true
+  servername: sto.freeguard.org
 - name: TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
   type: trojan
   server: 172.67.181.173
@@ -26,42 +50,6 @@ proxies:
     path: /Stupid-World/103.106.228.126-2053
     headers:
       Host: vpn.stupidworld.web.id
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.44.169:22223
-  type: trojan
-  server: 63.179.44.169
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇸🇪(SE)-45.91.171.116:443
-  type: trojan
-  server: 45.91.171.116
-  port: 443
-  uuid: 2ee85121-31de-4581-a492-eb00f606e392
-  network: tcp
-  tls: true
-  servername: sto.freeguard.org
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.193.223:22223
-  type: trojan
-  server: 51.44.193.223
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443
-  type: trojan
-  server: aio.proxybox.dpdns.org
-  port: 443
-  uuid: 318cab24-ec99-40a6-a54a-0db9c661a3d0
-  network: ws
-  tls: true
-  servername: aio.proxybox.dpdns.org
-  ws-opts:
-    path: 188.34.160.97-2053
-    headers:
-      Host: aio.proxybox.dpdns.org
 - name: TROJAN-TCP-TLS-🌐(XX)-uk-03.allhubb.info:8443
   type: trojan
   server: uk-03.allhubb.info
@@ -70,26 +58,6 @@ proxies:
   network: tcp
   tls: true
   servername: uk-03.allhubb.info
-- name: TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443_1
-  type: trojan
-  server: aio.proxybox.dpdns.org
-  port: 443
-  uuid: 318cab24-ec99-40a6-a54a-0db9c661a3d0
-  network: ws
-  tls: true
-  servername: aio.proxybox.dpdns.org
-  ws-opts:
-    path: /188.34.160.97-2053
-    headers:
-      Host: aio.proxybox.dpdns.org
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.123.107.229:22223
-  type: trojan
-  server: 3.123.107.229
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🌐(XX)-news.farsonline24.ir:443_2
   type: trojan
   server: news.farsonline24.ir
@@ -102,19 +70,11 @@ proxies:
     path: /19155/mehdi
     headers:
       Host: news.farsonline24.ir
-- name: TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_1
+- name: TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_3
   type: trojan
   server: news.farsonline24.ir
   port: 443
-  uuid: G1s7VYEyAe
-  network: grpc
-  tls: true
-  servername: news.farsonline24.ir
-- name: TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_2
-  type: trojan
-  server: news.farsonline24.ir
-  port: 443
-  uuid: OBYMYoqYAL
+  uuid: uOFIsGRP5W
   network: grpc
   tls: true
   servername: news.farsonline24.ir
@@ -130,70 +90,14 @@ proxies:
     path: /55836/mehdi
     headers:
       Host: news.farsonline24.ir
-- name: TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_3
+- name: TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_2
   type: trojan
   server: news.farsonline24.ir
   port: 443
-  uuid: uOFIsGRP5W
+  uuid: OBYMYoqYAL
   network: grpc
   tls: true
   servername: news.farsonline24.ir
-- name: TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443
-  type: trojan
-  server: news.farsonline24.ir
-  port: 443
-  uuid: Gq9UTAqjl9
-  network: grpc
-  tls: true
-  servername: news.farsonline24.ir
-- name: TROJAN-WS-TLS-🌐(XX)-104.21.72.109:443_1
-  type: trojan
-  server: 104.21.72.109
-  port: 443
-  uuid: f282b878-8711-45a1-8c69-5564172123c1
-  network: ws
-  tls: true
-  servername: vpn.stupidworld.web.id
-  ws-opts:
-    path: /Stupid-World/103.106.228.126-2053?--TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY
-    headers:
-      Host: vpn.stupidworld.web.id
-- name: TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
-  type: trojan
-  server: 198.46.152.83
-  port: 443
-  uuid: 2ee85121-31de-4581-a492-eb00f606e392
-  network: tcp
-  tls: true
-  servername: sj3.freeguard.org
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.44.169:22222
-  type: trojan
-  server: 63.179.44.169
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-WS-TLS-🌐(XX)-news.farsonline24.ir:443_3
-  type: trojan
-  server: news.farsonline24.ir
-  port: 443
-  uuid: vyTVu45Xrk
-  network: ws
-  tls: true
-  servername: news.farsonline24.ir
-  ws-opts:
-    path: /23863/mehdi
-    headers:
-      Host: news.farsonline24.ir
-- name: TROJAN-TCP-TLS-🌐(XX)-51.195.255.103:8443
-  type: trojan
-  server: 51.195.255.103
-  port: 8443
-  uuid: 1ce1df7962f71c6f
-  network: tcp
-  tls: true
-  servername: uk-03.allhubb.info
 - name: TROJAN-WS-TLS-🌐(XX)-news.farsonline24.ir:443_1
   type: trojan
   server: news.farsonline24.ir
@@ -206,14 +110,74 @@ proxies:
     path: /25973/mehdi
     headers:
       Host: news.farsonline24.ir
-- name: TROJAN-TCP-REALITY-🇷🇺(RU)-176.32.39.29:443
+- name: TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443_1
   type: trojan
-  server: 176.32.39.29
+  server: aio.proxybox.dpdns.org
   port: 443
-  uuid: 8OXD5VVt8s
+  uuid: 318cab24-ec99-40a6-a54a-0db9c661a3d0
+  network: ws
+  tls: true
+  servername: aio.proxybox.dpdns.org
+  ws-opts:
+    path: /188.34.160.97-2053
+    headers:
+      Host: aio.proxybox.dpdns.org
+- name: TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443
+  type: trojan
+  server: aio.proxybox.dpdns.org
+  port: 443
+  uuid: 318cab24-ec99-40a6-a54a-0db9c661a3d0
+  network: ws
+  tls: true
+  servername: aio.proxybox.dpdns.org
+  ws-opts:
+    path: 188.34.160.97-2053
+    headers:
+      Host: aio.proxybox.dpdns.org
+- name: TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443
+  type: trojan
+  server: news.farsonline24.ir
+  port: 443
+  uuid: Gq9UTAqjl9
+  network: grpc
+  tls: true
+  servername: news.farsonline24.ir
+- name: TROJAN-TCP-TLS-🌐(XX)-63.176.195.141:22223
+  type: trojan
+  server: 63.176.195.141
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: journalofbigdata.springeropen.com
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.159.253.19:22223
+  type: trojan
+  server: 35.159.253.19
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_1
+  type: trojan
+  server: news.farsonline24.ir
+  port: 443
+  uuid: G1s7VYEyAe
+  network: grpc
+  tls: true
+  servername: news.farsonline24.ir
+- name: TROJAN-WS-TLS-🌐(XX)-news.farsonline24.ir:443_3
+  type: trojan
+  server: news.farsonline24.ir
+  port: 443
+  uuid: vyTVu45Xrk
+  network: ws
+  tls: true
+  servername: news.farsonline24.ir
+  ws-opts:
+    path: /23863/mehdi
+    headers:
+      Host: news.farsonline24.ir
 - name: TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_4
   type: trojan
   server: news.farsonline24.ir
@@ -222,15 +186,43 @@ proxies:
   network: grpc
   tls: true
   servername: news.farsonline24.ir
-- name: TROJAN-TCP-TLS-🇸🇬(SG)-43.156.226.72:443
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.159.253.19:22222
   type: trojan
-  server: 43.156.226.72
-  port: 443
-  uuid: '506313349'
+  server: 35.159.253.19
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: 506313349.hk365.work
-- name: TROJAN-WS-TLS-🌐(XX)-104.21.72.109:443
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🌐(XX)-198.46.152.83:443
+  type: trojan
+  server: 198.46.152.83
+  port: 443
+  uuid: 2ee85121-31de-4581-a492-eb00f606e392
+  network: tcp
+  tls: true
+  servername: sj3.freeguard.org
+- name: TROJAN-TCP-TLS-🇬🇧(GB)-51.195.255.103:8443
+  type: trojan
+  server: 51.195.255.103
+  port: 8443
+  uuid: 1ce1df7962f71c6f
+  network: tcp
+  tls: true
+  servername: uk-03.allhubb.info
+- name: TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443_1
+  type: trojan
+  server: 104.21.72.109
+  port: 443
+  uuid: f282b878-8711-45a1-8c69-5564172123c1
+  network: ws
+  tls: true
+  servername: vpn.stupidworld.web.id
+  ws-opts:
+    path: /Stupid-World/103.106.228.126-2053?--TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY
+    headers:
+      Host: vpn.stupidworld.web.id
+- name: TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443
   type: trojan
   server: 104.21.72.109
   port: 443
@@ -242,46 +234,14 @@ proxies:
     path: /Stupid-World/103.106.228.126-2053
     headers:
       Host: vpn.stupidworld.web.id
-- name: TROJAN-TCP-TLS-🌐(XX)-ee-1.stunnel.cc:8441
+- name: TROJAN-TCP-TLS-🌐(XX)-15.222.9.61:22222
   type: trojan
-  server: ee-1.stunnel.cc
-  port: 8441
-  uuid: tunnel-astrovpn_official-ee
-  network: tcp
-  tls: true
-  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev
-- name: TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
-  type: trojan
-  server: 103.252.116.138
-  port: 443
-  uuid: 2ee85121-31de-4581-a492-eb00f606e392
-  network: tcp
-  tls: true
-  servername: hk.freeguard.org
-- name: TROJAN-TCP-TLS-🌐(XX)-de-1.stunnel.cc:8441_1
-  type: trojan
-  server: de-1.stunnel.cc
-  port: 8441
-  uuid: tunnel-astrovpn_official-de
-  network: tcp
-  tls: true
-  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.monster.JoinTelegram-------------AstroVPN_Official----------Join.ir
-- name: TROJAN-TCP-TLS-🌐(XX)-ee-1.kamediorg.com:443
-  type: trojan
-  server: ee-1.kamediorg.com
-  port: 443
-  uuid: wQz5G4ybA9eC3BQDkd
-  network: tcp
-  tls: true
-  servername: ee-1.kamediorg.com
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.193.223:22222
-  type: trojan
-  server: 51.44.193.223
+  server: 15.222.9.61
   port: 22222
-  uuid: telegram-id-privatevpns
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: trj.rollingnext.co.uk
 - name: TROJAN-TCP-TLS-🇺🇸(US)-192.3.107.252:443
   type: trojan
   server: 192.3.107.252
@@ -290,49 +250,35 @@ proxies:
   network: tcp
   tls: true
   servername: rc8.freeguard.org
-- name: TROJAN-TCP-TLS-🌐(XX)-185.208.207.217:443
-  type: trojan
-  server: 185.208.207.217
-  port: 443
-  uuid: 2ee85121-31de-4581-a492-eb00f606e392
-  network: tcp
-  tls: true
-  servername: dus.freeguard.org
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.44.169:22223
+  - TROJAN-TCP-TLS-🌐(XX)-103.252.116.138:443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
   - TROJAN-TCP-TLS-🇸🇪(SE)-45.91.171.116:443
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.193.223:22223
-  - TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
   - TROJAN-TCP-TLS-🌐(XX)-uk-03.allhubb.info:8443
-  - TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.123.107.229:22223
   - TROJAN-WS-TLS-🌐(XX)-news.farsonline24.ir:443_2
-  - TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_1
-  - TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_2
-  - TROJAN-WS-TLS-🌐(XX)-news.farsonline24.ir:443
   - TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_3
-  - TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443
-  - TROJAN-WS-TLS-🌐(XX)-104.21.72.109:443_1
-  - TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.44.169:22222
-  - TROJAN-WS-TLS-🌐(XX)-news.farsonline24.ir:443_3
-  - TROJAN-TCP-TLS-🌐(XX)-51.195.255.103:8443
+  - TROJAN-WS-TLS-🌐(XX)-news.farsonline24.ir:443
+  - TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_2
   - TROJAN-WS-TLS-🌐(XX)-news.farsonline24.ir:443_1
-  - TROJAN-TCP-REALITY-🇷🇺(RU)-176.32.39.29:443
+  - TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443_1
+  - TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443
+  - TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443
+  - TROJAN-TCP-TLS-🌐(XX)-63.176.195.141:22223
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.159.253.19:22223
+  - TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_1
+  - TROJAN-WS-TLS-🌐(XX)-news.farsonline24.ir:443_3
   - TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_4
-  - TROJAN-TCP-TLS-🇸🇬(SG)-43.156.226.72:443
-  - TROJAN-WS-TLS-🌐(XX)-104.21.72.109:443
-  - TROJAN-TCP-TLS-🌐(XX)-ee-1.stunnel.cc:8441
-  - TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
-  - TROJAN-TCP-TLS-🌐(XX)-de-1.stunnel.cc:8441_1
-  - TROJAN-TCP-TLS-🌐(XX)-ee-1.kamediorg.com:443
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.193.223:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.159.253.19:22222
+  - TROJAN-TCP-TLS-🌐(XX)-198.46.152.83:443
+  - TROJAN-TCP-TLS-🇬🇧(GB)-51.195.255.103:8443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443_1
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443
+  - TROJAN-TCP-TLS-🌐(XX)-15.222.9.61:22222
   - TROJAN-TCP-TLS-🇺🇸(US)-192.3.107.252:443
-  - TROJAN-TCP-TLS-🌐(XX)-185.208.207.217:443
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Gemini 2.5 Pro
@@ -347,37 +293,31 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.44.169:22223
+  - TROJAN-TCP-TLS-🌐(XX)-103.252.116.138:443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
   - TROJAN-TCP-TLS-🇸🇪(SE)-45.91.171.116:443
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.193.223:22223
-  - TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-172.67.181.173:443
   - TROJAN-TCP-TLS-🌐(XX)-uk-03.allhubb.info:8443
-  - TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.123.107.229:22223
   - TROJAN-WS-TLS-🌐(XX)-news.farsonline24.ir:443_2
-  - TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_1
-  - TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_2
-  - TROJAN-WS-TLS-🌐(XX)-news.farsonline24.ir:443
   - TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_3
-  - TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443
-  - TROJAN-WS-TLS-🌐(XX)-104.21.72.109:443_1
-  - TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.44.169:22222
-  - TROJAN-WS-TLS-🌐(XX)-news.farsonline24.ir:443_3
-  - TROJAN-TCP-TLS-🌐(XX)-51.195.255.103:8443
+  - TROJAN-WS-TLS-🌐(XX)-news.farsonline24.ir:443
+  - TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_2
   - TROJAN-WS-TLS-🌐(XX)-news.farsonline24.ir:443_1
-  - TROJAN-TCP-REALITY-🇷🇺(RU)-176.32.39.29:443
+  - TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443_1
+  - TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443
+  - TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443
+  - TROJAN-TCP-TLS-🌐(XX)-63.176.195.141:22223
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.159.253.19:22223
+  - TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_1
+  - TROJAN-WS-TLS-🌐(XX)-news.farsonline24.ir:443_3
   - TROJAN-GRPC-TLS-🌐(XX)-news.farsonline24.ir:443_4
-  - TROJAN-TCP-TLS-🇸🇬(SG)-43.156.226.72:443
-  - TROJAN-WS-TLS-🌐(XX)-104.21.72.109:443
-  - TROJAN-TCP-TLS-🌐(XX)-ee-1.stunnel.cc:8441
-  - TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
-  - TROJAN-TCP-TLS-🌐(XX)-de-1.stunnel.cc:8441_1
-  - TROJAN-TCP-TLS-🌐(XX)-ee-1.kamediorg.com:443
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.193.223:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.159.253.19:22222
+  - TROJAN-TCP-TLS-🌐(XX)-198.46.152.83:443
+  - TROJAN-TCP-TLS-🇬🇧(GB)-51.195.255.103:8443
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443_1
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.72.109:443
+  - TROJAN-TCP-TLS-🌐(XX)-15.222.9.61:22222
   - TROJAN-TCP-TLS-🇺🇸(US)-192.3.107.252:443
-  - TROJAN-TCP-TLS-🌐(XX)-185.208.207.217:443
 rule-providers:
   adblock:
     type: http
