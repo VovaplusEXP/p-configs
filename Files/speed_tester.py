@@ -107,7 +107,7 @@ def test_proxy(proxy_line, worker_slot_id, task_id):
             with socket.create_connection(("127.0.0.1", local_socks_port), timeout=1):
                 is_ready = True
                 break
-        except (socket.timeout, ConnectionRefusedError): continue
+        except (socket.timeout, ConnectionRefusedError, ConnectionResetError): continue
     
     speed = 0
     status = "Timeout"
