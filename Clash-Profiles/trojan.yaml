@@ -14,6 +14,30 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.230.115:22222
+  type: trojan
+  server: 13.39.230.115
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🌐(XX)-198.46.152.83:443
+  type: trojan
+  server: 198.46.152.83
+  port: 443
+  uuid: 2ee85121-31de-4581-a492-eb00f606e392
+  network: tcp
+  tls: true
+  servername: sj3.freeguard.org
+- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2:12882
+  type: trojan
+  server: 176.97.210.2
+  port: 12882
+  uuid: '@Geek_Spot'
+  network: tcp
+  tls: false
+  servername: 176.97.210.2
 - name: TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443
   type: trojan
   server: aio.proxybox.dpdns.org
@@ -26,6 +50,22 @@ proxies:
     path: /188.34.160.97-2053
     headers:
       Host: aio.proxybox.dpdns.org
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.121.173.169:22222
+  type: trojan
+  server: 3.121.173.169
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.79.170.110:22222
+  type: trojan
+  server: 3.79.170.110
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
   type: trojan
   server: 185.208.207.217
@@ -34,54 +74,18 @@ proxies:
   network: tcp
   tls: true
   servername: dus.freeguard.org
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.182.65:22222
+- name: TROJAN-WS-TLS-🇨🇦(CA)-172.67.156.25:443
   type: trojan
-  server: 13.37.182.65
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.237.91.209:22222
-  type: trojan
-  server: 15.237.91.209
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2:12882
-  type: trojan
-  server: 176.97.210.2
-  port: 12882
-  uuid: '@Geek_Spot'
-  network: tcp
-  tls: false
-  servername: 176.97.210.2
-- name: TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
-  type: trojan
-  server: 103.252.116.138
+  server: 172.67.156.25
   port: 443
-  uuid: 2ee85121-31de-4581-a492-eb00f606e392
-  network: tcp
+  uuid: f282b878-8711-45a1-8c69-5564172123c1
+  network: ws
   tls: true
-  servername: hk.freeguard.org
-- name: TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
-  type: trojan
-  server: 198.46.152.83
-  port: 443
-  uuid: 2ee85121-31de-4581-a492-eb00f606e392
-  network: tcp
-  tls: true
-  servername: sj3.freeguard.org
-- name: TROJAN-TCP-TLS-🌐(XX)-gb-1.stunnel.cc:8441_2
-  type: trojan
-  server: gb-1.stunnel.cc
-  port: 8441
-  uuid: tunnel-astrovpn_official_gb
-  network: tcp
-  tls: true
-  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev
+  servername: aio.zipzap.biz.id
+  ws-opts:
+    path: /aioproxybot/129.150.49.58-18650
+    headers:
+      Host: aio.zipzap.biz.id
 - name: TROJAN-WS-TLS-🇬🇧(GB)-195.22.157.104:55700
   type: trojan
   server: 195.22.157.104
@@ -94,28 +98,28 @@ proxies:
     path: /moshali-kirm-to-filterchee-kharkosde2
     headers:
       Host: joon.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-TLS-🇺🇸(US)-5.181.3.169:2057
+- name: TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
   type: trojan
-  server: 5.181.3.169
-  port: 2057
-  uuid: SSFUUBnxFFpCthyduC2PTw
+  server: 103.252.116.138
+  port: 443
+  uuid: 2ee85121-31de-4581-a492-eb00f606e392
   network: tcp
   tls: true
-  servername: usa.linegroups.ru
+  servername: hk.freeguard.org
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443
-  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.182.65:22222
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.91.209:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.230.115:22222
+  - TROJAN-TCP-TLS-🌐(XX)-198.46.152.83:443
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2:12882
-  - TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
-  - TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
-  - TROJAN-TCP-TLS-🌐(XX)-gb-1.stunnel.cc:8441_2
+  - TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.121.173.169:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.79.170.110:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-172.67.156.25:443
   - TROJAN-WS-TLS-🇬🇧(GB)-195.22.157.104:55700
-  - TROJAN-TCP-TLS-🇺🇸(US)-5.181.3.169:2057
+  - TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Gemini 2.5 Pro
@@ -130,16 +134,16 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443
-  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.182.65:22222
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.91.209:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.230.115:22222
+  - TROJAN-TCP-TLS-🌐(XX)-198.46.152.83:443
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2:12882
-  - TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
-  - TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
-  - TROJAN-TCP-TLS-🌐(XX)-gb-1.stunnel.cc:8441_2
+  - TROJAN-WS-TLS-🌐(XX)-aio.proxybox.dpdns.org:443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.121.173.169:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.79.170.110:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
+  - TROJAN-WS-TLS-🇨🇦(CA)-172.67.156.25:443
   - TROJAN-WS-TLS-🇬🇧(GB)-195.22.157.104:55700
-  - TROJAN-TCP-TLS-🇺🇸(US)-5.181.3.169:2057
+  - TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
 rule-providers:
   adblock:
     type: http
