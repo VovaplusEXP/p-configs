@@ -14,6 +14,14 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-TCP-TLS-🌐(XX)-15.188.202.143:22222
+  type: trojan
+  server: 15.188.202.143
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
   type: trojan
   server: 185.208.207.217
@@ -22,30 +30,14 @@ proxies:
   network: tcp
   tls: true
   servername: dus.freeguard.org
-- name: TROJAN-TCP-TLS-🌐(XX)-103.252.116.138:443
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.195.249.244:22222
   type: trojan
-  server: 103.252.116.138
-  port: 443
-  uuid: 2ee85121-31de-4581-a492-eb00f606e392
-  network: tcp
-  tls: true
-  servername: hk.freeguard.org
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.206.31:22222
-  type: trojan
-  server: 15.188.206.31
+  server: 18.195.249.244
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-198.46.152.83:443
-  type: trojan
-  server: 198.46.152.83
-  port: 443
-  uuid: 2ee85121-31de-4581-a492-eb00f606e392
-  network: tcp
-  tls: true
-  servername: sj3.freeguard.org
 - name: TROJAN-WS-TLS-🇳🇱(NL)-5.255.103.217:37757
   type: trojan
   server: 5.255.103.217
@@ -58,24 +50,27 @@ proxies:
     path: /moshaliplus
     headers:
       Host: moshali.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-🇩🇪(DE)-91.107.252.182:26805_1
+- name: TROJAN-WS-TLS-🌐(XX)-172.67.156.25:443
   type: trojan
-  server: 91.107.252.182
-  port: 26805
-  uuid: OSXRComila
-  network: tcp
-  tls: false
-  servername: 91.107.252.182
+  server: 172.67.156.25
+  port: 443
+  uuid: f282b878-8711-45a1-8c69-5564172123c1
+  network: ws
+  tls: true
+  servername: aio.zipzap.biz.id
+  ws-opts:
+    path: /aioproxybot/129.150.49.58-18650
+    headers:
+      Host: aio.zipzap.biz.id
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-TCP-TLS-🌐(XX)-15.188.202.143:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
-  - TROJAN-TCP-TLS-🌐(XX)-103.252.116.138:443
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.206.31:22222
-  - TROJAN-TCP-TLS-🌐(XX)-198.46.152.83:443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.195.249.244:22222
   - TROJAN-WS-TLS-🇳🇱(NL)-5.255.103.217:37757
-  - TROJAN-TCP-🇩🇪(DE)-91.107.252.182:26805_1
+  - TROJAN-WS-TLS-🌐(XX)-172.67.156.25:443
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Gemini 2.5 Pro
@@ -90,12 +85,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-TCP-TLS-🌐(XX)-15.188.202.143:22222
   - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
-  - TROJAN-TCP-TLS-🌐(XX)-103.252.116.138:443
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.206.31:22222
-  - TROJAN-TCP-TLS-🌐(XX)-198.46.152.83:443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.195.249.244:22222
   - TROJAN-WS-TLS-🇳🇱(NL)-5.255.103.217:37757
-  - TROJAN-TCP-🇩🇪(DE)-91.107.252.182:26805_1
+  - TROJAN-WS-TLS-🌐(XX)-172.67.156.25:443
 rule-providers:
   adblock:
     type: http
