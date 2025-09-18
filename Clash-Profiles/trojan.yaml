@@ -14,23 +14,15 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.65.3.50:22222
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
   type: trojan
-  server: 3.65.3.50
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: 185.208.207.217
+  port: 443
+  uuid: 2ee85121-31de-4581-a492-eb00f606e392
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.237.148.28:22222
-  type: trojan
-  server: 15.237.148.28
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
+  servername: dus.freeguard.org
+- name: TROJAN-TCP-TLS-🌐(XX)-103.252.116.138:443
   type: trojan
   server: 103.252.116.138
   port: 443
@@ -46,7 +38,7 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
+- name: TROJAN-TCP-TLS-🌐(XX)-198.46.152.83:443
   type: trojan
   server: 198.46.152.83
   port: 443
@@ -54,30 +46,6 @@ proxies:
   network: tcp
   tls: true
   servername: sj3.freeguard.org
-- name: TROJAN-TCP-🌐(XX)-91.107.252.182:26805_1
-  type: trojan
-  server: 91.107.252.182
-  port: 26805
-  uuid: OSXRComila
-  network: tcp
-  tls: false
-  servername: 91.107.252.182
-- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2:12882
-  type: trojan
-  server: 176.97.210.2
-  port: 12882
-  uuid: '@Geek_Spot'
-  network: tcp
-  tls: false
-  servername: 176.97.210.2
-- name: TROJAN-TCP-TLS-🌐(XX)-ee-1.stunnel.cc:8441_1
-  type: trojan
-  server: ee-1.stunnel.cc
-  port: 8441
-  uuid: tunnel-astrovpn_official_ee
-  network: tcp
-  tls: true
-  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev
 - name: TROJAN-WS-TLS-🇳🇱(NL)-5.255.103.217:37757
   type: trojan
   server: 5.255.103.217
@@ -90,19 +58,24 @@ proxies:
     path: /moshaliplus
     headers:
       Host: moshali.arshiacomplus.dpdns.org
+- name: TROJAN-TCP-🇩🇪(DE)-91.107.252.182:26805_1
+  type: trojan
+  server: 91.107.252.182
+  port: 26805
+  uuid: OSXRComila
+  network: tcp
+  tls: false
+  servername: 91.107.252.182
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.65.3.50:22222
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.148.28:22222
-  - TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
+  - TROJAN-TCP-TLS-🌐(XX)-103.252.116.138:443
   - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.206.31:22222
-  - TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
-  - TROJAN-TCP-🌐(XX)-91.107.252.182:26805_1
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2:12882
-  - TROJAN-TCP-TLS-🌐(XX)-ee-1.stunnel.cc:8441_1
+  - TROJAN-TCP-TLS-🌐(XX)-198.46.152.83:443
   - TROJAN-WS-TLS-🇳🇱(NL)-5.255.103.217:37757
+  - TROJAN-TCP-🇩🇪(DE)-91.107.252.182:26805_1
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Gemini 2.5 Pro
@@ -117,15 +90,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.65.3.50:22222
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.148.28:22222
-  - TROJAN-TCP-TLS-🇭🇰(HK)-103.252.116.138:443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
+  - TROJAN-TCP-TLS-🌐(XX)-103.252.116.138:443
   - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.206.31:22222
-  - TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
-  - TROJAN-TCP-🌐(XX)-91.107.252.182:26805_1
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2:12882
-  - TROJAN-TCP-TLS-🌐(XX)-ee-1.stunnel.cc:8441_1
+  - TROJAN-TCP-TLS-🌐(XX)-198.46.152.83:443
   - TROJAN-WS-TLS-🇳🇱(NL)-5.255.103.217:37757
+  - TROJAN-TCP-🇩🇪(DE)-91.107.252.182:26805_1
 rule-providers:
   adblock:
     type: http
