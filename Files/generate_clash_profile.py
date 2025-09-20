@@ -53,7 +53,7 @@ BASE_PROFILE_STRUCTURE = {
 HEALTH_CHECK_CONFIG = {
     "url": "https://aistudio.google.com/prompts/new_chat",
     "interval": 1200, # 20 minutes
-    "regex": "Gemini 2.5 Pro"
+    "regex": "Sign in - Google Accounts"
 }
 
 # --- Parser Functions (copied from previous version) ---
