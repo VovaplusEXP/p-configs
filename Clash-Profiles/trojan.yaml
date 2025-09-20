@@ -22,20 +22,47 @@ proxies:
   network: tcp
   tls: true
   servername: map.wimax.cc
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.175.202:22222
+- name: TROJAN-TCP-🌐(XX)-176.97.210.2:12882
   type: trojan
-  server: 15.188.175.202
+  server: 176.97.210.2
+  port: 12882
+  uuid: '@Geek_Spot'
+  network: tcp
+  tls: false
+  servername: 176.97.210.2
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.226.235:22222
+  type: trojan
+  server: 63.179.226.235
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.28.47.115:22222
+  type: trojan
+  server: 52.28.47.115
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
+  type: trojan
+  server: 185.208.207.217
+  port: 443
+  uuid: 2ee85121-31de-4581-a492-eb00f606e392
+  network: tcp
+  tls: true
+  servername: dus.freeguard.org
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-TCP-TLS-🌐(XX)-map.wimax.cc:8443
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.175.202:22222
+  - TROJAN-TCP-🌐(XX)-176.97.210.2:12882
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.226.235:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.28.47.115:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Gemini 2.5 Pro
@@ -51,7 +78,10 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-TLS-🌐(XX)-map.wimax.cc:8443
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.175.202:22222
+  - TROJAN-TCP-🌐(XX)-176.97.210.2:12882
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.226.235:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.28.47.115:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
 rule-providers:
   adblock:
     type: http
