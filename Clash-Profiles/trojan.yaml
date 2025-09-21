@@ -14,30 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🌐(XX)-map.wimax.cc:8443
-  type: trojan
-  server: map.wimax.cc
-  port: 8443
-  uuid: WyRE1b2elC
-  network: tcp
-  tls: true
-  servername: map.wimax.cc
-- name: TROJAN-TCP-TLS-🌐(XX)-13.36.216.106:22222
-  type: trojan
-  server: 13.36.216.106
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-13.39.73.201:22222
-  type: trojan
-  server: 13.39.73.201
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
 - name: TROJAN-TCP-TLS-🌐(XX)-185.208.207.217:443
   type: trojan
   server: 185.208.207.217
@@ -46,23 +22,38 @@ proxies:
   network: tcp
   tls: true
   servername: dus.freeguard.org
-- name: TROJAN-TCP-TLS-🌐(XX)-198.46.152.83:443
+- name: TROJAN-TCP-TLS-🌐(XX)-map.wimax.cc:8443
   type: trojan
-  server: 198.46.152.83
-  port: 443
-  uuid: 2ee85121-31de-4581-a492-eb00f606e392
+  server: map.wimax.cc
+  port: 8443
+  uuid: WyRE1b2elC
   network: tcp
   tls: true
-  servername: sj3.freeguard.org
+  servername: map.wimax.cc
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.19.28:22222
+  type: trojan
+  server: 63.179.19.28
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.9.113:22222
+  type: trojan
+  server: 15.236.9.113
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🌐(XX)-map.wimax.cc:8443
-  - TROJAN-TCP-TLS-🌐(XX)-13.36.216.106:22222
-  - TROJAN-TCP-TLS-🌐(XX)-13.39.73.201:22222
   - TROJAN-TCP-TLS-🌐(XX)-185.208.207.217:443
-  - TROJAN-TCP-TLS-🌐(XX)-198.46.152.83:443
+  - TROJAN-TCP-TLS-🌐(XX)-map.wimax.cc:8443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.19.28:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.9.113:22222
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -77,11 +68,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🌐(XX)-map.wimax.cc:8443
-  - TROJAN-TCP-TLS-🌐(XX)-13.36.216.106:22222
-  - TROJAN-TCP-TLS-🌐(XX)-13.39.73.201:22222
   - TROJAN-TCP-TLS-🌐(XX)-185.208.207.217:443
-  - TROJAN-TCP-TLS-🌐(XX)-198.46.152.83:443
+  - TROJAN-TCP-TLS-🌐(XX)-map.wimax.cc:8443
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.19.28:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.9.113:22222
 rule-providers:
   adblock:
     type: http
