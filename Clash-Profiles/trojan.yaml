@@ -22,7 +22,23 @@ proxies:
   network: tcp
   tls: true
   servername: map.wimax.cc
-- name: TROJAN-TCP-TLS-🌐(XX)-185.208.207.217:443
+- name: TROJAN-TCP-TLS-🌐(XX)-13.36.216.106:22222
+  type: trojan
+  server: 13.36.216.106
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.73.201:22222
+  type: trojan
+  server: 13.39.73.201
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
   type: trojan
   server: 185.208.207.217
   port: 443
@@ -30,30 +46,23 @@ proxies:
   network: tcp
   tls: true
   servername: dus.freeguard.org
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.76.59.222:22222
+- name: TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
   type: trojan
-  server: 3.76.59.222
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: 198.46.152.83
+  port: 443
+  uuid: 2ee85121-31de-4581-a492-eb00f606e392
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.157.63.61:22222
-  type: trojan
-  server: 35.157.63.61
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
+  servername: sj3.freeguard.org
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-TCP-TLS-🌐(XX)-map.wimax.cc:8443
-  - TROJAN-TCP-TLS-🌐(XX)-185.208.207.217:443
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.59.222:22222
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.63.61:22222
+  - TROJAN-TCP-TLS-🌐(XX)-13.36.216.106:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.73.201:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
+  - TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -69,9 +78,10 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-TLS-🌐(XX)-map.wimax.cc:8443
-  - TROJAN-TCP-TLS-🌐(XX)-185.208.207.217:443
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.59.222:22222
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.63.61:22222
+  - TROJAN-TCP-TLS-🌐(XX)-13.36.216.106:22222
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.73.201:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
+  - TROJAN-TCP-TLS-🇺🇸(US)-198.46.152.83:443
 rule-providers:
   adblock:
     type: http
