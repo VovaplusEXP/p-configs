@@ -1,3 +1,4 @@
+
 import os
 import json
 import subprocess
@@ -7,6 +8,7 @@ import psutil
 import base64
 import socket
 import re
+import signal
 from urllib.parse import urlparse, parse_qs, unquote, quote, urlunparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -147,20 +149,16 @@ def create_v2ray_config(proxy_line, local_socks_port, task_id):
     return config_path
 
 # --- Worker Functions ---
-def kill_process_and_children(proc):
-    try:
-        parent = psutil.Process(proc.pid)
-        for child in parent.children(recursive=True): child.kill()
-        parent.kill()
-    except psutil.NoSuchProcess: pass
-
 def test_proxy(proxy_line, worker_slot_id, task_id):
     local_socks_port = BASE_SOCKS_PORT + worker_slot_id
     config_file = create_v2ray_config(proxy_line, local_socks_port, task_id)
     if not config_file:
         return None
 
-    process = subprocess.Popen([os.path.abspath(V2RAY_EXECUTABLE_PATH), "run", "-c", config_file], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    # Launch the xray process in a new process group
+    process = subprocess.Popen([os.path.abspath(V2RAY_EXECUTABLE_PATH), "run", "-c", config_file], 
+                               stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, 
+                               preexec_fn=os.setsid)
     
     try:
         # Wait for SOCKS5 server to be ready
@@ -209,7 +207,12 @@ def test_proxy(proxy_line, worker_slot_id, task_id):
     except Exception:
         return {"status": "Unknown Error", "speed": 0, "line": proxy_line}
     finally:
-        kill_process_and_children(process)
+        # Kill the entire process group
+        try:
+            os.killpg(os.getpgid(process.pid), signal.SIGKILL)
+        except (ProcessLookupError, PermissionError):
+            pass # Process might have already died
+        
         if os.path.exists(config_file):
             os.remove(config_file)
 
