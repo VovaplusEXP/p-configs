@@ -14,45 +14,31 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-aes-128-gcm-9Mbps-🇺🇸(US)
+- name: SS-C20P-6Mbps-🇺🇸(US)
   type: ss
-  server: 37.19.198.244
+  server: 104.192.226.106
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+- name: SS-aes-128-gcm-6Mbps-🇺🇸(US)
+  type: ss
+  server: 173.244.56.9
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-- name: SS-C20P-7Mbps-🌐(XX)
+- name: SS-aes-128-gcm-5Mbps-🇺🇸(US)
   type: ss
-  server: us55.giamping.com
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 42000e02-6b4d-46ad-a572-80db7db2a9ce
-- name: SS-A256GCM-6Mbps-🌐(XX)
-  type: ss
-  server: 38.107.226.159
-  port: 7307
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-- name: SS-C20P-6Mbps-🌐(XX)
-  type: ss
-  server: 71.19.148.74
+  server: 212.102.47.130
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: gqkUCvmeOTghYJXF1YIuk5
-- name: SS-C20P-5Mbps-🇺🇸(US)
-  type: ss
-  server: 92.118.112.101
-  port: 9483
-  cipher: chacha20-ietf-poly1305
-  password: h7922CiGBfaLPSO59G7Mlm
+  cipher: aes-128-gcm
+  password: shadowsocks
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-aes-128-gcm-9Mbps-🇺🇸(US)
-  - SS-C20P-7Mbps-🌐(XX)
-  - SS-A256GCM-6Mbps-🌐(XX)
-  - SS-C20P-6Mbps-🌐(XX)
-  - SS-C20P-5Mbps-🇺🇸(US)
+  - SS-C20P-6Mbps-🇺🇸(US)
+  - SS-aes-128-gcm-6Mbps-🇺🇸(US)
+  - SS-aes-128-gcm-5Mbps-🇺🇸(US)
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -67,11 +53,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-aes-128-gcm-9Mbps-🇺🇸(US)
-  - SS-C20P-7Mbps-🌐(XX)
-  - SS-A256GCM-6Mbps-🌐(XX)
-  - SS-C20P-6Mbps-🌐(XX)
-  - SS-C20P-5Mbps-🇺🇸(US)
+  - SS-C20P-6Mbps-🇺🇸(US)
+  - SS-aes-128-gcm-6Mbps-🇺🇸(US)
+  - SS-aes-128-gcm-5Mbps-🇺🇸(US)
 rule-providers:
   adblock:
     type: http
