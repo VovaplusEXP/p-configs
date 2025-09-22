@@ -14,46 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🌐(XX)-seginus.appagent.net:28331
-  type: trojan
-  server: seginus.appagent.net
-  port: 28331
-  uuid: nzSaSa3SFaCNFDCjOCg8A39e53p8l2xaTFCOu7qZx2Z8px4CK3DXeZYAwRRS3zY66laOE
-  network: tcp
-  tls: true
-  servername: seginus.appagent.net
-- name: TROJAN-TCP-TLS-🌐(XX)-hanger.appagent.net:28331
-  type: trojan
-  server: hanger.appagent.net
-  port: 28331
-  uuid: Z3aK0aZqwyNcz7S3l3ncNCODYxNFnA8SCOOSOZ3y3AX8xA4a0RZ3gxn39aqYAaBOyzR43acKOCzSX3S
-  network: tcp
-  tls: true
-  servername: hanger.appagent.net
-- name: TROJAN-TCP-TLS-🌐(XX)-blength.appagent.net:18332
-  type: trojan
-  server: blength.appagent.net
-  port: 18332
-  uuid: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA
-  network: tcp
-  tls: true
-  servername: blength.appagent.net
-- name: TROJAN-TCP-TLS-🌐(XX)-delight.appagent.net:443
-  type: trojan
-  server: delight.appagent.net
-  port: 443
-  uuid: D0AASSpCKFjOBSwlwqylnOep8BDlgN3e3RY9S3Op2RaZZ58gID8yY3ej56CSuYacZz3EA
-  network: tcp
-  tls: true
-  servername: delight.appagent.net
-- name: TROJAN-TCP-TLS-🌐(XX)-connect.appagent.net:28333
-  type: trojan
-  server: connect.appagent.net
-  port: 28333
-  uuid: eYaw9xlNDu4695IF3CyY2leZOTnY8ZSOD3Xa3DClz0xqZy7Z3eaBFaTKOSwCSAOyEap4D
-  network: tcp
-  tls: true
-  servername: connect.appagent.net
 - name: TROJAN-TCP-TLS-🌐(XX)-toaster.isquirrel.net:443
   type: trojan
   server: toaster.isquirrel.net
@@ -70,22 +30,6 @@ proxies:
   network: tcp
   tls: true
   servername: sirens.isquirrel.net
-- name: TROJAN-TCP-TLS-🌐(XX)-map.wimax.cc:8443
-  type: trojan
-  server: map.wimax.cc
-  port: 8443
-  uuid: WyRE1b2elC
-  network: tcp
-  tls: true
-  servername: map.wimax.cc
-- name: TROJAN-TCP-TLS-🌐(XX)-mintaka.appagent.net:443
-  type: trojan
-  server: mintaka.appagent.net
-  port: 443
-  uuid: 4xS33pu88RaTF37ZxRjzAZc9zxe8OaYBX9CSO3p5SSxquFOFEySnDlCleCFA2DN3gaeDl
-  network: tcp
-  tls: true
-  servername: mintaka.appagent.net
 - name: TROJAN-TCP-TLS-🌐(XX)-kasheet.appagent.net:18333
   type: trojan
   server: kasheet.appagent.net
@@ -94,15 +38,95 @@ proxies:
   network: tcp
   tls: true
   servername: kasheet.appagent.net
-- name: TROJAN-TCP-TLS-🌐(XX)-35.181.39.4:22222
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
   type: trojan
-  server: 35.181.39.4
+  server: 185.208.207.217
+  port: 443
+  uuid: 2ee85121-31de-4581-a492-eb00f606e392
+  network: tcp
+  tls: true
+  servername: dus.freeguard.org
+- name: TROJAN-TCP-TLS-🌐(XX)-mintaka.appagent.net:443
+  type: trojan
+  server: mintaka.appagent.net
+  port: 443
+  uuid: 4xS33pu88RaTF37ZxRjzAZc9zxe8OaYBX9CSO3p5SSxquFOFEySnDlCleCFA2DN3gaeDl
+  network: tcp
+  tls: true
+  servername: mintaka.appagent.net
+- name: TROJAN-TCP-TLS-🌐(XX)-blength.appagent.net:18332
+  type: trojan
+  server: blength.appagent.net
+  port: 18332
+  uuid: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA
+  network: tcp
+  tls: true
+  servername: blength.appagent.net
+- name: TROJAN-TCP-TLS-🌐(XX)-seginus.appagent.net:28331
+  type: trojan
+  server: seginus.appagent.net
+  port: 28331
+  uuid: nzSaSa3SFaCNFDCjOCg8A39e53p8l2xaTFCOu7qZx2Z8px4CK3DXeZYAwRRS3zY66laOE
+  network: tcp
+  tls: true
+  servername: seginus.appagent.net
+- name: TROJAN-WS-TLS-🌐(XX)-creativecommons.org:443
+  type: trojan
+  server: creativecommons.org
+  port: 443
+  uuid: 02XtoczO7V
+  network: ws
+  tls: true
+  servername: mooshali.arshiacomplus.dpdns.org
+  ws-opts:
+    path: /hishhhh123
+    headers:
+      Host: mooshali.arshiacomplus.dpdns.org
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.237.168.148:22222
+  type: trojan
+  server: 15.237.168.148
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.57.64.138:22222
+- name: TROJAN-TCP-TLS-🌐(XX)-hanger.appagent.net:28331
+  type: trojan
+  server: hanger.appagent.net
+  port: 28331
+  uuid: Z3aK0aZqwyNcz7S3l3ncNCODYxNFnA8SCOOSOZ3y3AX8xA4a0RZ3gxn39aqYAaBOyzR43acKOCzSX3S
+  network: tcp
+  tls: true
+  servername: hanger.appagent.net
+- name: TROJAN-TCP-TLS-🌐(XX)-51.81.203.233:443
+  type: trojan
+  server: 51.81.203.233
+  port: 443
+  uuid: 2ee85121-31de-4581-a492-eb00f606e392
+  network: tcp
+  tls: true
+  servername: rs4.freeguard.org
+- name: TROJAN-TCP-TLS-🌐(XX)-delight.appagent.net:443
+  type: trojan
+  server: delight.appagent.net
+  port: 443
+  uuid: D0AASSpCKFjOBSwlwqylnOep8BDlgN3e3RY9S3Op2RaZZ58gID8yY3ej56CSuYacZz3EA
+  network: tcp
+  tls: true
+  servername: delight.appagent.net
+- name: TROJAN-WS-TLS-🌐(XX)-creativecommons.org:2053
+  type: trojan
+  server: creativecommons.org
+  port: 2053
+  uuid: o6x5BZAuSj
+  network: ws
+  tls: true
+  servername: mooshali.arshiacomplus.dpdns.org
+  ws-opts:
+    path: /hishhhh123
+    headers:
+      Host: mooshali.arshiacomplus.dpdns.org
+- name: TROJAN-TCP-TLS-🌐(XX)-52.57.64.138:22222
   type: trojan
   server: 52.57.64.138
   port: 22222
@@ -110,6 +134,38 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🌐(XX)-13.39.254.180:22222
+  type: trojan
+  server: 13.39.254.180
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🌐(XX)-connect.appagent.net:28333
+  type: trojan
+  server: connect.appagent.net
+  port: 28333
+  uuid: eYaw9xlNDu4695IF3CyY2leZOTnY8ZSOD3Xa3DClz0xqZy7Z3eaBFaTKOSwCSAOyEap4D
+  network: tcp
+  tls: true
+  servername: connect.appagent.net
+- name: TROJAN-TCP-TLS-🌐(XX)-de-1.stunnel.cc:8441
+  type: trojan
+  server: de-1.stunnel.cc
+  port: 8441
+  uuid: tunnel-astrovpn_official-de
+  network: tcp
+  tls: true
+  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev
+- name: TROJAN-TCP-TLS-🌐(XX)-map.wimax.cc:8443
+  type: trojan
+  server: map.wimax.cc
+  port: 8443
+  uuid: WyRE1b2elC
+  network: tcp
+  tls: true
+  servername: map.wimax.cc
 - name: TROJAN-TCP-TLS-🌐(XX)-213.108.198.158:8441
   type: trojan
   server: 213.108.198.158
@@ -126,24 +182,39 @@ proxies:
   network: tcp
   tls: true
   servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
+- name: TROJAN-TCP-TLS-🇺🇸(US)-192.3.107.252:443
+  type: trojan
+  server: 192.3.107.252
+  port: 443
+  uuid: 2ee85121-31de-4581-a492-eb00f606e392
+  network: tcp
+  tls: true
+  servername: rc8.freeguard.org
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🌐(XX)-seginus.appagent.net:28331
-  - TROJAN-TCP-TLS-🌐(XX)-hanger.appagent.net:28331
-  - TROJAN-TCP-TLS-🌐(XX)-blength.appagent.net:18332
-  - TROJAN-TCP-TLS-🌐(XX)-delight.appagent.net:443
-  - TROJAN-TCP-TLS-🌐(XX)-connect.appagent.net:28333
   - TROJAN-TCP-TLS-🌐(XX)-toaster.isquirrel.net:443
   - TROJAN-TCP-TLS-🌐(XX)-sirens.isquirrel.net:28334
-  - TROJAN-TCP-TLS-🌐(XX)-map.wimax.cc:8443
-  - TROJAN-TCP-TLS-🌐(XX)-mintaka.appagent.net:443
   - TROJAN-TCP-TLS-🌐(XX)-kasheet.appagent.net:18333
-  - TROJAN-TCP-TLS-🌐(XX)-35.181.39.4:22222
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.64.138:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
+  - TROJAN-TCP-TLS-🌐(XX)-mintaka.appagent.net:443
+  - TROJAN-TCP-TLS-🌐(XX)-blength.appagent.net:18332
+  - TROJAN-TCP-TLS-🌐(XX)-seginus.appagent.net:28331
+  - TROJAN-WS-TLS-🌐(XX)-creativecommons.org:443
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.168.148:22222
+  - TROJAN-TCP-TLS-🌐(XX)-hanger.appagent.net:28331
+  - TROJAN-TCP-TLS-🌐(XX)-51.81.203.233:443
+  - TROJAN-TCP-TLS-🌐(XX)-delight.appagent.net:443
+  - TROJAN-WS-TLS-🌐(XX)-creativecommons.org:2053
+  - TROJAN-TCP-TLS-🌐(XX)-52.57.64.138:22222
+  - TROJAN-TCP-TLS-🌐(XX)-13.39.254.180:22222
+  - TROJAN-TCP-TLS-🌐(XX)-connect.appagent.net:28333
+  - TROJAN-TCP-TLS-🌐(XX)-de-1.stunnel.cc:8441
+  - TROJAN-TCP-TLS-🌐(XX)-map.wimax.cc:8443
   - TROJAN-TCP-TLS-🌐(XX)-213.108.198.158:8441
   - TROJAN-TCP-TLS-🇹🇷(TR)-193.124.46.134:8441_1
+  - TROJAN-TCP-TLS-🇺🇸(US)-192.3.107.252:443
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -158,20 +229,27 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🌐(XX)-seginus.appagent.net:28331
-  - TROJAN-TCP-TLS-🌐(XX)-hanger.appagent.net:28331
-  - TROJAN-TCP-TLS-🌐(XX)-blength.appagent.net:18332
-  - TROJAN-TCP-TLS-🌐(XX)-delight.appagent.net:443
-  - TROJAN-TCP-TLS-🌐(XX)-connect.appagent.net:28333
   - TROJAN-TCP-TLS-🌐(XX)-toaster.isquirrel.net:443
   - TROJAN-TCP-TLS-🌐(XX)-sirens.isquirrel.net:28334
-  - TROJAN-TCP-TLS-🌐(XX)-map.wimax.cc:8443
-  - TROJAN-TCP-TLS-🌐(XX)-mintaka.appagent.net:443
   - TROJAN-TCP-TLS-🌐(XX)-kasheet.appagent.net:18333
-  - TROJAN-TCP-TLS-🌐(XX)-35.181.39.4:22222
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.64.138:22222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-185.208.207.217:443
+  - TROJAN-TCP-TLS-🌐(XX)-mintaka.appagent.net:443
+  - TROJAN-TCP-TLS-🌐(XX)-blength.appagent.net:18332
+  - TROJAN-TCP-TLS-🌐(XX)-seginus.appagent.net:28331
+  - TROJAN-WS-TLS-🌐(XX)-creativecommons.org:443
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.168.148:22222
+  - TROJAN-TCP-TLS-🌐(XX)-hanger.appagent.net:28331
+  - TROJAN-TCP-TLS-🌐(XX)-51.81.203.233:443
+  - TROJAN-TCP-TLS-🌐(XX)-delight.appagent.net:443
+  - TROJAN-WS-TLS-🌐(XX)-creativecommons.org:2053
+  - TROJAN-TCP-TLS-🌐(XX)-52.57.64.138:22222
+  - TROJAN-TCP-TLS-🌐(XX)-13.39.254.180:22222
+  - TROJAN-TCP-TLS-🌐(XX)-connect.appagent.net:28333
+  - TROJAN-TCP-TLS-🌐(XX)-de-1.stunnel.cc:8441
+  - TROJAN-TCP-TLS-🌐(XX)-map.wimax.cc:8443
   - TROJAN-TCP-TLS-🌐(XX)-213.108.198.158:8441
   - TROJAN-TCP-TLS-🇹🇷(TR)-193.124.46.134:8441_1
+  - TROJAN-TCP-TLS-🇺🇸(US)-192.3.107.252:443
 rule-providers:
   adblock:
     type: http
