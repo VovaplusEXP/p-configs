@@ -1,4 +1,3 @@
-
 import os
 import json
 import subprocess
@@ -46,10 +45,10 @@ def format_country_info(country_code):
 
 def parse_and_validate_config(line):
     line = line.strip()
-    if not line: return None, None
+    if not line: return None
     
     protocol_name = next((name for name, prefix in {'vless': 'vless://', 'vmess': 'vmess://', 'trojan': 'trojan://', 'ss': 'ss://', 'ssr': 'ssr://', 'tuic': 'tuic://', 'hy2': 'hy2://'}.items() if line.startswith(prefix)), None)
-    if not protocol_name: return None, None
+    if not protocol_name: return None
 
     result = {}
     try:
@@ -115,7 +114,7 @@ def create_v2ray_config(proxy_line, local_socks_port, task_id):
         elif security == "reality":
             pbk = qs.get("pbk", [""])[0]; sid = qs.get("sid", [""])[0]
             if not pbk: return None
-            stream_settings["realitySettings"] = {"serverName": qs.get("sni", [parsed_url.hostname])[0], "publicKey": pbk, "shortId": sid, "fingerprint": qs.get("fp", ["chrome"])[0]}
+            stream_settings["realitySettings"] = {"serverName": qs.get("sni", [parsed_url.hostname])[0], "publicKey": pbk, "shortId": sid, "fingerprint": qs.get("fp", ["chrome"])[0], "allowInsecure": True}
 
         if protocol == "vless":
             user_obj = {"id": parsed_url.username, "encryption": "none", "flow": qs.get("flow", [""])[0]}
@@ -123,8 +122,7 @@ def create_v2ray_config(proxy_line, local_socks_port, task_id):
         elif protocol == "trojan":
             outbound_config = {"protocol": "trojan", "settings": {"servers": [{"address": parsed_url.hostname, "port": parsed_url.port, "password": parsed_url.username}]}, "streamSettings": stream_settings}
         elif protocol == "vmess":
-            vmess_data = json.loads(base64.b64decode(proxy_line[len("vmess://"):
-].encode()).decode())
+            vmess_data = json.loads(base64.b64decode(proxy_line[len("vmess://"):]).decode())
             vmess_stream_settings = {"network": vmess_data.get("net", "tcp"), "security": "tls" if vmess_data.get("tls") == "tls" else "none"}
             if vmess_stream_settings["network"] == "ws":
                 vmess_stream_settings["wsSettings"] = {"path": vmess_data.get("path", "/"), "headers": {"Host": vmess_data.get("host", vmess_data.get("add"))}}
@@ -136,7 +134,7 @@ def create_v2ray_config(proxy_line, local_socks_port, task_id):
             method, password = userinfo.split(':', 1)
             outbound_config = {"protocol": "shadowsocks", "settings": {"servers": [{"address": parsed_url.hostname, "port": parsed_url.port, "method": method, "password": password}]}}
         elif protocol == "hy2" or protocol == "tuic":
-             outbound_config = {"protocol": protocol, "settings": {"servers": [{"address": parsed_url.hostname, "port": parsed_url.port, "password": parsed_url.username}]}, "streamSettings": {"network": "udp", "security": "tls", "tlsSettings": {"serverName": qs.get("sni", [parsed_url.hostname])[0], "alpn": ["h3"]}}}
+             outbound_config = {"protocol": protocol, "settings": {"servers": [{"address": parsed_url.hostname, "port": parsed_url.port, "password": parsed_url.username}]}, "streamSettings": {"network": "udp", "security": "tls", "tlsSettings": {"serverName": qs.get("sni", [parsed_url.hostname])[0], "alpn": ["h3"], "allowInsecure": True}}}
     except Exception: return None
     if not outbound_config: return None
     
@@ -159,19 +157,22 @@ def kill_process_and_children(proc):
 def test_proxy(proxy_line, worker_slot_id, task_id):
     local_socks_port = BASE_SOCKS_PORT + worker_slot_id
     config_file = create_v2ray_config(proxy_line, local_socks_port, task_id)
-    if not config_file: return None
-    
+    if not config_file:
+        return None
+
     process = subprocess.Popen([os.path.abspath(V2RAY_EXECUTABLE_PATH), "run", "-c", config_file], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     
     try:
         # Wait for SOCKS5 server to be ready
         for _ in range(15):
-            time.sleep(0.3)
+            time.sleep(0.5)
             try:
                 with socket.create_connection(("127.0.0.1", local_socks_port), timeout=0.5):
                     break
-            except (socket.timeout, ConnectionRefusedError): continue
-        else: return {"status": "Timeout", "speed": 0, "line": proxy_line}
+            except (socket.timeout, ConnectionRefusedError):
+                continue
+        else:
+            return {"status": "Timeout", "speed": 0, "line": proxy_line}
 
         proxies = {'http': f'socks5h://127.0.0.1:{local_socks_port}', 'https': f'socks5h://127.0.0.1:{local_socks_port}'}
         
@@ -184,40 +185,33 @@ def test_proxy(proxy_line, worker_slot_id, task_id):
                 if geo_data.get("status") == "success":
                     exit_country = geo_data.get("countryCode", "N/A")
         except requests.exceptions.RequestException:
-            pass # Could not determine country, will use N/A
+            pass  # Could not determine country, will use N/A
 
-        # 2. Perform Speed Test
-        test_url = f"https://speed.cloudflare.com/__down?bytes={ADAPTIVE_CHUNK_SIZE_BYTES * ADAPTIVE_MAX_CHUNKS}"
+        # 2. Perform Speed Test (Simple Method)
         start_time = time.time()
-        downloaded_bytes = 0
+        response = requests.get(TEST_FILE_URL, proxies=proxies, timeout=REQUEST_TIMEOUT_SECONDS)
+        response.raise_for_status()
+        duration = time.time() - start_time
         
-        with requests.get(test_url, proxies=proxies, stream=True, timeout=REQUEST_TIMEOUT_SECONDS) as response:
-            response.raise_for_status()
-            for i, chunk in enumerate(response.iter_content(chunk_size=ADAPTIVE_CHUNK_SIZE_BYTES)):
-                downloaded_bytes += len(chunk)
-                duration = time.time() - start_time
-                if duration > 0.1:
-                    current_speed = (downloaded_bytes * 8) / (duration * 1024 * 1024)
-                    if ADAPTIVE_SPEED_TEST and current_speed > ADAPTIVE_HIGH_SPEED_MBPS:
-                        break # Stop early if speed is high
-                if i + 1 >= ADAPTIVE_MAX_CHUNKS:
-                    break # Stop after reaching max chunks
-
-        final_duration = time.time() - start_time
-        final_speed = (downloaded_bytes * 8) / (final_duration * 1024 * 1024) if final_duration > 0 else 0
+        downloaded_bytes = len(response.content)
+        if duration > 0:
+            final_speed = (downloaded_bytes * 8) / (duration * 1024 * 1024)
+        else:
+            final_speed = 0
         
         if final_speed > SPEED_THRESHOLD_MBPS:
             return {"status": "OK", "speed": final_speed, "line": proxy_line, "country": exit_country}
         else:
             return {"status": "Slow", "speed": final_speed, "line": proxy_line}
 
-    except requests.exceptions.RequestException as e:
-        return {"status": f"Error ({type(e).__name__})", "speed": 0, "line": proxy_line}
+    except requests.exceptions.RequestException:
+        return {"status": "Error", "speed": 0, "line": proxy_line}
     except Exception:
         return {"status": "Unknown Error", "speed": 0, "line": proxy_line}
     finally:
         kill_process_and_children(process)
-        if os.path.exists(config_file): os.remove(config_file)
+        if os.path.exists(config_file):
+            os.remove(config_file)
 
 # --- Main Execution ---
 def main():
