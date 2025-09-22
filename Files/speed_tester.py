@@ -17,7 +17,7 @@ PROTOCOLS_TO_TEST = ["vless.txt", "vmess.txt", "trojan.txt", "ss.txt", "hy2.txt"
 
 # --- Performance & Speed Test Settings ---
 MAX_WORKERS = 100
-REQUEST_TIMEOUT_SECONDS = 20
+REQUEST_TIMEOUT_SECONDS = 5
 BASE_SOCKS_PORT = 10800
 SPEED_THRESHOLD_MBPS = 20
 TEST_FILE_URL = "https://speed.cloudflare.com/__down?bytes=10000000"  # 10MB
