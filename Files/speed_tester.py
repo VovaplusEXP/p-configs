@@ -18,15 +18,10 @@ PROTOCOLS_TO_TEST = ["vless.txt", "vmess.txt", "trojan.txt", "ss.txt", "hy2.txt"
 
 # --- Performance & Speed Test Settings ---
 MAX_WORKERS = 100
-REQUEST_TIMEOUT_SECONDS = 15
+REQUEST_TIMEOUT_SECONDS = 20
 BASE_SOCKS_PORT = 10800
 SPEED_THRESHOLD_MBPS = 5
-
-# --- Adaptive Speed Test Settings ---
-ADAPTIVE_SPEED_TEST = True
-ADAPTIVE_CHUNK_SIZE_BYTES = 1024 * 1024  # 1MB
-ADAPTIVE_MAX_CHUNKS = 5  # Test with a max of 5MB
-ADAPTIVE_HIGH_SPEED_MBPS = 40 # Speed considered "fast enough" to stop early
+TEST_FILE_URL = "https://speed.cloudflare.com/__down?bytes=10000000"  # 10MB
 
 # --- Geo & Naming ---
 GEO_API_URL = "http://ip-api.com/json/?fields=status,countryCode"
