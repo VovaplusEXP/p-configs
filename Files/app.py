@@ -112,7 +112,7 @@ def fetch_subs(session, unique_configs_map):
 
     await asyncio.gather(*(fetch(url) for url in urls))
 
-def main():
+async def main():
     print("Starting raw config fetching and deduplication...")
     os.makedirs(OUTPUT_DIR_SPLITTED, exist_ok=True)
     
