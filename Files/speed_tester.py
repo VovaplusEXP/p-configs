@@ -1,4 +1,3 @@
-
 import os
 import json
 import subprocess
@@ -149,8 +148,9 @@ def create_v2ray_config(proxy_line, local_socks_port, task_id):
     return config_path
 
 # --- Worker Functions ---
-def test_proxy(proxy_line, worker_slot_id, task_id):
-    local_socks_port = BASE_SOCKS_PORT + worker_slot_id
+def test_proxy(proxy_line, task_id):
+    # Each task gets a unique port to prevent conflicts
+    local_socks_port = BASE_SOCKS_PORT + task_id
     config_file = create_v2ray_config(proxy_line, local_socks_port, task_id)
     if not config_file:
         return None
@@ -207,9 +207,9 @@ def test_proxy(proxy_line, worker_slot_id, task_id):
     except Exception:
         return {"status": "Unknown Error", "speed": 0, "line": proxy_line}
     finally:
-        # Kill the entire process group
+        # Kill the entire process group gracefully
         try:
-            os.killpg(os.getpgid(process.pid), signal.SIGKILL)
+            os.killpg(os.getpgid(process.pid), signal.SIGTERM)
         except (ProcessLookupError, PermissionError):
             pass # Process might have already died
         
@@ -241,7 +241,8 @@ def main():
         
         protocol_fast_proxies = []
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-            futures = {executor.submit(test_proxy, proxy, i % MAX_WORKERS, i): proxy for i, proxy in enumerate(proxies_to_test)}
+            # Pass the global index 'i' as the task_id for unique port allocation
+            futures = {executor.submit(test_proxy, proxy, i): proxy for i, proxy in enumerate(proxies_to_test)}
             for i, future in enumerate(as_completed(futures)):
                 result = future.result()
                 if result and result["status"] == "OK":
