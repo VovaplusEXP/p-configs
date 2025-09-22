@@ -1,3 +1,4 @@
+
 import os
 import json
 import subprocess
@@ -18,10 +19,17 @@ PROTOCOLS_TO_TEST = ["vless.txt", "vmess.txt", "trojan.txt", "ss.txt", "hy2.txt"
 
 # --- Performance & Speed Test Settings ---
 MAX_WORKERS = 100
-REQUEST_TIMEOUT_SECONDS = 5
 BASE_SOCKS_PORT = 10800
 SPEED_THRESHOLD_MBPS = 20
 TEST_FILE_URL = "https://speed.cloudflare.com/__down?bytes=10000000"  # 10MB
+
+# --- Timeouts ---
+# Total maximum duration for the speed test part of a proxy test
+MAX_TEST_DURATION_SECONDS = 10
+# Socket-level timeout (for requests)
+REQUEST_SOCKET_TIMEOUT_SECONDS = 5
+# How long to wait for xray to start
+STARTUP_WAIT_SECONDS = 7.5
 
 # --- Geo & Naming ---
 GEO_API_URL = "http://ip-api.com/json/?fields=status,countryCode"
@@ -33,7 +41,7 @@ VALID_SS_METHODS = {
 VALID_V_TRANSPORTS = {"tcp", "ws", "grpc", "kcp", "http", "xhttp"}
 VALID_V_SECURITY = {"none", "tls", "reality"}
 
-# --- Helper Functions (from app.py) ---
+# --- Helper Functions ---
 def format_country_info(country_code):
     if not isinstance(country_code, str) or len(country_code) != 2 or not country_code.isalpha():
         return "🌐(XX)"
@@ -149,35 +157,25 @@ def create_v2ray_config(proxy_line, local_socks_port, task_id):
 
 # --- Worker Functions ---
 def test_proxy(proxy_line, task_id):
-    # Each task gets a unique port to prevent conflicts
     local_socks_port = BASE_SOCKS_PORT + task_id
     config_file = create_v2ray_config(proxy_line, local_socks_port, task_id)
     if not config_file:
         return None
 
-    # Launch the xray process in a new process group
     process = subprocess.Popen([os.path.abspath(V2RAY_EXECUTABLE_PATH), "run", "-c", config_file], 
                                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, 
                                preexec_fn=os.setsid)
     
     try:
         # Wait for SOCKS5 server to be ready
-        for _ in range(15):
-            time.sleep(0.5)
-            try:
-                with socket.create_connection(("127.0.0.1", local_socks_port), timeout=0.5):
-                    break
-            except (socket.timeout, ConnectionRefusedError):
-                continue
-        else:
-            return {"status": "Timeout", "speed": 0, "line": proxy_line}
+        time.sleep(STARTUP_WAIT_SECONDS)
 
         proxies = {'http': f'socks5h://127.0.0.1:{local_socks_port}', 'https': f'socks5h://127.0.0.1:{local_socks_port}'}
         
         # 1. Get Exit IP Country
         exit_country = "N/A"
         try:
-            geo_resp = requests.get(GEO_API_URL, proxies=proxies, timeout=5)
+            geo_resp = requests.get(GEO_API_URL, proxies=proxies, timeout=REQUEST_SOCKET_TIMEOUT_SECONDS)
             if geo_resp.status_code == 200:
                 geo_data = geo_resp.json()
                 if geo_data.get("status") == "success":
@@ -185,13 +183,18 @@ def test_proxy(proxy_line, task_id):
         except requests.exceptions.RequestException:
             pass  # Could not determine country, will use N/A
 
-        # 2. Perform Speed Test (Simple Method)
+        # 2. Perform Speed Test with manual total duration timeout
         start_time = time.time()
-        response = requests.get(TEST_FILE_URL, proxies=proxies, timeout=REQUEST_TIMEOUT_SECONDS)
-        response.raise_for_status()
+        downloaded_bytes = 0
+        with requests.get(TEST_FILE_URL, proxies=proxies, stream=True, timeout=REQUEST_SOCKET_TIMEOUT_SECONDS) as response:
+            response.raise_for_status()
+            for chunk in response.iter_content(chunk_size=512 * 1024): # 512KB chunks
+                if time.time() - start_time > MAX_TEST_DURATION_SECONDS:
+                    break # Test duration exceeded
+                downloaded_bytes += len(chunk)
+
         duration = time.time() - start_time
         
-        downloaded_bytes = len(response.content)
         if duration > 0:
             final_speed = (downloaded_bytes * 8) / (duration * 1024 * 1024)
         else:
