@@ -84,7 +84,7 @@ def parse_and_validate_config(line):
 
     return (protocol_name, line), unique_key
 
-def fetch_subs(session, unique_configs_map):
+async def fetch_subs(session, unique_configs_map):
     """Fetches configs and performs smart deduplication."""
     try:
         async with aiofiles.open(SUBSCRIPTION_LIST_FILE, mode='r', encoding='utf-8') as f:
