@@ -170,8 +170,8 @@ def test_proxy(proxy_line, worker_slot_id, task_id):
     
     try:
         # Wait for SOCKS5 server to be ready
-        for _ in range(10):
-            time.sleep(0.2)
+        for _ in range(15):
+            time.sleep(0.3)
             try:
                 with socket.create_connection(("127.0.0.1", local_socks_port), timeout=0.5):
                     break
