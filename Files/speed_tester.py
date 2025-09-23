@@ -86,7 +86,7 @@ def create_v2ray_config(proxy: Proxy, local_socks_port: int, task_id: int) -> Op
                 }
             }
         },
-        "inbounds": [{"listen": "127.0.0.1", "port": local_socks_port, "protocol": "socks", "settings": {"auth": "noauth", "udp": True}}],
+        "inbounds": [{"listen": "127.0.0.1", "port": local_socks_port, "protocol": "socks", "settings": {"auth": "noauth", "udp": True, "userLevel": 0}}],
         "outbounds": [outbound_config]
     }
     with open(config_path, 'w') as f: json.dump(config, f)
