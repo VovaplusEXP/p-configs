@@ -1,19 +1,17 @@
 import os
-import json
-import base64
+from parsers import parse_proxy
 
 # --- Configuration ---
 SOURCE_DIR = "../Splitted-By-Protocol"
 DEST_DIR = "../Splitted-By-Protocol-Secure"
 PROTOCOLS_TO_FILTER = ["vless.txt", "vmess.txt"]
 # Keywords that indicate a secure connection in the config name
-SECURE_KEYWORDS = ["-TLS", "-REALITY"]
+# SECURE_KEYWORDS = ["-TLS", "-REALITY"] # No longer needed, check proxy_obj.security directly
 
 def filter_secure_configs():
     """
     Reads generated config files and creates new ones containing only
-    configs with TLS or REALITY encryption. It specifically handles
-    the Base64-encoded nature of VMess links.
+    configs with TLS or REALITY encryption.
     """
     if not os.path.exists(SOURCE_DIR):
         print(f"Warning: Source directory '{SOURCE_DIR}' not found. Skipping.")
@@ -30,34 +28,15 @@ def filter_secure_configs():
             print(f"  - Source file '{source_path}' not found, skipping.")
             continue
 
-        secure_configs = []
+        secure_configs: list[str] = []
         with open(source_path, 'r', encoding='utf-8') as f:
             for line in f:
                 line = line.strip()
                 if not line:
                     continue
 
-                is_secure = False
-                # VMess requires special handling due to Base64 encoding
-                if filename == "vmess.txt" and line.startswith("vmess://"):
-                    try:
-                        b64_part = line[len("vmess://"):]
-                        # Add padding if necessary
-                        b64_part += '=' * (-len(b64_part) % 4)
-                        json_str = base64.b64decode(b64_part).decode('utf-8')
-                        vmess_data = json.loads(json_str)
-                        name = vmess_data.get("ps", "")
-                        if any(keyword in name for keyword in SECURE_KEYWORDS):
-                            is_secure = True
-                    except Exception:
-                        # Ignore malformed VMess links
-                        continue
-                else:
-                    # For VLESS and others, a simple substring check is enough
-                    if any(keyword in line for keyword in SECURE_KEYWORDS):
-                        is_secure = True
-                
-                if is_secure:
+                proxy_obj = parse_proxy(line)
+                if proxy_obj and proxy_obj.security in ["tls", "reality"]:
                     secure_configs.append(line)
         
         if secure_configs:
