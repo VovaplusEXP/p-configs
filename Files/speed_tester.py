@@ -216,6 +216,8 @@ def main():
                 name_parts.append(proxy.method.replace('-ietf', '').replace('aes-256-gcm', 'A256GCM').replace('chacha20-poly1305', 'C20P'))
             
             name_parts.append(country_info)
+            # Add IP/domain at the end as requested
+            name_parts.append(proxy.host)
             
             base_name = "-".join(name_parts)
             new_name = base_name
