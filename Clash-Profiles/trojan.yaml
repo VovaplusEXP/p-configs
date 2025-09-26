@@ -26,6 +26,14 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.153.160.236
+  type: trojan
+  server: 18.153.160.236
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   type: trojan
   server: 176.97.210.2
@@ -34,12 +42,31 @@ proxies:
   network: tcp
   tls: false
   servername: 176.97.210.2
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.178.146.175
+  type: trojan
+  server: 63.178.146.175
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.250.152
+  type: trojan
+  server: 15.188.250.152
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.153.160.236
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.146.175
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.250.152
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -55,7 +82,10 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.153.160.236
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.146.175
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.250.152
 rule-providers:
   adblock:
     type: http
