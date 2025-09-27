@@ -14,14 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.231.117
-  type: trojan
-  server: 51.44.231.117
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.106.4
   type: trojan
   server: 13.36.106.4
@@ -30,26 +22,14 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.237.47.177
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.231.117
   type: trojan
-  server: 15.237.47.177
+  server: 51.44.231.117
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  type: trojan
-  server: creativecommons.org
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
-  tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
 - name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   type: trojan
   server: 176.97.210.2
@@ -58,6 +38,14 @@ proxies:
   network: tcp
   tls: false
   servername: 176.97.210.2
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.237.47.177
+  type: trojan
+  server: 15.237.47.177
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us
   type: trojan
   server: spevoy.missionsec.us
@@ -70,11 +58,10 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.231.117
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.106.4
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.47.177
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.231.117
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.47.177
   - TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
@@ -90,11 +77,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.231.117
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.106.4
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.47.177
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.231.117
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.47.177
   - TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us
 rule-providers:
   adblock:
