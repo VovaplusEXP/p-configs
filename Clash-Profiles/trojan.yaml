@@ -14,6 +14,30 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.231.117
+  type: trojan
+  server: 51.44.231.117
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.106.4
+  type: trojan
+  server: 13.36.106.4
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.237.47.177
+  type: trojan
+  server: 15.237.47.177
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
   server: creativecommons.org
@@ -26,14 +50,6 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.153.160.236
-  type: trojan
-  server: 18.153.160.236
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
 - name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   type: trojan
   server: 176.97.210.2
@@ -42,31 +58,24 @@ proxies:
   network: tcp
   tls: false
   servername: 176.97.210.2
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.178.146.175
+- name: TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us
   type: trojan
-  server: 63.178.146.175
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: spevoy.missionsec.us
+  port: 443
+  uuid: R3SuZDAZXDO3FYqxwK36l7gpSIBTFCxlzc89a7qg3S9p8BOCeACSFaA8nxeD2ZlT5Nl4O
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.250.152
-  type: trojan
-  server: 15.188.250.152
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
+  servername: spevoy.missionsec.us
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.231.117
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.106.4
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.47.177
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.153.160.236
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.146.175
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.250.152
+  - TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -81,11 +90,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.231.117
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.106.4
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.47.177
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.153.160.236
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.146.175
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.250.152
+  - TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us
 rule-providers:
   adblock:
     type: http
