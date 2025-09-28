@@ -22,6 +22,30 @@ proxies:
   network: tcp
   tls: true
   servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
+- name: TROJAN-TCP-TLS-🇦🇺(AU)-176.97.68.153
+  type: trojan
+  server: 176.97.68.153
+  port: 8443
+  uuid: installshield
+  network: tcp
+  tls: true
+  servername: 176.97.68.153
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.223.66
+  type: trojan
+  server: 35.181.223.66
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  type: trojan
+  server: 176.97.210.2
+  port: 12882
+  uuid: '@Geek_Spot'
+  network: tcp
+  tls: false
+  servername: 176.97.210.2
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
   server: creativecommons.org
@@ -34,39 +58,24 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.98.10
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.58.34.74
   type: trojan
-  server: 15.188.98.10
+  server: 52.58.34.74
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.178.137.4
-  type: trojan
-  server: 63.178.137.4
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  type: trojan
-  server: 176.97.210.2
-  port: 12882
-  uuid: '@Geek_Spot'
-  network: tcp
-  tls: false
-  servername: 176.97.210.2
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-TCP-TLS-🇺🇸(US)-69.42.222.177
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.98.10
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.137.4
+  - TROJAN-TCP-TLS-🇦🇺(AU)-176.97.68.153
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.223.66
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.58.34.74
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -82,10 +91,11 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-TLS-🇺🇸(US)-69.42.222.177
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.98.10
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.137.4
+  - TROJAN-TCP-TLS-🇦🇺(AU)-176.97.68.153
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.223.66
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.58.34.74
 rule-providers:
   adblock:
     type: http
