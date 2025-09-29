@@ -14,30 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.111.1
-  type: trojan
-  server: 51.44.111.1
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.29.242
-  type: trojan
-  server: 13.36.29.242
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.111.1_1
-  type: trojan
-  server: 51.44.111.1
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-35.180.155.217
   type: trojan
   server: 35.180.155.217
@@ -58,14 +34,6 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-TLS-🇦🇺(AU)-176.97.68.153
-  type: trojan
-  server: 176.97.68.153
-  port: 8443
-  uuid: installshield
-  network: tcp
-  tls: true
-  servername: 176.97.68.153
 - name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   type: trojan
   server: 176.97.210.2
@@ -82,6 +50,14 @@ proxies:
   network: tcp
   tls: true
   servername: uk-03.allhubb.info
+- name: TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
+  type: trojan
+  server: 188.208.110.58
+  port: 8441
+  uuid: tunnel-astrovpn_official020
+  network: tcp
+  tls: true
+  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
 - name: TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us
   type: trojan
   server: spevoy.missionsec.us
@@ -98,29 +74,17 @@ proxies:
   network: tcp
   tls: true
   servername: spevoy.missionsec.us
-- name: TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
-  type: trojan
-  server: 188.208.110.58
-  port: 8441
-  uuid: tunnel-astrovpn_official020
-  network: tcp
-  tls: true
-  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.111.1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.29.242
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.111.1_1
   - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.155.217
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇦🇺(AU)-176.97.68.153
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-TCP-TLS-🇬🇧(GB)-uk-03.allhubb.info
+  - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
   - TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us
   - TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us_1
-  - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -135,17 +99,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.111.1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.29.242
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.111.1_1
   - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.155.217
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇦🇺(AU)-176.97.68.153
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-TCP-TLS-🇬🇧(GB)-uk-03.allhubb.info
+  - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
   - TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us
   - TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us_1
-  - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
 rule-providers:
   adblock:
     type: http
