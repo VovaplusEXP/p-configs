@@ -14,9 +14,9 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.180.155.217
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.249.216
   type: trojan
-  server: 35.180.155.217
+  server: 15.236.249.216
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
@@ -50,41 +50,14 @@ proxies:
   network: tcp
   tls: true
   servername: uk-03.allhubb.info
-- name: TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
-  type: trojan
-  server: 188.208.110.58
-  port: 8441
-  uuid: tunnel-astrovpn_official020
-  network: tcp
-  tls: true
-  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
-- name: TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us
-  type: trojan
-  server: spevoy.missionsec.us
-  port: 443
-  uuid: R3SuZDAZXDO3FYqxwK36l7gpSIBTFCxlzc89a7qg3S9p8BOCeACSFaA8nxeD2ZlT5Nl4O
-  network: tcp
-  tls: true
-  servername: spevoy.missionsec.us
-- name: TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us_1
-  type: trojan
-  server: spevoy.missionsec.us
-  port: 443
-  uuid: R3SuZDAZXDO3FYqxwK36l7gpSIBTFCxlzc89a7qg3S9p8BOCeACSFaA8nxeD2ZlT5Nl4O
-  network: tcp
-  tls: true
-  servername: spevoy.missionsec.us
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.155.217
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.249.216
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-TCP-TLS-🇬🇧(GB)-uk-03.allhubb.info
-  - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
-  - TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us
-  - TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us_1
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -99,13 +72,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.155.217
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.249.216
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-TCP-TLS-🇬🇧(GB)-uk-03.allhubb.info
-  - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
-  - TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us
-  - TROJAN-TCP-TLS-🇸🇬(SG)-spevoy.missionsec.us_1
 rule-providers:
   adblock:
     type: http
