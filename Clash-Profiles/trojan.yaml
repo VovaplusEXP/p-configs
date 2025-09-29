@@ -14,14 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.249.216
-  type: trojan
-  server: 15.236.249.216
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
   server: creativecommons.org
@@ -42,22 +34,21 @@ proxies:
   network: tcp
   tls: false
   servername: 176.97.210.2
-- name: TROJAN-TCP-TLS-🇬🇧(GB)-uk-03.allhubb.info
+- name: TROJAN-TCP-TLS-🇭🇰(HK)-203.198.123.174
   type: trojan
-  server: uk-03.allhubb.info
-  port: 8443
-  uuid: 1ce1df7962f71c6f
+  server: 203.198.123.174
+  port: 443
+  uuid: 253bc477d4e43c209f2d427272968280
   network: tcp
   tls: true
-  servername: uk-03.allhubb.info
+  servername: www.nintendogames.net
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.249.216
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  - TROJAN-TCP-TLS-🇬🇧(GB)-uk-03.allhubb.info
+  - TROJAN-TCP-TLS-🇭🇰(HK)-203.198.123.174
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -72,10 +63,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.249.216
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  - TROJAN-TCP-TLS-🇬🇧(GB)-uk-03.allhubb.info
+  - TROJAN-TCP-TLS-🇭🇰(HK)-203.198.123.174
 rule-providers:
   adblock:
     type: http
