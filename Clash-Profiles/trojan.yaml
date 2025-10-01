@@ -14,34 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.57.120
-  type: trojan
-  server: 13.36.57.120
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.237.11.174
-  type: trojan
-  server: 15.237.11.174
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
-  type: trojan
-  server: creativecommons.org
-  port: 443
-  uuid: 02XtoczO7V
-  network: ws
-  tls: true
-  servername: mooshali.arshiacomplus.dpdns.org
-  ws-opts:
-    path: /hishhhh123
-    headers:
-      Host: mooshali.arshiacomplus.dpdns.org
 - name: TROJAN-TCP-TLS-🇳🇱(NL)-92.112.126.22
   type: trojan
   server: 92.112.126.22
@@ -70,16 +42,62 @@ proxies:
   network: tcp
   tls: false
   servername: 176.97.210.2
+- name: TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
+  type: trojan
+  server: creativecommons.org
+  port: 443
+  uuid: 02XtoczO7V
+  network: ws
+  tls: true
+  servername: mooshali.arshiacomplus.dpdns.org
+  ws-opts:
+    path: /hishhhh123
+    headers:
+      Host: mooshali.arshiacomplus.dpdns.org
+- name: TROJAN-TCP-TLS-🇫🇮(FI)-65.109.217.125
+  type: trojan
+  server: 65.109.217.125
+  port: 443
+  uuid: uEgw6g4c4F4MNwa9OyKBNA
+  network: tcp
+  tls: true
+  servername: fl.v2bazzar.ir
+- name: TROJAN-TCP-TLS-🌐(XX)-65.109.217.125
+  type: trojan
+  server: 65.109.217.125
+  port: 443
+  uuid: uEgw6g4c4F4MNwa9OyKBNA
+  network: tcp
+  tls: true
+  servername: fl.v2bazzar.ir
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.237.11.174
+  type: trojan
+  server: 15.237.11.174
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-52.47.122.22
+  type: trojan
+  server: 52.47.122.22
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.57.120
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.11.174
-  - TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
   - TROJAN-TCP-TLS-🇳🇱(NL)-92.112.126.22
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
+  - TROJAN-TCP-TLS-🇫🇮(FI)-65.109.217.125
+  - TROJAN-TCP-TLS-🌐(XX)-65.109.217.125
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.11.174
+  - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.122.22
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -94,12 +112,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.57.120
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.11.174
-  - TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
   - TROJAN-TCP-TLS-🇳🇱(NL)-92.112.126.22
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
+  - TROJAN-TCP-TLS-🇫🇮(FI)-65.109.217.125
+  - TROJAN-TCP-TLS-🌐(XX)-65.109.217.125
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.11.174
+  - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.122.22
 rule-providers:
   adblock:
     type: http
