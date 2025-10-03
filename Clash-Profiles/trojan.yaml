@@ -14,18 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
-  type: trojan
-  server: creativecommons.org
-  port: 443
-  uuid: 02XtoczO7V
-  network: ws
-  tls: true
-  servername: mooshali.arshiacomplus.dpdns.org
-  ws-opts:
-    path: /hishhhh123
-    headers:
-      Host: mooshali.arshiacomplus.dpdns.org
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
   type: trojan
   server: 172.67.168.193
@@ -38,18 +26,18 @@ proxies:
     path: /Free-VPN-Geo-Project/181.214.208.46-8011
     headers:
       Host: gamang.gpj2.dpdns.org
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+- name: TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
   type: trojan
   server: creativecommons.org
-  port: 2053
-  uuid: YwuvGJk36B
+  port: 443
+  uuid: 02XtoczO7V
   network: ws
   tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
+  servername: mooshali.arshiacomplus.dpdns.org
   ws-opts:
-    path: /yamtekodasayahhh
+    path: /hishhhh123
     headers:
-      Host: kotlet.arshiacomplus.dpdns.org
+      Host: mooshali.arshiacomplus.dpdns.org
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_1
   type: trojan
   server: 172.67.168.193
@@ -82,16 +70,28 @@ proxies:
     path: /Free-VPN-Geo-Project/92.178.109.187-443
     headers:
       Host: gamang.gpj2.dpdns.org
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.156.25
+  type: trojan
+  server: 172.67.156.25
+  port: 443
+  uuid: f282b878-8711-45a1-8c69-5564172123c1
+  network: ws
+  tls: true
+  servername: aio.zipzap.biz.id
+  ws-opts:
+    path: /aioproxybot/129.150.49.58-18650
+    headers:
+      Host: aio.zipzap.biz.id
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_1
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.156.25
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -106,12 +106,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_1
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.156.25
 rule-providers:
   adblock:
     type: http
