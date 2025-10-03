@@ -14,6 +14,14 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.215.91
+  type: trojan
+  server: 13.39.215.91
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
   type: trojan
   server: 172.67.168.193
@@ -26,6 +34,22 @@ proxies:
     path: /Free-VPN-Geo-Project/181.214.208.46-8011
     headers:
       Host: gamang.gpj2.dpdns.org
+- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  type: trojan
+  server: 176.97.210.2
+  port: 12882
+  uuid: '@Geek_Spot'
+  network: tcp
+  tls: false
+  servername: 176.97.210.2
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.125.154
+  type: trojan
+  server: 63.179.125.154
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
   type: trojan
   server: creativecommons.org
@@ -38,26 +62,6 @@ proxies:
     path: /hishhhh123
     headers:
       Host: mooshali.arshiacomplus.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_1
-  type: trojan
-  server: 172.67.168.193
-  port: 443
-  uuid: a50ea41d-10b1-4351-9ae2-6d92f501a3a0
-  network: ws
-  tls: true
-  servername: gamang.gpj2.dpdns.org
-  ws-opts:
-    path: /Free-VPN-Geo-Project/185.66.165.51-443
-    headers:
-      Host: gamang.gpj2.dpdns.org
-- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  type: trojan
-  server: 176.97.210.2
-  port: 12882
-  uuid: '@Geek_Spot'
-  network: tcp
-  tls: false
-  servername: 176.97.210.2
 - name: TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
   type: trojan
   server: 104.21.70.241
@@ -68,6 +72,18 @@ proxies:
   servername: gamang.gpj2.dpdns.org
   ws-opts:
     path: /Free-VPN-Geo-Project/92.178.109.187-443
+    headers:
+      Host: gamang.gpj2.dpdns.org
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_1
+  type: trojan
+  server: 172.67.168.193
+  port: 443
+  uuid: a50ea41d-10b1-4351-9ae2-6d92f501a3a0
+  network: ws
+  tls: true
+  servername: gamang.gpj2.dpdns.org
+  ws-opts:
+    path: /Free-VPN-Geo-Project/185.66.165.51-443
     headers:
       Host: gamang.gpj2.dpdns.org
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.156.25
@@ -86,11 +102,13 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.215.91
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
-  - TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_1
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.125.154
+  - TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_1
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.156.25
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
@@ -106,11 +124,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.215.91
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
-  - TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_1
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.125.154
+  - TROJAN-WS-TLS-🇳🇱(NL)-creativecommons.org
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_1
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.156.25
 rule-providers:
   adblock:
