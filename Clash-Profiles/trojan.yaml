@@ -14,19 +14,19 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-52.47.206.67
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.177.121.36
   type: trojan
-  server: 52.47.206.67
-  port: 22223
-  uuid: telegram-id-directvpn
+  server: 63.177.121.36
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.179.32
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.180.6.53
   type: trojan
-  server: 13.36.179.32
-  port: 22223
-  uuid: telegram-id-directvpn
+  server: 35.180.6.53
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
@@ -42,30 +42,6 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.9.40
-  type: trojan
-  server: 51.45.9.40
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-52.47.206.67_1
-  type: trojan
-  server: 52.47.206.67
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  type: trojan
-  server: 176.97.210.2
-  port: 12882
-  uuid: '@Geek_Spot'
-  network: tcp
-  tls: false
-  servername: 176.97.210.2
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
   type: trojan
   server: 172.67.168.193
@@ -90,40 +66,24 @@ proxies:
     path: /Free-VPN-Geo-Project/151.236.23.74-2053
     headers:
       Host: gamang.gpj2.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_1
+- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   type: trojan
-  server: 104.21.70.241
-  port: 443
-  uuid: abd16f44-12ca-4078-8345-11bcb4cd0fbd
-  network: ws
-  tls: true
-  servername: gamang.gpj2.dpdns.org
-  ws-opts:
-    path: /Free-VPN-Geo-Project/92.178.109.187-443
-    headers:
-      Host: gamang.gpj2.dpdns.org
-- name: TROJAN-TCP-TLS-🇹🇷(TR)-167.160.10.54
-  type: trojan
-  server: 167.160.10.54
-  port: 12184
-  uuid: liCV_rq-BftxwXpM
+  server: 176.97.210.2
+  port: 12882
+  uuid: '@Geek_Spot'
   network: tcp
-  tls: true
-  servername: 167.160.10.54
+  tls: false
+  servername: 176.97.210.2
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.206.67
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.179.32
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.177.121.36
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.6.53
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.9.40
-  - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.206.67_1
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_1
-  - TROJAN-TCP-TLS-🇹🇷(TR)-167.160.10.54
+  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -138,16 +98,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.206.67
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.179.32
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.177.121.36
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.6.53
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.9.40
-  - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.206.67_1
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_1
-  - TROJAN-TCP-TLS-🇹🇷(TR)-167.160.10.54
+  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
 rule-providers:
   adblock:
     type: http
