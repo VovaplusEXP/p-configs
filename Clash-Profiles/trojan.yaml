@@ -22,14 +22,6 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.125.130.165
-  type: trojan
-  server: 3.125.130.165
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.179.32
   type: trojan
   server: 13.36.179.32
@@ -38,9 +30,29 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
+- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  type: trojan
+  server: creativecommons.org
+  port: 2053
+  uuid: YwuvGJk36B
+  network: ws
+  tls: true
+  servername: kotlet.arshiacomplus.dpdns.org
+  ws-opts:
+    path: /yamtekodasayahhh
+    headers:
+      Host: kotlet.arshiacomplus.dpdns.org
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.9.40
   type: trojan
   server: 51.45.9.40
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-52.47.206.67_1
+  type: trojan
+  server: 52.47.206.67
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
@@ -54,50 +66,6 @@ proxies:
   network: tcp
   tls: false
   servername: 176.97.210.2
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  type: trojan
-  server: creativecommons.org
-  port: 443
-  uuid: biOrJGlcfX
-  network: ws
-  tls: true
-  servername: ghasem.kotlet.org
-  ws-opts:
-    path: /kos-madaret-khamneii
-    headers:
-      Host: ghasem.kotlet.org
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.179.32_1
-  type: trojan
-  server: 13.36.179.32
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
-  type: trojan
-  server: creativecommons.org
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
-  tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
-  type: trojan
-  server: 104.21.70.241
-  port: 443
-  uuid: bcc79f8e-aa76-48c0-b80f-d0190df0d6de
-  network: ws
-  tls: true
-  servername: gamang.gpj2.dpdns.org
-  ws-opts:
-    path: /Free-VPN-Geo-Project/151.236.23.74-2053
-    headers:
-      Host: gamang.gpj2.dpdns.org
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
   type: trojan
   server: 172.67.168.193
@@ -110,14 +78,18 @@ proxies:
     path: /Free-VPN-Geo-Project/80.66.85.115-2053
     headers:
       Host: gamang.gpj2.dpdns.org
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-52.47.206.67_1
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
   type: trojan
-  server: 52.47.206.67
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
+  server: 104.21.70.241
+  port: 443
+  uuid: bcc79f8e-aa76-48c0-b80f-d0190df0d6de
+  network: ws
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: gamang.gpj2.dpdns.org
+  ws-opts:
+    path: /Free-VPN-Geo-Project/151.236.23.74-2053
+    headers:
+      Host: gamang.gpj2.dpdns.org
 - name: TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_1
   type: trojan
   server: 104.21.70.241
@@ -138,36 +110,20 @@ proxies:
   network: tcp
   tls: true
   servername: 167.160.10.54
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.156.25
-  type: trojan
-  server: 172.67.156.25
-  port: 443
-  uuid: f282b878-8711-45a1-8c69-5564172123c1
-  network: ws
-  tls: true
-  servername: aio.zipzap.biz.id
-  ws-opts:
-    path: /aioproxybot/129.150.49.58-18650
-    headers:
-      Host: aio.zipzap.biz.id
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.206.67
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.125.130.165
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.179.32
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.9.40
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.179.32_1
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.9.40
   - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.206.67_1
+  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_1
   - TROJAN-TCP-TLS-🇹🇷(TR)-167.160.10.54
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.156.25
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -183,19 +139,15 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.206.67
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.125.130.165
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.179.32
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.9.40
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.179.32_1
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.9.40
   - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.206.67_1
+  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_1
   - TROJAN-TCP-TLS-🇹🇷(TR)-167.160.10.54
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.156.25
 rule-providers:
   adblock:
     type: http
