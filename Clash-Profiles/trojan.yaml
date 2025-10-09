@@ -14,30 +14,62 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.141.115
+- name: TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
   type: trojan
-  server: 13.36.141.115
+  server: 23.227.194.234
+  port: 443
+  uuid: 253bc477d4e43c209f2d427272968280
+  network: tcp
+  tls: true
+  servername: www.nintendogames.net
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146
+  type: trojan
+  server: 3.70.102.146
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.74.210.142
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146_1
   type: trojan
-  server: 3.74.210.142
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: 3.70.102.146
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-52.47.54.131
+- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   type: trojan
-  server: 52.47.54.131
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: 176.97.210.2
+  port: 12882
+  uuid: '@Geek_Spot'
+  network: tcp
+  tls: false
+  servername: 176.97.210.2
+- name: TROJAN-TCP-TLS-🇹🇷(TR)-83.217.9.70
+  type: trojan
+  server: 83.217.9.70
+  port: 443
+  uuid: Kia6770aza-vpnjantit.com
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: tr1.vpnjantit.com
+- name: TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
+  type: trojan
+  server: 38.180.249.152
+  port: 443
+  uuid: 253bc477d4e43c209f2d427272968280
+  network: tcp
+  tls: true
+  servername: www.nintendogames.net
+- name: TROJAN-TCP-TLS-🇰🇷(KR)-cloudteddt.eellgg.com
+  type: trojan
+  server: cloudteddt.eellgg.com
+  port: 30056
+  uuid: f47c6dfb-0611-478b-8429-fe764440a06c
+  network: tcp
+  tls: true
+  servername: v3-web-prime.douyinvod.com
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
   server: creativecommons.org
@@ -50,59 +82,18 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  type: trojan
-  server: 176.97.210.2
-  port: 12882
-  uuid: '@Geek_Spot'
-  network: tcp
-  tls: false
-  servername: 176.97.210.2
-- name: TROJAN-TCP-TLS-🇯🇵(JP)-153.121.70.134
-  type: trojan
-  server: 153.121.70.134
-  port: 4451
-  uuid: 253bc477d4e43c209f2d427272968280
-  network: tcp
-  tls: true
-  servername: www.nintendogames.net
-- name: TROJAN-TCP-TLS-🇭🇰(HK)-58.152.53.94
-  type: trojan
-  server: 58.152.53.94
-  port: 443
-  uuid: 253bc477d4e43c209f2d427272968280
-  network: tcp
-  tls: true
-  servername: www.nintendogames.net
-- name: TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
-  type: trojan
-  server: 23.227.194.234
-  port: 443
-  uuid: 253bc477d4e43c209f2d427272968280
-  network: tcp
-  tls: true
-  servername: www.nintendogames.net
-- name: TROJAN-TCP-TLS-🇹🇷(TR)-167.160.10.54
-  type: trojan
-  server: 167.160.10.54
-  port: 12184
-  uuid: liCV_rq-BftxwXpM
-  network: tcp
-  tls: true
-  servername: 167.160.10.54
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.141.115
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.74.210.142
-  - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.54.131
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  - TROJAN-TCP-TLS-🇯🇵(JP)-153.121.70.134
-  - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.53.94
   - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
-  - TROJAN-TCP-TLS-🇹🇷(TR)-167.160.10.54
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146_1
+  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-TCP-TLS-🇹🇷(TR)-83.217.9.70
+  - TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
+  - TROJAN-TCP-TLS-🇰🇷(KR)-cloudteddt.eellgg.com
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -117,15 +108,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.141.115
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.74.210.142
-  - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.54.131
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  - TROJAN-TCP-TLS-🇯🇵(JP)-153.121.70.134
-  - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.53.94
   - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
-  - TROJAN-TCP-TLS-🇹🇷(TR)-167.160.10.54
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146_1
+  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-TCP-TLS-🇹🇷(TR)-83.217.9.70
+  - TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
+  - TROJAN-TCP-TLS-🇰🇷(KR)-cloudteddt.eellgg.com
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
 rule-providers:
   adblock:
     type: http
