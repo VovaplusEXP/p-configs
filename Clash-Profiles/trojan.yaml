@@ -14,23 +14,23 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.86.144
   type: trojan
-  server: 23.227.194.234
-  port: 443
-  uuid: 253bc477d4e43c209f2d427272968280
+  server: 15.236.86.144
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: www.nintendogames.net
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.120.127
   type: trojan
-  server: 3.70.102.146
+  server: 51.44.120.127
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146_1
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146
   type: trojan
   server: 3.70.102.146
   port: 22223
@@ -38,6 +38,34 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146_1
+  type: trojan
+  server: 3.70.102.146
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.86.144_1
+  type: trojan
+  server: 15.236.86.144
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  type: trojan
+  server: creativecommons.org
+  port: 2053
+  uuid: YwuvGJk36B
+  network: ws
+  tls: true
+  servername: kotlet.arshiacomplus.dpdns.org
+  ws-opts:
+    path: /yamtekodasayahhh
+    headers:
+      Host: kotlet.arshiacomplus.dpdns.org
 - name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   type: trojan
   server: 176.97.210.2
@@ -54,6 +82,22 @@ proxies:
   network: tcp
   tls: true
   servername: tr1.vpnjantit.com
+- name: TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
+  type: trojan
+  server: 23.227.194.234
+  port: 443
+  uuid: 253bc477d4e43c209f2d427272968280
+  network: tcp
+  tls: true
+  servername: www.nintendogames.net
+- name: TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
+  type: trojan
+  server: 188.208.110.58
+  port: 8441
+  uuid: tunnel-astrovpn_official028
+  network: tcp
+  tls: true
+  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
 - name: TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
   type: trojan
   server: 38.180.249.152
@@ -62,38 +106,21 @@ proxies:
   network: tcp
   tls: true
   servername: www.nintendogames.net
-- name: TROJAN-TCP-TLS-🇰🇷(KR)-cloudteddt.eellgg.com
-  type: trojan
-  server: cloudteddt.eellgg.com
-  port: 30056
-  uuid: f47c6dfb-0611-478b-8429-fe764440a06c
-  network: tcp
-  tls: true
-  servername: v3-web-prime.douyinvod.com
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  type: trojan
-  server: creativecommons.org
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
-  tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.86.144
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.120.127
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.86.144_1
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-TCP-TLS-🇹🇷(TR)-83.217.9.70
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
+  - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
   - TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
-  - TROJAN-TCP-TLS-🇰🇷(KR)-cloudteddt.eellgg.com
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -108,14 +135,17 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.86.144
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.120.127
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.86.144_1
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-TCP-TLS-🇹🇷(TR)-83.217.9.70
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
+  - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
   - TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
-  - TROJAN-TCP-TLS-🇰🇷(KR)-cloudteddt.eellgg.com
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
 rule-providers:
   adblock:
     type: http
