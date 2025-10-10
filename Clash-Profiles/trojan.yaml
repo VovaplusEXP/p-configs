@@ -14,46 +14,14 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.86.144
+- name: TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
   type: trojan
-  server: 15.236.86.144
-  port: 22223
-  uuid: telegram-id-directvpn
+  server: 23.227.194.234
+  port: 443
+  uuid: 253bc477d4e43c209f2d427272968280
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.120.127
-  type: trojan
-  server: 51.44.120.127
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146
-  type: trojan
-  server: 3.70.102.146
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146_1
-  type: trojan
-  server: 3.70.102.146
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.86.144_1
-  type: trojan
-  server: 15.236.86.144
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
+  servername: www.nintendogames.net
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
   server: creativecommons.org
@@ -74,22 +42,6 @@ proxies:
   network: tcp
   tls: false
   servername: 176.97.210.2
-- name: TROJAN-TCP-TLS-🇹🇷(TR)-83.217.9.70
-  type: trojan
-  server: 83.217.9.70
-  port: 443
-  uuid: Kia6770aza-vpnjantit.com
-  network: tcp
-  tls: true
-  servername: tr1.vpnjantit.com
-- name: TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
-  type: trojan
-  server: 23.227.194.234
-  port: 443
-  uuid: 253bc477d4e43c209f2d427272968280
-  network: tcp
-  tls: true
-  servername: www.nintendogames.net
 - name: TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
   type: trojan
   server: 188.208.110.58
@@ -98,6 +50,14 @@ proxies:
   network: tcp
   tls: true
   servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.120.127
+  type: trojan
+  server: 51.44.120.127
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
   type: trojan
   server: 38.180.249.152
@@ -110,16 +70,11 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.86.144
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.120.127
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.86.144_1
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  - TROJAN-TCP-TLS-🇹🇷(TR)-83.217.9.70
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
   - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.120.127
   - TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
@@ -135,16 +90,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.86.144
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.120.127
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.102.146_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.86.144_1
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  - TROJAN-TCP-TLS-🇹🇷(TR)-83.217.9.70
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
   - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.120.127
   - TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
 rule-providers:
   adblock:
