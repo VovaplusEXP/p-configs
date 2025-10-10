@@ -22,50 +22,30 @@ proxies:
   network: tcp
   tls: true
   servername: www.nintendogames.net
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.170.222
+- name: TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234_1
   type: trojan
-  server: 15.236.170.222
+  server: 23.227.194.234
+  port: 443
+  uuid: 253bc477d4e43c209f2d427272968280
+  network: tcp
+  tls: true
+  servername: www.nintendogames.net
+- name: TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.19
+  type: trojan
+  server: 23.227.194.19
+  port: 443
+  uuid: 253bc477d4e43c209f2d427272968280
+  network: tcp
+  tls: true
+  servername: www.nintendogames.net
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.70.0.107
+  type: trojan
+  server: 3.70.0.107
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.187.193
-  type: trojan
-  server: 13.36.187.193
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.57.190.197
-  type: trojan
-  server: 52.57.190.197
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🌐(XX)-52.57.190.197
-  type: trojan
-  server: 52.57.190.197
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  type: trojan
-  server: creativecommons.org
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
-  tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
 - name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   type: trojan
   server: 176.97.210.2
@@ -82,18 +62,51 @@ proxies:
   network: tcp
   tls: true
   servername: www.nintendogames.net
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.176.207.54
+  type: trojan
+  server: 63.176.207.54
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.10.181
+  type: trojan
+  server: 104.21.10.181
+  port: 443
+  uuid: 3beeaf86-5522-4278-a1e9-b24a776552cd
+  network: ws
+  tls: true
+  servername: gamang.gpj1.dpdns.org
+  ws-opts:
+    path: /Free-VPN-Geo-Project/181.41.194.176-15565
+    headers:
+      Host: gamang.gpj1.dpdns.org
+- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  type: trojan
+  server: creativecommons.org
+  port: 2053
+  uuid: YwuvGJk36B
+  network: ws
+  tls: true
+  servername: kotlet.arshiacomplus.dpdns.org
+  ws-opts:
+    path: /yamtekodasayahhh
+    headers:
+      Host: kotlet.arshiacomplus.dpdns.org
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.170.222
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.187.193
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.190.197
-  - TROJAN-TCP-TLS-🌐(XX)-52.57.190.197
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234_1
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.19
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.0.107
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.176.207.54
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.10.181
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -109,13 +122,14 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.170.222
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.187.193
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.190.197
-  - TROJAN-TCP-TLS-🌐(XX)-52.57.190.197
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234_1
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.19
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.70.0.107
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.176.207.54
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.10.181
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
 rule-providers:
   adblock:
     type: http
