@@ -14,6 +14,14 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
+  type: trojan
+  server: 23.227.194.234
+  port: 443
+  uuid: 253bc477d4e43c209f2d427272968280
+  network: tcp
+  tls: true
+  servername: www.nintendogames.net
 - name: TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.19
   type: trojan
   server: 23.227.194.19
@@ -22,6 +30,18 @@ proxies:
   network: tcp
   tls: true
   servername: www.nintendogames.net
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.10.181
+  type: trojan
+  server: 104.21.10.181
+  port: 443
+  uuid: 3beeaf86-5522-4278-a1e9-b24a776552cd
+  network: ws
+  tls: true
+  servername: gamang.gpj1.dpdns.org
+  ws-opts:
+    path: /Free-VPN-Geo-Project/181.41.194.176-15565
+    headers:
+      Host: gamang.gpj1.dpdns.org
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
   server: creativecommons.org
@@ -34,22 +54,6 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-52.47.176.67
-  type: trojan
-  server: 52.47.176.67
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  type: trojan
-  server: 176.97.210.2
-  port: 12882
-  uuid: '@Geek_Spot'
-  network: tcp
-  tls: false
-  servername: 176.97.210.2
 - name: TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
   type: trojan
   server: 38.180.249.152
@@ -62,10 +66,10 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
   - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.19
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.10.181
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.176.67
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
@@ -81,10 +85,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
   - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.19
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.10.181
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.176.67
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
 rule-providers:
   adblock:
