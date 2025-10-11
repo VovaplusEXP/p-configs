@@ -14,26 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-🇺🇸(US)-66.23.207.68
-  type: trojan
-  server: 66.23.207.68
-  port: 443
-  uuid: vszFmqUMPe-wFfUy9_yLag
-  network: ws
-  tls: false
-  servername: 66.23.207.68
-  ws-opts:
-    path: /
-    headers:
-      Host: telegram.org
-- name: TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
-  type: trojan
-  server: 23.227.194.234
-  port: 443
-  uuid: 253bc477d4e43c209f2d427272968280
-  network: tcp
-  tls: true
-  servername: www.nintendogames.net
 - name: TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.19
   type: trojan
   server: 23.227.194.19
@@ -42,38 +22,6 @@ proxies:
   network: tcp
   tls: true
   servername: www.nintendogames.net
-- name: TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234_1
-  type: trojan
-  server: 23.227.194.234
-  port: 443
-  uuid: 253bc477d4e43c209f2d427272968280
-  network: tcp
-  tls: true
-  servername: www.nintendogames.net
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.213.129
-  type: trojan
-  server: 13.39.213.129
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-52.47.176.67
-  type: trojan
-  server: 52.47.176.67
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.176.207.54
-  type: trojan
-  server: 63.176.207.54
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
   server: creativecommons.org
@@ -86,18 +34,14 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.10.181
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-52.47.176.67
   type: trojan
-  server: 104.21.10.181
-  port: 443
-  uuid: 3beeaf86-5522-4278-a1e9-b24a776552cd
-  network: ws
+  server: 52.47.176.67
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
   tls: true
-  servername: gamang.gpj1.dpdns.org
-  ws-opts:
-    path: /Free-VPN-Geo-Project/181.41.194.176-15565
-    headers:
-      Host: gamang.gpj1.dpdns.org
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   type: trojan
   server: 176.97.210.2
@@ -114,30 +58,15 @@ proxies:
   network: tcp
   tls: true
   servername: www.nintendogames.net
-- name: TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
-  type: trojan
-  server: 188.208.110.58
-  port: 8441
-  uuid: tunnel-astrovpn_official028
-  network: tcp
-  tls: true
-  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-🇺🇸(US)-66.23.207.68
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
   - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.19
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.213.129
-  - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.176.67
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.176.207.54
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.10.181
+  - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.176.67
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
-  - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -152,18 +81,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-🇺🇸(US)-66.23.207.68
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
   - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.19
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.213.129
-  - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.176.67
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.176.207.54
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.10.181
+  - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.176.67
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
-  - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
 rule-providers:
   adblock:
     type: http
