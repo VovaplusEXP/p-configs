@@ -22,30 +22,30 @@ proxies:
   network: tcp
   tls: true
   servername: www.nintendogames.net
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.188.39
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.175.182
   type: trojan
-  server: 35.181.188.39
+  server: 13.37.175.182
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.124.147.46
+  type: trojan
+  server: 3.124.147.46
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.124.147.46_1
+  type: trojan
+  server: 3.124.147.46
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.224.187
-  type: trojan
-  server: 63.179.224.187
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-🇩🇪(DE)-66.59.208.7
-  type: trojan
-  server: 66.59.208.7
-  port: 17136
-  uuid: mXP68BRNvU
-  network: tcp
-  tls: false
-  servername: 66.59.208.7
 - name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   type: trojan
   server: 176.97.210.2
@@ -54,7 +54,7 @@ proxies:
   network: tcp
   tls: false
   servername: 176.97.210.2
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+- name: TROJAN-WS-TLS-🌐(XX)-creativecommons.org
   type: trojan
   server: creativecommons.org
   port: 2053
@@ -66,16 +66,29 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
+- name: TROJAN-WS-TLS-🇩🇪(DE)-gsjcjkskfkdkkv.iranshopping.xyz
+  type: trojan
+  server: gsjcjkskfkdkkv.iranshopping.xyz
+  port: 2052
+  uuid: atioxPSs6L
+  network: ws
+  tls: true
+  servername: gsjcjkskfkdkkv.iranshopping.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: gsjcjkskfkdkkv.iranshopping.xyz
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.188.39
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.224.187
-  - TROJAN-TCP-🇩🇪(DE)-66.59.208.7
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.175.182
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.124.147.46
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.124.147.46_1
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-WS-TLS-🌐(XX)-creativecommons.org
+  - TROJAN-WS-TLS-🇩🇪(DE)-gsjcjkskfkdkkv.iranshopping.xyz
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -91,11 +104,12 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.188.39
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.224.187
-  - TROJAN-TCP-🇩🇪(DE)-66.59.208.7
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.175.182
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.124.147.46
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.124.147.46_1
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-WS-TLS-🌐(XX)-creativecommons.org
+  - TROJAN-WS-TLS-🇩🇪(DE)-gsjcjkskfkdkkv.iranshopping.xyz
 rule-providers:
   adblock:
     type: http
