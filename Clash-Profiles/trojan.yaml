@@ -22,54 +22,6 @@ proxies:
   network: tcp
   tls: true
   servername: www.nintendogames.net
-- name: TROJAN-WS-🇺🇸(US)-66.23.207.68
-  type: trojan
-  server: 66.23.207.68
-  port: 443
-  uuid: 8YfgMBiTjWXgkndzjCFL2g
-  network: ws
-  tls: false
-  servername: 66.23.207.68
-  ws-opts:
-    path: /
-    headers:
-      Host: telegram.org
-- name: TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.19
-  type: trojan
-  server: 23.227.194.19
-  port: 443
-  uuid: 253bc477d4e43c209f2d427272968280
-  network: tcp
-  tls: true
-  servername: www.nintendogames.net
-- name: TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234_1
-  type: trojan
-  server: 23.227.194.234
-  port: 443
-  uuid: 253bc477d4e43c209f2d427272968280
-  network: tcp
-  tls: true
-  servername: www.nintendogames.net
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  type: trojan
-  server: creativecommons.org
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
-  tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-🇩🇪(DE)-66.59.208.7
-  type: trojan
-  server: 66.59.208.7
-  port: 17136
-  uuid: mXP68BRNvU
-  network: tcp
-  tls: false
-  servername: 66.59.208.7
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.36.211
   type: trojan
   server: 15.188.36.211
@@ -86,30 +38,26 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.130.78
+- name: TROJAN-TCP-🇩🇪(DE)-66.59.208.7
   type: trojan
-  server: 51.44.130.78
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: 66.59.208.7
+  port: 17136
+  uuid: mXP68BRNvU
   network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.65.9.84
+  tls: false
+  servername: 66.59.208.7
+- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
-  server: 3.65.9.84
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
+  server: creativecommons.org
+  port: 2053
+  uuid: YwuvGJk36B
+  network: ws
   tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-91.107.172.48
-  type: trojan
-  server: 91.107.172.48
-  port: 8443
-  uuid: PfSJJQ_iNcuX0otYxg17oA
-  network: tcp
-  tls: true
-  servername: de.v2bazzar.ir
+  servername: kotlet.arshiacomplus.dpdns.org
+  ws-opts:
+    path: /yamtekodasayahhh
+    headers:
+      Host: kotlet.arshiacomplus.dpdns.org
 - name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   type: trojan
   server: 176.97.210.2
@@ -118,31 +66,16 @@ proxies:
   network: tcp
   tls: false
   servername: 176.97.210.2
-- name: TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
-  type: trojan
-  server: 38.180.249.152
-  port: 443
-  uuid: 253bc477d4e43c209f2d427272968280
-  network: tcp
-  tls: true
-  servername: www.nintendogames.net
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
-  - TROJAN-WS-🇺🇸(US)-66.23.207.68
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.19
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234_1
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-🇩🇪(DE)-66.59.208.7
   - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.36.211
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.131.171
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.130.78
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.65.9.84
-  - TROJAN-TCP-TLS-🇩🇪(DE)-91.107.172.48
+  - TROJAN-TCP-🇩🇪(DE)-66.59.208.7
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  - TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -158,18 +91,11 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
-  - TROJAN-WS-🇺🇸(US)-66.23.207.68
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.19
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234_1
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-🇩🇪(DE)-66.59.208.7
   - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.36.211
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.131.171
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.130.78
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.65.9.84
-  - TROJAN-TCP-TLS-🇩🇪(DE)-91.107.172.48
+  - TROJAN-TCP-🇩🇪(DE)-66.59.208.7
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  - TROJAN-TCP-TLS-🇸🇬(SG)-38.180.249.152
 rule-providers:
   adblock:
     type: http
