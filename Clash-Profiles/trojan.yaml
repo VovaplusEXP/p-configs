@@ -14,14 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
-  type: trojan
-  server: 23.227.194.234
-  port: 443
-  uuid: 253bc477d4e43c209f2d427272968280
-  network: tcp
-  tls: true
-  servername: www.nintendogames.net
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.118.254
   type: trojan
   server: 13.36.118.254
@@ -30,14 +22,26 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.118.254_1
+- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
-  server: 13.36.118.254
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
+  server: creativecommons.org
+  port: 2053
+  uuid: YwuvGJk36B
+  network: ws
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: kotlet.arshiacomplus.dpdns.org
+  ws-opts:
+    path: /yamtekodasayahhh
+    headers:
+      Host: kotlet.arshiacomplus.dpdns.org
+- name: TROJAN-TCP-🇩🇪(DE)-66.59.208.7
+  type: trojan
+  server: 66.59.208.7
+  port: 17136
+  uuid: mXP68BRNvU
+  network: tcp
+  tls: false
+  servername: 66.59.208.7
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.102.132
   type: trojan
   server: 35.181.102.132
@@ -54,22 +58,18 @@ proxies:
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.124.147.46
+- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
   type: trojan
-  server: 3.124.147.46
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
+  server: creativecommons.org
+  port: 443
+  uuid: biOrJGlcfX
+  network: ws
   tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-🇩🇪(DE)-66.59.208.7
-  type: trojan
-  server: 66.59.208.7
-  port: 17136
-  uuid: mXP68BRNvU
-  network: tcp
-  tls: false
-  servername: 66.59.208.7
+  servername: ghasem.kotlet.org
+  ws-opts:
+    path: /kos-madaret-khamneii
+    headers:
+      Host: ghasem.kotlet.org
 - name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   type: trojan
   server: 176.97.210.2
@@ -78,18 +78,30 @@ proxies:
   network: tcp
   tls: false
   servername: 176.97.210.2
+- name: TROJAN-WS-TLS-🇩🇪(DE)-gsjcjkskfkdkkv.iranshopping.xyz
+  type: trojan
+  server: gsjcjkskfkdkkv.iranshopping.xyz
+  port: 2052
+  uuid: atioxPSs6L
+  network: ws
+  tls: true
+  servername: gsjcjkskfkdkkv.iranshopping.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: gsjcjkskfkdkkv.iranshopping.xyz
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.118.254
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.118.254_1
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-🇩🇪(DE)-66.59.208.7
   - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.102.132
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.210.69
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.124.147.46
-  - TROJAN-TCP-🇩🇪(DE)-66.59.208.7
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-WS-TLS-🇩🇪(DE)-gsjcjkskfkdkkv.iranshopping.xyz
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -104,14 +116,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.227.194.234
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.118.254
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.118.254_1
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-🇩🇪(DE)-66.59.208.7
   - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.102.132
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.210.69
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.124.147.46
-  - TROJAN-TCP-🇩🇪(DE)-66.59.208.7
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-WS-TLS-🇩🇪(DE)-gsjcjkskfkdkkv.iranshopping.xyz
 rule-providers:
   adblock:
     type: http
