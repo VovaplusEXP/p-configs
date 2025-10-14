@@ -14,35 +14,7 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-🇩🇪(DE)-66.59.208.7
-  type: trojan
-  server: 66.59.208.7
-  port: 17136
-  uuid: mXP68BRNvU
-  network: tcp
-  tls: false
-  servername: 66.59.208.7
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  type: trojan
-  server: creativecommons.org
-  port: 443
-  uuid: biOrJGlcfX
-  network: ws
-  tls: true
-  servername: ghasem.kotlet.org
-  ws-opts:
-    path: /kos-madaret-khamneii
-    headers:
-      Host: ghasem.kotlet.org
-- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  type: trojan
-  server: 176.97.210.2
-  port: 12882
-  uuid: '@Geek_Spot'
-  network: tcp
-  tls: false
-  servername: 176.97.210.2
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
   type: trojan
   server: creativecommons.org
   port: 2053
@@ -54,21 +26,69 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-WS-TLS-🇩🇪(DE)-gsjcjkskfkdkkv.iranshopping.xyz
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.121.96.220
   type: trojan
-  server: gsjcjkskfkdkkv.iranshopping.xyz
-  port: 2052
-  uuid: atioxPSs6L
+  server: 3.121.96.220
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.121.96.220_1
+  type: trojan
+  server: 3.121.96.220
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-🇩🇪(DE)-66.59.208.7
+  type: trojan
+  server: 66.59.208.7
+  port: 17136
+  uuid: mXP68BRNvU
+  network: tcp
+  tls: false
+  servername: 66.59.208.7
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.214.190
+  type: trojan
+  server: 15.236.214.190
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
+  type: trojan
+  server: creativecommons.org
+  port: 443
+  uuid: biOrJGlcfX
   network: ws
   tls: true
-  servername: gsjcjkskfkdkkv.iranshopping.xyz
+  servername: ghasem.kotlet.org
   ws-opts:
-    path: /
+    path: /kos-madaret-khamneii
     headers:
-      Host: gsjcjkskfkdkkv.iranshopping.xyz
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.216.83
+      Host: ghasem.kotlet.org
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.49.235
   type: trojan
-  server: 35.181.216.83
+  server: 13.36.49.235
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  type: trojan
+  server: 176.97.210.2
+  port: 12882
+  uuid: '@Geek_Spot'
+  network: tcp
+  tls: false
+  servername: 176.97.210.2
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.241.57
+  type: trojan
+  server: 13.39.241.57
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
@@ -78,12 +98,15 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-🇩🇪(DE)-66.59.208.7
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.121.96.220
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.121.96.220_1
+  - TROJAN-TCP-🇩🇪(DE)-66.59.208.7
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.214.190
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-gsjcjkskfkdkkv.iranshopping.xyz
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.216.83
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.49.235
+  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.241.57
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -98,12 +121,15 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-🇩🇪(DE)-66.59.208.7
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.121.96.220
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.121.96.220_1
+  - TROJAN-TCP-🇩🇪(DE)-66.59.208.7
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.214.190
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-gsjcjkskfkdkkv.iranshopping.xyz
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.216.83
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.49.235
+  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.241.57
 rule-providers:
   adblock:
     type: http
