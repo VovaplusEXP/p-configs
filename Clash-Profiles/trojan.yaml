@@ -14,14 +14,22 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-🇩🇪(DE)-66.59.208.7
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.177.243
   type: trojan
-  server: 66.59.208.7
-  port: 17136
-  uuid: mXP68BRNvU
+  server: 15.188.177.243
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
-  tls: false
-  servername: 66.59.208.7
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.29.184.35
+  type: trojan
+  server: 52.29.184.35
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🇺🇸(US)-104.21.10.181
   type: trojan
   server: 104.21.10.181
@@ -34,27 +42,7 @@ proxies:
     path: /Free-VPN-Geo-Project/181.41.194.176-15565
     headers:
       Host: gamang.gpj1.dpdns.org
-- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  type: trojan
-  server: 176.97.210.2
-  port: 12882
-  uuid: '@Geek_Spot'
-  network: tcp
-  tls: false
-  servername: 176.97.210.2
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  type: trojan
-  server: creativecommons.org
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
-  tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
   type: trojan
   server: creativecommons.org
   port: 443
@@ -66,24 +54,36 @@ proxies:
     path: /kos-madaret-khamneii
     headers:
       Host: ghasem.kotlet.org
-- name: TROJAN-TCP-TLS-🇭🇰(HK)-221.128.195.222
+- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   type: trojan
-  server: 221.128.195.222
-  port: 4400
-  uuid: e9368912c4ed6046dca6949229cbff02
+  server: 176.97.210.2
+  port: 12882
+  uuid: '@Geek_Spot'
   network: tcp
+  tls: false
+  servername: 176.97.210.2
+- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
+  type: trojan
+  server: creativecommons.org
+  port: 2053
+  uuid: YwuvGJk36B
+  network: ws
   tls: true
-  servername: www.nintendogames.net
+  servername: kotlet.arshiacomplus.dpdns.org
+  ws-opts:
+    path: /yamtekodasayahhh
+    headers:
+      Host: kotlet.arshiacomplus.dpdns.org
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-🇩🇪(DE)-66.59.208.7
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.177.243
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.29.184.35
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.10.181
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
-  - TROJAN-TCP-TLS-🇭🇰(HK)-221.128.195.222
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -98,12 +98,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-🇩🇪(DE)-66.59.208.7
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.177.243
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.29.184.35
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.10.181
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
-  - TROJAN-TCP-TLS-🇭🇰(HK)-221.128.195.222
 rule-providers:
   adblock:
     type: http
