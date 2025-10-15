@@ -14,9 +14,9 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.177.243
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.236.219
   type: trojan
-  server: 15.188.177.243
+  server: 35.181.236.219
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
@@ -34,14 +34,14 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.78.71.149
   type: trojan
-  server: 176.97.210.2
-  port: 12882
-  uuid: '@Geek_Spot'
+  server: 3.78.71.149
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
-  tls: false
-  servername: 176.97.210.2
+  tls: true
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
   type: trojan
   server: creativecommons.org
@@ -54,14 +54,23 @@ proxies:
     path: /kos-madaret-khamneii
     headers:
       Host: ghasem.kotlet.org
+- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  type: trojan
+  server: 176.97.210.2
+  port: 12882
+  uuid: '@Geek_Spot'
+  network: tcp
+  tls: false
+  servername: 176.97.210.2
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.177.243
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.236.219
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.78.71.149
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
+  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -76,10 +85,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.177.243
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.236.219
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.78.71.149
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
+  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
 rule-providers:
   adblock:
     type: http
