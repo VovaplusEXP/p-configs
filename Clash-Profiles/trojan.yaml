@@ -14,35 +14,31 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.236.219
+- name: TROJAN-TCP-TLS-🇳🇱(NL)-92.112.126.22
   type: trojan
-  server: 35.181.236.219
+  server: 92.112.126.22
+  port: 8441
+  uuid: tunnel-astrovpn_official028
+  network: tcp
+  tls: true
+  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.71.183.160
+  type: trojan
+  server: 3.71.183.160
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  type: trojan
+  server: 176.97.210.2
+  port: 12882
+  uuid: '@Geek_Spot'
+  network: tcp
+  tls: false
+  servername: 176.97.210.2
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  type: trojan
-  server: creativecommons.org
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
-  tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.78.71.149
-  type: trojan
-  server: 3.78.71.149
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
   type: trojan
   server: creativecommons.org
   port: 443
@@ -54,23 +50,36 @@ proxies:
     path: /kos-madaret-khamneii
     headers:
       Host: ghasem.kotlet.org
-- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+- name: TROJAN-TCP-TLS-🇹🇷(TR)-193.124.46.134
   type: trojan
-  server: 176.97.210.2
-  port: 12882
-  uuid: '@Geek_Spot'
+  server: 193.124.46.134
+  port: 8441
+  uuid: tunnel-astrovpn_official018
   network: tcp
-  tls: false
-  servername: 176.97.210.2
+  tls: true
+  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
+- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
+  type: trojan
+  server: creativecommons.org
+  port: 2053
+  uuid: YwuvGJk36B
+  network: ws
+  tls: true
+  servername: kotlet.arshiacomplus.dpdns.org
+  ws-opts:
+    path: /yamtekodasayahhh
+    headers:
+      Host: kotlet.arshiacomplus.dpdns.org
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.236.219
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.78.71.149
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
+  - TROJAN-TCP-TLS-🇳🇱(NL)-92.112.126.22
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.71.183.160
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇹🇷(TR)-193.124.46.134
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -85,11 +94,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.236.219
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.78.71.149
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
+  - TROJAN-TCP-TLS-🇳🇱(NL)-92.112.126.22
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.71.183.160
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇹🇷(TR)-193.124.46.134
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
 rule-providers:
   adblock:
     type: http
