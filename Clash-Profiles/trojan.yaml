@@ -14,22 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.51.53
-  type: trojan
-  server: 51.44.51.53
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇳🇱(NL)-92.112.126.22
-  type: trojan
-  server: 92.112.126.22
-  port: 8441
-  uuid: tunnel-astrovpn_official028
-  network: tcp
-  tls: true
-  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-213.108.198.158
   type: trojan
   server: 213.108.198.158
@@ -38,14 +22,6 @@ proxies:
   network: tcp
   tls: true
   servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.9.76
-  type: trojan
-  server: 51.45.9.76
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
   server: creativecommons.org
@@ -58,22 +34,6 @@ proxies:
     path: /kos-madaret-khamneii
     headers:
       Host: ghasem.kotlet.org
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.221.183
-  type: trojan
-  server: 63.179.221.183
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  type: trojan
-  server: 176.97.210.2
-  port: 12882
-  uuid: '@Geek_Spot'
-  network: tcp
-  tls: false
-  servername: 176.97.210.2
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
   type: trojan
   server: creativecommons.org
@@ -86,27 +46,31 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-TLS-🇹🇷(TR)-193.124.46.134
+- name: TROJAN-TCP-TLS-🇳🇱(NL)-92.112.126.22
   type: trojan
-  server: 193.124.46.134
+  server: 92.112.126.22
   port: 8441
-  uuid: tunnel-astrovpn_official018
+  uuid: tunnel-astrovpn_official028
   network: tcp
   tls: true
   servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
+- name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  type: trojan
+  server: 176.97.210.2
+  port: 12882
+  uuid: '@Geek_Spot'
+  network: tcp
+  tls: false
+  servername: 176.97.210.2
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.51.53
-  - TROJAN-TCP-TLS-🇳🇱(NL)-92.112.126.22
   - TROJAN-TCP-TLS-🇩🇪(DE)-213.108.198.158
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.9.76
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.221.183
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
-  - TROJAN-TCP-TLS-🇹🇷(TR)-193.124.46.134
+  - TROJAN-TCP-TLS-🇳🇱(NL)-92.112.126.22
+  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -121,15 +85,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.51.53
-  - TROJAN-TCP-TLS-🇳🇱(NL)-92.112.126.22
   - TROJAN-TCP-TLS-🇩🇪(DE)-213.108.198.158
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.9.76
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.221.183
-  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org_1
-  - TROJAN-TCP-TLS-🇹🇷(TR)-193.124.46.134
+  - TROJAN-TCP-TLS-🇳🇱(NL)-92.112.126.22
+  - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
 rule-providers:
   adblock:
     type: http
