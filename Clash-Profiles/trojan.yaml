@@ -14,18 +14,14 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.217.224
   type: trojan
-  server: creativecommons.org
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
+  server: 35.181.217.224
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
   tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216
   type: trojan
   server: 104.21.33.216
@@ -50,6 +46,14 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/ES1
     headers:
       Host: joss.krikkrik.xyz
+- name: TROJAN-TCP-TLS-🇪🇪(EE)-5.188.200.224
+  type: trojan
+  server: 5.188.200.224
+  port: 8441
+  uuid: tunnel-astrovpn_official827
+  network: tcp
+  tls: true
+  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
 - name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_1
   type: trojan
   server: 104.21.33.216
@@ -70,14 +74,22 @@ proxies:
   network: tcp
   tls: false
   servername: 176.97.210.2
-- name: TROJAN-TCP-TLS-🇭🇰(HK)-58.152.30.87
+- name: TROJAN-TCP-TLS-🇵🇹(PT)-195.133.92.56
   type: trojan
-  server: 58.152.30.87
-  port: 443
-  uuid: c53647f3153f784b3c695ffbe5fb43c0
+  server: 195.133.92.56
+  port: 8441
+  uuid: tunnel-astrovpn_official918
   network: tcp
   tls: true
-  servername: www.nintendogames.net
+  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
+- name: TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
+  type: trojan
+  server: 188.208.110.58
+  port: 8441
+  uuid: tunnel-astrovpn_official927
+  network: tcp
+  tls: true
+  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
 - name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_2
   type: trojan
   server: 104.21.33.216
@@ -94,12 +106,14 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.217.224
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215
+  - TROJAN-TCP-TLS-🇪🇪(EE)-5.188.200.224
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_1
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.30.87
+  - TROJAN-TCP-TLS-🇵🇹(PT)-195.133.92.56
+  - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_2
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
@@ -115,12 +129,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.217.224
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215
+  - TROJAN-TCP-TLS-🇪🇪(EE)-5.188.200.224
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_1
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
-  - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.30.87
+  - TROJAN-TCP-TLS-🇵🇹(PT)-195.133.92.56
+  - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_2
 rule-providers:
   adblock:
