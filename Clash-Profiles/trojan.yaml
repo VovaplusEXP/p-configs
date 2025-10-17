@@ -14,34 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.11.113
-  type: trojan
-  server: 51.45.11.113
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215
-  type: trojan
-  server: 172.67.192.215
-  port: 443
-  uuid: 8d6d33b5-8d0d-41c3-9f3d-9b5aac43d4c9
-  network: ws
-  tls: true
-  servername: joss.krikkrik.xyz
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/ES1
-    headers:
-      Host: joss.krikkrik.xyz
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.38.156.135
-  type: trojan
-  server: 13.38.156.135
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
   server: creativecommons.org
@@ -66,19 +38,19 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/ES2
     headers:
       Host: joss.krikkrik.xyz
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_1
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215
   type: trojan
-  server: 104.21.33.216
+  server: 172.67.192.215
   port: 443
-  uuid: c45ba3c9-fa4a-4301-ab1d-4469c24f9320
+  uuid: 8d6d33b5-8d0d-41c3-9f3d-9b5aac43d4c9
   network: ws
   tls: true
   servername: joss.krikkrik.xyz
   ws-opts:
-    path: /Free-VPN-CF-Geo-Project/ES4
+    path: /Free-VPN-CF-Geo-Project/ES1
     headers:
       Host: joss.krikkrik.xyz
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_2
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_1
   type: trojan
   server: 104.21.33.216
   port: 443
@@ -90,18 +62,6 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/DE3
     headers:
       Host: joss.krikkrik.xyz
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_3
-  type: trojan
-  server: 104.21.33.216
-  port: 443
-  uuid: 82f7b4b4-575c-414d-b6ac-0e2eac25e2fe
-  network: ws
-  tls: true
-  servername: joss.krikkrik.xyz
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/DE2
-    headers:
-      Host: joss.krikkrik.xyz
 - name: TROJAN-TCP-🇩🇪(DE)-176.97.210.2
   type: trojan
   server: 176.97.210.2
@@ -110,19 +70,37 @@ proxies:
   network: tcp
   tls: false
   servername: 176.97.210.2
+- name: TROJAN-TCP-TLS-🇭🇰(HK)-58.152.30.87
+  type: trojan
+  server: 58.152.30.87
+  port: 443
+  uuid: c53647f3153f784b3c695ffbe5fb43c0
+  network: tcp
+  tls: true
+  servername: www.nintendogames.net
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_2
+  type: trojan
+  server: 104.21.33.216
+  port: 443
+  uuid: c45ba3c9-fa4a-4301-ab1d-4469c24f9320
+  network: ws
+  tls: true
+  servername: joss.krikkrik.xyz
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/ES4
+    headers:
+      Host: joss.krikkrik.xyz
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.11.113
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.38.156.135
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_1
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_2
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_3
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.30.87
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_2
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -137,15 +115,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.11.113
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.38.156.135
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_1
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_2
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_3
   - TROJAN-TCP-🇩🇪(DE)-176.97.210.2
+  - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.30.87
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_2
 rule-providers:
   adblock:
     type: http
