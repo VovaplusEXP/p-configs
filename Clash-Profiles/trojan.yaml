@@ -14,19 +14,27 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.121.146.203
+- name: TROJAN-TCP-TLS-🇪🇪(EE)-5.188.200.224
   type: trojan
-  server: 3.121.146.203
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: 5.188.200.224
+  port: 8441
+  uuid: tunnel-astrovpn_official827
+  network: tcp
+  tls: true
+  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.71.198.171
+  type: trojan
+  server: 3.71.198.171
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.194.196
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.71.198.171_1
   type: trojan
-  server: 63.179.194.196
-  port: 22223
-  uuid: telegram-id-directvpn
+  server: 3.71.198.171
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
@@ -34,8 +42,9 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.121.146.203
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.194.196
+  - TROJAN-TCP-TLS-🇪🇪(EE)-5.188.200.224
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.71.198.171
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.71.198.171_1
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -50,8 +59,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.121.146.203
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.194.196
+  - TROJAN-TCP-TLS-🇪🇪(EE)-5.188.200.224
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.71.198.171
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.71.198.171_1
 rule-providers:
   adblock:
     type: http
