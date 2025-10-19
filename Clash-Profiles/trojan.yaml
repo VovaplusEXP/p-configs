@@ -14,11 +14,27 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.194.196
+  type: trojan
+  server: 63.179.194.196
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.194.196_1
+  type: trojan
+  server: 63.179.194.196
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216
   type: trojan
   server: 104.21.33.216
   port: 443
-  uuid: dbeace35-cdc9-493b-b492-25caceba040c
+  uuid: 9c1b59d2-b23d-4187-b3cf-00666ef6ef1c
   network: ws
   tls: true
   servername: joss.krikkrik.xyz
@@ -26,43 +42,11 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/ES2
     headers:
       Host: joss.krikkrik.xyz
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_1
-  type: trojan
-  server: 104.21.33.216
-  port: 443
-  uuid: c45ba3c9-fa4a-4301-ab1d-4469c24f9320
-  network: ws
-  tls: true
-  servername: joss.krikkrik.xyz
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/ES4
-    headers:
-      Host: joss.krikkrik.xyz
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_2
-  type: trojan
-  server: 104.21.33.216
-  port: 443
-  uuid: e1191c4d-5a2c-406e-977f-63cb7e0aba2c
-  network: ws
-  tls: true
-  servername: joss.krikkrik.xyz
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/DE3
-    headers:
-      Host: joss.krikkrik.xyz
-- name: TROJAN-TCP-TLS-🇪🇪(EE)-5.188.200.224
-  type: trojan
-  server: 5.188.200.224
-  port: 8441
-  uuid: tunnel-astrovpn_official827
-  network: tcp
-  tls: true
-  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215
   type: trojan
   server: 172.67.192.215
   port: 443
-  uuid: 541da7c5-dd4b-4318-9252-24eb694230bf
+  uuid: 8d6d33b5-8d0d-41c3-9f3d-9b5aac43d4c9
   network: ws
   tls: true
   servername: joss.krikkrik.xyz
@@ -82,11 +66,23 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_1
+  type: trojan
+  server: 104.21.33.216
+  port: 443
+  uuid: c45ba3c9-fa4a-4301-ab1d-4469c24f9320
+  network: ws
+  tls: true
+  servername: joss.krikkrik.xyz
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/ES4
+    headers:
+      Host: joss.krikkrik.xyz
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_1
   type: trojan
   server: 172.67.192.215
   port: 443
-  uuid: 8d6d33b5-8d0d-41c3-9f3d-9b5aac43d4c9
+  uuid: 541da7c5-dd4b-4318-9252-24eb694230bf
   network: ws
   tls: true
   servername: joss.krikkrik.xyz
@@ -94,11 +90,23 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/ES1
     headers:
       Host: joss.krikkrik.xyz
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_3
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_2
+  type: trojan
+  server: 172.67.192.215
+  port: 443
+  uuid: b963ccdf-b883-473e-8edf-0f5cfaead254
+  network: ws
+  tls: true
+  servername: joss.krikkrik.xyz
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/NL1
+    headers:
+      Host: joss.krikkrik.xyz
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_2
   type: trojan
   server: 104.21.33.216
   port: 443
-  uuid: 9c1b59d2-b23d-4187-b3cf-00666ef6ef1c
+  uuid: dbeace35-cdc9-493b-b492-25caceba040c
   network: ws
   tls: true
   servername: joss.krikkrik.xyz
@@ -114,7 +122,87 @@ proxies:
   network: tcp
   tls: true
   servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.121.146.203
+  type: trojan
+  server: 3.121.146.203
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_3
+  type: trojan
+  server: 104.21.33.216
+  port: 443
+  uuid: 8e1c3f4a-2066-4dd8-b703-9ea2802e6fc7
+  network: ws
+  tls: true
+  servername: joss.krikkrik.xyz
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/DE3
+    headers:
+      Host: joss.krikkrik.xyz
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_3
+  type: trojan
+  server: 172.67.192.215
+  port: 443
+  uuid: e89387b4-643a-4208-a6d2-70a3419de496
+  network: ws
+  tls: true
+  servername: joss.krikkrik.xyz
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/ES2
+    headers:
+      Host: joss.krikkrik.xyz
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.180.53.192
+  type: trojan
+  server: 35.180.53.192
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.119.88
+  type: trojan
+  server: 13.37.119.88
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_4
+  type: trojan
+  server: 104.21.33.216
+  port: 443
+  uuid: e1191c4d-5a2c-406e-977f-63cb7e0aba2c
+  network: ws
+  tls: true
+  servername: joss.krikkrik.xyz
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/DE3
+    headers:
+      Host: joss.krikkrik.xyz
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_5
+  type: trojan
+  server: 104.21.33.216
+  port: 443
+  uuid: febb50d1-b6d6-47a8-a780-aaef37ce3e67
+  network: ws
+  tls: true
+  servername: joss.krikkrik.xyz
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/ES1
+    headers:
+      Host: joss.krikkrik.xyz
+- name: TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
+  type: trojan
+  server: 188.208.110.58
+  port: 8441
+  uuid: tunnel-astrovpn_official927
+  network: tcp
+  tls: true
+  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_6
   type: trojan
   server: 104.21.33.216
   port: 443
@@ -126,7 +214,7 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/AE2
     headers:
       Host: joss.krikkrik.xyz
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_5
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_7
   type: trojan
   server: 104.21.33.216
   port: 443
@@ -138,27 +226,7 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/AE1
     headers:
       Host: joss.krikkrik.xyz
-- name: TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
-  type: trojan
-  server: 188.208.110.58
-  port: 8441
-  uuid: tunnel-astrovpn_official927
-  network: tcp
-  tls: true
-  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_2
-  type: trojan
-  server: 172.67.192.215
-  port: 443
-  uuid: d0728e94-82c2-456b-b5d4-eeab540599df
-  network: ws
-  tls: true
-  servername: joss.krikkrik.xyz
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/AE5
-    headers:
-      Host: joss.krikkrik.xyz
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_6
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_8
   type: trojan
   server: 104.21.33.216
   port: 443
@@ -170,7 +238,31 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/AE7
     headers:
       Host: joss.krikkrik.xyz
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_7
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_4
+  type: trojan
+  server: 172.67.192.215
+  port: 443
+  uuid: d0728e94-82c2-456b-b5d4-eeab540599df
+  network: ws
+  tls: true
+  servername: joss.krikkrik.xyz
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/AE5
+    headers:
+      Host: joss.krikkrik.xyz
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_5
+  type: trojan
+  server: 172.67.192.215
+  port: 443
+  uuid: a3fadc5b-e1e6-47c1-a256-924c80201a49
+  network: ws
+  tls: true
+  servername: joss.krikkrik.xyz
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/AE1
+    headers:
+      Host: joss.krikkrik.xyz
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_9
   type: trojan
   server: 104.21.33.216
   port: 443
@@ -182,34 +274,47 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/AE1
     headers:
       Host: joss.krikkrik.xyz
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.194.196
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_10
   type: trojan
-  server: 63.179.194.196
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
+  server: 104.21.33.216
+  port: 443
+  uuid: de5c8727-8221-4579-a9d1-4ec059805678
+  network: ws
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: joss.krikkrik.xyz
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/AE3
+    headers:
+      Host: joss.krikkrik.xyz
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.194.196
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.194.196_1
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_1
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_2
-  - TROJAN-TCP-TLS-🇪🇪(EE)-5.188.200.224
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_1
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_1
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_3
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_2
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_2
   - TROJAN-TCP-TLS-🇵🇹(PT)-195.133.92.56
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.121.146.203
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_3
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_3
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.53.192
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.119.88
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_4
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_5
   - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_2
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_6
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_7
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.194.196
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_8
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_4
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_5
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_9
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_10
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -224,22 +329,31 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.194.196
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.194.196_1
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_1
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_2
-  - TROJAN-TCP-TLS-🇪🇪(EE)-5.188.200.224
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_1
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_1
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_3
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_2
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_2
   - TROJAN-TCP-TLS-🇵🇹(PT)-195.133.92.56
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.121.146.203
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_3
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_3
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.53.192
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.119.88
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_4
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_5
   - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_2
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_6
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_7
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.194.196
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_8
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_4
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.192.215_5
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_9
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.33.216_10
 rule-providers:
   adblock:
     type: http
