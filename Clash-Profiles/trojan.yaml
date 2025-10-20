@@ -14,37 +14,23 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.198.23
+- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
-  server: 15.188.198.23
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
+  server: creativecommons.org
+  port: 2053
+  uuid: YwuvGJk36B
+  network: ws
   tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇵🇹(PT)-195.133.92.56
-  type: trojan
-  server: 195.133.92.56
-  port: 8441
-  uuid: tunnel-astrovpn_official918
-  network: tcp
-  tls: true
-  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
-- name: TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
-  type: trojan
-  server: 188.208.110.58
-  port: 8441
-  uuid: tunnel-astrovpn_official927
-  network: tcp
-  tls: true
-  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
+  servername: kotlet.arshiacomplus.dpdns.org
+  ws-opts:
+    path: /yamtekodasayahhh
+    headers:
+      Host: kotlet.arshiacomplus.dpdns.org
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.198.23
-  - TROJAN-TCP-TLS-🇵🇹(PT)-195.133.92.56
-  - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -59,9 +45,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.198.23
-  - TROJAN-TCP-TLS-🇵🇹(PT)-195.133.92.56
-  - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
 rule-providers:
   adblock:
     type: http
