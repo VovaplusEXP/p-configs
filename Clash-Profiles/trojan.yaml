@@ -14,25 +14,9 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.214.234
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.198.23
   type: trojan
-  server: 15.236.214.234
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.109.144
-  type: trojan
-  server: 15.188.109.144
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.72.144.81
-  type: trojan
-  server: 3.72.144.81
+  server: 15.188.198.23
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
@@ -58,9 +42,7 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.214.234
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.109.144
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.72.144.81
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.198.23
   - TROJAN-TCP-TLS-🇵🇹(PT)-195.133.92.56
   - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
   url: https://aistudio.google.com/prompts/new_chat
@@ -77,9 +59,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.214.234
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.109.144
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.72.144.81
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.198.23
   - TROJAN-TCP-TLS-🇵🇹(PT)-195.133.92.56
   - TROJAN-TCP-TLS-🇷🇴(RO)-188.208.110.58
 rule-providers:
