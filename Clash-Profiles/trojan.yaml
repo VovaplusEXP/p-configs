@@ -14,22 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.131.252
-  type: trojan
-  server: 15.188.131.252
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.127.115.87
-  type: trojan
-  server: 3.127.115.87
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
   server: creativecommons.org
@@ -42,22 +26,38 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-GRPC-TLS-🇫🇮(FI)-46.62.214.228
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.253.187
   type: trojan
-  server: 46.62.214.228
-  port: 443
-  uuid: ZHEKwAC5B4Hwwohd4PhhFw
-  network: grpc
+  server: 13.39.253.187
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
   tls: true
-  servername: cyrus.v2bazzar.ir
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.180.137.121
+  type: trojan
+  server: 63.180.137.121
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.157.91.229
+  type: trojan
+  server: 18.157.91.229
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.131.252
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.127.115.87
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-GRPC-TLS-🇫🇮(FI)-46.62.214.228
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.253.187
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.137.121
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.157.91.229
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -72,10 +72,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.131.252
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.127.115.87
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-GRPC-TLS-🇫🇮(FI)-46.62.214.228
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.253.187
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.137.121
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.157.91.229
 rule-providers:
   adblock:
     type: http
