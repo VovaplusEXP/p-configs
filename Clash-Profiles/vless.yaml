@@ -14,34 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VLESS-GRPC-TLS-🇺🇸(US)-all.tellmethetrue.shop
-  type: vless
-  server: all.tellmethetrue.shop
-  port: 443
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  network: grpc
-  tls: true
-  servername: pqh30v1.hiddendom.shop
-- name: VLESS-WS-TLS-🇺🇸(US)-104.18.35.42
-  type: vless
-  server: 104.18.35.42
-  port: 443
-  uuid: 3f3e7b76-bebb-4e44-941b-a7594d6e761e
-  network: ws
-  tls: true
-  servername: herokus.vps-jdkz.gq
-  ws-opts:
-    path: /vless-argo?ed=2560
-    headers:
-      Host: herokus.vps-jdkz.gq
-- name: VLESS-GRPC-TLS-🇺🇸(US)-all.tellmethetrue.shop_1
-  type: vless
-  server: all.tellmethetrue.shop
-  port: 443
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  network: grpc
-  tls: true
-  servername: pqh30v5.hiddendom.shop
 - name: VLESS-TCP-REALITY-🇺🇸(US)-35.236.239.254
   type: vless
   server: 35.236.239.254
@@ -51,6 +23,30 @@ proxies:
   tls: true
   servername: www.amazon.com
   flow: xtls-rprx-vision
+- name: VLESS-GRPC-TLS-🇺🇸(US)-all.tellmethetrue.shop
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  network: grpc
+  tls: true
+  servername: pqh30v5.hiddendom.shop
+- name: VLESS-GRPC-TLS-🇺🇸(US)-all.tellmethetrue.shop_1
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  network: grpc
+  tls: true
+  servername: pqh30v1.hiddendom.shop
+- name: VLESS-GRPC-REALITY-🇺🇸(US)-154.38.177.91
+  type: vless
+  server: 154.38.177.91
+  port: 443
+  uuid: 6322a4bb-84e7-4a83-9f7f-4b9ca9d7be5f
+  network: grpc
+  tls: true
+  servername: www.google.us
 - name: VLESS-WS-TLS-🇨🇦(CA)-148.113.207.224
   type: vless
   server: 148.113.207.224
@@ -87,14 +83,27 @@ proxies:
     path: /ws
     headers:
       Host: rAyAn-cOnFiG-ca-1.pArIsA.DpDnS.OrG
-- name: VLESS-GRPC-REALITY-🇺🇸(US)-154.38.177.91
+- name: VLESS-TCP-REALITY-🇺🇸(US)-54.219.42.163
   type: vless
-  server: 154.38.177.91
+  server: 54.219.42.163
   port: 443
-  uuid: 6322a4bb-84e7-4a83-9f7f-4b9ca9d7be5f
-  network: grpc
+  uuid: da640c05-1831-4c6f-a2c8-ff8ff9c18b0c
+  network: tcp
   tls: true
-  servername: www.google.us
+  servername: dash.cloudflare.com
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-45.192.224.253
+  type: vless
+  server: 45.192.224.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
+  network: ws
+  tls: true
+  servername: vless.muzheng.top
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+    headers:
+      Host: vless.muzheng.top
 - name: VLESS-TCP-REALITY-🇺🇸(US)-us.nitroo-tech.ru
   type: vless
   server: us.nitroo-tech.ru
@@ -116,106 +125,7 @@ proxies:
     path: /
     headers:
       Host: hIppOPOTamus.ZulaIr.siTE.
-- name: VLESS-TCP-REALITY-🇺🇸(US)-38.54.104.230
-  type: vless
-  server: 38.54.104.230
-  port: 443
-  uuid: 9be451e0-10a1-4344-a282-cdae536b98d3
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-185.148.104.253
-  type: vless
-  server: 185.148.104.253
-  port: 2096
-  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
-  network: ws
-  tls: true
-  servername: vless.muzheng.top
-  ws-opts:
-    path: /X@节点狂魔/
-    headers:
-      Host: vless.muzheng.top
-- name: VLESS-WS-TLS-🇺🇸(US)-154.197.64.253
-  type: vless
-  server: 154.197.64.253
-  port: 2096
-  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
-  network: ws
-  tls: true
-  servername: vless.muzheng.top
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-    headers:
-      Host: vless.muzheng.top
-- name: VLESS-WS-TLS-🇺🇸(US)-45.45.218.166
-  type: vless
-  server: 45.45.218.166
-  port: 21275
-  uuid: 678a8311-6184-4a1f-a651-84be3cc82e37
-  network: ws
-  tls: true
-  servername: ula347.tiri-viri.com
-  ws-opts:
-    path: /
-    headers:
-      Host: ula347.tiri-viri.com
-- name: VLESS-TCP-REALITY-🇺🇸(US)-54.219.42.163
-  type: vless
-  server: 54.219.42.163
-  port: 443
-  uuid: da640c05-1831-4c6f-a2c8-ff8ff9c18b0c
-  network: tcp
-  tls: true
-  servername: dash.cloudflare.com
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-8.208.19.107
-  type: vless
-  server: 8.208.19.107
-  port: 443
-  uuid: a3660df6-dbc9-4715-a042-0d764b8534d7
-  network: tcp
-  tls: true
-  servername: aws.amazon.com
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-45.192.224.253
-  type: vless
-  server: 45.192.224.253
-  port: 2096
-  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
-  network: ws
-  tls: true
-  servername: vless.muzheng.top
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-    headers:
-      Host: vless.muzheng.top
 - name: VLESS-WS-TLS-🇺🇸(US)-5.10.214.253
-  type: vless
-  server: 5.10.214.253
-  port: 2096
-  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
-  network: ws
-  tls: true
-  servername: vless.muzheng.top
-  ws-opts:
-    path: /Telegram @freecodes /?ed=2560security=tls
-    headers:
-      Host: vless.muzheng.top
-- name: VLESS-WS-TLS-🇺🇸(US)-185.251.81.253
-  type: vless
-  server: 185.251.81.253
-  port: 2096
-  uuid: 2456f90c-5183-476d-b069-16ae74ce120f
-  network: ws
-  tls: true
-  servername: fast01.0860852.xyz
-  ws-opts:
-    path: /v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree
-    headers:
-      Host: fast01.0860852.xyz
-- name: VLESS-WS-TLS-🇺🇸(US)-5.10.214.253_1
   type: vless
   server: 5.10.214.253
   port: 2096
@@ -227,26 +137,125 @@ proxies:
     path: /Telegram @freecodes /?ed=2560
     headers:
       Host: vless.muzheng.top
-- name: VLESS-GRPC-REALITY-🌐(XX)-23.162.152.241
+- name: VLESS-WS-TLS-🇺🇸(US)-198.71.191.253
   type: vless
-  server: 23.162.152.241
-  port: 443
-  uuid: 465c9707-5517-442d-a5f3-624eec09cccd
-  network: grpc
-  tls: true
-  servername: www.microsoft.com
-- name: VLESS-WS-TLS-🇺🇸(US)-185.251.81.253_1
-  type: vless
-  server: 185.251.81.253
+  server: 198.71.191.253
   port: 2096
   uuid: 2456f90c-5183-476d-b069-16ae74ce120f
   network: ws
   tls: true
   servername: fast01.0860852.xyz
   ws-opts:
-    path: /v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree&
+    path: /
     headers:
       Host: fast01.0860852.xyz
+- name: VLESS-WS-TLS-🇺🇸(US)-198.71.191.253_1
+  type: vless
+  server: 198.71.191.253
+  port: 2096
+  uuid: 2456f90c-5183-476d-b069-16ae74ce120f
+  network: ws
+  tls: true
+  servername: fast01.0860852.xyz
+  ws-opts:
+    path: /Telegram🇨🇳@ShadowProxy66/
+    headers:
+      Host: fast01.0860852.xyz
+- name: VLESS-WS-TLS-🇺🇸(US)-185.18.184.253
+  type: vless
+  server: 185.18.184.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
+  network: ws
+  tls: true
+  servername: vless.muzheng.top
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+    headers:
+      Host: vless.muzheng.top
+- name: VLESS-WS-TLS-🇺🇸(US)-ktff.tencentapp.cn
+  type: vless
+  server: ktff.tencentapp.cn
+  port: 443
+  uuid: 9c8b8aec-7a20-4271-8a4f-a87bb029dae9
+  network: ws
+  tls: true
+  servername: sp5.sutu.eu.org
+  ws-opts:
+    path: /security=tls
+    headers:
+      Host: sp5.sutu.eu.org
+- name: VLESS-WS-TLS-🇺🇸(US)-5.10.214.253_1
+  type: vless
+  server: 5.10.214.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
+  network: ws
+  tls: true
+  servername: vless.muzheng.top
+  ws-opts:
+    path: /Telegram @freecodes /?ed=2560security=tls
+    headers:
+      Host: vless.muzheng.top
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-91.98.40.123
+  type: vless
+  server: 91.98.40.123
+  port: 443
+  uuid: 0c0b6d4a-0811-460f-d4b0-dd982a911240
+  network: tcp
+  tls: true
+  servername: store.steampowered.com
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-91.99.8.201
+  type: vless
+  server: 91.99.8.201
+  port: 443
+  uuid: 0c0b6d4a-0811-460f-d4b0-dd982a911240
+  network: tcp
+  tls: true
+  servername: store.steampowered.com
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-64.188.70.0
+  type: vless
+  server: 64.188.70.0
+  port: 443
+  uuid: cd79807f-bcef-46b8-93b6-229676a0c1a0
+  network: tcp
+  tls: true
+  servername: google.com
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-rayphoriahub.iranfastshop.ir
+  type: vless
+  server: rayphoriahub.iranfastshop.ir
+  port: 7401
+  uuid: 6773673d-44dc-4f73-9f33-51213702c535
+  network: tcp
+  tls: true
+  servername: preview.redd.it
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-babakapa.space
+  type: vless
+  server: babakapa.space
+  port: 8443
+  uuid: ae7bf20c-fe06-4603-ae03-c7df3eccfe21
+  network: tcp
+  tls: true
+  servername: google.com
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-91.98.87.4
+  type: vless
+  server: 91.98.87.4
+  port: 443
+  uuid: 0c0b6d4a-0811-460f-d4b0-dd982a911240
+  network: tcp
+  tls: true
+  servername: store.steampowered.com
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-91.98.200.195
+  type: vless
+  server: 91.98.200.195
+  port: 443
+  uuid: 0c0b6d4a-0811-460f-d4b0-dd982a911240
+  network: tcp
+  tls: true
+  servername: store.steampowered.com
 - name: VLESS-WS-TLS-🇬🇧(GB)-51.195.202.129
   type: vless
   server: 51.195.202.129
@@ -259,6 +268,39 @@ proxies:
     path: /ws
     headers:
       Host: 51.195.202.129
+- name: VLESS-WS-TLS-🇺🇸(US)-185.148.104.253
+  type: vless
+  server: 185.148.104.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
+  network: ws
+  tls: true
+  servername: vless.muzheng.top
+  ws-opts:
+    path: /X@节点狂魔/
+    headers:
+      Host: vless.muzheng.top
+- name: VLESS-WS-TLS-🇳🇱(NL)-best.cdniran.info
+  type: vless
+  server: best.cdniran.info
+  port: 443
+  uuid: e999db7a-1b17-4da6-bc37-c9fa24af2e93
+  network: ws
+  tls: true
+  servername: smart.trevanda.info
+  ws-opts:
+    path: /
+    headers:
+      Host: smart.trevanda.info
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-socialup.live
+  type: vless
+  server: socialup.live
+  port: 443
+  uuid: 078534af-d6e0-453a-80e0-c61de7e98b81
+  network: tcp
+  tls: true
+  servername: st.ozone.ru
+  flow: xtls-rprx-vision
 - name: VLESS-GRPC-REALITY-🇺🇸(US)-129.146.132.124
   type: vless
   server: 129.146.132.124
@@ -267,31 +309,207 @@ proxies:
   network: grpc
   tls: true
   servername: www.ebay.com
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-91.98.200.195
+- name: VLESS-TCP-REALITY-🇬🇧(GB)-173.208.51.197
   type: vless
-  server: 91.98.200.195
-  port: 443
-  uuid: 0c0b6d4a-0811-460f-d4b0-dd982a911240
+  server: 173.208.51.197
+  port: 51116
+  uuid: TELEGRAM-CONFiGLiNE
   network: tcp
   tls: true
-  servername: store.steampowered.com
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-babakapa.space
+  servername: google.com
+- name: VLESS-WS-TLS-🇩🇪(DE)-18.153.47.127
   type: vless
-  server: babakapa.space
-  port: 8443
-  uuid: ae7bf20c-fe06-4603-ae03-c7df3eccfe21
+  server: 18.153.47.127
+  port: 22224
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  network: ws
+  tls: true
+  servername: trojan.burgerip.co.uk
+  ws-opts:
+    path: /telegram-channel-vlessconfig
+    headers:
+      Host: 18.153.47.127
+- name: VLESS-TCP-REALITY-🇨🇭(CH)-83.228.225.112
+  type: vless
+  server: 83.228.225.112
+  port: 58920
+  uuid: 5da5f1fa-61b0-4a19-8637-acc5fca5f895
+  network: tcp
+  tls: true
+  servername: fontawesome.com
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇦🇹(AT)-5.181.21.152
+  type: vless
+  server: 5.181.21.152
+  port: 24170
+  uuid: 6a8ee307-a1fb-4801-92e2-86253ecdd88d
+  network: tcp
+  tls: true
+  servername: yahoo.com
+- name: VLESS-WS-TLS-🇩🇪(DE)-5.75.198.232
+  type: vless
+  server: 5.75.198.232
+  port: 443
+  uuid: 664cb874-5182-4ebb-b3b4-5f430f0152dd
+  network: ws
+  tls: true
+  servername: free-pubg-697.pages.dev
+  ws-opts:
+    path: /averkwhgqb
+    headers:
+      Host: free-pubg-697.pages.dev
+- name: VLESS-WS-TLS-🇫🇷(FR)-digitalocean.com
+  type: vless
+  server: digitalocean.com
+  port: 443
+  uuid: 4710b85a-66e6-411b-b492-0e0f7366ad21
+  network: ws
+  tls: true
+  servername: rAyAn-cOnFiG-fr-2.pArIsA.DpDnS.OrG
+  ws-opts:
+    path: /ws
+    headers:
+      Host: rAyAn-cOnFiG-fr-2.pArIsA.DpDnS.OrG
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-de.nitroo-tech.ru
+  type: vless
+  server: de.nitroo-tech.ru
+  port: 443
+  uuid: cd79807f-bcef-46b8-93b6-229676a0c1a0
   network: tcp
   tls: true
   servername: google.com
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-91.99.190.183
+- name: VLESS-WS-TLS-🇫🇷(FR)-www.visa.com.br
   type: vless
-  server: 91.99.190.183
+  server: www.visa.com.br
   port: 443
-  uuid: 0c0b6d4a-0811-460f-d4b0-dd982a911240
+  uuid: 4710b85a-66e6-411b-b492-0e0f7366ad21
+  network: ws
+  tls: true
+  servername: rAyAn-cOnFiG-fr-2.pArSa.dPdNs.oRg
+  ws-opts:
+    path: /ws
+    headers:
+      Host: rAyAn-cOnFiG-fr-2.pArSa.dPdNs.oRg
+- name: VLESS-TCP-REALITY-🇵🇱(PL)-77.83.246.235
+  type: vless
+  server: 77.83.246.235
+  port: 443
+  uuid: 37e7881f-ff59-4858-83cd-c6b4b03cba4a
   network: tcp
   tls: true
-  servername: store.steampowered.com
+  servername: google.com
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇮🇹(IT)-147.45.51.160
+  type: vless
+  server: 147.45.51.160
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  network: tcp
+  tls: true
+  servername: api.company-target.com
+- name: VLESS-WS-TLS-🇺🇸(US)-104.21.16.1
+  type: vless
+  server: 104.21.16.1
+  port: 443
+  uuid: cb796646-d528-4b96-9984-86dbceed95ad
+  network: ws
+  tls: true
+  servername: DD3A34A9.bPB1-1TS.PaGeS.DEV
+  ws-opts:
+    path: /
+    headers:
+      Host: DD3A34A9.bPB1-1TS.PaGeS.DEV
+- name: VLESS-TCP-REALITY-🇨🇭(CH)-5.182.36.56
+  type: vless
+  server: 5.182.36.56
+  port: 45886
+  uuid: 8338171d-2ea7-4015-bdea-492f3d5d4e60
+  network: tcp
+  tls: true
+  servername: yahoo.com
+- name: VLESS-WS-TLS-🇩🇪(DE)-5.75.198.232_1
+  type: vless
+  server: 5.75.198.232
+  port: 443
+  uuid: 664cb874-5182-4ebb-b3b4-5f430f0152dd
+  network: ws
+  tls: true
+  servername: free-pubg-697.pages.dev
+  ws-opts:
+    path: /mqstknocyk
+    headers:
+      Host: free-pubg-697.pages.dev
+- name: VLESS-TCP-REALITY-🇨🇭(CH)-5.182.36.251
+  type: vless
+  server: 5.182.36.251
+  port: 16331
+  uuid: d7dbeb1e-268c-465c-8f59-489f14703efd
+  network: tcp
+  tls: true
+  servername: yahoo.com
+- name: VLESS-WS-TLS-🇺🇸(US)-188.114.97.3
+  type: vless
+  server: 188.114.97.3
+  port: 443
+  uuid: 739b7052-1e58-444d-b068-6cdbbe487663
+  network: ws
+  tls: true
+  servername: DFb32Af2.panLO-eSCObaR0099269.Pages.deV
+  ws-opts:
+    path: /D7UhD7IgkjUTf9Hl?ed=2560
+    headers:
+      Host: DFb32Af2.panLO-eSCObaR0099269.Pages.deV
+- name: VLESS-WS-TLS-🇵🇱(PL)-57.128.219.105
+  type: vless
+  server: 57.128.219.105
+  port: 443
+  uuid: ddab5550-3938-4aba-943c-f23a08d07dc5
+  network: ws
+  tls: true
+  servername: zula.ir
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 57.128.219.105
+- name: VLESS-TCP-REALITY-🇷🇺(RU)-82.97.241.50
+  type: vless
+  server: 82.97.241.50
+  port: 8443
+  uuid: 3a4524bb-5d17-4c09-b523-6ab1e1a41d81
+  network: tcp
+  tls: true
+  servername: ya.ru
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-38.54.104.230
+  type: vless
+  server: 38.54.104.230
+  port: 443
+  uuid: 9be451e0-10a1-4344-a282-cdae536b98d3
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net
+  type: vless
+  server: www.speedtest.net
+  port: 2096
+  uuid: 18bb1b1d-16a2-4ba7-ab27-9720c9f4a875
+  network: ws
+  tls: true
+  servername: jh2msivc7ik13k3brrox9pa4n0od1u06.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: jh2msivc7ik13k3brrox9pa4n0od1u06.pages.dev
+- name: VLESS-GRPC-REALITY-🇩🇪(DE)-91.107.180.84
+  type: vless
+  server: 91.107.180.84
+  port: 2096
+  uuid: 29e43ae0-30b0-44ad-b63b-3b3da88f2825
+  network: grpc
+  tls: true
+  servername: zula.ir
 - name: VLESS-WS-TLS-🇺🇸(US)-172.66.47.175
   type: vless
   server: 172.66.47.175
@@ -304,19 +522,64 @@ proxies:
     path: /lZU7WqWIDqC1jRn6?ed
     headers:
       Host: azadnet05.pages.dev
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-91.99.8.201
+- name: VLESS-TCP-REALITY-🇭🇺(HU)-5.182.38.91
   type: vless
-  server: 91.99.8.201
-  port: 443
-  uuid: 0c0b6d4a-0811-460f-d4b0-dd982a911240
+  server: 5.182.38.91
+  port: 17267
+  uuid: 1c7fcc38-e6be-43c5-875f-b8de2516b9f2
   network: tcp
   tls: true
-  servername: store.steampowered.com
+  servername: yahoo.com
+- name: VLESS-WS-TLS-🇩🇪(DE)-best.cdniran.info
+  type: vless
+  server: best.cdniran.info
+  port: 443
+  uuid: 128d1209-9e9f-4952-9faf-df47ae3648d2
+  network: ws
+  tls: true
+  servername: smart.taron01.info
+  ws-opts:
+    path: /
+    headers:
+      Host: smart.taron01.info
 - name: VLESS-TCP-REALITY-🇧🇪(BE)-45.83.20.34
   type: vless
   server: 45.83.20.34
   port: 58164
   uuid: 34c9f621-0614-4b7f-aab3-c4400bb15a89
+  network: tcp
+  tls: true
+  servername: yahoo.com
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-31.207.44.210
+  type: vless
+  server: 31.207.44.210
+  port: 32155
+  uuid: 2e23b585-a486-4541-83d8-5832a1409c6e
+  network: tcp
+  tls: true
+  servername: yahoo.com
+- name: VLESS-TCP-REALITY-🇨🇦(CA)-51.222.87.29
+  type: vless
+  server: 51.222.87.29
+  port: 8081
+  uuid: 40d9faec-3130-4e69-bb77-210193e65598
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇵🇱(PL)-2.56.125.209
+  type: vless
+  server: 2.56.125.209
+  port: 49868
+  uuid: be015dd2-30b4-4fcf-a9ee-080c13ac13fb
+  network: tcp
+  tls: true
+  servername: yahoo.com
+- name: VLESS-TCP-REALITY-🇮🇸(IS)-45.83.21.107
+  type: vless
+  server: 45.83.21.107
+  port: 59997
+  uuid: c3dd7afc-151f-44f6-8263-ad3c8420ae2f
   network: tcp
   tls: true
   servername: yahoo.com
@@ -332,71 +595,27 @@ proxies:
     path: /ws
     headers:
       Host: rAyAn-cOnFiG-de-1.pArSa.dPdNs.oRg
-- name: VLESS-WS-TLS-🇩🇪(DE)-63.176.244.93
+- name: VLESS-TCP-REALITY-🇱🇻(LV)-195.135.252.28
   type: vless
-  server: 63.176.244.93
-  port: 22224
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  network: ws
-  tls: true
-  servername: trojan.burgerip.co.uk
-  ws-opts:
-    path: /telegram-channel-vlessconfig
-    headers:
-      Host: 63.176.244.93
-- name: VLESS-WS-TLS-🇺🇸(US)-188.114.97.3
-  type: vless
-  server: 188.114.97.3
+  server: 195.135.252.28
   port: 443
-  uuid: f2e486f9-1697-4be6-be59-6c4fb42c7a24
-  network: ws
-  tls: true
-  servername: paS-kaLE-AGhA.pageS.deV
-  ws-opts:
-    path: /
-    headers:
-      Host: paS-kaLE-AGhA.pageS.deV
-- name: VLESS-TCP-REALITY-🇩🇰(DK)-95.164.85.109
-  type: vless
-  server: 95.164.85.109
-  port: 59374
-  uuid: bfc78cd8-5951-4803-8d6c-4cedef8cd420
+  uuid: 099dbf2d-a8e0-406e-a85f-eba0ac9a68aa
   network: tcp
   tls: true
   servername: yahoo.com
-- name: VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇵🇱(PL)-alhilal.com
   type: vless
-  server: www.speedtest.net
-  port: 2096
-  uuid: 18bb1b1d-16a2-4ba7-ab27-9720c9f4a875
-  network: ws
-  tls: true
-  servername: jh2msivc7ik13k3brrox9pa4n0od1u06.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: jh2msivc7ik13k3brrox9pa4n0od1u06.pages.dev
-- name: VLESS-WS-TLS-🇬🇧(GB)-bitpay.com
-  type: vless
-  server: bitpay.com
+  server: alhilal.com
   port: 443
-  uuid: 5915f034-a53b-4b63-b0e7-b29194de3fe9
+  uuid: ddab5550-3938-4aba-943c-f23a08d07dc5
   network: ws
   tls: true
-  servername: rAyAn-cOnFiG-uk-1.pArSa.dPdNs.oRg
+  servername: rAyAn-cOnFiG-pl-1.pArSa.dPdNs.oRg
   ws-opts:
     path: /ws
     headers:
-      Host: rAyAn-cOnFiG-uk-1.pArSa.dPdNs.oRg
-- name: VLESS-TCP-REALITY-🌐(XX)-45.89.110.227
-  type: vless
-  server: 45.89.110.227
-  port: 8443
-  uuid: 839fde0d-552c-46da-929c-60511e6bca76
-  network: tcp
-  tls: true
-  servername: www.google.com
-  flow: xtls-rprx-vision
+      Host: rAyAn-cOnFiG-pl-1.pArSa.dPdNs.oRg
 - name: VLESS-WS-TLS-🇩🇪(DE)-iplocation.net
   type: vless
   server: iplocation.net
@@ -409,70 +628,61 @@ proxies:
     path: /ws
     headers:
       Host: rAyAn-cOnFiG-de-1.pArIsA.DpDnS.OrG
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-socialup.live
+- name: VLESS-WS-TLS-🇵🇱(PL)-check-host.net
   type: vless
-  server: socialup.live
+  server: check-host.net
   port: 443
-  uuid: 078534af-d6e0-453a-80e0-c61de7e98b81
-  network: tcp
-  tls: true
-  servername: st.ozone.ru
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇨🇦(CA)-51.222.87.29
-  type: vless
-  server: 51.222.87.29
-  port: 8081
-  uuid: 40d9faec-3130-4e69-bb77-210193e65598
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇫🇷(FR)-digitalocean.com
-  type: vless
-  server: digitalocean.com
-  port: 443
-  uuid: 4710b85a-66e6-411b-b492-0e0f7366ad21
+  uuid: ddab5550-3938-4aba-943c-f23a08d07dc5
   network: ws
   tls: true
-  servername: rAyAn-cOnFiG-fr-2.pArIsA.DpDnS.OrG
+  servername: rAyAn-cOnFiG-pl-1.pArIsA.DpDnS.OrG
   ws-opts:
     path: /ws
     headers:
-      Host: rAyAn-cOnFiG-fr-2.pArIsA.DpDnS.OrG
-- name: VLESS-TCP-REALITY-🇦🇹(AT)-5.181.21.152
+      Host: rAyAn-cOnFiG-pl-1.pArIsA.DpDnS.OrG
+- name: VLESS-TCP-REALITY-🇬🇧(GB)-8.208.19.107
   type: vless
-  server: 5.181.21.152
-  port: 24170
-  uuid: 6a8ee307-a1fb-4801-92e2-86253ecdd88d
+  server: 8.208.19.107
+  port: 443
+  uuid: a3660df6-dbc9-4715-a042-0d764b8534d7
+  network: tcp
+  tls: true
+  servername: aws.amazon.com
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇸🇪(SE)-78.40.117.185
+  type: vless
+  server: 78.40.117.185
+  port: 443
+  uuid: 8377aac9-f3b3-42df-a5ea-9254f37e7b34
+  network: tcp
+  tls: true
+  servername: sto.eu-ffast.com
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇳🇱(NL)-best.cdniran.info_1
+  type: vless
+  server: best.cdniran.info
+  port: 443
+  uuid: e999db7a-1b17-4da6-bc37-c9fa24af2e93
+  network: ws
+  tls: true
+  servername: smart.trevanda.info
+  ws-opts:
+    path: /?@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
+    headers:
+      Host: smart.trevanda.info
+- name: VLESS-TCP-REALITY-🇬🇷(GR)-94.131.8.19
+  type: vless
+  server: 94.131.8.19
+  port: 45448
+  uuid: 96fcf8cc-535d-46c4-b8f9-76058df48e3b
   network: tcp
   tls: true
   servername: yahoo.com
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-109.120.150.205
+- name: VLESS-TCP-REALITY-🇷🇺(RU)-92.53.107.193
   type: vless
-  server: 109.120.150.205
-  port: 443
-  uuid: 0ba6ab83-ed33-4544-98b0-dcacb52799cd
-  network: tcp
-  tls: true
-  servername: ad.mail.ru
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇮🇹(IT)-5.253.43.181
-  type: vless
-  server: 5.253.43.181
-  port: 443
-  uuid: 48bbb385-8877-4b2d-8f42-d81df401725d
-  network: ws
-  tls: true
-  servername: zula.ir
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 5.253.43.181
-- name: VLESS-TCP-REALITY-🇨🇭(CH)-5.182.36.251
-  type: vless
-  server: 5.182.36.251
-  port: 16331
-  uuid: d7dbeb1e-268c-465c-8f59-489f14703efd
+  server: 92.53.107.193
+  port: 27129
+  uuid: 1dc60f16-1593-485e-949d-8459edba6430
   network: tcp
   tls: true
   servername: yahoo.com
@@ -488,286 +698,32 @@ proxies:
     path: /evcszpmoerkdnesg?ed=2560fp=chrome
     headers:
       Host: asl-uwiisjjsjdjd-7665.pages.dev
-- name: VLESS-WS-TLS-🇬🇧(GB)-www.visasoutheasteurope.com
+- name: VLESS-TCP-REALITY-🇹🇷(TR)-45.12.143.191
   type: vless
-  server: www.visasoutheasteurope.com
-  port: 443
-  uuid: 5915f034-a53b-4b63-b0e7-b29194de3fe9
-  network: ws
-  tls: true
-  servername: rAyAn-cOnFiG-uk-1.pArIsA.DpDnS.OrG
-  ws-opts:
-    path: /ws
-    headers:
-      Host: rAyAn-cOnFiG-uk-1.pArIsA.DpDnS.OrG
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-de.pickvpn.live
-  type: vless
-  server: de.pickvpn.live
-  port: 443
-  uuid: afe821e2-75a2-4b94-8960-c3f180c24d3e
+  server: 45.12.143.191
+  port: 20329
+  uuid: e105e56a-5f81-41a2-ab44-bfffc9b00674
   network: tcp
   tls: true
-  servername: github.com
+  servername: yahoo.com
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-109.120.150.205
+  type: vless
+  server: 109.120.150.205
+  port: 443
+  uuid: 0ba6ab83-ed33-4544-98b0-dcacb52799cd
+  network: tcp
+  tls: true
+  servername: ad.mail.ru
   flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇩🇪(DE)-best.cdniran.info
+- name: VLESS-TCP-REALITY-🇨🇭(CH)-auto.quattro-tech.ru
   type: vless
-  server: best.cdniran.info
-  port: 443
-  uuid: 128d1209-9e9f-4952-9faf-df47ae3648d2
-  network: ws
-  tls: true
-  servername: smart.taron01.info
-  ws-opts:
-    path: /
-    headers:
-      Host: smart.taron01.info
-- name: VLESS-WS-TLS-🇸🇪(SE)-zula.ir
-  type: vless
-  server: zula.ir
-  port: 2096
-  uuid: 97909ffd-6da0-4893-9d63-00e72ad55256
-  network: ws
-  tls: true
-  servername: frAgteSt.JaHANGiRKh.eU.orG
-  ws-opts:
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
-    headers:
-      Host: frAgteSt.JaHANGiRKh.eU.orG
-- name: VLESS-WS-TLS-🇺🇸(US)-104.21.16.1
-  type: vless
-  server: 104.21.16.1
-  port: 443
-  uuid: cb796646-d528-4b96-9984-86dbceed95ad
-  network: ws
-  tls: true
-  servername: DD3A34A9.bPB1-1TS.PaGeS.DEV
-  ws-opts:
-    path: /
-    headers:
-      Host: DD3A34A9.bPB1-1TS.PaGeS.DEV
-- name: VLESS-WS-TLS-🇩🇪(DE)-ipw.gfdv54cvghhgfhgj-njhgj64.info
-  type: vless
-  server: ipw.gfdv54cvghhgfhgj-njhgj64.info
-  port: 443
-  uuid: 0d0782a3-2c62-4936-b893-5790188778ea
-  network: ws
-  tls: true
-  servername: smrtwtsm.confappha.com
-  ws-opts:
-    path: /
-    headers:
-      Host: smrtwtsm.confappha.com
-- name: VLESS-TCP-REALITY-🇫🇮(FI)-5.181.20.219
-  type: vless
-  server: 5.181.20.219
-  port: 17422
-  uuid: fe837fd0-840d-4cee-9334-0dc6c2b15c1c
+  server: auto.quattro-tech.ru
+  port: 8443
+  uuid: 5c44b52f-361e-45c5-bd12-dc72f28397ce
   network: tcp
   tls: true
-  servername: yahoo.com
-- name: VLESS-TCP-REALITY-🇨🇭(CH)-5.182.36.56
-  type: vless
-  server: 5.182.36.56
-  port: 45886
-  uuid: 8338171d-2ea7-4015-bdea-492f3d5d4e60
-  network: tcp
-  tls: true
-  servername: yahoo.com
-- name: VLESS-WS-TLS-🇺🇸(US)-188.114.97.3_1
-  type: vless
-  server: 188.114.97.3
-  port: 443
-  uuid: f2e486f9-1697-4be6-be59-6c4fb42c7a24
-  network: ws
-  tls: true
-  servername: paS-kaLE-AGhA.pageS.deV
-  ws-opts:
-    path: /Telegram@V2ray_Alpha/?ed=2560
-    headers:
-      Host: pas-kale-agha.pages.dev
-- name: VLESS-WS-TLS-🇵🇱(PL)-57.128.219.105
-  type: vless
-  server: 57.128.219.105
-  port: 443
-  uuid: ddab5550-3938-4aba-943c-f23a08d07dc5
-  network: ws
-  tls: true
-  servername: zula.ir
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 57.128.219.105
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-nl.pickvpn.live
-  type: vless
-  server: nl.pickvpn.live
-  port: 443
-  uuid: afe821e2-75a2-4b94-8960-c3f180c24d3e
-  network: tcp
-  tls: true
-  servername: github.com
+  servername: auto.quattro-tech.ru
   flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇫🇷(FR)-www.visa.com.br
-  type: vless
-  server: www.visa.com.br
-  port: 443
-  uuid: 4710b85a-66e6-411b-b492-0e0f7366ad21
-  network: ws
-  tls: true
-  servername: rAyAn-cOnFiG-fr-2.pArSa.dPdNs.oRg
-  ws-opts:
-    path: /ws
-    headers:
-      Host: rAyAn-cOnFiG-fr-2.pArSa.dPdNs.oRg
-- name: VLESS-TCP-REALITY-🇮🇸(IS)-45.83.21.107
-  type: vless
-  server: 45.83.21.107
-  port: 59997
-  uuid: c3dd7afc-151f-44f6-8263-ad3c8420ae2f
-  network: tcp
-  tls: true
-  servername: yahoo.com
-- name: VLESS-WS-TLS-🇸🇪(SE)-zula.ir_1
-  type: vless
-  server: zula.ir
-  port: 2096
-  uuid: 97909ffd-6da0-4893-9d63-00e72ad55256
-  network: ws
-  tls: true
-  servername: frAgteSt.JaHANGiRKh.eU.orG
-  ws-opts:
-    path: /
-    headers:
-      Host: frAgteSt.JaHANGiRKh.eU.orG
-- name: VLESS-WS-TLS-🇩🇪(DE)-best.cdniran.info_1
-  type: vless
-  server: best.cdniran.info
-  port: 443
-  uuid: e999db7a-1b17-4da6-bc37-c9fa24af2e93
-  network: ws
-  tls: true
-  servername: smart.trevanda.info
-  ws-opts:
-    path: /?@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
-    headers:
-      Host: smart.trevanda.info
-- name: VLESS-WS-TLS-🇮🇹(IT)-www.speedtest.net
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: 48bbb385-8877-4b2d-8f42-d81df401725d
-  network: ws
-  tls: true
-  servername: rAyAn-cOnFiG-it-1.pArIsA.DpDnS.OrG
-  ws-opts:
-    path: /ws
-    headers:
-      Host: rAyAn-cOnFiG-it-1.pArIsA.DpDnS.OrG
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-31.207.44.210
-  type: vless
-  server: 31.207.44.210
-  port: 32155
-  uuid: 2e23b585-a486-4541-83d8-5832a1409c6e
-  network: tcp
-  tls: true
-  servername: yahoo.com
-- name: VLESS-TCP-REALITY-🇸🇪(SE)-78.40.117.185
-  type: vless
-  server: 78.40.117.185
-  port: 443
-  uuid: 8377aac9-f3b3-42df-a5ea-9254f37e7b34
-  network: tcp
-  tls: true
-  servername: sto.eu-ffast.com
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-ktff.tencentapp.cn
-  type: vless
-  server: ktff.tencentapp.cn
-  port: 443
-  uuid: 9c8b8aec-7a20-4271-8a4f-a87bb029dae9
-  network: ws
-  tls: true
-  servername: sp5.sutu.eu.org
-  ws-opts:
-    path: /security=tls
-    headers:
-      Host: sp5.sutu.eu.org
-- name: VLESS-TCP-REALITY-🇭🇺(HU)-5.182.38.91
-  type: vless
-  server: 5.182.38.91
-  port: 17267
-  uuid: 1c7fcc38-e6be-43c5-875f-b8de2516b9f2
-  network: tcp
-  tls: true
-  servername: yahoo.com
-- name: VLESS-WS-TLS-🇺🇦(UA)-45.87.155.14
-  type: vless
-  server: 45.87.155.14
-  port: 443
-  uuid: 97c02cbb-eef4-427c-bb25-a5720886b006
-  network: ws
-  tls: true
-  servername: zula.ir
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 45.87.155.14
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-wa.sfasti.ru
-  type: vless
-  server: wa.sfasti.ru
-  port: 443
-  uuid: d4e4c02a-d969-47a6-ba0f-3d433fdac206
-  network: tcp
-  tls: true
-  servername: wa.sfasti.ru
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇵🇱(PL)-2.56.125.209
-  type: vless
-  server: 2.56.125.209
-  port: 49868
-  uuid: be015dd2-30b4-4fcf-a9ee-080c13ac13fb
-  network: tcp
-  tls: true
-  servername: yahoo.com
-- name: VLESS-TCP-TLS-🇫🇮(FI)-65.108.231.185
-  type: vless
-  server: 65.108.231.185
-  port: 443
-  uuid: 440766d1-858f-4719-84f5-c2de6f6227ba
-  network: tcp
-  tls: true
-  servername: loCal.rogsoftwaregroup.com
-- name: VLESS-WS-TLS-🇺🇸(US)-185.251.81.253_2
-  type: vless
-  server: 185.251.81.253
-  port: 2096
-  uuid: 2456f90c-5183-476d-b069-16ae74ce120f
-  network: ws
-  tls: true
-  servername: fast01.0860852.xyz
-  ws-opts:
-    path: /Telegram🇨🇳
-    headers:
-      Host: fast01.0860852.xyz
-- name: VLESS-GRPC-REALITY-🇫🇮(FI)-65.108.253.253
-  type: vless
-  server: 65.108.253.253
-  port: 100
-  uuid: e78c4740-48b9-431e-8894-a99925971950
-  network: grpc
-  tls: true
-  servername: google.com
-- name: VLESS-WS-TLS-🇵🇱(PL)-check-host.net
-  type: vless
-  server: check-host.net
-  port: 443
-  uuid: ddab5550-3938-4aba-943c-f23a08d07dc5
-  network: ws
-  tls: true
-  servername: rAyAn-cOnFiG-pl-1.pArIsA.DpDnS.OrG
-  ws-opts:
-    path: /ws
-    headers:
-      Host: rAyAn-cOnFiG-pl-1.pArIsA.DpDnS.OrG
 - name: VLESS-WS-TLS-🇺🇦(UA)-jquery.com
   type: vless
   server: jquery.com
@@ -780,51 +736,151 @@ proxies:
     path: /ws
     headers:
       Host: rAyAn-cOnFiG-ua-1.pArIsA.DpDnS.OrG
-- name: VLESS-TCP-REALITY-🇹🇷(TR)-45.12.143.191
+- name: VLESS-GRPC-REALITY-🇫🇮(FI)-46.62.196.119
   type: vless
-  server: 45.12.143.191
-  port: 20329
-  uuid: e105e56a-5f81-41a2-ab44-bfffc9b00674
+  server: 46.62.196.119
+  port: 200
+  uuid: 46c398b9-b1f5-4998-a968-ad723a475c95
+  network: grpc
+  tls: true
+  servername: google.com
+- name: VLESS-WS-TLS-🇺🇸(US)-185.251.81.253
+  type: vless
+  server: 185.251.81.253
+  port: 2096
+  uuid: 2456f90c-5183-476d-b069-16ae74ce120f
+  network: ws
+  tls: true
+  servername: fast01.0860852.xyz
+  ws-opts:
+    path: /v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree---v_ngfree&
+    headers:
+      Host: fast01.0860852.xyz
+- name: VLESS-GRPC-REALITY-🇫🇮(FI)-65.108.253.253
+  type: vless
+  server: 65.108.253.253
+  port: 100
+  uuid: e78c4740-48b9-431e-8894-a99925971950
+  network: grpc
+  tls: true
+  servername: google.com
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-212.95.41.20
+  type: vless
+  server: 212.95.41.20
+  port: 800
+  uuid: 04979a1c-300b-4eb6-9f85-235730566d54
+  network: tcp
+  tls: true
+  servername: zhaket.com
+- name: VLESS-WS-TLS-🌐(XX)-autotrader.co.uk
+  type: vless
+  server: autotrader.co.uk
+  port: 443
+  uuid: 7d18fc67-1994-4f7e-8ff8-c024223f33bb
+  network: ws
+  tls: true
+  servername: revcloud.migacpi.org
+  ws-opts:
+    path: /cbde4058-6b81-432b-8689-dd7ce10e479c
+    headers:
+      Host: revcloud.migacpi.org
+- name: VLESS-TCP-REALITY-🇯🇵(JP)-109.123.229.205
+  type: vless
+  server: 109.123.229.205
+  port: 443
+  uuid: 2cf21f7f-9f29-44b0-893d-08a6e2e09704
+  network: tcp
+  tls: true
+  servername: dash.cloudflare.com
+  flow: xtls-rprx-vision
+- name: VLESS-GRPC-REALITY-🌐(XX)-23.162.152.241
+  type: vless
+  server: 23.162.152.241
+  port: 443
+  uuid: 465c9707-5517-442d-a5f3-624eec09cccd
+  network: grpc
+  tls: true
+  servername: www.microsoft.com
+- name: VLESS-TCP-REALITY-🌐(XX)-91.98.86.54
+  type: vless
+  server: 91.98.86.54
+  port: 9954
+  uuid: c2ec47f4-873f-573f-7d8d-d79d7ad452e6
+  network: tcp
+  tls: true
+  servername: store.steampowered.com
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇱🇻(LV)-94.131.104.178
+  type: vless
+  server: 94.131.104.178
+  port: 443
+  uuid: d5c1b5d7-055b-4457-bc3a-6e99919c1bcb
+  network: tcp
+  tls: true
+  servername: latvia6.clearorbitllc.com
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇳🇱(NL)-ico.org.uk
+  type: vless
+  server: ico.org.uk
+  port: 443
+  uuid: 7d18fc67-1994-4f7e-8ff8-c024223f33bb
+  network: ws
+  tls: true
+  servername: revcloud.migacpi.org
+  ws-opts:
+    path: /cbde4058-6b81-432b-8689-dd7ce10e479c
+    headers:
+      Host: revcloud.migacpi.org
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-51.77.91.192
+  type: vless
+  server: 51.77.91.192
+  port: 8081
+  uuid: 91b77af9-6f06-4c22-9c0e-bdd8f63de158
   network: tcp
   tls: true
   servername: yahoo.com
-- name: VLESS-WS-TLS-🇺🇸(US)-188.114.97.3_2
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇮🇹(IT)-5.253.43.181
+  type: vless
+  server: 5.253.43.181
+  port: 443
+  uuid: 48bbb385-8877-4b2d-8f42-d81df401725d
+  network: ws
+  tls: true
+  servername: zula.ir
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 5.253.43.181
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-hajimamad.timeclassic.ir
+  type: vless
+  server: hajimamad.timeclassic.ir
+  port: 800
+  uuid: 04979a1c-300b-4eb6-9f85-235730566d54
+  network: tcp
+  tls: true
+  servername: zhaket.com
+- name: VLESS-WS-TLS-🇺🇸(US)-188.114.97.3_1
   type: vless
   server: 188.114.97.3
   port: 443
-  uuid: 739b7052-1e58-444d-b068-6cdbbe487663
+  uuid: f2e486f9-1697-4be6-be59-6c4fb42c7a24
   network: ws
   tls: true
-  servername: DFb32Af2.panLO-eSCObaR0099269.Pages.deV
+  servername: paS-kaLE-AGhA.pageS.deV
   ws-opts:
-    path: /D7UhD7IgkjUTf9Hl?ed=2560
+    path: /Telegram@V2ray_Alpha/?ed=2560
     headers:
-      Host: DFb32Af2.panLO-eSCObaR0099269.Pages.deV
-- name: VLESS-TCP-REALITY-🇬🇷(GR)-94.131.8.19
+      Host: pas-kale-agha.pages.dev
+- name: VLESS-GRPC-REALITY-🇺🇸(US)-45.89.110.227
   type: vless
-  server: 94.131.8.19
-  port: 45448
-  uuid: 96fcf8cc-535d-46c4-b8f9-76058df48e3b
-  network: tcp
-  tls: true
-  servername: yahoo.com
-- name: VLESS-TCP-TLS-🇫🇮(FI)-65.109.145.54
-  type: vless
-  server: 65.109.145.54
+  server: 45.89.110.227
   port: 443
-  uuid: 8f82acbe-f328-471a-8000-fbea349e6ce0
-  network: tcp
+  uuid: 839fde0d-552c-46da-929c-60511e6bca76
+  network: grpc
   tls: true
-  servername: dedic.app-browser.org
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-92.53.107.193
-  type: vless
-  server: 92.53.107.193
-  port: 27129
-  uuid: 1dc60f16-1593-485e-949d-8459edba6430
-  network: tcp
-  tls: true
-  servername: yahoo.com
-- name: VLESS-WS-TLS-🇺🇦(UA)-androidauthority.com
+  servername: www.google.com
+- name: VLESS-WS-TLS-🌐(XX)-androidauthority.com
   type: vless
   server: androidauthority.com
   port: 443
@@ -836,275 +892,6 @@ proxies:
     path: /ws
     headers:
       Host: rAyAn-cOnFiG-ua-1.pArSa.dPdNs.oRg
-- name: VLESS-GRPC-REALITY-🇫🇮(FI)-46.62.196.119
-  type: vless
-  server: 46.62.196.119
-  port: 200
-  uuid: 46c398b9-b1f5-4998-a968-ad723a475c95
-  network: grpc
-  tls: true
-  servername: google.com
-- name: VLESS-WS-TLS-🇺🇸(US)-104.19.54.50
-  type: vless
-  server: 104.19.54.50
-  port: 443
-  uuid: 3c36eadb-747a-4166-8db0-23fec9883ea2
-  network: ws
-  tls: true
-  servername: HarmonY-427.pages.DEV
-  ws-opts:
-    path: /
-    headers:
-      Host: HarmonY-427.pages.DEV
-- name: VLESS-TCP-TLS-🇫🇮(FI)-95.217.206.161
-  type: vless
-  server: 95.217.206.161
-  port: 443
-  uuid: 01d68a9b-be48-4c7b-b4f9-71b29c4cfaca
-  network: tcp
-  tls: true
-  servername: api.chandplus.com
-- name: VLESS-WS-TLS-🇵🇱(PL)-alhilal.com
-  type: vless
-  server: alhilal.com
-  port: 443
-  uuid: ddab5550-3938-4aba-943c-f23a08d07dc5
-  network: ws
-  tls: true
-  servername: rAyAn-cOnFiG-pl-1.pArSa.dPdNs.oRg
-  ws-opts:
-    path: /ws
-    headers:
-      Host: rAyAn-cOnFiG-pl-1.pArSa.dPdNs.oRg
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-51.77.91.192
-  type: vless
-  server: 51.77.91.192
-  port: 8081
-  uuid: 91b77af9-6f06-4c22-9c0e-bdd8f63de158
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-212.95.41.20
-  type: vless
-  server: 212.95.41.20
-  port: 800
-  uuid: 04979a1c-300b-4eb6-9f85-235730566d54
-  network: tcp
-  tls: true
-  servername: zhaket.com
-- name: VLESS-WS-TLS-🌐(XX)-ip.mirzabox.info
-  type: vless
-  server: ip.mirzabox.info
-  port: 2096
-  uuid: 0eaef00e-ffc4-46bd-8f32-07baefd73f70
-  network: ws
-  tls: true
-  servername: IBIS.zuLAir.site.
-  ws-opts:
-    path: /
-    headers:
-      Host: IBIS.zuLAir.site.
-- name: VLESS-TCP-REALITY-🇯🇵(JP)-109.123.229.205
-  type: vless
-  server: 109.123.229.205
-  port: 443
-  uuid: 2cf21f7f-9f29-44b0-893d-08a6e2e09704
-  network: tcp
-  tls: true
-  servername: dash.cloudflare.com
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇫🇷(FR)-185.242.87.162
-  type: vless
-  server: 185.242.87.162
-  port: 443
-  uuid: 35b0de8b-b156-43ff-a0e6-59f1018f7adb
-  network: ws
-  tls: true
-  servername: 185.242.87.162
-  ws-opts:
-    path: /holhclws?ed=2048@V2Gatee--V2Gatee--V2Gatee--V2Gatee-V2Gatee--V2Gatee--V2Gatee--V2Gatee--V2Gatee--V2Gatee--V2Gatee--V2Gatee
-    headers:
-      Host: 185.242.87.162
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-91.98.87.4
-  type: vless
-  server: 91.98.87.4
-  port: 443
-  uuid: 0c0b6d4a-0811-460f-d4b0-dd982a911240
-  network: tcp
-  tls: true
-  servername: store.steampowered.com
-- name: VLESS-GRPC-REALITY-🇷🇺(RU)-94.103.85.168
-  type: vless
-  server: 94.103.85.168
-  port: 2053
-  uuid: 46c13f51-af3a-47de-a2a3-b6cae11ba178
-  network: grpc
-  tls: true
-  servername: tgju.org
-- name: VLESS-WS-TLS-🇩🇪(DE)-5.75.198.232
-  type: vless
-  server: 5.75.198.232
-  port: 443
-  uuid: 664cb874-5182-4ebb-b3b4-5f430f0152dd
-  network: ws
-  tls: true
-  servername: free-pubg-697.pages.dev
-  ws-opts:
-    path: /mqstknocyk
-    headers:
-      Host: free-pubg-697.pages.dev
-- name: VLESS-GRPC-REALITY-🇺🇸(US)-45.89.110.227
-  type: vless
-  server: 45.89.110.227
-  port: 443
-  uuid: 839fde0d-552c-46da-929c-60511e6bca76
-  network: grpc
-  tls: true
-  servername: www.google.com
-- name: VLESS-TCP-REALITY-🌐(XX)-91.98.86.54
-  type: vless
-  server: 91.98.86.54
-  port: 9954
-  uuid: c2ec47f4-873f-573f-7d8d-d79d7ad452e6
-  network: tcp
-  tls: true
-  servername: store.steampowered.com
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-188.68.53.100
-  type: vless
-  server: 188.68.53.100
-  port: 6666
-  uuid: 0abf9050-c7be-464d-80af-24094c2b97de
-  network: tcp
-  tls: true
-  servername: Tgju.org
-- name: VLESS-WS-TLS-🇩🇪(DE)-5.75.198.232_1
-  type: vless
-  server: 5.75.198.232
-  port: 443
-  uuid: 664cb874-5182-4ebb-b3b4-5f430f0152dd
-  network: ws
-  tls: true
-  servername: free-pubg-697.pages.dev
-  ws-opts:
-    path: /averkwhgqb
-    headers:
-      Host: free-pubg-697.pages.dev
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-hajimamad.timeclassic.ir
-  type: vless
-  server: hajimamad.timeclassic.ir
-  port: 800
-  uuid: 04979a1c-300b-4eb6-9f85-235730566d54
-  network: tcp
-  tls: true
-  servername: zhaket.com
-- name: VLESS-WS-TLS-🇩🇪(DE)-best.cdniran.info_2
-  type: vless
-  server: best.cdniran.info
-  port: 443
-  uuid: e999db7a-1b17-4da6-bc37-c9fa24af2e93
-  network: ws
-  tls: true
-  servername: smart.trevanda.info
-  ws-opts:
-    path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-    headers:
-      Host: smart.trevanda.info
-- name: VLESS-TCP-REALITY-🇦🇲(AM)-77.91.68.70
-  type: vless
-  server: 77.91.68.70
-  port: 55983
-  uuid: f667a096-5231-4cfb-8759-92bb32473139
-  network: tcp
-  tls: true
-  servername: yahoo.com
-- name: VLESS-WS-TLS-🌐(XX)-axe.soyet2j.ir
-  type: vless
-  server: axe.soyet2j.ir
-  port: 2053
-  uuid: cb39b7b1-b63b-44f6-837a-b918a2ccc30b
-  network: ws
-  tls: true
-  servername: mojito.soyet2j.ir
-  ws-opts:
-    path: /homepage?ed=2560-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-SKYPRO_VPN-
-    headers:
-      Host: mojito.soyet2j.ir
-- name: VLESS-TCP-REALITY-🇵🇱(PL)-77.83.246.235
-  type: vless
-  server: 77.83.246.235
-  port: 443
-  uuid: 37e7881f-ff59-4858-83cd-c6b4b03cba4a
-  network: tcp
-  tls: true
-  servername: google.com
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-198.71.191.253
-  type: vless
-  server: 198.71.191.253
-  port: 2096
-  uuid: 2456f90c-5183-476d-b069-16ae74ce120f
-  network: ws
-  tls: true
-  servername: fast01.0860852.xyz
-  ws-opts:
-    path: /Telegram🇨🇳@ShadowProxy66/
-    headers:
-      Host: fast01.0860852.xyz
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-91.98.40.123
-  type: vless
-  server: 91.98.40.123
-  port: 443
-  uuid: 0c0b6d4a-0811-460f-d4b0-dd982a911240
-  network: tcp
-  tls: true
-  servername: store.steampowered.com
-- name: VLESS-WS-TLS-🇫🇷(FR)-185.242.87.162_1
-  type: vless
-  server: 185.242.87.162
-  port: 443
-  uuid: 35b0de8b-b156-43ff-a0e6-59f1018f7adb
-  network: ws
-  tls: true
-  servername: 185.242.87.162
-  ws-opts:
-    path: /holhclws
-    headers:
-      Host: 185.242.87.162
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-89.23.108.188
-  type: vless
-  server: 89.23.108.188
-  port: 443
-  uuid: fe1888f8-2361-11f0-9970-45e1d80c4039
-  network: tcp
-  tls: true
-  servername: images.apple.com
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-198.71.191.253_1
-  type: vless
-  server: 198.71.191.253
-  port: 2096
-  uuid: 2456f90c-5183-476d-b069-16ae74ce120f
-  network: ws
-  tls: true
-  servername: fast01.0860852.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: fast01.0860852.xyz
-- name: VLESS-WS-TLS-🇫🇷(FR)-51.45.18.222
-  type: vless
-  server: 51.45.18.222
-  port: 22224
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  network: ws
-  tls: true
-  servername: trojan.burgerip.co.uk
-  ws-opts:
-    path: /telegram-channel-vlessconfig
-    headers:
-      Host: 51.45.18.222
 - name: VLESS-WS-TLS-🇯🇵(JP)-5.253.41.237
   type: vless
   server: 5.253.41.237
@@ -1117,26 +904,6 @@ proxies:
     path: /vless/
     headers:
       Host: 5.253.41.237
-- name: VLESS-GRPC-REALITY-🇮🇳(IN)-45.89.105.72
-  type: vless
-  server: 45.89.105.72
-  port: 443
-  uuid: ab01d17f-ed9f-4546-afda-434adfd71401
-  network: grpc
-  tls: true
-  servername: www.google.com
-- name: VLESS-WS-TLS-🇺🇸(US)-185.193.31.253
-  type: vless
-  server: 185.193.31.253
-  port: 2096
-  uuid: 2456f90c-5183-476d-b069-16ae74ce120f
-  network: ws
-  tls: true
-  servername: fast01.0860852.xyz
-  ws-opts:
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-    headers:
-      Host: fast01.0860852.xyz
 - name: VLESS-WS-TLS-🇨🇳(CN)-74.119.193.40
   type: vless
   server: 74.119.193.40
@@ -1149,160 +916,126 @@ proxies:
     path: /ws
     headers:
       Host: 74.119.193.40
-- name: VLESS-WS-TLS-🇨🇳(CN)-medium.com
+- name: VLESS-WS-TLS-🌐(XX)-46.62.214.228
   type: vless
-  server: medium.com
+  server: 46.62.214.228
   port: 443
-  uuid: 17108cd5-ddcf-4b6e-bb43-36a711a01366
+  uuid: 7489c971-5f82-48ff-96e5-b80fd581318f
   network: ws
   tls: true
-  servername: rAyAn-cOnFiG-HK-1.pArSa.dPdNs.oRg
+  servername: cyrus.v2bazzar.ir
+  ws-opts:
+    path: /
+    headers:
+      Host: cyrus.v2bazzar.ir
+- name: VLESS-WS-TLS-🇯🇵(JP)-al-akhbar.com
+  type: vless
+  server: al-akhbar.com
+  port: 443
+  uuid: 99f47914-23d8-4367-81bc-b4b759eb7505
+  network: ws
+  tls: true
+  servername: rAyAn-cOnFiG-jp-1.pArSa.dPdNs.oRg
   ws-opts:
     path: /ws
     headers:
-      Host: rAyAn-cOnFiG-HK-1.pArSa.dPdNs.oRg
-- name: VLESS-WS-TLS-🇨🇳(CN)-sourceforge.net
-  type: vless
-  server: sourceforge.net
-  port: 443
-  uuid: 17108cd5-ddcf-4b6e-bb43-36a711a01366
-  network: ws
-  tls: true
-  servername: rAyAn-cOnFiG-HK-1.pArIsA.DpDnS.OrG
-  ws-opts:
-    path: /ws
-    headers:
-      Host: rAyAn-cOnFiG-HK-1.pArIsA.DpDnS.OrG
-- name: VLESS-WS-TLS-🇳🇱(NL)-didnegar.com
-  type: vless
-  server: didnegar.com
-  port: 443
-  uuid: 7d18fc67-1994-4f7e-8ff8-c024223f33bb
-  network: ws
-  tls: true
-  servername: revcloud.migacpi.org
-  ws-opts:
-    path: /cbde4058-6b81-432b-8689-dd7ce10e479c
-    headers:
-      Host: revcloud.migacpi.org
+      Host: rAyAn-cOnFiG-jp-1.pArSa.dPdNs.oRg
 proxy-groups:
 - name: ⚡ Auto-Select-VLESS
   type: url-test
   proxies: &id001
-  - VLESS-GRPC-TLS-🇺🇸(US)-all.tellmethetrue.shop
-  - VLESS-WS-TLS-🇺🇸(US)-104.18.35.42
-  - VLESS-GRPC-TLS-🇺🇸(US)-all.tellmethetrue.shop_1
   - VLESS-TCP-REALITY-🇺🇸(US)-35.236.239.254
+  - VLESS-GRPC-TLS-🇺🇸(US)-all.tellmethetrue.shop
+  - VLESS-GRPC-TLS-🇺🇸(US)-all.tellmethetrue.shop_1
+  - VLESS-GRPC-REALITY-🇺🇸(US)-154.38.177.91
   - VLESS-WS-TLS-🇨🇦(CA)-148.113.207.224
   - VLESS-WS-TLS-🇨🇦(CA)-cdnjs.com
   - VLESS-WS-TLS-🇨🇦(CA)-zula.ir
-  - VLESS-GRPC-REALITY-🇺🇸(US)-154.38.177.91
+  - VLESS-TCP-REALITY-🇺🇸(US)-54.219.42.163
+  - VLESS-WS-TLS-🇺🇸(US)-45.192.224.253
   - VLESS-TCP-REALITY-🇺🇸(US)-us.nitroo-tech.ru
   - VLESS-WS-TLS-🇺🇸(US)-ipw.gfdv54cvghhgfhgj-njhgj64.info
-  - VLESS-TCP-REALITY-🇺🇸(US)-38.54.104.230
-  - VLESS-WS-TLS-🇺🇸(US)-185.148.104.253
-  - VLESS-WS-TLS-🇺🇸(US)-154.197.64.253
-  - VLESS-WS-TLS-🇺🇸(US)-45.45.218.166
-  - VLESS-TCP-REALITY-🇺🇸(US)-54.219.42.163
-  - VLESS-TCP-REALITY-🇬🇧(GB)-8.208.19.107
-  - VLESS-WS-TLS-🇺🇸(US)-45.192.224.253
   - VLESS-WS-TLS-🇺🇸(US)-5.10.214.253
-  - VLESS-WS-TLS-🇺🇸(US)-185.251.81.253
-  - VLESS-WS-TLS-🇺🇸(US)-5.10.214.253_1
-  - VLESS-GRPC-REALITY-🌐(XX)-23.162.152.241
-  - VLESS-WS-TLS-🇺🇸(US)-185.251.81.253_1
-  - VLESS-WS-TLS-🇬🇧(GB)-51.195.202.129
-  - VLESS-GRPC-REALITY-🇺🇸(US)-129.146.132.124
-  - VLESS-TCP-REALITY-🇩🇪(DE)-91.98.200.195
-  - VLESS-TCP-REALITY-🇳🇱(NL)-babakapa.space
-  - VLESS-TCP-REALITY-🇩🇪(DE)-91.99.190.183
-  - VLESS-WS-TLS-🇺🇸(US)-172.66.47.175
-  - VLESS-TCP-REALITY-🇩🇪(DE)-91.99.8.201
-  - VLESS-TCP-REALITY-🇧🇪(BE)-45.83.20.34
-  - VLESS-WS-TLS-🇩🇪(DE)-www.visaeurope.ch
-  - VLESS-WS-TLS-🇩🇪(DE)-63.176.244.93
-  - VLESS-WS-TLS-🇺🇸(US)-188.114.97.3
-  - VLESS-TCP-REALITY-🇩🇰(DK)-95.164.85.109
-  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net
-  - VLESS-WS-TLS-🇬🇧(GB)-bitpay.com
-  - VLESS-TCP-REALITY-🌐(XX)-45.89.110.227
-  - VLESS-WS-TLS-🇩🇪(DE)-iplocation.net
-  - VLESS-TCP-REALITY-🇩🇪(DE)-socialup.live
-  - VLESS-TCP-REALITY-🇨🇦(CA)-51.222.87.29
-  - VLESS-WS-TLS-🇫🇷(FR)-digitalocean.com
-  - VLESS-TCP-REALITY-🇦🇹(AT)-5.181.21.152
-  - VLESS-TCP-REALITY-🇳🇱(NL)-109.120.150.205
-  - VLESS-WS-TLS-🇮🇹(IT)-5.253.43.181
-  - VLESS-TCP-REALITY-🇨🇭(CH)-5.182.36.251
-  - VLESS-WS-TLS-🇺🇸(US)-asl-uwiisjjsjdjd-7665.pages.dev
-  - VLESS-WS-TLS-🇬🇧(GB)-www.visasoutheasteurope.com
-  - VLESS-TCP-REALITY-🇩🇪(DE)-de.pickvpn.live
-  - VLESS-WS-TLS-🇩🇪(DE)-best.cdniran.info
-  - VLESS-WS-TLS-🇸🇪(SE)-zula.ir
-  - VLESS-WS-TLS-🇺🇸(US)-104.21.16.1
-  - VLESS-WS-TLS-🇩🇪(DE)-ipw.gfdv54cvghhgfhgj-njhgj64.info
-  - VLESS-TCP-REALITY-🇫🇮(FI)-5.181.20.219
-  - VLESS-TCP-REALITY-🇨🇭(CH)-5.182.36.56
-  - VLESS-WS-TLS-🇺🇸(US)-188.114.97.3_1
-  - VLESS-WS-TLS-🇵🇱(PL)-57.128.219.105
-  - VLESS-TCP-REALITY-🇳🇱(NL)-nl.pickvpn.live
-  - VLESS-WS-TLS-🇫🇷(FR)-www.visa.com.br
-  - VLESS-TCP-REALITY-🇮🇸(IS)-45.83.21.107
-  - VLESS-WS-TLS-🇸🇪(SE)-zula.ir_1
-  - VLESS-WS-TLS-🇩🇪(DE)-best.cdniran.info_1
-  - VLESS-WS-TLS-🇮🇹(IT)-www.speedtest.net
-  - VLESS-TCP-REALITY-🇳🇱(NL)-31.207.44.210
-  - VLESS-TCP-REALITY-🇸🇪(SE)-78.40.117.185
-  - VLESS-WS-TLS-🇺🇸(US)-ktff.tencentapp.cn
-  - VLESS-TCP-REALITY-🇭🇺(HU)-5.182.38.91
-  - VLESS-WS-TLS-🇺🇦(UA)-45.87.155.14
-  - VLESS-TCP-REALITY-🇳🇱(NL)-wa.sfasti.ru
-  - VLESS-TCP-REALITY-🇵🇱(PL)-2.56.125.209
-  - VLESS-TCP-TLS-🇫🇮(FI)-65.108.231.185
-  - VLESS-WS-TLS-🇺🇸(US)-185.251.81.253_2
-  - VLESS-GRPC-REALITY-🇫🇮(FI)-65.108.253.253
-  - VLESS-WS-TLS-🇵🇱(PL)-check-host.net
-  - VLESS-WS-TLS-🇺🇦(UA)-jquery.com
-  - VLESS-TCP-REALITY-🇹🇷(TR)-45.12.143.191
-  - VLESS-WS-TLS-🇺🇸(US)-188.114.97.3_2
-  - VLESS-TCP-REALITY-🇬🇷(GR)-94.131.8.19
-  - VLESS-TCP-TLS-🇫🇮(FI)-65.109.145.54
-  - VLESS-TCP-REALITY-🇷🇺(RU)-92.53.107.193
-  - VLESS-WS-TLS-🇺🇦(UA)-androidauthority.com
-  - VLESS-GRPC-REALITY-🇫🇮(FI)-46.62.196.119
-  - VLESS-WS-TLS-🇺🇸(US)-104.19.54.50
-  - VLESS-TCP-TLS-🇫🇮(FI)-95.217.206.161
-  - VLESS-WS-TLS-🇵🇱(PL)-alhilal.com
-  - VLESS-TCP-REALITY-🇩🇪(DE)-51.77.91.192
-  - VLESS-TCP-REALITY-🇩🇪(DE)-212.95.41.20
-  - VLESS-WS-TLS-🌐(XX)-ip.mirzabox.info
-  - VLESS-TCP-REALITY-🇯🇵(JP)-109.123.229.205
-  - VLESS-WS-TLS-🇫🇷(FR)-185.242.87.162
-  - VLESS-TCP-REALITY-🇩🇪(DE)-91.98.87.4
-  - VLESS-GRPC-REALITY-🇷🇺(RU)-94.103.85.168
-  - VLESS-WS-TLS-🇩🇪(DE)-5.75.198.232
-  - VLESS-GRPC-REALITY-🇺🇸(US)-45.89.110.227
-  - VLESS-TCP-REALITY-🌐(XX)-91.98.86.54
-  - VLESS-TCP-REALITY-🇩🇪(DE)-188.68.53.100
-  - VLESS-WS-TLS-🇩🇪(DE)-5.75.198.232_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-hajimamad.timeclassic.ir
-  - VLESS-WS-TLS-🇩🇪(DE)-best.cdniran.info_2
-  - VLESS-TCP-REALITY-🇦🇲(AM)-77.91.68.70
-  - VLESS-WS-TLS-🌐(XX)-axe.soyet2j.ir
-  - VLESS-TCP-REALITY-🇵🇱(PL)-77.83.246.235
   - VLESS-WS-TLS-🇺🇸(US)-198.71.191.253
-  - VLESS-TCP-REALITY-🇩🇪(DE)-91.98.40.123
-  - VLESS-WS-TLS-🇫🇷(FR)-185.242.87.162_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-89.23.108.188
   - VLESS-WS-TLS-🇺🇸(US)-198.71.191.253_1
-  - VLESS-WS-TLS-🇫🇷(FR)-51.45.18.222
+  - VLESS-WS-TLS-🇺🇸(US)-185.18.184.253
+  - VLESS-WS-TLS-🇺🇸(US)-ktff.tencentapp.cn
+  - VLESS-WS-TLS-🇺🇸(US)-5.10.214.253_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-91.98.40.123
+  - VLESS-TCP-REALITY-🇩🇪(DE)-91.99.8.201
+  - VLESS-TCP-REALITY-🇩🇪(DE)-64.188.70.0
+  - VLESS-TCP-REALITY-🇩🇪(DE)-rayphoriahub.iranfastshop.ir
+  - VLESS-TCP-REALITY-🇳🇱(NL)-babakapa.space
+  - VLESS-TCP-REALITY-🇩🇪(DE)-91.98.87.4
+  - VLESS-TCP-REALITY-🇩🇪(DE)-91.98.200.195
+  - VLESS-WS-TLS-🇬🇧(GB)-51.195.202.129
+  - VLESS-WS-TLS-🇺🇸(US)-185.148.104.253
+  - VLESS-WS-TLS-🇳🇱(NL)-best.cdniran.info
+  - VLESS-TCP-REALITY-🇩🇪(DE)-socialup.live
+  - VLESS-GRPC-REALITY-🇺🇸(US)-129.146.132.124
+  - VLESS-TCP-REALITY-🇬🇧(GB)-173.208.51.197
+  - VLESS-WS-TLS-🇩🇪(DE)-18.153.47.127
+  - VLESS-TCP-REALITY-🇨🇭(CH)-83.228.225.112
+  - VLESS-TCP-REALITY-🇦🇹(AT)-5.181.21.152
+  - VLESS-WS-TLS-🇩🇪(DE)-5.75.198.232
+  - VLESS-WS-TLS-🇫🇷(FR)-digitalocean.com
+  - VLESS-TCP-REALITY-🇩🇪(DE)-de.nitroo-tech.ru
+  - VLESS-WS-TLS-🇫🇷(FR)-www.visa.com.br
+  - VLESS-TCP-REALITY-🇵🇱(PL)-77.83.246.235
+  - VLESS-TCP-REALITY-🇮🇹(IT)-147.45.51.160
+  - VLESS-WS-TLS-🇺🇸(US)-104.21.16.1
+  - VLESS-TCP-REALITY-🇨🇭(CH)-5.182.36.56
+  - VLESS-WS-TLS-🇩🇪(DE)-5.75.198.232_1
+  - VLESS-TCP-REALITY-🇨🇭(CH)-5.182.36.251
+  - VLESS-WS-TLS-🇺🇸(US)-188.114.97.3
+  - VLESS-WS-TLS-🇵🇱(PL)-57.128.219.105
+  - VLESS-TCP-REALITY-🇷🇺(RU)-82.97.241.50
+  - VLESS-TCP-REALITY-🇺🇸(US)-38.54.104.230
+  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-91.107.180.84
+  - VLESS-WS-TLS-🇺🇸(US)-172.66.47.175
+  - VLESS-TCP-REALITY-🇭🇺(HU)-5.182.38.91
+  - VLESS-WS-TLS-🇩🇪(DE)-best.cdniran.info
+  - VLESS-TCP-REALITY-🇧🇪(BE)-45.83.20.34
+  - VLESS-TCP-REALITY-🇳🇱(NL)-31.207.44.210
+  - VLESS-TCP-REALITY-🇨🇦(CA)-51.222.87.29
+  - VLESS-TCP-REALITY-🇵🇱(PL)-2.56.125.209
+  - VLESS-TCP-REALITY-🇮🇸(IS)-45.83.21.107
+  - VLESS-WS-TLS-🇩🇪(DE)-www.visaeurope.ch
+  - VLESS-TCP-REALITY-🇱🇻(LV)-195.135.252.28
+  - VLESS-WS-TLS-🇵🇱(PL)-alhilal.com
+  - VLESS-WS-TLS-🇩🇪(DE)-iplocation.net
+  - VLESS-WS-TLS-🇵🇱(PL)-check-host.net
+  - VLESS-TCP-REALITY-🇬🇧(GB)-8.208.19.107
+  - VLESS-TCP-REALITY-🇸🇪(SE)-78.40.117.185
+  - VLESS-WS-TLS-🇳🇱(NL)-best.cdniran.info_1
+  - VLESS-TCP-REALITY-🇬🇷(GR)-94.131.8.19
+  - VLESS-TCP-REALITY-🇷🇺(RU)-92.53.107.193
+  - VLESS-WS-TLS-🇺🇸(US)-asl-uwiisjjsjdjd-7665.pages.dev
+  - VLESS-TCP-REALITY-🇹🇷(TR)-45.12.143.191
+  - VLESS-TCP-REALITY-🇳🇱(NL)-109.120.150.205
+  - VLESS-TCP-REALITY-🇨🇭(CH)-auto.quattro-tech.ru
+  - VLESS-WS-TLS-🇺🇦(UA)-jquery.com
+  - VLESS-GRPC-REALITY-🇫🇮(FI)-46.62.196.119
+  - VLESS-WS-TLS-🇺🇸(US)-185.251.81.253
+  - VLESS-GRPC-REALITY-🇫🇮(FI)-65.108.253.253
+  - VLESS-TCP-REALITY-🇩🇪(DE)-212.95.41.20
+  - VLESS-WS-TLS-🌐(XX)-autotrader.co.uk
+  - VLESS-TCP-REALITY-🇯🇵(JP)-109.123.229.205
+  - VLESS-GRPC-REALITY-🌐(XX)-23.162.152.241
+  - VLESS-TCP-REALITY-🌐(XX)-91.98.86.54
+  - VLESS-TCP-REALITY-🇱🇻(LV)-94.131.104.178
+  - VLESS-WS-TLS-🇳🇱(NL)-ico.org.uk
+  - VLESS-TCP-REALITY-🇩🇪(DE)-51.77.91.192
+  - VLESS-WS-TLS-🇮🇹(IT)-5.253.43.181
+  - VLESS-TCP-REALITY-🇩🇪(DE)-hajimamad.timeclassic.ir
+  - VLESS-WS-TLS-🇺🇸(US)-188.114.97.3_1
+  - VLESS-GRPC-REALITY-🇺🇸(US)-45.89.110.227
+  - VLESS-WS-TLS-🌐(XX)-androidauthority.com
   - VLESS-WS-TLS-🇯🇵(JP)-5.253.41.237
-  - VLESS-GRPC-REALITY-🇮🇳(IN)-45.89.105.72
-  - VLESS-WS-TLS-🇺🇸(US)-185.193.31.253
   - VLESS-WS-TLS-🇨🇳(CN)-74.119.193.40
-  - VLESS-WS-TLS-🇨🇳(CN)-medium.com
-  - VLESS-WS-TLS-🇨🇳(CN)-sourceforge.net
-  - VLESS-WS-TLS-🇳🇱(NL)-didnegar.com
+  - VLESS-WS-TLS-🌐(XX)-46.62.214.228
+  - VLESS-WS-TLS-🇯🇵(JP)-al-akhbar.com
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -1317,120 +1050,98 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VLESS
   - 🔗 Auto-Failover-VLESS
-  - VLESS-GRPC-TLS-🇺🇸(US)-all.tellmethetrue.shop
-  - VLESS-WS-TLS-🇺🇸(US)-104.18.35.42
-  - VLESS-GRPC-TLS-🇺🇸(US)-all.tellmethetrue.shop_1
   - VLESS-TCP-REALITY-🇺🇸(US)-35.236.239.254
+  - VLESS-GRPC-TLS-🇺🇸(US)-all.tellmethetrue.shop
+  - VLESS-GRPC-TLS-🇺🇸(US)-all.tellmethetrue.shop_1
+  - VLESS-GRPC-REALITY-🇺🇸(US)-154.38.177.91
   - VLESS-WS-TLS-🇨🇦(CA)-148.113.207.224
   - VLESS-WS-TLS-🇨🇦(CA)-cdnjs.com
   - VLESS-WS-TLS-🇨🇦(CA)-zula.ir
-  - VLESS-GRPC-REALITY-🇺🇸(US)-154.38.177.91
+  - VLESS-TCP-REALITY-🇺🇸(US)-54.219.42.163
+  - VLESS-WS-TLS-🇺🇸(US)-45.192.224.253
   - VLESS-TCP-REALITY-🇺🇸(US)-us.nitroo-tech.ru
   - VLESS-WS-TLS-🇺🇸(US)-ipw.gfdv54cvghhgfhgj-njhgj64.info
-  - VLESS-TCP-REALITY-🇺🇸(US)-38.54.104.230
-  - VLESS-WS-TLS-🇺🇸(US)-185.148.104.253
-  - VLESS-WS-TLS-🇺🇸(US)-154.197.64.253
-  - VLESS-WS-TLS-🇺🇸(US)-45.45.218.166
-  - VLESS-TCP-REALITY-🇺🇸(US)-54.219.42.163
-  - VLESS-TCP-REALITY-🇬🇧(GB)-8.208.19.107
-  - VLESS-WS-TLS-🇺🇸(US)-45.192.224.253
   - VLESS-WS-TLS-🇺🇸(US)-5.10.214.253
-  - VLESS-WS-TLS-🇺🇸(US)-185.251.81.253
-  - VLESS-WS-TLS-🇺🇸(US)-5.10.214.253_1
-  - VLESS-GRPC-REALITY-🌐(XX)-23.162.152.241
-  - VLESS-WS-TLS-🇺🇸(US)-185.251.81.253_1
-  - VLESS-WS-TLS-🇬🇧(GB)-51.195.202.129
-  - VLESS-GRPC-REALITY-🇺🇸(US)-129.146.132.124
-  - VLESS-TCP-REALITY-🇩🇪(DE)-91.98.200.195
-  - VLESS-TCP-REALITY-🇳🇱(NL)-babakapa.space
-  - VLESS-TCP-REALITY-🇩🇪(DE)-91.99.190.183
-  - VLESS-WS-TLS-🇺🇸(US)-172.66.47.175
-  - VLESS-TCP-REALITY-🇩🇪(DE)-91.99.8.201
-  - VLESS-TCP-REALITY-🇧🇪(BE)-45.83.20.34
-  - VLESS-WS-TLS-🇩🇪(DE)-www.visaeurope.ch
-  - VLESS-WS-TLS-🇩🇪(DE)-63.176.244.93
-  - VLESS-WS-TLS-🇺🇸(US)-188.114.97.3
-  - VLESS-TCP-REALITY-🇩🇰(DK)-95.164.85.109
-  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net
-  - VLESS-WS-TLS-🇬🇧(GB)-bitpay.com
-  - VLESS-TCP-REALITY-🌐(XX)-45.89.110.227
-  - VLESS-WS-TLS-🇩🇪(DE)-iplocation.net
-  - VLESS-TCP-REALITY-🇩🇪(DE)-socialup.live
-  - VLESS-TCP-REALITY-🇨🇦(CA)-51.222.87.29
-  - VLESS-WS-TLS-🇫🇷(FR)-digitalocean.com
-  - VLESS-TCP-REALITY-🇦🇹(AT)-5.181.21.152
-  - VLESS-TCP-REALITY-🇳🇱(NL)-109.120.150.205
-  - VLESS-WS-TLS-🇮🇹(IT)-5.253.43.181
-  - VLESS-TCP-REALITY-🇨🇭(CH)-5.182.36.251
-  - VLESS-WS-TLS-🇺🇸(US)-asl-uwiisjjsjdjd-7665.pages.dev
-  - VLESS-WS-TLS-🇬🇧(GB)-www.visasoutheasteurope.com
-  - VLESS-TCP-REALITY-🇩🇪(DE)-de.pickvpn.live
-  - VLESS-WS-TLS-🇩🇪(DE)-best.cdniran.info
-  - VLESS-WS-TLS-🇸🇪(SE)-zula.ir
-  - VLESS-WS-TLS-🇺🇸(US)-104.21.16.1
-  - VLESS-WS-TLS-🇩🇪(DE)-ipw.gfdv54cvghhgfhgj-njhgj64.info
-  - VLESS-TCP-REALITY-🇫🇮(FI)-5.181.20.219
-  - VLESS-TCP-REALITY-🇨🇭(CH)-5.182.36.56
-  - VLESS-WS-TLS-🇺🇸(US)-188.114.97.3_1
-  - VLESS-WS-TLS-🇵🇱(PL)-57.128.219.105
-  - VLESS-TCP-REALITY-🇳🇱(NL)-nl.pickvpn.live
-  - VLESS-WS-TLS-🇫🇷(FR)-www.visa.com.br
-  - VLESS-TCP-REALITY-🇮🇸(IS)-45.83.21.107
-  - VLESS-WS-TLS-🇸🇪(SE)-zula.ir_1
-  - VLESS-WS-TLS-🇩🇪(DE)-best.cdniran.info_1
-  - VLESS-WS-TLS-🇮🇹(IT)-www.speedtest.net
-  - VLESS-TCP-REALITY-🇳🇱(NL)-31.207.44.210
-  - VLESS-TCP-REALITY-🇸🇪(SE)-78.40.117.185
-  - VLESS-WS-TLS-🇺🇸(US)-ktff.tencentapp.cn
-  - VLESS-TCP-REALITY-🇭🇺(HU)-5.182.38.91
-  - VLESS-WS-TLS-🇺🇦(UA)-45.87.155.14
-  - VLESS-TCP-REALITY-🇳🇱(NL)-wa.sfasti.ru
-  - VLESS-TCP-REALITY-🇵🇱(PL)-2.56.125.209
-  - VLESS-TCP-TLS-🇫🇮(FI)-65.108.231.185
-  - VLESS-WS-TLS-🇺🇸(US)-185.251.81.253_2
-  - VLESS-GRPC-REALITY-🇫🇮(FI)-65.108.253.253
-  - VLESS-WS-TLS-🇵🇱(PL)-check-host.net
-  - VLESS-WS-TLS-🇺🇦(UA)-jquery.com
-  - VLESS-TCP-REALITY-🇹🇷(TR)-45.12.143.191
-  - VLESS-WS-TLS-🇺🇸(US)-188.114.97.3_2
-  - VLESS-TCP-REALITY-🇬🇷(GR)-94.131.8.19
-  - VLESS-TCP-TLS-🇫🇮(FI)-65.109.145.54
-  - VLESS-TCP-REALITY-🇷🇺(RU)-92.53.107.193
-  - VLESS-WS-TLS-🇺🇦(UA)-androidauthority.com
-  - VLESS-GRPC-REALITY-🇫🇮(FI)-46.62.196.119
-  - VLESS-WS-TLS-🇺🇸(US)-104.19.54.50
-  - VLESS-TCP-TLS-🇫🇮(FI)-95.217.206.161
-  - VLESS-WS-TLS-🇵🇱(PL)-alhilal.com
-  - VLESS-TCP-REALITY-🇩🇪(DE)-51.77.91.192
-  - VLESS-TCP-REALITY-🇩🇪(DE)-212.95.41.20
-  - VLESS-WS-TLS-🌐(XX)-ip.mirzabox.info
-  - VLESS-TCP-REALITY-🇯🇵(JP)-109.123.229.205
-  - VLESS-WS-TLS-🇫🇷(FR)-185.242.87.162
-  - VLESS-TCP-REALITY-🇩🇪(DE)-91.98.87.4
-  - VLESS-GRPC-REALITY-🇷🇺(RU)-94.103.85.168
-  - VLESS-WS-TLS-🇩🇪(DE)-5.75.198.232
-  - VLESS-GRPC-REALITY-🇺🇸(US)-45.89.110.227
-  - VLESS-TCP-REALITY-🌐(XX)-91.98.86.54
-  - VLESS-TCP-REALITY-🇩🇪(DE)-188.68.53.100
-  - VLESS-WS-TLS-🇩🇪(DE)-5.75.198.232_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-hajimamad.timeclassic.ir
-  - VLESS-WS-TLS-🇩🇪(DE)-best.cdniran.info_2
-  - VLESS-TCP-REALITY-🇦🇲(AM)-77.91.68.70
-  - VLESS-WS-TLS-🌐(XX)-axe.soyet2j.ir
-  - VLESS-TCP-REALITY-🇵🇱(PL)-77.83.246.235
   - VLESS-WS-TLS-🇺🇸(US)-198.71.191.253
-  - VLESS-TCP-REALITY-🇩🇪(DE)-91.98.40.123
-  - VLESS-WS-TLS-🇫🇷(FR)-185.242.87.162_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-89.23.108.188
   - VLESS-WS-TLS-🇺🇸(US)-198.71.191.253_1
-  - VLESS-WS-TLS-🇫🇷(FR)-51.45.18.222
+  - VLESS-WS-TLS-🇺🇸(US)-185.18.184.253
+  - VLESS-WS-TLS-🇺🇸(US)-ktff.tencentapp.cn
+  - VLESS-WS-TLS-🇺🇸(US)-5.10.214.253_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-91.98.40.123
+  - VLESS-TCP-REALITY-🇩🇪(DE)-91.99.8.201
+  - VLESS-TCP-REALITY-🇩🇪(DE)-64.188.70.0
+  - VLESS-TCP-REALITY-🇩🇪(DE)-rayphoriahub.iranfastshop.ir
+  - VLESS-TCP-REALITY-🇳🇱(NL)-babakapa.space
+  - VLESS-TCP-REALITY-🇩🇪(DE)-91.98.87.4
+  - VLESS-TCP-REALITY-🇩🇪(DE)-91.98.200.195
+  - VLESS-WS-TLS-🇬🇧(GB)-51.195.202.129
+  - VLESS-WS-TLS-🇺🇸(US)-185.148.104.253
+  - VLESS-WS-TLS-🇳🇱(NL)-best.cdniran.info
+  - VLESS-TCP-REALITY-🇩🇪(DE)-socialup.live
+  - VLESS-GRPC-REALITY-🇺🇸(US)-129.146.132.124
+  - VLESS-TCP-REALITY-🇬🇧(GB)-173.208.51.197
+  - VLESS-WS-TLS-🇩🇪(DE)-18.153.47.127
+  - VLESS-TCP-REALITY-🇨🇭(CH)-83.228.225.112
+  - VLESS-TCP-REALITY-🇦🇹(AT)-5.181.21.152
+  - VLESS-WS-TLS-🇩🇪(DE)-5.75.198.232
+  - VLESS-WS-TLS-🇫🇷(FR)-digitalocean.com
+  - VLESS-TCP-REALITY-🇩🇪(DE)-de.nitroo-tech.ru
+  - VLESS-WS-TLS-🇫🇷(FR)-www.visa.com.br
+  - VLESS-TCP-REALITY-🇵🇱(PL)-77.83.246.235
+  - VLESS-TCP-REALITY-🇮🇹(IT)-147.45.51.160
+  - VLESS-WS-TLS-🇺🇸(US)-104.21.16.1
+  - VLESS-TCP-REALITY-🇨🇭(CH)-5.182.36.56
+  - VLESS-WS-TLS-🇩🇪(DE)-5.75.198.232_1
+  - VLESS-TCP-REALITY-🇨🇭(CH)-5.182.36.251
+  - VLESS-WS-TLS-🇺🇸(US)-188.114.97.3
+  - VLESS-WS-TLS-🇵🇱(PL)-57.128.219.105
+  - VLESS-TCP-REALITY-🇷🇺(RU)-82.97.241.50
+  - VLESS-TCP-REALITY-🇺🇸(US)-38.54.104.230
+  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-91.107.180.84
+  - VLESS-WS-TLS-🇺🇸(US)-172.66.47.175
+  - VLESS-TCP-REALITY-🇭🇺(HU)-5.182.38.91
+  - VLESS-WS-TLS-🇩🇪(DE)-best.cdniran.info
+  - VLESS-TCP-REALITY-🇧🇪(BE)-45.83.20.34
+  - VLESS-TCP-REALITY-🇳🇱(NL)-31.207.44.210
+  - VLESS-TCP-REALITY-🇨🇦(CA)-51.222.87.29
+  - VLESS-TCP-REALITY-🇵🇱(PL)-2.56.125.209
+  - VLESS-TCP-REALITY-🇮🇸(IS)-45.83.21.107
+  - VLESS-WS-TLS-🇩🇪(DE)-www.visaeurope.ch
+  - VLESS-TCP-REALITY-🇱🇻(LV)-195.135.252.28
+  - VLESS-WS-TLS-🇵🇱(PL)-alhilal.com
+  - VLESS-WS-TLS-🇩🇪(DE)-iplocation.net
+  - VLESS-WS-TLS-🇵🇱(PL)-check-host.net
+  - VLESS-TCP-REALITY-🇬🇧(GB)-8.208.19.107
+  - VLESS-TCP-REALITY-🇸🇪(SE)-78.40.117.185
+  - VLESS-WS-TLS-🇳🇱(NL)-best.cdniran.info_1
+  - VLESS-TCP-REALITY-🇬🇷(GR)-94.131.8.19
+  - VLESS-TCP-REALITY-🇷🇺(RU)-92.53.107.193
+  - VLESS-WS-TLS-🇺🇸(US)-asl-uwiisjjsjdjd-7665.pages.dev
+  - VLESS-TCP-REALITY-🇹🇷(TR)-45.12.143.191
+  - VLESS-TCP-REALITY-🇳🇱(NL)-109.120.150.205
+  - VLESS-TCP-REALITY-🇨🇭(CH)-auto.quattro-tech.ru
+  - VLESS-WS-TLS-🇺🇦(UA)-jquery.com
+  - VLESS-GRPC-REALITY-🇫🇮(FI)-46.62.196.119
+  - VLESS-WS-TLS-🇺🇸(US)-185.251.81.253
+  - VLESS-GRPC-REALITY-🇫🇮(FI)-65.108.253.253
+  - VLESS-TCP-REALITY-🇩🇪(DE)-212.95.41.20
+  - VLESS-WS-TLS-🌐(XX)-autotrader.co.uk
+  - VLESS-TCP-REALITY-🇯🇵(JP)-109.123.229.205
+  - VLESS-GRPC-REALITY-🌐(XX)-23.162.152.241
+  - VLESS-TCP-REALITY-🌐(XX)-91.98.86.54
+  - VLESS-TCP-REALITY-🇱🇻(LV)-94.131.104.178
+  - VLESS-WS-TLS-🇳🇱(NL)-ico.org.uk
+  - VLESS-TCP-REALITY-🇩🇪(DE)-51.77.91.192
+  - VLESS-WS-TLS-🇮🇹(IT)-5.253.43.181
+  - VLESS-TCP-REALITY-🇩🇪(DE)-hajimamad.timeclassic.ir
+  - VLESS-WS-TLS-🇺🇸(US)-188.114.97.3_1
+  - VLESS-GRPC-REALITY-🇺🇸(US)-45.89.110.227
+  - VLESS-WS-TLS-🌐(XX)-androidauthority.com
   - VLESS-WS-TLS-🇯🇵(JP)-5.253.41.237
-  - VLESS-GRPC-REALITY-🇮🇳(IN)-45.89.105.72
-  - VLESS-WS-TLS-🇺🇸(US)-185.193.31.253
   - VLESS-WS-TLS-🇨🇳(CN)-74.119.193.40
-  - VLESS-WS-TLS-🇨🇳(CN)-medium.com
-  - VLESS-WS-TLS-🇨🇳(CN)-sourceforge.net
-  - VLESS-WS-TLS-🇳🇱(NL)-didnegar.com
+  - VLESS-WS-TLS-🌐(XX)-46.62.214.228
+  - VLESS-WS-TLS-🇯🇵(JP)-al-akhbar.com
 rule-providers:
   adblock:
     type: http

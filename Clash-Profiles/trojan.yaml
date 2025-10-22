@@ -14,14 +14,14 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.107
+- name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
   type: trojan
-  server: 23.186.200.107
-  port: 11011
+  server: 23.186.200.109
+  port: 11013
   uuid: 898e1dca-14b2-4371-abc8-1b9f839bff6d
   network: tcp
   tls: true
-  servername: wus01.weyaf9sdoh2h.space
+  servername: wus03.weyaf9sdoh2h.space
 - name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.108
   type: trojan
   server: 23.186.200.108
@@ -38,30 +38,22 @@ proxies:
   network: tcp
   tls: true
   servername: wus05.weyaf9sdoh2h.space
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.18.222
+- name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.107
   type: trojan
-  server: 51.45.18.222
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.157.240.119
-  type: trojan
-  server: 18.157.240.119
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
-  type: trojan
-  server: 23.186.200.109
-  port: 11013
+  server: 23.186.200.107
+  port: 11011
   uuid: 898e1dca-14b2-4371-abc8-1b9f839bff6d
   network: tcp
   tls: true
-  servername: wus03.weyaf9sdoh2h.space
+  servername: wus01.weyaf9sdoh2h.space
+- name: TROJAN-GRPC-REALITY-🇳🇱(NL)-nl.scpnb.top
+  type: trojan
+  server: nl.scpnb.top
+  port: 39371
+  uuid: qEqueKB1ej
+  network: grpc
+  tls: true
+  servername: cloudflare.com
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
   server: creativecommons.org
@@ -74,14 +66,14 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-GRPC-REALITY-🇳🇱(NL)-nl.scpnb.top
+- name: TROJAN-TCP-TLS-🇭🇰(HK)-58.152.110.40
   type: trojan
-  server: nl.scpnb.top
-  port: 39371
-  uuid: qEqueKB1ej
-  network: grpc
+  server: 58.152.110.40
+  port: 443
+  uuid: ea39fa94f1ee00999337ea1fd3318e69
+  network: tcp
   tls: true
-  servername: cloudflare.com
+  servername: www.nintendogames.net
 - name: TROJAN-TCP-TLS-🇭🇰(HK)-203.198.122.55
   type: trojan
   server: 203.198.122.55
@@ -94,14 +86,13 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.107
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.108
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.111
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.18.222
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.157.240.119
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.107
   - TROJAN-GRPC-REALITY-🇳🇱(NL)-nl.scpnb.top
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.110.40
   - TROJAN-TCP-TLS-🇭🇰(HK)-203.198.122.55
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
@@ -117,14 +108,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.107
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.108
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.111
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.18.222
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.157.240.119
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.107
   - TROJAN-GRPC-REALITY-🇳🇱(NL)-nl.scpnb.top
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.110.40
   - TROJAN-TCP-TLS-🇭🇰(HK)-203.198.122.55
 rule-providers:
   adblock:
