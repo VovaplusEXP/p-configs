@@ -14,14 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.111
-  type: trojan
-  server: 23.186.200.111
-  port: 11015
-  uuid: 898e1dca-14b2-4371-abc8-1b9f839bff6d
-  network: tcp
-  tls: true
-  servername: wus05.weyaf9sdoh2h.space
 - name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.107
   type: trojan
   server: 23.186.200.107
@@ -38,6 +30,30 @@ proxies:
   network: tcp
   tls: true
   servername: wus02.weyaf9sdoh2h.space
+- name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.111
+  type: trojan
+  server: 23.186.200.111
+  port: 11015
+  uuid: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+  network: tcp
+  tls: true
+  servername: wus05.weyaf9sdoh2h.space
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.18.222
+  type: trojan
+  server: 51.45.18.222
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.157.240.119
+  type: trojan
+  server: 18.157.240.119
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
   type: trojan
   server: 23.186.200.109
@@ -46,22 +62,6 @@ proxies:
   network: tcp
   tls: true
   servername: wus03.weyaf9sdoh2h.space
-- name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.110
-  type: trojan
-  server: 23.186.200.110
-  port: 11014
-  uuid: 898e1dca-14b2-4371-abc8-1b9f839bff6d
-  network: tcp
-  tls: true
-  servername: wus04.weyaf9sdoh2h.space
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.60.157
-  type: trojan
-  server: 13.36.60.157
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
   server: creativecommons.org
@@ -74,14 +74,6 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.180.173.173
-  type: trojan
-  server: 63.180.173.173
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
 - name: TROJAN-GRPC-REALITY-🇳🇱(NL)-nl.scpnb.top
   type: trojan
   server: nl.scpnb.top
@@ -102,14 +94,13 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.111
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.107
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.108
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.111
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.18.222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.157.240.119
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.110
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.60.157
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.173.173
   - TROJAN-GRPC-REALITY-🇳🇱(NL)-nl.scpnb.top
   - TROJAN-TCP-TLS-🇭🇰(HK)-203.198.122.55
   url: https://aistudio.google.com/prompts/new_chat
@@ -126,14 +117,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.111
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.107
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.108
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.111
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.18.222
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.157.240.119
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.110
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.60.157
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.173.173
   - TROJAN-GRPC-REALITY-🇳🇱(NL)-nl.scpnb.top
   - TROJAN-TCP-TLS-🇭🇰(HK)-203.198.122.55
 rule-providers:
