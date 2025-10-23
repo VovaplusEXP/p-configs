@@ -14,14 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.111
-  type: trojan
-  server: 23.186.200.111
-  port: 11015
-  uuid: 898e1dca-14b2-4371-abc8-1b9f839bff6d
-  network: tcp
-  tls: true
-  servername: wus05.weyaf9sdoh2h.space
 - name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
   type: trojan
   server: 23.186.200.109
@@ -38,44 +30,48 @@ proxies:
   network: tcp
   tls: true
   servername: wus01.weyaf9sdoh2h.space
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.59.186.147
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.180.87.107
   type: trojan
-  server: 52.59.186.147
+  server: 63.180.87.107
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.74.86.91
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
   type: trojan
-  server: 3.74.86.91
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  type: trojan
-  server: creativecommons.org
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
-  tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
-  type: trojan
-  server: 172.67.168.193
+  server: 104.21.70.241
   port: 443
-  uuid: ff84e47c-1b2d-41cf-9610-7d55387c34c4
+  uuid: 879292de-3790-4f60-8ae9-557b0df71ec7
   network: ws
   tls: true
   servername: joss.gpj2.dpdns.org
   ws-opts:
-    path: /Free-VPN-CF-Geo-Project/DE2
+    path: /Free-VPN-CF-Geo-Project/CH1
+    headers:
+      Host: joss.gpj2.dpdns.org
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_1
+  type: trojan
+  server: 104.21.70.241
+  port: 443
+  uuid: 9a7b890c-0881-4a6a-ab91-580bc19acafc
+  network: ws
+  tls: true
+  servername: joss.gpj2.dpdns.org
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/DE3
+    headers:
+      Host: joss.gpj2.dpdns.org
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
+  type: trojan
+  server: 172.67.168.193
+  port: 443
+  uuid: 68a69d73-b871-47f1-8667-82585e07dab2
+  network: ws
+  tls: true
+  servername: joss.gpj2.dpdns.org
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/ES1
     headers:
       Host: joss.gpj2.dpdns.org
 - name: TROJAN-WS-TLS-🇮🇹(IT)-179.43.156.21
@@ -88,74 +84,6 @@ proxies:
   servername: joss.gpj2.dpdns.org
   ws-opts:
     path: /Free-VPN-CF-Geo-Project/CH2
-    headers:
-      Host: joss.gpj2.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
-  type: trojan
-  server: 104.21.70.241
-  port: 443
-  uuid: 9a7b890c-0881-4a6a-ab91-580bc19acafc
-  network: ws
-  tls: true
-  servername: joss.gpj2.dpdns.org
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/DE3
-    headers:
-      Host: joss.gpj2.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_1
-  type: trojan
-  server: 172.67.168.193
-  port: 443
-  uuid: 68a69d73-b871-47f1-8667-82585e07dab2
-  network: ws
-  tls: true
-  servername: joss.gpj2.dpdns.org
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/ES1
-    headers:
-      Host: joss.gpj2.dpdns.org
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.225
-  type: trojan
-  server: 104.248.46.225
-  port: 443
-  uuid: b63e5189-88c4-4eb5-9c8b-8dd997cc9b38
-  network: ws
-  tls: true
-  servername: joss.gpj2.dpdns.org
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/DE2
-    headers:
-      Host: joss.gpj2.dpdns.org
-- name: TROJAN-GRPC-REALITY-🇳🇱(NL)-nl.scpnb.top
-  type: trojan
-  server: nl.scpnb.top
-  port: 39371
-  uuid: qEqueKB1ej
-  network: grpc
-  tls: true
-  servername: cloudflare.com
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_2
-  type: trojan
-  server: 172.67.168.193
-  port: 443
-  uuid: 88a9a235-d071-4eda-9f47-b1e85019cfb1
-  network: ws
-  tls: true
-  servername: joss.gpj2.dpdns.org
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/CZ1
-    headers:
-      Host: joss.gpj2.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_1
-  type: trojan
-  server: 104.21.70.241
-  port: 443
-  uuid: 879292de-3790-4f60-8ae9-557b0df71ec7
-  network: ws
-  tls: true
-  servername: joss.gpj2.dpdns.org
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/CH1
     headers:
       Host: joss.gpj2.dpdns.org
 - name: TROJAN-WS-TLS-🇮🇹(IT)-158.180.233.125
@@ -182,16 +110,16 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/FR2
     headers:
       Host: joss.gpj2.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_3
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_1
   type: trojan
   server: 172.67.168.193
   port: 443
-  uuid: 7f86c366-948a-43cf-8f31-675f5ee00a89
+  uuid: 88a9a235-d071-4eda-9f47-b1e85019cfb1
   network: ws
   tls: true
   servername: joss.gpj2.dpdns.org
   ws-opts:
-    path: /Free-VPN-CF-Geo-Project/AD1
+    path: /Free-VPN-CF-Geo-Project/CZ1
     headers:
       Host: joss.gpj2.dpdns.org
 - name: TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_2
@@ -222,43 +150,36 @@ proxies:
   network: tcp
   tls: true
   servername: www.nintendogames.net
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_3
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_2
   type: trojan
-  server: 104.21.70.241
+  server: 172.67.168.193
   port: 443
-  uuid: c13b8217-7388-413b-b421-15580e4e267f
+  uuid: 7f86c366-948a-43cf-8f31-675f5ee00a89
   network: ws
   tls: true
   servername: joss.gpj2.dpdns.org
   ws-opts:
-    path: /Free-VPN-CF-Geo-Project/AE1
+    path: /Free-VPN-CF-Geo-Project/AD1
     headers:
       Host: joss.gpj2.dpdns.org
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.111
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.107
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.59.186.147
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.74.86.91
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.87.107
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_1
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
   - TROJAN-WS-TLS-🇮🇹(IT)-179.43.156.21
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.225
-  - TROJAN-GRPC-REALITY-🇳🇱(NL)-nl.scpnb.top
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_2
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_1
   - TROJAN-WS-TLS-🇮🇹(IT)-158.180.233.125
   - TROJAN-WS-TLS-🇩🇪(DE)-109.120.179.49
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_3
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_1
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_2
   - TROJAN-TCP-TLS-🇭🇰(HK)-203.198.122.55
   - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.110.40
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_3
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_2
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -273,27 +194,20 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.111
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.107
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.59.186.147
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.74.86.91
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.87.107
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_1
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193
   - TROJAN-WS-TLS-🇮🇹(IT)-179.43.156.21
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.225
-  - TROJAN-GRPC-REALITY-🇳🇱(NL)-nl.scpnb.top
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_2
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_1
   - TROJAN-WS-TLS-🇮🇹(IT)-158.180.233.125
   - TROJAN-WS-TLS-🇩🇪(DE)-109.120.179.49
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_3
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_1
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_2
   - TROJAN-TCP-TLS-🇭🇰(HK)-203.198.122.55
   - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.110.40
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.70.241_3
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.168.193_2
 rule-providers:
   adblock:
     type: http
