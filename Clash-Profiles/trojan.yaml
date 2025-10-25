@@ -22,22 +22,6 @@ proxies:
   network: tcp
   tls: true
   servername: wus04.weyaf9sdoh2h.space
-- name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.108
-  type: trojan
-  server: 23.186.200.108
-  port: 11012
-  uuid: 898e1dca-14b2-4371-abc8-1b9f839bff6d
-  network: tcp
-  tls: true
-  servername: wus02.weyaf9sdoh2h.space
-- name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
-  type: trojan
-  server: 23.186.200.109
-  port: 11013
-  uuid: 898e1dca-14b2-4371-abc8-1b9f839bff6d
-  network: tcp
-  tls: true
-  servername: wus03.weyaf9sdoh2h.space
 - name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.107
   type: trojan
   server: 23.186.200.107
@@ -46,6 +30,22 @@ proxies:
   network: tcp
   tls: true
   servername: wus01.weyaf9sdoh2h.space
+- name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
+  type: trojan
+  server: 23.186.200.109
+  port: 11013
+  uuid: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+  network: tcp
+  tls: true
+  servername: wus03.weyaf9sdoh2h.space
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.0.106
+  type: trojan
+  server: 51.45.0.106
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.111
   type: trojan
   server: 23.186.200.111
@@ -54,9 +54,25 @@ proxies:
   network: tcp
   tls: true
   servername: wus05.weyaf9sdoh2h.space
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.0.106
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.180.129.255
   type: trojan
-  server: 51.45.0.106
+  server: 63.180.129.255
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.178.55.65
+  type: trojan
+  server: 63.178.55.65
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.250.5
+  type: trojan
+  server: 13.39.250.5
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
@@ -74,30 +90,6 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.178.55.65
-  type: trojan
-  server: 63.178.55.65
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.180.129.255
-  type: trojan
-  server: 63.180.129.255
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.250.5
-  type: trojan
-  server: 13.39.250.5
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
   type: trojan
   server: nop-55q.pages.dev
@@ -115,15 +107,14 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.110
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.108
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.107
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.111
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.0.106
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.55.65
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.111
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.129.255
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.55.65
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.250.5
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
@@ -140,15 +131,14 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.110
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.108
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
   - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.107
-  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.111
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.109
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.0.106
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.55.65
+  - TROJAN-TCP-TLS-🇺🇸(US)-23.186.200.111
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.129.255
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.55.65
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.250.5
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
 rule-providers:
   adblock:
