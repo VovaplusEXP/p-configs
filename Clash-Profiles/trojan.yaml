@@ -14,27 +14,7 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.158.30.194
-  type: trojan
-  server: 35.158.30.194
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
-  type: trojan
-  server: nop-55q.pages.dev
-  port: 2053
-  uuid: T@_WvT8Ho@LW%w_,
-  network: ws
-  tls: true
-  servername: NOp-55q.pAgEs.dEv
-  ws-opts:
-    path: /trGPZDfetEwuO25SAs
-    headers:
-      Host: NOp-55q.pAgEs.dEv
-- name: TROJAN-TCP-🇹🇷(TR)-185.123.101.95
+- name: TROJAN-TCP-🌐(XX)-185.123.101.95
   type: trojan
   server: 185.123.101.95
   port: 17890
@@ -42,6 +22,14 @@ proxies:
   network: tcp
   tls: false
   servername: 185.123.101.95
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.165.170
+  type: trojan
+  server: 15.236.165.170
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-TCP-TLS-🇭🇰(HK)-58.152.110.83
   type: trojan
   server: 58.152.110.83
@@ -50,17 +38,9 @@ proxies:
   network: tcp
   tls: true
   servername: www.nintendogames.net
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.120.48.61
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.29.25.174
   type: trojan
-  server: 3.120.48.61
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.158.30.194_1
-  type: trojan
-  server: 35.158.30.194
+  server: 52.29.25.174
   port: 22223
   uuid: telegram-id-directvpn
   network: tcp
@@ -70,12 +50,10 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.30.194
-  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
-  - TROJAN-TCP-🇹🇷(TR)-185.123.101.95
+  - TROJAN-TCP-🌐(XX)-185.123.101.95
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.165.170
   - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.110.83
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.120.48.61
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.30.194_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.29.25.174
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -90,12 +68,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.30.194
-  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
-  - TROJAN-TCP-🇹🇷(TR)-185.123.101.95
+  - TROJAN-TCP-🌐(XX)-185.123.101.95
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.165.170
   - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.110.83
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.120.48.61
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.30.194_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.29.25.174
 rule-providers:
   adblock:
     type: http
