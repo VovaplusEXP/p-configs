@@ -14,46 +14,38 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.29.25.174
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.245.56
   type: trojan
-  server: 52.29.25.174
+  server: 15.188.245.56
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.69.107.50
+  type: trojan
+  server: 3.69.107.50
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.69.107.50_1
+  type: trojan
+  server: 3.69.107.50
   port: 22223
   uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇭🇰(HK)-58.152.53.136
+- name: TROJAN-TCP-🇹🇷(TR)-185.123.101.95
   type: trojan
-  server: 58.152.53.136
-  port: 443
-  uuid: ea39fa94f1ee00999337ea1fd3318e69
+  server: 185.123.101.95
+  port: 17890
+  uuid: keTLsIW40V
   network: tcp
-  tls: true
-  servername: www.nintendogames.net
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.29.25.174_1
-  type: trojan
-  server: 52.29.25.174
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇭🇰(HK)-58.152.110.83
-  type: trojan
-  server: 58.152.110.83
-  port: 443
-  uuid: ea39fa94f1ee00999337ea1fd3318e69
-  network: tcp
-  tls: true
-  servername: www.nintendogames.net
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.72.198
-  type: trojan
-  server: 15.236.72.198
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
+  tls: false
+  servername: 185.123.101.95
 - name: TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
   type: trojan
   server: nop-55q.pages.dev
@@ -66,111 +58,31 @@ proxies:
     path: /trGPZDfetEwuO25SAs
     headers:
       Host: NOp-55q.pAgEs.dEv
-- name: TROJAN-TCP-🇹🇷(TR)-185.123.101.95
+- name: TROJAN-TCP-TLS-🇯🇵(JP)-153.121.41.97
   type: trojan
-  server: 185.123.101.95
-  port: 17890
-  uuid: keTLsIW40V
-  network: tcp
-  tls: false
-  servername: 185.123.101.95
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.136.134
-  type: trojan
-  server: 15.236.136.134
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-WS-TLS-🇬🇧(GB)-103.13.208.242
-  type: trojan
-  server: 103.13.208.242
-  port: 443
-  uuid: ef846e62-80d0-4b89-bcf7-c250231a7713
-  network: ws
-  tls: true
-  servername: joss.krikkrik.web.id
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/GB1
-    headers:
-      Host: joss.krikkrik.web.id
-- name: TROJAN-WS-TLS-🇮🇹(IT)-129.152.2.127
-  type: trojan
-  server: 129.152.2.127
-  port: 1488
-  uuid: 02d6daad-049b-4478-a86b-f21a9434f2c7
-  network: ws
-  tls: true
-  servername: joss.krikkrik.web.id
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/IT1
-    headers:
-      Host: joss.krikkrik.web.id
-- name: TROJAN-WS-TLS-🇮🇹(IT)-179.43.144.10
-  type: trojan
-  server: 179.43.144.10
-  port: 8000
-  uuid: c6d8999a-ca90-4dde-b7ef-c7d80c92f0ff
-  network: ws
-  tls: true
-  servername: joss.krikkrik.web.id
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/CH1
-    headers:
-      Host: joss.krikkrik.web.id
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.225
-  type: trojan
-  server: 104.248.46.225
-  port: 443
-  uuid: c63cd43e-e624-43fb-8352-941b899e9657
-  network: ws
-  tls: true
-  servername: joss.krikkrik.web.id
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/DE2
-    headers:
-      Host: joss.krikkrik.web.id
-- name: TROJAN-WS-TLS-🇮🇱(IL)-212.80.205.244
-  type: trojan
-  server: 212.80.205.244
-  port: 8443
-  uuid: 22d6cb13-fdb2-447a-bd46-78365f8bbd09
-  network: ws
-  tls: true
-  servername: joss.krikkrik.web.id
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/IL1
-    headers:
-      Host: joss.krikkrik.web.id
-- name: TROJAN-TCP-TLS-🇸🇬(SG)-160.16.106.144
-  type: trojan
-  server: 160.16.106.144
-  port: 5321
+  server: 153.121.41.97
+  port: 4452
   uuid: ea39fa94f1ee00999337ea1fd3318e69
   network: tcp
   tls: true
   servername: www.nintendogames.net
-- name: TROJAN-WS-TLS-🇨🇭(CH)-104.244.78.95
+- name: TROJAN-TCP-TLS-🌐(XX)-58.152.110.83
   type: trojan
-  server: 104.244.78.95
-  port: 2083
-  uuid: 7fb5e59d-9e51-4f87-955a-fdde5fb34697
-  network: ws
-  tls: true
-  servername: joss.krikkrik.web.id
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/LU2
-    headers:
-      Host: joss.krikkrik.web.id
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.136.134_1
-  type: trojan
-  server: 15.236.136.134
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: 58.152.110.83
+  port: 443
+  uuid: ea39fa94f1ee00999337ea1fd3318e69
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇸🇬(SG)-160.16.106.144_1
+  servername: www.nintendogames.net
+- name: TROJAN-TCP-TLS-🇭🇰(HK)-58.152.53.136
+  type: trojan
+  server: 58.152.53.136
+  port: 443
+  uuid: ea39fa94f1ee00999337ea1fd3318e69
+  network: tcp
+  tls: true
+  servername: www.nintendogames.net
+- name: TROJAN-TCP-TLS-🇸🇬(SG)-160.16.106.144
   type: trojan
   server: 160.16.106.144
   port: 5041
@@ -178,40 +90,32 @@ proxies:
   network: tcp
   tls: true
   servername: www.nintendogames.net
-- name: TROJAN-WS-TLS-🇫🇷(FR)-103.82.101.179
+- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
-  server: 103.82.101.179
-  port: 443
-  uuid: 93a6409e-b7cb-49b0-ad37-e6196cf3492a
+  server: creativecommons.org
+  port: 2053
+  uuid: YwuvGJk36B
   network: ws
   tls: true
-  servername: joss.krikkrik.web.id
+  servername: kotlet.arshiacomplus.dpdns.org
   ws-opts:
-    path: /Free-VPN-CF-Geo-Project/FR1
+    path: /yamtekodasayahhh
     headers:
-      Host: joss.krikkrik.web.id
+      Host: kotlet.arshiacomplus.dpdns.org
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.29.25.174
-  - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.53.136
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.29.25.174_1
-  - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.110.83
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.72.198
-  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.245.56
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.69.107.50
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.69.107.50_1
   - TROJAN-TCP-🇹🇷(TR)-185.123.101.95
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.136.134
-  - TROJAN-WS-TLS-🇬🇧(GB)-103.13.208.242
-  - TROJAN-WS-TLS-🇮🇹(IT)-129.152.2.127
-  - TROJAN-WS-TLS-🇮🇹(IT)-179.43.144.10
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.225
-  - TROJAN-WS-TLS-🇮🇱(IL)-212.80.205.244
+  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
+  - TROJAN-TCP-TLS-🇯🇵(JP)-153.121.41.97
+  - TROJAN-TCP-TLS-🌐(XX)-58.152.110.83
+  - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.53.136
   - TROJAN-TCP-TLS-🇸🇬(SG)-160.16.106.144
-  - TROJAN-WS-TLS-🇨🇭(CH)-104.244.78.95
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.136.134_1
-  - TROJAN-TCP-TLS-🇸🇬(SG)-160.16.106.144_1
-  - TROJAN-WS-TLS-🇫🇷(FR)-103.82.101.179
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -226,24 +130,16 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.29.25.174
-  - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.53.136
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.29.25.174_1
-  - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.110.83
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.72.198
-  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.245.56
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.69.107.50
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.69.107.50_1
   - TROJAN-TCP-🇹🇷(TR)-185.123.101.95
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.136.134
-  - TROJAN-WS-TLS-🇬🇧(GB)-103.13.208.242
-  - TROJAN-WS-TLS-🇮🇹(IT)-129.152.2.127
-  - TROJAN-WS-TLS-🇮🇹(IT)-179.43.144.10
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.225
-  - TROJAN-WS-TLS-🇮🇱(IL)-212.80.205.244
+  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
+  - TROJAN-TCP-TLS-🇯🇵(JP)-153.121.41.97
+  - TROJAN-TCP-TLS-🌐(XX)-58.152.110.83
+  - TROJAN-TCP-TLS-🇭🇰(HK)-58.152.53.136
   - TROJAN-TCP-TLS-🇸🇬(SG)-160.16.106.144
-  - TROJAN-WS-TLS-🇨🇭(CH)-104.244.78.95
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.136.134_1
-  - TROJAN-TCP-TLS-🇸🇬(SG)-160.16.106.144_1
-  - TROJAN-WS-TLS-🇫🇷(FR)-103.82.101.179
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
 rule-providers:
   adblock:
     type: http
