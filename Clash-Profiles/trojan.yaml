@@ -14,6 +14,30 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-GRPC-REALITY-🌐(XX)-209.200.246.53
+  type: trojan
+  server: 209.200.246.53
+  port: 10785
+  uuid: D3OJA7xY5U
+  network: grpc
+  tls: true
+  servername: cloudflare.com
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.140.255
+  type: trojan
+  server: 15.236.140.255
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-🌐(XX)-185.123.101.95
+  type: trojan
+  server: 185.123.101.95
+  port: 17890
+  uuid: keTLsIW40V
+  network: tcp
+  tls: false
+  servername: 185.123.101.95
 - name: TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
   type: trojan
   server: nop-55q.pages.dev
@@ -26,37 +50,17 @@ proxies:
     path: /trGPZDfetEwuO25SAs
     headers:
       Host: NOp-55q.pAgEs.dEv
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+- name: TROJAN-GRPC-REALITY-🇵🇱(PL)-pl.scpnb.top
   type: trojan
-  server: creativecommons.org
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
-  tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-🇹🇷(TR)-185.123.101.95
-  type: trojan
-  server: 185.123.101.95
-  port: 17890
-  uuid: keTLsIW40V
-  network: tcp
-  tls: false
-  servername: 185.123.101.95
-- name: TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
-  type: trojan
-  server: 91.108.250.230
+  server: pl.scpnb.top
   port: 50191
   uuid: 3BLPOJr3OY
   network: grpc
   tls: true
   servername: cloudflare.com
-- name: TROJAN-GRPC-REALITY-🇵🇱(PL)-pl.scpnb.top
+- name: TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
   type: trojan
-  server: pl.scpnb.top
+  server: 91.108.250.230
   port: 50191
   uuid: 3BLPOJr3OY
   network: grpc
@@ -66,11 +70,12 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-GRPC-REALITY-🌐(XX)-209.200.246.53
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.140.255
+  - TROJAN-TCP-🌐(XX)-185.123.101.95
   - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-🇹🇷(TR)-185.123.101.95
-  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
   - TROJAN-GRPC-REALITY-🇵🇱(PL)-pl.scpnb.top
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -85,11 +90,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-GRPC-REALITY-🌐(XX)-209.200.246.53
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.140.255
+  - TROJAN-TCP-🌐(XX)-185.123.101.95
   - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-🇹🇷(TR)-185.123.101.95
-  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
   - TROJAN-GRPC-REALITY-🇵🇱(PL)-pl.scpnb.top
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
 rule-providers:
   adblock:
     type: http
