@@ -14,30 +14,30 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
+- name: TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
   type: trojan
-  server: 209.200.246.53
-  port: 10785
-  uuid: D3OJA7xY5U
-  network: grpc
+  server: nop-55q.pages.dev
+  port: 2053
+  uuid: T@_WvT8Ho@LW%w_,
+  network: ws
   tls: true
-  servername: cloudflare.com
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.37.128
+  servername: NOp-55q.pAgEs.dEv
+  ws-opts:
+    path: /trGPZDfetEwuO25SAs
+    headers:
+      Host: NOp-55q.pAgEs.dEv
+- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
-  server: 13.37.37.128
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
+  server: creativecommons.org
+  port: 2053
+  uuid: YwuvGJk36B
+  network: ws
   tls: true
-  servername: trojan.burgerip.co.uk
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.70.1
-  type: trojan
-  server: 35.181.70.1
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
+  servername: kotlet.arshiacomplus.dpdns.org
+  ws-opts:
+    path: /yamtekodasayahhh
+    headers:
+      Host: kotlet.arshiacomplus.dpdns.org
 - name: TROJAN-TCP-🇹🇷(TR)-185.123.101.95
   type: trojan
   server: 185.123.101.95
@@ -54,37 +54,23 @@ proxies:
   network: grpc
   tls: true
   servername: cloudflare.com
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+- name: TROJAN-GRPC-REALITY-🇵🇱(PL)-pl.scpnb.top
   type: trojan
-  server: creativecommons.org
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
+  server: pl.scpnb.top
+  port: 50191
+  uuid: 3BLPOJr3OY
+  network: grpc
   tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-TLS-🇦🇪(AE)-188.208.110.58
-  type: trojan
-  server: 188.208.110.58
-  port: 8441
-  uuid: tunnel-astrovpn_official028
-  network: tcp
-  tls: true
-  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
+  servername: cloudflare.com
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.37.128
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.70.1
+  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-TCP-🇹🇷(TR)-185.123.101.95
   - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇦🇪(AE)-188.208.110.58
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-pl.scpnb.top
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -99,13 +85,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.37.128
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.70.1
+  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-TCP-🇹🇷(TR)-185.123.101.95
   - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇦🇪(AE)-188.208.110.58
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-pl.scpnb.top
 rule-providers:
   adblock:
     type: http
