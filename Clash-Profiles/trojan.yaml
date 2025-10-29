@@ -14,6 +14,19 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
+  type: trojan
+  server: nop-55q.pages.dev
+  port: 2053
+  uuid: T@_WvT8Ho@LW%w_,
+  network: ws
+  tls: true
+  servername: NOp-55q.pAgEs.dEv
+  client-fingerprint: chrome
+  ws-opts:
+    path: /trGPZDfetEwuO25SAs
+    headers:
+      Host: NOp-55q.pAgEs.dEv
 - name: TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
   type: trojan
   server: 91.108.250.230
@@ -23,21 +36,12 @@ proxies:
   tls: true
   servername: cloudflare.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.67.21.75
-  type: trojan
-  server: 3.67.21.75
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
   - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.67.21.75
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -54,8 +58,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
   - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.67.21.75
 rule-providers:
   adblock:
     type: http
