@@ -194,6 +194,11 @@ def to_clash_dict(proxy: Proxy) -> Dict[str, Any]:
         clash_proxy["network"] = proxy.transport
         clash_proxy["tls"] = proxy.security in ["tls", "reality"]
         clash_proxy["servername"] = proxy.sni if proxy.sni else proxy.host
+        
+        # Добавить TLS fingerprint для имитации браузера Chrome
+        # Это решает проблему с Google 403 после 16-24 часов работы
+        if clash_proxy["tls"]:
+            clash_proxy["client-fingerprint"] = "chrome"
 
         if proxy.transport == "ws":
             clash_proxy["ws-opts"] = {"path": proxy.ws_path or "/", "headers": {"Host": proxy.ws_host or proxy.host}}
