@@ -743,13 +743,13 @@ proxy-groups:
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
   interval: 180
-  regex: ^(?!.*Permission denied).*gemini.*$
+  regex: Sign in|^(?!.*Permission denied).*gemini
 - name: 🔗 Auto-Failover-SS
   type: fallback
   proxies: *id001
   url: https://aistudio.google.com/prompts/new_chat
   interval: 180
-  regex: ^(?!.*Permission denied).*gemini.*$
+  regex: Sign in|^(?!.*Permission denied).*gemini
 - name: 📲 SS-Selector
   type: select
   proxies:
