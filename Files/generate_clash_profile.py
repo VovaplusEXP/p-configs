@@ -51,7 +51,7 @@ BASE_PROFILE_STRUCTURE: Dict[str, Any] = {
 
 HEALTH_CHECK_CONFIG: Dict[str, Any] = {
     "url": "https://aistudio.google.com/prompts/new_chat",
-    "interval": 1200, # 20 minutes
+    "interval": 180,  # Снижено с 1200 (20 минут) до 180 (3 минуты)
     "regex": "Sign in - Google Accounts"
 }
 
@@ -99,8 +99,12 @@ def generate_profiles():
 
         # Create smart groups for this protocol
         auto_select_group: Dict[str, Any] = {
-            "name": f"⚡ Auto-Select-{protocol.upper()}", "type": "url-test",
-            "proxies": proxy_names, **HEALTH_CHECK_CONFIG
+            "name": f"⚡ Auto-Select-{protocol.upper()}", 
+            "type": "url-test",
+            "proxies": proxy_names, 
+            "tolerance": 50,   # Переключаться на другой сервер, если разница в задержке > 50ms
+            "lazy": False,     # Принудительно выполнять health check, не откладывая
+            **HEALTH_CHECK_CONFIG
         }
         failover_group: Dict[str, Any] = {
             "name": f"🔗 Auto-Failover-{protocol.upper()}", "type": "fallback",
