@@ -14,6 +14,58 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
+  type: trojan
+  server: 209.200.246.53
+  port: 10785
+  uuid: D3OJA7xY5U
+  network: grpc
+  tls: true
+  servername: cloudflare.com
+- name: TROJAN-TCP-TLS-🇯🇵(JP)-160.16.240.91
+  type: trojan
+  server: 160.16.240.91
+  port: 4452
+  uuid: bca467b8c15211d189008a93c7519d3b
+  network: tcp
+  tls: true
+  servername: www.nintendogames.net
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.153.174
+  type: trojan
+  server: 13.37.153.174
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  type: trojan
+  server: creativecommons.org
+  port: 2053
+  uuid: YwuvGJk36B
+  network: ws
+  tls: true
+  servername: kotlet.arshiacomplus.dpdns.org
+  ws-opts:
+    path: /yamtekodasayahhh
+    headers:
+      Host: kotlet.arshiacomplus.dpdns.org
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.204.97
+  type: trojan
+  server: 35.181.204.97
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.28.156
+  type: trojan
+  server: 63.179.28.156
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
 - name: TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
   type: trojan
   server: nop-55q.pages.dev
@@ -26,20 +78,17 @@ proxies:
     path: /trGPZDfetEwuO25SAs
     headers:
       Host: NOp-55q.pAgEs.dEv
-- name: TROJAN-TCP-TLS-🇯🇵(JP)-160.16.240.91
-  type: trojan
-  server: 160.16.240.91
-  port: 4452
-  uuid: bca467b8c15211d189008a93c7519d3b
-  network: tcp
-  tls: true
-  servername: www.nintendogames.net
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
+  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
   - TROJAN-TCP-TLS-🇯🇵(JP)-160.16.240.91
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.153.174
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.204.97
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.28.156
+  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
   url: https://aistudio.google.com/prompts/new_chat
   interval: 1200
   regex: Sign in - Google Accounts
@@ -54,8 +103,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
+  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
   - TROJAN-TCP-TLS-🇯🇵(JP)-160.16.240.91
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.153.174
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.204.97
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.28.156
+  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
 rule-providers:
   adblock:
     type: http
