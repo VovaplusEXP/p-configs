@@ -52,7 +52,7 @@ BASE_PROFILE_STRUCTURE: Dict[str, Any] = {
 HEALTH_CHECK_CONFIG: Dict[str, Any] = {
     "url": "https://aistudio.google.com/prompts/new_chat",
     "interval": 180,  # Снижено с 1200 (20 минут) до 180 (3 минуты)
-    "regex": "Sign in - Google Accounts"
+    "regex": "^(?!.*Permission denied).*gemini.*$"
 }
 
 # --- Main Generation Logic ---

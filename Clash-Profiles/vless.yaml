@@ -1305,13 +1305,13 @@ proxy-groups:
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
   interval: 180
-  regex: Sign in - Google Accounts
+  regex: ^(?!.*Permission denied).*gemini.*$
 - name: 🔗 Auto-Failover-VLESS
   type: fallback
   proxies: *id001
   url: https://aistudio.google.com/prompts/new_chat
   interval: 180
-  regex: Sign in - Google Accounts
+  regex: ^(?!.*Permission denied).*gemini.*$
 - name: 📲 VLESS-Selector
   type: select
   proxies:
