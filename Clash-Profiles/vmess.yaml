@@ -1302,13 +1302,13 @@ proxy-groups:
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
   interval: 180
-  regex: Sign in - Google Accounts
+  regex: Sign in|^(?!.*Permission denied).*gemini
 - name: 🔗 Auto-Failover-VMESS
   type: fallback
   proxies: *id001
   url: https://aistudio.google.com/prompts/new_chat
   interval: 180
-  regex: Sign in - Google Accounts
+  regex: Sign in|^(?!.*Permission denied).*gemini
 - name: 📲 VMESS-Selector
   type: select
   proxies:
