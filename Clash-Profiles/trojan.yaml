@@ -14,34 +14,48 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
+- name: TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
   type: trojan
-  server: 209.200.246.53
-  port: 10785
-  uuid: D3OJA7xY5U
+  server: 91.108.250.230
+  port: 50191
+  uuid: 3BLPOJr3OY
   network: grpc
   tls: true
   servername: cloudflare.com
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.67.21.75
+  type: trojan
+  server: 3.67.21.75
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.67.21.75
+  tolerance: 50
+  lazy: false
   url: https://aistudio.google.com/prompts/new_chat
-  interval: 1200
+  interval: 180
   regex: Sign in - Google Accounts
 - name: 🔗 Auto-Failover-TROJAN
   type: fallback
   proxies: *id001
   url: https://aistudio.google.com/prompts/new_chat
-  interval: 1200
+  interval: 180
   regex: Sign in - Google Accounts
 - name: 📲 TROJAN-Selector
   type: select
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.67.21.75
 rule-providers:
   adblock:
     type: http
