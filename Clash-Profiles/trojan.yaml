@@ -14,9 +14,9 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.92.88
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.75.116.251
   type: trojan
-  server: 35.181.92.88
+  server: 3.75.116.251
   port: 22223
   uuid: telegram-id-directvpn
   network: tcp
@@ -28,24 +28,6 @@ proxies:
   server: 51.44.114.202
   port: 22222
   uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.92.88_1
-  type: trojan
-  server: 35.181.92.88
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.114.202_1
-  type: trojan
-  server: 51.44.114.202
-  port: 22223
-  uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
@@ -62,31 +44,6 @@ proxies:
     path: /
     headers:
       Host: dns.google.com
-- name: TROJAN-WS-TLS-🌐(XX)-creativecommons.org
-  type: trojan
-  server: creativecommons.org
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
-  tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-WS-🇵🇱(PL)-2.56.125.113
-  type: trojan
-  server: 2.56.125.113
-  port: 2025
-  uuid: vpn
-  network: ws
-  tls: false
-  servername: 2.56.125.113
-  ws-opts:
-    path: /
-    headers:
-      Host: dns.google.com
 - name: TROJAN-TCP-🇫🇮(FI)-37.27.249.93
   type: trojan
   server: 37.27.249.93
@@ -95,32 +52,6 @@ proxies:
   network: tcp
   tls: false
   servername: 37.27.249.93
-- name: TROJAN-WS-TLS-🇬🇧(GB)-104.20.5.134
-  type: trojan
-  server: 104.20.5.134
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
-  tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-WS-TLS-🇬🇧(GB)-104.20.6.134
-  type: trojan
-  server: 104.20.6.134
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
-  tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
   server: 172.67.180.227
@@ -143,32 +74,26 @@ proxies:
   tls: true
   servername: cloudflare.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇸🇬(SG)-96.9.213.108
+- name: TROJAN-GRPC-REALITY-🇵🇱(PL)-pl.scpnb.top
   type: trojan
-  server: 96.9.213.108
-  port: 12646
-  uuid: G9CHhXltVx
-  network: tcp
+  server: pl.scpnb.top
+  port: 50191
+  uuid: 3BLPOJr3OY
+  network: grpc
   tls: true
-  servername: 96.9.213.108
+  servername: cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.92.88
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.75.116.251
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.114.202
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.92.88_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.114.202_1
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-WS-TLS-🌐(XX)-creativecommons.org
-  - TROJAN-WS-🇵🇱(PL)-2.56.125.113
   - TROJAN-TCP-🇫🇮(FI)-37.27.249.93
-  - TROJAN-WS-TLS-🇬🇧(GB)-104.20.5.134
-  - TROJAN-WS-TLS-🇬🇧(GB)-104.20.6.134
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
-  - TROJAN-TCP-TLS-🇸🇬(SG)-96.9.213.108
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-pl.scpnb.top
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -185,19 +110,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.92.88
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.75.116.251
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.114.202
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.92.88_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.114.202_1
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-WS-TLS-🌐(XX)-creativecommons.org
-  - TROJAN-WS-🇵🇱(PL)-2.56.125.113
   - TROJAN-TCP-🇫🇮(FI)-37.27.249.93
-  - TROJAN-WS-TLS-🇬🇧(GB)-104.20.5.134
-  - TROJAN-WS-TLS-🇬🇧(GB)-104.20.6.134
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
-  - TROJAN-TCP-TLS-🇸🇬(SG)-96.9.213.108
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-pl.scpnb.top
 rule-providers:
   adblock:
     type: http
