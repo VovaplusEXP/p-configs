@@ -25,7 +25,11 @@ TEST_FILE_URL = "https://speed.cloudflare.com/__down?bytes=10000000"  # 10MB
 # --- Timeouts ---
 MAX_TEST_DURATION_SECONDS = 10
 REQUEST_SOCKET_TIMEOUT_SECONDS = 5
-STARTUP_WAIT_SECONDS = 7.5
+STARTUP_WAIT_SECONDS = 5.0
+
+# --- IPv6 Test Settings ---
+IPV6_TEST_URL = "https://ipv6.google.com/generate_204"
+IPV6_TIMEOUT_SECONDS = 3
 
 # --- Geo & Naming ---
 GEO_API_URL = "http://ip-api.com/json/?fields=status,countryCode"
@@ -40,6 +44,14 @@ def format_country_info(country_code: Optional[str]) -> str:
         return f"{flag}({country_code.upper()})"
     except Exception:
         return f"🌐({country_code.upper()})"
+
+def test_ipv6_connectivity(proxies: Dict[str, str]) -> bool:
+    """Test IPv6 connectivity through the proxy."""
+    try:
+        response = requests.get(IPV6_TEST_URL, proxies=proxies, timeout=IPV6_TIMEOUT_SECONDS)
+        return response.status_code in [200, 204]
+    except requests.exceptions.RequestException:
+        return False
 
 # --- V2Ray/Xray Config Generation ---
 def create_v2ray_config(proxy: Proxy, local_socks_port: int, task_id: int) -> Optional[str]:
@@ -107,6 +119,11 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
         time.sleep(STARTUP_WAIT_SECONDS)
 
         proxies = {'http': f'socks5h://127.0.0.1:{local_socks_port}', 'https': f'socks5h://127.0.0.1:{local_socks_port}'}
+        
+        # Test IPv6 connectivity first
+        ipv6_supported = test_ipv6_connectivity(proxies)
+        if not ipv6_supported:
+            return {"status": "No IPv6", "speed": 0, "proxy": proxy}
         
         exit_country = "N/A"
         try:
