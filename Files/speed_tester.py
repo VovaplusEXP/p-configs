@@ -28,7 +28,7 @@ REQUEST_SOCKET_TIMEOUT_SECONDS = 5
 STARTUP_WAIT_SECONDS = 5.0
 
 # --- IPv6 Test Settings ---
-IPV6_TEST_URL = "https://ipv6.google.com"
+IPV6_TEST_URL = "https://ipv6.google.com/generate_204"
 IPV6_TIMEOUT_SECONDS = 3
 
 # --- Geo & Naming ---
@@ -49,7 +49,7 @@ def test_ipv6_connectivity(proxies: Dict[str, str]) -> bool:
     """Test IPv6 connectivity through the proxy."""
     try:
         response = requests.get(IPV6_TEST_URL, proxies=proxies, timeout=IPV6_TIMEOUT_SECONDS)
-        return response.status_code == 200
+        return response.status_code in [200, 204]
     except requests.exceptions.RequestException:
         return False
 
