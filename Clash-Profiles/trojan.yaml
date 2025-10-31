@@ -14,15 +14,49 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.84.99
+- name: TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
   type: trojan
-  server: 13.37.84.99
+  server: 209.200.246.53
+  port: 10785
+  uuid: D3OJA7xY5U
+  network: grpc
+  tls: true
+  servername: cloudflare.com
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.85.76
+  type: trojan
+  server: 13.37.85.76
   port: 22223
   uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
+- name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  type: trojan
+  server: 62.133.60.83
+  port: 2025
+  uuid: vpn
+  network: ws
+  tls: false
+  servername: 62.133.60.83
+  ws-opts:
+    path: /
+    headers:
+      Host: dns.google.com
+- name: TROJAN-WS-TLS-🌐(XX)-creativecommons.org
+  type: trojan
+  server: creativecommons.org
+  port: 2053
+  uuid: YwuvGJk36B
+  network: ws
+  tls: true
+  servername: kotlet.arshiacomplus.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /yamtekodasayahhh
+    headers:
+      Host: kotlet.arshiacomplus.dpdns.org
 - name: TROJAN-WS-TLS-🇬🇧(GB)-104.20.5.134
   type: trojan
   server: 104.20.5.134
@@ -36,15 +70,16 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-🇫🇮(FI)-37.27.249.93
-  type: trojan
-  server: 37.27.249.93
-  port: 20000
-  uuid: 2AAF5UEsSd
-  network: tcp
-  tls: false
-  servername: 37.27.249.93
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-3.77.95.37
+  type: trojan
+  server: 3.77.95.37
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.77.95.37_1
   type: trojan
   server: 3.77.95.37
   port: 22222
@@ -62,37 +97,19 @@ proxies:
   tls: true
   servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+- name: TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
   type: trojan
-  server: creativecommons.org
+  server: nop-55q.pages.dev
   port: 2053
-  uuid: YwuvGJk36B
+  uuid: T@_WvT8Ho@LW%w_,
   network: ws
   tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
+  servername: NOp-55q.pAgEs.dEv
   client-fingerprint: chrome
   ws-opts:
-    path: /yamtekodasayahhh
+    path: /trGPZDfetEwuO25SAs
     headers:
-      Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.84.99_1
-  type: trojan
-  server: 13.37.84.99
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇵🇱(PL)-pl.scpnb.top
-  type: trojan
-  server: pl.scpnb.top
-  port: 50191
-  uuid: 3BLPOJr3OY
-  network: grpc
-  tls: true
-  servername: cloudflare.com
-  client-fingerprint: chrome
+      Host: NOp-55q.pAgEs.dEv
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
   server: 172.67.180.227
@@ -109,36 +126,67 @@ proxies:
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-52.28.43.123
   type: trojan
   server: 52.28.43.123
-  port: 22223
-  uuid: telegram-id-directvpn
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇹🇷(TR)-193.124.46.134
+- name: TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
   type: trojan
-  server: 193.124.46.134
-  port: 8441
-  uuid: tunnel-astrovpn_official018
+  server: 91.108.250.230
+  port: 50191
+  uuid: 3BLPOJr3OY
+  network: grpc
+  tls: true
+  servername: cloudflare.com
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🌐(XX)-91.108.250.230
+  type: trojan
+  server: 91.108.250.230
+  port: 50191
+  uuid: 3BLPOJr3OY
+  network: grpc
+  tls: true
+  servername: cloudflare.com
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇵🇱(PL)-pl.scpnb.top
+  type: trojan
+  server: pl.scpnb.top
+  port: 50191
+  uuid: 3BLPOJr3OY
+  network: grpc
+  tls: true
+  servername: cloudflare.com
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.85.76_1
+  type: trojan
+  server: 13.37.85.76
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.84.99
+  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.85.76
+  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  - TROJAN-WS-TLS-🌐(XX)-creativecommons.org
   - TROJAN-WS-TLS-🇬🇧(GB)-104.20.5.134
-  - TROJAN-TCP-🇫🇮(FI)-37.27.249.93
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.77.95.37
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.77.95.37_1
   - TROJAN-TCP-TLS-🇪🇪(EE)-5.188.200.224
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.84.99_1
-  - TROJAN-GRPC-REALITY-🇵🇱(PL)-pl.scpnb.top
+  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   - TROJAN-TCP-TLS-🇩🇪(DE)-52.28.43.123
-  - TROJAN-TCP-TLS-🇹🇷(TR)-193.124.46.134
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
+  - TROJAN-GRPC-REALITY-🌐(XX)-91.108.250.230
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-pl.scpnb.top
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.85.76_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -155,17 +203,21 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.84.99
+  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.85.76
+  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  - TROJAN-WS-TLS-🌐(XX)-creativecommons.org
   - TROJAN-WS-TLS-🇬🇧(GB)-104.20.5.134
-  - TROJAN-TCP-🇫🇮(FI)-37.27.249.93
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.77.95.37
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.77.95.37_1
   - TROJAN-TCP-TLS-🇪🇪(EE)-5.188.200.224
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.84.99_1
-  - TROJAN-GRPC-REALITY-🇵🇱(PL)-pl.scpnb.top
+  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   - TROJAN-TCP-TLS-🇩🇪(DE)-52.28.43.123
-  - TROJAN-TCP-TLS-🇹🇷(TR)-193.124.46.134
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
+  - TROJAN-GRPC-REALITY-🌐(XX)-91.108.250.230
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-pl.scpnb.top
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.85.76_1
 rule-providers:
   adblock:
     type: http

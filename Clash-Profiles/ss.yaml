@@ -14,66 +14,101 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇵🇦(PA)-138.186.142.81
+- name: SS-C20P-🇬🇧(GB)-57.129.140.88
   type: ss
-  server: 138.186.142.81
-  port: 990
+  server: 57.129.140.88
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  password: k1v5g9FefdoO
 - name: SS-C20P-🇫🇷(FR)-62.210.88.22
   type: ss
   server: 62.210.88.22
   port: 443
   cipher: chacha20-ietf-poly1305
   password: cM65BuhCELtBZGgNG5k6lO
+- name: SS-C20P-🇵🇦(PA)-138.186.142.81
+  type: ss
+  server: 138.186.142.81
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: SS-C20P-🇫🇮(FI)-46.62.214.228
+  type: ss
+  server: 46.62.214.228
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: Rr7QNdE5SI9_JAM8uIUEfg
 - name: SS-C20P-🇫🇮(FI)-65.21.243.22
   type: ss
   server: 65.21.243.22
   port: 31348
   cipher: chacha20-ietf-poly1305
   password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
-- name: SS-C20P-🇦🇹(AT)-95.163.176.37
-  type: ss
-  server: 95.163.176.37
-  port: 8506
-  cipher: chacha20-ietf-poly1305
-  password: lrU5qzW5nOHsIWiDRcDOpY
-- name: SS-C20P-🇦🇹(AT)-95.163.176.37_1
-  type: ss
-  server: 95.163.176.37
-  port: 8506
-  cipher: chacha20-ietf-poly1305
-  password: eUh4lSpi7nOYj0vSrqLUh0
 - name: SS-C20P-🇷🇺(RU)-5.129.201.43
   type: ss
   server: 5.129.201.43
   port: 23256
   cipher: chacha20-ietf-poly1305
   password: yALtyAtHfbw1Vu4pqh6wUc
-- name: SS-C20P-🇦🇺(AU)-45.15.185.70
+- name: SS-C20P-🇫🇮(FI)-185.193.102.7
   type: ss
-  server: 45.15.185.70
-  port: 990
+  server: 185.193.102.7
+  port: 57456
   cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: SS-C20P-🇦🇹(AT)-95.163.176.37_2
+  password: 360e21d21977dc11
+- name: SS-C20P-🇦🇹(AT)-95.163.176.37
+  type: ss
+  server: 95.163.176.37
+  port: 8506
+  cipher: chacha20-ietf-poly1305
+  password: n4J9KuWgBBXPBoDn0SdprD
+- name: SS-C20P-🇦🇹(AT)-95.163.176.37_1
   type: ss
   server: 95.163.176.37
   port: 8506
   cipher: chacha20-ietf-poly1305
   password: WLEqen5ubQYw4TbHTxxnjK
+- name: SS-C20P-🇦🇹(AT)-95.163.176.37_2
+  type: ss
+  server: 95.163.176.37
+  port: 8506
+  cipher: chacha20-ietf-poly1305
+  password: eUh4lSpi7nOYj0vSrqLUh0
+- name: SS-C20P-🇦🇹(AT)-95.163.176.37_3
+  type: ss
+  server: 95.163.176.37
+  port: 8506
+  cipher: chacha20-ietf-poly1305
+  password: KVe53W0gvOHIOJxXChJ5uA
+- name: SS-A256GCM-🇦🇺(AU)-3.107.178.116
+  type: ss
+  server: 3.107.178.116
+  port: 80
+  cipher: aes-256-gcm
+  password: dada0801
+- name: SS-A256GCM-🇦🇺(AU)-3.107.184.53
+  type: ss
+  server: 3.107.184.53
+  port: 80
+  cipher: aes-256-gcm
+  password: dada0801
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇵🇦(PA)-138.186.142.81
+  - SS-C20P-🇬🇧(GB)-57.129.140.88
   - SS-C20P-🇫🇷(FR)-62.210.88.22
+  - SS-C20P-🇵🇦(PA)-138.186.142.81
+  - SS-C20P-🇫🇮(FI)-46.62.214.228
   - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇷🇺(RU)-5.129.201.43
+  - SS-C20P-🇫🇮(FI)-185.193.102.7
   - SS-C20P-🇦🇹(AT)-95.163.176.37
   - SS-C20P-🇦🇹(AT)-95.163.176.37_1
-  - SS-C20P-🇷🇺(RU)-5.129.201.43
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
   - SS-C20P-🇦🇹(AT)-95.163.176.37_2
+  - SS-C20P-🇦🇹(AT)-95.163.176.37_3
+  - SS-A256GCM-🇦🇺(AU)-3.107.178.116
+  - SS-A256GCM-🇦🇺(AU)-3.107.184.53
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -90,14 +125,19 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇵🇦(PA)-138.186.142.81
+  - SS-C20P-🇬🇧(GB)-57.129.140.88
   - SS-C20P-🇫🇷(FR)-62.210.88.22
+  - SS-C20P-🇵🇦(PA)-138.186.142.81
+  - SS-C20P-🇫🇮(FI)-46.62.214.228
   - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇷🇺(RU)-5.129.201.43
+  - SS-C20P-🇫🇮(FI)-185.193.102.7
   - SS-C20P-🇦🇹(AT)-95.163.176.37
   - SS-C20P-🇦🇹(AT)-95.163.176.37_1
-  - SS-C20P-🇷🇺(RU)-5.129.201.43
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
   - SS-C20P-🇦🇹(AT)-95.163.176.37_2
+  - SS-C20P-🇦🇹(AT)-95.163.176.37_3
+  - SS-A256GCM-🇦🇺(AU)-3.107.178.116
+  - SS-A256GCM-🇦🇺(AU)-3.107.184.53
 rule-providers:
   adblock:
     type: http
