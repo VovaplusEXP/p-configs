@@ -14,11 +14,11 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.85.76
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.74.68
   type: trojan
-  server: 13.37.85.76
-  port: 22223
-  uuid: telegram-id-directvpn
+  server: 13.36.74.68
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
@@ -35,19 +35,6 @@ proxies:
     path: /
     headers:
       Host: dns.google.com
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  type: trojan
-  server: creativecommons.org
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
-  tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
 - name: TROJAN-TCP-🇫🇮(FI)-37.27.249.93
   type: trojan
   server: 37.27.249.93
@@ -56,55 +43,20 @@ proxies:
   network: tcp
   tls: false
   servername: 37.27.249.93
-- name: TROJAN-TCP-TLS-🇪🇪(EE)-5.188.200.224
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.69.249.113
   type: trojan
-  server: 5.188.200.224
-  port: 8441
-  uuid: tunnel-astrovpn_official917
-  network: tcp
-  tls: true
-  servername: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  type: trojan
-  server: 172.67.180.227
-  port: 443
-  uuid: bpb-trojan
-  network: ws
-  tls: true
-  servername: mashdt.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr?ed=2560
-    headers:
-      Host: mashdt.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
-  type: trojan
-  server: nop-55q.pages.dev
-  port: 2053
-  uuid: T@_WvT8Ho@LW%w_,
-  network: ws
-  tls: true
-  servername: NOp-55q.pAgEs.dEv
-  client-fingerprint: chrome
-  ws-opts:
-    path: /trGPZDfetEwuO25SAs
-    headers:
-      Host: NOp-55q.pAgEs.dEv
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.28.43.123
-  type: trojan
-  server: 52.28.43.123
+  server: 3.69.249.113
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.85.76_1
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.69.249.113_1
   type: trojan
-  server: 13.37.85.76
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: 3.69.249.113
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
@@ -113,15 +65,11 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.85.76
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.74.68
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-TCP-🇫🇮(FI)-37.27.249.93
-  - TROJAN-TCP-TLS-🇪🇪(EE)-5.188.200.224
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.28.43.123
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.85.76_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.69.249.113
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.69.249.113_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -138,15 +86,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.85.76
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.74.68
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-TCP-🇫🇮(FI)-37.27.249.93
-  - TROJAN-TCP-TLS-🇪🇪(EE)-5.188.200.224
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-WS-TLS-🇺🇸(US)-nop-55q.pages.dev
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.28.43.123
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.85.76_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.69.249.113
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.69.249.113_1
 rule-providers:
   adblock:
     type: http
