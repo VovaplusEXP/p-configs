@@ -14,45 +14,52 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-C20P-🇬🇧(GB)-57.129.140.88
+  type: ss
+  server: 57.129.140.88
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: k1v5g9FefdoO
 - name: SS-C20P-🇫🇷(FR)-62.210.88.22
   type: ss
   server: 62.210.88.22
   port: 443
   cipher: chacha20-ietf-poly1305
   password: hBbDI34tFAN07jbXkVsesH
-- name: SS-C20P-🇫🇮(FI)-65.21.243.22
-  type: ss
-  server: 65.21.243.22
-  port: 31348
-  cipher: chacha20-ietf-poly1305
-  password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
 - name: SS-C20P-🇹🇷(TR)-62.133.63.21
   type: ss
   server: 62.133.63.21
   port: 65262
   cipher: chacha20-ietf-poly1305
   password: AcnrwQ0Ik17oQ5WljFXbTp
+- name: SS-C20P-🇫🇮(FI)-65.21.243.22
+  type: ss
+  server: 65.21.243.22
+  port: 31348
+  cipher: chacha20-ietf-poly1305
+  password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
+- name: SS-C20P-🇷🇺(RU)-5.129.201.43
+  type: ss
+  server: 5.129.201.43
+  port: 23256
+  cipher: chacha20-ietf-poly1305
+  password: yALtyAtHfbw1Vu4pqh6wUc
 - name: SS-C20P-🇫🇮(FI)-185.193.102.7
   type: ss
   server: 185.193.102.7
   port: 57456
   cipher: chacha20-ietf-poly1305
   password: 360e21d21977dc11
-- name: SS-C20P-🇦🇺(AU)-45.15.185.70
-  type: ss
-  server: 45.15.185.70
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
+  - SS-C20P-🇬🇧(GB)-57.129.140.88
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇫🇮(FI)-65.21.243.22
   - SS-C20P-🇹🇷(TR)-62.133.63.21
+  - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇷🇺(RU)-5.129.201.43
   - SS-C20P-🇫🇮(FI)-185.193.102.7
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -69,11 +76,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
+  - SS-C20P-🇬🇧(GB)-57.129.140.88
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇫🇮(FI)-65.21.243.22
   - SS-C20P-🇹🇷(TR)-62.133.63.21
+  - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇷🇺(RU)-5.129.201.43
   - SS-C20P-🇫🇮(FI)-185.193.102.7
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
   adblock:
     type: http
