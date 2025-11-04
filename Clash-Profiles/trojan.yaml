@@ -14,33 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.97.169
-  type: trojan
-  server: 13.36.97.169
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.180.126.249
-  type: trojan
-  server: 63.180.126.249
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.180.126.249_1
-  type: trojan
-  server: 63.180.126.249
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
   server: 172.67.180.227
@@ -54,6 +27,18 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
+- name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  type: trojan
+  server: 62.133.60.83
+  port: 2025
+  uuid: vpn
+  network: ws
+  tls: false
+  servername: 62.133.60.83
+  ws-opts:
+    path: /
+    headers:
+      Host: dns.google.com
 - name: TROJAN-WS-TLS-🇦🇪(AE)-84.235.245.18
   type: trojan
   server: 84.235.245.18
@@ -67,29 +52,23 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/84.235.245.18=34501
     headers:
       Host: joss.krekkrek.web.id
-- name: TROJAN-WS-TLS-🇳🇱(NL)-178.208.77.191
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.122.138.117
   type: trojan
-  server: 178.208.77.191
-  port: 443
-  uuid: 6f061e76-3e76-4be3-8241-d773031c7109
-  network: ws
+  server: 3.122.138.117
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
   tls: true
-  servername: joss.krekkrek.web.id
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/178.208.77.191=443
-    headers:
-      Host: joss.krekkrek.web.id
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.97.169
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.126.249
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.126.249_1
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
   - TROJAN-WS-TLS-🇦🇪(AE)-84.235.245.18
-  - TROJAN-WS-TLS-🇳🇱(NL)-178.208.77.191
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.122.138.117
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -106,12 +85,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.97.169
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.126.249
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.126.249_1
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
   - TROJAN-WS-TLS-🇦🇪(AE)-84.235.245.18
-  - TROJAN-WS-TLS-🇳🇱(NL)-178.208.77.191
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.122.138.117
 rule-providers:
   adblock:
     type: http
