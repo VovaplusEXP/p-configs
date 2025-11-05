@@ -1,6 +1,6 @@
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, Set
 
 REGISTRY_FILE = "server_registry.json"
@@ -34,7 +34,7 @@ class ServerRegistry:
         """Добавить сервер в реестр на испытательный срок"""
         self.registry[server_line] = {
             "status": "probation",
-            "added_at": datetime.utcnow().isoformat()
+            "added_at": datetime.now(timezone.utc).isoformat()
         }
     
     def is_in_probation(self, server_line: str) -> bool:

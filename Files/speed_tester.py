@@ -204,7 +204,7 @@ def main():
             
         with open(source_path, 'r', encoding='utf-8') as f:
             configs_raw = [line.strip() for line in f if line.strip()]
-            proxies_to_test = [parse_proxy(line) for line in configs_raw if line.strip()]
+            proxies_to_test = [parse_proxy(line) for line in configs_raw]
         
         proxies_to_test = [p for p in proxies_to_test if p is not None]
         if not proxies_to_test:
@@ -261,21 +261,19 @@ def main():
                     else:
                         # Первый раз failed - даём второй шанс
                         registry.add_to_probation(config_line)
-                        # Сохраняем сервер с предыдущими данными или базовыми
-                        if test_result:
-                            protocol_fast_proxies.append(test_result)
-                        else:
-                            # Создать базовую запись для сервера
-                            proxy_obj = config_line_to_proxy.get(config_line)
-                            if proxy_obj:
-                                protocol_fast_proxies.append({
-                                    'config': config_line,
-                                    'status': 'probation',
-                                    'proxy': proxy_obj,
-                                    'speed': 0
-                                })
-                        print(f"  ⚠️  Server on probation (keeping): {config_line[:50]}...")
-                        probation_count += 1
+                        # Создать базовую запись для сервера на испытательном сроке
+                        proxy_obj = config_line_to_proxy.get(config_line)
+                        if proxy_obj:
+                            # Используем данные из теста если есть, иначе создаем базовую запись
+                            probation_entry = test_result if test_result else {
+                                'config': config_line,
+                                'status': 'probation',
+                                'proxy': proxy_obj,
+                                'speed': 0
+                            }
+                            protocol_fast_proxies.append(probation_entry)
+                            print(f"  ⚠️  Server on probation (keeping): {config_line[:50]}...")
+                            probation_count += 1
         
         if protocol_fast_proxies:
             protocol_fast_proxies.sort(key=lambda x: x.get('speed', 0), reverse=True)
