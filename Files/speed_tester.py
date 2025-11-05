@@ -8,8 +8,9 @@ import re
 import signal
 from urllib.parse import urlparse, quote, urlunparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Set
 from parsers import parse_proxy, Proxy
+from server_registry import ServerRegistry
 
 # --- Configuration ---
 V2RAY_EXECUTABLE_PATH = "../xray"
@@ -170,8 +171,29 @@ def main():
     if not os.path.exists(V2RAY_EXECUTABLE_PATH):
         print(f"Error: Xray executable not found at '{V2RAY_EXECUTABLE_PATH}'")
         return
+    
+    # Инициализировать реестр
+    registry = ServerRegistry()
+    
+    # Для каждого протокола загрузить предыдущий список
+    previous_servers: Dict[str, Set[str]] = {}
+    for filename in PROTOCOLS_TO_TEST:
+        protocol_name = filename.replace('.txt', '')
+        source_path = os.path.join(SOURCE_DIR, filename)
+        
+        if os.path.exists(source_path):
+            with open(source_path, 'r', encoding='utf-8') as f:
+                previous_servers[protocol_name] = set(line.strip() for line in f if line.strip())
+        else:
+            previous_servers[protocol_name] = set()
         
     all_fast_proxies: Dict[str, List[Dict[str, Any]]] = {proto.replace('.txt', ''): [] for proto in PROTOCOLS_TO_TEST}
+    
+    # Statistics counters
+    total_tested = 0
+    passed_count = 0
+    probation_count = 0
+    removed_count = 0
     
     print("Starting parallel speed test and geolocation...")
     for filename in PROTOCOLS_TO_TEST:
@@ -181,7 +203,8 @@ def main():
             continue
             
         with open(source_path, 'r', encoding='utf-8') as f:
-            proxies_to_test = [parse_proxy(line) for line in f if line.strip()]
+            configs_raw = [line.strip() for line in f if line.strip()]
+            proxies_to_test = [parse_proxy(line) for line in configs_raw]
         
         proxies_to_test = [p for p in proxies_to_test if p is not None]
         if not proxies_to_test:
@@ -190,24 +213,72 @@ def main():
             
         print(f"\n- Processing '{filename}' with up to {MAX_WORKERS} parallel workers...")
         
-        protocol_fast_proxies: List[Dict[str, Any]] = []
+        # Create mapping from original line to proxy object
+        config_line_to_proxy = {p.original_line: p for p in proxies_to_test}
+        
+        # Test all proxies
+        results_map: Dict[str, Dict[str, Any]] = {}
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
             futures = {executor.submit(test_proxy, proxy, i): proxy for i, proxy in enumerate(proxies_to_test)}
             for i, future in enumerate(as_completed(futures)):
                 result = future.result()
-                if result and result.get("status") == "OK":
-                    protocol_fast_proxies.append(result)
+                if result and result.get('proxy'):
+                    proxy_obj = result.get('proxy')
+                    results_map[proxy_obj.original_line] = result
                 
-                status_str = result.get('status', 'Malformed')
-                speed_str = f"{result.get('speed', 0):.2f} Mbps"
-                print(f"\r  - Tested {i+1}/{len(proxies_to_test)} | Status: {status_str} ({speed_str}) | Fast found: {len(protocol_fast_proxies)}   ", end="", flush=True)
+                status_str = result.get('status', 'Malformed') if result else 'Unknown'
+                speed_str = f"{result.get('speed', 0):.2f} Mbps" if result else "0.00 Mbps"
+                print(f"\r  - Tested {i+1}/{len(proxies_to_test)} | Status: {status_str} ({speed_str})   ", end="", flush=True)
         
         print()
+        
+        # Apply second-chance filtering logic
+        protocol_name = filename.replace('.txt', '')
+        protocol_fast_proxies: List[Dict[str, Any]] = []
+        
+        for config_line in configs_raw:
+            total_tested += 1
+            test_result = results_map.get(config_line)
+            
+            if test_result and test_result.get('status') == 'OK':
+                # Сервер прошёл тест
+                if registry.is_in_probation(config_line):
+                    # Сервер восстановился - удаляем из реестра
+                    registry.remove_from_probation(config_line)
+                    print(f"  ✅ Server recovered from probation: {config_line[:50]}...")
+                protocol_fast_proxies.append(test_result)
+                passed_count += 1
+            else:
+                # Сервер не прошёл тест
+                was_in_previous_list = config_line in previous_servers.get(protocol_name, set())
+                
+                if was_in_previous_list:
+                    if registry.is_in_probation(config_line):
+                        # Второй раз подряд failed - удаляем окончательно
+                        registry.remove_from_probation(config_line)
+                        print(f"  ❌ Server failed twice, removing: {config_line[:50]}...")
+                        removed_count += 1
+                    else:
+                        # Первый раз failed - даём второй шанс
+                        registry.add_to_probation(config_line)
+                        # Создать базовую запись для сервера на испытательном сроке
+                        proxy_obj = config_line_to_proxy.get(config_line)
+                        if proxy_obj:
+                            # Используем данные из теста если есть, иначе создаем базовую запись
+                            probation_entry = test_result if test_result else {
+                                'config': config_line,
+                                'status': 'probation',
+                                'proxy': proxy_obj,
+                                'speed': 0
+                            }
+                            protocol_fast_proxies.append(probation_entry)
+                            print(f"  ⚠️  Server on probation (keeping): {config_line[:50]}...")
+                            probation_count += 1
+        
         if protocol_fast_proxies:
             protocol_fast_proxies.sort(key=lambda x: x.get('speed', 0), reverse=True)
-            proto_name = filename.replace('.txt', '')
-            all_fast_proxies[proto_name] = protocol_fast_proxies
-            print(f"  - Found {len(protocol_fast_proxies)} fast proxies for {proto_name}.")
+            all_fast_proxies[protocol_name] = protocol_fast_proxies
+            print(f"  - Found {len(protocol_fast_proxies)} fast proxies for {protocol_name}.")
         else:
             print(f"  - No fast proxies found for '{filename}'.")
 
@@ -266,6 +337,20 @@ def main():
             f.write('\n'.join(renamed_proxies))
         print(f"  - Wrote {len(renamed_proxies)} renamed configs to {final_path}")
 
+    # Сохранить обновлённый реестр
+    registry.save()
+    
+    # Вывод статистики
+    print("\n" + "="*50)
+    print("📊 FILTERING STATISTICS")
+    print("="*50)
+    print(f"Total tested: {total_tested}")
+    print(f"Passed immediately: {passed_count}")
+    print(f"On probation (second chance): {probation_count}")
+    print(f"Failed and removed: {removed_count}")
+    print(f"Currently in registry: {len(registry.get_all_probation_servers())}")
+    print("="*50)
+    
     print("\nProcessing complete.")
 
 if __name__ == "__main__":
