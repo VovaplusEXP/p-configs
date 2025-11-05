@@ -14,6 +14,12 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-C20P-🇩🇪(DE)-h110vpnde.outlinekeys.net
+  type: ss
+  server: h110vpnde.outlinekeys.net
+  port: 7048
+  cipher: chacha20-ietf-poly1305
+  password: UpvYdhs8bc37DeJC3noLMh
 - name: SS-C20P-🇫🇷(FR)-62.210.88.22
   type: ss
   server: 62.210.88.22
@@ -36,6 +42,7 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
+  - SS-C20P-🇩🇪(DE)-h110vpnde.outlinekeys.net
   - SS-C20P-🇫🇷(FR)-62.210.88.22
   - SS-C20P-🇫🇮(FI)-185.193.102.7
   - SS-C20P-🇦🇺(AU)-45.15.185.70
@@ -55,6 +62,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
+  - SS-C20P-🇩🇪(DE)-h110vpnde.outlinekeys.net
   - SS-C20P-🇫🇷(FR)-62.210.88.22
   - SS-C20P-🇫🇮(FI)-185.193.102.7
   - SS-C20P-🇦🇺(AU)-45.15.185.70

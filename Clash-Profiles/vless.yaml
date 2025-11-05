@@ -14,18 +14,39 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VLESS-TCP-REALITY-🇺🇸(US)-148.135.83.173
+- name: VLESS-TCP-REALITY-🇺🇸(US)-aws-linkus11.eovay.com
   type: vless
-  server: 148.135.83.173
-  port: 28901
-  uuid: 15135ad9-eb14-4b1c-8ab0-6ca17b6f3301
+  server: aws-linkus11.eovay.com
+  port: 54311
+  uuid: 6c0472bc-82df-449e-90bd-2f91c6a46402
   network: tcp
   tls: true
-  servername: images.apple.com
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-72.167.25.253
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-77.110.109.72
   type: vless
-  server: 72.167.25.253
+  server: 77.110.109.72
+  port: 443
+  uuid: 045eb821-bdae-43c5-8945-9cb181e65dcb
+  network: tcp
+  tls: true
+  servername: ad.mail.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇨🇦(CA)-aws-linkca22.eovay.com
+  type: vless
+  server: aws-linkca22.eovay.com
+  port: 53322
+  uuid: 6c0472bc-82df-449e-90bd-2f91c6a46402
+  network: tcp
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-104.18.185.26
+  type: vless
+  server: 104.18.185.26
   port: 2096
   uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   network: ws
@@ -33,20 +54,7 @@ proxies:
   servername: gaosir.unfeeling.sbs
   client-fingerprint: chrome
   ws-opts:
-    path: /Telegramsecurity=tls
-    headers:
-      Host: gaosir.unfeeling.sbs
-- name: VLESS-WS-TLS-🇺🇸(US)-5.10.245.253
-  type: vless
-  server: 5.10.245.253
-  port: 2096
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  network: ws
-  tls: true
-  servername: gaosir.unfeeling.sbs
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
     headers:
       Host: gaosir.unfeeling.sbs
 - name: VLESS-WS-TLS-🇺🇸(US)-194.59.5.253
@@ -62,9 +70,44 @@ proxies:
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
     headers:
       Host: gaosir.unfeeling.sbs
-- name: VLESS-WS-TLS-🇺🇸(US)-159.112.235.253
+- name: VLESS-WS-TLS-🇺🇸(US)-185.148.104.253
   type: vless
-  server: 159.112.235.253
+  server: 185.148.104.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
+  network: ws
+  tls: true
+  servername: vless.muzheng.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /X@节点狂魔/
+    headers:
+      Host: vless.muzheng.top
+- name: VLESS-TCP-REALITY-🇺🇸(US)-148.135.83.173
+  type: vless
+  server: 148.135.83.173
+  port: 28901
+  uuid: 15135ad9-eb14-4b1c-8ab0-6ca17b6f3301
+  network: tcp
+  tls: true
+  servername: images.apple.com
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-194.152.44.253
+  type: vless
+  server: 194.152.44.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
+  network: ws
+  tls: true
+  servername: vless.muzheng.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram @freecodes /?ed=2560
+    headers:
+      Host: vless.muzheng.top
+- name: VLESS-WS-TLS-🇺🇸(US)-160.79.105.253
+  type: vless
+  server: 160.79.105.253
   port: 2096
   uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   network: ws
@@ -75,9 +118,61 @@ proxies:
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
     headers:
       Host: gaosir.unfeeling.sbs
-- name: VLESS-WS-TLS-🇺🇸(US)-104.17.184.235
+- name: VLESS-WS-TLS-🇺🇸(US)-167.68.4.253
   type: vless
-  server: 104.17.184.235
+  server: 167.68.4.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
+  network: ws
+  tls: true
+  servername: vless.muzheng.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2560
+    headers:
+      Host: vless.muzheng.top
+- name: VLESS-WS-TLS-🇺🇸(US)-185.251.81.253
+  type: vless
+  server: 185.251.81.253
+  port: 2096
+  uuid: 2456f90c-5183-476d-b069-16ae74ce120f
+  network: ws
+  tls: true
+  servername: fast01.0860852.xyz
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳
+    headers:
+      Host: fast01.0860852.xyz
+- name: VLESS-WS-TLS-🇺🇸(US)-167.68.4.253_1
+  type: vless
+  server: 167.68.4.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
+  network: ws
+  tls: true
+  servername: vless.muzheng.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+    headers:
+      Host: vless.muzheng.top
+- name: VLESS-WS-TLS-🇺🇸(US)-45.192.224.253
+  type: vless
+  server: 45.192.224.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
+  network: ws
+  tls: true
+  servername: vless.muzheng.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
+    headers:
+      Host: vless.muzheng.top
+- name: VLESS-WS-TLS-🇺🇸(US)-104.18.80.62
+  type: vless
+  server: 104.18.80.62
   port: 443
   uuid: 897a4bec-26b8-11e8-94be-00505695472c
   network: ws
@@ -88,22 +183,126 @@ proxies:
     path: /bbs?ed=2048security=tls
     headers:
       Host: xv6.jpmj.dpdns.org
-- name: VLESS-WS-TLS-🇺🇸(US)-104.18.89.151
+- name: VLESS-WS-TLS-🇺🇸(US)-185.18.184.253
   type: vless
-  server: 104.18.89.151
-  port: 443
-  uuid: 897a4bec-26b8-11e8-94be-00505695472c
+  server: 185.18.184.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
   network: ws
   tls: true
-  servername: xv6.jpmj.dpdns.org
+  servername: vless.muzheng.top
   client-fingerprint: chrome
   ws-opts:
-    path: /bbs?ed=2048security=tls
+    path: /telegram@freecodes
     headers:
-      Host: xv6.jpmj.dpdns.org
+      Host: vless.muzheng.top
+- name: VLESS-WS-TLS-🇺🇸(US)-194.152.44.253_1
+  type: vless
+  server: 194.152.44.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
+  network: ws
+  tls: true
+  servername: vless.muzheng.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram @ /?ed=2560
+    headers:
+      Host: vless.muzheng.top
+- name: VLESS-WS-TLS-🇺🇸(US)-198.71.191.253
+  type: vless
+  server: 198.71.191.253
+  port: 2096
+  uuid: 2456f90c-5183-476d-b069-16ae74ce120f
+  network: ws
+  tls: true
+  servername: fast01.0860852.xyz
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: fast01.0860852.xyz
+- name: VLESS-WS-TLS-🇺🇸(US)-5.10.214.253
+  type: vless
+  server: 5.10.214.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
+  network: ws
+  tls: true
+  servername: vless.muzheng.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram @freecodes /?ed=2560security=tls
+    headers:
+      Host: vless.muzheng.top
 - name: VLESS-WS-TLS-🇺🇸(US)-104.18.85.193
   type: vless
   server: 104.18.85.193
+  port: 443
+  uuid: 897a4bec-26b8-11e8-94be-00505695472c
+  network: ws
+  tls: true
+  servername: xv6.jpmj.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /bbs?ed=2048security=tls
+    headers:
+      Host: xv6.jpmj.dpdns.org
+- name: VLESS-WS-TLS-🇺🇸(US)-45.192.224.253_1
+  type: vless
+  server: 45.192.224.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
+  network: ws
+  tls: true
+  servername: vless.muzheng.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+    headers:
+      Host: vless.muzheng.top
+- name: VLESS-WS-TLS-🇺🇸(US)-45.192.224.253_2
+  type: vless
+  server: 45.192.224.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
+  network: ws
+  tls: true
+  servername: vless.muzheng.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram@Selinc/?ed=2560
+    headers:
+      Host: vless.muzheng.top
+- name: VLESS-WS-TLS-🇺🇸(US)-185.18.184.253_1
+  type: vless
+  server: 185.18.184.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
+  network: ws
+  tls: true
+  servername: vless.muzheng.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+    headers:
+      Host: vless.muzheng.top
+- name: VLESS-WS-TLS-🇺🇸(US)-45.194.11.253
+  type: vless
+  server: 45.194.11.253
+  port: 2096
+  uuid: 2456f90c-5183-476d-b069-16ae74ce120f
+  network: ws
+  tls: true
+  servername: fast01.0860852.xyz
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+    headers:
+      Host: fast01.0860852.xyz
+- name: VLESS-WS-TLS-🇺🇸(US)-104.17.190.137
+  type: vless
+  server: 104.17.190.137
   port: 443
   uuid: 897a4bec-26b8-11e8-94be-00505695472c
   network: ws
@@ -127,48 +326,9 @@ proxies:
     path: /bbs?ed=2048security=tls
     headers:
       Host: xv6.jpmj.dpdns.org
-- name: VLESS-WS-TLS-🇺🇸(US)-172.64.152.253
+- name: VLESS-WS-TLS-🇺🇸(US)-72.167.25.253
   type: vless
-  server: 172.64.152.253
-  port: 443
-  uuid: 897a4bec-26b8-11e8-94be-00505695472c
-  network: ws
-  tls: true
-  servername: xv6.jpmj.dpdns.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /bbs?ed=2048security=tls
-    headers:
-      Host: xv6.jpmj.dpdns.org
-- name: VLESS-WS-TLS-🇺🇸(US)-104.18.80.62
-  type: vless
-  server: 104.18.80.62
-  port: 443
-  uuid: 897a4bec-26b8-11e8-94be-00505695472c
-  network: ws
-  tls: true
-  servername: xv6.jpmj.dpdns.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /bbs?ed=2048security=tls
-    headers:
-      Host: xv6.jpmj.dpdns.org
-- name: VLESS-WS-TLS-🇺🇸(US)-104.17.190.137
-  type: vless
-  server: 104.17.190.137
-  port: 443
-  uuid: 897a4bec-26b8-11e8-94be-00505695472c
-  network: ws
-  tls: true
-  servername: xv6.jpmj.dpdns.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /bbs?ed=2048security=tls
-    headers:
-      Host: xv6.jpmj.dpdns.org
-- name: VLESS-WS-TLS-🇺🇸(US)-160.79.105.253
-  type: vless
-  server: 160.79.105.253
+  server: 72.167.25.253
   port: 2096
   uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   network: ws
@@ -176,244 +336,9 @@ proxies:
   servername: gaosir.unfeeling.sbs
   client-fingerprint: chrome
   ws-opts:
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+    path: /Telegramsecurity=tls
     headers:
       Host: gaosir.unfeeling.sbs
-- name: VLESS-TCP-REALITY-🇺🇸(US)-aws-linkus11.eovay.com
-  type: vless
-  server: aws-linkus11.eovay.com
-  port: 54311
-  uuid: 6c0472bc-82df-449e-90bd-2f91c6a46402
-  network: tcp
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-198.12.145.253
-  type: vless
-  server: 198.12.145.253
-  port: 2096
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  network: ws
-  tls: true
-  servername: gaosir.unfeeling.sbs
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-    headers:
-      Host: gaosir.unfeeling.sbs
-- name: VLESS-WS-TLS-🇺🇸(US)-166.62.115.253
-  type: vless
-  server: 166.62.115.253
-  port: 2096
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  network: ws
-  tls: true
-  servername: gaosir.unfeeling.sbs
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-    headers:
-      Host: gaosir.unfeeling.sbs
-- name: VLESS-WS-TLS-🇺🇸(US)-190.93.245.253
-  type: vless
-  server: 190.93.245.253
-  port: 2096
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  network: ws
-  tls: true
-  servername: gaosir.unfeeling.sbs
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-    headers:
-      Host: gaosir.unfeeling.sbs
-- name: VLESS-WS-TLS-🇺🇸(US)-104.18.185.26
-  type: vless
-  server: 104.18.185.26
-  port: 2096
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  network: ws
-  tls: true
-  servername: gaosir.unfeeling.sbs
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-    headers:
-      Host: gaosir.unfeeling.sbs
-- name: VLESS-WS-TLS-🇺🇸(US)-188.42.145.253
-  type: vless
-  server: 188.42.145.253
-  port: 2096
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  network: ws
-  tls: true
-  servername: gaosir.unfeeling.sbs
-  client-fingerprint: chrome
-  ws-opts:
-    path: /XU0001F1E8U0001F1F3@ShadowProxy66/?ed=2560fp=chrome
-    headers:
-      Host: gaosir.unfeeling.sbs
-- name: VLESS-WS-TLS-🇺🇸(US)-104.16.250.22
-  type: vless
-  server: 104.16.250.22
-  port: 2096
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  network: ws
-  tls: true
-  servername: gaosir.unfeeling.sbs
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-    headers:
-      Host: gaosir.unfeeling.sbs
-- name: VLESS-TCP-REALITY-🇺🇸(US)-77.110.109.72
-  type: vless
-  server: 77.110.109.72
-  port: 443
-  uuid: 045eb821-bdae-43c5-8945-9cb181e65dcb
-  network: tcp
-  tls: true
-  servername: ad.mail.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇨🇦(CA)-aws-linkca22.eovay.com
-  type: vless
-  server: aws-linkca22.eovay.com
-  port: 53322
-  uuid: 6c0472bc-82df-449e-90bd-2f91c6a46402
-  network: tcp
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-wangcai198.cloudflare.182682.xyz
-  type: vless
-  server: wangcai198.cloudflare.182682.xyz
-  port: 2096
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  network: ws
-  tls: true
-  servername: gaosir.unfeeling.sbs
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
-    headers:
-      Host: gaosir.unfeeling.sbs
-- name: VLESS-WS-TLS-🇺🇸(US)-185.18.184.253
-  type: vless
-  server: 185.18.184.253
-  port: 2096
-  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
-  network: ws
-  tls: true
-  servername: vless.muzheng.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /telegram@freecodes
-    headers:
-      Host: vless.muzheng.top
-- name: VLESS-WS-TLS-🇺🇸(US)-198.12.144.253
-  type: vless
-  server: 198.12.144.253
-  port: 2096
-  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
-  network: ws
-  tls: true
-  servername: vless.muzheng.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-    headers:
-      Host: vless.muzheng.top
-- name: VLESS-WS-TLS-🇺🇸(US)-167.68.11.253
-  type: vless
-  server: 167.68.11.253
-  port: 2096
-  uuid: 2456f90c-5183-476d-b069-16ae74ce120f
-  network: ws
-  tls: true
-  servername: fast01.0860852.xyz
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-    headers:
-      Host: fast01.0860852.xyz
-- name: VLESS-WS-TLS-🇺🇸(US)-194.152.44.253
-  type: vless
-  server: 194.152.44.253
-  port: 2096
-  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
-  network: ws
-  tls: true
-  servername: vless.muzheng.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Telegram @ /?ed=2560
-    headers:
-      Host: vless.muzheng.top
-- name: VLESS-WS-TLS-🇺🇸(US)-45.192.224.253
-  type: vless
-  server: 45.192.224.253
-  port: 2096
-  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
-  network: ws
-  tls: true
-  servername: vless.muzheng.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Telegram@Selinc/?ed=2560
-    headers:
-      Host: vless.muzheng.top
-- name: VLESS-WS-TLS-🇺🇸(US)-5.10.214.253
-  type: vless
-  server: 5.10.214.253
-  port: 2096
-  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
-  network: ws
-  tls: true
-  servername: vless.muzheng.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Telegram @freecodes /?ed=2560security=tls
-    headers:
-      Host: vless.muzheng.top
-- name: VLESS-TCP-REALITY-🇺🇸(US)-62.60.177.167
-  type: vless
-  server: 62.60.177.167
-  port: 443
-  uuid: 6670529b-265a-4ee9-b944-bdaee2638ef2
-  network: tcp
-  tls: true
-  servername: st.ozone.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-167.68.4.253
-  type: vless
-  server: 167.68.4.253
-  port: 2096
-  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
-  network: ws
-  tls: true
-  servername: vless.muzheng.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2+/?ed=2560
-    headers:
-      Host: vless.muzheng.top
-- name: VLESS-WS-TLS-🇺🇸(US)-194.152.44.253_1
-  type: vless
-  server: 194.152.44.253
-  port: 2096
-  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
-  network: ws
-  tls: true
-  servername: vless.muzheng.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Telegram @freecodes /?ed=2560
-    headers:
-      Host: vless.muzheng.top
 - name: VLESS-WS-TLS-🇺🇸(US)-104.18.47.79
   type: vless
   server: 104.18.47.79
@@ -427,6 +352,67 @@ proxies:
     path: /bbs?ed=2048fp=chrome
     headers:
       Host: xv6.jpmj.dpdns.org
+- name: VLESS-WS-TLS-🇺🇸(US)-50.62.194.253
+  type: vless
+  server: 50.62.194.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
+  network: ws
+  tls: true
+  servername: vless.muzheng.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+    headers:
+      Host: vless.muzheng.top
+- name: VLESS-WS-TLS-🇳🇱(NL)-172.66.40.127
+  type: vless
+  server: 172.66.40.127
+  port: 443
+  uuid: 7d18fc67-1994-4f7e-8ff8-c024223f33bb
+  network: ws
+  tls: true
+  servername: revcloud.migacpi.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /cbde4058-6b81-432b-8689-dd7ce10e479c
+    headers:
+      Host: revcloud.migacpi.org
+- name: VLESS-WS-TLS-🇺🇸(US)-104.17.184.235
+  type: vless
+  server: 104.17.184.235
+  port: 443
+  uuid: 897a4bec-26b8-11e8-94be-00505695472c
+  network: ws
+  tls: true
+  servername: xv6.jpmj.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /bbs?ed=2048security=tls
+    headers:
+      Host: xv6.jpmj.dpdns.org
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-80.253.251.120
+  type: vless
+  server: 80.253.251.120
+  port: 10855
+  uuid: 733872e5-216c-43d9-857a-439c785b732b
+  network: tcp
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-5.10.214.253_1
+  type: vless
+  server: 5.10.214.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
+  network: ws
+  tls: true
+  servername: vless.muzheng.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram @freecodes /?ed=2560fp=chrome
+    headers:
+      Host: vless.muzheng.top
 - name: VLESS-WS-TLS-🇺🇸(US)-104.17.185.246
   type: vless
   server: 104.17.185.246
@@ -440,230 +426,55 @@ proxies:
     path: /bbs?ed=2048fp=chrome
     headers:
       Host: xv6.jpmj.dpdns.org
-- name: VLESS-WS-TLS-🇺🇸(US)-185.148.104.253
+- name: VLESS-WS-TLS-🇺🇸(US)-166.62.115.253
   type: vless
-  server: 185.148.104.253
+  server: 166.62.115.253
   port: 2096
-  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
-  network: ws
-  tls: true
-  servername: vless.muzheng.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /X@节点狂魔/
-    headers:
-      Host: vless.muzheng.top
-- name: VLESS-TCP-REALITY-🇯🇵(JP)-aws-linkjp33.eovay.com
-  type: vless
-  server: aws-linkjp33.eovay.com
-  port: 40033
-  uuid: 6c0472bc-82df-449e-90bd-2f91c6a46402
-  network: tcp
-  tls: true
-  servername: gghouse.co.jp
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇯🇵(JP)-109.123.229.205
-  type: vless
-  server: 109.123.229.205
-  port: 443
-  uuid: 2cf21f7f-9f29-44b0-893d-08a6e2e09704
-  network: tcp
-  tls: true
-  servername: dash.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-usa32.clearorbitllc.com
-  type: vless
-  server: usa32.clearorbitllc.com
-  port: 443
-  uuid: 9daf8f3e-089b-4989-9502-dd3d727edb6c
-  network: tcp
-  tls: true
-  servername: usa32.clearorbitllc.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-193.46.81.151
-  type: vless
-  server: 193.46.81.151
-  port: 50853
-  uuid: 7f4c0be2-73ce-4620-b502-8bbd6ba9b6ef
-  network: tcp
-  tls: true
-  servername: miro.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇰🇷(KR)-aws-linkkr11.eovay.com
-  type: vless
-  server: aws-linkkr11.eovay.com
-  port: 50011
-  uuid: 6c0472bc-82df-449e-90bd-2f91c6a46402
-  network: tcp
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-80.253.251.120
-  type: vless
-  server: 80.253.251.120
-  port: 10855
-  uuid: 733872e5-216c-43d9-857a-439c785b732b
-  network: tcp
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: 73a4456a-0442-4550-8b4f-c719871a4eeb
-  network: ws
-  tls: true
-  servername: 011.electrOCELlCO-CF-011.WorKERS.dEV
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoibWRiMjNWaUwxNHVWIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMjE3LjE0Mi4yMzYuOTMiXX0=?ed=2560
-    headers:
-      Host: 011.electrocellco-cf-011.workers.dev
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-64.188.70.0
-  type: vless
-  server: 64.188.70.0
-  port: 443
-  uuid: cd79807f-bcef-46b8-93b6-229676a0c1a0
-  network: tcp
-  tls: true
-  servername: google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-5.189.190.60
-  type: vless
-  server: 5.189.190.60
-  port: 34704
-  uuid: 69394f3f-e84c-44b3-96ae-46000130cf2b
-  network: tcp
-  tls: true
-  servername: ava.game.naver.com.lsvly.qzz.io
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39
-  type: vless
-  server: 188.253.26.39
-  port: 442
-  uuid: nothing_88147cqsru
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇫🇷(FR)-51.44.233.53
-  type: vless
-  server: 51.44.233.53
-  port: 22224
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  network: ws
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  ws-opts:
-    path: /telegram-channel-vlessconfig
-    headers:
-      Host: 51.44.233.53
-- name: VLESS-WS-TLS-🇩🇪(DE)-3.122.138.117
-  type: vless
-  server: 3.122.138.117
-  port: 22224
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  network: ws
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  ws-opts:
-    path: /telegram-channel-vlessconfig
-    headers:
-      Host: 3.122.138.117
-- name: VLESS-WS-TLS-🇺🇸(US)-172.67.163.76
-  type: vless
-  server: 172.67.163.76
-  port: 443
-  uuid: b74bbaca-8bbe-41e1-9af9-18d467836282
-  network: ws
-  tls: true
-  servername: 017.electrocellco-cf-017.workers.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoibnhUbllUVXY1OWIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
-    headers:
-      Host: 017.electrocellco-cf-017.workers.dev
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-82.115.6.101
-  type: vless
-  server: 82.115.6.101
-  port: 14915
-  uuid: 3d11ab83-5a26-4bde-9883-ec490396703f
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-172.105.209.25
-  type: vless
-  server: 172.105.209.25
-  port: 443
   uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   network: ws
   tls: true
   servername: gaosir.unfeeling.sbs
   client-fingerprint: chrome
   ws-opts:
-    path: /Telegram@freecodes/
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
     headers:
       Host: gaosir.unfeeling.sbs
-- name: VLESS-WS-TLS-🇺🇸(US)-188.114.96.7
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-de.gpairnetwork369.de
   type: vless
-  server: 188.114.96.7
-  port: 443
-  uuid: 5050e255-4919-4d7f-96c8-30b13d06fdf6
-  network: ws
-  tls: true
-  servername: 1mCijea74uYkCcQ2mZrX-MNGHduCyF0B.DAMav48375.wORKErs.DeV
-  client-fingerprint: chrome
-  ws-opts:
-    path: /nXWz3i2XoxHvOGI4?ed
-    headers:
-      Host: 1mCijea74uYkCcQ2mZrX-MNGHduCyF0B.DAMav48375.wORKErs.DeV
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-62.60.148.21
-  type: vless
-  server: 62.60.148.21
-  port: 443
-  uuid: 39e5cc2f-1294-4a42-bb58-306a8be785e1
+  server: de.gpairnetwork369.de
+  port: 3020
+  uuid: f6b74f9a-0ac7-43f0-a4cc-5cee6f1eaf7f
   network: tcp
   tls: true
-  servername: st.ozone.ru
+  servername: www.refersion.com
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_1
+- name: VLESS-WS-TLS-🇺🇸(US)-104.16.250.22
   type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: 82de262c-cd5e-402f-a709-f6979fc7c93e
+  server: 104.16.250.22
+  port: 2096
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   network: ws
   tls: true
-  servername: fragrant-star-ebf2.daheg47484.workers.dev
+  servername: gaosir.unfeeling.sbs
   client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2048
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
     headers:
-      Host: fragrant-star-ebf2.daheg47484.workers.dev
-- name: VLESS-WS-TLS-🇺🇸(US)-104.21.32.78
+      Host: gaosir.unfeeling.sbs
+- name: VLESS-WS-TLS-🇺🇸(US)-wangcai198.cloudflare.182682.xyz
   type: vless
-  server: 104.21.32.78
-  port: 8443
-  uuid: 1ff4b4b9-af9f-4708-ab43-97dcc832e748
+  server: wangcai198.cloudflare.182682.xyz
+  port: 2096
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   network: ws
   tls: true
-  servername: 008.ElectRocellcO-Cf-008.wORkErs.dEv
+  servername: gaosir.unfeeling.sbs
   client-fingerprint: chrome
   ws-opts:
-    path: /eyJqdW5rIjoiZ25vNGk3cHRZIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiNS4zNS43MC4xNTUiLCIxNDguMjUxLjE1Ny4xMjciLCIyLjU5LjE4My4xOTgiXX0=?ed=2560
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
     headers:
-      Host: 008.ElectRocellcO-Cf-008.wORkErs.dEv
-- name: VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_2
+      Host: gaosir.unfeeling.sbs
+- name: VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net
   type: vless
   server: www.speedtest.net
   port: 443
@@ -676,94 +487,90 @@ proxies:
     path: /eyJqdW5rIjoidlRpR1pRejlqWGUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
     headers:
       Host: 002.electrocellco-cf-002.workers.dev
-- name: VLESS-TCP-REALITY-🇱🇻(LV)-94.158.219.186
+- name: VLESS-WS-TLS-🇺🇸(US)-172.66.45.4
   type: vless
-  server: 94.158.219.186
+  server: 172.66.45.4
+  port: 2087
+  uuid: 3e9d9ee2-ba23-4269-8340-c8c8ac1455cb
+  network: ws
+  tls: true
+  servername: WeekNDJOoN.PAgES.DEv
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: WeekNDJOoN.PAgES.DEv
+- name: VLESS-WS-TLS-🇺🇸(US)-104.21.16.1
+  type: vless
+  server: 104.21.16.1
   port: 443
-  uuid: 863a162f-4b57-4269-8b99-fdad2247f6f2
+  uuid: cb796646-d528-4b96-9984-86dbceed95ad
+  network: ws
+  tls: true
+  servername: DD3A34A9.bPB1-1TS.PaGeS.DEV
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: DD3A34A9.bPB1-1TS.PaGeS.DEV
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-82.115.6.101
+  type: vless
+  server: 82.115.6.101
+  port: 14915
+  uuid: 3d11ab83-5a26-4bde-9883-ec490396703f
   network: tcp
   tls: true
-  servername: yastatic.net
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇪🇸(ES)-tunnyl.ru
+  type: vless
+  server: tunnyl.ru
+  port: 443
+  uuid: b33cbc4a-3bf9-4fd4-a1b0-0b046fce0ec7
+  network: tcp
+  tls: true
+  servername: google.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-172.67.184.105
+- name: VLESS-WS-TLS-🇺🇸(US)-159.246.55.253
   type: vless
-  server: 172.67.184.105
-  port: 8443
-  uuid: 1ff4b4b9-af9f-4708-ab43-97dcc832e748
-  network: ws
-  tls: true
-  servername: 008.eleCtroCellco-Cf-008.woRkers.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoiMGp6UmU2WUc3IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiNS4zNS43MC4xNTUiLCIxNDguMjUxLjE1Ny4xMjciLCIyLjU5LjE4My4xOTgiXX0=?ed=2560
-    headers:
-      Host: 008.eleCtroCellco-Cf-008.woRkers.dev
-- name: VLESS-WS-TLS-🇺🇸(US)-104.21.34.170
-  type: vless
-  server: 104.21.34.170
-  port: 443
-  uuid: b74bbaca-8bbe-41e1-9af9-18d467836282
-  network: ws
-  tls: true
-  servername: 017.electrocellco-cf-017.workers.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoibnhUbllUVXY1OWIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
-    headers:
-      Host: 017.electrocellco-cf-017.workers.dev
-- name: VLESS-WS-TLS-🇺🇸(US)-139.162.106.22
-  type: vless
-  server: 139.162.106.22
-  port: 443
+  server: 159.246.55.253
+  port: 2096
   uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   network: ws
   tls: true
   servername: gaosir.unfeeling.sbs
   client-fingerprint: chrome
   ws-opts:
-    path: /Telegram@freecodes/
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2560
     headers:
       Host: gaosir.unfeeling.sbs
-- name: VLESS-WS-TLS-🇺🇸(US)-104.16.244.190
+- name: VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_1
   type: vless
-  server: 104.16.244.190
-  port: 443
-  uuid: cc913f3d-0635-47f1-9999-493385ad0fd2
+  server: www.speedtest.net
+  port: 2096
+  uuid: 18bb1b1d-16a2-4ba7-ab27-9720c9f4a875
   network: ws
   tls: true
-  servername: ong.wush1024.ggff.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: ong.wush1024.ggff.net
-- name: VLESS-WS-TLS-🇺🇸(US)-017.electrocellco-cf-017.workers.dev
-  type: vless
-  server: 017.electrocellco-cf-017.workers.dev
-  port: 443
-  uuid: b74bbaca-8bbe-41e1-9af9-18d467836282
-  network: ws
-  tls: true
-  servername: 017.EleCTRoCelLCo-CF-017.Workers.dEv
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoibnhUbllUVXY1OWIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
-    headers:
-      Host: 017.EleCTRoCelLCo-CF-017.Workers.dEv
-- name: VLESS-WS-TLS-🇩🇪(DE)-dontgetbanned.itskills180d.top
-  type: vless
-  server: dontgetbanned.itskills180d.top
-  port: 8443
-  uuid: 1cb3b1fe-b79c-49a2-a4bf-c24bc882925e
-  network: ws
-  tls: true
-  servername: dontgetbanned.itskills180d.top
+  servername: jh2msivc7ik13k3brrox9pa4n0od1u06.pages.dev
   client-fingerprint: chrome
   ws-opts:
     path: /
     headers:
-      Host: dontgetbanned.itskills180d.top
+      Host: jh2msivc7ik13k3brrox9pa4n0od1u06.pages.dev
+- name: VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_2
+  type: vless
+  server: www.speedtest.net
+  port: 8443
+  uuid: b1addf1e-6c1d-4410-bfa5-cf26328319d9
+  network: ws
+  tls: true
+  servername: 0HvsNO270bvRxG6EKbY8uMsQn-6941Fa.paGeS.dEV
+  client-fingerprint: chrome
+  ws-opts:
+    path: /CmxkS1704Zcx8p3M?ed=2560fp=randomized
+    headers:
+      Host: 0HvsNO270bvRxG6EKbY8uMsQn-6941Fa.paGeS.dEV
 - name: VLESS-WS-TLS-🇩🇪(DE)-77.37.33.39
   type: vless
   server: 77.37.33.39
@@ -777,6 +584,124 @@ proxies:
     path: /
     headers:
       Host: anjir.soft98-ir-download-ir-cdn-ir-irancell-ir-mci-ir.site
+- name: VLESS-GRPC-REALITY-🇩🇪(DE)-kkhsaxnfdyaks.bayutlzoon.lat
+  type: vless
+  server: kkhsaxnfdyaks.bayutlzoon.lat
+  port: 2052
+  uuid: 2f60be6f-be0c-48b4-9772-b56f42b51ba1
+  network: grpc
+  tls: true
+  servername: web.eitaa.com
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-188.114.96.11
+  type: vless
+  server: 188.114.96.11
+  port: 443
+  uuid: b9b8cf4c-29a3-4288-9c6c-8811dc37beec
+  network: ws
+  tls: true
+  servername: XLz767V2RAY.Pages.deV
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ixjnwid2al1nz6mt?ed=2560
+    headers:
+      Host: XLz767V2RAY.Pages.deV
+- name: VLESS-WS-TLS-🌐(XX)-172.67.201.140
+  type: vless
+  server: 172.67.201.140
+  port: 443
+  uuid: 7d18fc67-1994-4f7e-8ff8-c024223f33bb
+  network: ws
+  tls: true
+  servername: revcloud.migacpi.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /cbde4058-6b81-432b-8689-dd7ce10e479c
+    headers:
+      Host: revcloud.migacpi.org
+- name: VLESS-WS-TLS-🇩🇪(DE)-dontgetbanned.itskills180d.top
+  type: vless
+  server: dontgetbanned.itskills180d.top
+  port: 8443
+  uuid: 1cb3b1fe-b79c-49a2-a4bf-c24bc882925e
+  network: ws
+  tls: true
+  servername: dontgetbanned.itskills180d.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: dontgetbanned.itskills180d.top
+- name: VLESS-GRPC-REALITY-🇩🇪(DE)-7ygb3r6bw.royalcontl5h1i.lat
+  type: vless
+  server: 7ygb3r6bw.royalcontl5h1i.lat
+  port: 2052
+  uuid: 2f60be6f-be0c-48b4-9772-b56f42b51ba1
+  network: grpc
+  tls: true
+  servername: web.eitaa.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39
+  type: vless
+  server: 188.253.26.39
+  port: 442
+  uuid: nothing_88147cqsru
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-172.66.45.4_1
+  type: vless
+  server: 172.66.45.4
+  port: 2087
+  uuid: 3e9d9ee2-ba23-4269-8340-c8c8ac1455cb
+  network: ws
+  tls: true
+  servername: WeekNDJOoN.PAgES.DEv
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Z0R9Nb1Hgd7OEULT?ed=2560fp=randomized
+    headers:
+      Host: WeekNDJOoN.PAgES.DEv
+- name: VLESS-TCP-TLS-🇫🇮(FI)-65.108.1.249
+  type: vless
+  server: 65.108.1.249
+  port: 443
+  uuid: 14e4cf26-44e1-4888-ba87-e5e6ba3a6b0f
+  network: tcp
+  tls: true
+  servername: cdn.chandplus.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇹🇷(TR)-77.83.245.50
+  type: vless
+  server: 77.83.245.50
+  port: 45365
+  uuid: a4833963-f4b7-48e4-9572-5c83261eea82
+  network: tcp
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-5.253.189.141
+  type: vless
+  server: 5.253.189.141
+  port: 1443
+  uuid: b659cece-d41e-4695-da22-c5fcee342020
+  network: tcp
+  tls: true
+  servername: dropbox.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇨🇦(CA)-132.145.99.18
+  type: vless
+  server: 132.145.99.18
+  port: 40106
+  uuid: dcdd09ad-4519-46f7-8107-4c4290a9b2a3
+  network: tcp
+  tls: true
+  servername: apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_3
   type: vless
   server: www.speedtest.net
@@ -790,103 +715,14 @@ proxies:
     path: /99uqzwxlqgtzfinu?ed=2560
     headers:
       Host: azadnet.comelej425.workers.dev
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-5.253.189.141
+- name: VLESS-GRPC-REALITY-🇫🇮(FI)-65.108.253.253
   type: vless
-  server: 5.253.189.141
-  port: 1443
-  uuid: b659cece-d41e-4695-da22-c5fcee342020
-  network: tcp
-  tls: true
-  servername: dropbox.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-1password.com
-  type: vless
-  server: 1password.com
-  port: 443
-  uuid: d2d0f796-edb0-427a-af32-ae360679f9e7
-  network: ws
-  tls: true
-  servername: rAyAn-007.fOtOn.dPdNs.oRg
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.foton.dpdns.org
-- name: VLESS-GRPC-REALITY-🇩🇪(DE)-62.60.247.164
-  type: vless
-  server: 62.60.247.164
-  port: 28485
-  uuid: 410e4495-6b32-4a0b-aaaf-ad4e6e5b307b
+  server: 65.108.253.253
+  port: 100
+  uuid: e78c4740-48b9-431e-8894-a99925971950
   network: grpc
   tls: true
-  servername: tgju.org
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇫🇷(FR)-35.181.85.159
-  type: vless
-  server: 35.181.85.159
-  port: 22224
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  network: ws
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  ws-opts:
-    path: /telegram-channel-vlessconfig
-    headers:
-      Host: 35.181.85.159
-- name: VLESS-WS-TLS-🇯🇵(JP)-139.162.108.5
-  type: vless
-  server: 139.162.108.5
-  port: 443
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  network: ws
-  tls: true
-  servername: gaosir.unfeeling.sbs
-  client-fingerprint: chrome
-  ws-opts:
-    path: telegram @freecodes /?ed=2560
-    headers:
-      Host: gaosir.unfeeling.sbs
-- name: VLESS-TCP-REALITY-🇹🇷(TR)-77.83.245.50
-  type: vless
-  server: 77.83.245.50
-  port: 45365
-  uuid: a4833963-f4b7-48e4-9572-5c83261eea82
-  network: tcp
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_4
-  type: vless
-  server: www.speedtest.net
-  port: 2096
-  uuid: 18bb1b1d-16a2-4ba7-ab27-9720c9f4a875
-  network: ws
-  tls: true
-  servername: jh2msivc7ik13k3brrox9pa4n0od1u06.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: jh2msivc7ik13k3brrox9pa4n0od1u06.pages.dev
-- name: VLESS-TCP-TLS-🇫🇮(FI)-65.108.231.185
-  type: vless
-  server: 65.108.231.185
-  port: 443
-  uuid: 440766d1-858f-4719-84f5-c2de6f6227ba
-  network: tcp
-  tls: true
-  servername: local.rogsoftwaregroup.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-TLS-🇫🇮(FI)-65.108.1.249
-  type: vless
-  server: 65.108.1.249
-  port: 443
-  uuid: 14e4cf26-44e1-4888-ba87-e5e6ba3a6b0f
-  network: tcp
-  tls: true
-  servername: cdn.chandplus.com
+  servername: google.com
   client-fingerprint: chrome
 - name: VLESS-TCP-REALITY-🇫🇮(FI)-85.239.149.76
   type: vless
@@ -898,16 +734,91 @@ proxies:
   servername: st.ozone.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇸🇪(SE)-62.60.149.108
+- name: VLESS-WS-TLS-🇺🇸(US)-5.10.245.253
   type: vless
-  server: 62.60.149.108
-  port: 443
-  uuid: eea14931-e72a-47c8-bc00-68069729e91a
+  server: 5.10.245.253
+  port: 2096
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  network: ws
+  tls: true
+  servername: gaosir.unfeeling.sbs
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+    headers:
+      Host: gaosir.unfeeling.sbs
+- name: VLESS-TCP-REALITY-🇯🇵(JP)-aws-linkjp33.eovay.com
+  type: vless
+  server: aws-linkjp33.eovay.com
+  port: 40033
+  uuid: 6c0472bc-82df-449e-90bd-2f91c6a46402
   network: tcp
   tls: true
-  servername: st.ozone.ru
+  servername: gghouse.co.jp
   client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇫🇷(FR)-digitalocean.com
+  type: vless
+  server: digitalocean.com
+  port: 443
+  uuid: 4710b85a-66e6-411b-b492-0e0f7366ad21
+  network: ws
+  tls: true
+  servername: rAyAn-cOnFiG-fr-2.pArIsA.DpDnS.OrG
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: rAyAn-cOnFiG-fr-2.pArIsA.DpDnS.OrG
+- name: VLESS-WS-TLS-🇺🇸(US)-190.93.245.253
+  type: vless
+  server: 190.93.245.253
+  port: 2096
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  network: ws
+  tls: true
+  servername: gaosir.unfeeling.sbs
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+    headers:
+      Host: gaosir.unfeeling.sbs
+- name: VLESS-TCP-REALITY-🇯🇵(JP)-109.123.229.205
+  type: vless
+  server: 109.123.229.205
+  port: 443
+  uuid: 2cf21f7f-9f29-44b0-893d-08a6e2e09704
+  network: tcp
+  tls: true
+  servername: dash.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_4
+  type: vless
+  server: www.speedtest.net
+  port: 443
+  uuid: 73a4456a-0442-4550-8b4f-c719871a4eeb
+  network: ws
+  tls: true
+  servername: 011.electrOCELlCO-CF-011.WorKERS.dEV
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoibWRiMjNWaUwxNHVWIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMjE3LjE0Mi4yMzYuOTMiXX0=?ed=2560
+    headers:
+      Host: 011.electrocellco-cf-011.workers.dev
+- name: VLESS-WS-TLS-🇫🇷(FR)-www.visa.com.br
+  type: vless
+  server: www.visa.com.br
+  port: 443
+  uuid: 4710b85a-66e6-411b-b492-0e0f7366ad21
+  network: ws
+  tls: true
+  servername: rAyAn-cOnFiG-fr-2.pArSa.dPdNs.oRg
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: rAyAn-cOnFiG-fr-2.pArSa.dPdNs.oRg
 - name: VLESS-TCP-TLS-🇫🇮(FI)-95.217.206.161
   type: vless
   server: 95.217.206.161
@@ -917,68 +828,52 @@ proxies:
   tls: true
   servername: api.chandplus.com
   client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_5
+- name: VLESS-TCP-REALITY-🇰🇷(KR)-aws-linkkr11.eovay.com
   type: vless
-  server: www.speedtest.net
-  port: 8443
-  uuid: b1addf1e-6c1d-4410-bfa5-cf26328319d9
-  network: ws
-  tls: true
-  servername: 0HvsNO270bvRxG6EKbY8uMsQn-6941Fa.paGeS.dEV
-  client-fingerprint: chrome
-  ws-opts:
-    path: /CmxkS1704Zcx8p3M?ed=2560fp=randomized
-    headers:
-      Host: 0HvsNO270bvRxG6EKbY8uMsQn-6941Fa.paGeS.dEV
-- name: VLESS-WS-TLS-🇺🇸(US)-188.114.97.11
-  type: vless
-  server: 188.114.97.11
-  port: 2087
-  uuid: b9b8cf4c-29a3-4288-9c6c-8811dc37beec
-  network: ws
-  tls: true
-  servername: Xlz767V2Ray.PAGEs.DEv
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: Xlz767V2Ray.PAGEs.DEv
-- name: VLESS-WS-TLS-🇺🇸(US)-104.17.147.22
-  type: vless
-  server: 104.17.147.22
-  port: 443
-  uuid: 81caa837-c213-4731-a02e-662380ad1e2f
-  network: ws
-  tls: true
-  servername: cxrolvpn.freev2-edb.workers.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /VeJJ5MwyXaAbhkV8?ed=2560
-    headers:
-      Host: cxrolvpn.freev2-edb.workers.dev
-- name: VLESS-WS-TLS-🇺🇸(US)-210.61.97.241
-  type: vless
-  server: 210.61.97.241
-  port: 81
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  network: ws
-  tls: true
-  servername: gaosir.unfeeling.sbs
-  client-fingerprint: chrome
-  ws-opts:
-    path: Telegram@freecodes/?ed=2560
-    headers:
-      Host: gaosir.unfeeling.sbs
-- name: VLESS-TCP-TLS-🇫🇮(FI)-cdn.chandplus.com
-  type: vless
-  server: cdn.chandplus.com
-  port: 443
-  uuid: 14e4cf26-44e1-4888-ba87-e5e6ba3a6b0f
+  server: aws-linkkr11.eovay.com
+  port: 50011
+  uuid: 6c0472bc-82df-449e-90bd-2f91c6a46402
   network: tcp
   tls: true
-  servername: cdn.chandplus.com
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: VLESS-TCP-TLS-🇫🇮(FI)-65.109.145.54
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-TLS-🇫🇮(FI)-65.108.231.185
+  type: vless
+  server: 65.108.231.185
+  port: 443
+  uuid: 440766d1-858f-4719-84f5-c2de6f6227ba
+  network: tcp
+  tls: true
+  servername: local.rogsoftwaregroup.com
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-104.18.89.151
+  type: vless
+  server: 104.18.89.151
+  port: 443
+  uuid: 897a4bec-26b8-11e8-94be-00505695472c
+  network: ws
+  tls: true
+  servername: xv6.jpmj.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /bbs?ed=2048security=tls
+    headers:
+      Host: xv6.jpmj.dpdns.org
+- name: VLESS-WS-TLS-🇩🇪(DE)-63.176.78.5
+  type: vless
+  server: 63.176.78.5
+  port: 22224
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  network: ws
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  ws-opts:
+    path: /telegram-channel-vlessconfig
+    headers:
+      Host: 63.176.78.5
+- name: VLESS-TCP-TLS-🌐(XX)-65.109.145.54
   type: vless
   server: 65.109.145.54
   port: 443
@@ -987,53 +882,9 @@ proxies:
   tls: true
   servername: dedic.app-browser.org
   client-fingerprint: chrome
-- name: VLESS-TCP-TLS-🇫🇮(FI)-dedic.app-browser.org
+- name: VLESS-WS-TLS-🇯🇵(JP)-172.105.209.25
   type: vless
-  server: dedic.app-browser.org
-  port: 443
-  uuid: 8f82acbe-f328-471a-8000-fbea349e6ce0
-  network: tcp
-  tls: true
-  servername: dedic.app-browser.org
-  client-fingerprint: chrome
-- name: VLESS-GRPC-REALITY-🇫🇮(FI)-65.108.253.253
-  type: vless
-  server: 65.108.253.253
-  port: 100
-  uuid: e78c4740-48b9-431e-8894-a99925971950
-  network: grpc
-  tls: true
-  servername: google.com
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-usa.visa.com
-  type: vless
-  server: usa.visa.com
-  port: 443
-  uuid: a114d067-b900-4f60-87a5-50d4d63972b8
-  network: ws
-  tls: true
-  servername: PaRiSA-CC5Zk0.paRISa-44c.woRKeRs.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: PaRiSA-CC5Zk0.paRISa-44c.woRKeRs.dev
-- name: VLESS-WS-TLS-🇸🇪(SE)-ipe3.alighan.ir
-  type: vless
-  server: ipe3.alighan.ir
-  port: 8443
-  uuid: af9fdedf-dca8-405d-9aa4-98ebcc99e84b
-  network: ws
-  tls: true
-  servername: ipe4.alighan.ir
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: s.alighan.ir
-- name: VLESS-WS-TLS-🇺🇸(US)-155.248.181.189
-  type: vless
-  server: 155.248.181.189
+  server: 172.105.209.25
   port: 443
   uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   network: ws
@@ -1041,229 +892,87 @@ proxies:
   servername: gaosir.unfeeling.sbs
   client-fingerprint: chrome
   ws-opts:
-    path: /x @节点狂魔 /
-    headers:
-      Host: gaosir.unfeeling.sbs
-- name: VLESS-WS-TLS-🇺🇸(US)-36.50.90.241
-  type: vless
-  server: 36.50.90.241
-  port: 35951
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  network: ws
-  tls: true
-  servername: gaosir.unfeeling.sbs
-  client-fingerprint: chrome
-  ws-opts:
-    path: Telegram@freecodes/?ed=2560
-    headers:
-      Host: gaosir.unfeeling.sbs
-- name: VLESS-WS-TLS-🇺🇸(US)-bless.network
-  type: vless
-  server: bless.network
-  port: 443
-  uuid: c173f416-6c00-4b5b-bfec-d21f62227c1a
-  network: ws
-  tls: true
-  servername: hosseinvpn-15x.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /7q9pdripv9fvek59?ed=2560
-    headers:
-      Host: hosseinvpn-15x.pages.dev
-- name: VLESS-WS-TLS-🇺🇸(US)-130.162.130.105
-  type: vless
-  server: 130.162.130.105
-  port: 443
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  network: ws
-  tls: true
-  servername: gaosir.unfeeling.sbs
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Telegram@freecodes/?ed=2560
-    headers:
-      Host: gaosir.unfeeling.sbs
-- name: VLESS-TCP-REALITY-🇦🇲(AM)-77.91.68.70
-  type: vless
-  server: 77.91.68.70
-  port: 55983
-  uuid: f667a096-5231-4cfb-8759-92bb32473139
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-TLS-🇫🇷(FR)-147.79.100.54
-  type: vless
-  server: 147.79.100.54
-  port: 37096
-  uuid: c30ec165-fcb4-47af-8e68-70d88a3b2910
-  network: tcp
-  tls: true
-  servername: 147.79.100.54
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-109.120.150.205
-  type: vless
-  server: 109.120.150.205
-  port: 443
-  uuid: 0ba6ab83-ed33-4544-98b0-dcacb52799cd
-  network: tcp
-  tls: true
-  servername: ad.mail.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-194.36.179.5
-  type: vless
-  server: 194.36.179.5
-  port: 2053
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  network: ws
-  tls: true
-  servername: gaosir.unfeeling.sbs
-  client-fingerprint: chrome
-  ws-opts:
-    path: /x @节点狂魔 /
-    headers:
-      Host: gaosir.unfeeling.sbs
-- name: VLESS-WS-TLS-🇺🇸(US)-129.150.36.188
-  type: vless
-  server: 129.150.36.188
-  port: 53435
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  network: ws
-  tls: true
-  servername: gaosir.unfeeling.sbs
-  client-fingerprint: chrome
-  ws-opts:
-    path: /freecodes/
-    headers:
-      Host: gaosir.unfeeling.sbs
-- name: VLESS-WS-TLS-🇺🇸(US)-211.229.77.184
-  type: vless
-  server: 211.229.77.184
-  port: 27443
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  network: ws
-  tls: true
-  servername: gaosir.unfeeling.sbs
-  client-fingerprint: chrome
-  ws-opts:
-    path: X@节点狂魔/?ed=2560
-    headers:
-      Host: gaosir.unfeeling.sbs
-- name: VLESS-WS-TLS-🇺🇸(US)-91.192.81.154
-  type: vless
-  server: 91.192.81.154
-  port: 2053
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  network: ws
-  tls: true
-  servername: gaosir.unfeeling.sbs
-  client-fingerprint: chrome
-  ws-opts:
-    path: /x @节点狂魔 /
+    path: /Telegram@freecodes/
     headers:
       Host: gaosir.unfeeling.sbs
 proxy-groups:
 - name: ⚡ Auto-Select-VLESS
   type: url-test
   proxies: &id001
-  - VLESS-TCP-REALITY-🇺🇸(US)-148.135.83.173
-  - VLESS-WS-TLS-🇺🇸(US)-72.167.25.253
-  - VLESS-WS-TLS-🇺🇸(US)-5.10.245.253
-  - VLESS-WS-TLS-🇺🇸(US)-194.59.5.253
-  - VLESS-WS-TLS-🇺🇸(US)-159.112.235.253
-  - VLESS-WS-TLS-🇺🇸(US)-104.17.184.235
-  - VLESS-WS-TLS-🇺🇸(US)-104.18.89.151
-  - VLESS-WS-TLS-🇺🇸(US)-104.18.85.193
-  - VLESS-WS-TLS-🇺🇸(US)-104.17.190.119
-  - VLESS-WS-TLS-🇺🇸(US)-172.64.152.253
-  - VLESS-WS-TLS-🇺🇸(US)-104.18.80.62
-  - VLESS-WS-TLS-🇺🇸(US)-104.17.190.137
-  - VLESS-WS-TLS-🇺🇸(US)-160.79.105.253
   - VLESS-TCP-REALITY-🇺🇸(US)-aws-linkus11.eovay.com
-  - VLESS-WS-TLS-🇺🇸(US)-198.12.145.253
-  - VLESS-WS-TLS-🇺🇸(US)-166.62.115.253
-  - VLESS-WS-TLS-🇺🇸(US)-190.93.245.253
-  - VLESS-WS-TLS-🇺🇸(US)-104.18.185.26
-  - VLESS-WS-TLS-🇺🇸(US)-188.42.145.253
-  - VLESS-WS-TLS-🇺🇸(US)-104.16.250.22
   - VLESS-TCP-REALITY-🇺🇸(US)-77.110.109.72
   - VLESS-TCP-REALITY-🇨🇦(CA)-aws-linkca22.eovay.com
-  - VLESS-WS-TLS-🇺🇸(US)-wangcai198.cloudflare.182682.xyz
-  - VLESS-WS-TLS-🇺🇸(US)-185.18.184.253
-  - VLESS-WS-TLS-🇺🇸(US)-198.12.144.253
-  - VLESS-WS-TLS-🇺🇸(US)-167.68.11.253
-  - VLESS-WS-TLS-🇺🇸(US)-194.152.44.253
-  - VLESS-WS-TLS-🇺🇸(US)-45.192.224.253
-  - VLESS-WS-TLS-🇺🇸(US)-5.10.214.253
-  - VLESS-TCP-REALITY-🇺🇸(US)-62.60.177.167
-  - VLESS-WS-TLS-🇺🇸(US)-167.68.4.253
-  - VLESS-WS-TLS-🇺🇸(US)-194.152.44.253_1
-  - VLESS-WS-TLS-🇺🇸(US)-104.18.47.79
-  - VLESS-WS-TLS-🇺🇸(US)-104.17.185.246
+  - VLESS-WS-TLS-🇺🇸(US)-104.18.185.26
+  - VLESS-WS-TLS-🇺🇸(US)-194.59.5.253
   - VLESS-WS-TLS-🇺🇸(US)-185.148.104.253
-  - VLESS-TCP-REALITY-🇯🇵(JP)-aws-linkjp33.eovay.com
-  - VLESS-TCP-REALITY-🇯🇵(JP)-109.123.229.205
-  - VLESS-TCP-REALITY-🇺🇸(US)-usa32.clearorbitllc.com
-  - VLESS-TCP-REALITY-🇬🇧(GB)-193.46.81.151
-  - VLESS-TCP-REALITY-🇰🇷(KR)-aws-linkkr11.eovay.com
+  - VLESS-TCP-REALITY-🇺🇸(US)-148.135.83.173
+  - VLESS-WS-TLS-🇺🇸(US)-194.152.44.253
+  - VLESS-WS-TLS-🇺🇸(US)-160.79.105.253
+  - VLESS-WS-TLS-🇺🇸(US)-167.68.4.253
+  - VLESS-WS-TLS-🇺🇸(US)-185.251.81.253
+  - VLESS-WS-TLS-🇺🇸(US)-167.68.4.253_1
+  - VLESS-WS-TLS-🇺🇸(US)-45.192.224.253
+  - VLESS-WS-TLS-🇺🇸(US)-104.18.80.62
+  - VLESS-WS-TLS-🇺🇸(US)-185.18.184.253
+  - VLESS-WS-TLS-🇺🇸(US)-194.152.44.253_1
+  - VLESS-WS-TLS-🇺🇸(US)-198.71.191.253
+  - VLESS-WS-TLS-🇺🇸(US)-5.10.214.253
+  - VLESS-WS-TLS-🇺🇸(US)-104.18.85.193
+  - VLESS-WS-TLS-🇺🇸(US)-45.192.224.253_1
+  - VLESS-WS-TLS-🇺🇸(US)-45.192.224.253_2
+  - VLESS-WS-TLS-🇺🇸(US)-185.18.184.253_1
+  - VLESS-WS-TLS-🇺🇸(US)-45.194.11.253
+  - VLESS-WS-TLS-🇺🇸(US)-104.17.190.137
+  - VLESS-WS-TLS-🇺🇸(US)-104.17.190.119
+  - VLESS-WS-TLS-🇺🇸(US)-72.167.25.253
+  - VLESS-WS-TLS-🇺🇸(US)-104.18.47.79
+  - VLESS-WS-TLS-🇺🇸(US)-50.62.194.253
+  - VLESS-WS-TLS-🇳🇱(NL)-172.66.40.127
+  - VLESS-WS-TLS-🇺🇸(US)-104.17.184.235
   - VLESS-TCP-REALITY-🇩🇪(DE)-80.253.251.120
+  - VLESS-WS-TLS-🇺🇸(US)-5.10.214.253_1
+  - VLESS-WS-TLS-🇺🇸(US)-104.17.185.246
+  - VLESS-WS-TLS-🇺🇸(US)-166.62.115.253
+  - VLESS-TCP-REALITY-🇩🇪(DE)-de.gpairnetwork369.de
+  - VLESS-WS-TLS-🇺🇸(US)-104.16.250.22
+  - VLESS-WS-TLS-🇺🇸(US)-wangcai198.cloudflare.182682.xyz
   - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net
-  - VLESS-TCP-REALITY-🇩🇪(DE)-64.188.70.0
-  - VLESS-TCP-REALITY-🇫🇷(FR)-5.189.190.60
-  - VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39
-  - VLESS-WS-TLS-🇫🇷(FR)-51.44.233.53
-  - VLESS-WS-TLS-🇩🇪(DE)-3.122.138.117
-  - VLESS-WS-TLS-🇺🇸(US)-172.67.163.76
+  - VLESS-WS-TLS-🇺🇸(US)-172.66.45.4
+  - VLESS-WS-TLS-🇺🇸(US)-104.21.16.1
   - VLESS-TCP-REALITY-🇳🇱(NL)-82.115.6.101
-  - VLESS-WS-TLS-🇺🇸(US)-172.105.209.25
-  - VLESS-WS-TLS-🇺🇸(US)-188.114.96.7
-  - VLESS-TCP-REALITY-🇫🇷(FR)-62.60.148.21
+  - VLESS-TCP-REALITY-🇪🇸(ES)-tunnyl.ru
+  - VLESS-WS-TLS-🇺🇸(US)-159.246.55.253
   - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_1
-  - VLESS-WS-TLS-🇺🇸(US)-104.21.32.78
   - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_2
-  - VLESS-TCP-REALITY-🇱🇻(LV)-94.158.219.186
-  - VLESS-WS-TLS-🇺🇸(US)-172.67.184.105
-  - VLESS-WS-TLS-🇺🇸(US)-104.21.34.170
-  - VLESS-WS-TLS-🇺🇸(US)-139.162.106.22
-  - VLESS-WS-TLS-🇺🇸(US)-104.16.244.190
-  - VLESS-WS-TLS-🇺🇸(US)-017.electrocellco-cf-017.workers.dev
-  - VLESS-WS-TLS-🇩🇪(DE)-dontgetbanned.itskills180d.top
   - VLESS-WS-TLS-🇩🇪(DE)-77.37.33.39
-  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_3
-  - VLESS-TCP-REALITY-🇳🇱(NL)-5.253.189.141
-  - VLESS-WS-TLS-🇺🇸(US)-1password.com
-  - VLESS-GRPC-REALITY-🇩🇪(DE)-62.60.247.164
-  - VLESS-WS-TLS-🇫🇷(FR)-35.181.85.159
-  - VLESS-WS-TLS-🇯🇵(JP)-139.162.108.5
-  - VLESS-TCP-REALITY-🇹🇷(TR)-77.83.245.50
-  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_4
-  - VLESS-TCP-TLS-🇫🇮(FI)-65.108.231.185
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-kkhsaxnfdyaks.bayutlzoon.lat
+  - VLESS-WS-TLS-🇺🇸(US)-188.114.96.11
+  - VLESS-WS-TLS-🌐(XX)-172.67.201.140
+  - VLESS-WS-TLS-🇩🇪(DE)-dontgetbanned.itskills180d.top
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-7ygb3r6bw.royalcontl5h1i.lat
+  - VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39
+  - VLESS-WS-TLS-🇺🇸(US)-172.66.45.4_1
   - VLESS-TCP-TLS-🇫🇮(FI)-65.108.1.249
-  - VLESS-TCP-REALITY-🇫🇮(FI)-85.239.149.76
-  - VLESS-TCP-REALITY-🇸🇪(SE)-62.60.149.108
-  - VLESS-TCP-TLS-🇫🇮(FI)-95.217.206.161
-  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_5
-  - VLESS-WS-TLS-🇺🇸(US)-188.114.97.11
-  - VLESS-WS-TLS-🇺🇸(US)-104.17.147.22
-  - VLESS-WS-TLS-🇺🇸(US)-210.61.97.241
-  - VLESS-TCP-TLS-🇫🇮(FI)-cdn.chandplus.com
-  - VLESS-TCP-TLS-🇫🇮(FI)-65.109.145.54
-  - VLESS-TCP-TLS-🇫🇮(FI)-dedic.app-browser.org
+  - VLESS-TCP-REALITY-🇹🇷(TR)-77.83.245.50
+  - VLESS-TCP-REALITY-🇳🇱(NL)-5.253.189.141
+  - VLESS-TCP-REALITY-🇨🇦(CA)-132.145.99.18
+  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_3
   - VLESS-GRPC-REALITY-🇫🇮(FI)-65.108.253.253
-  - VLESS-WS-TLS-🇺🇸(US)-usa.visa.com
-  - VLESS-WS-TLS-🇸🇪(SE)-ipe3.alighan.ir
-  - VLESS-WS-TLS-🇺🇸(US)-155.248.181.189
-  - VLESS-WS-TLS-🇺🇸(US)-36.50.90.241
-  - VLESS-WS-TLS-🇺🇸(US)-bless.network
-  - VLESS-WS-TLS-🇺🇸(US)-130.162.130.105
-  - VLESS-TCP-REALITY-🇦🇲(AM)-77.91.68.70
-  - VLESS-TCP-TLS-🇫🇷(FR)-147.79.100.54
-  - VLESS-TCP-REALITY-🇳🇱(NL)-109.120.150.205
-  - VLESS-WS-TLS-🇺🇸(US)-194.36.179.5
-  - VLESS-WS-TLS-🇺🇸(US)-129.150.36.188
-  - VLESS-WS-TLS-🇺🇸(US)-211.229.77.184
-  - VLESS-WS-TLS-🇺🇸(US)-91.192.81.154
+  - VLESS-TCP-REALITY-🇫🇮(FI)-85.239.149.76
+  - VLESS-WS-TLS-🇺🇸(US)-5.10.245.253
+  - VLESS-TCP-REALITY-🇯🇵(JP)-aws-linkjp33.eovay.com
+  - VLESS-WS-TLS-🇫🇷(FR)-digitalocean.com
+  - VLESS-WS-TLS-🇺🇸(US)-190.93.245.253
+  - VLESS-TCP-REALITY-🇯🇵(JP)-109.123.229.205
+  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_4
+  - VLESS-WS-TLS-🇫🇷(FR)-www.visa.com.br
+  - VLESS-TCP-TLS-🇫🇮(FI)-95.217.206.161
+  - VLESS-TCP-REALITY-🇰🇷(KR)-aws-linkkr11.eovay.com
+  - VLESS-TCP-TLS-🇫🇮(FI)-65.108.231.185
+  - VLESS-WS-TLS-🇺🇸(US)-104.18.89.151
+  - VLESS-WS-TLS-🇩🇪(DE)-63.176.78.5
+  - VLESS-TCP-TLS-🌐(XX)-65.109.145.54
+  - VLESS-WS-TLS-🇯🇵(JP)-172.105.209.25
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -1280,103 +989,80 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VLESS
   - 🔗 Auto-Failover-VLESS
-  - VLESS-TCP-REALITY-🇺🇸(US)-148.135.83.173
-  - VLESS-WS-TLS-🇺🇸(US)-72.167.25.253
-  - VLESS-WS-TLS-🇺🇸(US)-5.10.245.253
-  - VLESS-WS-TLS-🇺🇸(US)-194.59.5.253
-  - VLESS-WS-TLS-🇺🇸(US)-159.112.235.253
-  - VLESS-WS-TLS-🇺🇸(US)-104.17.184.235
-  - VLESS-WS-TLS-🇺🇸(US)-104.18.89.151
-  - VLESS-WS-TLS-🇺🇸(US)-104.18.85.193
-  - VLESS-WS-TLS-🇺🇸(US)-104.17.190.119
-  - VLESS-WS-TLS-🇺🇸(US)-172.64.152.253
-  - VLESS-WS-TLS-🇺🇸(US)-104.18.80.62
-  - VLESS-WS-TLS-🇺🇸(US)-104.17.190.137
-  - VLESS-WS-TLS-🇺🇸(US)-160.79.105.253
   - VLESS-TCP-REALITY-🇺🇸(US)-aws-linkus11.eovay.com
-  - VLESS-WS-TLS-🇺🇸(US)-198.12.145.253
-  - VLESS-WS-TLS-🇺🇸(US)-166.62.115.253
-  - VLESS-WS-TLS-🇺🇸(US)-190.93.245.253
-  - VLESS-WS-TLS-🇺🇸(US)-104.18.185.26
-  - VLESS-WS-TLS-🇺🇸(US)-188.42.145.253
-  - VLESS-WS-TLS-🇺🇸(US)-104.16.250.22
   - VLESS-TCP-REALITY-🇺🇸(US)-77.110.109.72
   - VLESS-TCP-REALITY-🇨🇦(CA)-aws-linkca22.eovay.com
-  - VLESS-WS-TLS-🇺🇸(US)-wangcai198.cloudflare.182682.xyz
-  - VLESS-WS-TLS-🇺🇸(US)-185.18.184.253
-  - VLESS-WS-TLS-🇺🇸(US)-198.12.144.253
-  - VLESS-WS-TLS-🇺🇸(US)-167.68.11.253
-  - VLESS-WS-TLS-🇺🇸(US)-194.152.44.253
-  - VLESS-WS-TLS-🇺🇸(US)-45.192.224.253
-  - VLESS-WS-TLS-🇺🇸(US)-5.10.214.253
-  - VLESS-TCP-REALITY-🇺🇸(US)-62.60.177.167
-  - VLESS-WS-TLS-🇺🇸(US)-167.68.4.253
-  - VLESS-WS-TLS-🇺🇸(US)-194.152.44.253_1
-  - VLESS-WS-TLS-🇺🇸(US)-104.18.47.79
-  - VLESS-WS-TLS-🇺🇸(US)-104.17.185.246
+  - VLESS-WS-TLS-🇺🇸(US)-104.18.185.26
+  - VLESS-WS-TLS-🇺🇸(US)-194.59.5.253
   - VLESS-WS-TLS-🇺🇸(US)-185.148.104.253
-  - VLESS-TCP-REALITY-🇯🇵(JP)-aws-linkjp33.eovay.com
-  - VLESS-TCP-REALITY-🇯🇵(JP)-109.123.229.205
-  - VLESS-TCP-REALITY-🇺🇸(US)-usa32.clearorbitllc.com
-  - VLESS-TCP-REALITY-🇬🇧(GB)-193.46.81.151
-  - VLESS-TCP-REALITY-🇰🇷(KR)-aws-linkkr11.eovay.com
+  - VLESS-TCP-REALITY-🇺🇸(US)-148.135.83.173
+  - VLESS-WS-TLS-🇺🇸(US)-194.152.44.253
+  - VLESS-WS-TLS-🇺🇸(US)-160.79.105.253
+  - VLESS-WS-TLS-🇺🇸(US)-167.68.4.253
+  - VLESS-WS-TLS-🇺🇸(US)-185.251.81.253
+  - VLESS-WS-TLS-🇺🇸(US)-167.68.4.253_1
+  - VLESS-WS-TLS-🇺🇸(US)-45.192.224.253
+  - VLESS-WS-TLS-🇺🇸(US)-104.18.80.62
+  - VLESS-WS-TLS-🇺🇸(US)-185.18.184.253
+  - VLESS-WS-TLS-🇺🇸(US)-194.152.44.253_1
+  - VLESS-WS-TLS-🇺🇸(US)-198.71.191.253
+  - VLESS-WS-TLS-🇺🇸(US)-5.10.214.253
+  - VLESS-WS-TLS-🇺🇸(US)-104.18.85.193
+  - VLESS-WS-TLS-🇺🇸(US)-45.192.224.253_1
+  - VLESS-WS-TLS-🇺🇸(US)-45.192.224.253_2
+  - VLESS-WS-TLS-🇺🇸(US)-185.18.184.253_1
+  - VLESS-WS-TLS-🇺🇸(US)-45.194.11.253
+  - VLESS-WS-TLS-🇺🇸(US)-104.17.190.137
+  - VLESS-WS-TLS-🇺🇸(US)-104.17.190.119
+  - VLESS-WS-TLS-🇺🇸(US)-72.167.25.253
+  - VLESS-WS-TLS-🇺🇸(US)-104.18.47.79
+  - VLESS-WS-TLS-🇺🇸(US)-50.62.194.253
+  - VLESS-WS-TLS-🇳🇱(NL)-172.66.40.127
+  - VLESS-WS-TLS-🇺🇸(US)-104.17.184.235
   - VLESS-TCP-REALITY-🇩🇪(DE)-80.253.251.120
+  - VLESS-WS-TLS-🇺🇸(US)-5.10.214.253_1
+  - VLESS-WS-TLS-🇺🇸(US)-104.17.185.246
+  - VLESS-WS-TLS-🇺🇸(US)-166.62.115.253
+  - VLESS-TCP-REALITY-🇩🇪(DE)-de.gpairnetwork369.de
+  - VLESS-WS-TLS-🇺🇸(US)-104.16.250.22
+  - VLESS-WS-TLS-🇺🇸(US)-wangcai198.cloudflare.182682.xyz
   - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net
-  - VLESS-TCP-REALITY-🇩🇪(DE)-64.188.70.0
-  - VLESS-TCP-REALITY-🇫🇷(FR)-5.189.190.60
-  - VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39
-  - VLESS-WS-TLS-🇫🇷(FR)-51.44.233.53
-  - VLESS-WS-TLS-🇩🇪(DE)-3.122.138.117
-  - VLESS-WS-TLS-🇺🇸(US)-172.67.163.76
+  - VLESS-WS-TLS-🇺🇸(US)-172.66.45.4
+  - VLESS-WS-TLS-🇺🇸(US)-104.21.16.1
   - VLESS-TCP-REALITY-🇳🇱(NL)-82.115.6.101
-  - VLESS-WS-TLS-🇺🇸(US)-172.105.209.25
-  - VLESS-WS-TLS-🇺🇸(US)-188.114.96.7
-  - VLESS-TCP-REALITY-🇫🇷(FR)-62.60.148.21
+  - VLESS-TCP-REALITY-🇪🇸(ES)-tunnyl.ru
+  - VLESS-WS-TLS-🇺🇸(US)-159.246.55.253
   - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_1
-  - VLESS-WS-TLS-🇺🇸(US)-104.21.32.78
   - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_2
-  - VLESS-TCP-REALITY-🇱🇻(LV)-94.158.219.186
-  - VLESS-WS-TLS-🇺🇸(US)-172.67.184.105
-  - VLESS-WS-TLS-🇺🇸(US)-104.21.34.170
-  - VLESS-WS-TLS-🇺🇸(US)-139.162.106.22
-  - VLESS-WS-TLS-🇺🇸(US)-104.16.244.190
-  - VLESS-WS-TLS-🇺🇸(US)-017.electrocellco-cf-017.workers.dev
-  - VLESS-WS-TLS-🇩🇪(DE)-dontgetbanned.itskills180d.top
   - VLESS-WS-TLS-🇩🇪(DE)-77.37.33.39
-  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_3
-  - VLESS-TCP-REALITY-🇳🇱(NL)-5.253.189.141
-  - VLESS-WS-TLS-🇺🇸(US)-1password.com
-  - VLESS-GRPC-REALITY-🇩🇪(DE)-62.60.247.164
-  - VLESS-WS-TLS-🇫🇷(FR)-35.181.85.159
-  - VLESS-WS-TLS-🇯🇵(JP)-139.162.108.5
-  - VLESS-TCP-REALITY-🇹🇷(TR)-77.83.245.50
-  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_4
-  - VLESS-TCP-TLS-🇫🇮(FI)-65.108.231.185
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-kkhsaxnfdyaks.bayutlzoon.lat
+  - VLESS-WS-TLS-🇺🇸(US)-188.114.96.11
+  - VLESS-WS-TLS-🌐(XX)-172.67.201.140
+  - VLESS-WS-TLS-🇩🇪(DE)-dontgetbanned.itskills180d.top
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-7ygb3r6bw.royalcontl5h1i.lat
+  - VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39
+  - VLESS-WS-TLS-🇺🇸(US)-172.66.45.4_1
   - VLESS-TCP-TLS-🇫🇮(FI)-65.108.1.249
-  - VLESS-TCP-REALITY-🇫🇮(FI)-85.239.149.76
-  - VLESS-TCP-REALITY-🇸🇪(SE)-62.60.149.108
-  - VLESS-TCP-TLS-🇫🇮(FI)-95.217.206.161
-  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_5
-  - VLESS-WS-TLS-🇺🇸(US)-188.114.97.11
-  - VLESS-WS-TLS-🇺🇸(US)-104.17.147.22
-  - VLESS-WS-TLS-🇺🇸(US)-210.61.97.241
-  - VLESS-TCP-TLS-🇫🇮(FI)-cdn.chandplus.com
-  - VLESS-TCP-TLS-🇫🇮(FI)-65.109.145.54
-  - VLESS-TCP-TLS-🇫🇮(FI)-dedic.app-browser.org
+  - VLESS-TCP-REALITY-🇹🇷(TR)-77.83.245.50
+  - VLESS-TCP-REALITY-🇳🇱(NL)-5.253.189.141
+  - VLESS-TCP-REALITY-🇨🇦(CA)-132.145.99.18
+  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_3
   - VLESS-GRPC-REALITY-🇫🇮(FI)-65.108.253.253
-  - VLESS-WS-TLS-🇺🇸(US)-usa.visa.com
-  - VLESS-WS-TLS-🇸🇪(SE)-ipe3.alighan.ir
-  - VLESS-WS-TLS-🇺🇸(US)-155.248.181.189
-  - VLESS-WS-TLS-🇺🇸(US)-36.50.90.241
-  - VLESS-WS-TLS-🇺🇸(US)-bless.network
-  - VLESS-WS-TLS-🇺🇸(US)-130.162.130.105
-  - VLESS-TCP-REALITY-🇦🇲(AM)-77.91.68.70
-  - VLESS-TCP-TLS-🇫🇷(FR)-147.79.100.54
-  - VLESS-TCP-REALITY-🇳🇱(NL)-109.120.150.205
-  - VLESS-WS-TLS-🇺🇸(US)-194.36.179.5
-  - VLESS-WS-TLS-🇺🇸(US)-129.150.36.188
-  - VLESS-WS-TLS-🇺🇸(US)-211.229.77.184
-  - VLESS-WS-TLS-🇺🇸(US)-91.192.81.154
+  - VLESS-TCP-REALITY-🇫🇮(FI)-85.239.149.76
+  - VLESS-WS-TLS-🇺🇸(US)-5.10.245.253
+  - VLESS-TCP-REALITY-🇯🇵(JP)-aws-linkjp33.eovay.com
+  - VLESS-WS-TLS-🇫🇷(FR)-digitalocean.com
+  - VLESS-WS-TLS-🇺🇸(US)-190.93.245.253
+  - VLESS-TCP-REALITY-🇯🇵(JP)-109.123.229.205
+  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net_4
+  - VLESS-WS-TLS-🇫🇷(FR)-www.visa.com.br
+  - VLESS-TCP-TLS-🇫🇮(FI)-95.217.206.161
+  - VLESS-TCP-REALITY-🇰🇷(KR)-aws-linkkr11.eovay.com
+  - VLESS-TCP-TLS-🇫🇮(FI)-65.108.231.185
+  - VLESS-WS-TLS-🇺🇸(US)-104.18.89.151
+  - VLESS-WS-TLS-🇩🇪(DE)-63.176.78.5
+  - VLESS-TCP-TLS-🌐(XX)-65.109.145.54
+  - VLESS-WS-TLS-🇯🇵(JP)-172.105.209.25
 rule-providers:
   adblock:
     type: http
