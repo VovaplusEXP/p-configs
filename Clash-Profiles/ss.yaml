@@ -14,24 +14,24 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-C20P-🇺🇸(US)-185.193.48.157
+  type: ss
+  server: 185.193.48.157
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: zwBLM6bBE5YxvwvnKgxAq3ErXpqMYv20
+- name: SS-C20P-🇫🇷(FR)-62.210.88.22
+  type: ss
+  server: 62.210.88.22
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: IkYHlqvE5dOMpYIJ5fRDkk
 - name: SS-C20P-🇬🇧(GB)-57.129.140.88
   type: ss
   server: 57.129.140.88
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: k1v5g9FefdoO
-- name: SS-C20P-🇫🇷(FR)-62.210.88.22
-  type: ss
-  server: 62.210.88.22
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: pGPSzFZbacChknZ4j1etyb
-- name: SS-C20P-🇫🇮(FI)-185.193.102.7
-  type: ss
-  server: 185.193.102.7
-  port: 57456
-  cipher: chacha20-ietf-poly1305
-  password: 360e21d21977dc11
 - name: SS-C20P-🇲🇾(MY)-142.111.146.222
   type: ss
   server: 142.111.146.222
@@ -44,15 +44,22 @@ proxies:
   port: 990
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: SS-C20P-🇫🇮(FI)-185.193.102.7
+  type: ss
+  server: 185.193.102.7
+  port: 57456
+  cipher: chacha20-ietf-poly1305
+  password: 360e21d21977dc11
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇬🇧(GB)-57.129.140.88
+  - SS-C20P-🇺🇸(US)-185.193.48.157
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇫🇮(FI)-185.193.102.7
+  - SS-C20P-🇬🇧(GB)-57.129.140.88
   - SS-C20P-🇲🇾(MY)-142.111.146.222
   - SS-C20P-🇦🇺(AU)-45.15.185.70
+  - SS-C20P-🇫🇮(FI)-185.193.102.7
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -69,11 +76,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇬🇧(GB)-57.129.140.88
+  - SS-C20P-🇺🇸(US)-185.193.48.157
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇫🇮(FI)-185.193.102.7
+  - SS-C20P-🇬🇧(GB)-57.129.140.88
   - SS-C20P-🇲🇾(MY)-142.111.146.222
   - SS-C20P-🇦🇺(AU)-45.15.185.70
+  - SS-C20P-🇫🇮(FI)-185.193.102.7
 rule-providers:
   adblock:
     type: http
