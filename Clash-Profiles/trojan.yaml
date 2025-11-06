@@ -35,8 +35,8 @@ proxies:
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.127.0
   type: trojan
   server: 51.44.127.0
-  port: 22222
-  uuid: telegram-id-privatevpns
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
@@ -44,21 +44,33 @@ proxies:
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-63.180.184.162
   type: trojan
   server: 63.180.184.162
-  port: 22222
-  uuid: telegram-id-privatevpns
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.180.37.96
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.127.0_1
   type: trojan
-  server: 63.180.37.96
+  server: 51.44.127.0
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
+- name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  type: trojan
+  server: 62.133.60.83
+  port: 2025
+  uuid: vpn
+  network: ws
+  tls: false
+  servername: 62.133.60.83
+  ws-opts:
+    path: /
+    headers:
+      Host: dns.google.com
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
   server: creativecommons.org
@@ -72,32 +84,11 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.180.184.162_1
   type: trojan
-  server: 62.133.60.83
-  port: 2025
-  uuid: vpn
-  network: ws
-  tls: false
-  servername: 62.133.60.83
-  ws-opts:
-    path: /
-    headers:
-      Host: dns.google.com
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.180.37.96_1
-  type: trojan
-  server: 63.180.37.96
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.127.0_1
-  type: trojan
-  server: 51.44.127.0
-  port: 22223
-  uuid: telegram-id-directvpn
+  server: 63.180.184.162
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
@@ -123,11 +114,10 @@ proxy-groups:
   - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53_1
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.127.0
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.184.162
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.37.96
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.37.96_1
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.127.0_1
+  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.184.162_1
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   tolerance: 50
   lazy: false
@@ -149,11 +139,10 @@ proxy-groups:
   - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53_1
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.127.0
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.184.162
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.37.96
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.37.96_1
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.127.0_1
+  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.184.162_1
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
 rule-providers:
   adblock:
