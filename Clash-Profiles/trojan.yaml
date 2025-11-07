@@ -23,33 +23,6 @@ proxies:
   tls: true
   servername: cloudflare.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.10.105
-  type: trojan
-  server: 51.45.10.105
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131
-  type: trojan
-  server: 3.64.37.131
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.72.68
-  type: trojan
-  server: 15.188.72.68
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
 - name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
   type: trojan
   server: 62.133.60.83
@@ -62,28 +35,15 @@ proxies:
     path: /
     headers:
       Host: dns.google.com
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131_1
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131
   type: trojan
   server: 3.64.37.131
-  port: 22222
-  uuid: telegram-id-privatevpns
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  type: trojan
-  server: creativecommons.org
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
-  tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-63.176.251.54
   type: trojan
   server: 63.176.251.54
@@ -93,18 +53,9 @@ proxies:
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.10.105_1
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131_1
   type: trojan
-  server: 51.45.10.105
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.72.68_1
-  type: trojan
-  server: 15.188.72.68
+  server: 3.64.37.131
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
@@ -120,21 +71,54 @@ proxies:
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  type: trojan
+  server: 172.67.180.227
+  port: 443
+  uuid: bpb-trojan
+  network: ws
+  tls: true
+  servername: mashdt.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tr?ed=2560
+    headers:
+      Host: mashdt.pages.dev
+- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  type: trojan
+  server: creativecommons.org
+  port: 2053
+  uuid: YwuvGJk36B
+  network: ws
+  tls: true
+  servername: kotlet.arshiacomplus.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /yamtekodasayahhh
+    headers:
+      Host: kotlet.arshiacomplus.dpdns.org
+- name: TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
+  type: trojan
+  server: 91.108.250.230
+  port: 50191
+  uuid: 3BLPOJr3OY
+  network: grpc
+  tls: true
+  servername: cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.10.105
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.72.68
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131_1
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.176.251.54
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.10.105_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.72.68_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131_1
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.176.251.54_1
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -152,16 +136,14 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.10.105
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.72.68
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131_1
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.176.251.54
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.10.105_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.72.68_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131_1
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.176.251.54_1
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
 rule-providers:
   adblock:
     type: http
