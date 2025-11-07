@@ -14,15 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
-  type: trojan
-  server: 209.200.246.53
-  port: 10785
-  uuid: D3OJA7xY5U
-  network: grpc
-  tls: true
-  servername: cloudflare.com
-  client-fingerprint: chrome
 - name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
   type: trojan
   server: 62.133.60.83
@@ -38,17 +29,8 @@ proxies:
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131
   type: trojan
   server: 3.64.37.131
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.176.251.54
-  type: trojan
-  server: 63.176.251.54
-  port: 22223
-  uuid: telegram-id-directvpn
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
@@ -56,34 +38,12 @@ proxies:
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131_1
   type: trojan
   server: 3.64.37.131
-  port: 22222
-  uuid: telegram-id-privatevpns
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.176.251.54_1
-  type: trojan
-  server: 63.176.251.54
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  type: trojan
-  server: 172.67.180.227
-  port: 443
-  uuid: bpb-trojan
-  network: ws
-  tls: true
-  servername: mashdt.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr?ed=2560
-    headers:
-      Host: mashdt.pages.dev
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
   server: creativecommons.org
@@ -97,28 +57,48 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
-- name: TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
-  server: 91.108.250.230
-  port: 50191
-  uuid: 3BLPOJr3OY
-  network: grpc
+  server: 172.67.180.227
+  port: 443
+  uuid: bpb-trojan
+  network: ws
   tls: true
-  servername: cloudflare.com
+  servername: mashdt.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tr?ed=2560
+    headers:
+      Host: mashdt.pages.dev
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.69.43
+  type: trojan
+  server: 13.36.69.43
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.180.193.173
+  type: trojan
+  server: 63.180.193.173
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.176.251.54
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.176.251.54_1
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.69.43
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.193.173
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -135,15 +115,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.176.251.54
   - TROJAN-TCP-TLS-🇩🇪(DE)-3.64.37.131_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.176.251.54_1
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
-  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.69.43
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.180.193.173
 rule-providers:
   adblock:
     type: http
