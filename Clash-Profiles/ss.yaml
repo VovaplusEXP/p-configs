@@ -20,24 +20,30 @@ proxies:
   port: 443
   cipher: chacha20-ietf-poly1305
   password: zwBLM6bBE5YxvwvnKgxAq3ErXpqMYv20
-- name: SS-C20P-🇬🇧(GB)-57.129.140.88
+- name: SS-C20P-🇫🇷(FR)-62.210.88.22
   type: ss
-  server: 57.129.140.88
-  port: 8388
+  server: 62.210.88.22
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: k1v5g9FefdoO
+  password: HSWJQ8gkhU2nhPjhE2qmWJ
+- name: SS-C20P-🇳🇱(NL)-51.158.204.165
+  type: ss
+  server: 51.158.204.165
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 0KDTVV9wFm2pvQUnQftJDWgXbaY8kIfG
+- name: SS-C20P-🇸🇬(SG)-134.255.211.95
+  type: ss
+  server: 134.255.211.95
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: V9tDTUVnwrEI937PP96McHXsMpfhmqDE
 - name: SS-C20P-🇫🇮(FI)-solar-3xui-hel-40-002.devastation.ru
   type: ss
   server: solar-3xui-hel-40-002.devastation.ru
   port: 31043
   cipher: chacha20-ietf-poly1305
   password: passxzHDLxkZoSAzqgKyq24Z
-- name: SS-C20P-🇫🇷(FR)-62.210.88.22
-  type: ss
-  server: 62.210.88.22
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: IkYHlqvE5dOMpYIJ5fRDkk
 - name: SS-C20P-🇦🇺(AU)-45.15.185.70
   type: ss
   server: 45.15.185.70
@@ -49,9 +55,10 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-185.193.48.157
-  - SS-C20P-🇬🇧(GB)-57.129.140.88
-  - SS-C20P-🇫🇮(FI)-solar-3xui-hel-40-002.devastation.ru
   - SS-C20P-🇫🇷(FR)-62.210.88.22
+  - SS-C20P-🇳🇱(NL)-51.158.204.165
+  - SS-C20P-🇸🇬(SG)-134.255.211.95
+  - SS-C20P-🇫🇮(FI)-solar-3xui-hel-40-002.devastation.ru
   - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
   lazy: false
@@ -70,9 +77,10 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-185.193.48.157
-  - SS-C20P-🇬🇧(GB)-57.129.140.88
-  - SS-C20P-🇫🇮(FI)-solar-3xui-hel-40-002.devastation.ru
   - SS-C20P-🇫🇷(FR)-62.210.88.22
+  - SS-C20P-🇳🇱(NL)-51.158.204.165
+  - SS-C20P-🇸🇬(SG)-134.255.211.95
+  - SS-C20P-🇫🇮(FI)-solar-3xui-hel-40-002.devastation.ru
   - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
   adblock:
