@@ -23,18 +23,6 @@ proxies:
   tls: true
   servername: n2.gladns.com
   client-fingerprint: chrome
-- name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  type: trojan
-  server: 62.133.60.83
-  port: 2025
-  uuid: vpn
-  network: ws
-  tls: false
-  servername: 62.133.60.83
-  ws-opts:
-    path: /
-    headers:
-      Host: dns.google.com
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
   server: 172.67.180.227
@@ -48,51 +36,45 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-135.125.232.253
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.180.198
   type: trojan
-  server: 135.125.232.253
-  port: 2053
-  uuid: iwangjie
-  network: ws
-  tls: true
-  servername: nodes.830901.xyz
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: nodes.830901.xyz
-- name: TROJAN-WS-TLS-🇫🇷(FR)-141.94.68.216
-  type: trojan
-  server: 141.94.68.216
-  port: 2053
-  uuid: iwangjie
-  network: ws
-  tls: true
-  servername: nodes.830901.xyz
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: nodes.830901.xyz
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.203.230
-  type: trojan
-  server: 13.37.203.230
-  port: 22223
-  uuid: telegram-id-directvpn
+  server: 15.188.180.198
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇸🇬(SG)-xinrelibao.xuwuge.xyz
+  type: trojan
+  server: xinrelibao.xuwuge.xyz
+  port: 21113
+  uuid: 2196dfab-6964-447c-a151-fd90054adf54
+  network: tcp
+  tls: true
+  servername: xinrelibao.xuwuge.xyz
+  client-fingerprint: chrome
+- name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  type: trojan
+  server: 62.133.60.83
+  port: 2025
+  uuid: vpn
+  network: ws
+  tls: false
+  servername: 62.133.60.83
+  ws-opts:
+    path: /
+    headers:
+      Host: dns.google.com
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64
-  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-WS-TLS-🇩🇪(DE)-135.125.232.253
-  - TROJAN-WS-TLS-🇫🇷(FR)-141.94.68.216
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.203.230
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.180.198
+  - TROJAN-TCP-TLS-🇸🇬(SG)-xinrelibao.xuwuge.xyz
+  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -110,11 +92,10 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64
-  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-WS-TLS-🇩🇪(DE)-135.125.232.253
-  - TROJAN-WS-TLS-🇫🇷(FR)-141.94.68.216
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.203.230
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.180.198
+  - TROJAN-TCP-TLS-🇸🇬(SG)-xinrelibao.xuwuge.xyz
+  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
 rule-providers:
   adblock:
     type: http
