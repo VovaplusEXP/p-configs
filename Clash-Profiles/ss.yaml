@@ -14,59 +14,38 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇫🇷(FR)-62.210.88.22
-  type: ss
-  server: 62.210.88.22
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: HSWJQ8gkhU2nhPjhE2qmWJ
 - name: SS-C20P-🇳🇱(NL)-51.158.204.165
   type: ss
   server: 51.158.204.165
   port: 443
   cipher: chacha20-ietf-poly1305
   password: 0KDTVV9wFm2pvQUnQftJDWgXbaY8kIfG
-- name: SS-C20P-🇬🇧(GB)-57.129.140.88
+- name: SS-C20P-🇫🇷(FR)-62.210.88.22
   type: ss
-  server: 57.129.140.88
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: k1v5g9FefdoO
-- name: SS-C20P-🇩🇪(DE)-h110vpnde.outlinekeys.net
-  type: ss
-  server: h110vpnde.outlinekeys.net
-  port: 7048
-  cipher: chacha20-ietf-poly1305
-  password: blqMDsPAYkCH8QLSBRCYPL
-- name: SS-C20P-🇸🇬(SG)-134.255.211.95
-  type: ss
-  server: 134.255.211.95
+  server: 62.210.88.22
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: V9tDTUVnwrEI937PP96McHXsMpfhmqDE
-- name: SS-C20P-🇫🇮(FI)-solar-3xui-hel-40-002.devastation.ru
-  type: ss
-  server: solar-3xui-hel-40-002.devastation.ru
-  port: 31043
-  cipher: chacha20-ietf-poly1305
-  password: passxzHDLxkZoSAzqgKyq24Z
+  password: HSWJQ8gkhU2nhPjhE2qmWJ
 - name: SS-C20P-🇫🇮(FI)-185.193.102.7
   type: ss
   server: 185.193.102.7
   port: 57456
   cipher: chacha20-ietf-poly1305
   password: 360e21d21977dc11
+- name: SS-C20P-🇸🇬(SG)-134.255.211.95
+  type: ss
+  server: 134.255.211.95
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: V9tDTUVnwrEI937PP96McHXsMpfhmqDE
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇫🇷(FR)-62.210.88.22
   - SS-C20P-🇳🇱(NL)-51.158.204.165
-  - SS-C20P-🇬🇧(GB)-57.129.140.88
-  - SS-C20P-🇩🇪(DE)-h110vpnde.outlinekeys.net
-  - SS-C20P-🇸🇬(SG)-134.255.211.95
-  - SS-C20P-🇫🇮(FI)-solar-3xui-hel-40-002.devastation.ru
+  - SS-C20P-🇫🇷(FR)-62.210.88.22
   - SS-C20P-🇫🇮(FI)-185.193.102.7
+  - SS-C20P-🇸🇬(SG)-134.255.211.95
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -83,13 +62,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇫🇷(FR)-62.210.88.22
   - SS-C20P-🇳🇱(NL)-51.158.204.165
-  - SS-C20P-🇬🇧(GB)-57.129.140.88
-  - SS-C20P-🇩🇪(DE)-h110vpnde.outlinekeys.net
-  - SS-C20P-🇸🇬(SG)-134.255.211.95
-  - SS-C20P-🇫🇮(FI)-solar-3xui-hel-40-002.devastation.ru
+  - SS-C20P-🇫🇷(FR)-62.210.88.22
   - SS-C20P-🇫🇮(FI)-185.193.102.7
+  - SS-C20P-🇸🇬(SG)-134.255.211.95
 rule-providers:
   adblock:
     type: http
