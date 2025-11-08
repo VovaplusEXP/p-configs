@@ -23,6 +23,67 @@ proxies:
   tls: true
   servername: cloudflare.com
   client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.78.244
+  type: trojan
+  server: 13.37.78.244
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.229.245
+  type: trojan
+  server: 35.181.229.245
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  type: trojan
+  server: 62.133.60.83
+  port: 2025
+  uuid: vpn
+  network: ws
+  tls: false
+  servername: 62.133.60.83
+  ws-opts:
+    path: /
+    headers:
+      Host: dns.google.com
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.229.245_1
+  type: trojan
+  server: 35.181.229.245
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.78.244_1
+  type: trojan
+  server: 13.37.78.244
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  type: trojan
+  server: creativecommons.org
+  port: 2053
+  uuid: YwuvGJk36B
+  network: ws
+  tls: true
+  servername: kotlet.arshiacomplus.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /yamtekodasayahhh
+    headers:
+      Host: kotlet.arshiacomplus.dpdns.org
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
   server: 172.67.180.227
@@ -36,12 +97,32 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-135.125.232.253
+  type: trojan
+  server: 135.125.232.253
+  port: 2053
+  uuid: iwangjie
+  network: ws
+  tls: true
+  servername: nodes.830901.xyz
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: nodes.830901.xyz
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.78.244
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.229.245
+  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.229.245_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.78.244_1
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-WS-TLS-🇩🇪(DE)-135.125.232.253
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -59,7 +140,14 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.78.244
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.229.245
+  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.229.245_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.78.244_1
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-WS-TLS-🇩🇪(DE)-135.125.232.253
 rule-providers:
   adblock:
     type: http

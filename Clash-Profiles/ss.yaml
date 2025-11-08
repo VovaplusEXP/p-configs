@@ -14,52 +14,66 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-185.193.48.157
-  type: ss
-  server: 185.193.48.157
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: zwBLM6bBE5YxvwvnKgxAq3ErXpqMYv20
-- name: SS-C20P-🇫🇷(FR)-62.210.88.22
-  type: ss
-  server: 62.210.88.22
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: HSWJQ8gkhU2nhPjhE2qmWJ
 - name: SS-C20P-🇳🇱(NL)-51.158.204.165
   type: ss
   server: 51.158.204.165
   port: 443
   cipher: chacha20-ietf-poly1305
   password: 0KDTVV9wFm2pvQUnQftJDWgXbaY8kIfG
-- name: SS-C20P-🇸🇬(SG)-134.255.211.95
+- name: SS-C20P-🇫🇷(FR)-62.210.88.22
   type: ss
-  server: 134.255.211.95
+  server: 62.210.88.22
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: V9tDTUVnwrEI937PP96McHXsMpfhmqDE
+  password: HSWJQ8gkhU2nhPjhE2qmWJ
+- name: SS-C20P-🇸🇪(SE)-46.246.98.39
+  type: ss
+  server: 46.246.98.39
+  port: 55818
+  cipher: chacha20-ietf-poly1305
+  password: 85qJ4wjHhPbVNxWKT1mJnE
 - name: SS-C20P-🇫🇮(FI)-solar-3xui-hel-40-002.devastation.ru
   type: ss
   server: solar-3xui-hel-40-002.devastation.ru
   port: 31043
   cipher: chacha20-ietf-poly1305
   password: passxzHDLxkZoSAzqgKyq24Z
-- name: SS-C20P-🇦🇺(AU)-45.15.185.70
+- name: SS-C20P-🇫🇮(FI)-185.193.102.7
   type: ss
-  server: 45.15.185.70
-  port: 990
+  server: 185.193.102.7
+  port: 57456
   cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  password: 360e21d21977dc11
+- name: SS-C20P-🇸🇬(SG)-134.255.211.95
+  type: ss
+  server: 134.255.211.95
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: V9tDTUVnwrEI937PP96McHXsMpfhmqDE
+- name: SS-C20P-🇺🇸(US)-185.33.85.37
+  type: ss
+  server: 185.33.85.37
+  port: 63032
+  cipher: chacha20-ietf-poly1305
+  password: x52J9Xmsvj4dptXNH5Mzy0
+- name: SS-C20P-🇳🇱(NL)-195.66.27.81
+  type: ss
+  server: 195.66.27.81
+  port: 11746
+  cipher: chacha20-ietf-poly1305
+  password: DaiJfYM6WoCXmBbF69QFR0
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-185.193.48.157
-  - SS-C20P-🇫🇷(FR)-62.210.88.22
   - SS-C20P-🇳🇱(NL)-51.158.204.165
-  - SS-C20P-🇸🇬(SG)-134.255.211.95
+  - SS-C20P-🇫🇷(FR)-62.210.88.22
+  - SS-C20P-🇸🇪(SE)-46.246.98.39
   - SS-C20P-🇫🇮(FI)-solar-3xui-hel-40-002.devastation.ru
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
+  - SS-C20P-🇫🇮(FI)-185.193.102.7
+  - SS-C20P-🇸🇬(SG)-134.255.211.95
+  - SS-C20P-🇺🇸(US)-185.33.85.37
+  - SS-C20P-🇳🇱(NL)-195.66.27.81
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -76,12 +90,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-185.193.48.157
-  - SS-C20P-🇫🇷(FR)-62.210.88.22
   - SS-C20P-🇳🇱(NL)-51.158.204.165
-  - SS-C20P-🇸🇬(SG)-134.255.211.95
+  - SS-C20P-🇫🇷(FR)-62.210.88.22
+  - SS-C20P-🇸🇪(SE)-46.246.98.39
   - SS-C20P-🇫🇮(FI)-solar-3xui-hel-40-002.devastation.ru
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
+  - SS-C20P-🇫🇮(FI)-185.193.102.7
+  - SS-C20P-🇸🇬(SG)-134.255.211.95
+  - SS-C20P-🇺🇸(US)-185.33.85.37
+  - SS-C20P-🇳🇱(NL)-195.66.27.81
 rule-providers:
   adblock:
     type: http
