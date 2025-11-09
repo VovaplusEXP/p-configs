@@ -14,6 +14,18 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-C20P-🇺🇸(US)-146.19.49.251
+  type: ss
+  server: 146.19.49.251
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: ODfxioK0VkKxTdpVQJ4rv8HglAu0vzv6
+- name: SS-C20P-🇳🇱(NL)-51.158.204.165
+  type: ss
+  server: 51.158.204.165
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 0KDTVV9wFm2pvQUnQftJDWgXbaY8kIfG
 - name: SS-C20P-🇺🇸(US)-92.118.112.101
   type: ss
   server: 92.118.112.101
@@ -25,19 +37,7 @@ proxies:
   server: 62.210.88.22
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: eq45E7fQ6xkNydT6kyzUzv
-- name: SS-C20P-🇳🇱(NL)-51.158.204.165
-  type: ss
-  server: 51.158.204.165
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 0KDTVV9wFm2pvQUnQftJDWgXbaY8kIfG
-- name: SS-C20P-🇹🇷(TR)-62.133.63.21
-  type: ss
-  server: 62.133.63.21
-  port: 65262
-  cipher: chacha20-ietf-poly1305
-  password: EaXlHKSQxOVNbPkVWYMACj
+  password: yZRXLAD389hELa9AoSxfj5
 - name: SS-C20P-🇸🇪(SE)-91.186.217.246
   type: ss
   server: 91.186.217.246
@@ -50,23 +50,23 @@ proxies:
   port: 990
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: SS-C20P-🇺🇸(US)-38.107.234.106
+- name: SS-C20P-🇹🇷(TR)-h110vpntr.outlinekeys.net
   type: ss
-  server: 38.107.234.106
-  port: 37147
+  server: h110vpntr.outlinekeys.net
+  port: 65262
   cipher: chacha20-ietf-poly1305
-  password: c79ogMGRunbAa1ww2pCK67
+  password: EaXlHKSQxOVNbPkVWYMACj
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
+  - SS-C20P-🇺🇸(US)-146.19.49.251
+  - SS-C20P-🇳🇱(NL)-51.158.204.165
   - SS-C20P-🇺🇸(US)-92.118.112.101
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇳🇱(NL)-51.158.204.165
-  - SS-C20P-🇹🇷(TR)-62.133.63.21
   - SS-C20P-🇸🇪(SE)-91.186.217.246
   - SS-C20P-🇦🇺(AU)-45.15.185.70
-  - SS-C20P-🇺🇸(US)-38.107.234.106
+  - SS-C20P-🇹🇷(TR)-h110vpntr.outlinekeys.net
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -83,13 +83,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
+  - SS-C20P-🇺🇸(US)-146.19.49.251
+  - SS-C20P-🇳🇱(NL)-51.158.204.165
   - SS-C20P-🇺🇸(US)-92.118.112.101
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇳🇱(NL)-51.158.204.165
-  - SS-C20P-🇹🇷(TR)-62.133.63.21
   - SS-C20P-🇸🇪(SE)-91.186.217.246
   - SS-C20P-🇦🇺(AU)-45.15.185.70
-  - SS-C20P-🇺🇸(US)-38.107.234.106
+  - SS-C20P-🇹🇷(TR)-h110vpntr.outlinekeys.net
 rule-providers:
   adblock:
     type: http
