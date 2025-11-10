@@ -14,33 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64
-  type: trojan
-  server: 23.247.137.64
-  port: 443
-  uuid: 3c4e10af98c30972
-  network: grpc
-  tls: true
-  servername: n2.gladns.com
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.109
-  type: trojan
-  server: 51.44.34.109
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.180.222.18
-  type: trojan
-  server: 35.180.222.18
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
 - name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
   type: trojan
   server: 62.133.60.83
@@ -53,11 +26,33 @@ proxies:
     path: /
     headers:
       Host: dns.google.com
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.109_1
+- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
-  server: 51.44.34.109
-  port: 22223
-  uuid: telegram-id-directvpn
+  server: creativecommons.org
+  port: 2053
+  uuid: YwuvGJk36B
+  network: ws
+  tls: true
+  servername: kotlet.arshiacomplus.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /yamtekodasayahhh
+    headers:
+      Host: kotlet.arshiacomplus.dpdns.org
+- name: TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64
+  type: trojan
+  server: 23.247.137.64
+  port: 443
+  uuid: 3c4e10af98c30972
+  network: grpc
+  tls: true
+  servername: n2.gladns.com
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.180.222.18
+  type: trojan
+  server: 35.180.222.18
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
@@ -69,16 +64,7 @@ proxies:
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64_1
-  type: trojan
-  server: 23.247.137.64
-  port: 443
-  uuid: 3c4e10af98c30972
-  network: grpc
-  tls: true
-  servername: n2.gladns.com
+  servername: 35.180.222.18
   client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
@@ -93,46 +79,36 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
-- name: TROJAN-WS-TLS-🇫🇷(FR)-141.94.68.216
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.180.222.18_2
   type: trojan
-  server: 141.94.68.216
-  port: 2053
-  uuid: iwangjie
-  network: ws
+  server: 35.180.222.18
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
   tls: true
-  servername: nodes.830901.xyz
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: nodes.830901.xyz
-- name: TROJAN-WS-TLS-🇩🇪(DE)-135.125.232.253
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.180.222.18_3
   type: trojan
-  server: 135.125.232.253
-  port: 2053
-  uuid: iwangjie
-  network: ws
+  server: 35.180.222.18
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
   tls: true
-  servername: nodes.830901.xyz
+  servername: 35.180.222.18
   client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: nodes.830901.xyz
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.109
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.222.18
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.109_1
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.222.18
   - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.222.18_1
-  - TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64_1
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-WS-TLS-🇫🇷(FR)-141.94.68.216
-  - TROJAN-WS-TLS-🇩🇪(DE)-135.125.232.253
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.222.18_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.222.18_3
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -149,16 +125,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.109
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.222.18
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.109_1
+  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.222.18
   - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.222.18_1
-  - TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64_1
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-WS-TLS-🇫🇷(FR)-141.94.68.216
-  - TROJAN-WS-TLS-🇩🇪(DE)-135.125.232.253
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.222.18_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.222.18_3
 rule-providers:
   adblock:
     type: http

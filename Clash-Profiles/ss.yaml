@@ -14,18 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-146.19.49.251
-  type: ss
-  server: 146.19.49.251
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ODfxioK0VkKxTdpVQJ4rv8HglAu0vzv6
-- name: SS-C20P-🇬🇧(GB)-57.129.140.88
-  type: ss
-  server: 57.129.140.88
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: k1v5g9FefdoO
 - name: SS-C20P-🇳🇱(NL)-51.158.204.165
   type: ss
   server: 51.158.204.165
@@ -38,36 +26,12 @@ proxies:
   port: 443
   cipher: chacha20-ietf-poly1305
   password: yZRXLAD389hELa9AoSxfj5
-- name: SS-C20P-🇵🇦(PA)-138.186.142.80
-  type: ss
-  server: 138.186.142.80
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: SS-C20P-🇸🇪(SE)-91.186.217.246
-  type: ss
-  server: 91.186.217.246
-  port: 31764
-  cipher: chacha20-ietf-poly1305
-  password: Ftc17VH9ZXQON5vslJCYmv
 - name: SS-C20P-🇫🇮(FI)-185.193.102.7
   type: ss
   server: 185.193.102.7
   port: 57456
   cipher: chacha20-ietf-poly1305
   password: 360e21d21977dc11
-- name: SS-C20P-🇷🇺(RU)-5.129.201.43
-  type: ss
-  server: 5.129.201.43
-  port: 23256
-  cipher: chacha20-ietf-poly1305
-  password: yALtyAtHfbw1Vu4pqh6wUc
-- name: SS-C20P-🇸🇪(SE)-46.246.98.39
-  type: ss
-  server: 46.246.98.39
-  port: 55818
-  cipher: chacha20-ietf-poly1305
-  password: 85qJ4wjHhPbVNxWKT1mJnE
 - name: SS-C20P-🇺🇸(US)-38.107.234.106
   type: ss
   server: 38.107.234.106
@@ -78,15 +42,9 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-146.19.49.251
-  - SS-C20P-🇬🇧(GB)-57.129.140.88
   - SS-C20P-🇳🇱(NL)-51.158.204.165
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇵🇦(PA)-138.186.142.80
-  - SS-C20P-🇸🇪(SE)-91.186.217.246
   - SS-C20P-🇫🇮(FI)-185.193.102.7
-  - SS-C20P-🇷🇺(RU)-5.129.201.43
-  - SS-C20P-🇸🇪(SE)-46.246.98.39
   - SS-C20P-🇺🇸(US)-38.107.234.106
   tolerance: 50
   lazy: false
@@ -104,15 +62,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-146.19.49.251
-  - SS-C20P-🇬🇧(GB)-57.129.140.88
   - SS-C20P-🇳🇱(NL)-51.158.204.165
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇵🇦(PA)-138.186.142.80
-  - SS-C20P-🇸🇪(SE)-91.186.217.246
   - SS-C20P-🇫🇮(FI)-185.193.102.7
-  - SS-C20P-🇷🇺(RU)-5.129.201.43
-  - SS-C20P-🇸🇪(SE)-46.246.98.39
   - SS-C20P-🇺🇸(US)-38.107.234.106
 rule-providers:
   adblock:
