@@ -14,78 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
-  type: trojan
-  server: 209.200.246.53
-  port: 10785
-  uuid: D3OJA7xY5U
-  network: grpc
-  tls: true
-  servername: cloudflare.com
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.31.208
-  type: trojan
-  server: 51.45.31.208
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.31.208_1
-  type: trojan
-  server: 51.45.31.208
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.166.233
-  type: trojan
-  server: 63.179.166.233
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.231.225
-  type: trojan
-  server: 51.44.231.225
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.157.213.150
-  type: trojan
-  server: 18.157.213.150
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.157.213.150_1
-  type: trojan
-  server: 18.157.213.150
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.166.233_1
-  type: trojan
-  server: 63.179.166.233
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
 - name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
   type: trojan
   server: 62.133.60.83
@@ -98,6 +26,15 @@ proxies:
     path: /
     headers:
       Host: dns.google.com
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.166.233
+  type: trojan
+  server: 63.179.166.233
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
   type: trojan
   server: creativecommons.org
@@ -111,6 +48,15 @@ proxies:
     path: /yamtekodasayahhh
     headers:
       Host: kotlet.arshiacomplus.dpdns.org
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.166.233_1
+  type: trojan
+  server: 63.179.166.233
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇫🇷(FR)-51.38.226.4
   type: trojan
   server: 51.38.226.4
@@ -137,54 +83,50 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/45.144.48.158=8443
     headers:
       Host: joss.dus.biz.id
-- name: TROJAN-WS-TLS-🇳🇱(NL)-194.147.115.149
+- name: TROJAN-TCP-TLS-🇸🇬(SG)-45.145.154.8
   type: trojan
-  server: 194.147.115.149
+  server: 45.145.154.8
   port: 443
-  uuid: c2d6a850-7e35-44f5-ab9f-8299f6f8c72b
-  network: ws
+  uuid: d30ab83dbde4480082048fb315bedebd
+  network: tcp
   tls: true
-  servername: joss.dus.biz.id
+  servername: 45.145.154.8
   client-fingerprint: chrome
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/194.147.115.149=443
-    headers:
-      Host: joss.dus.biz.id
-- name: TROJAN-WS-TLS-🇩🇰(DK)-89.28.236.243
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
-  server: 89.28.236.243
+  server: 172.67.180.227
   port: 443
-  uuid: 63b8ce6d-9a30-4122-a00f-fd47f020dc27
+  uuid: bpb-trojan
+  network: ws
+  tls: true
+  servername: mashdt.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tr?ed=2560
+    headers:
+      Host: mashdt.pages.dev
+- name: TROJAN-TCP-TLS-🇸🇬(SG)-185.151.146.211
+  type: trojan
+  server: 185.151.146.211
+  port: 443
+  uuid: d30ab83dbde4480082048fb315bedebd
+  network: tcp
+  tls: true
+  servername: 185.151.146.211
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇵🇱(PL)-213.159.208.88
+  type: trojan
+  server: 213.159.208.88
+  port: 2053
+  uuid: 14d6efcf-b0d3-4054-9d4e-e1347e3ceaa2
   network: ws
   tls: true
   servername: joss.dus.biz.id
   client-fingerprint: chrome
   ws-opts:
-    path: /Free-VPN-CF-Geo-Project/89.28.236.243=443
+    path: /Free-VPN-CF-Geo-Project/213.159.208.88=2053
     headers:
       Host: joss.dus.biz.id
-- name: TROJAN-WS-TLS-🇪🇸(ES)-45.159.251.8
-  type: trojan
-  server: 45.159.251.8
-  port: 81
-  uuid: 19f8e29a-3f0b-448c-92e8-ae035ea5f9ba
-  network: ws
-  tls: true
-  servername: joss.dus.biz.id
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/45.159.251.8=81
-    headers:
-      Host: joss.dus.biz.id
-- name: TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
-  type: trojan
-  server: 91.108.250.230
-  port: 50191
-  uuid: 3BLPOJr3OY
-  network: grpc
-  tls: true
-  servername: cloudflare.com
-  client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇮🇱(IL)-94.131.114.50
   type: trojan
   server: 94.131.114.50
@@ -198,41 +140,21 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/94.131.114.50=81
     headers:
       Host: joss.dus.biz.id
-- name: TROJAN-WS-TLS-🇷🇺(RU)-213.159.208.88
-  type: trojan
-  server: 213.159.208.88
-  port: 2053
-  uuid: 14d6efcf-b0d3-4054-9d4e-e1347e3ceaa2
-  network: ws
-  tls: true
-  servername: joss.dus.biz.id
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/213.159.208.88=2053
-    headers:
-      Host: joss.dus.biz.id
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.31.208
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.31.208_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.166.233
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.231.225
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.157.213.150
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.157.213.150_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.166.233_1
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.166.233
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.166.233_1
   - TROJAN-WS-TLS-🇫🇷(FR)-51.38.226.4
   - TROJAN-WS-TLS-🇵🇱(PL)-45.144.48.158
-  - TROJAN-WS-TLS-🇳🇱(NL)-194.147.115.149
-  - TROJAN-WS-TLS-🇩🇰(DK)-89.28.236.243
-  - TROJAN-WS-TLS-🇪🇸(ES)-45.159.251.8
-  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
+  - TROJAN-TCP-TLS-🇸🇬(SG)-45.145.154.8
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-TCP-TLS-🇸🇬(SG)-185.151.146.211
+  - TROJAN-WS-TLS-🇵🇱(PL)-213.159.208.88
   - TROJAN-WS-TLS-🇮🇱(IL)-94.131.114.50
-  - TROJAN-WS-TLS-🇷🇺(RU)-213.159.208.88
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -249,24 +171,17 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.31.208
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.31.208_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.166.233
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.231.225
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.157.213.150
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.157.213.150_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.166.233_1
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.166.233
   - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.166.233_1
   - TROJAN-WS-TLS-🇫🇷(FR)-51.38.226.4
   - TROJAN-WS-TLS-🇵🇱(PL)-45.144.48.158
-  - TROJAN-WS-TLS-🇳🇱(NL)-194.147.115.149
-  - TROJAN-WS-TLS-🇩🇰(DK)-89.28.236.243
-  - TROJAN-WS-TLS-🇪🇸(ES)-45.159.251.8
-  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.250.230
+  - TROJAN-TCP-TLS-🇸🇬(SG)-45.145.154.8
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-TCP-TLS-🇸🇬(SG)-185.151.146.211
+  - TROJAN-WS-TLS-🇵🇱(PL)-213.159.208.88
   - TROJAN-WS-TLS-🇮🇱(IL)-94.131.114.50
-  - TROJAN-WS-TLS-🇷🇺(RU)-213.159.208.88
 rule-providers:
   adblock:
     type: http
