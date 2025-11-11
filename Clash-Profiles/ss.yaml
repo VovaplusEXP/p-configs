@@ -14,6 +14,12 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-C20P-🇺🇸(US)-92.118.112.101
+  type: ss
+  server: 92.118.112.101
+  port: 9483
+  cipher: chacha20-ietf-poly1305
+  password: lGPIfZrRYTSjggGGoOKyDC
 - name: SS-C20P-🇳🇱(NL)-51.158.204.165
   type: ss
   server: 51.158.204.165
@@ -32,27 +38,35 @@ proxies:
   port: 443
   cipher: chacha20-ietf-poly1305
   password: ODfxioK0VkKxTdpVQJ4rv8HglAu0vzv6
-- name: SS-C20P-🇩🇪(DE)-109.122.197.192
+- name: SS-C20P-🇹🇷(TR)-62.133.63.21
   type: ss
-  server: 109.122.197.192
-  port: 443
+  server: 62.133.63.21
+  port: 65262
   cipher: chacha20-ietf-poly1305
-  password: JNK7CvuvWTpF2ZY3d9ygt1
-- name: SS-C20P-🇦🇺(AU)-45.15.185.70
+  password: ocnfwDIk92rrdjKO852Ymj
+- name: SS-C20P-🇫🇮(FI)-185.193.102.7
   type: ss
-  server: 45.15.185.70
-  port: 990
+  server: 185.193.102.7
+  port: 57456
   cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  password: 360e21d21977dc11
+- name: SS-C20P-🇺🇸(US)-38.107.234.106
+  type: ss
+  server: 38.107.234.106
+  port: 37147
+  cipher: chacha20-ietf-poly1305
+  password: c79ogMGRunbAa1ww2pCK67
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
+  - SS-C20P-🇺🇸(US)-92.118.112.101
   - SS-C20P-🇳🇱(NL)-51.158.204.165
   - SS-C20P-🇫🇷(FR)-62.210.88.22
   - SS-C20P-🇺🇸(US)-146.19.49.251
-  - SS-C20P-🇩🇪(DE)-109.122.197.192
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
+  - SS-C20P-🇹🇷(TR)-62.133.63.21
+  - SS-C20P-🇫🇮(FI)-185.193.102.7
+  - SS-C20P-🇺🇸(US)-38.107.234.106
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -69,11 +83,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
+  - SS-C20P-🇺🇸(US)-92.118.112.101
   - SS-C20P-🇳🇱(NL)-51.158.204.165
   - SS-C20P-🇫🇷(FR)-62.210.88.22
   - SS-C20P-🇺🇸(US)-146.19.49.251
-  - SS-C20P-🇩🇪(DE)-109.122.197.192
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
+  - SS-C20P-🇹🇷(TR)-62.133.63.21
+  - SS-C20P-🇫🇮(FI)-185.193.102.7
+  - SS-C20P-🇺🇸(US)-38.107.234.106
 rule-providers:
   adblock:
     type: http
