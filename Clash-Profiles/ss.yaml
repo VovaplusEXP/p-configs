@@ -20,74 +20,74 @@ proxies:
   port: 9483
   cipher: chacha20-ietf-poly1305
   password: lGPIfZrRYTSjggGGoOKyDC
-- name: SS-C20P-🇵🇦(PA)-138.186.142.80
-  type: ss
-  server: 138.186.142.80
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: SS-C20P-🇵🇦(PA)-138.186.142.81
-  type: ss
-  server: 138.186.142.81
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: SS-C20P-🇳🇱(NL)-51.158.204.165
   type: ss
   server: 51.158.204.165
   port: 443
   cipher: chacha20-ietf-poly1305
   password: 0KDTVV9wFm2pvQUnQftJDWgXbaY8kIfG
+- name: SS-C20P-🇵🇦(PA)-138.186.142.81
+  type: ss
+  server: 138.186.142.81
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: SS-C20P-🇫🇷(FR)-62.210.88.22
   type: ss
   server: 62.210.88.22
   port: 443
   cipher: chacha20-ietf-poly1305
   password: 2cvbSECBxXXC91Jlq5jBfM
-- name: SS-C20P-🇷🇺(RU)-147.45.235.63
-  type: ss
-  server: 147.45.235.63
-  port: 49115
-  cipher: chacha20-ietf-poly1305
-  password: yYLiE0LOsr0CwIjbiCSLy2
-- name: SS-C20P-🇦🇷(AR)-190.103.176.32
-  type: ss
-  server: 190.103.176.32
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: SS-C20P-🇷🇺(RU)-5.129.201.43
   type: ss
   server: 5.129.201.43
   port: 23256
   cipher: chacha20-ietf-poly1305
   password: yALtyAtHfbw1Vu4pqh6wUc
+- name: SS-C20P-🇷🇺(RU)-147.45.235.63
+  type: ss
+  server: 147.45.235.63
+  port: 49115
+  cipher: chacha20-ietf-poly1305
+  password: yYLiE0LOsr0CwIjbiCSLy2
 - name: SS-C20P-🇫🇮(FI)-185.193.102.7
   type: ss
   server: 185.193.102.7
   port: 57456
   cipher: chacha20-ietf-poly1305
   password: 360e21d21977dc11
+- name: SS-C20P-🇦🇷(AR)-190.103.176.32
+  type: ss
+  server: 190.103.176.32
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: SS-C20P-🇺🇸(US)-38.107.234.106
   type: ss
   server: 38.107.234.106
   port: 37147
   cipher: chacha20-ietf-poly1305
   password: c79ogMGRunbAa1ww2pCK67
+- name: SS-C20P-🇺🇸(US)-146.19.49.251
+  type: ss
+  server: 146.19.49.251
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: ODfxioK0VkKxTdpVQJ4rv8HglAu0vzv6
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-92.118.112.101
-  - SS-C20P-🇵🇦(PA)-138.186.142.80
-  - SS-C20P-🇵🇦(PA)-138.186.142.81
   - SS-C20P-🇳🇱(NL)-51.158.204.165
+  - SS-C20P-🇵🇦(PA)-138.186.142.81
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇷🇺(RU)-147.45.235.63
-  - SS-C20P-🇦🇷(AR)-190.103.176.32
   - SS-C20P-🇷🇺(RU)-5.129.201.43
+  - SS-C20P-🇷🇺(RU)-147.45.235.63
   - SS-C20P-🇫🇮(FI)-185.193.102.7
+  - SS-C20P-🇦🇷(AR)-190.103.176.32
   - SS-C20P-🇺🇸(US)-38.107.234.106
+  - SS-C20P-🇺🇸(US)-146.19.49.251
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -105,15 +105,15 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-92.118.112.101
-  - SS-C20P-🇵🇦(PA)-138.186.142.80
-  - SS-C20P-🇵🇦(PA)-138.186.142.81
   - SS-C20P-🇳🇱(NL)-51.158.204.165
+  - SS-C20P-🇵🇦(PA)-138.186.142.81
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇷🇺(RU)-147.45.235.63
-  - SS-C20P-🇦🇷(AR)-190.103.176.32
   - SS-C20P-🇷🇺(RU)-5.129.201.43
+  - SS-C20P-🇷🇺(RU)-147.45.235.63
   - SS-C20P-🇫🇮(FI)-185.193.102.7
+  - SS-C20P-🇦🇷(AR)-190.103.176.32
   - SS-C20P-🇺🇸(US)-38.107.234.106
+  - SS-C20P-🇺🇸(US)-146.19.49.251
 rule-providers:
   adblock:
     type: http
