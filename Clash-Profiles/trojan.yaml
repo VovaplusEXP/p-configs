@@ -14,45 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.34.73
-  type: trojan
-  server: 51.45.34.73
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.161.224
-  type: trojan
-  server: 13.36.161.224
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  type: trojan
-  server: 62.133.60.83
-  port: 2025
-  uuid: vpn
-  network: ws
-  tls: false
-  servername: 62.133.60.83
-  ws-opts:
-    path: /
-    headers:
-      Host: dns.google.com
-- name: TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
-  type: trojan
-  server: 209.200.246.53
-  port: 10785
-  uuid: D3OJA7xY5U
-  network: grpc
-  tls: true
-  servername: cloudflare.com
-  client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-18.193.30.200
   type: trojan
   server: 18.193.30.200
@@ -62,18 +23,9 @@ proxies:
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.178.186.196
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.193.30.200_1
   type: trojan
-  server: 63.178.186.196
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.178.186.196_1
-  type: trojan
-  server: 63.178.186.196
+  server: 18.193.30.200
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
@@ -89,6 +41,27 @@ proxies:
   tls: true
   servername: refersion.com
   client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
+  type: trojan
+  server: 209.200.246.53
+  port: 10785
+  uuid: D3OJA7xY5U
+  network: grpc
+  tls: true
+  servername: cloudflare.com
+  client-fingerprint: chrome
+- name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  type: trojan
+  server: 62.133.60.83
+  port: 2025
+  uuid: vpn
+  network: ws
+  tls: false
+  servername: 62.133.60.83
+  ws-opts:
+    path: /
+    headers:
+      Host: dns.google.com
 - name: TROJAN-TCP-REALITY-🇩🇪(DE)-91.107.179.207_1
   type: trojan
   server: 91.107.179.207
@@ -98,19 +71,15 @@ proxies:
   tls: true
   servername: refersion.com
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.161.224
   type: trojan
-  server: creativecommons.org
-  port: 2053
-  uuid: YwuvGJk36B
-  network: ws
+  server: 13.36.161.224
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
   tls: true
-  servername: kotlet.arshiacomplus.dpdns.org
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-  ws-opts:
-    path: /yamtekodasayahhh
-    headers:
-      Host: kotlet.arshiacomplus.dpdns.org
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
   server: 172.67.180.227
@@ -124,55 +93,18 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.34.73_1
-  type: trojan
-  server: 51.45.34.73
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.161.224_1
-  type: trojan
-  server: 13.36.161.224
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇱🇻(LV)-lv.podpiska.vip
-  type: trojan
-  server: lv.podpiska.vip
-  port: 11000
-  uuid: -4146XJHYAzJ4K8Ov6_LBQ
-  network: ws
-  tls: true
-  servername: noproblemvpn.ru
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tw
-    headers:
-      Host: lv.podpiska.vip
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.34.73
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.161.224
-  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
   - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.30.200
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.186.196
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.186.196_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.30.200_1
   - TROJAN-TCP-REALITY-🇩🇪(DE)-91.107.179.207
+  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
+  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
   - TROJAN-TCP-REALITY-🇩🇪(DE)-91.107.179.207_1
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.161.224
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.34.73_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.161.224_1
-  - TROJAN-WS-TLS-🇱🇻(LV)-lv.podpiska.vip
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -189,20 +121,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.34.73
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.161.224
-  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
   - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.30.200
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.186.196
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.178.186.196_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.30.200_1
   - TROJAN-TCP-REALITY-🇩🇪(DE)-91.107.179.207
+  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
+  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
   - TROJAN-TCP-REALITY-🇩🇪(DE)-91.107.179.207_1
-  - TROJAN-WS-TLS-🇬🇧(GB)-creativecommons.org
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.161.224
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.34.73_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.161.224_1
-  - TROJAN-WS-TLS-🇱🇻(LV)-lv.podpiska.vip
 rule-providers:
   adblock:
     type: http
