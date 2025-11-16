@@ -14,30 +14,18 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-92.118.112.101
-  type: ss
-  server: 92.118.112.101
-  port: 9483
-  cipher: chacha20-ietf-poly1305
-  password: Iq8qdlBRoT2oIZzHIrFHGe
 - name: SS-C20P-🇵🇦(PA)-138.186.142.81
   type: ss
   server: 138.186.142.81
   port: 990
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: SS-C20P-🇳🇱(NL)-51.158.204.165
+- name: SS-C20P-🇫🇮(FI)-65.21.243.22
   type: ss
-  server: 51.158.204.165
-  port: 443
+  server: 65.21.243.22
+  port: 31348
   cipher: chacha20-ietf-poly1305
-  password: 0KDTVV9wFm2pvQUnQftJDWgXbaY8kIfG
-- name: SS-C20P-🇷🇺(RU)-5.129.201.43
-  type: ss
-  server: 5.129.201.43
-  port: 23256
-  cipher: chacha20-ietf-poly1305
-  password: yALtyAtHfbw1Vu4pqh6wUc
+  password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
 - name: SS-C20P-🇦🇷(AR)-190.103.176.32
   type: ss
   server: 190.103.176.32
@@ -50,23 +38,14 @@ proxies:
   port: 37147
   cipher: chacha20-ietf-poly1305
   password: c79ogMGRunbAa1ww2pCK67
-- name: SS-C20P-🇦🇺(AU)-45.15.185.70
-  type: ss
-  server: 45.15.185.70
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-92.118.112.101
   - SS-C20P-🇵🇦(PA)-138.186.142.81
-  - SS-C20P-🇳🇱(NL)-51.158.204.165
-  - SS-C20P-🇷🇺(RU)-5.129.201.43
+  - SS-C20P-🇫🇮(FI)-65.21.243.22
   - SS-C20P-🇦🇷(AR)-190.103.176.32
   - SS-C20P-🇺🇸(US)-38.107.234.106
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -83,13 +62,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-92.118.112.101
   - SS-C20P-🇵🇦(PA)-138.186.142.81
-  - SS-C20P-🇳🇱(NL)-51.158.204.165
-  - SS-C20P-🇷🇺(RU)-5.129.201.43
+  - SS-C20P-🇫🇮(FI)-65.21.243.22
   - SS-C20P-🇦🇷(AR)-190.103.176.32
   - SS-C20P-🇺🇸(US)-38.107.234.106
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
   adblock:
     type: http
