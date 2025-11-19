@@ -20,25 +20,61 @@ proxies:
   port: 1080
   cipher: chacha20-ietf-poly1305
   password: 8tmnvX5zYuWGVIDP2jglZw
-- name: SS-C20P-🌐(XX)-146.19.49.251
+- name: SS-C20P-🇺🇸(US)-71.19.148.143
   type: ss
-  server: 146.19.49.251
+  server: 71.19.148.143
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: ODfxioK0VkKxTdpVQJ4rv8HglAu0vzv6
-- name: SS-C20P-🇵🇦(PA)-138.186.142.81
+  password: p78naCf2EfOlRSLTX0wFVx
+- name: SS-C20P-🇺🇸(US)-92.118.112.101
   type: ss
-  server: 138.186.142.81
-  port: 990
+  server: 92.118.112.101
+  port: 9483
   cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  password: 71W6e66gy7kud0hHZ16sDM
+- name: SS-A256GCM-🇰🇷(KR)-43.203.252.35
+  type: ss
+  server: 43.203.252.35
+  port: 80
+  cipher: aes-256-gcm
+  password: dada0801
+- name: SS-A256GCM-🇰🇷(KR)-54.180.202.139
+  type: ss
+  server: 54.180.202.139
+  port: 80
+  cipher: aes-256-gcm
+  password: dada0801
+- name: SS-A256GCM-🇰🇷(KR)-13.209.14.105
+  type: ss
+  server: 13.209.14.105
+  port: 80
+  cipher: aes-256-gcm
+  password: dada0801
+- name: SS-A256GCM-🇰🇷(KR)-43.203.199.246
+  type: ss
+  server: 43.203.199.246
+  port: 80
+  cipher: aes-256-gcm
+  password: dada0801
+- name: SS-A256GCM-🇰🇷(KR)-13.209.85.66
+  type: ss
+  server: 13.209.85.66
+  port: 80
+  cipher: aes-256-gcm
+  password: dada0801
+- name: SS-C20P-🇬🇧(GB)-57.129.140.88
+  type: ss
+  server: 57.129.140.88
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: k1v5g9FefdoO
 - name: SS-C20P-🇩🇪(DE)-91.107.186.156
   type: ss
   server: 91.107.186.156
   port: 1080
   cipher: chacha20-ietf-poly1305
   password: agTaxIOFO1QEAqwI2VA3Cg
-- name: SS-C20P-🌐(XX)-46.246.97.195
+- name: SS-C20P-🇸🇪(SE)-46.246.97.195
   type: ss
   server: 46.246.97.195
   port: 23931
@@ -50,6 +86,12 @@ proxies:
   port: 23256
   cipher: chacha20-ietf-poly1305
   password: yALtyAtHfbw1Vu4pqh6wUc
+- name: SS-C20P-🇦🇺(AU)-45.15.185.70
+  type: ss
+  server: 45.15.185.70
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: SS-C20P-🇦🇷(AR)-190.103.176.32
   type: ss
   server: 190.103.176.32
@@ -61,11 +103,18 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-5.78.51.123
-  - SS-C20P-🌐(XX)-146.19.49.251
-  - SS-C20P-🇵🇦(PA)-138.186.142.81
+  - SS-C20P-🇺🇸(US)-71.19.148.143
+  - SS-C20P-🇺🇸(US)-92.118.112.101
+  - SS-A256GCM-🇰🇷(KR)-43.203.252.35
+  - SS-A256GCM-🇰🇷(KR)-54.180.202.139
+  - SS-A256GCM-🇰🇷(KR)-13.209.14.105
+  - SS-A256GCM-🇰🇷(KR)-43.203.199.246
+  - SS-A256GCM-🇰🇷(KR)-13.209.85.66
+  - SS-C20P-🇬🇧(GB)-57.129.140.88
   - SS-C20P-🇩🇪(DE)-91.107.186.156
-  - SS-C20P-🌐(XX)-46.246.97.195
+  - SS-C20P-🇸🇪(SE)-46.246.97.195
   - SS-C20P-🇷🇺(RU)-5.129.201.43
+  - SS-C20P-🇦🇺(AU)-45.15.185.70
   - SS-C20P-🇦🇷(AR)-190.103.176.32
   tolerance: 50
   lazy: false
@@ -84,11 +133,18 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-5.78.51.123
-  - SS-C20P-🌐(XX)-146.19.49.251
-  - SS-C20P-🇵🇦(PA)-138.186.142.81
+  - SS-C20P-🇺🇸(US)-71.19.148.143
+  - SS-C20P-🇺🇸(US)-92.118.112.101
+  - SS-A256GCM-🇰🇷(KR)-43.203.252.35
+  - SS-A256GCM-🇰🇷(KR)-54.180.202.139
+  - SS-A256GCM-🇰🇷(KR)-13.209.14.105
+  - SS-A256GCM-🇰🇷(KR)-43.203.199.246
+  - SS-A256GCM-🇰🇷(KR)-13.209.85.66
+  - SS-C20P-🇬🇧(GB)-57.129.140.88
   - SS-C20P-🇩🇪(DE)-91.107.186.156
-  - SS-C20P-🌐(XX)-46.246.97.195
+  - SS-C20P-🇸🇪(SE)-46.246.97.195
   - SS-C20P-🇷🇺(RU)-5.129.201.43
+  - SS-C20P-🇦🇺(AU)-45.15.185.70
   - SS-C20P-🇦🇷(AR)-190.103.176.32
 rule-providers:
   adblock:
