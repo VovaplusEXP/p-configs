@@ -17,7 +17,7 @@ OUTPUT_DIR = "Temp"
 # --- Performance & Speed Test Settings ---
 MAX_WORKERS = 100
 BASE_SOCKS_PORT = 10800
-SPEED_THRESHOLD_MBPS = 2 # Lowered threshold to increase chances of keeping a server
+SPEED_THRESHOLD_MBPS = 20
 TEST_FILE_URL = "https://speed.cloudflare.com/__down?bytes=10000000"  # 10MB
 
 # --- Timeouts ---
@@ -25,17 +25,7 @@ MAX_TEST_DURATION_SECONDS = 10
 REQUEST_SOCKET_TIMEOUT_SECONDS = 5
 STARTUP_WAIT_SECONDS = 5.0
 
-# --- IPv6 Test Settings ---
-IPV6_TEST_URL = "https://[2606:4700:4700::1111]/" # Cloudflare's IPv6-only service
-IPV6_TIMEOUT_SECONDS = 3
 
-def test_ipv6_connectivity(proxies: Dict[str, str]) -> bool:
-    """Test IPv6 connectivity through the proxy."""
-    try:
-        response = requests.get(IPV6_TEST_URL, proxies=proxies, timeout=IPV6_TIMEOUT_SECONDS)
-        return response.status_code == 200
-    except requests.exceptions.RequestException:
-        return False
 
 # --- Xray Config Generation ---
 def create_xray_config(proxy: Proxy, local_socks_port: int, task_id: int) -> Optional[str]:
@@ -61,9 +51,9 @@ def create_xray_config(proxy: Proxy, local_socks_port: int, task_id: int) -> Opt
             user_obj: Dict[str, Any] = {"id": proxy.uuid, "encryption": "none", "flow": proxy.flow or ""}
             outbound_config = {"protocol": "vless", "settings": {"vnext": [{"address": proxy.host, "port": proxy.port, "users": [user_obj]}]}, "streamSettings": stream_settings}
         elif proxy.protocol == "trojan":
-            outbound_config = {"protocol": "trojan", "settings": {"servers": [{"address": proxy.host, "port": proxy.port, "password": proxy.uuid}]}}
+            outbound_config = {"protocol": "trojan", "settings": {"servers": [{"address": proxy.host, "port": proxy.port, "password": proxy.uuid}]}, "streamSettings": stream_settings}
         elif proxy.protocol == "vmess":
-            outbound_config = {"protocol": "vmess", "settings": {"vnext": [{"address": proxy.host, "port": proxy.port, "users": [{"id": proxy.uuid, "alterId": proxy.alterId, "security": proxy.vmess_cipher}]}]}}
+            outbound_config = {"protocol": "vmess", "settings": {"vnext": [{"address": proxy.host, "port": proxy.port, "users": [{"id": proxy.uuid, "alterId": proxy.alterId, "security": proxy.vmess_cipher}]}]}, "streamSettings": stream_settings}
         elif proxy.protocol == "ss":
             outbound_config = {"protocol": "shadowsocks", "settings": {"servers": [{"address": proxy.host, "port": proxy.port, "method": proxy.method, "password": proxy.password}]}}
         elif proxy.protocol in ["hy2", "tuic"]:
@@ -99,11 +89,7 @@ def test_proxy(proxy: Proxy, task_id: int) -> Optional[Proxy]:
         time.sleep(STARTUP_WAIT_SECONDS)
         proxies = {'http': f'socks5h://127.0.0.1:{local_socks_port}', 'https': f'socks5h://127.0.0.1:{local_socks_port}'}
         
-        # Test 1: IPv6 connectivity
-        if not test_ipv6_connectivity(proxies):
-            return None
-        
-        # Test 2: Speed test
+        # Speed test
         start_time = time.time()
         downloaded_bytes = 0
         with requests.get(TEST_FILE_URL, proxies=proxies, stream=True, timeout=REQUEST_SOCKET_TIMEOUT_SECONDS) as response:
