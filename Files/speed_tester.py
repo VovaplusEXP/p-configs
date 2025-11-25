@@ -17,7 +17,7 @@ OUTPUT_DIR = "Temp"
 # --- Performance & Speed Test Settings ---
 MAX_WORKERS = 100
 BASE_SOCKS_PORT = 10800
-SPEED_THRESHOLD_MBPS = 20
+SPEED_THRESHOLD_MBPS = 20  # Minimum required speed for a server to be considered "live"
 TEST_FILE_URL = "https://speed.cloudflare.com/__down?bytes=10000000"  # 10MB
 
 # --- Timeouts ---
@@ -89,7 +89,7 @@ def test_proxy(proxy: Proxy, task_id: int) -> Optional[Proxy]:
         time.sleep(STARTUP_WAIT_SECONDS)
         proxies = {'http': f'socks5h://127.0.0.1:{local_socks_port}', 'https': f'socks5h://127.0.0.1:{local_socks_port}'}
         
-        # Speed test
+        # Test: Speed test
         start_time = time.time()
         downloaded_bytes = 0
         with requests.get(TEST_FILE_URL, proxies=proxies, stream=True, timeout=REQUEST_SOCKET_TIMEOUT_SECONDS) as response:
