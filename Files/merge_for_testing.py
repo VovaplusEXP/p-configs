@@ -5,7 +5,7 @@ from typing import Set
 
 # --- Configuration ---
 DB_DIR = "db"
-SPLITTED_DIR = "../Splitted-By-Protocol"
+SPLITTED_DIR = "Splitted-By-Protocol"
 TEMP_DIR = "Temp"
 PROTOCOLS_TO_PROCESS = ["vless", "vmess", "ss", "trojan", "hy2", "tuic"]
 

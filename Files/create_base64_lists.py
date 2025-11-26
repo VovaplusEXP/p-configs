@@ -8,11 +8,11 @@ from typing import Set
 
 # --- Configuration ---
 DB_DIR = "db"
-PLAIN_TEXT_DIR = "../Splitted-By-Protocol"
+PLAIN_TEXT_DIR = "Splitted-By-Protocol"
 PROTOCOLS_TO_SYNC = ["vless", "vmess", "ss", "trojan", "hy2", "tuic"]
 SOURCE_DIRS_FOR_ENCODING = [
-    "../Splitted-By-Protocol",
-    "../Splitted-By-Protocol-Secure"
+    "Splitted-By-Protocol",
+    "Splitted-By-Protocol-Secure"
 ]
 
 async def read_file_to_set(filepath: str) -> Set[str]:

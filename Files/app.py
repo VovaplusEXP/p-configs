@@ -8,7 +8,7 @@ from aiohttp import ClientSession, ClientTimeout # Explicitly import ClientSessi
 
 # --- Configuration ---
 SUBSCRIPTION_LIST_FILE = "Subscription-List.txt"
-OUTPUT_DIR_SPLITTED = "../Splitted-By-Protocol"
+OUTPUT_DIR_SPLITTED = "Splitted-By-Protocol"
 REQUEST_TIMEOUT = 20
 
 def parse_and_validate_config(line: str) -> Tuple[Tuple[str, str], Any] | None:

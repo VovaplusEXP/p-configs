@@ -6,7 +6,7 @@ from parsers import parse_proxy
 
 # --- Configuration ---
 SOURCE_DIR = "db"
-DEST_DIR = "../Splitted-By-Protocol-Secure"
+DEST_DIR = "Splitted-By-Protocol-Secure"
 PROTOCOLS_TO_FILTER = ["vless", "vmess"]
 
 async def read_file_to_set(filepath: str) -> Set[str]:

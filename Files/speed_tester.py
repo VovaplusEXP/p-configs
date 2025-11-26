@@ -5,11 +5,11 @@ import time
 import requests
 import signal
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Tuple
 from parsers import parse_proxy, Proxy
 
 # --- Configuration ---
-XRAY_EXECUTABLE_PATH = "../xray"
+XRAY_EXECUTABLE_PATH = "xray"
 SOURCE_DIR = "Temp"
 OUTPUT_DIR = "Temp"
 # Protocols will be discovered dynamically based on files ending with '_to_test.txt'
@@ -17,7 +17,7 @@ OUTPUT_DIR = "Temp"
 # --- Performance & Speed Test Settings ---
 MAX_WORKERS = 100
 BASE_SOCKS_PORT = 10800
-SPEED_THRESHOLD_MBPS = 2 # Lowered threshold to increase chances of keeping a server
+SPEED_THRESHOLD_MBPS = 20  # Restored threshold
 TEST_FILE_URL = "https://speed.cloudflare.com/__down?bytes=10000000"  # 10MB
 
 # --- Timeouts ---
@@ -81,27 +81,29 @@ def create_xray_config(proxy: Proxy, local_socks_port: int, task_id: int) -> Opt
     return config_path
 
 # --- Worker Function ---
-def test_proxy(proxy: Proxy, task_id: int) -> Optional[Proxy]:
+def test_proxy(proxy: Proxy, task_id: int) -> Tuple[bool, float, Proxy]:
     """
-    Tests a single proxy configuration.
-    Returns the original Proxy object if it passes, otherwise None.
+    Tests a single proxy configuration for IPv6 and speed.
+    Returns a tuple: (has_ipv6, speed_mbps, original_proxy_object).
     """
     local_socks_port = BASE_SOCKS_PORT + task_id
     config_file = create_xray_config(proxy, local_socks_port, task_id)
     if not config_file:
-        return None
+        return (False, 0.0, proxy)
 
     process = subprocess.Popen([os.path.abspath(XRAY_EXECUTABLE_PATH), "run", "-c", config_file],
                                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, 
                                preexec_fn=os.setsid)
     
+    has_ipv6 = False
+    final_speed = 0.0
+
     try:
         time.sleep(STARTUP_WAIT_SECONDS)
         proxies = {'http': f'socks5h://127.0.0.1:{local_socks_port}', 'https': f'socks5h://127.0.0.1:{local_socks_port}'}
         
         # Test 1: IPv6 connectivity
-        if not test_ipv6_connectivity(proxies):
-            return None
+        has_ipv6 = test_ipv6_connectivity(proxies)
         
         # Test 2: Speed test
         start_time = time.time()
@@ -115,16 +117,11 @@ def test_proxy(proxy: Proxy, task_id: int) -> Optional[Proxy]:
 
         duration = time.time() - start_time
         final_speed = (downloaded_bytes * 8) / (duration * 1024 * 1024) if duration > 0 else 0
-        
-        if final_speed > SPEED_THRESHOLD_MBPS:
-            return proxy # Test passed, return the original object
-
-        return None # Did not meet speed threshold
 
     except requests.exceptions.RequestException:
-        return None
+        pass # Errors are handled by speed being 0.0
     except Exception:
-        return None
+        pass # Catch any other errors
     finally:
         try:
             if process.poll() is None:
@@ -133,6 +130,8 @@ def test_proxy(proxy: Proxy, task_id: int) -> Optional[Proxy]:
             pass
         if os.path.exists(config_file):
             os.remove(config_file)
+
+    return (has_ipv6, final_speed, proxy)
 
 # --- Main Execution ---
 def main():
@@ -143,7 +142,8 @@ def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     protocols_to_test = [f for f in os.listdir(SOURCE_DIR) if f.endswith('_to_test.txt')]
     
-    print("Starting parallel speed test...")
+    print("Starting parallel speed test and geolocation...")
+
     for filename in protocols_to_test:
         source_path = os.path.join(SOURCE_DIR, filename)
         protocol_name = filename.replace('_to_test.txt', '')
@@ -156,27 +156,43 @@ def main():
             print(f"\n- No valid configs found in '{filename}', skipping.")
             continue
             
-        print(f"\n- Processing '{filename}' with {len(proxies_to_test)} configs...")
+        print(f"\n- Processing '{protocol_name}.txt' with up to {MAX_WORKERS} parallel workers...")
         
         passed_proxies: List[str] = []
+        tested_count = 0
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
             futures = {executor.submit(test_proxy, proxy, i): proxy for i, proxy in enumerate(proxies_to_test)}
-            for i, future in enumerate(as_completed(futures)):
-                result_proxy = future.result()
-                if result_proxy:
+            for future in as_completed(futures):
+                tested_count += 1
+                has_ipv6, speed_mbps, result_proxy = future.result()
+
+                status_msg = ""
+                is_ok = False
+
+                if not has_ipv6:
+                    status_msg = "No IPv6"
+                elif speed_mbps < SPEED_THRESHOLD_MBPS:
+                    status_msg = "Too slow"
+                else:
+                    status_msg = "OK"
+                    is_ok = True
+
+                if is_ok:
                     passed_proxies.append(result_proxy.original_line)
                 
-                print(f"\r  - Tested {i+1}/{len(proxies_to_test)} | Passed: {len(passed_proxies)}", end="", flush=True)
-        
+                print(f"\r  - Tested {tested_count}/{len(proxies_to_test)} | Status: {status_msg} ({speed_mbps:.2f} Mbps) | Fast found: {len(passed_proxies)}   ", end="", flush=True)
+
         print() # Newline after progress bar
         
         output_path = os.path.join(OUTPUT_DIR, f"{protocol_name}_passed.txt")
+        log_display_path = f"Splitted-By-Protocol/{protocol_name}.txt"
+
         if passed_proxies:
             with open(output_path, 'w', encoding='utf-8') as f:
                 f.write('\n'.join(passed_proxies))
-            print(f"  - Wrote {len(passed_proxies)} passed proxies to {output_path}")
+            # Restore old log format for user clarity, without breaking the script workflow
+            print(f"Wrote {len(passed_proxies)} configs to {log_display_path}")
         else:
-            # Create an empty file to signify that no proxies passed
             open(output_path, 'w').close()
             print(f"  - No proxies passed for '{protocol_name}'.")
 

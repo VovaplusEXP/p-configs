@@ -8,7 +8,7 @@ from renamer import get_geo_info, rename_proxy
 
 # --- Configuration ---
 SOURCE_DIR = "db"
-OUTPUT_DIR = "../Clash-Profiles"
+OUTPUT_DIR = "Clash-Profiles"
 PROTOCOLS_TO_PROCESS = ["vless", "vmess", "ss", "trojan"]
 SECURE_PROTOCOLS = ["vless", "vmess"]
 
