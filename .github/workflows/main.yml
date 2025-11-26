@@ -32,35 +32,27 @@ jobs:
           unzip xray.zip xray
           chmod +x xray
 
-      - name: 1. Fetch new configs from subscriptions
+      - name: Run main processing script (Fetch & Split)
         working-directory: ./Files
         run: python3 app.py
 
-      - name: 2. Merge DB with new configs for testing
-        working-directory: ./Files
-        run: python3 merge_for_testing.py
-
-      - name: 3. Run speed test on the merged list
+      - name: Run speed test script (Filter by Speed)
         working-directory: ./Files
         run: python3 speed_tester.py
 
-      - name: 4. Update the database with test results
-        working-directory: ./Files
-        run: python3 update_database.py
-
-      - name: 5. Generate secure lists from the updated DB
+      - name: Run secure filtering script (Filter by TLS/REALITY)
         working-directory: ./Files
         run: python3 filter_secure.py
 
-      - name: 6. Generate Base64 and plain-text lists from the updated DB
+      - name: Create per-protocol Base64 lists
         working-directory: ./Files
         run: python3 create_base64_lists.py
 
-      - name: 7. Generate Clash Meta profiles from the updated DB
+      - name: Generate Clash Meta profile
         working-directory: ./Files
         run: python3 generate_clash_profile.py
 
-      - name: 8. Commit and push changes
+      - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "✅ Updated configs and profiles"
