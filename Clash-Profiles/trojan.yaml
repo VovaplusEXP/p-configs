@@ -26,15 +26,6 @@ proxies:
     path: /
     headers:
       Host: dns.google.com
-- name: TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
-  type: trojan
-  server: 216.238.94.42
-  port: 19939
-  uuid: z-H_x58nS=VUaw.o
-  network: tcp
-  tls: true
-  servername: xuhyqrwofidgl.zwodhfgqaps.click
-  client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156
   type: trojan
   server: 217.69.10.156
@@ -43,6 +34,15 @@ proxies:
   network: tcp
   tls: true
   servername: sweetdream.sweetthunder.click
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
+  type: trojan
+  server: 216.238.94.42
+  port: 19939
+  uuid: z-H_x58nS=VUaw.o
+  network: tcp
+  tls: true
+  servername: xuhyqrwofidgl.zwodhfgqaps.click
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
   type: trojan
@@ -53,25 +53,16 @@ proxies:
   tls: true
   servername: softpillow.silentrocket.click
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149_1
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.68.23.117
   type: trojan
-  server: 70.34.218.149
-  port: 11930
-  uuid: BaeSzHdfJIR13l67
+  server: 3.68.23.117
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: softpillow.silentrocket.click
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
-  type: trojan
-  server: 64.176.18.21
-  port: 18415
-  uuid: e9GP-sYzrxL2RBjl
-  network: tcp
-  tls: true
-  servername: quietplace.lazymountain.click
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21_1
   type: trojan
   server: 64.176.18.21
   port: 18415
@@ -89,15 +80,19 @@ proxies:
   tls: true
   servername: usiys.southbyte.xyz
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇺🇸(US)-usiys.southbyte.xyz_1
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
-  server: usiys.southbyte.xyz
-  port: 5897
-  uuid: fg20mtCFHy
-  network: tcp
+  server: 172.67.180.227
+  port: 443
+  uuid: bpb-trojan
+  network: ws
   tls: true
-  servername: usiys.southbyte.xyz
+  servername: mashdt.pages.dev
   client-fingerprint: chrome
+  ws-opts:
+    path: /tr?ed=2560
+    headers:
+      Host: mashdt.pages.dev
 - name: TROJAN-TCP-TLS-🇸🇬(SG)-139.180.143.191
   type: trojan
   server: 139.180.143.191
@@ -107,20 +102,29 @@ proxies:
   tls: true
   servername: zmbvgixwdqusy.advudjng.click
   client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.29.79.144
+  type: trojan
+  server: 52.29.79.144
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
   - TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156
+  - TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
   - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.68.23.117
   - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
-  - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21_1
   - TROJAN-TCP-TLS-🇺🇸(US)-usiys.southbyte.xyz
-  - TROJAN-TCP-TLS-🇺🇸(US)-usiys.southbyte.xyz_1
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   - TROJAN-TCP-TLS-🇸🇬(SG)-139.180.143.191
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.29.79.144
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -138,15 +142,15 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
   - TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156
+  - TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
   - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.68.23.117
   - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
-  - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21_1
   - TROJAN-TCP-TLS-🇺🇸(US)-usiys.southbyte.xyz
-  - TROJAN-TCP-TLS-🇺🇸(US)-usiys.southbyte.xyz_1
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   - TROJAN-TCP-TLS-🇸🇬(SG)-139.180.143.191
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.29.79.144
 rule-providers:
   adblock:
     type: http
