@@ -14,7 +14,7 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
+- name: TROJAN-GRPC-REALITY-🌐(XX)-209.200.246.53
   type: trojan
   server: 209.200.246.53
   port: 36774
@@ -23,50 +23,32 @@ proxies:
   tls: true
   servername: cloudflare.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.237.240.140
+- name: TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64
   type: trojan
-  server: 15.237.240.140
+  server: 23.247.137.64
+  port: 443
+  uuid: 3c4e10af98c30972
+  network: grpc
+  tls: true
+  servername: n2.gladns.com
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53
+  type: trojan
+  server: 18.198.229.53
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53_1
+  type: trojan
+  server: 18.198.229.53
   port: 22223
   uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.237.240.140_1
-  type: trojan
-  server: 15.237.240.140
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.30.223
-  type: trojan
-  server: 51.45.30.223
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.30.223_1
-  type: trojan
-  server: 51.45.30.223
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.159.127.188
-  type: trojan
-  server: 18.159.127.188
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
+  servername: 18.198.229.53
   client-fingerprint: chrome
 - name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
   type: trojan
@@ -80,25 +62,16 @@ proxies:
     path: /
     headers:
       Host: dns.google.com
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53_2
   type: trojan
   server: 18.198.229.53
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: 18.198.229.53
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.159.127.188_1
-  type: trojan
-  server: 18.159.127.188
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53_1
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53_3
   type: trojan
   server: 18.198.229.53
   port: 22223
@@ -116,6 +89,24 @@ proxies:
   tls: true
   servername: sweetdream.sweetthunder.click
   client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156_1
+  type: trojan
+  server: 217.69.10.156
+  port: 16288
+  uuid: 5fbEkKmVOdAY+8_-
+  network: tcp
+  tls: true
+  servername: sweetdream.sweetthunder.click
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.30.223
+  type: trojan
+  server: 51.45.30.223
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: 51.45.30.223
+  client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
   type: trojan
   server: 216.238.94.42
@@ -124,15 +115,6 @@ proxies:
   network: tcp
   tls: true
   servername: xuhyqrwofidgl.zwodhfgqaps.click
-  client-fingerprint: chrome
-- name: TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64
-  type: trojan
-  server: 23.247.137.64
-  port: 443
-  uuid: 3c4e10af98c30972
-  network: grpc
-  tls: true
-  servername: n2.gladns.com
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
   type: trojan
@@ -151,15 +133,6 @@ proxies:
   network: tcp
   tls: true
   servername: softpillow.silentrocket.click
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156_1
-  type: trojan
-  server: 217.69.10.156
-  port: 16288
-  uuid: 5fbEkKmVOdAY+8_-
-  network: tcp
-  tls: true
-  servername: sweetdream.sweetthunder.click
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
   type: trojan
@@ -192,28 +165,24 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
-- name: TROJAN-GRPC-REALITY-🇫🇷(FR)-145.223.70.115
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.237.240.140
   type: trojan
-  server: 145.223.70.115
-  port: 25365
-  uuid: eDHWaPzxcl
-  network: grpc
+  server: 15.237.240.140
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
   tls: true
-  servername: cloudflare.com
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇯🇵(JP)-23.227.38.33
+- name: TROJAN-TCP-TLS-🇺🇸(US)-usiys.southbyte.xyz
   type: trojan
-  server: 23.227.38.33
-  port: 443
-  uuid: aff9928f-7ba3-45fb-b56d-4dec45653ca9
-  network: ws
+  server: usiys.southbyte.xyz
+  port: 5897
+  uuid: fg20mtCFHy
+  network: tcp
   tls: true
-  servername: z9mifq7ujufk56im.jptimecsgo.xyz
+  servername: usiys.southbyte.xyz
   client-fingerprint: chrome
-  ws-opts:
-    path: /images
-    headers:
-      Host: z9mifq7ujufk56im.jptimecsgo.xyz
 - name: TROJAN-TCP-TLS-🇸🇬(SG)-139.180.143.191
   type: trojan
   server: 139.180.143.191
@@ -227,27 +196,24 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.240.140
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.240.140_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.30.223
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.30.223_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.159.127.188
-  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.159.127.188_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156
-  - TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
+  - TROJAN-GRPC-REALITY-🌐(XX)-209.200.246.53
   - TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53_1
+  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53_2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53_3
+  - TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156
+  - TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.30.223
+  - TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
   - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
   - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156_1
   - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
   - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21_1
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-GRPC-REALITY-🇫🇷(FR)-145.223.70.115
-  - TROJAN-WS-TLS-🇯🇵(JP)-23.227.38.33
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.240.140
+  - TROJAN-TCP-TLS-🇺🇸(US)-usiys.southbyte.xyz
   - TROJAN-TCP-TLS-🇸🇬(SG)-139.180.143.191
   tolerance: 50
   lazy: false
@@ -265,27 +231,24 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.240.140
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.240.140_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.30.223
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.30.223_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.159.127.188
-  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.159.127.188_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156
-  - TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
+  - TROJAN-GRPC-REALITY-🌐(XX)-209.200.246.53
   - TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53_1
+  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53_2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.229.53_3
+  - TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156
+  - TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.30.223
+  - TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
   - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
   - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156_1
   - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
   - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21_1
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-GRPC-REALITY-🇫🇷(FR)-145.223.70.115
-  - TROJAN-WS-TLS-🇯🇵(JP)-23.227.38.33
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.240.140
+  - TROJAN-TCP-TLS-🇺🇸(US)-usiys.southbyte.xyz
   - TROJAN-TCP-TLS-🇸🇬(SG)-139.180.143.191
 rule-providers:
   adblock:
