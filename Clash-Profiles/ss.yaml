@@ -14,12 +14,24 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-C20P-🇺🇸(US)-107.175.87.207
+  type: ss
+  server: 107.175.87.207
+  port: 10011
+  cipher: chacha20-ietf-poly1305
+  password: 86039b71-ba82-4ca8-838e-87086ae666de
 - name: SS-C20P-🇺🇸(US)-92.118.112.101
   type: ss
   server: 92.118.112.101
   port: 9483
   cipher: chacha20-ietf-poly1305
   password: qFvn2fNEvBgM5knffrN96q
+- name: SS-C20P-🇵🇦(PA)-138.186.142.80
+  type: ss
+  server: 138.186.142.80
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: SS-C20P-🇳🇱(NL)-195.35.113.79
   type: ss
   server: 195.35.113.79
@@ -32,27 +44,21 @@ proxies:
   port: 443
   cipher: chacha20-ietf-poly1305
   password: 1112935345BtgV5PDHVww
+- name: SS-C20P-🇳🇱(NL)-5.129.214.186
+  type: ss
+  server: 5.129.214.186
+  port: 6403
+  cipher: chacha20-ietf-poly1305
+  password: HWNsKy61qPyoDtrEYEtZuk
 - name: SS-C20P-🇫🇮(FI)-65.21.243.22
   type: ss
   server: 65.21.243.22
   port: 31348
   cipher: chacha20-ietf-poly1305
   password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
-- name: SS-C20P-🇷🇺(RU)-147.45.235.63
-  type: ss
-  server: 147.45.235.63
-  port: 49115
-  cipher: chacha20-ietf-poly1305
-  password: yYLiE0LOsr0CwIjbiCSLy2
 - name: SS-C20P-🇦🇷(AR)-190.103.176.32
   type: ss
   server: 190.103.176.32
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: SS-C20P-🇦🇺(AU)-45.15.185.70
-  type: ss
-  server: 45.15.185.70
   port: 990
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
@@ -60,13 +66,14 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
+  - SS-C20P-🇺🇸(US)-107.175.87.207
   - SS-C20P-🇺🇸(US)-92.118.112.101
+  - SS-C20P-🇵🇦(PA)-138.186.142.80
   - SS-C20P-🇳🇱(NL)-195.35.113.79
   - SS-C20P-🇳🇱(NL)-nl1.outline-vpn.top
+  - SS-C20P-🇳🇱(NL)-5.129.214.186
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-C20P-🇷🇺(RU)-147.45.235.63
   - SS-C20P-🇦🇷(AR)-190.103.176.32
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -83,13 +90,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
+  - SS-C20P-🇺🇸(US)-107.175.87.207
   - SS-C20P-🇺🇸(US)-92.118.112.101
+  - SS-C20P-🇵🇦(PA)-138.186.142.80
   - SS-C20P-🇳🇱(NL)-195.35.113.79
   - SS-C20P-🇳🇱(NL)-nl1.outline-vpn.top
+  - SS-C20P-🇳🇱(NL)-5.129.214.186
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-C20P-🇷🇺(RU)-147.45.235.63
   - SS-C20P-🇦🇷(AR)-190.103.176.32
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
   adblock:
     type: http
