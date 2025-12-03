@@ -23,33 +23,6 @@ proxies:
   tls: true
   servername: n2.gladns.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
-  type: trojan
-  server: 216.238.94.42
-  port: 19939
-  uuid: z-H_x58nS=VUaw.o
-  network: tcp
-  tls: true
-  servername: xuhyqrwofidgl.zwodhfgqaps.click
-  client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
-  type: trojan
-  server: 209.200.246.53
-  port: 36774
-  uuid: Fv7ogJ6vfz
-  network: grpc
-  tls: true
-  servername: cloudflare.com
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-54.93.127.236
-  type: trojan
-  server: 54.93.127.236
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
 - name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
   type: trojan
   server: 62.133.60.83
@@ -71,14 +44,14 @@ proxies:
   tls: true
   servername: sweetdream.sweetthunder.click
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156_1
+- name: TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
   type: trojan
-  server: 217.69.10.156
-  port: 16288
-  uuid: 5fbEkKmVOdAY+8_-
+  server: 216.238.94.42
+  port: 19939
+  uuid: z-H_x58nS=VUaw.o
   network: tcp
   tls: true
-  servername: sweetdream.sweetthunder.click
+  servername: xuhyqrwofidgl.zwodhfgqaps.click
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
   type: trojan
@@ -98,23 +71,14 @@ proxies:
   tls: true
   servername: quietplace.lazymountain.click
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.40.238
+- name: TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64_1
   type: trojan
-  server: 51.45.40.238
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
+  server: 23.247.137.64
+  port: 443
+  uuid: 3c4e10af98c30972
+  network: grpc
   tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇸🇬(SG)-139.180.143.191
-  type: trojan
-  server: 139.180.143.191
-  port: 10293
-  uuid: aWgKDJmn2q.hv=51
-  network: tcp
-  tls: true
-  servername: zmbvgixwdqusy.advudjng.click
+  servername: n2.gladns.com
   client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
@@ -129,22 +93,28 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
+- name: TROJAN-TCP-TLS-🇸🇬(SG)-139.180.143.191
+  type: trojan
+  server: 139.180.143.191
+  port: 10293
+  uuid: aWgKDJmn2q.hv=51
+  network: tcp
+  tls: true
+  servername: zmbvgixwdqusy.advudjng.click
+  client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64
-  - TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
-  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
-  - TROJAN-TCP-TLS-🇩🇪(DE)-54.93.127.236
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
   - TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156
-  - TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156_1
+  - TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
   - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
   - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.40.238
-  - TROJAN-TCP-TLS-🇸🇬(SG)-139.180.143.191
+  - TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64_1
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-TCP-TLS-🇸🇬(SG)-139.180.143.191
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -162,17 +132,14 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64
-  - TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
-  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
-  - TROJAN-TCP-TLS-🇩🇪(DE)-54.93.127.236
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
   - TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156
-  - TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156_1
+  - TROJAN-TCP-TLS-🇲🇽(MX)-216.238.94.42
   - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
   - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.40.238
-  - TROJAN-TCP-TLS-🇸🇬(SG)-139.180.143.191
+  - TROJAN-GRPC-TLS-🇺🇸(US)-23.247.137.64_1
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-TCP-TLS-🇸🇬(SG)-139.180.143.191
 rule-providers:
   adblock:
     type: http

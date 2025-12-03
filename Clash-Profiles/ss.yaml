@@ -14,54 +14,12 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-185.193.48.157
-  type: ss
-  server: 185.193.48.157
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: zwBLM6bBE5YxvwvnKgxAq3ErXpqMYv20
-- name: SS-C20P-🇺🇸(US)-146.19.49.251
-  type: ss
-  server: 146.19.49.251
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ODfxioK0VkKxTdpVQJ4rv8HglAu0vzv6
-- name: SS-C20P-🇺🇸(US)-92.118.112.101
-  type: ss
-  server: 92.118.112.101
-  port: 9483
-  cipher: chacha20-ietf-poly1305
-  password: 2QjMQjUrjJM3ROW1kIMpfM
-- name: SS-C20P-🇦🇺(AU)-95.111.222.113
-  type: ss
-  server: 95.111.222.113
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa
-- name: SS-C20P-🌐(XX)-138.186.142.81
-  type: ss
-  server: 138.186.142.81
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: SS-C20P-🇳🇱(NL)-5.129.214.186
-  type: ss
-  server: 5.129.214.186
-  port: 6403
-  cipher: chacha20-ietf-poly1305
-  password: HWNsKy61qPyoDtrEYEtZuk
 - name: SS-C20P-🇳🇱(NL)-95.181.162.236
   type: ss
   server: 95.181.162.236
   port: 20904
   cipher: chacha20-ietf-poly1305
   password: H5PueWRwANIUF0knf3UGCD
-- name: SS-C20P-🇫🇮(FI)-65.21.243.22
-  type: ss
-  server: 65.21.243.22
-  port: 31348
-  cipher: chacha20-ietf-poly1305
-  password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
 - name: SS-C20P-🇦🇷(AR)-190.103.176.32
   type: ss
   server: 190.103.176.32
@@ -78,14 +36,7 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-185.193.48.157
-  - SS-C20P-🇺🇸(US)-146.19.49.251
-  - SS-C20P-🇺🇸(US)-92.118.112.101
-  - SS-C20P-🇦🇺(AU)-95.111.222.113
-  - SS-C20P-🌐(XX)-138.186.142.81
-  - SS-C20P-🇳🇱(NL)-5.129.214.186
   - SS-C20P-🇳🇱(NL)-95.181.162.236
-  - SS-C20P-🇫🇮(FI)-65.21.243.22
   - SS-C20P-🇦🇷(AR)-190.103.176.32
   - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
@@ -104,14 +55,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-185.193.48.157
-  - SS-C20P-🇺🇸(US)-146.19.49.251
-  - SS-C20P-🇺🇸(US)-92.118.112.101
-  - SS-C20P-🇦🇺(AU)-95.111.222.113
-  - SS-C20P-🌐(XX)-138.186.142.81
-  - SS-C20P-🇳🇱(NL)-5.129.214.186
   - SS-C20P-🇳🇱(NL)-95.181.162.236
-  - SS-C20P-🇫🇮(FI)-65.21.243.22
   - SS-C20P-🇦🇷(AR)-190.103.176.32
   - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
