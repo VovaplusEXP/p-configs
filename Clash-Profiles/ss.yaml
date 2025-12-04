@@ -14,54 +14,30 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇫🇷(FR)-62.210.88.22
-  type: ss
-  server: 62.210.88.22
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: qvKiM1J7doRehR2cvPxq2D
-- name: SS-C20P-🇩🇪(DE)-162.19.175.40
-  type: ss
-  server: 162.19.175.40
-  port: 7425
-  cipher: chacha20-ietf-poly1305
-  password: VeUJj6HWCyDZeSaqpmf8AM
-- name: SS-C20P-🇸🇪(SE)-46.246.96.42
-  type: ss
-  server: 46.246.96.42
-  port: 12346
-  cipher: chacha20-ietf-poly1305
-  password: Rm5GvqKyOLkvMYgzgAE1KG
-- name: SS-C20P-🇳🇱(NL)-95.181.162.236
-  type: ss
-  server: 95.181.162.236
-  port: 20904
-  cipher: chacha20-ietf-poly1305
-  password: H5PueWRwANIUF0knf3UGCD
-- name: SS-C20P-🇫🇮(FI)-46.62.148.96
-  type: ss
-  server: 46.62.148.96
-  port: 45678
-  cipher: chacha20-ietf-poly1305
-  password: VsMluCgBPnXoISccV0ZKUt
-- name: SS-C20P-🇫🇮(FI)-78.153.139.98
-  type: ss
-  server: 78.153.139.98
-  port: 1792
-  cipher: chacha20-ietf-poly1305
-  password: hDo83po1pTJfqcbbnUxlM8
 - name: SS-C20P-🇫🇮(FI)-65.21.243.22
   type: ss
   server: 65.21.243.22
   port: 31348
   cipher: chacha20-ietf-poly1305
   password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
-- name: SS-C20P-🇦🇺(AU)-95.111.222.113
+- name: SS-C20P-🇦🇷(AR)-190.103.176.32
   type: ss
-  server: 95.111.222.113
-  port: 443
+  server: 190.103.176.32
+  port: 990
   cipher: chacha20-ietf-poly1305
-  password: SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: SS-C20P-🇫🇮(FI)-46.62.148.96
+  type: ss
+  server: 46.62.148.96
+  port: 45678
+  cipher: chacha20-ietf-poly1305
+  password: VsMluCgBPnXoISccV0ZKUt
+- name: SS-C20P-🇦🇺(AU)-45.15.185.70
+  type: ss
+  server: 45.15.185.70
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: SS-C20P-🇲🇾(MY)-142.111.146.222
   type: ss
   server: 142.111.146.222
@@ -72,14 +48,10 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇩🇪(DE)-162.19.175.40
-  - SS-C20P-🇸🇪(SE)-46.246.96.42
-  - SS-C20P-🇳🇱(NL)-95.181.162.236
-  - SS-C20P-🇫🇮(FI)-46.62.148.96
-  - SS-C20P-🇫🇮(FI)-78.153.139.98
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-C20P-🇦🇺(AU)-95.111.222.113
+  - SS-C20P-🇦🇷(AR)-190.103.176.32
+  - SS-C20P-🇫🇮(FI)-46.62.148.96
+  - SS-C20P-🇦🇺(AU)-45.15.185.70
   - SS-C20P-🇲🇾(MY)-142.111.146.222
   tolerance: 50
   lazy: false
@@ -97,14 +69,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇩🇪(DE)-162.19.175.40
-  - SS-C20P-🇸🇪(SE)-46.246.96.42
-  - SS-C20P-🇳🇱(NL)-95.181.162.236
-  - SS-C20P-🇫🇮(FI)-46.62.148.96
-  - SS-C20P-🇫🇮(FI)-78.153.139.98
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-C20P-🇦🇺(AU)-95.111.222.113
+  - SS-C20P-🇦🇷(AR)-190.103.176.32
+  - SS-C20P-🇫🇮(FI)-46.62.148.96
+  - SS-C20P-🇦🇺(AU)-45.15.185.70
   - SS-C20P-🇲🇾(MY)-142.111.146.222
 rule-providers:
   adblock:
