@@ -32,6 +32,18 @@ proxies:
   port: 31348
   cipher: chacha20-ietf-poly1305
   password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
+- name: SS-C20P-🇳🇴(NO)-89.46.233.148
+  type: ss
+  server: 89.46.233.148
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: XeGAcwaviWxXzg87AwvnE6gWbhHHGwwB
+- name: SS-aes-128-gcm-🇫🇮(FI)-185.103.110.67
+  type: ss
+  server: 185.103.110.67
+  port: 18282
+  cipher: aes-128-gcm
+  password: 1z6g07dsgi2jv8s8jss4
 - name: SS-C20P-🇦🇺(AU)-45.15.185.70
   type: ss
   server: 45.15.185.70
@@ -45,6 +57,8 @@ proxy-groups:
   - SS-C20P-🇺🇸(US)-h110vpnus.outlinekeys.net
   - SS-C20P-🇫🇷(FR)-62.210.88.22
   - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇳🇴(NO)-89.46.233.148
+  - SS-aes-128-gcm-🇫🇮(FI)-185.103.110.67
   - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
   lazy: false
@@ -65,6 +79,8 @@ proxy-groups:
   - SS-C20P-🇺🇸(US)-h110vpnus.outlinekeys.net
   - SS-C20P-🇫🇷(FR)-62.210.88.22
   - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇳🇴(NO)-89.46.233.148
+  - SS-aes-128-gcm-🇫🇮(FI)-185.103.110.67
   - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
   adblock:
