@@ -20,53 +20,53 @@ proxies:
   port: 9483
   cipher: chacha20-ietf-poly1305
   password: qnoqpxR01kdYRpEoYHFeWq
+- name: SS-C20P-🇺🇸(US)-pupas-shirting-unsung.freesocks.work
+  type: ss
+  server: pupas-shirting-unsung.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: p78naCf2EfOlRSLTX0wFVx
+- name: SS-C20P-🇺🇸(US)-71.19.148.143
+  type: ss
+  server: 71.19.148.143
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: p78naCf2EfOlRSLTX0wFVx
 - name: SS-C20P-🇫🇷(FR)-62.210.88.22
   type: ss
   server: 62.210.88.22
   port: 443
   cipher: chacha20-ietf-poly1305
   password: qj6byb3PqHgPuetahr8yvW
-- name: SS-C20P-🇫🇮(FI)-65.21.243.22
+- name: SS-C20P-🇳🇴(NO)-89.46.233.148
   type: ss
-  server: 65.21.243.22
-  port: 31348
+  server: 89.46.233.148
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
+  password: XeGAcwaviWxXzg87AwvnE6gWbhHHGwwB
 - name: SS-aes-128-gcm-🇫🇮(FI)-185.103.110.67
   type: ss
   server: 185.103.110.67
   port: 18282
   cipher: aes-128-gcm
   password: 1z6g07dsgi2jv8s8jss4
-- name: SS-C20P-🇦🇺(AU)-95.111.222.113
+- name: SS-C20P-🇫🇮(FI)-65.21.243.22
   type: ss
-  server: 95.111.222.113
-  port: 443
+  server: 65.21.243.22
+  port: 31348
   cipher: chacha20-ietf-poly1305
-  password: SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187
-  type: ss
-  server: 141.164.45.187
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: SS-C20P-🇦🇺(AU)-45.15.185.70
-  type: ss
-  server: 45.15.185.70
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-h110vpnus.outlinekeys.net
+  - SS-C20P-🇺🇸(US)-pupas-shirting-unsung.freesocks.work
+  - SS-C20P-🇺🇸(US)-71.19.148.143
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇳🇴(NO)-89.46.233.148
   - SS-aes-128-gcm-🇫🇮(FI)-185.103.110.67
-  - SS-C20P-🇦🇺(AU)-95.111.222.113
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
+  - SS-C20P-🇫🇮(FI)-65.21.243.22
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -84,12 +84,12 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-h110vpnus.outlinekeys.net
+  - SS-C20P-🇺🇸(US)-pupas-shirting-unsung.freesocks.work
+  - SS-C20P-🇺🇸(US)-71.19.148.143
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇳🇴(NO)-89.46.233.148
   - SS-aes-128-gcm-🇫🇮(FI)-185.103.110.67
-  - SS-C20P-🇦🇺(AU)-95.111.222.113
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
+  - SS-C20P-🇫🇮(FI)-65.21.243.22
 rule-providers:
   adblock:
     type: http
