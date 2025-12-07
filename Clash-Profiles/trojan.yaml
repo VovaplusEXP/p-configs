@@ -62,14 +62,14 @@ proxies:
     path: /
     headers:
       Host: dns.google.com
-- name: TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156
   type: trojan
-  server: 70.34.218.149
-  port: 11930
-  uuid: BaeSzHdfJIR13l67
+  server: 217.69.10.156
+  port: 16288
+  uuid: 5fbEkKmVOdAY+8_-
   network: tcp
   tls: true
-  servername: softpillow.silentrocket.click
+  servername: megafon.ru
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
   type: trojan
@@ -80,7 +80,29 @@ proxies:
   tls: true
   servername: quietplace.lazymountain.click
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149_1
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.212.231
+  type: trojan
+  server: 13.39.212.231
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-cf.0sm.com
+  type: trojan
+  server: cf.0sm.com
+  port: 443
+  uuid: 7418004a-0ecd-41c0-a062-42bf966d3fb2
+  network: ws
+  tls: true
+  servername: vd.vmy2024.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vd.vmy2024.dpdns.org
+- name: TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
   type: trojan
   server: 70.34.218.149
   port: 11930
@@ -88,6 +110,15 @@ proxies:
   network: tcp
   tls: true
   servername: softpillow.silentrocket.click
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.181.59.61
+  type: trojan
+  server: 63.181.59.61
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
@@ -102,15 +133,19 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156
+- name: TROJAN-WS-TLS-🇺🇸(US)-cf.877774.xyz
   type: trojan
-  server: 217.69.10.156
-  port: 16288
-  uuid: 5fbEkKmVOdAY+8_-
-  network: tcp
+  server: cf.877774.xyz
+  port: 443
+  uuid: 7418004a-0ecd-41c0-a062-42bf966d3fb2
+  network: ws
   tls: true
-  servername: sweetdream.sweetthunder.click
+  servername: guang.bgm2024.dpdns.org
   client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: guang.bgm2024.dpdns.org
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
@@ -120,11 +155,14 @@ proxy-groups:
   - TROJAN-TCP-TLS-🇯🇵(JP)-kuame.missionsec.us
   - TROJAN-TCP-TLS-🇯🇵(JP)-kuame.missionsec.us_1
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
-  - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149_1
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   - TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156
+  - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.212.231
+  - TROJAN-WS-TLS-🇺🇸(US)-cf.0sm.com
+  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.59.61
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-WS-TLS-🇺🇸(US)-cf.877774.xyz
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -146,11 +184,14 @@ proxy-groups:
   - TROJAN-TCP-TLS-🇯🇵(JP)-kuame.missionsec.us
   - TROJAN-TCP-TLS-🇯🇵(JP)-kuame.missionsec.us_1
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
-  - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149_1
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   - TROJAN-TCP-TLS-🇫🇷(FR)-217.69.10.156
+  - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.212.231
+  - TROJAN-WS-TLS-🇺🇸(US)-cf.0sm.com
+  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.59.61
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-WS-TLS-🇺🇸(US)-cf.877774.xyz
 rule-providers:
   adblock:
     type: http
