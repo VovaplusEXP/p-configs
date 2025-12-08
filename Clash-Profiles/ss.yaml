@@ -20,18 +20,18 @@ proxies:
   port: 9483
   cipher: chacha20-ietf-poly1305
   password: SDtHWwAAEpCfGsWpMmzHbD
-- name: SS-C20P-🇳🇴(NO)-89.46.233.148
+- name: SS-C20P-🇫🇮(FI)-65.21.243.22
   type: ss
-  server: 89.46.233.148
+  server: 65.21.243.22
+  port: 31348
+  cipher: chacha20-ietf-poly1305
+  password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
+- name: SS-C20P-🇨🇱(CL)-45.82.249.122
+  type: ss
+  server: 45.82.249.122
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: XeGAcwaviWxXzg87AwvnE6gWbhHHGwwB
-- name: SS-C20P-🇮🇳(IN)-64.227.144.190
-  type: ss
-  server: 64.227.144.190
-  port: 50690
-  cipher: chacha20-ietf-poly1305
-  password: PcYCcHyTYMdp3bfAMCFoFz
+  password: TnzCxHuKTTfEbdPgs3HknAgULVZAZGRR
 - name: SS-C20P-🇦🇺(AU)-45.15.185.70
   type: ss
   server: 45.15.185.70
@@ -43,8 +43,8 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-92.118.112.101
-  - SS-C20P-🇳🇴(NO)-89.46.233.148
-  - SS-C20P-🇮🇳(IN)-64.227.144.190
+  - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇨🇱(CL)-45.82.249.122
   - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
   lazy: false
@@ -63,8 +63,8 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-92.118.112.101
-  - SS-C20P-🇳🇴(NO)-89.46.233.148
-  - SS-C20P-🇮🇳(IN)-64.227.144.190
+  - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇨🇱(CL)-45.82.249.122
   - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
   adblock:
