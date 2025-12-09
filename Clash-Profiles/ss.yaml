@@ -14,38 +14,38 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-92.118.112.101
-  type: ss
-  server: 92.118.112.101
-  port: 9483
-  cipher: chacha20-ietf-poly1305
-  password: AK0xWjIOUaj2vSBwwBehk0
-- name: SS-C20P-🇸🇪(SE)-91.186.217.246
-  type: ss
-  server: 91.186.217.246
-  port: 31764
-  cipher: chacha20-ietf-poly1305
-  password: Ftc17VH9ZXQON5vslJCYmv
 - name: SS-C20P-🇫🇮(FI)-65.21.243.22
   type: ss
   server: 65.21.243.22
   port: 31348
   cipher: chacha20-ietf-poly1305
   password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
-- name: SS-C20P-🇩🇪(DE)-87.121.162.249
+- name: SS-C20P-🇨🇱(CL)-45.82.249.122
   type: ss
-  server: 87.121.162.249
+  server: 45.82.249.122
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: JGv616hMWdjfuZ00jYfq7XkBHJZrOBrg
+  password: TnzCxHuKTTfEbdPgs3HknAgULVZAZGRR
+- name: SS-C20P-🇺🇸(US)-92.118.112.101
+  type: ss
+  server: 92.118.112.101
+  port: 9483
+  cipher: chacha20-ietf-poly1305
+  password: AK0xWjIOUaj2vSBwwBehk0
+- name: SS-C20P-🇦🇺(AU)-45.15.185.70
+  type: ss
+  server: 45.15.185.70
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-92.118.112.101
-  - SS-C20P-🇸🇪(SE)-91.186.217.246
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-C20P-🇩🇪(DE)-87.121.162.249
+  - SS-C20P-🇨🇱(CL)-45.82.249.122
+  - SS-C20P-🇺🇸(US)-92.118.112.101
+  - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -62,10 +62,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-92.118.112.101
-  - SS-C20P-🇸🇪(SE)-91.186.217.246
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-C20P-🇩🇪(DE)-87.121.162.249
+  - SS-C20P-🇨🇱(CL)-45.82.249.122
+  - SS-C20P-🇺🇸(US)-92.118.112.101
+  - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
   adblock:
     type: http
