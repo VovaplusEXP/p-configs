@@ -40,40 +40,6 @@ proxies:
   network: tcp
   tls: false
   servername: 88.99.184.17
-- name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  type: trojan
-  server: 62.133.60.83
-  port: 2025
-  uuid: vpn
-  network: ws
-  tls: false
-  servername: 62.133.60.83
-  ws-opts:
-    path: /
-    headers:
-      Host: dns.google.com
-- name: TROJAN-WS-TLS-🇨🇦(CA)-172.67.180.227
-  type: trojan
-  server: 172.67.180.227
-  port: 443
-  uuid: bpb-trojan
-  network: ws
-  tls: true
-  servername: mashdt.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr?ed=2560
-    headers:
-      Host: mashdt.pages.dev
-- name: TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
-  type: trojan
-  server: 64.176.18.21
-  port: 18415
-  uuid: e9GP-sYzrxL2RBjl
-  network: tcp
-  tls: true
-  servername: quietplace.lazymountain.click
-  client-fingerprint: chrome
 - name: TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53_1
   type: trojan
   server: 209.200.246.53
@@ -83,14 +49,32 @@ proxies:
   tls: true
   servername: cloudflare.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
+- name: TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
   type: trojan
-  server: 70.34.218.149
-  port: 11930
-  uuid: BaeSzHdfJIR13l67
+  server: 64.176.18.21
+  port: 18415
+  uuid: e9GP-sYzrxL2RBjl
   network: tcp
   tls: true
-  servername: softpillow.silentrocket.click
+  servername: quietplace.lazymountain.click
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.1.54
+  type: trojan
+  server: 13.39.1.54
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.157.53.107
+  type: trojan
+  server: 35.157.53.107
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇸🇬(SG)-139.180.143.191
   type: trojan
@@ -101,19 +85,6 @@ proxies:
   tls: true
   servername: zmbvgixwdqusy.advudjng.click
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇩🇪(DE)-135.125.232.253
-  type: trojan
-  server: 135.125.232.253
-  port: 2053
-  uuid: iwangjie
-  network: ws
-  tls: true
-  servername: nodes.830901.xyz
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: nodes.830901.xyz
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
@@ -121,13 +92,11 @@ proxy-groups:
   - TROJAN-TCP-TLS-🇺🇸(US)-149.28.223.165
   - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
   - TROJAN-TCP-🇩🇪(DE)-88.99.184.17
-  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-WS-TLS-🇨🇦(CA)-172.67.180.227
-  - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
   - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53_1
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
+  - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.1.54
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.53.107
   - TROJAN-TCP-TLS-🇸🇬(SG)-139.180.143.191
-  - TROJAN-WS-TLS-🇩🇪(DE)-135.125.232.253
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -147,13 +116,11 @@ proxy-groups:
   - TROJAN-TCP-TLS-🇺🇸(US)-149.28.223.165
   - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
   - TROJAN-TCP-🇩🇪(DE)-88.99.184.17
-  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
-  - TROJAN-WS-TLS-🇨🇦(CA)-172.67.180.227
-  - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
   - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53_1
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
+  - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.1.54
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.53.107
   - TROJAN-TCP-TLS-🇸🇬(SG)-139.180.143.191
-  - TROJAN-WS-TLS-🇩🇪(DE)-135.125.232.253
 rule-providers:
   adblock:
     type: http
