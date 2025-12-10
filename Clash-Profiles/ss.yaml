@@ -26,12 +26,6 @@ proxies:
   port: 31348
   cipher: chacha20-ietf-poly1305
   password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
-- name: SS-A256GCM-🇷🇺(RU)-45.140.169.26
-  type: ss
-  server: 45.140.169.26
-  port: 1012
-  cipher: aes-256-gcm
-  password: 7ae4e68cf77f6089
 - name: SS-C20P-🇦🇺(AU)-45.15.185.70
   type: ss
   server: 45.15.185.70
@@ -44,7 +38,6 @@ proxy-groups:
   proxies: &id001
   - SS-C20P-🇸🇪(SE)-91.186.217.246
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-A256GCM-🇷🇺(RU)-45.140.169.26
   - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
   lazy: false
@@ -64,7 +57,6 @@ proxy-groups:
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇸🇪(SE)-91.186.217.246
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-A256GCM-🇷🇺(RU)-45.140.169.26
   - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
   adblock:
