@@ -14,6 +14,12 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-C20P-🇺🇸(US)-dyn.usa.outlinekeys.net
+  type: ss
+  server: dyn.usa.outlinekeys.net
+  port: 56636
+  cipher: chacha20-ietf-poly1305
+  password: F5bGY8GJ3GOg0OY5grvWWW
 - name: SS-C20P-🇸🇪(SE)-91.186.217.246
   type: ss
   server: 91.186.217.246
@@ -26,6 +32,12 @@ proxies:
   port: 31348
   cipher: chacha20-ietf-poly1305
   password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
+- name: SS-C20P-🇨🇱(CL)-45.82.249.122
+  type: ss
+  server: 45.82.249.122
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: TnzCxHuKTTfEbdPgs3HknAgULVZAZGRR
 - name: SS-C20P-🇦🇺(AU)-45.15.185.70
   type: ss
   server: 45.15.185.70
@@ -36,8 +48,10 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
+  - SS-C20P-🇺🇸(US)-dyn.usa.outlinekeys.net
   - SS-C20P-🇸🇪(SE)-91.186.217.246
   - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇨🇱(CL)-45.82.249.122
   - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
   lazy: false
@@ -55,8 +69,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
+  - SS-C20P-🇺🇸(US)-dyn.usa.outlinekeys.net
   - SS-C20P-🇸🇪(SE)-91.186.217.246
   - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇨🇱(CL)-45.82.249.122
   - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
   adblock:
