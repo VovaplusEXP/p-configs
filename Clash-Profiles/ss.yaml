@@ -32,12 +32,18 @@ proxies:
   port: 31348
   cipher: chacha20-ietf-poly1305
   password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
-- name: SS-C20P-🇨🇱(CL)-45.82.249.122
+- name: SS-C20P-🇩🇪(DE)-87.121.162.249
   type: ss
-  server: 45.82.249.122
+  server: 87.121.162.249
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: TnzCxHuKTTfEbdPgs3HknAgULVZAZGRR
+  password: JGv616hMWdjfuZ00jYfq7XkBHJZrOBrg
+- name: SS-C20P-🇦🇺(AU)-45.15.185.70
+  type: ss
+  server: 45.15.185.70
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
@@ -45,7 +51,8 @@ proxy-groups:
   - SS-C20P-🇺🇸(US)-dyn.usa.outlinekeys.net
   - SS-C20P-🇩🇪(DE)-h110vpnde.outlinekeys.net
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-C20P-🇨🇱(CL)-45.82.249.122
+  - SS-C20P-🇩🇪(DE)-87.121.162.249
+  - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -65,7 +72,8 @@ proxy-groups:
   - SS-C20P-🇺🇸(US)-dyn.usa.outlinekeys.net
   - SS-C20P-🇩🇪(DE)-h110vpnde.outlinekeys.net
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-C20P-🇨🇱(CL)-45.82.249.122
+  - SS-C20P-🇩🇪(DE)-87.121.162.249
+  - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
   adblock:
     type: http
