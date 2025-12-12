@@ -14,24 +14,18 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-A256GCM-🇩🇪(DE)-91.200.103.248
+- name: SS-C20P-🇫🇷(FR)-62.210.88.22
   type: ss
-  server: 91.200.103.248
-  port: 34045
-  cipher: aes-256-gcm
-  password: TG:@Enkelte_notif&&TG:@Notif_Chat
-- name: SS-C20P-🌐(XX)-65.21.243.22
+  server: 62.210.88.22
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: KPlOFFjdm2Z8OYBVOnXh1F
+- name: SS-C20P-🇫🇮(FI)-65.21.243.22
   type: ss
   server: 65.21.243.22
   port: 31348
   cipher: chacha20-ietf-poly1305
   password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
-- name: SS-C20P-🇺🇸(US)-5.161.45.106
-  type: ss
-  server: 5.161.45.106
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: -DCj7WAlZhllkgysEeao_g
 - name: SS-C20P-🇦🇺(AU)-45.15.185.70
   type: ss
   server: 45.15.185.70
@@ -42,9 +36,8 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-A256GCM-🇩🇪(DE)-91.200.103.248
-  - SS-C20P-🌐(XX)-65.21.243.22
-  - SS-C20P-🇺🇸(US)-5.161.45.106
+  - SS-C20P-🇫🇷(FR)-62.210.88.22
+  - SS-C20P-🇫🇮(FI)-65.21.243.22
   - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
   lazy: false
@@ -62,9 +55,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-A256GCM-🇩🇪(DE)-91.200.103.248
-  - SS-C20P-🌐(XX)-65.21.243.22
-  - SS-C20P-🇺🇸(US)-5.161.45.106
+  - SS-C20P-🇫🇷(FR)-62.210.88.22
+  - SS-C20P-🇫🇮(FI)-65.21.243.22
   - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
   adblock:
