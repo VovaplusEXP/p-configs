@@ -14,24 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇺🇸(US)-149.28.223.165
-  type: trojan
-  server: 149.28.223.165
-  port: 13817
-  uuid: mRQKixLUsca9_jN0
-  network: tcp
-  tls: true
-  servername: apple.jumpingapple.click
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.28.28.48
-  type: trojan
-  server: 52.28.28.48
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
 - name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
   type: trojan
   server: 62.133.60.83
@@ -44,6 +26,82 @@ proxies:
     path: /
     headers:
       Host: dns.google.com
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.237.68.204
+  type: trojan
+  server: 15.237.68.204
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.28.28.48
+  type: trojan
+  server: 52.28.28.48
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.126.180.133
+  type: trojan
+  server: 3.126.180.133
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.126.180.133_1
+  type: trojan
+  server: 3.126.180.133
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.237.68.204_1
+  type: trojan
+  server: 15.237.68.204
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇺🇸(US)-149.28.223.165
+  type: trojan
+  server: 149.28.223.165
+  port: 13817
+  uuid: mRQKixLUsca9_jN0
+  network: tcp
+  tls: true
+  servername: apple.jumpingapple.click
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  type: trojan
+  server: 172.67.180.227
+  port: 443
+  uuid: bpb-trojan
+  network: ws
+  tls: true
+  servername: mashdt.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tr?ed=2560
+    headers:
+      Host: mashdt.pages.dev
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.28.28.48_1
+  type: trojan
+  server: 52.28.28.48
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
   type: trojan
   server: 70.34.218.149
@@ -62,39 +120,21 @@ proxies:
   tls: true
   servername: quietplace.lazymountain.click
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.126.180.133
-  type: trojan
-  server: 3.126.180.133
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
-  type: trojan
-  server: saas.sin.fan
-  port: 443
-  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-  network: ws
-  tls: true
-  servername: _acme-challenge.2go.cloudns.be
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: _acme-challenge.2go.cloudns.be
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇺🇸(US)-149.28.223.165
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.28.28.48
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.68.204
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.28.28.48
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.126.180.133
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.126.180.133_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.68.204_1
+  - TROJAN-TCP-TLS-🇺🇸(US)-149.28.223.165
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.28.28.48_1
   - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
   - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.126.180.133
-  - TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -111,13 +151,17 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇺🇸(US)-149.28.223.165
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.28.28.48
   - TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.68.204
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.28.28.48
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.126.180.133
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.126.180.133_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.68.204_1
+  - TROJAN-TCP-TLS-🇺🇸(US)-149.28.223.165
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.28.28.48_1
   - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
   - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.126.180.133
-  - TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
 rule-providers:
   adblock:
     type: http
