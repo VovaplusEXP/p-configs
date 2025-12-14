@@ -14,24 +14,30 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-h110vpnus.outlinekeys.net
+- name: SS-C20P-🇺🇸(US)-212.18.104.228
   type: ss
-  server: h110vpnus.outlinekeys.net
-  port: 9483
+  server: 212.18.104.228
+  port: 56636
   cipher: chacha20-ietf-poly1305
-  password: biW2bEIc21N3ETb1Dn8jhD
-- name: SS-C20P-🇺🇸(US)-92.118.112.101
+  password: 6EWuhEA67pszaU2MPN6UGl
+- name: SS-C20P-🇺🇸(US)-212.18.104.228_1
   type: ss
-  server: 92.118.112.101
-  port: 9483
+  server: 212.18.104.228
+  port: 56636
   cipher: chacha20-ietf-poly1305
-  password: biW2bEIc21N3ETb1Dn8jhD
-- name: SS-C20P-🇫🇮(FI)-65.21.243.22
+  password: aE3DoVxaiszDxzhykQdv8a
+- name: SS-aes-128-gcm-🇫🇮(FI)-185.103.110.68
   type: ss
-  server: 65.21.243.22
-  port: 31348
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: y3o3ra6edy5nfc6hyb2n
+- name: SS-C20P-🇦🇺(AU)-95.111.222.113
+  type: ss
+  server: 95.111.222.113
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
+  password: SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa
 - name: SS-C20P-🇦🇺(AU)-45.15.185.70
   type: ss
   server: 45.15.185.70
@@ -42,9 +48,10 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-h110vpnus.outlinekeys.net
-  - SS-C20P-🇺🇸(US)-92.118.112.101
-  - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇺🇸(US)-212.18.104.228
+  - SS-C20P-🇺🇸(US)-212.18.104.228_1
+  - SS-aes-128-gcm-🇫🇮(FI)-185.103.110.68
+  - SS-C20P-🇦🇺(AU)-95.111.222.113
   - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
   lazy: false
@@ -62,9 +69,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-h110vpnus.outlinekeys.net
-  - SS-C20P-🇺🇸(US)-92.118.112.101
-  - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇺🇸(US)-212.18.104.228
+  - SS-C20P-🇺🇸(US)-212.18.104.228_1
+  - SS-aes-128-gcm-🇫🇮(FI)-185.103.110.68
+  - SS-C20P-🇦🇺(AU)-95.111.222.113
   - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
   adblock:
