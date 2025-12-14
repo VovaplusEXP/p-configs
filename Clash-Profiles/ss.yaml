@@ -14,24 +14,18 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-212.18.104.228
+- name: SS-C20P-🇫🇷(FR)-62.210.88.22
   type: ss
-  server: 212.18.104.228
-  port: 56636
+  server: 62.210.88.22
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: 6EWuhEA67pszaU2MPN6UGl
-- name: SS-C20P-🇺🇸(US)-212.18.104.228_1
+  password: 6UcGX1EuV6NstnfT3LJeda
+- name: SS-C20P-🇫🇮(FI)-65.21.243.22
   type: ss
-  server: 212.18.104.228
-  port: 56636
+  server: 65.21.243.22
+  port: 31348
   cipher: chacha20-ietf-poly1305
-  password: aE3DoVxaiszDxzhykQdv8a
-- name: SS-aes-128-gcm-🇫🇮(FI)-185.103.110.68
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: y3o3ra6edy5nfc6hyb2n
+  password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
 - name: SS-C20P-🇦🇺(AU)-95.111.222.113
   type: ss
   server: 95.111.222.113
@@ -48,9 +42,8 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-212.18.104.228
-  - SS-C20P-🇺🇸(US)-212.18.104.228_1
-  - SS-aes-128-gcm-🇫🇮(FI)-185.103.110.68
+  - SS-C20P-🇫🇷(FR)-62.210.88.22
+  - SS-C20P-🇫🇮(FI)-65.21.243.22
   - SS-C20P-🇦🇺(AU)-95.111.222.113
   - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
@@ -69,9 +62,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-212.18.104.228
-  - SS-C20P-🇺🇸(US)-212.18.104.228_1
-  - SS-aes-128-gcm-🇫🇮(FI)-185.103.110.68
+  - SS-C20P-🇫🇷(FR)-62.210.88.22
+  - SS-C20P-🇫🇮(FI)-65.21.243.22
   - SS-C20P-🇦🇺(AU)-95.111.222.113
   - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
