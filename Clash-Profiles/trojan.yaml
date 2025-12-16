@@ -14,29 +14,104 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇺🇸(US)-149.28.223.165
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.177.242
   type: trojan
-  server: 149.28.223.165
-  port: 13817
-  uuid: mRQKixLUsca9_jN0
+  server: 35.181.177.242
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: apple.jumpingapple.click
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.162.38
   type: trojan
-  server: 209.200.246.53
-  port: 36774
-  uuid: Fv7ogJ6vfz
-  network: grpc
+  server: 35.181.162.38
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
   tls: true
-  servername: cloudflare.com
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.162.38_1
+  type: trojan
+  server: 35.181.162.38
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.177.242_1
+  type: trojan
+  server: 35.181.177.242
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇬🇧(GB)-209.250.224.246
+  type: trojan
+  server: 209.250.224.246
+  port: 24293
+  uuid: Iisy37ABxOJ8Ha_cb5fpXKkm-WSFV
+  network: tcp
+  tls: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇬🇧(GB)-172.236.2.42
+  type: trojan
+  server: 172.236.2.42
+  port: 19872
+  uuid: rV3TjWB8R1EiK1xhmnypsgeo
+  network: tcp
+  tls: true
+  servername: 172.236.2.42
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-18.193.162.239
   type: trojan
   server: 18.193.162.239
   port: 22223
   uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇬🇧(GB)-172.236.2.42_1
+  type: trojan
+  server: 172.236.2.42
+  port: 19872
+  uuid: rV3TjWB8R1EiK1xhmnypsgeo
+  network: tcp
+  tls: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇬🇧(GB)-108.61.175.83
+  type: trojan
+  server: 108.61.175.83
+  port: 24293
+  uuid: Iisy37ABxOJ8Ha_cb5fpXKkm-WSFV
+  network: tcp
+  tls: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+- name: TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  type: trojan
+  server: 62.133.60.83
+  port: 2025
+  uuid: vpn
+  network: ws
+  tls: false
+  servername: 62.133.60.83
+  ws-opts:
+    path: /
+    headers:
+      Host: dns.google.com
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.193.162.239_1
+  type: trojan
+  server: 18.193.162.239
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
@@ -59,15 +134,6 @@ proxies:
   tls: true
   servername: ads.x5.ru
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.159.103.137
-  type: trojan
-  server: 51.159.103.137
-  port: 58290
-  uuid: 90y2l3mu48d10uy3ibad
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-63.177.179.106_1
   type: trojan
   server: 63.177.179.106
@@ -77,11 +143,11 @@ proxies:
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-195.154.202.25
+- name: TROJAN-TCP-TLS-🇬🇧(GB)-64.176.189.166
   type: trojan
-  server: 195.154.202.25
-  port: 58290
-  uuid: 90y2l3mu48d10uy3ibad
+  server: 64.176.189.166
+  port: 17219
+  uuid: a1sQe6Zbpxf0LyhdkBjlr
   network: tcp
   tls: true
   servername: ads.x5.ru
@@ -95,56 +161,11 @@ proxies:
   tls: true
   servername: ads.x5.ru
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇰(DK)-195.88.89.112
+- name: TROJAN-TCP-TLS-🇬🇧(GB)-64.176.180.67
   type: trojan
-  server: 195.88.89.112
-  port: 14799
-  uuid: axXVQwfGAPzZBOeRMsC-9
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇬🇧(GB)-172.236.2.42
-  type: trojan
-  server: 172.236.2.42
-  port: 19872
-  uuid: rV3TjWB8R1EiK1xhmnypsgeo
-  network: tcp
-  tls: true
-  servername: 172.236.2.42
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇬🇧(GB)-172.236.2.42_1
-  type: trojan
-  server: 172.236.2.42
-  port: 19872
-  uuid: rV3TjWB8R1EiK1xhmnypsgeo
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇬🇧(GB)-209.250.224.246
-  type: trojan
-  server: 209.250.224.246
-  port: 24293
-  uuid: Iisy37ABxOJ8Ha_cb5fpXKkm-WSFV
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-195.154.202.110
-  type: trojan
-  server: 195.154.202.110
-  port: 58290
-  uuid: 90y2l3mu48d10uy3ibad
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇬🇧(GB)-108.61.175.83
-  type: trojan
-  server: 108.61.175.83
-  port: 24293
-  uuid: Iisy37ABxOJ8Ha_cb5fpXKkm-WSFV
+  server: 64.176.180.67
+  port: 18756
+  uuid: pk9Cl5J4dpSzj-.O21q0L
   network: tcp
   tls: true
   servername: ads.x5.ru
@@ -158,20 +179,38 @@ proxies:
   tls: true
   servername: ads.x5.ru
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇳🇱(NL)-95.179.184.71
+- name: TROJAN-TCP-TLS-🇩🇰(DK)-195.88.89.112
   type: trojan
-  server: 95.179.184.71
-  port: 13345
-  uuid: Szb=-Zguo53QhmivcJqEAWtpdPX6Y
+  server: 195.88.89.112
+  port: 14799
+  uuid: axXVQwfGAPzZBOeRMsC-9
   network: tcp
   tls: true
-  servername: infiniteinjera.semanticstrainer.click
+  servername: ads.x5.ru
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-108.61.123.140
   type: trojan
-  server: 45.32.153.36
-  port: 20994
-  uuid: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+  server: 108.61.123.140
+  port: 25075
+  uuid: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
+  network: tcp
+  tls: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-104.238.188.249
+  type: trojan
+  server: 104.238.188.249
+  port: 25075
+  uuid: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
+  network: tcp
+  tls: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-95.179.210.231
+  type: trojan
+  server: 95.179.210.231
+  port: 25075
+  uuid: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
   network: tcp
   tls: true
   servername: ads.x5.ru
@@ -194,20 +233,11 @@ proxies:
   tls: true
   servername: ads.x5.ru
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-80.240.17.154
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-195.154.202.110
   type: trojan
-  server: 80.240.17.154
-  port: 13448
-  uuid: 9BbIGN.nF=gztO-iq7ETmxdJ
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
-  type: trojan
-  server: 45.32.158.138
-  port: 20994
-  uuid: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+  server: 195.154.202.110
+  port: 58290
+  uuid: 90y2l3mu48d10uy3ibad
   network: tcp
   tls: true
   servername: ads.x5.ru
@@ -221,38 +251,20 @@ proxies:
   tls: true
   servername: ads.x5.ru
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-199.247.5.172
   type: trojan
-  server: 64.176.18.21
-  port: 18415
-  uuid: e9GP-sYzrxL2RBjl
-  network: tcp
-  tls: true
-  servername: quietplace.lazymountain.click
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇸🇪(SE)-70.34.220.34
-  type: trojan
-  server: 70.34.220.34
-  port: 25599
-  uuid: tRxkV-KcTuypP=8Yj6Bgd
-  network: tcp
-  tls: true
-  servername: cryptographiccupcake.silentrocket.click
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
-  type: trojan
-  server: 70.34.218.149
-  port: 11930
-  uuid: BaeSzHdfJIR13l67
+  server: 199.247.5.172
+  port: 13448
+  uuid: 9BbIGN.nF=gztO-iq7ETmxdJ
   network: tcp
   tls: true
   servername: ads.x5.ru
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-45.76.94.79
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.159.103.137
   type: trojan
-  server: 45.76.94.79
-  port: 13448
-  uuid: 9BbIGN.nF=gztO-iq7ETmxdJ
+  server: 51.159.103.137
+  port: 58290
+  uuid: 90y2l3mu48d10uy3ibad
   network: tcp
   tls: true
   servername: ads.x5.ru
@@ -266,23 +278,23 @@ proxies:
   tls: true
   servername: ads.x5.ru
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-192.248.187.65
+- name: TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
   type: trojan
-  server: 192.248.187.65
-  port: 15505
-  uuid: Bdj2W.Z0=UaM1IYzhO5TR76Jx
+  server: 70.34.218.149
+  port: 11930
+  uuid: BaeSzHdfJIR13l67
   network: tcp
   tls: true
   servername: ads.x5.ru
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇬🇧(GB)-64.176.189.166
+- name: TROJAN-TCP-TLS-🇸🇪(SE)-70.34.220.34
   type: trojan
-  server: 64.176.189.166
-  port: 17219
-  uuid: a1sQe6Zbpxf0LyhdkBjlr
+  server: 70.34.220.34
+  port: 25599
+  uuid: tRxkV-KcTuypP=8Yj6Bgd
   network: tcp
   tls: true
-  servername: ads.x5.ru
+  servername: cryptographiccupcake.silentrocket.click
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇸🇪(SE)-70.34.220.34_1
   type: trojan
@@ -293,51 +305,56 @@ proxies:
   tls: true
   servername: cryptographiccupcake.silentrocket.click
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-199.247.5.172
+- name: TROJAN-TCP-TLS-🇳🇱(NL)-95.179.184.71
   type: trojan
-  server: 199.247.5.172
-  port: 13448
-  uuid: 9BbIGN.nF=gztO-iq7ETmxdJ
+  server: 95.179.184.71
+  port: 13345
+  uuid: Szb=-Zguo53QhmivcJqEAWtpdPX6Y
+  network: tcp
+  tls: true
+  servername: infiniteinjera.semanticstrainer.click
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇮🇹(IT)-172.238.237.107
+  type: trojan
+  server: 172.238.237.107
+  port: 19973
+  uuid: jDKgCAysZceRJ+IVv-t69w.p8=mB
+  network: tcp
+  tls: true
+  servername: www.vk.com
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-195.154.202.25
+  type: trojan
+  server: 195.154.202.25
+  port: 58290
+  uuid: 90y2l3mu48d10uy3ibad
   network: tcp
   tls: true
   servername: ads.x5.ru
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇰(DK)-83.172.159.181
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
   type: trojan
-  server: 83.172.159.181
-  port: 17860
-  uuid: y0.qLgDed4ElASjr_3+B7kTVb9np1
+  server: 45.32.153.36
+  port: 20994
+  uuid: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   network: tcp
   tls: true
-  servername: www.vk.ru
+  servername: ads.x5.ru
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149_1
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-192.248.187.65
   type: trojan
-  server: 70.34.218.149
-  port: 11930
-  uuid: BaeSzHdfJIR13l67
+  server: 192.248.187.65
+  port: 15505
+  uuid: Bdj2W.Z0=UaM1IYzhO5TR76Jx
   network: tcp
   tls: true
-  servername: softpillow.silentrocket.click
+  servername: ads.x5.ru
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-80.240.17.154
   type: trojan
-  server: 172.67.180.227
-  port: 443
-  uuid: bpb-trojan
-  network: ws
-  tls: true
-  servername: mashdt.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr?ed=2560
-    headers:
-      Host: mashdt.pages.dev
-- name: TROJAN-TCP-TLS-🇦🇱(AL)-78.159.131.12
-  type: trojan
-  server: 78.159.131.12
-  port: 28259
-  uuid: MeaDiUmPlkWbZJ2BON8tz
+  server: 80.240.17.154
+  port: 13448
+  uuid: 9BbIGN.nF=gztO-iq7ETmxdJ
   network: tcp
   tls: true
   servername: ads.x5.ru
@@ -355,14 +372,32 @@ proxies:
     path: /
     headers:
       Host: guang.bgm2024.dpdns.org
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.81.220
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-45.76.94.79
   type: trojan
-  server: 13.36.81.220
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: 45.76.94.79
+  port: 13448
+  uuid: 9BbIGN.nF=gztO-iq7ETmxdJ
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
+  type: trojan
+  server: 45.32.158.138
+  port: 20994
+  uuid: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+  network: tcp
+  tls: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇰(DK)-83.172.159.181
+  type: trojan
+  server: 83.172.159.181
+  port: 17860
+  uuid: y0.qLgDed4ElASjr_3+B7kTVb9np1
+  network: tcp
+  tls: true
+  servername: www.vk.ru
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇮🇸(IS)-212.192.214.46
   type: trojan
@@ -373,59 +408,97 @@ proxies:
   tls: true
   servername: www.vk.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.193.162.239_1
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
-  server: 18.193.162.239
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: 172.67.180.227
+  port: 443
+  uuid: bpb-trojan
+  network: ws
+  tls: true
+  servername: mashdt.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tr?ed=2560
+    headers:
+      Host: mashdt.pages.dev
+- name: TROJAN-TCP-TLS-🇺🇸(US)-149.28.223.165
+  type: trojan
+  server: 149.28.223.165
+  port: 13817
+  uuid: mRQKixLUsca9_jN0
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: apple.jumpingapple.click
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
+  type: trojan
+  server: 64.176.18.21
+  port: 18415
+  uuid: e9GP-sYzrxL2RBjl
+  network: tcp
+  tls: true
+  servername: quietplace.lazymountain.click
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇷🇺(RU)-45.129.3.220
+  type: trojan
+  server: 45.129.3.220
+  port: 10668
+  uuid: oUFBC3Vs2rYmN8_bR-P7quoL
+  network: tcp
+  tls: true
+  servername: www.vk.com
   client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇺🇸(US)-149.28.223.165
-  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.177.242
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.162.38
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.162.38_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.177.242_1
+  - TROJAN-TCP-TLS-🇬🇧(GB)-209.250.224.246
+  - TROJAN-TCP-TLS-🇬🇧(GB)-172.236.2.42
   - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.162.239
+  - TROJAN-TCP-TLS-🇬🇧(GB)-172.236.2.42_1
+  - TROJAN-TCP-TLS-🇬🇧(GB)-108.61.175.83
+  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.162.239_1
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.177.179.106
   - TROJAN-TCP-TLS-🇫🇷(FR)-195.154.202.111
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.159.103.137
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.177.179.106_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-195.154.202.25
+  - TROJAN-TCP-TLS-🇬🇧(GB)-64.176.189.166
   - TROJAN-TCP-TLS-🇫🇷(FR)-195.154.202.112
-  - TROJAN-TCP-TLS-🇩🇰(DK)-195.88.89.112
-  - TROJAN-TCP-TLS-🇬🇧(GB)-172.236.2.42
-  - TROJAN-TCP-TLS-🇬🇧(GB)-172.236.2.42_1
-  - TROJAN-TCP-TLS-🇬🇧(GB)-209.250.224.246
-  - TROJAN-TCP-TLS-🇫🇷(FR)-195.154.202.110
-  - TROJAN-TCP-TLS-🇬🇧(GB)-108.61.175.83
+  - TROJAN-TCP-TLS-🇬🇧(GB)-64.176.180.67
   - TROJAN-TCP-TLS-🇬🇧(GB)-66.245.193.147
-  - TROJAN-TCP-TLS-🇳🇱(NL)-95.179.184.71
-  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
+  - TROJAN-TCP-TLS-🇩🇰(DK)-195.88.89.112
+  - TROJAN-TCP-TLS-🇫🇷(FR)-108.61.123.140
+  - TROJAN-TCP-TLS-🇫🇷(FR)-104.238.188.249
+  - TROJAN-TCP-TLS-🇫🇷(FR)-95.179.210.231
   - TROJAN-TCP-TLS-🇳🇱(NL)-95.179.183.126
   - TROJAN-TCP-TLS-🇩🇪(DE)-140.82.35.244
-  - TROJAN-TCP-TLS-🇩🇪(DE)-80.240.17.154
-  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
+  - TROJAN-TCP-TLS-🇫🇷(FR)-195.154.202.110
   - TROJAN-TCP-TLS-🇳🇱(NL)-45.63.40.126
-  - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.220.34
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
-  - TROJAN-TCP-TLS-🇩🇪(DE)-45.76.94.79
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.223.29
-  - TROJAN-TCP-TLS-🇩🇪(DE)-192.248.187.65
-  - TROJAN-TCP-TLS-🇬🇧(GB)-64.176.189.166
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.220.34_1
   - TROJAN-TCP-TLS-🇩🇪(DE)-199.247.5.172
-  - TROJAN-TCP-TLS-🇩🇰(DK)-83.172.159.181
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149_1
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-TCP-TLS-🇦🇱(AL)-78.159.131.12
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.159.103.137
+  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.223.29
+  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
+  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.220.34
+  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.220.34_1
+  - TROJAN-TCP-TLS-🇳🇱(NL)-95.179.184.71
+  - TROJAN-TCP-TLS-🇮🇹(IT)-172.238.237.107
+  - TROJAN-TCP-TLS-🇫🇷(FR)-195.154.202.25
+  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
+  - TROJAN-TCP-TLS-🇩🇪(DE)-192.248.187.65
+  - TROJAN-TCP-TLS-🇩🇪(DE)-80.240.17.154
   - TROJAN-WS-TLS-🇺🇸(US)-cf.877774.xyz
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.81.220
+  - TROJAN-TCP-TLS-🇩🇪(DE)-45.76.94.79
+  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
+  - TROJAN-TCP-TLS-🇩🇰(DK)-83.172.159.181
   - TROJAN-TCP-TLS-🇮🇸(IS)-212.192.214.46
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.162.239_1
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-TCP-TLS-🇺🇸(US)-149.28.223.165
+  - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
+  - TROJAN-TCP-TLS-🇷🇺(RU)-45.129.3.220
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -442,46 +515,53 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇺🇸(US)-149.28.223.165
-  - TROJAN-GRPC-REALITY-🇨🇦(CA)-209.200.246.53
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.177.242
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.162.38
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.162.38_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.177.242_1
+  - TROJAN-TCP-TLS-🇬🇧(GB)-209.250.224.246
+  - TROJAN-TCP-TLS-🇬🇧(GB)-172.236.2.42
   - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.162.239
+  - TROJAN-TCP-TLS-🇬🇧(GB)-172.236.2.42_1
+  - TROJAN-TCP-TLS-🇬🇧(GB)-108.61.175.83
+  - TROJAN-WS-🇩🇪(DE)-62.133.60.83
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.162.239_1
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.177.179.106
   - TROJAN-TCP-TLS-🇫🇷(FR)-195.154.202.111
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.159.103.137
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.177.179.106_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-195.154.202.25
+  - TROJAN-TCP-TLS-🇬🇧(GB)-64.176.189.166
   - TROJAN-TCP-TLS-🇫🇷(FR)-195.154.202.112
-  - TROJAN-TCP-TLS-🇩🇰(DK)-195.88.89.112
-  - TROJAN-TCP-TLS-🇬🇧(GB)-172.236.2.42
-  - TROJAN-TCP-TLS-🇬🇧(GB)-172.236.2.42_1
-  - TROJAN-TCP-TLS-🇬🇧(GB)-209.250.224.246
-  - TROJAN-TCP-TLS-🇫🇷(FR)-195.154.202.110
-  - TROJAN-TCP-TLS-🇬🇧(GB)-108.61.175.83
+  - TROJAN-TCP-TLS-🇬🇧(GB)-64.176.180.67
   - TROJAN-TCP-TLS-🇬🇧(GB)-66.245.193.147
-  - TROJAN-TCP-TLS-🇳🇱(NL)-95.179.184.71
-  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
+  - TROJAN-TCP-TLS-🇩🇰(DK)-195.88.89.112
+  - TROJAN-TCP-TLS-🇫🇷(FR)-108.61.123.140
+  - TROJAN-TCP-TLS-🇫🇷(FR)-104.238.188.249
+  - TROJAN-TCP-TLS-🇫🇷(FR)-95.179.210.231
   - TROJAN-TCP-TLS-🇳🇱(NL)-95.179.183.126
   - TROJAN-TCP-TLS-🇩🇪(DE)-140.82.35.244
-  - TROJAN-TCP-TLS-🇩🇪(DE)-80.240.17.154
-  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
+  - TROJAN-TCP-TLS-🇫🇷(FR)-195.154.202.110
   - TROJAN-TCP-TLS-🇳🇱(NL)-45.63.40.126
-  - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.220.34
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
-  - TROJAN-TCP-TLS-🇩🇪(DE)-45.76.94.79
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.223.29
-  - TROJAN-TCP-TLS-🇩🇪(DE)-192.248.187.65
-  - TROJAN-TCP-TLS-🇬🇧(GB)-64.176.189.166
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.220.34_1
   - TROJAN-TCP-TLS-🇩🇪(DE)-199.247.5.172
-  - TROJAN-TCP-TLS-🇩🇰(DK)-83.172.159.181
-  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149_1
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-TCP-TLS-🇦🇱(AL)-78.159.131.12
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.159.103.137
+  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.223.29
+  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.218.149
+  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.220.34
+  - TROJAN-TCP-TLS-🇸🇪(SE)-70.34.220.34_1
+  - TROJAN-TCP-TLS-🇳🇱(NL)-95.179.184.71
+  - TROJAN-TCP-TLS-🇮🇹(IT)-172.238.237.107
+  - TROJAN-TCP-TLS-🇫🇷(FR)-195.154.202.25
+  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
+  - TROJAN-TCP-TLS-🇩🇪(DE)-192.248.187.65
+  - TROJAN-TCP-TLS-🇩🇪(DE)-80.240.17.154
   - TROJAN-WS-TLS-🇺🇸(US)-cf.877774.xyz
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.81.220
+  - TROJAN-TCP-TLS-🇩🇪(DE)-45.76.94.79
+  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
+  - TROJAN-TCP-TLS-🇩🇰(DK)-83.172.159.181
   - TROJAN-TCP-TLS-🇮🇸(IS)-212.192.214.46
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.162.239_1
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-TCP-TLS-🇺🇸(US)-149.28.223.165
+  - TROJAN-TCP-TLS-🇨🇱(CL)-64.176.18.21
+  - TROJAN-TCP-TLS-🇷🇺(RU)-45.129.3.220
 rule-providers:
   adblock:
     type: http
