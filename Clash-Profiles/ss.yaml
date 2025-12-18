@@ -14,24 +14,66 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-212.18.104.228
+- name: SS-C20P-🇺🇸(US)-217.60.249.112
   type: ss
-  server: 212.18.104.228
-  port: 56636
+  server: 217.60.249.112
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: xsrNKLtnRWBYnqQXNnORcU
+  password: 0eC4ZBvStOgQEzTpCYjWN5
+- name: SS-C20P-🇩🇪(DE)-h110vpnde.outlinekeys.net
+  type: ss
+  server: h110vpnde.outlinekeys.net
+  port: 7048
+  cipher: chacha20-ietf-poly1305
+  password: Y52dYtnOWIKtbVTMcmhACO
+- name: SS-C20P-🇩🇪(DE)-87.121.162.249
+  type: ss
+  server: 87.121.162.249
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: JGv616hMWdjfuZ00jYfq7XkBHJZrOBrg
+- name: SS-C20P-🇦🇺(AU)-95.111.222.113
+  type: ss
+  server: 95.111.222.113
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa
 - name: SS-C20P-🇫🇮(FI)-65.21.243.22
   type: ss
   server: 65.21.243.22
   port: 31348
   cipher: chacha20-ietf-poly1305
   password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
+- name: SS-C20P-🇺🇸(US)-h110vpnus.outlinekeys.net
+  type: ss
+  server: h110vpnus.outlinekeys.net
+  port: 9483
+  cipher: chacha20-ietf-poly1305
+  password: cMxcYcefqUjG9Sj1uLohQz
+- name: SS-C20P-🇺🇸(US)-92.118.112.101
+  type: ss
+  server: 92.118.112.101
+  port: 9483
+  cipher: chacha20-ietf-poly1305
+  password: cMxcYcefqUjG9Sj1uLohQz
+- name: SS-C20P-🇺🇸(US)-h110vpnus.outlinekeys.net_1
+  type: ss
+  server: h110vpnus.outlinekeys.net
+  port: 9483
+  cipher: chacha20-ietf-poly1305
+  password: sAfncDBWrSHNmyl6EL5dId
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-212.18.104.228
+  - SS-C20P-🇺🇸(US)-217.60.249.112
+  - SS-C20P-🇩🇪(DE)-h110vpnde.outlinekeys.net
+  - SS-C20P-🇩🇪(DE)-87.121.162.249
+  - SS-C20P-🇦🇺(AU)-95.111.222.113
   - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇺🇸(US)-h110vpnus.outlinekeys.net
+  - SS-C20P-🇺🇸(US)-92.118.112.101
+  - SS-C20P-🇺🇸(US)-h110vpnus.outlinekeys.net_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -48,8 +90,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-212.18.104.228
+  - SS-C20P-🇺🇸(US)-217.60.249.112
+  - SS-C20P-🇩🇪(DE)-h110vpnde.outlinekeys.net
+  - SS-C20P-🇩🇪(DE)-87.121.162.249
+  - SS-C20P-🇦🇺(AU)-95.111.222.113
   - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇺🇸(US)-h110vpnus.outlinekeys.net
+  - SS-C20P-🇺🇸(US)-92.118.112.101
+  - SS-C20P-🇺🇸(US)-h110vpnus.outlinekeys.net_1
 rule-providers:
   adblock:
     type: http
