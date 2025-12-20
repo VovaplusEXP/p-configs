@@ -14,6 +14,36 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-C20P-🇩🇪(DE)-194.59.183.134
+  type: ss
+  server: 194.59.183.134
+  port: 46114
+  cipher: chacha20-ietf-poly1305
+  password: lejSRyqa033OEPmEQsvRsl
+- name: SS-C20P-🇫🇷(FR)-51.178.42.187
+  type: ss
+  server: 51.178.42.187
+  port: 5223
+  cipher: chacha20-ietf-poly1305
+  password: VqQ91RXEQlzAekTzHF6boM
+- name: SS-C20P-🇪🇪(EE)-185.155.96.155
+  type: ss
+  server: 185.155.96.155
+  port: 8444
+  cipher: chacha20-ietf-poly1305
+  password: AWNeHjukGQWwuFXadw2r6qH7gh4hZ9cj
+- name: SS-C20P-🇪🇪(EE)-est01-ss01.tcp-reset-club.net
+  type: ss
+  server: est01-ss01.tcp-reset-club.net
+  port: 8444
+  cipher: chacha20-ietf-poly1305
+  password: AWNeHjukGQWwuFXadw2r6qH7gh4hZ9cj
+- name: SS-C20P-🇦🇺(AU)-95.111.222.113
+  type: ss
+  server: 95.111.222.113
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa
 - name: SS-C20P-🇦🇺(AU)-45.15.185.70
   type: ss
   server: 45.15.185.70
@@ -24,6 +54,11 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
+  - SS-C20P-🇩🇪(DE)-194.59.183.134
+  - SS-C20P-🇫🇷(FR)-51.178.42.187
+  - SS-C20P-🇪🇪(EE)-185.155.96.155
+  - SS-C20P-🇪🇪(EE)-est01-ss01.tcp-reset-club.net
+  - SS-C20P-🇦🇺(AU)-95.111.222.113
   - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
   lazy: false
@@ -41,6 +76,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
+  - SS-C20P-🇩🇪(DE)-194.59.183.134
+  - SS-C20P-🇫🇷(FR)-51.178.42.187
+  - SS-C20P-🇪🇪(EE)-185.155.96.155
+  - SS-C20P-🇪🇪(EE)-est01-ss01.tcp-reset-club.net
+  - SS-C20P-🇦🇺(AU)-95.111.222.113
   - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
   adblock:
