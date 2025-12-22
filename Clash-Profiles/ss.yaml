@@ -14,12 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-212.18.104.228
-  type: ss
-  server: 212.18.104.228
-  port: 56636
-  cipher: chacha20-ietf-poly1305
-  password: a5HDcBgpufeD5Sw8wbxfaG
 - name: SS-C20P-🇫🇷(FR)-62.210.88.22
   type: ss
   server: 62.210.88.22
@@ -32,13 +26,19 @@ proxies:
   port: 5223
   cipher: chacha20-ietf-poly1305
   password: VqQ91RXEQlzAekTzHF6boM
+- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187
+  type: ss
+  server: 141.164.45.187
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-212.18.104.228
   - SS-C20P-🇫🇷(FR)-62.210.88.22
   - SS-C20P-🇫🇷(FR)-51.178.42.187
+  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -55,9 +55,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-212.18.104.228
   - SS-C20P-🇫🇷(FR)-62.210.88.22
   - SS-C20P-🇫🇷(FR)-51.178.42.187
+  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
 rule-providers:
   adblock:
     type: http
