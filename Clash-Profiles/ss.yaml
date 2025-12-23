@@ -14,30 +14,12 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-92.118.112.101
+- name: SS-C20P-🇹🇷(TR)-tr-1.stunnel.cc
   type: ss
-  server: 92.118.112.101
-  port: 9483
+  server: tr-1.stunnel.cc
+  port: 8444
   cipher: chacha20-ietf-poly1305
-  password: cFZyh28uXmSOXOIAj50HYm
-- name: SS-C20P-🇫🇷(FR)-62.210.88.22
-  type: ss
-  server: 62.210.88.22
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: vXtXcKeKlazMBvKPsjk6Ba
-- name: SS-C20P-🇫🇷(FR)-51.178.42.187
-  type: ss
-  server: 51.178.42.187
-  port: 5223
-  cipher: chacha20-ietf-poly1305
-  password: VqQ91RXEQlzAekTzHF6boM
-- name: SS-C20P-🇩🇪(DE)-77.110.99.118
-  type: ss
-  server: 77.110.99.118
-  port: 56949
-  cipher: chacha20-ietf-poly1305
-  password: 6NKlSzWD8jDh44G7StAsRA
+  password: tunnel-fbrof
 - name: SS-C20P-🇦🇺(AU)-45.15.185.70
   type: ss
   server: 45.15.185.70
@@ -48,10 +30,7 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-92.118.112.101
-  - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇫🇷(FR)-51.178.42.187
-  - SS-C20P-🇩🇪(DE)-77.110.99.118
+  - SS-C20P-🇹🇷(TR)-tr-1.stunnel.cc
   - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
   lazy: false
@@ -69,10 +48,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-92.118.112.101
-  - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇫🇷(FR)-51.178.42.187
-  - SS-C20P-🇩🇪(DE)-77.110.99.118
+  - SS-C20P-🇹🇷(TR)-tr-1.stunnel.cc
   - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
   adblock:
