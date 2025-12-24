@@ -14,24 +14,24 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇦🇺(AU)-45.15.185.70
+- name: SS-C20P-🇩🇪(DE)-185.170.154.39
   type: ss
-  server: 45.15.185.70
-  port: 990
+  server: 185.170.154.39
+  port: 42886
   cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: SS-C20P-🇹🇷(TR)-tr-1.stunnel.cc
+  password: yJJBNrprAXeS3RxRJas61o
+- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187
   type: ss
-  server: tr-1.stunnel.cc
-  port: 8444
-  cipher: chacha20-ietf-poly1305
-  password: tunnel-fbrof
+  server: 141.164.45.187
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
-  - SS-C20P-🇹🇷(TR)-tr-1.stunnel.cc
+  - SS-C20P-🇩🇪(DE)-185.170.154.39
+  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -48,8 +48,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
-  - SS-C20P-🇹🇷(TR)-tr-1.stunnel.cc
+  - SS-C20P-🇩🇪(DE)-185.170.154.39
+  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
 rule-providers:
   adblock:
     type: http
