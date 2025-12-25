@@ -14,12 +14,42 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇩🇪(DE)-185.170.154.39
+- name: SS-C20P-🇺🇸(US)-92.118.112.101
   type: ss
-  server: 185.170.154.39
-  port: 42886
+  server: 92.118.112.101
+  port: 9483
   cipher: chacha20-ietf-poly1305
-  password: yJJBNrprAXeS3RxRJas61o
+  password: 9T4E8qVR68vug37N7hWZjI
+- name: SS-C20P-🇺🇸(US)-212.18.104.228
+  type: ss
+  server: 212.18.104.228
+  port: 56636
+  cipher: chacha20-ietf-poly1305
+  password: bZ6qGkaPtjbSUvOc7PX1ZH
+- name: SS-C20P-🇳🇱(NL)-178.173.250.47
+  type: ss
+  server: 178.173.250.47
+  port: 56033
+  cipher: chacha20-ietf-poly1305
+  password: 5LD874oS39jQ26cT97NaAo
+- name: SS-C20P-🇫🇷(FR)-62.210.88.22
+  type: ss
+  server: 62.210.88.22
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: WVrke5nFgkRDCDex44Lnvu
+- name: SS-C20P-🇳🇱(NL)-144.31.92.138
+  type: ss
+  server: 144.31.92.138
+  port: 18851
+  cipher: chacha20-ietf-poly1305
+  password: dZxQ63nLxtGYu6WpVt6Iva
+- name: SS-C20P-🇦🇺(AU)-45.15.185.70
+  type: ss
+  server: 45.15.185.70
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: SS-A256GCM-🇰🇷(KR)-141.164.45.187
   type: ss
   server: 141.164.45.187
@@ -30,7 +60,12 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇩🇪(DE)-185.170.154.39
+  - SS-C20P-🇺🇸(US)-92.118.112.101
+  - SS-C20P-🇺🇸(US)-212.18.104.228
+  - SS-C20P-🇳🇱(NL)-178.173.250.47
+  - SS-C20P-🇫🇷(FR)-62.210.88.22
+  - SS-C20P-🇳🇱(NL)-144.31.92.138
+  - SS-C20P-🇦🇺(AU)-45.15.185.70
   - SS-A256GCM-🇰🇷(KR)-141.164.45.187
   tolerance: 50
   lazy: false
@@ -48,7 +83,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇩🇪(DE)-185.170.154.39
+  - SS-C20P-🇺🇸(US)-92.118.112.101
+  - SS-C20P-🇺🇸(US)-212.18.104.228
+  - SS-C20P-🇳🇱(NL)-178.173.250.47
+  - SS-C20P-🇫🇷(FR)-62.210.88.22
+  - SS-C20P-🇳🇱(NL)-144.31.92.138
+  - SS-C20P-🇦🇺(AU)-45.15.185.70
   - SS-A256GCM-🇰🇷(KR)-141.164.45.187
 rule-providers:
   adblock:
