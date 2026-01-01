@@ -19,55 +19,25 @@ proxies:
   server: 212.18.104.228
   port: 56636
   cipher: chacha20-ietf-poly1305
-  password: vJcVZyduLtHyw3CsIeIJyB
+  password: 4G2Y79EiFNHWuCPGOGEfUp
 - name: SS-C20P-🇺🇸(US)-212.18.104.228_1
   type: ss
   server: 212.18.104.228
   port: 56636
   cipher: chacha20-ietf-poly1305
-  password: WooRnMofi3JxZLrYAZYRIZ
-- name: SS-C20P-🇺🇸(US)-212.18.104.228_2
-  type: ss
-  server: 212.18.104.228
-  port: 56636
-  cipher: chacha20-ietf-poly1305
-  password: 4G2Y79EiFNHWuCPGOGEfUp
-- name: SS-C20P-🇳🇱(NL)-178.173.250.47
-  type: ss
-  server: 178.173.250.47
-  port: 56033
-  cipher: chacha20-ietf-poly1305
-  password: 5LD874oS39jQ26cT97NaAo
+  password: vJcVZyduLtHyw3CsIeIJyB
 - name: SS-C20P-🇫🇷(FR)-62.210.88.22
   type: ss
   server: 62.210.88.22
   port: 443
   cipher: chacha20-ietf-poly1305
   password: S84VoFmNwS7r8xGBc5hw3m
-- name: SS-C20P-🇫🇷(FR)-51.178.42.187
-  type: ss
-  server: 51.178.42.187
-  port: 5223
-  cipher: chacha20-ietf-poly1305
-  password: P3ixKQXemZD40cOIDR0x0P
-- name: SS-C20P-🇭🇷(HR)-pro.turbooserver.com
-  type: ss
-  server: pro.turbooserver.com
-  port: 1084
-  cipher: chacha20-ietf-poly1305
-  password: 3CzOPSKLa_vvzCgSePdIWw
 - name: SS-C20P-🇫🇮(FI)-65.21.243.22
   type: ss
   server: 65.21.243.22
   port: 31348
   cipher: chacha20-ietf-poly1305
   password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
-- name: SS-C20P-🇦🇺(AU)-95.111.222.113
-  type: ss
-  server: 95.111.222.113
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa
 - name: SS-A256GCM-🇸🇬(SG)-172.237.74.36
   type: ss
   server: 172.237.74.36
@@ -86,13 +56,8 @@ proxy-groups:
   proxies: &id001
   - SS-C20P-🇺🇸(US)-212.18.104.228
   - SS-C20P-🇺🇸(US)-212.18.104.228_1
-  - SS-C20P-🇺🇸(US)-212.18.104.228_2
-  - SS-C20P-🇳🇱(NL)-178.173.250.47
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇫🇷(FR)-51.178.42.187
-  - SS-C20P-🇭🇷(HR)-pro.turbooserver.com
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-C20P-🇦🇺(AU)-95.111.222.113
   - SS-A256GCM-🇸🇬(SG)-172.237.74.36
   - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
@@ -113,13 +78,8 @@ proxy-groups:
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-212.18.104.228
   - SS-C20P-🇺🇸(US)-212.18.104.228_1
-  - SS-C20P-🇺🇸(US)-212.18.104.228_2
-  - SS-C20P-🇳🇱(NL)-178.173.250.47
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇫🇷(FR)-51.178.42.187
-  - SS-C20P-🇭🇷(HR)-pro.turbooserver.com
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-C20P-🇦🇺(AU)-95.111.222.113
   - SS-A256GCM-🇸🇬(SG)-172.237.74.36
   - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
