@@ -14,30 +14,48 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-C20P-🇲🇽(MX)-185.163.1.90
+  type: ss
+  server: 185.163.1.90
+  port: 11201
+  cipher: chacha20-ietf-poly1305
+  password: 2b195d916cb84007
 - name: SS-C20P-🇫🇷(FR)-62.210.88.22
   type: ss
   server: 62.210.88.22
   port: 443
   cipher: chacha20-ietf-poly1305
   password: w7oa3FMP8KY1S1Gg1TkmOn
-- name: SS-C20P-🇫🇷(FR)-62.210.88.22_1
+- name: SS-C20P-🇬🇧(GB)-198.244.149.86
   type: ss
-  server: 62.210.88.22
-  port: 443
+  server: 198.244.149.86
+  port: 26115
   cipher: chacha20-ietf-poly1305
-  password: sZb3kI8zUtBAQ8LewHI4Lm
-- name: SS-C20P-🇫🇮(FI)-65.21.243.22
+  password: fa76d6f09c203a59
+- name: SS-C20P-🇬🇧(GB)-57.129.129.139
   type: ss
-  server: 65.21.243.22
-  port: 31348
+  server: 57.129.129.139
+  port: 29183
   cipher: chacha20-ietf-poly1305
-  password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
+  password: ab0b81a5bff7ddea
 - name: SS-A256GCM-🇸🇬(SG)-172.237.74.36
   type: ss
   server: 172.237.74.36
   port: 443
   cipher: aes-256-gcm
   password: Dk0XrU/n+SB84g0k+mX4zdy5HVVhuAUP6pCaldJxQjY=
+- name: SS-C20P-🇫🇮(FI)-65.21.243.22
+  type: ss
+  server: 65.21.243.22
+  port: 31348
+  cipher: chacha20-ietf-poly1305
+  password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
+- name: SS-C20P-🇨🇦(CA)-51.161.33.111
+  type: ss
+  server: 51.161.33.111
+  port: 11202
+  cipher: chacha20-ietf-poly1305
+  password: f6c4600d4d513857
 - name: SS-C20P-🇦🇺(AU)-45.15.185.70
   type: ss
   server: 45.15.185.70
@@ -48,10 +66,13 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
+  - SS-C20P-🇲🇽(MX)-185.163.1.90
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇫🇷(FR)-62.210.88.22_1
-  - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇬🇧(GB)-198.244.149.86
+  - SS-C20P-🇬🇧(GB)-57.129.129.139
   - SS-A256GCM-🇸🇬(SG)-172.237.74.36
+  - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇨🇦(CA)-51.161.33.111
   - SS-C20P-🇦🇺(AU)-45.15.185.70
   tolerance: 50
   lazy: false
@@ -69,10 +90,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
+  - SS-C20P-🇲🇽(MX)-185.163.1.90
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇫🇷(FR)-62.210.88.22_1
-  - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇬🇧(GB)-198.244.149.86
+  - SS-C20P-🇬🇧(GB)-57.129.129.139
   - SS-A256GCM-🇸🇬(SG)-172.237.74.36
+  - SS-C20P-🇫🇮(FI)-65.21.243.22
+  - SS-C20P-🇨🇦(CA)-51.161.33.111
   - SS-C20P-🇦🇺(AU)-45.15.185.70
 rule-providers:
   adblock:
