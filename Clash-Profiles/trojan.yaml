@@ -14,6 +14,64 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.64.145.38
+  type: trojan
+  server: 172.64.145.38
+  port: 8443
+  uuid: k52nemqqdx9e
+  network: ws
+  tls: true
+  servername: 8end0fr.zjde5.de5.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 8end0fr.zjde5.de5.net
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.111.41
+  type: trojan
+  server: 35.181.111.41
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.111.41_1
+  type: trojan
+  server: 35.181.111.41
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.111.41_2
+  type: trojan
+  server: 35.181.111.41
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 35.181.111.41
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.111.41_3
+  type: trojan
+  server: 35.181.111.41
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: 35.181.111.41
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.158.18.102
+  type: trojan
+  server: 35.158.18.102
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: 35.158.18.102
+  client-fingerprint: chrome
 - name: TROJAN-TCP-🇫🇷(FR)-137.74.41.156
   type: trojan
   server: 137.74.41.156
@@ -22,20 +80,20 @@ proxies:
   network: tcp
   tls: false
   servername: 137.74.41.156
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.158.18.102
+- name: TROJAN-TCP-TLS-🇳🇱(NL)-95.179.183.126
   type: trojan
-  server: 35.158.18.102
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: 95.179.183.126
+  port: 13345
+  uuid: Szb=-Zguo53QhmivcJqEAWtpdPX6Y
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: infiniteinjera.semanticstrainer.click
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-35.158.18.102_1
   type: trojan
   server: 35.158.18.102
-  port: 22223
-  uuid: telegram-id-directvpn
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: 35.158.18.102
@@ -56,25 +114,7 @@ proxies:
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: 35.158.18.102
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇳🇱(NL)-95.179.183.126
-  type: trojan
-  server: 95.179.183.126
-  port: 13345
-  uuid: Szb=-Zguo53QhmivcJqEAWtpdPX6Y
-  network: tcp
-  tls: true
-  servername: infiniteinjera.semanticstrainer.click
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
-  type: trojan
-  server: 45.32.153.36
-  port: 20994
-  uuid: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
 - name: TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   type: trojan
@@ -84,19 +124,6 @@ proxies:
   network: tcp
   tls: false
   servername: 45.144.51.35
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  type: trojan
-  server: 172.67.180.227
-  port: 443
-  uuid: bpb-trojan
-  network: ws
-  tls: true
-  servername: mashdt.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr?ed=2560
-    headers:
-      Host: mashdt.pages.dev
 - name: TROJAN-TCP-🇵🇱(PL)-45.144.51.35_1
   type: trojan
   server: 45.144.51.35
@@ -105,6 +132,15 @@ proxies:
   network: tcp
   tls: false
   servername: 45.144.51.35
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
+  type: trojan
+  server: 45.32.153.36
+  port: 20994
+  uuid: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+  network: tcp
+  tls: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇮🇸(IS)-212.192.214.46
   type: trojan
   server: 212.192.214.46
@@ -114,19 +150,6 @@ proxies:
   tls: true
   servername: www.vk.com
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.64.145.38
-  type: trojan
-  server: 172.64.145.38
-  port: 8443
-  uuid: k52nemqqdx9e
-  network: ws
-  tls: true
-  servername: 8end0fr.zjde5.de5.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 8end0fr.zjde5.de5.net
 - name: TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   type: trojan
   server: mfa.gov.ua
@@ -144,18 +167,21 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
+  - TROJAN-WS-TLS-🇺🇸(US)-172.64.145.38
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.111.41
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.111.41_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.111.41_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.111.41_3
   - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.18.102
+  - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
+  - TROJAN-TCP-TLS-🇳🇱(NL)-95.179.183.126
   - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.18.102_1
   - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.18.102_2
   - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.18.102_3
-  - TROJAN-TCP-TLS-🇳🇱(NL)-95.179.183.126
-  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
   - TROJAN-TCP-TLS-🇮🇸(IS)-212.192.214.46
-  - TROJAN-WS-TLS-🇺🇸(US)-172.64.145.38
   - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   tolerance: 50
   lazy: false
@@ -173,18 +199,21 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
+  - TROJAN-WS-TLS-🇺🇸(US)-172.64.145.38
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.111.41
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.111.41_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.111.41_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.111.41_3
   - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.18.102
+  - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
+  - TROJAN-TCP-TLS-🇳🇱(NL)-95.179.183.126
   - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.18.102_1
   - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.18.102_2
   - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.18.102_3
-  - TROJAN-TCP-TLS-🇳🇱(NL)-95.179.183.126
-  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
   - TROJAN-TCP-TLS-🇮🇸(IS)-212.192.214.46
-  - TROJAN-WS-TLS-🇺🇸(US)-172.64.145.38
   - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
 rule-providers:
   adblock:
