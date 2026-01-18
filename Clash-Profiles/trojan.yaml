@@ -14,32 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.64.154.125
-  type: trojan
-  server: 172.64.154.125
-  port: 8443
-  uuid: zqe8nnclzgsq
-  network: ws
-  tls: true
-  servername: x02yu8frl452vo9o9ncevjsk6zo.zjde5.de5.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: x02yu8frl452vo9o9ncevjsk6zo.zjde5.de5.net
-- name: TROJAN-WS-TLS-🇺🇸(US)-www.visa.com
-  type: trojan
-  server: www.visa.com
-  port: 8443
-  uuid: ifu4wsmf6bta
-  network: ws
-  tls: true
-  servername: x8e01ilnehffr6.zjde5.de5.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: x8e01ilnehffr6.zjde5.de5.net
 - name: TROJAN-WS-TLS-🇺🇸(US)-104.17.163.123
   type: trojan
   server: 104.17.163.123
@@ -53,6 +27,41 @@ proxies:
     path: /?ed=2560
     headers:
       Host: 2nsb0tvw4gaj38d6pfnxfjv9iqsfjpyr9kr6p.zjde5.de5.net
+- name: TROJAN-WS-TLS-🇺🇸(US)-www.visa.com
+  type: trojan
+  server: www.visa.com
+  port: 8443
+  uuid: ifu4wsmf6bta
+  network: ws
+  tls: true
+  servername: x8e01ilnehffr6.zjde5.de5.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: x8e01ilnehffr6.zjde5.de5.net
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.64.154.125
+  type: trojan
+  server: 172.64.154.125
+  port: 8443
+  uuid: zqe8nnclzgsq
+  network: ws
+  tls: true
+  servername: x02yu8frl452vo9o9ncevjsk6zo.zjde5.de5.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: x02yu8frl452vo9o9ncevjsk6zo.zjde5.de5.net
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.157.117.234
+  type: trojan
+  server: 35.157.117.234
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 35.157.117.234
+  client-fingerprint: chrome
 - name: TROJAN-TCP-🇫🇷(FR)-137.74.41.156
   type: trojan
   server: 137.74.41.156
@@ -61,125 +70,41 @@ proxies:
   network: tcp
   tls: false
   servername: 137.74.41.156
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.191
-  type: trojan
-  server: 51.44.34.191
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.157.117.234
-  type: trojan
-  server: 35.157.117.234
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-35.157.117.234_1
   type: trojan
   server: 35.157.117.234
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 35.157.117.234
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.191_1
-  type: trojan
-  server: 51.44.34.191
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.191_2
-  type: trojan
-  server: 51.44.34.191
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 51.44.34.191
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.191_3
-  type: trojan
-  server: 51.44.34.191
   port: 22223
   uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: 51.44.34.191
+  servername: 35.157.117.234
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-35.157.117.234_2
   type: trojan
   server: 35.157.117.234
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.180.16.16
+  type: trojan
+  server: 35.180.16.16
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 35.180.16.16
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.180.16.16_1
+  type: trojan
+  server: 35.180.16.16
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  type: trojan
-  server: 45.144.51.35
-  port: 7390
-  uuid: zL7CpPYxhvFtYqm2yAbHrw
-  network: tcp
-  tls: false
-  servername: 45.144.51.35
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.157.117.234_3
-  type: trojan
-  server: 35.157.117.234
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: 35.157.117.234
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-www.shopify.com
-  type: trojan
-  server: www.shopify.com
-  port: 8443
-  uuid: 4w90c5nc5x10
-  network: ws
-  tls: true
-  servername: xwuw5xydh3x0sypnzgqjtd0fwvjj9nt3qmwoy78lbhr1rj7ihna6.zjde5.de5.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: xwuw5xydh3x0sypnzgqjtd0fwvjj9nt3qmwoy78lbhr1rj7ihna6.zjde5.de5.net
-- name: TROJAN-TCP-TLS-🇳🇱(NL)-45.63.40.126
-  type: trojan
-  server: 45.63.40.126
-  port: 13345
-  uuid: Szb=-Zguo53QhmivcJqEAWtpdPX6Y
-  network: tcp
-  tls: true
-  servername: 45.63.40.126
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
-  type: trojan
-  server: 45.32.153.36
-  port: 20994
-  uuid: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇳🇱(NL)-95.179.183.126
-  type: trojan
-  server: 95.179.183.126
-  port: 13345
-  uuid: Szb=-Zguo53QhmivcJqEAWtpdPX6Y
-  network: tcp
-  tls: true
-  servername: infiniteinjera.semanticstrainer.click
   client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
@@ -194,14 +119,31 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
+- name: TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   type: trojan
-  server: 45.32.158.138
-  port: 20994
-  uuid: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+  server: 45.144.51.35
+  port: 7390
+  uuid: zL7CpPYxhvFtYqm2yAbHrw
+  network: tcp
+  tls: false
+  servername: 45.144.51.35
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.157.117.234_3
+  type: trojan
+  server: 35.157.117.234
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: ads.x5.ru
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇳🇱(NL)-95.179.183.126
+  type: trojan
+  server: 95.179.183.126
+  port: 13345
+  uuid: Szb=-Zguo53QhmivcJqEAWtpdPX6Y
+  network: tcp
+  tls: true
+  servername: infiniteinjera.semanticstrainer.click
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇮🇸(IS)-212.192.214.46
   type: trojan
@@ -212,30 +154,72 @@ proxies:
   tls: true
   servername: www.vk.com
   client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
+  type: trojan
+  server: 45.32.153.36
+  port: 20994
+  uuid: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+  network: tcp
+  tls: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇬🇷(GR)-217.12.204.110
+  type: trojan
+  server: 217.12.204.110
+  port: 8443
+  uuid: nbBv30KKn2tVJB6u33PuotT0t-ghHk
+  network: tcp
+  tls: true
+  servername: chat.speedload.ru
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-store.ubi.com
+  type: trojan
+  server: store.ubi.com
+  port: 443
+  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+  network: ws
+  tls: true
+  servername: _acme-challenge.2go.cloudns.be
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: _acme-challenge.2go.cloudns.be
+- name: TROJAN-WS-TLS-🇺🇸(US)-www.shopify.com
+  type: trojan
+  server: www.shopify.com
+  port: 8443
+  uuid: 4w90c5nc5x10
+  network: ws
+  tls: true
+  servername: xwuw5xydh3x0sypnzgqjtd0fwvjj9nt3qmwoy78lbhr1rj7ihna6.zjde5.de5.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: xwuw5xydh3x0sypnzgqjtd0fwvjj9nt3qmwoy78lbhr1rj7ihna6.zjde5.de5.net
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-TLS-🇺🇸(US)-172.64.154.125
-  - TROJAN-WS-TLS-🇺🇸(US)-www.visa.com
   - TROJAN-WS-TLS-🇺🇸(US)-104.17.163.123
-  - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.191
+  - TROJAN-WS-TLS-🇺🇸(US)-www.visa.com
+  - TROJAN-WS-TLS-🇺🇸(US)-172.64.154.125
   - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.117.234
+  - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
   - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.117.234_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.191_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.191_2
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.191_3
   - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.117.234_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.16.16
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.16.16_1
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.117.234_3
-  - TROJAN-WS-TLS-🇺🇸(US)-www.shopify.com
-  - TROJAN-TCP-TLS-🇳🇱(NL)-45.63.40.126
-  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
   - TROJAN-TCP-TLS-🇳🇱(NL)-95.179.183.126
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
   - TROJAN-TCP-TLS-🇮🇸(IS)-212.192.214.46
+  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
+  - TROJAN-TCP-TLS-🇬🇷(GR)-217.12.204.110
+  - TROJAN-WS-TLS-🇺🇸(US)-store.ubi.com
+  - TROJAN-WS-TLS-🇺🇸(US)-www.shopify.com
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -252,26 +236,24 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-TLS-🇺🇸(US)-172.64.154.125
-  - TROJAN-WS-TLS-🇺🇸(US)-www.visa.com
   - TROJAN-WS-TLS-🇺🇸(US)-104.17.163.123
-  - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.191
+  - TROJAN-WS-TLS-🇺🇸(US)-www.visa.com
+  - TROJAN-WS-TLS-🇺🇸(US)-172.64.154.125
   - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.117.234
+  - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
   - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.117.234_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.191_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.191_2
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.34.191_3
   - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.117.234_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.16.16
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.16.16_1
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.117.234_3
-  - TROJAN-WS-TLS-🇺🇸(US)-www.shopify.com
-  - TROJAN-TCP-TLS-🇳🇱(NL)-45.63.40.126
-  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
   - TROJAN-TCP-TLS-🇳🇱(NL)-95.179.183.126
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
   - TROJAN-TCP-TLS-🇮🇸(IS)-212.192.214.46
+  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
+  - TROJAN-TCP-TLS-🇬🇷(GR)-217.12.204.110
+  - TROJAN-WS-TLS-🇺🇸(US)-store.ubi.com
+  - TROJAN-WS-TLS-🇺🇸(US)-www.shopify.com
 rule-providers:
   adblock:
     type: http
