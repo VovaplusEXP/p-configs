@@ -14,18 +14,18 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-REALITY-🇩🇪(DE)-verager2.uspn.io
+- name: TROJAN-TCP-REALITY-🇩🇪(DE)-ger1.uspn.io
   type: trojan
-  server: verager2.uspn.io
+  server: ger1.uspn.io
   port: 2087
   uuid: MpAg-zLGjRkmswp_as2D5oKdMhohnZnr
   network: tcp
   tls: true
   servername: api-maps.yandex.ru
   client-fingerprint: chrome
-- name: TROJAN-TCP-REALITY-🇩🇪(DE)-ger1.uspn.io
+- name: TROJAN-TCP-REALITY-🇩🇪(DE)-verager2.uspn.io
   type: trojan
-  server: ger1.uspn.io
+  server: verager2.uspn.io
   port: 2087
   uuid: MpAg-zLGjRkmswp_as2D5oKdMhohnZnr
   network: tcp
@@ -54,8 +54,8 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-REALITY-🇩🇪(DE)-verager2.uspn.io
   - TROJAN-TCP-REALITY-🇩🇪(DE)-ger1.uspn.io
+  - TROJAN-TCP-REALITY-🇩🇪(DE)-verager2.uspn.io
   - TROJAN-TCP-REALITY-🇷🇺(RU)-verarussia1.uspn.io
   - TROJAN-TCP-REALITY-🇭🇰(HK)-verahk1.uspn.io
   tolerance: 50
@@ -74,8 +74,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-REALITY-🇩🇪(DE)-verager2.uspn.io
   - TROJAN-TCP-REALITY-🇩🇪(DE)-ger1.uspn.io
+  - TROJAN-TCP-REALITY-🇩🇪(DE)-verager2.uspn.io
   - TROJAN-TCP-REALITY-🇷🇺(RU)-verarussia1.uspn.io
   - TROJAN-TCP-REALITY-🇭🇰(HK)-verahk1.uspn.io
 rule-providers:
