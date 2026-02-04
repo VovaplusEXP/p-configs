@@ -14,48 +14,64 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83
   type: trojan
-  server: irancell.buzzmuzzpanel.online
-  port: 443
-  uuid: freedom
-  network: ws
-  tls: true
-  servername: 047.eleCTROCelLco-Cf-047.woRkers.DEV
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoienRVUEM4N2p6dXE2Wm0iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
-    headers:
-      Host: 047.electrocellco-cf-047.workers.dev
-- name: TROJAN-TCP-TLS-🇮🇸(IS)-37.235.49.209
-  type: trojan
-  server: 37.235.49.209
-  port: 28099
-  uuid: qmBSKnAl6LYi9=z23Rs.Z
+  server: 35.181.17.83
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: celestialcorset.crystalhamster.click
+  servername: 35.181.17.83
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-188.114.98.0
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_1
   type: trojan
-  server: 188.114.98.0
+  server: 35.181.17.83
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_2
+  type: trojan
+  server: 35.181.17.83
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 35.181.17.83
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_3
+  type: trojan
+  server: 35.181.17.83
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  type: trojan
+  server: 172.67.180.227
   port: 443
-  uuid: freedom
+  uuid: bpb-trojan
   network: ws
   tls: true
-  servername: 054.ElEcTROcelLcO-cF-054.WORkErs.dEV
+  servername: mashdt.pages.dev
   client-fingerprint: chrome
   ws-opts:
-    path: /eyJqdW5rIjoicFI5bkF2UEdIMElWIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
+    path: /tr?ed=2560
     headers:
-      Host: 054.electrocellco-cf-054.workers.dev
+      Host: mashdt.pages.dev
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
-  - TROJAN-TCP-TLS-🇮🇸(IS)-37.235.49.209
-  - TROJAN-WS-TLS-🇺🇸(US)-188.114.98.0
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_3
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -72,9 +88,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
-  - TROJAN-TCP-TLS-🇮🇸(IS)-37.235.49.209
-  - TROJAN-WS-TLS-🇺🇸(US)-188.114.98.0
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_3
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
 rule-providers:
   adblock:
     type: http
