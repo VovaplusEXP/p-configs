@@ -14,64 +14,30 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.66.146.229
   type: trojan
-  server: 35.181.17.83
+  server: 3.66.146.229
   port: 22223
   uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: 35.181.17.83
+  servername: 3.66.146.229
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_1
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.66.146.229_1
   type: trojan
-  server: 35.181.17.83
+  server: 3.66.146.229
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: 3.66.146.229
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_2
-  type: trojan
-  server: 35.181.17.83
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 35.181.17.83
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_3
-  type: trojan
-  server: 35.181.17.83
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  type: trojan
-  server: 172.67.180.227
-  port: 443
-  uuid: bpb-trojan
-  network: ws
-  tls: true
-  servername: mashdt.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr?ed=2560
-    headers:
-      Host: mashdt.pages.dev
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_2
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_3
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.66.146.229
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.66.146.229_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -88,11 +54,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_2
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.17.83_3
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.66.146.229
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.66.146.229_1
 rule-providers:
   adblock:
     type: http
