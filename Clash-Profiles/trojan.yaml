@@ -14,9 +14,35 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-TLS-🇺🇸(US)-cloudflare-ip.mofashi.ltd
+- name: TROJAN-WS-TLS-🇺🇸(US)-cdn.tzpro.xyz
   type: trojan
-  server: cloudflare-ip.mofashi.ltd
+  server: cdn.tzpro.xyz
+  port: 443
+  uuid: 919f16d2-ae91-4589-8bb2-a672890e3537
+  network: ws
+  tls: true
+  servername: z.linglingqi.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: z.linglingqi.dpdns.org
+- name: TROJAN-WS-TLS-🇺🇸(US)-cf.zhetengsha.eu.org
+  type: trojan
+  server: cf.zhetengsha.eu.org
+  port: 443
+  uuid: 919f16d2-ae91-4589-8bb2-a672890e3537
+  network: ws
+  tls: true
+  servername: z.linglingqi.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: z.linglingqi.dpdns.org
+- name: TROJAN-WS-TLS-🇺🇸(US)-cf.090227.xyz
+  type: trojan
+  server: cf.090227.xyz
   port: 443
   uuid: 919f16d2-ae91-4589-8bb2-a672890e3537
   network: ws
@@ -53,70 +79,6 @@ proxies:
     path: /?ed=2048
     headers:
       Host: z.linglingqi.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-cf.zhetengsha.eu.org
-  type: trojan
-  server: cf.zhetengsha.eu.org
-  port: 443
-  uuid: 919f16d2-ae91-4589-8bb2-a672890e3537
-  network: ws
-  tls: true
-  servername: z.linglingqi.dpdns.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: z.linglingqi.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-cdn.tzpro.xyz
-  type: trojan
-  server: cdn.tzpro.xyz
-  port: 443
-  uuid: 919f16d2-ae91-4589-8bb2-a672890e3537
-  network: ws
-  tls: true
-  servername: z.linglingqi.dpdns.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: z.linglingqi.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-cf.090227.xyz
-  type: trojan
-  server: cf.090227.xyz
-  port: 443
-  uuid: 919f16d2-ae91-4589-8bb2-a672890e3537
-  network: ws
-  tls: true
-  servername: z.linglingqi.dpdns.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: z.linglingqi.dpdns.org
-- name: TROJAN-WS-🇺🇸(US)-162.159.33.95
-  type: trojan
-  server: 162.159.33.95
-  port: 80
-  uuid: 54aa90f6-46f5-417d-82ff-fe1197cf88fd
-  network: ws
-  tls: false
-  servername: 162.159.33.95
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: cool-snow-8be4.gjhgghg01.workers.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-freeyx.cloudflare88.eu.org
-  type: trojan
-  server: freeyx.cloudflare88.eu.org
-  port: 443
-  uuid: 919f16d2-ae91-4589-8bb2-a672890e3537
-  network: ws
-  tls: true
-  servername: z.linglingqi.dpdns.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: z.linglingqi.dpdns.org
 - name: TROJAN-WS-TLS-🇺🇸(US)-cloudflare.182682.xyz
   type: trojan
   server: cloudflare.182682.xyz
@@ -130,9 +92,9 @@ proxies:
     path: /?ed=2048
     headers:
       Host: z.linglingqi.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.17.53.83
+- name: TROJAN-WS-TLS-🇺🇸(US)-z.linglingqi.dpdns.org
   type: trojan
-  server: 104.17.53.83
+  server: z.linglingqi.dpdns.org
   port: 443
   uuid: 919f16d2-ae91-4589-8bb2-a672890e3537
   network: ws
@@ -143,9 +105,9 @@ proxies:
     path: /?ed=2048
     headers:
       Host: z.linglingqi.dpdns.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-cfip.1323123.xyz
+- name: TROJAN-WS-TLS-🇺🇸(US)-xn--b6gac.eu.org
   type: trojan
-  server: cfip.1323123.xyz
+  server: xn--b6gac.eu.org
   port: 443
   uuid: 919f16d2-ae91-4589-8bb2-a672890e3537
   network: ws
@@ -165,32 +127,6 @@ proxies:
   tls: true
   servername: www.tesla.com
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
-  type: trojan
-  server: 104.21.75.193
-  port: 443
-  uuid: bpb-trojan
-  network: ws
-  tls: true
-  servername: mashdt.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr?ed=2560
-    headers:
-      Host: mashdt.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
-  type: trojan
-  server: irancell.buzzmuzzpanel.online
-  port: 443
-  uuid: freedom
-  network: ws
-  tls: true
-  servername: 047.eleCTROCelLco-Cf-047.woRkers.DEV
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoienRVUEM4N2p6dXE2Wm0iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
-    headers:
-      Host: 047.electrocellco-cf-047.workers.dev
 - name: TROJAN-WS-TLS-🇺🇸(US)-cnamefuckxxs.yuchen.icu
   type: trojan
   server: cnamefuckxxs.yuchen.icu
@@ -204,28 +140,19 @@ proxies:
     path: /?ed=2048
     headers:
       Host: z.linglingqi.dpdns.org
-- name: TROJAN-GRPC-TLS-🇩🇪(DE)-node3.neovpn.store
+- name: TROJAN-WS-TLS-🇺🇸(US)-cloudflare-ip.mofashi.ltd
   type: trojan
-  server: node3.neovpn.store
-  port: 8446
-  uuid: 7FjbPVzZX5ZD94fAUxVycSaahvz0Jr3a
-  network: grpc
-  tls: true
-  servername: node3.neovpn.store
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
-  type: trojan
-  server: usa.visa.com
+  server: cloudflare-ip.mofashi.ltd
   port: 443
-  uuid: zWFjJENcljZm
+  uuid: 919f16d2-ae91-4589-8bb2-a672890e3537
   network: ws
   tls: true
-  servername: vahidqaz-7o61u7.vahidqaz.workers.dev
+  servername: z.linglingqi.dpdns.org
   client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560
+    path: /?ed=2048
     headers:
-      Host: vahidqaz-7o61u7.vahidqaz.workers.dev
+      Host: z.linglingqi.dpdns.org
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
   server: 172.67.180.227
@@ -239,6 +166,50 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.58.242
+  type: trojan
+  server: 13.36.58.242
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: 13.36.58.242
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
+  type: trojan
+  server: 104.21.75.193
+  port: 443
+  uuid: bpb-trojan
+  network: ws
+  tls: true
+  servername: mashdt.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tr?ed=2560
+    headers:
+      Host: mashdt.pages.dev
+- name: TROJAN-WS-TLS-🇺🇸(US)-cfip.1323123.xyz
+  type: trojan
+  server: cfip.1323123.xyz
+  port: 443
+  uuid: 919f16d2-ae91-4589-8bb2-a672890e3537
+  network: ws
+  tls: true
+  servername: z.linglingqi.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: z.linglingqi.dpdns.org
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.181.161.254
+  type: trojan
+  server: 63.181.161.254
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: 63.181.161.254
+  client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
   type: trojan
   server: v2.dabache.top
@@ -256,24 +227,22 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-TLS-🇺🇸(US)-cloudflare-ip.mofashi.ltd
+  - TROJAN-WS-TLS-🇺🇸(US)-cdn.tzpro.xyz
+  - TROJAN-WS-TLS-🇺🇸(US)-cf.zhetengsha.eu.org
+  - TROJAN-WS-TLS-🇺🇸(US)-cf.090227.xyz
   - TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
   - TROJAN-WS-TLS-🇺🇸(US)-cf.0sm.com
-  - TROJAN-WS-TLS-🇺🇸(US)-cf.zhetengsha.eu.org
-  - TROJAN-WS-TLS-🇺🇸(US)-cdn.tzpro.xyz
-  - TROJAN-WS-TLS-🇺🇸(US)-cf.090227.xyz
-  - TROJAN-WS-🇺🇸(US)-162.159.33.95
-  - TROJAN-WS-TLS-🇺🇸(US)-freeyx.cloudflare88.eu.org
   - TROJAN-WS-TLS-🇺🇸(US)-cloudflare.182682.xyz
-  - TROJAN-WS-TLS-🇺🇸(US)-104.17.53.83
-  - TROJAN-WS-TLS-🇺🇸(US)-cfip.1323123.xyz
+  - TROJAN-WS-TLS-🇺🇸(US)-z.linglingqi.dpdns.org
+  - TROJAN-WS-TLS-🇺🇸(US)-xn--b6gac.eu.org
   - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
-  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
   - TROJAN-WS-TLS-🇺🇸(US)-cnamefuckxxs.yuchen.icu
-  - TROJAN-GRPC-TLS-🇩🇪(DE)-node3.neovpn.store
-  - TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
+  - TROJAN-WS-TLS-🇺🇸(US)-cloudflare-ip.mofashi.ltd
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.58.242
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
+  - TROJAN-WS-TLS-🇺🇸(US)-cfip.1323123.xyz
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.161.254
   - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
   tolerance: 50
   lazy: false
@@ -291,24 +260,22 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-TLS-🇺🇸(US)-cloudflare-ip.mofashi.ltd
+  - TROJAN-WS-TLS-🇺🇸(US)-cdn.tzpro.xyz
+  - TROJAN-WS-TLS-🇺🇸(US)-cf.zhetengsha.eu.org
+  - TROJAN-WS-TLS-🇺🇸(US)-cf.090227.xyz
   - TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
   - TROJAN-WS-TLS-🇺🇸(US)-cf.0sm.com
-  - TROJAN-WS-TLS-🇺🇸(US)-cf.zhetengsha.eu.org
-  - TROJAN-WS-TLS-🇺🇸(US)-cdn.tzpro.xyz
-  - TROJAN-WS-TLS-🇺🇸(US)-cf.090227.xyz
-  - TROJAN-WS-🇺🇸(US)-162.159.33.95
-  - TROJAN-WS-TLS-🇺🇸(US)-freeyx.cloudflare88.eu.org
   - TROJAN-WS-TLS-🇺🇸(US)-cloudflare.182682.xyz
-  - TROJAN-WS-TLS-🇺🇸(US)-104.17.53.83
-  - TROJAN-WS-TLS-🇺🇸(US)-cfip.1323123.xyz
+  - TROJAN-WS-TLS-🇺🇸(US)-z.linglingqi.dpdns.org
+  - TROJAN-WS-TLS-🇺🇸(US)-xn--b6gac.eu.org
   - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
-  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
   - TROJAN-WS-TLS-🇺🇸(US)-cnamefuckxxs.yuchen.icu
-  - TROJAN-GRPC-TLS-🇩🇪(DE)-node3.neovpn.store
-  - TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
+  - TROJAN-WS-TLS-🇺🇸(US)-cloudflare-ip.mofashi.ltd
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.58.242
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
+  - TROJAN-WS-TLS-🇺🇸(US)-cfip.1323123.xyz
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.161.254
   - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
 rule-providers:
   adblock:
