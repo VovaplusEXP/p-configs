@@ -14,15 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.188.233.114
-  type: trojan
-  server: 15.188.233.114
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: 15.188.233.114
-  client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
   server: 172.67.180.227
@@ -49,93 +40,12 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
-- name: TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
-  type: trojan
-  server: 180.131.145.169
-  port: 18718
-  uuid: RmhZQ47pEm
-  network: grpc
-  tls: true
-  servername: www.tesla.com
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇸🇬(SG)-104.16.250.22
-  type: trojan
-  server: 104.16.250.22
-  port: 443
-  uuid: 519d06a5-f3a5-41bd-8f95-519ab65e20ed
-  network: ws
-  tls: true
-  servername: yss2o9nzv7hsgw2z.sggogo202510.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /images
-    headers:
-      Host: yss2o9nzv7hsgw2z.sggogo202510.top
-- name: TROJAN-WS-TLS-🇸🇬(SG)-104.18.185.26
-  type: trojan
-  server: 104.18.185.26
-  port: 443
-  uuid: 519d06a5-f3a5-41bd-8f95-519ab65e20ed
-  network: ws
-  tls: true
-  servername: yss2o9nzv7hsgw2z.sggogo202510.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /images
-    headers:
-      Host: yss2o9nzv7hsgw2z.sggogo202510.top
-- name: TROJAN-WS-TLS-🇸🇬(SG)-23.227.38.72
-  type: trojan
-  server: 23.227.38.72
-  port: 443
-  uuid: 519d06a5-f3a5-41bd-8f95-519ab65e20ed
-  network: ws
-  tls: true
-  servername: yss2o9nzv7hsgw2z.sggogo202510.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /images
-    headers:
-      Host: yss2o9nzv7hsgw2z.sggogo202510.top
-- name: TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
-  type: trojan
-  server: v2.dabache.top
-  port: 443
-  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-  network: ws
-  tls: true
-  servername: _acme-challenge.sb.cloudns.biz
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: _acme-challenge.sb.cloudns.biz
-- name: TROJAN-WS-TLS-🇸🇬(SG)-141.193.213.107
-  type: trojan
-  server: 141.193.213.107
-  port: 443
-  uuid: 519d06a5-f3a5-41bd-8f95-519ab65e20ed
-  network: ws
-  tls: true
-  servername: yss2o9nzv7hsgw2z.sggogo202510.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /images
-    headers:
-      Host: yss2o9nzv7hsgw2z.sggogo202510.top
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.233.114
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
-  - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
-  - TROJAN-WS-TLS-🇸🇬(SG)-104.16.250.22
-  - TROJAN-WS-TLS-🇸🇬(SG)-104.18.185.26
-  - TROJAN-WS-TLS-🇸🇬(SG)-23.227.38.72
-  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
-  - TROJAN-WS-TLS-🇸🇬(SG)-141.193.213.107
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -152,15 +62,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.188.233.114
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
-  - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
-  - TROJAN-WS-TLS-🇸🇬(SG)-104.16.250.22
-  - TROJAN-WS-TLS-🇸🇬(SG)-104.18.185.26
-  - TROJAN-WS-TLS-🇸🇬(SG)-23.227.38.72
-  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
-  - TROJAN-WS-TLS-🇸🇬(SG)-141.193.213.107
 rule-providers:
   adblock:
     type: http
