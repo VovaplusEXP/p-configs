@@ -14,30 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-🇺🇸(US)-162.159.33.95
-  type: trojan
-  server: 162.159.33.95
-  port: 80
-  uuid: 54aa90f6-46f5-417d-82ff-fe1197cf88fd
-  network: ws
-  tls: false
-  servername: 162.159.33.95
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: cool-snow-8be4.gjhgghg01.workers.dev
-- name: TROJAN-WS-🇺🇸(US)-162.159.33.95_1
-  type: trojan
-  server: 162.159.33.95
-  port: 80
-  uuid: 54aa90f6-46f5-417d-82ff-fe1197cf88fd
-  network: ws
-  tls: false
-  servername: 162.159.33.95
-  ws-opts:
-    path: '%2F%3Fed%3D2048'
-    headers:
-      Host: cool-snow-8be4.gjhgghg01.workers.dev
 - name: TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
   type: trojan
   server: 180.131.145.169
@@ -47,81 +23,60 @@ proxies:
   tls: true
   servername: www.tesla.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.76.141.128
   type: trojan
-  server: 51.44.96.183
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_1
-  type: trojan
-  server: 51.44.96.183
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 51.44.96.183
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_2
-  type: trojan
-  server: 51.44.96.183
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: 51.44.96.183
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_3
-  type: trojan
-  server: 51.44.96.183
+  server: 3.76.141.128
   port: 22223
   uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.181.122.119
   type: trojan
-  server: irancell.buzzmuzzpanel.online
-  port: 443
-  uuid: freedom
-  network: ws
+  server: 63.181.122.119
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
   tls: true
-  servername: 047.eleCTROCelLco-Cf-047.woRkers.DEV
+  servername: 63.181.122.119
   client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoienRVUEM4N2p6dXE2Wm0iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
-    headers:
-      Host: 047.electrocellco-cf-047.workers.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.103.56
   type: trojan
-  server: 104.21.75.193
-  port: 443
-  uuid: bpb-trojan
-  network: ws
+  server: 35.181.103.56
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
   tls: true
-  servername: mashdt.pages.dev
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-  ws-opts:
-    path: /tr?ed=2560
-    headers:
-      Host: mashdt.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.103.56_1
   type: trojan
-  server: bpbg.anguswen.top
-  port: 8443
-  uuid: '123456'
-  network: ws
+  server: 35.181.103.56
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
   tls: true
-  servername: BpBg.ANGusWeN.top
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoiTUp4VFNoMTRLbSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0=
-    headers:
-      Host: BpBg.ANGusWeN.top
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.181.122.119_1
+  type: trojan
+  server: 63.181.122.119
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.181.24
+  type: trojan
+  server: 35.181.181.24
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 35.181.181.24
+  client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
   server: 172.67.180.227
@@ -135,63 +90,88 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.181.122.119_2
   type: trojan
-  server: v2.dabache.top
-  port: 443
-  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-  network: ws
+  server: 63.181.122.119
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
   tls: true
-  servername: _acme-challenge.sb.cloudns.biz
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: _acme-challenge.sb.cloudns.biz
-- name: TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top_1
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.76.141.128_1
   type: trojan
-  server: bpbg.anguswen.top
-  port: 8443
-  uuid: '123456'
-  network: ws
+  server: 3.76.141.128
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
   tls: true
-  servername: BpBg.ANGusWeN.top
+  servername: 3.76.141.128
   client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoiTUp4VFNoMTRLbSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0=?ed=2560
-    headers:
-      Host: bpbg.anguswen.top
-- name: TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.103.56_2
   type: trojan
-  server: usa.visa.com
-  port: 443
-  uuid: zWFjJENcljZm
-  network: ws
+  server: 35.181.103.56
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
   tls: true
-  servername: vahidqaz-7o61u7.vahidqaz.workers.dev
+  servername: 35.181.103.56
   client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vahidqaz-7o61u7.vahidqaz.workers.dev
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.103.56_3
+  type: trojan
+  server: 35.181.103.56
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: 35.181.103.56
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.76.141.128_2
+  type: trojan
+  server: 3.76.141.128
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.76.141.128_3
+  type: trojan
+  server: 3.76.141.128
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 3.76.141.128
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.181.122.119_3
+  type: trojan
+  server: 63.181.122.119
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 63.181.122.119
+  client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-🇺🇸(US)-162.159.33.95
-  - TROJAN-WS-🇺🇸(US)-162.159.33.95_1
   - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_2
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_3
-  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
-  - TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.141.128
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.122.119
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.103.56
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.103.56_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.122.119_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.181.24
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
-  - TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top_1
-  - TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.122.119_2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.141.128_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.103.56_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.103.56_3
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.141.128_2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.141.128_3
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.122.119_3
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -208,20 +188,21 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-🇺🇸(US)-162.159.33.95
-  - TROJAN-WS-🇺🇸(US)-162.159.33.95_1
   - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_2
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_3
-  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
-  - TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.141.128
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.122.119
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.103.56
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.103.56_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.122.119_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.181.24
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
-  - TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top_1
-  - TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.122.119_2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.141.128_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.103.56_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.103.56_3
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.141.128_2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.141.128_3
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.122.119_3
 rule-providers:
   adblock:
     type: http
