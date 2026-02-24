@@ -14,14 +14,47 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-WS-🇺🇸(US)-162.159.33.95
+  type: trojan
+  server: 162.159.33.95
+  port: 80
+  uuid: 54aa90f6-46f5-417d-82ff-fe1197cf88fd
+  network: ws
+  tls: false
+  servername: 162.159.33.95
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: cool-snow-8be4.gjhgghg01.workers.dev
+- name: TROJAN-WS-🇺🇸(US)-162.159.33.95_1
+  type: trojan
+  server: 162.159.33.95
+  port: 80
+  uuid: 54aa90f6-46f5-417d-82ff-fe1197cf88fd
+  network: ws
+  tls: false
+  servername: 162.159.33.95
+  ws-opts:
+    path: '%2F%3Fed%3D2048'
+    headers:
+      Host: cool-snow-8be4.gjhgghg01.workers.dev
+- name: TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
+  type: trojan
+  server: 180.131.145.169
+  port: 18718
+  uuid: RmhZQ47pEm
+  network: grpc
+  tls: true
+  servername: www.tesla.com
+  client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183
   type: trojan
   server: 51.44.96.183
-  port: 22223
-  uuid: telegram-id-directvpn
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: 51.44.96.183
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_1
   type: trojan
@@ -30,57 +63,26 @@ proxies:
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.158.87.156
-  type: trojan
-  server: 18.158.87.156
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: 18.158.87.156
+  servername: 51.44.96.183
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_2
   type: trojan
   server: 51.44.96.183
-  port: 22222
-  uuid: telegram-id-privatevpns
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: 51.44.96.183
   client-fingerprint: chrome
-- name: TROJAN-TCP-REALITY-🇩🇪(DE)-verager2.uspn.io
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_3
   type: trojan
-  server: verager2.uspn.io
-  port: 2087
-  uuid: 0rF73PXdUS8R72jb9FMGdKrBnWtD92Ac
-  network: tcp
-  tls: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.158.87.156_1
-  type: trojan
-  server: 18.158.87.156
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: 51.44.96.183
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
-  type: trojan
-  server: 104.21.75.193
-  port: 443
-  uuid: bpb-trojan
-  network: ws
-  tls: true
-  servername: mashdt.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr?ed=2560
-    headers:
-      Host: mashdt.pages.dev
 - name: TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
   type: trojan
   server: irancell.buzzmuzzpanel.online
@@ -94,102 +96,32 @@ proxies:
     path: /eyJqdW5rIjoienRVUEM4N2p6dXE2Wm0iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
     headers:
       Host: 047.electrocellco-cf-047.workers.dev
-- name: TROJAN-TCP-REALITY-🇩🇪(DE)-ger1.uspn.io
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
   type: trojan
-  server: ger1.uspn.io
-  port: 2087
-  uuid: 0rF73PXdUS8R72jb9FMGdKrBnWtD92Ac
-  network: tcp
-  tls: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.158.87.156_2
-  type: trojan
-  server: 18.158.87.156
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-WS-🇺🇸(US)-162.159.33.95
-  type: trojan
-  server: 162.159.33.95
-  port: 80
-  uuid: 54aa90f6-46f5-417d-82ff-fe1197cf88fd
+  server: 104.21.75.193
+  port: 443
+  uuid: bpb-trojan
   network: ws
-  tls: false
-  servername: 162.159.33.95
+  tls: true
+  servername: mashdt.pages.dev
+  client-fingerprint: chrome
   ws-opts:
-    path: '%2F%3Fed%3D2048'
+    path: /tr?ed=2560
     headers:
-      Host: cool-snow-8be4.gjhgghg01.workers.dev
-- name: TROJAN-TCP-REALITY-🇵🇱(PL)-poland.pryanik.net.ru
+      Host: mashdt.pages.dev
+- name: TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top
   type: trojan
-  server: poland.pryanik.net.ru
-  port: 5443
-  uuid: QXVp6pjpc-p1hPfaNs0JxfgABqh8CYZa
-  network: tcp
-  tls: true
-  servername: sun6-21.userapi.com
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_3
-  type: trojan
-  server: 51.44.96.183
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.158.87.156_3
-  type: trojan
-  server: 18.158.87.156
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 18.158.87.156
-  client-fingerprint: chrome
-- name: TROJAN-TCP-REALITY-🇪🇪(EE)-estonia.pryanik.net.ru
-  type: trojan
-  server: estonia.pryanik.net.ru
-  port: 5443
-  uuid: QXVp6pjpc-p1hPfaNs0JxfgABqh8CYZa
-  network: tcp
-  tls: true
-  servername: sun6-21.userapi.com
-  client-fingerprint: chrome
-- name: TROJAN-TCP-REALITY-🇷🇺(RU)-verarussia1.uspn.io
-  type: trojan
-  server: verarussia1.uspn.io
-  port: 2087
-  uuid: 0rF73PXdUS8R72jb9FMGdKrBnWtD92Ac
-  network: tcp
-  tls: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-- name: TROJAN-TCP-REALITY-🇷🇺(RU)-spb.pryanik.net.ru
-  type: trojan
-  server: spb.pryanik.net.ru
-  port: 5443
-  uuid: QXVp6pjpc-p1hPfaNs0JxfgABqh8CYZa
-  network: tcp
-  tls: true
-  servername: max.ru
-  client-fingerprint: chrome
-- name: TROJAN-WS-🇺🇸(US)-162.159.33.95_1
-  type: trojan
-  server: 162.159.33.95
-  port: 80
-  uuid: 54aa90f6-46f5-417d-82ff-fe1197cf88fd
+  server: bpbg.anguswen.top
+  port: 8443
+  uuid: '123456'
   network: ws
-  tls: false
-  servername: 162.159.33.95
+  tls: true
+  servername: BpBg.ANGusWeN.top
+  client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2048
+    path: /eyJqdW5rIjoiTUp4VFNoMTRLbSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0=
     headers:
-      Host: cool-snow-8be4.gjhgghg01.workers.dev
+      Host: BpBg.ANGusWeN.top
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
   server: 172.67.180.227
@@ -203,69 +135,63 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
-- name: TROJAN-TCP-REALITY-🇺🇸(US)-usa.pryanik.net.ru
+- name: TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
   type: trojan
-  server: usa.pryanik.net.ru
-  port: 5443
-  uuid: QXVp6pjpc-p1hPfaNs0JxfgABqh8CYZa
-  network: tcp
+  server: v2.dabache.top
+  port: 443
+  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+  network: ws
   tls: true
-  servername: sun6-21.userapi.com
+  servername: _acme-challenge.sb.cloudns.biz
   client-fingerprint: chrome
-- name: TROJAN-TCP-REALITY-🇸🇪(SE)-amsterdam.pryanik.net.ru
+  ws-opts:
+    path: /
+    headers:
+      Host: _acme-challenge.sb.cloudns.biz
+- name: TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top_1
   type: trojan
-  server: amsterdam.pryanik.net.ru
-  port: 5443
-  uuid: QXVp6pjpc-p1hPfaNs0JxfgABqh8CYZa
-  network: tcp
+  server: bpbg.anguswen.top
+  port: 8443
+  uuid: '123456'
+  network: ws
   tls: true
-  servername: sun6-21.userapi.com
+  servername: BpBg.ANGusWeN.top
   client-fingerprint: chrome
-- name: TROJAN-TCP-REALITY-🇭🇰(HK)-verahk1.uspn.io
+  ws-opts:
+    path: /eyJqdW5rIjoiTUp4VFNoMTRLbSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0=?ed=2560
+    headers:
+      Host: bpbg.anguswen.top
+- name: TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
   type: trojan
-  server: verahk1.uspn.io
-  port: 2087
-  uuid: 0rF73PXdUS8R72jb9FMGdKrBnWtD92Ac
-  network: tcp
+  server: usa.visa.com
+  port: 443
+  uuid: zWFjJENcljZm
+  network: ws
   tls: true
-  servername: api-maps.yandex.ru
+  servername: vahidqaz-7o61u7.vahidqaz.workers.dev
   client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
-  type: trojan
-  server: 180.131.145.169
-  port: 18718
-  uuid: RmhZQ47pEm
-  network: grpc
-  tls: true
-  servername: www.tesla.com
-  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vahidqaz-7o61u7.vahidqaz.workers.dev
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-WS-🇺🇸(US)-162.159.33.95
+  - TROJAN-WS-🇺🇸(US)-162.159.33.95_1
+  - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.158.87.156
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_2
-  - TROJAN-TCP-REALITY-🇩🇪(DE)-verager2.uspn.io
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.158.87.156_1
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
-  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
-  - TROJAN-TCP-REALITY-🇩🇪(DE)-ger1.uspn.io
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.158.87.156_2
-  - TROJAN-WS-🇺🇸(US)-162.159.33.95
-  - TROJAN-TCP-REALITY-🇵🇱(PL)-poland.pryanik.net.ru
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_3
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.158.87.156_3
-  - TROJAN-TCP-REALITY-🇪🇪(EE)-estonia.pryanik.net.ru
-  - TROJAN-TCP-REALITY-🇷🇺(RU)-verarussia1.uspn.io
-  - TROJAN-TCP-REALITY-🇷🇺(RU)-spb.pryanik.net.ru
-  - TROJAN-WS-🇺🇸(US)-162.159.33.95_1
+  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
+  - TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-TCP-REALITY-🇺🇸(US)-usa.pryanik.net.ru
-  - TROJAN-TCP-REALITY-🇸🇪(SE)-amsterdam.pryanik.net.ru
-  - TROJAN-TCP-REALITY-🇭🇰(HK)-verahk1.uspn.io
-  - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
+  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
+  - TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top_1
+  - TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -282,29 +208,20 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-WS-🇺🇸(US)-162.159.33.95
+  - TROJAN-WS-🇺🇸(US)-162.159.33.95_1
+  - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.158.87.156
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_2
-  - TROJAN-TCP-REALITY-🇩🇪(DE)-verager2.uspn.io
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.158.87.156_1
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
-  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
-  - TROJAN-TCP-REALITY-🇩🇪(DE)-ger1.uspn.io
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.158.87.156_2
-  - TROJAN-WS-🇺🇸(US)-162.159.33.95
-  - TROJAN-TCP-REALITY-🇵🇱(PL)-poland.pryanik.net.ru
   - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.96.183_3
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.158.87.156_3
-  - TROJAN-TCP-REALITY-🇪🇪(EE)-estonia.pryanik.net.ru
-  - TROJAN-TCP-REALITY-🇷🇺(RU)-verarussia1.uspn.io
-  - TROJAN-TCP-REALITY-🇷🇺(RU)-spb.pryanik.net.ru
-  - TROJAN-WS-🇺🇸(US)-162.159.33.95_1
+  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
+  - TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-TCP-REALITY-🇺🇸(US)-usa.pryanik.net.ru
-  - TROJAN-TCP-REALITY-🇸🇪(SE)-amsterdam.pryanik.net.ru
-  - TROJAN-TCP-REALITY-🇭🇰(HK)-verahk1.uspn.io
-  - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
+  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
+  - TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top_1
+  - TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
 rule-providers:
   adblock:
     type: http
