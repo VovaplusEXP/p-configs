@@ -14,24 +14,19 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.148.130
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
   type: trojan
-  server: 15.236.148.130
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
+  server: 104.21.75.193
+  port: 443
+  uuid: bpb-trojan
+  network: ws
   tls: true
-  servername: 15.236.148.130
+  servername: mashdt.pages.dev
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.158.60.29
-  type: trojan
-  server: 35.158.60.29
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: 35.158.60.29
-  client-fingerprint: chrome
+  ws-opts:
+    path: /tr?ed=2560
+    headers:
+      Host: mashdt.pages.dev
 - name: TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
   type: trojan
   server: 180.131.145.169
@@ -41,50 +36,14 @@ proxies:
   tls: true
   servername: www.tesla.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.148.130_1
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.38.210.176
   type: trojan
-  server: 15.236.148.130
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: 15.236.148.130
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.158.60.29_1
-  type: trojan
-  server: 35.158.60.29
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.148.130_2
-  type: trojan
-  server: 15.236.148.130
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.148.130_3
-  type: trojan
-  server: 15.236.148.130
+  server: 13.38.210.176
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.158.60.29_2
-  type: trojan
-  server: 35.158.60.29
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
+  servername: 13.38.210.176
   client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
@@ -99,39 +58,38 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.158.60.29_3
+- name: TROJAN-TCP-TLS-🇸🇬(SG)-sg05.stimaysmhy8.com
   type: trojan
-  server: 35.158.60.29
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: sg05.stimaysmhy8.com
+  port: 45005
+  uuid: 984c7793-1447-4af5-9200-d514ad6fe329
   network: tcp
   tls: true
-  servername: 35.158.60.29
+  servername: jsygouer.weixin-baidu-qq.com
   client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169_1
+- name: TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
   type: trojan
-  server: 180.131.145.169
-  port: 18718
-  uuid: RmhZQ47pEm
-  network: grpc
+  server: v2.dabache.top
+  port: 443
+  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+  network: ws
   tls: true
-  servername: www.tesla.com
+  servername: _acme-challenge.sb.cloudns.biz
   client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: _acme-challenge.sb.cloudns.biz
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.148.130
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.60.29
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
   - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.148.130_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.60.29_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.148.130_2
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.148.130_3
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.60.29_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.38.210.176
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.60.29_3
-  - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169_1
+  - TROJAN-TCP-TLS-🇸🇬(SG)-sg05.stimaysmhy8.com
+  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -148,17 +106,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.148.130
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.60.29
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
   - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.148.130_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.60.29_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.148.130_2
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.148.130_3
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.60.29_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.38.210.176
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.158.60.29_3
-  - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169_1
+  - TROJAN-TCP-TLS-🇸🇬(SG)-sg05.stimaysmhy8.com
+  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
 rule-providers:
   adblock:
     type: http
