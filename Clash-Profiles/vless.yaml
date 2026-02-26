@@ -14,10 +14,102 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VLESS-WS-TLS-🇺🇸(US)-49.238.236.13
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr
   type: vless
-  server: 49.238.236.13
-  port: 19999
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: 00d1eaf8-14a6-4ea7-a939-e80ad114a819
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /130.185.164.217=8443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_1
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: a399dd02-0165-4e31-8cdf-0ae98fc5d3b7
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /103.35.190.104=8443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇺🇸(US)-7.cdnconn.com
+  type: vless
+  server: 7.cdnconn.com
+  port: 23335
+  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+  network: tcp
+  tls: true
+  servername: icloud.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
+  type: vless
+  server: 15.204.97.198
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-172.67.73.14
+  type: vless
+  server: 172.67.73.14
+  port: 443
+  uuid: fa335d1c-e6d1-48bb-99a3-f06710a29043
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /130.185.164.213=8443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-bestcf.030101.xyz
+  type: vless
+  server: bestcf.030101.xyz
+  port: 443
+  uuid: 699fca60-533f-4436-38db-7881c2150fe2
+  network: ws
+  tls: true
+  servername: 53e5ab44.lfree.cn.mt
+  client-fingerprint: chrome
+  ws-opts:
+    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
+    headers:
+      Host: 53e5ab44.lfree.cn.mt
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.195
+  type: vless
+  server: 15.204.97.195
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-107.174.85.183
+  type: vless
+  server: 107.174.85.183
+  port: 11163
+  uuid: d9fbc365-bf98-4ff6-a66d-523cc217d56e
+  network: tcp
+  tls: true
+  servername: apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-cdns.doon.eu.org
+  type: vless
+  server: cdns.doon.eu.org
+  port: 443
   uuid: 699fca60-533f-4436-38db-7881c2150fe2
   network: ws
   tls: true
@@ -40,45 +132,49 @@ proxies:
     path: /130.185.164.217=8443
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-172.67.73.14
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206
   type: vless
-  server: 172.67.73.14
+  server: 15.204.97.206
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197
+  type: vless
+  server: 15.204.97.197
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-142.248.80.157
+  type: vless
+  server: 142.248.80.157
   port: 443
-  uuid: fa335d1c-e6d1-48bb-99a3-f06710a29043
+  uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
+  network: tcp
+  tls: true
+  servername: apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-27.50.48.69
+  type: vless
+  server: 27.50.48.69
+  port: 2083
+  uuid: 699fca60-533f-4436-38db-7881c2150fe2
   network: ws
   tls: true
-  servername: afrcloud22.mmv.kr
+  servername: 53e5ab44.lfree.cn.mt
   client-fingerprint: chrome
   ws-opts:
-    path: /130.185.164.213=8443
+    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
     headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: 7dbc427e-1afd-4f76-b916-f7349e8131ce
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /44.217.235.114=8443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-blackshadow.dpdns.org
-  type: vless
-  server: blackshadow.dpdns.org
-  port: 443
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  network: ws
-  tls: true
-  servername: blackshadow.dpdns.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /44.209.52.7-443
-    headers:
-      Host: blackshadow.dpdns.org
+      Host: 53e5ab44.lfree.cn.mt
 - name: VLESS-WS-TLS-🇺🇸(US)-cm.cf.090227.xyz
   type: vless
   server: cm.cf.090227.xyz
@@ -92,9 +188,22 @@ proxies:
     path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
     headers:
       Host: 53e5ab44.lfree.cn.mt
-- name: VLESS-WS-TLS-🇺🇸(US)-nekocloud.tencentapp.cn
+- name: VLESS-WS-TLS-🇺🇸(US)-185.18.250.238
   type: vless
-  server: nekocloud.tencentapp.cn
+  server: 185.18.250.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: true
+  servername: sni.jpmj.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.jpmj.dev
+- name: VLESS-WS-TLS-🇺🇸(US)-mfa.gov.ua
+  type: vless
+  server: mfa.gov.ua
   port: 443
   uuid: 699fca60-533f-4436-38db-7881c2150fe2
   network: ws
@@ -118,101 +227,46 @@ proxies:
     path: /43.130.134.123=65002
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇺🇸(US)-free-us.moscow-neversleep.digital
-  type: vless
-  server: free-us.moscow-neversleep.digital
-  port: 443
-  uuid: 45344840-b049-4957-a0f6-7b3df22715a2
-  network: tcp
-  tls: true
-  servername: free-us.moscow-neversleep.digital
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-199.119.137.95
-  type: vless
-  server: 199.119.137.95
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.indevs.in
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: sni.111000.indevs.in
-- name: VLESS-WS-TLS-🇺🇸(US)-cdns.doon.eu.org
-  type: vless
-  server: cdns.doon.eu.org
-  port: 443
-  uuid: 699fca60-533f-4436-38db-7881c2150fe2
-  network: ws
-  tls: true
-  servername: 53e5ab44.lfree.cn.mt
-  client-fingerprint: chrome
-  ws-opts:
-    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
-    headers:
-      Host: 53e5ab44.lfree.cn.mt
-- name: VLESS-WS-TLS-🇺🇸(US)-162.159.12.151
-  type: vless
-  server: 162.159.12.151
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.indevs.in
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.indevs.in
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_1
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_2
   type: vless
   server: afrcloud22.mmv.kr
   port: 443
-  uuid: a399dd02-0165-4e31-8cdf-0ae98fc5d3b7
+  uuid: 7dbc427e-1afd-4f76-b916-f7349e8131ce
   network: ws
   tls: true
   servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /103.35.190.104=8443
+    path: /44.217.235.114=8443
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇺🇸(US)-free-us.moscow-neversleep.digital_1
+- name: VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_1
   type: vless
-  server: free-us.moscow-neversleep.digital
+  server: 104.26.15.21
   port: 443
-  uuid: cd8c8f5c-f102-41bf-8ade-238b874fcf65
-  network: tcp
-  tls: true
-  servername: free-us.moscow-neversleep.digital
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-ipbaz.ping-box.com
-  type: vless
-  server: ipbaz.ping-box.com
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: d85ea913-7dfa-44b0-bd66-33414e897991
   network: ws
   tls: true
-  servername: sni.111000.indevs.in
+  servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560
+    path: /35.230.79.26=443#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night
     headers:
-      Host: sni.111000.indevs.in
-- name: VLESS-TCP-REALITY-🇺🇸(US)-172.234.130.82
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_1
   type: vless
-  server: 172.234.130.82
-  port: 10001
-  uuid: 53cd8178-2ee6-43d9-a2a7-881f287fd408
-  network: tcp
+  server: 104.26.14.21
+  port: 443
+  uuid: d85ea913-7dfa-44b0-bd66-33414e897991
+  network: ws
   tls: true
-  servername: yahoo.com
+  servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-cf.cloudflare.182682.xyz
+  ws-opts:
+    path: /35.230.79.26=443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇨🇦(CA)-cf.cloudflare.182682.xyz
   type: vless
   server: cf.cloudflare.182682.xyz
   port: 443
@@ -225,56 +279,69 @@ proxies:
     path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
     headers:
       Host: 53e5ab44.lfree.cn.mt
-- name: VLESS-WS-TLS-🇺🇸(US)-bestcf.030101.xyz
+- name: VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_2
   type: vless
-  server: bestcf.030101.xyz
+  server: 104.26.14.21
   port: 443
-  uuid: 699fca60-533f-4436-38db-7881c2150fe2
-  network: ws
-  tls: true
-  servername: 53e5ab44.lfree.cn.mt
-  client-fingerprint: chrome
-  ws-opts:
-    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
-    headers:
-      Host: 53e5ab44.lfree.cn.mt
-- name: VLESS-WS-TLS-🇺🇸(US)-185.158.133.138
-  type: vless
-  server: 185.158.133.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.indevs.in
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?telegram🇨🇳 @wangcai2=
-    headers:
-      Host: sni.111000.indevs.in
-- name: VLESS-WS-TLS-🇺🇸(US)-mfa.gov.ua
-  type: vless
-  server: mfa.gov.ua
-  port: 443
-  uuid: 699fca60-533f-4436-38db-7881c2150fe2
-  network: ws
-  tls: true
-  servername: 53e5ab44.lfree.cn.mt
-  client-fingerprint: chrome
-  ws-opts:
-    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
-    headers:
-      Host: 53e5ab44.lfree.cn.mt
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_2
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: b5c4c990-3f87-484d-b2bf-d75737d37729
+  uuid: d9a83363-40a6-4a21-9dbe-cb2b7d287048
   network: ws
   tls: true
   servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /35.175.188.144=9000
+    path: /107.174.121.122=443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-nekocloud.tencentapp.cn
+  type: vless
+  server: nekocloud.tencentapp.cn
+  port: 443
+  uuid: 699fca60-533f-4436-38db-7881c2150fe2
+  network: ws
+  tls: true
+  servername: 53e5ab44.lfree.cn.mt
+  client-fingerprint: chrome
+  ws-opts:
+    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
+    headers:
+      Host: 53e5ab44.lfree.cn.mt
+- name: VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_1
+  type: vless
+  server: 172.67.73.14
+  port: 443
+  uuid: d85ea913-7dfa-44b0-bd66-33414e897991
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /35.230.79.26=443#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_2
+  type: vless
+  server: 172.67.73.14
+  port: 443
+  uuid: d85ea913-7dfa-44b0-bd66-33414e897991
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /35.230.79.26=443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_3
+  type: vless
+  server: 172.67.73.14
+  port: 443
+  uuid: d85ea913-7dfa-44b0-bd66-33414e897991
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /35.230.79.26=443#Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN
     headers:
       Host: afrcloud22.mmv.kr
 - name: VLESS-WS-TLS-🇺🇸(US)-saas.sin.fan
@@ -290,110 +357,6 @@ proxies:
     path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
     headers:
       Host: 53e5ab44.lfree.cn.mt
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_3
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: fc487688-af40-4393-ae6c-6b80188a65b4
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /216.128.140.218=443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_4
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: 5f998675-8fa3-40ff-bebe-aa6942436032
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /204.12.225.226=443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_5
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: 00d1eaf8-14a6-4ea7-a939-e80ad114a819
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /130.185.164.217=8443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-159.246.55.238
-  type: vless
-  server: 159.246.55.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.jpmj.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.jpmj.dev
-- name: VLESS-WS-TLS-🇺🇸(US)-154.194.12.238
-  type: vless
-  server: 154.194.12.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.jpmj.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: sni.jpmj.dev
-- name: VLESS-WS-TLS-🇺🇸(US)-yg1.ygkkk.dpdns.org
-  type: vless
-  server: yg1.ygkkk.dpdns.org
-  port: 8443
-  uuid: 2f0f84ed-9e4c-40ef-8a6c-286839e11a63
-  network: ws
-  tls: true
-  servername: hmedrza.ghwhdr51.workers.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: hmedrza.ghwhdr51.workers.dev
-- name: VLESS-WS-TLS-🇺🇸(US)-38.244.204.106
-  type: vless
-  server: 38.244.204.106
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.dynv6.net
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_6
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: 988bf45a-1080-4eb1-8852-ad4d3a996d48
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /204.110.222.104=443
-    headers:
-      Host: afrcloud22.mmv.kr
 - name: VLESS-WS-TLS-🇺🇸(US)-212.183.88.238
   type: vless
   server: 212.183.88.238
@@ -404,22 +367,12 @@ proxies:
   servername: sni.jpmj.dev
   client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560
+    path: /?ed=2560&Telegram🇨🇳+@WangCai2
     headers:
       Host: sni.jpmj.dev
-- name: VLESS-TCP-REALITY-🇺🇸(US)-74.48.142.49
+- name: VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_2
   type: vless
-  server: 74.48.142.49
-  port: 20299
-  uuid: 2e0c37cf-d746-4264-89c6-76df8995218f
-  network: tcp
-  tls: true
-  servername: apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_1
-  type: vless
-  server: 104.26.14.21
+  server: 104.26.15.21
   port: 443
   uuid: d9a83363-40a6-4a21-9dbe-cb2b7d287048
   network: ws
@@ -430,232 +383,20 @@ proxies:
     path: /107.174.121.122=443
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇺🇸(US)-107.174.85.183
+- name: VLESS-WS-TLS-🇺🇸(US)-blackshadow.dpdns.org
   type: vless
-  server: 107.174.85.183
-  port: 11163
-  uuid: d9fbc365-bf98-4ff6-a66d-523cc217d56e
-  network: tcp
-  tls: true
-  servername: apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-5.10.247.238
-  type: vless
-  server: 5.10.247.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.jpmj.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳 @WangCai2
-    headers:
-      Host: sni.jpmj.dev
-- name: VLESS-WS-TLS-🇺🇸(US)-104.129.166.238
-  type: vless
-  server: 104.129.166.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.jpmj.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.jpmj.dev
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.195
-  type: vless
-  server: 15.204.97.195
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197
-  type: vless
-  server: 15.204.97.197
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
-  type: vless
-  server: 15.204.97.214
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-XHTTP-TLS-🇩🇪(DE)-chatgpt.com
-  type: vless
-  server: chatgpt.com
+  server: blackshadow.dpdns.org
   port: 443
-  uuid: 9cf7e4ab-0da9-4213-d376-8f9d91668daf
-  network: xhttp
-  tls: true
-  servername: hajimamad.ladyy-collection.ir
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206
-  type: vless
-  server: 15.204.97.206
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-185.148.104.238
-  type: vless
-  server: 185.148.104.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
   network: ws
   tls: true
-  servername: sni.jpmj.dev
+  servername: blackshadow.dpdns.org
   client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560&telegram🇨🇳 @wangcai2
+    path: /44.209.52.7-443
     headers:
-      Host: sni.jpmj.dev
-- name: VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_1
-  type: vless
-  server: 172.67.73.14
-  port: 443
-  uuid: d85ea913-7dfa-44b0-bd66-33414e897991
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /35.230.79.26=443#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-185.193.29.138
-  type: vless
-  server: 185.193.29.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.indevs.in
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.indevs.in
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_7
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: d3e15a11-ebd9-4315-b110-f9fb1c52f153
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /144.202.126.54=443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-XHTTP-TLS-🇩🇪(DE)-cdn.speadmaster.ir
-  type: vless
-  server: cdn.speadmaster.ir
-  port: 8443
-  uuid: b3629375-0dca-46a3-aab1-8a07ff397332
-  network: xhttp
-  tls: true
-  servername: cdn.speadmaster.ir
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-51.68.198.114
-  type: vless
-  server: 51.68.198.114
-  port: 2096
-  uuid: d5f2b8ad-5ee4-41fe-95e9-7adc1acb0549
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_2
-  type: vless
-  server: 104.26.14.21
-  port: 443
-  uuid: d85ea913-7dfa-44b0-bd66-33414e897991
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /35.230.79.26=443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-51.89.165.128
-  type: vless
-  server: 51.89.165.128
-  port: 2096
-  uuid: d5f2b8ad-5ee4-41fe-95e9-7adc1acb0549
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-f1.hamrahconf.ir
-  type: vless
-  server: f1.hamrahconf.ir
-  port: 8443
-  uuid: 03624650-2513-4a3f-b7eb-e82fd0c24f3d
-  network: ws
-  tls: true
-  servername: dark-meadow-com.pfqxsyh.workers.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: dark-meadow-com.pfqxsyh.workers.dev
-- name: VLESS-WS-TLS-🇺🇸(US)-27.50.48.69
-  type: vless
-  server: 27.50.48.69
-  port: 2083
-  uuid: 699fca60-533f-4436-38db-7881c2150fe2
-  network: ws
-  tls: true
-  servername: 53e5ab44.lfree.cn.mt
-  client-fingerprint: chrome
-  ws-opts:
-    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
-    headers:
-      Host: 53e5ab44.lfree.cn.mt
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_8
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: aac16b46-fa88-42d0-a4f9-970ea25d2c70
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /209.237.135.93=443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-XHTTP-TLS-🇩🇪(DE)-tunner4.shahrbazihzagros.ir
-  type: vless
-  server: tunner4.shahrbazihzagros.ir
-  port: 443
-  uuid: 9dca949c-7cda-420a-8061-6e68efddd364
-  network: xhttp
-  tls: true
-  servername: hasha.shahrbazihzagros.ir
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_9
+      Host: blackshadow.dpdns.org
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_3
   type: vless
   server: afrcloud22.mmv.kr
   port: 443
@@ -666,384 +407,6 @@ proxies:
   client-fingerprint: chrome
   ws-opts:
     path: /35.230.79.26=443#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-vb27.homianco.ir
-  type: vless
-  server: vb27.homianco.ir
-  port: 2096
-  uuid: d5f2b8ad-5ee4-41fe-95e9-7adc1acb0549
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-185.135.9.138
-  type: vless
-  server: 185.135.9.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.indevs.in
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.indevs.in
-- name: VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_1
-  type: vless
-  server: 104.26.15.21
-  port: 443
-  uuid: d85ea913-7dfa-44b0-bd66-33414e897991
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /35.230.79.26=443#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-XHTTP-TLS-🇩🇪(DE)-cdn.speadmaster.ir_1
-  type: vless
-  server: cdn.speadmaster.ir
-  port: 8443
-  uuid: b3629375-0dca-46a3-aab1-8a07ff397332
-  network: xhttp
-  tls: true
-  servername: cdn.speadmaster.ir
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇨🇦(CA)-107.174.36.103
-  type: vless
-  server: 107.174.36.103
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.v6.navy
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.v6.navy
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-vb04.homianco.ir
-  type: vless
-  server: vb04.homianco.ir
-  port: 2096
-  uuid: d5f2b8ad-5ee4-41fe-95e9-7adc1acb0549
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-176.124.223.138
-  type: vless
-  server: 176.124.223.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.indevs.in
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.indevs.in
-- name: VLESS-XHTTP-TLS-🇩🇪(DE)-tunner1.shahrbazihzagros.ir
-  type: vless
-  server: tunner1.shahrbazihzagros.ir
-  port: 443
-  uuid: 9dca949c-7cda-420a-8061-6e68efddd364
-  network: xhttp
-  tls: true
-  servername: hasha.shahrbazihzagros.ir
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-144.31.197.124
-  type: vless
-  server: 144.31.197.124
-  port: 443
-  uuid: 8880a102-7c54-40fb-8508-88d7b28b2014
-  network: tcp
-  tls: true
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-87.120.219.99
-  type: vless
-  server: 87.120.219.99
-  port: 55057
-  uuid: 5d837e94-967d-43a8-8e36-440ddfa4fd15
-  network: tcp
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-144.31.63.7
-  type: vless
-  server: 144.31.63.7
-  port: 443
-  uuid: ef0a68dc-b498-4c3a-bf43-c2aaeea348db
-  network: tcp
-  tls: true
-  servername: deout.funvideorus.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-195.154.200.13
-  type: vless
-  server: 195.154.200.13
-  port: 17401
-  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-  network: tcp
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-104.18.0.144
-  type: vless
-  server: 104.18.0.144
-  port: 443
-  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
-  network: ws
-  tls: true
-  servername: joinProxyVPN11.afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /129.146.46.164=443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇮🇪(IE)-45.141.234.196
-  type: vless
-  server: 45.141.234.196
-  port: 51472
-  uuid: 0c49f1d8-3d34-473b-bebf-9d9a4811db62
-  network: tcp
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_2
-  type: vless
-  server: 172.67.73.14
-  port: 443
-  uuid: d85ea913-7dfa-44b0-bd66-33414e897991
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /35.230.79.26=443#Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-88.216.66.238
-  type: vless
-  server: 88.216.66.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.jpmj.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.jpmj.dev
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-57.129.53.181
-  type: vless
-  server: 57.129.53.181
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_10
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: a9ee8b76-6a94-4c25-9705-76d9bd38771e
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /35.230.79.26=443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇫🇷(FR)-51.44.27.45
-  type: vless
-  server: 51.44.27.45
-  port: 22224
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  network: ws
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  ws-opts:
-    path: /telegram-channel-vlessconfig
-    headers:
-      Host: 51.44.27.45
-- name: VLESS-TCP-REALITY-🇸🇪(SE)-62.182.196.100
-  type: vless
-  server: 62.182.196.100
-  port: 443
-  uuid: 94bc0da0-ef85-475a-95bc-d9b5eca5176c
-  network: tcp
-  tls: true
-  servername: sweden2.urban-network.space
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-maxa06.gaterserver.ir
-  type: vless
-  server: maxa06.gaterserver.ir
-  port: 2096
-  uuid: 42f4be04-31d7-477d-9549-c1f79c6b9ee0
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-62.84.97.47
-  type: vless
-  server: 62.84.97.47
-  port: 443
-  uuid: S3c4ct0r_172642
-  network: tcp
-  tls: true
-  servername: vk.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-51.38.32.227
-  type: vless
-  server: 51.38.32.227
-  port: 2096
-  uuid: 42f4be04-31d7-477d-9549-c1f79c6b9ee0
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.220
-  type: vless
-  server: 109.172.55.220
-  port: 58198
-  uuid: d5d52c15-f963-42b8-971b-613fc9c5e7e3
-  network: tcp
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-47.251.95.178
-  type: vless
-  server: 47.251.95.178
-  port: 443
-  uuid: 93f0761d-4393-4b43-a523-e812fa0b7e83
-  network: ws
-  tls: true
-  servername: cf.cfvip.lol
-  client-fingerprint: chrome
-  ws-opts:
-    path: /pyip=47.251.95.178
-    headers:
-      Host: cf.cfvip.lol
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_11
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: fa335d1c-e6d1-48bb-99a3-f06710a29043
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /130.185.164.213=8443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-37.16.74.19
-  type: vless
-  server: 37.16.74.19
-  port: 2053
-  uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
-  network: tcp
-  tls: true
-  servername: www.ibm.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-57.129.53.182
-  type: vless
-  server: 57.129.53.182
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-alalucarne.com
-  type: vless
-  server: alalucarne.com
-  port: 443
-  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /185.186.245.40:81
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-159.195.32.141
-  type: vless
-  server: 159.195.32.141
-  port: 443
-  uuid: ea9ba1ec-bfe7-407b-bd21-aeebc86da741
-  network: tcp
-  tls: true
-  servername: stackoverflow.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-104.18.32.47
-  type: vless
-  server: 104.18.32.47
-  port: 443
-  uuid: 3ea61064-dae6-4ce5-8e3b-451c7feab49f
-  network: ws
-  tls: true
-  servername: sWeEt-sgV2ray.XIHiJoP617-075.wOrKErs.DEv
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoiMHF3bXNPUVFSYkwiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
-    headers:
-      Host: sweet-sgv2ray.xihijop617-075.workers.dev
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_12
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: 6394c17f-6933-4229-8739-b9cac97b3465
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /185.186.245.40=81
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_13
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: c4fed342-68c4-48ec-b3b6-9c4397bd5569
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /45.32.131.28=31001
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-chatgpt.com
-  type: vless
-  server: chatgpt.com
-  port: 443
-  uuid: 4a942a11-2178-4b10-af73-15b1cfee99df
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /185.186.245.205=81
     headers:
       Host: afrcloud22.mmv.kr
 - name: VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_3
@@ -1059,49 +422,408 @@ proxies:
     path: /35.230.79.26=443#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇩🇪(DE)-18.153.205.232
+- name: VLESS-TCP-REALITY-🇺🇸(US)-74.48.142.49
   type: vless
-  server: 18.153.205.232
-  port: 22224
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  network: ws
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  ws-opts:
-    path: /telegram-channel-vlessconfig
-    headers:
-      Host: 18.153.205.232
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.157
-  type: vless
-  server: 109.172.55.157
-  port: 19547
-  uuid: f9cdb2e1-939c-4470-b322-14b7313dec48
+  server: 74.48.142.49
+  port: 20299
+  uuid: 2e0c37cf-d746-4264-89c6-76df8995218f
   network: tcp
   tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇸🇪(SE)-62.182.195.78
-  type: vless
-  server: 62.182.195.78
-  port: 8443
-  uuid: 9a63b59c-5e54-437a-b7a1-2788780a7c13
-  network: tcp
-  tls: true
-  servername: retn.net
+  servername: apple.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_14
+- name: VLESS-WS-TLS-🇺🇸(US)-cdnjs.com
   type: vless
-  server: afrcloud22.mmv.kr
+  server: cdnjs.com
   port: 443
-  uuid: d9a83363-40a6-4a21-9dbe-cb2b7d287048
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
   network: ws
   tls: true
   servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /107.174.121.122=443
+    path: /173.249.210.53=17750
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_4
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: 988bf45a-1080-4eb1-8852-ad4d3a996d48
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /204.110.222.104=443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_5
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: c4fed342-68c4-48ec-b3b6-9c4397bd5569
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.32.131.28=31001
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
+  type: vless
+  server: 15.204.97.214
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-104.18.0.144
+  type: vless
+  server: 104.18.0.144
+  port: 443
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  network: ws
+  tls: true
+  servername: joinProxyVPN11.afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /129.146.46.164=443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_6
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: 026f6d6a-8850-4394-8b3e-2145bef6ca81
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /44.244.220.166=443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-chatgpt.com
+  type: vless
+  server: chatgpt.com
+  port: 443
+  uuid: 4a942a11-2178-4b10-af73-15b1cfee99df
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /185.186.245.205=81
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇬🇧(GB)-87.120.219.99
+  type: vless
+  server: 87.120.219.99
+  port: 55057
+  uuid: 5d837e94-967d-43a8-8e36-440ddfa4fd15
+  network: tcp
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: VLESS-XHTTP-TLS-🇩🇪(DE)-tunner4.shahrbazihzagros.ir
+  type: vless
+  server: tunner4.shahrbazihzagros.ir
+  port: 443
+  uuid: 9dca949c-7cda-420a-8061-6e68efddd364
+  network: xhttp
+  tls: true
+  servername: hasha.shahrbazihzagros.ir
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-37.16.74.19
+  type: vless
+  server: 37.16.74.19
+  port: 2053
+  uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
+  network: tcp
+  tls: true
+  servername: www.ibm.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-ivyprotocol.com
+  type: vless
+  server: ivyprotocol.com
+  port: 443
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /185.186.245.40:81
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-37.16.74.19_1
+  type: vless
+  server: 37.16.74.19
+  port: 2053
+  uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
+  network: tcp
+  tls: true
+  servername: www.ibm.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-sabasports.com
+  type: vless
+  server: sabasports.com
+  port: 443
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /185.186.245.40:81
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_7
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: 4a942a11-2178-4b10-af73-15b1cfee99df
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /185.186.245.205=81
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇬🇧(GB)-vb25.homianco.ir
+  type: vless
+  server: vb25.homianco.ir
+  port: 2096
+  uuid: d5f2b8ad-5ee4-41fe-95e9-7adc1acb0549
+  network: tcp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇬🇧(GB)-51.68.198.114
+  type: vless
+  server: 51.68.198.114
+  port: 2096
+  uuid: d5f2b8ad-5ee4-41fe-95e9-7adc1acb0549
+  network: tcp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-votewa.gov
+  type: vless
+  server: votewa.gov
+  port: 443
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /185.186.245.40:81
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_4
+  type: vless
+  server: 104.26.14.21
+  port: 443
+  uuid: fa335d1c-e6d1-48bb-99a3-f06710a29043
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /130.185.164.213=8443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-supportnation.com
+  type: vless
+  server: supportnation.com
+  port: 443
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /185.186.245.40:81
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-XHTTP-TLS-🇩🇪(DE)-chatgpt.com
+  type: vless
+  server: chatgpt.com
+  port: 443
+  uuid: 9cf7e4ab-0da9-4213-d376-8f9d91668daf
+  network: xhttp
+  tls: true
+  servername: hajimamad.ladyy-collection.ir
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-concorsi-pubblici.org
+  type: vless
+  server: concorsi-pubblici.org
+  port: 443
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /185.186.245.40:81
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-aaj.tv
+  type: vless
+  server: aaj.tv
+  port: 443
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /185.186.245.40:81
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_8
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: a9ee8b76-6a94-4c25-9705-76d9bd38771e
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /35.230.79.26=443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-proxyelite.info
+  type: vless
+  server: proxyelite.info
+  port: 443
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /185.186.245.40:81
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-erboristeriagiorgioni.it
+  type: vless
+  server: erboristeriagiorgioni.it
+  port: 443
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /185.186.245.40:81
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_9
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: 5f998675-8fa3-40ff-bebe-aa6942436032
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /204.12.225.226=443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇬🇧(GB)-vb13.homianco.ir
+  type: vless
+  server: vb13.homianco.ir
+  port: 2096
+  uuid: d5f2b8ad-5ee4-41fe-95e9-7adc1acb0549
+  network: tcp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇮🇪(IE)-45.141.234.159
+  type: vless
+  server: 45.141.234.159
+  port: 30724
+  uuid: 54e5a989-5938-43ce-ba58-026ddbfd4d7b
+  network: tcp
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-146.235.196.203
+  type: vless
+  server: 146.235.196.203
+  port: 443
+  uuid: 699fca60-533f-4436-38db-7881c2150fe2
+  network: ws
+  tls: true
+  servername: 53e5ab44.lfree.cn.mt
+  client-fingerprint: chrome
+  ws-opts:
+    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
+    headers:
+      Host: 53e5ab44.lfree.cn.mt
+- name: VLESS-WS-TLS-🇺🇸(US)-alalucarne.com
+  type: vless
+  server: alalucarne.com
+  port: 443
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /185.186.245.40:81
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-78.159.110.55
+  type: vless
+  server: 78.159.110.55
+  port: 443
+  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
+  network: tcp
+  tls: true
+  servername: www.jobinvest.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-XHTTP-TLS-🇩🇪(DE)-172.67.190.220
+  type: vless
+  server: 172.67.190.220
+  port: 8443
+  uuid: b3629375-0dca-46a3-aab1-8a07ff397332
+  network: xhttp
+  tls: true
+  servername: cdn.speadmaster.ir
+  client-fingerprint: chrome
+- name: VLESS-XHTTP-TLS-🇩🇪(DE)-cdn.speadmaster.ir
+  type: vless
+  server: cdn.speadmaster.ir
+  port: 8443
+  uuid: b3629375-0dca-46a3-aab1-8a07ff397332
+  network: xhttp
+  tls: true
+  servername: cdn.speadmaster.ir
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-wpmap.org
+  type: vless
+  server: wpmap.org
+  port: 443
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /185.186.245.40:81
     headers:
       Host: afrcloud22.mmv.kr
 - name: VLESS-GRPC-REALITY-🇩🇪(DE)-prime.dissertationhelpspecialist.com
@@ -1113,20 +835,39 @@ proxies:
   tls: true
   servername: tgju.org
   client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_3
+- name: VLESS-WS-TLS-🇺🇸(US)-209.141.33.79
   type: vless
-  server: 172.67.73.14
-  port: 443
-  uuid: d85ea913-7dfa-44b0-bd66-33414e897991
+  server: 209.141.33.79
+  port: 2053
+  uuid: 699fca60-533f-4436-38db-7881c2150fe2
   network: ws
   tls: true
-  servername: afrcloud22.mmv.kr
+  servername: 53e5ab44.lfree.cn.mt
   client-fingerprint: chrome
   ws-opts:
-    path: /35.230.79.26=443
+    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
     headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_15
+      Host: 53e5ab44.lfree.cn.mt
+- name: VLESS-TCP-REALITY-🇸🇪(SE)-62.182.196.134
+  type: vless
+  server: 62.182.196.134
+  port: 8443
+  uuid: 9a63b59c-5e54-437a-b7a1-2788780a7c13
+  network: tcp
+  tls: true
+  servername: retn.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-XHTTP-TLS-🇩🇪(DE)-tunner1.shahrbazihzagros.ir
+  type: vless
+  server: tunner1.shahrbazihzagros.ir
+  port: 443
+  uuid: 9dca949c-7cda-420a-8061-6e68efddd364
+  network: xhttp
+  tls: true
+  servername: hasha.shahrbazihzagros.ir
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_10
   type: vless
   server: afrcloud22.mmv.kr
   port: 443
@@ -1139,22 +880,31 @@ proxies:
     path: /158.51.125.177=8443
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇩🇪(DE)-3.78.14.11
+- name: VLESS-WS-TLS-🇺🇸(US)-b-nm.com
   type: vless
-  server: 3.78.14.11
-  port: 22224
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  server: b-nm.com
+  port: 443
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
   network: ws
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /telegram-channel-vlessconfig
+    path: /185.186.245.40:81
     headers:
-      Host: 3.78.14.11
-- name: VLESS-TCP-REALITY-🇸🇪(SE)-62.182.196.132
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇫🇷(FR)-195.154.200.13
   type: vless
-  server: 62.182.196.132
+  server: 195.154.200.13
+  port: 17401
+  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+  network: tcp
+  tls: true
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇸🇪(SE)-62.182.195.78
+  type: vless
+  server: 62.182.195.78
   port: 8443
   uuid: 9a63b59c-5e54-437a-b7a1-2788780a7c13
   network: tcp
@@ -1162,121 +912,32 @@ proxies:
   servername: retn.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇨🇭(CH)-104.21.227.134
+- name: VLESS-GRPC-REALITY-🇩🇪(DE)-partners.dissertationhelpspecialist.com
   type: vless
-  server: 104.21.227.134
-  port: 2096
-  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
-  network: ws
-  tls: true
-  servername: ca.adobe-connect.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ca.adobe-connect.top
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-37.16.74.19_1
-  type: vless
-  server: 37.16.74.19
-  port: 2053
-  uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
-  network: tcp
-  tls: true
-  servername: www.ibm.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-78.159.110.54
-  type: vless
-  server: 78.159.110.54
+  server: partners.dissertationhelpspecialist.com
   port: 443
-  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
-  network: tcp
+  uuid: 012742d1-9c08-4875-b7c4-fade7d3db8c8
+  network: grpc
   tls: true
-  servername: www.jobinvest.ru
+  servername: tgju.org
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-93.94.51.13
+- name: VLESS-XHTTP-TLS-🇩🇪(DE)-cdn.speadmaster.ir_1
   type: vless
-  server: 93.94.51.13
-  port: 25451
-  uuid: a90f4742-2f30-47b5-9f17-b6ab04cc98e8
-  network: tcp
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-178.162.242.24
-  type: vless
-  server: 178.162.242.24
-  port: 443
-  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
-  network: tcp
-  tls: true
-  servername: www.jobinvest.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-45.130.125.69
-  type: vless
-  server: 45.130.125.69
+  server: cdn.speadmaster.ir
   port: 8443
-  uuid: cff6f361-828a-43c8-a8b5-8d10b32e57fb
-  network: ws
+  uuid: b3629375-0dca-46a3-aab1-8a07ff397332
+  network: xhttp
   tls: true
-  servername: zh.hollowspot.ir
+  servername: cdn.speadmaster.ir
   client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: zh.hollowspot.ir
-- name: VLESS-TCP-REALITY-🇸🇪(SE)-62.182.196.134
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-57.129.53.182
   type: vless
-  server: 62.182.196.134
-  port: 8443
-  uuid: 9a63b59c-5e54-437a-b7a1-2788780a7c13
+  server: 57.129.53.182
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   network: tcp
   tls: true
-  servername: retn.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-80.253.251.122
-  type: vless
-  server: 80.253.251.122
-  port: 13686
-  uuid: 8f09e644-7208-4f38-ac2f-db6d23cc647f
-  network: tcp
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇨🇭(CH)-104.21.224.5
-  type: vless
-  server: 104.21.224.5
-  port: 2096
-  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
-  network: ws
-  tls: true
-  servername: ca.adobe-connect.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ca.adobe-connect.top
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-nl.connectv.net
-  type: vless
-  server: nl.connectv.net
-  port: 443
-  uuid: 8b70357d-b654-4a29-85de-e5fef1afefbd
-  network: tcp
-  tls: true
-  servername: nl.connectv.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-uk.connectv.net
-  type: vless
-  server: uk.connectv.net
-  port: 443
-  uuid: 8b70357d-b654-4a29-85de-e5fef1afefbd
-  network: tcp
-  tls: true
-  servername: uk.connectv.net
+  servername: fuck.rkn
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39
@@ -1289,83 +950,42 @@ proxies:
   servername: yahoo.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-194.59.5.238
+- name: VLESS-WS-TLS-🇫🇷(FR)-13.37.158.58
   type: vless
-  server: 194.59.5.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 13.37.158.58
+  port: 22224
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
   network: ws
   tls: true
-  servername: sni.jpmj.dev
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
   ws-opts:
-    path: /?telegram%F0%9F%87%A8%F0%9F%87%B3+%40wangcai2=
+    path: /telegram-channel-vlessconfig
     headers:
-      Host: sni.jpmj.dev
-- name: VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_2
+      Host: 13.37.158.58
+- name: VLESS-GRPC-REALITY-🇩🇪(DE)-prime.dissertationhelpspecialist.com_1
   type: vless
-  server: 104.26.15.21
-  port: 443
-  uuid: 7dbc427e-1afd-4f76-b916-f7349e8131ce
-  network: ws
+  server: prime.dissertationhelpspecialist.com
+  port: 2053
+  uuid: 7e2fbe8c-faee-40fd-8afd-00136e74e5cb
+  network: grpc
   tls: true
-  servername: afrcloud22.mmv.kr
+  servername: tgju.org
   client-fingerprint: chrome
-  ws-opts:
-    path: /44.217.235.114=8443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇫🇮(FI)-2.cdnconn.com
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-80.253.251.122
   type: vless
-  server: 2.cdnconn.com
-  port: 23335
-  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+  server: 80.253.251.122
+  port: 13686
+  uuid: 8f09e644-7208-4f38-ac2f-db6d23cc647f
   network: tcp
   tls: true
-  servername: icloud.com
+  servername: yandex.ru
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-78.159.110.55
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-93.94.51.13
   type: vless
-  server: 78.159.110.55
-  port: 443
-  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
-  network: tcp
-  tls: true
-  servername: www.jobinvest.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_16
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: 8fc83032-cb7e-4626-8058-f7051a68eb7b
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /44.217.235.114=2053
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_3
-  type: vless
-  server: 104.26.15.21
-  port: 443
-  uuid: d9a83363-40a6-4a21-9dbe-cb2b7d287048
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /107.174.121.122=443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇮🇪(IE)-45.141.234.159
-  type: vless
-  server: 45.141.234.159
-  port: 30724
-  uuid: 54e5a989-5938-43ce-ba58-026ddbfd4d7b
+  server: 93.94.51.13
+  port: 25451
+  uuid: a90f4742-2f30-47b5-9f17-b6ab04cc98e8
   network: tcp
   tls: true
   servername: yandex.ru
@@ -1378,6 +998,524 @@ proxies:
   network: tcp
   tls: true
   servername: www.jobinvest.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇮🇪(IE)-45.141.234.196
+  type: vless
+  server: 45.141.234.196
+  port: 51472
+  uuid: 0c49f1d8-3d34-473b-bebf-9d9a4811db62
+  network: tcp
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-178.162.219.165
+  type: vless
+  server: 178.162.219.165
+  port: 443
+  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
+  network: tcp
+  tls: true
+  servername: www.jobinvest.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇬🇧(GB)-uk.connectv.net
+  type: vless
+  server: uk.connectv.net
+  port: 443
+  uuid: 8b70357d-b654-4a29-85de-e5fef1afefbd
+  network: tcp
+  tls: true
+  servername: uk.connectv.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_11
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /167.234.216.84=65501
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-157.90.233.71
+  type: vless
+  server: 157.90.233.71
+  port: 28223
+  uuid: ecf6a667-6288-4cb7-9023-211854cecbcb
+  network: tcp
+  tls: true
+  servername: www.sony.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇫🇮(FI)-85.192.48.149
+  type: vless
+  server: 85.192.48.149
+  port: 23335
+  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+  network: tcp
+  tls: true
+  servername: icloud.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-152.53.116.71
+  type: vless
+  server: 152.53.116.71
+  port: 443
+  uuid: 1e878456-0f00-4a85-99a6-1d69bdc62e3d
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.51.24
+  type: vless
+  server: 152.53.51.24
+  port: 22955
+  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+  network: grpc
+  tls: true
+  servername: one-piece.com
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_12
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: 8fc83032-cb7e-4626-8058-f7051a68eb7b
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /44.217.235.114=2053
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇫🇷(FR)-maxa06.gaterserver.ir
+  type: vless
+  server: maxa06.gaterserver.ir
+  port: 2096
+  uuid: 42f4be04-31d7-477d-9549-c1f79c6b9ee0
+  network: tcp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇫🇮(FI)-85.192.48.148
+  type: vless
+  server: 85.192.48.148
+  port: 23335
+  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+  network: tcp
+  tls: true
+  servername: icloud.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇵🇱(PL)-144.31.4.136
+  type: vless
+  server: 144.31.4.136
+  port: 8081
+  uuid: f1449968-0329-468b-b56b-1c573ac2a767
+  network: tcp
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-178.162.219.192
+  type: vless
+  server: 178.162.219.192
+  port: 443
+  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
+  network: tcp
+  tls: true
+  servername: www.jobinvest.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇫🇮(FI)-85.192.48.145
+  type: vless
+  server: 85.192.48.145
+  port: 23335
+  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+  network: tcp
+  tls: true
+  servername: icloud.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇫🇮(FI)-2.cdnconn.com
+  type: vless
+  server: 2.cdnconn.com
+  port: 23335
+  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+  network: tcp
+  tls: true
+  servername: icloud.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇩🇪(DE)-172.64.155.209
+  type: vless
+  server: 172.64.155.209
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-TCP-REALITY-🇫🇮(FI)-fi.connectv.net
+  type: vless
+  server: fi.connectv.net
+  port: 443
+  uuid: 8b70357d-b654-4a29-85de-e5fef1afefbd
+  network: tcp
+  tls: true
+  servername: fi.connectv.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇱🇻(LV)-185.145.245.33
+  type: vless
+  server: 185.145.245.33
+  port: 23335
+  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+  network: tcp
+  tls: true
+  servername: icloud.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇩🇪(DE)-betty.ns.cloudflare.com
+  type: vless
+  server: betty.ns.cloudflare.com
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-WS-TLS-🇩🇪(DE)-172.64.34.176
+  type: vless
+  server: 172.64.34.176
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-WS-TLS-🇩🇪(DE)-104.17.148.22
+  type: vless
+  server: 104.17.148.22
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_13
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: fa335d1c-e6d1-48bb-99a3-f06710a29043
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /130.185.164.213=8443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇱🇻(LV)-185.145.245.21
+  type: vless
+  server: 185.145.245.21
+  port: 23335
+  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+  network: tcp
+  tls: true
+  servername: icloud.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇫🇮(FI)-2.cdnconn.com_1
+  type: vless
+  server: 2.cdnconn.com
+  port: 23335
+  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+  network: tcp
+  tls: true
+  servername: icloud.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇩🇪(DE)-www.speedtest.net
+  type: vless
+  server: www.speedtest.net
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-TCP-REALITY-🇸🇪(SE)-se.connectv.net
+  type: vless
+  server: se.connectv.net
+  port: 443
+  uuid: 7902dc25-ff8b-4fa4-83ff-ecef5ab3414e
+  network: tcp
+  tls: true
+  servername: se.connectv.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-172.66.128.70
+  type: vless
+  server: 172.66.128.70
+  port: 443
+  uuid: a6430e91-38ad-4254-b7db-d1fba6efd9e3
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /129.146.254.25:443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39_1
+  type: vless
+  server: 188.253.26.39
+  port: 442
+  uuid: e929f51d-5a95-5432-b66f-cfe725ea1f61
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇩🇪(DE)-172.64.35.45
+  type: vless
+  server: 172.64.35.45
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-WS-TLS-🇩🇪(DE)-108.162.193.217
+  type: vless
+  server: 108.162.193.217
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-WS-TLS-🇩🇪(DE)-52.57.206.229
+  type: vless
+  server: 52.57.206.229
+  port: 22224
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  network: ws
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  ws-opts:
+    path: /telegram-channel-vlessconfig
+    headers:
+      Host: 52.57.206.229
+- name: VLESS-WS-TLS-🇩🇪(DE)-cosmin.ns.cloudflare.com
+  type: vless
+  server: cosmin.ns.cloudflare.com
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-103.27.157.79
+  type: vless
+  server: 103.27.157.79
+  port: 2053
+  uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
+  network: tcp
+  tls: true
+  servername: www.ibm.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-104.234.1.101
+  type: vless
+  server: 104.234.1.101
+  port: 443
+  uuid: 5bba0b6f-5d6d-4823-b41c-ce557fb4dae6
+  network: tcp
+  tls: true
+  servername: www.speedtest.net
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇸🇪(SE)-se.connectv.net_1
+  type: vless
+  server: se.connectv.net
+  port: 443
+  uuid: 8b70357d-b654-4a29-85de-e5fef1afefbd
+  network: tcp
+  tls: true
+  servername: se.connectv.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_4
+  type: vless
+  server: 172.67.73.14
+  port: 443
+  uuid: 6fab6cc6-e340-4073-93e1-c6c6802002c7
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /167.179.110.68=8443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇩🇪(DE)-king.pamelasli.ir
+  type: vless
+  server: king.pamelasli.ir
+  port: 443
+  uuid: ec044d62-375a-4d6e-a112-817adb99dfb5
+  network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: Kilerjxi.com
+- name: VLESS-WS-TLS-🇩🇪(DE)-104.18.32.47
+  type: vless
+  server: 104.18.32.47
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-TCP-REALITY-🇫🇮(FI)-85.192.37.119
+  type: vless
+  server: 85.192.37.119
+  port: 443
+  uuid: 8b70357d-b654-4a29-85de-e5fef1afefbd
+  network: tcp
+  tls: true
+  servername: fi.connectv.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇩🇪(DE)-172.64.158.2
+  type: vless
+  server: 172.64.158.2
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-WS-TLS-🇩🇪(DE)-162.159.135.42
+  type: vless
+  server: 162.159.135.42
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_14
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: fc487688-af40-4393-ae6c-6b80188a65b4
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /216.128.140.218=443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.48.237
+  type: vless
+  server: 152.53.48.237
+  port: 22955
+  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+  network: grpc
+  tls: true
+  servername: one-piece.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-93.94.51.19
+  type: vless
+  server: 93.94.51.19
+  port: 56864
+  uuid: 87580984-c2ef-4f44-9c7e-0b216f99aa87
+  network: tcp
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-178.162.219.117
+  type: vless
+  server: 178.162.219.117
+  port: 443
+  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
+  network: tcp
+  tls: true
+  servername: www.jobinvest.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇨🇿(CZ)-109.172.9.60
+  type: vless
+  server: 109.172.9.60
+  port: 443
+  uuid: b38bb47c-8e08-46d0-ab5b-6b065de54098
+  network: tcp
+  tls: true
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇨🇿(CZ)-109.172.9.60_1
+  type: vless
+  server: 109.172.9.60
+  port: 443
+  uuid: b38bb47c-8e08-46d0-ab5b-6b065de54098
+  network: tcp
+  tls: true
+  servername: www.microsoft.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: VLESS-WS-TLS-🇨🇭(CH)-172.66.47.45
@@ -1393,54 +1531,32 @@ proxies:
     path: /
     headers:
       Host: ca.adobe-connect.top
-- name: VLESS-WS-TLS-🇨🇭(CH)-v1.dabache.top
+- name: VLESS-TCP-REALITY-🇵🇱(PL)-3.cdnconn.com
   type: vless
-  server: v1.dabache.top
-  port: 2096
-  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
-  network: ws
-  tls: true
-  servername: ca.adobe-connect.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ca.adobe-connect.top
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-178.162.219.165
-  type: vless
-  server: 178.162.219.165
-  port: 443
-  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
+  server: 3.cdnconn.com
+  port: 23335
+  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
   network: tcp
   tls: true
-  servername: www.jobinvest.ru
+  servername: icloud.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_17
+- name: VLESS-WS-TLS-🇩🇪(DE)-108.162.194.99
   type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: d85ea913-7dfa-44b0-bd66-33414e897991
+  server: 108.162.194.99
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
   network: ws
   tls: true
-  servername: afrcloud22.mmv.kr
+  servername: hetz.x-smm.com
   client-fingerprint: chrome
   ws-opts:
-    path: /35.230.79.26=443
+    path: /45.76.183.217=49292
     headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.232
+      Host: hetz.x-smm.com
+- name: VLESS-WS-TLS-🇨🇭(CH)-104.21.224.5
   type: vless
-  server: 109.172.55.232
-  port: 13760
-  uuid: 5fad3ad2-1a94-40d0-85bb-51eb83f5c7df
-  network: tcp
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇨🇭(CH)-104.18.185.26
-  type: vless
-  server: 104.18.185.26
+  server: 104.21.224.5
   port: 2096
   uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
   network: ws
@@ -1451,19 +1567,90 @@ proxies:
     path: /
     headers:
       Host: ca.adobe-connect.top
-- name: VLESS-WS-TLS-🇺🇸(US)-209.141.33.79
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-152.53.116.71_1
   type: vless
-  server: 209.141.33.79
-  port: 2053
-  uuid: 699fca60-533f-4436-38db-7881c2150fe2
+  server: 152.53.116.71
+  port: 443
+  uuid: 0d328214-7ebc-413a-9820-2260b38d2242
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇩🇪(DE)-173.245.58.75
+  type: vless
+  server: 173.245.58.75
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
   network: ws
   tls: true
-  servername: 53e5ab44.lfree.cn.mt
+  servername: hetz.x-smm.com
   client-fingerprint: chrome
   ws-opts:
-    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
+    path: /45.76.183.217=49292
     headers:
-      Host: 53e5ab44.lfree.cn.mt
+      Host: hetz.x-smm.com
+- name: VLESS-WS-TLS-🇩🇪(DE)-vps.bkneed.ir
+  type: vless
+  server: vps.bkneed.ir
+  port: 443
+  uuid: ec044d62-375a-4d6e-a112-817adb99dfb5
+  network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: Kilerjxi.com
+- name: VLESS-TCP-REALITY-🇸🇪(SE)-185.197.74.225
+  type: vless
+  server: 185.197.74.225
+  port: 443
+  uuid: 8b70357d-b654-4a29-85de-e5fef1afefbd
+  network: tcp
+  tls: true
+  servername: se.connectv.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇩🇪(DE)-172.64.33.91
+  type: vless
+  server: 172.64.33.91
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-WS-TLS-🇩🇪(DE)-162.159.44.45
+  type: vless
+  server: 162.159.44.45
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-WS-TLS-🇨🇭(CH)-104.18.32.47
+  type: vless
+  server: 104.18.32.47
+  port: 2096
+  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
+  network: ws
+  tls: true
+  servername: ca.adobe-connect.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ca.adobe-connect.top
 - name: VLESS-WS-TLS-🇨🇭(CH)-172.66.44.211
   type: vless
   server: 172.66.44.211
@@ -1477,96 +1664,28 @@ proxies:
     path: /
     headers:
       Host: ca.adobe-connect.top
-- name: VLESS-WS-TLS-🇨🇭(CH)-172.66.47.45_1
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-152.53.116.71_2
   type: vless
-  server: 172.66.47.45
-  port: 2096
-  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
-  network: ws
-  tls: true
-  servername: ca.adobe-connect.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
-    headers:
-      Host: ca.adobe-connect.top
-- name: VLESS-GRPC-REALITY-🇪🇪(EE)-185.223.168.238
-  type: vless
-  server: 185.223.168.238
-  port: 8448
-  uuid: 6d490cef-0b49-459d-a72c-0bb0210f3dd0
-  network: grpc
-  tls: true
-  servername: www.dropbox.com
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇨🇭(CH)-chatgpt.com
-  type: vless
-  server: chatgpt.com
-  port: 2096
-  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
-  network: ws
-  tls: true
-  servername: ca.adobe-connect.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ca.adobe-connect.top
-- name: VLESS-WS-TLS-🇺🇸(US)-165.227.11.101
-  type: vless
-  server: 165.227.11.101
+  server: 152.53.116.71
   port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.indevs.in
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.indevs.in
-- name: VLESS-TCP-REALITY-🇱🇻(LV)-185.145.245.21
-  type: vless
-  server: 185.145.245.21
-  port: 23335
-  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+  uuid: 0d328214-7ebc-413a-9820-2260b38d2242
   network: tcp
   tls: true
-  servername: icloud.com
+  servername: yahoo.com
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇨🇿(CZ)-109.172.9.60
+- name: VLESS-WS-TLS-🇩🇪(DE)-172.64.34.99
   type: vless
-  server: 109.172.9.60
-  port: 443
-  uuid: b38bb47c-8e08-46d0-ab5b-6b065de54098
-  network: tcp
-  tls: true
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-146.235.196.203
-  type: vless
-  server: 146.235.196.203
-  port: 443
-  uuid: 699fca60-533f-4436-38db-7881c2150fe2
+  server: 172.64.34.99
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
   network: ws
   tls: true
-  servername: 53e5ab44.lfree.cn.mt
+  servername: hetz.x-smm.com
   client-fingerprint: chrome
   ws-opts:
-    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
+    path: /45.76.183.217=49292
     headers:
-      Host: 53e5ab44.lfree.cn.mt
-- name: VLESS-GRPC-REALITY-🇩🇪(DE)-prime.dissertationhelpspecialist.com_1
-  type: vless
-  server: prime.dissertationhelpspecialist.com
-  port: 2053
-  uuid: 7e2fbe8c-faee-40fd-8afd-00136e74e5cb
-  network: grpc
-  tls: true
-  servername: tgju.org
-  client-fingerprint: chrome
+      Host: hetz.x-smm.com
 - name: VLESS-WS-TLS-🇺🇸(US)-005.inc-electrocell-001-005-803.workers.dev
   type: vless
   server: 005.inc-electrocell-001-005-803.workers.dev
@@ -1580,43 +1699,523 @@ proxies:
     path: /eyJqdW5rIjoidXJzTllJVlpXVWZUIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
     headers:
       Host: 005.inc-electrocell-001-005-803.workers.dev
-- name: VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_4
+- name: VLESS-WS-TLS-🇨🇭(CH)-104.16.250.22
   type: vless
-  server: 104.26.14.21
+  server: 104.16.250.22
+  port: 2096
+  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
+  network: ws
+  tls: true
+  servername: ca.adobe-connect.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ca.adobe-connect.top
+- name: VLESS-WS-TLS-🇩🇪(DE)-delilah.ns.cloudflare.com
+  type: vless
+  server: delilah.ns.cloudflare.com
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-WS-TLS-🇨🇭(CH)-172.66.47.45_1
+  type: vless
+  server: 172.66.47.45
+  port: 2096
+  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
+  network: ws
+  tls: true
+  servername: ca.adobe-connect.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
+    headers:
+      Host: ca.adobe-connect.top
+- name: VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.48.224
+  type: vless
+  server: 152.53.48.224
+  port: 22955
+  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+  network: grpc
+  tls: true
+  servername: one-piece.com
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇩🇪(DE)-108.162.194.176
+  type: vless
+  server: 108.162.194.176
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-185.241.193.60
+  type: vless
+  server: 185.241.193.60
   port: 443
-  uuid: fa335d1c-e6d1-48bb-99a3-f06710a29043
+  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
+  network: tcp
+  tls: true
+  servername: nl.reality.tv123.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-185.241.195.90
+  type: vless
+  server: 185.241.195.90
+  port: 8443
+  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
+  network: tcp
+  tls: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇩🇪(DE)-173.245.59.91
+  type: vless
+  server: 173.245.59.91
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_15
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
   network: ws
   tls: true
   servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /130.185.164.213=8443
+    path: /158.101.152.6=2919
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-muddy-math-c1fc.tmpnriqueau89.workers.dev
+- name: VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134
   type: vless
-  server: muddy-math-c1fc.tmpnriqueau89.workers.dev
+  server: 5.129.249.134
   port: 443
-  uuid: 532a9115-aee7-4d39-9638-1e5146de075b
+  uuid: eaca6b0a-9728-5766-8fb0-0be81c1b7c91
+  network: tcp
+  tls: true
+  servername: ir.ozone.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_16
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: 1e681d1b-3f6e-4bd4-9fed-b8976bd1b3be
   network: ws
   tls: true
-  servername: muddy-math-c1fc.tmpnriqueau89.workers.dev
+  servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /js/cHlpcC55Z2tray5kcGRucy5vcmc=/?ed=2048
+    path: /45.76.192.129=24434
     headers:
-      Host: muddy-math-c1fc.tmpnriqueau89.workers.dev
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_17
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: 7b906ed2-a5a8-41d2-a9cf-8621ec6e90a9
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /158.101.11.204=15805
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.49.144
+  type: vless
+  server: 152.53.49.144
+  port: 22955
+  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+  network: grpc
+  tls: true
+  servername: one-piece.com
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇨🇭(CH)-v1.dabache.top
+  type: vless
+  server: v1.dabache.top
+  port: 2096
+  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
+  network: ws
+  tls: true
+  servername: ca.adobe-connect.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ca.adobe-connect.top
+- name: VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.51.29
+  type: vless
+  server: 152.53.51.29
+  port: 22955
+  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+  network: grpc
+  tls: true
+  servername: one-piece.com
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇩🇪(DE)-108.162.192.75
+  type: vless
+  server: 108.162.192.75
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-WS-TLS-🇨🇭(CH)-chatgpt.com
+  type: vless
+  server: chatgpt.com
+  port: 2096
+  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
+  network: ws
+  tls: true
+  servername: ca.adobe-connect.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ca.adobe-connect.top
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-185.241.195.90
+  type: vless
+  server: 185.241.195.90
+  port: 443
+  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
+  network: tcp
+  tls: true
+  servername: nl.reality.tv123.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇮🇹(IT)-ita01-vlr02.tcp-reset-club.net
+  type: vless
+  server: ita01-vlr02.tcp-reset-club.net
+  port: 443
+  uuid: 1c4aceb6-bff7-4737-8c5d-43afb3dc350b
+  network: tcp
+  tls: true
+  servername: hls-svod.itunes.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇹🇷(TR)-77.83.245.189
+  type: vless
+  server: 77.83.245.189
+  port: 27414
+  uuid: 94712dd9-17d8-4813-a118-cc487fadd137
+  network: tcp
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: chrome
 - name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_18
   type: vless
   server: afrcloud22.mmv.kr
   port: 443
-  uuid: 026f6d6a-8850-4394-8b3e-2145bef6ca81
+  uuid: 059b63df-e5bc-4eb3-aad2-494655d7b696
   network: ws
   tls: true
   servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /44.244.220.166=443
+    path: /141.147.183.49=29876
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇨🇭(CH)-104.18.185.26
+  type: vless
+  server: 104.18.185.26
+  port: 2096
+  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
+  network: ws
+  tls: true
+  servername: ca.adobe-connect.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ca.adobe-connect.top
+- name: VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_5
+  type: vless
+  server: 104.26.14.21
+  port: 443
+  uuid: 6fab6cc6-e340-4073-93e1-c6c6802002c7
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /167.179.110.68=8443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-185.241.193.60
+  type: vless
+  server: 185.241.193.60
+  port: 8443
+  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
+  network: tcp
+  tls: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_19
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: d9a83363-40a6-4a21-9dbe-cb2b7d287048
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /107.174.121.122=443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇱🇻(LV)-45.43.79.73
+  type: vless
+  server: 45.43.79.73
+  port: 443
+  uuid: f79d200c-ac04-45a8-98a7-031d629f705c
+  network: tcp
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_20
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: d85ea913-7dfa-44b0-bd66-33414e897991
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /35.230.79.26=443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇵🇱(PL)-45.144.51.22
+  type: vless
+  server: 45.144.51.22
+  port: 443
+  uuid: 6c49485f-843c-4e96-abfe-046bc473c7b0
+  network: tcp
+  tls: true
+  servername: github.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇩🇪(DE)-172.64.32.75
+  type: vless
+  server: 172.64.32.75
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.49.130
+  type: vless
+  server: 152.53.49.130
+  port: 22955
+  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+  network: grpc
+  tls: true
+  servername: one-piece.com
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇩🇪(DE)-94.130.132.180
+  type: vless
+  server: 94.130.132.180
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: true
+  servername: sni.111000.indevs.in
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳 @app_bedal
+    headers:
+      Host: sni.111000.indevs.in
+- name: VLESS-WS-TLS-🇩🇪(DE)-162.159.38.176
+  type: vless
+  server: 162.159.38.176
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  tls: true
+  servername: hetz.x-smm.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.183.217=49292
+    headers:
+      Host: hetz.x-smm.com
+- name: VLESS-WS-TLS-🇨🇭(CH)-vip2.kaixincloud.top
+  type: vless
+  server: vip2.kaixincloud.top
+  port: 2096
+  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
+  network: ws
+  tls: true
+  servername: ca.adobe-connect.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ca.adobe-connect.top
+- name: VLESS-TCP-REALITY-🇸🇪(SE)-85.239.59.149
+  type: vless
+  server: 85.239.59.149
+  port: 4349
+  uuid: 4c3a2f39-dc52-4322-ac66-83010d12bfc0
+  network: tcp
+  tls: true
+  servername: apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_21
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: 52671c24-b81f-4731-b37b-fbb4101c12e1
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /140.83.57.20=13118
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_22
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: 8cd91b7a-9c3f-4228-b710-dea410234641
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /193.123.253.225=4333#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇨🇱(CL)-45.82.249.129
+  type: vless
+  server: 45.82.249.129
+  port: 8443
+  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇫🇮(FI)-moo1.valvehits.com
+  type: vless
+  server: moo1.valvehits.com
+  port: 2087
+  uuid: 954cf9b3-1b8d-40b0-8c67-8780155ff52b
+  network: ws
+  tls: true
+  servername: ferchenco.steamrtc.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /zagfa?ed=2560
+    headers:
+      Host: ferchenco.steamrtc.com
+- name: VLESS-TCP-REALITY-🇨🇱(CL)-45.82.249.129_1
+  type: vless
+  server: 45.82.249.129
+  port: 8443
+  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-GRPC-REALITY-🇩🇪(DE)-144.31.74.41
+  type: vless
+  server: 144.31.74.41
+  port: 8443
+  uuid: cef12ad2-fb16-4ace-ab26-2a026d40a7d2
+  network: grpc
+  tls: true
+  servername: sun6-21.userapi.com
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_23
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: d3e15a11-ebd9-4315-b110-f9fb1c52f153
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /144.202.126.54=443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_24
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: c4be5399-3a11-46ad-a92a-294b4f7b2690
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /64.176.36.17=443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.50.126
+  type: vless
+  server: 152.53.50.126
+  port: 22955
+  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+  network: grpc
+  tls: true
+  servername: one-piece.com
+  client-fingerprint: chrome
+- name: VLESS-GRPC-REALITY-🇩🇪(DE)-de.himikvpn.online
+  type: vless
+  server: de.himikvpn.online
+  port: 8443
+  uuid: cef12ad2-fb16-4ace-ab26-2a026d40a7d2
+  network: grpc
+  tls: true
+  servername: sun6-21.userapi.com
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_25
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: ca7709bd-7ff1-4edc-9f1d-679d17bcd150
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.77.25.6=48828
     headers:
       Host: afrcloud22.mmv.kr
 - name: VLESS-WS-TLS-🇺🇸(US)-104.18.43.4
@@ -1632,646 +2231,68 @@ proxies:
     path: /
     headers:
       Host: fancy-disk-3455.v2raytv20.workers.dev
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_19
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_26
   type: vless
   server: afrcloud22.mmv.kr
   port: 443
-  uuid: 931dc751-9096-44ce-84a5-89f10505bd65
+  uuid: aac16b46-fa88-42d0-a4f9-970ea25d2c70
   network: ws
   tls: true
   servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /45.151.132.228=19034
+    path: /209.237.135.93=443
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇱🇻(LV)-185.145.245.33
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_27
   type: vless
-  server: 185.145.245.33
-  port: 23335
-  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
-  network: tcp
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇨🇭(CH)-vip2.kaixincloud.top
-  type: vless
-  server: vip2.kaixincloud.top
-  port: 2096
-  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: b5c4c990-3f87-484d-b2bf-d75737d37729
   network: ws
   tls: true
-  servername: ca.adobe-connect.top
+  servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /35.175.188.144=9000
     headers:
-      Host: ca.adobe-connect.top
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-104.234.1.101
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇫🇷(FR)-141.94.220.210
   type: vless
-  server: 104.234.1.101
-  port: 443
-  uuid: 5bba0b6f-5d6d-4823-b41c-ce557fb4dae6
-  network: tcp
-  tls: true
-  servername: www.speedtest.net
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-178.162.219.117
-  type: vless
-  server: 178.162.219.117
-  port: 443
-  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
-  network: tcp
-  tls: true
-  servername: www.jobinvest.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🌐(XX)-185.147.26.14
-  type: vless
-  server: 185.147.26.14
-  port: 23335
-  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
-  network: tcp
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-93.94.51.19
-  type: vless
-  server: 93.94.51.19
-  port: 56864
-  uuid: 87580984-c2ef-4f44-9c7e-0b216f99aa87
-  network: tcp
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇬🇧(GB)-57.128.177.185
-  type: vless
-  server: 57.128.177.185
+  server: 141.94.220.210
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   tls: true
-  servername: sni.111000.indevs.in
+  servername: sni.111000.v6.navy
   client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560&Telegram🇨🇳 @WangCai2
+    path: t.me/v2Line
     headers:
-      Host: sni.111000.indevs.in
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-94.242.53.230
-  type: vless
-  server: 94.242.53.230
-  port: 23335
-  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
-  network: tcp
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-94.242.53.5
-  type: vless
-  server: 94.242.53.5
-  port: 23335
-  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
-  network: tcp
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇨🇭(CH)-104.16.250.22
-  type: vless
-  server: 104.16.250.22
-  port: 2096
-  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
-  network: ws
-  tls: true
-  servername: ca.adobe-connect.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ca.adobe-connect.top
-- name: VLESS-TCP-REALITY-🇸🇪(SE)-se.connectv.net
-  type: vless
-  server: se.connectv.net
-  port: 443
-  uuid: 8b70357d-b654-4a29-85de-e5fef1afefbd
-  network: tcp
-  tls: true
-  servername: se.connectv.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇨🇭(CH)-104.18.32.47
-  type: vless
-  server: 104.18.32.47
-  port: 2096
-  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
-  network: ws
-  tls: true
-  servername: ca.adobe-connect.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ca.adobe-connect.top
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134
-  type: vless
-  server: 5.129.249.134
-  port: 443
-  uuid: mega1507
-  network: tcp
-  tls: true
-  servername: ir.ozone.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-94.242.51.28
-  type: vless
-  server: 94.242.51.28
-  port: 23335
-  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
-  network: tcp
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-107.174.198.228
-  type: vless
-  server: 107.174.198.228
-  port: 8443
-  uuid: 699fca60-533f-4436-38db-7881c2150fe2
-  network: ws
-  tls: true
-  servername: 53e5ab44.lfree.cn.mt
-  client-fingerprint: chrome
-  ws-opts:
-    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
-    headers:
-      Host: 53e5ab44.lfree.cn.mt
-- name: VLESS-TCP-REALITY-🇸🇪(SE)-se.connectv.net_1
-  type: vless
-  server: se.connectv.net
-  port: 443
-  uuid: 7902dc25-ff8b-4fa4-83ff-ecef5ab3414e
-  network: tcp
-  tls: true
-  servername: se.connectv.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇵🇱(PL)-144.31.4.136
-  type: vless
-  server: 144.31.4.136
-  port: 8081
-  uuid: f1449968-0329-468b-b56b-1c573ac2a767
-  network: tcp
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_1
-  type: vless
-  server: chatgpt.com
-  port: 443
-  uuid: cdd6d645-fd41-4200-857d-2c4880ab514f
-  network: ws
-  tls: true
-  servername: S5-cB2WE5COX8cZiVW-RN9Po87ArXZRW.foxnim2.WoRkErS.DeV
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoidVREZHhhaGg1SHJwMmEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
-    headers:
-      Host: S5-cB2WE5COX8cZiVW-RN9Po87ArXZRW.foxnim2.WoRkErS.DeV
-- name: VLESS-WS-TLS-🇳🇱(NL)-91.84.103.232
-  type: vless
-  server: 91.84.103.232
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.indevs.in
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳 @WangCai2
-    headers:
-      Host: sni.111000.indevs.in
+      Host: sni.111000.v6.navy
 - name: VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_1
   type: vless
   server: 5.129.249.134
   port: 443
-  uuid: 97138143-cf37-59a9-9c0f-94290ce5904d
+  uuid: mega1346
   network: tcp
   tls: true
   servername: ir.ozone.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇮(FI)-89.208.228.167
+- name: VLESS-WS-TLS-🇩🇪(DE)-45.144.233.205
   type: vless
-  server: 89.208.228.167
-  port: 443
-  uuid: 17c4e377-ea15-0bb8-98b2-3e348c9ff5d9
-  network: tcp
-  tls: true
-  servername: max.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇵🇱(PL)-5.188.141.12
-  type: vless
-  server: 5.188.141.12
-  port: 52006
-  uuid: 8a0888d4-dc95-2710-a2fa-5c9877d21b54
-  network: tcp
-  tls: true
-  servername: max.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_2
-  type: vless
-  server: 5.129.249.134
-  port: 443
-  uuid: 4821536d-26b8-53a1-8b52-6ba7bbcab5cf
-  network: tcp
-  tls: true
-  servername: ir.ozone.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_20
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: 6eb4311c-e5cd-458f-a142-83417ac34245
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /129.158.198.241=8443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-77.73.69.64
-  type: vless
-  server: 77.73.69.64
-  port: 23335
-  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
-  network: tcp
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-GRPC-REALITY-🇩🇪(DE)-144.31.117.60
-  type: vless
-  server: 144.31.117.60
-  port: 443
-  uuid: 9ed664eb-6076-4406-a4e5-cb4fd6775214
-  network: grpc
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_3
-  type: vless
-  server: 5.129.249.134
-  port: 443
-  uuid: mega1698
-  network: tcp
-  tls: true
-  servername: ir.ozone.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇱🇻(LV)-45.43.79.73
-  type: vless
-  server: 45.43.79.73
-  port: 443
-  uuid: f79d200c-ac04-45a8-98a7-031d629f705c
-  network: tcp
-  tls: true
-  servername: google.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇺🇦(UA)-5.cdnconn.com
-  type: vless
-  server: 5.cdnconn.com
-  port: 23335
-  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
-  network: tcp
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_4
-  type: vless
-  server: 5.129.249.134
-  port: 443
-  uuid: eaca6b0a-9728-5766-8fb0-0be81c1b7c91
-  network: tcp
-  tls: true
-  servername: ir.ozone.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-46.243.233.78
-  type: vless
-  server: 46.243.233.78
-  port: 8081
-  uuid: f1449968-0329-468b-b56b-1c573ac2a767
-  network: tcp
-  tls: true
-  servername: sun6-21.userapi.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
-  type: vless
-  server: 15.204.97.198
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-185.241.193.60
-  type: vless
-  server: 185.241.193.60
-  port: 443
-  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
-  network: tcp
-  tls: true
-  servername: nl.reality.tv123.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇸🇪(SE)-84.201.132.223
-  type: vless
-  server: 84.201.132.223
-  port: 8443
-  uuid: fff6bf71-be84-40cb-ad6e-33480dc48add
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇦🇹(AT)-152.53.66.46
-  type: vless
-  server: 152.53.66.46
-  port: 443
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-  network: tcp
-  tls: true
-  servername: at.jojack.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_5
-  type: vless
-  server: 5.129.249.134
-  port: 443
-  uuid: 5d338ff0-5826-55e0-a603-699b018d7498
-  network: tcp
-  tls: true
-  servername: ir.ozone.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_6
-  type: vless
-  server: 5.129.249.134
-  port: 443
-  uuid: mega2499
-  network: tcp
-  tls: true
-  servername: ir.ozone.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_4
-  type: vless
-  server: 172.67.73.14
-  port: 443
-  uuid: 026f6d6a-8850-4394-8b3e-2145bef6ca81
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /44.244.220.166=443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.51.24
-  type: vless
-  server: 152.53.51.24
-  port: 22955
-  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-  network: grpc
-  tls: true
-  servername: one-piece.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🌐(XX)-4.cdnconn.com
-  type: vless
-  server: 4.cdnconn.com
-  port: 23335
-  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
-  network: tcp
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-51.250.103.29
-  type: vless
-  server: 51.250.103.29
-  port: 443
-  uuid: 9ed664eb-6076-4406-a4e5-cb4fd6775214
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇵🇱(PL)-3.cdnconn.com
-  type: vless
-  server: 3.cdnconn.com
-  port: 23335
-  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
-  network: tcp
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇹🇷(TR)-77.83.245.189
-  type: vless
-  server: 77.83.245.189
-  port: 27414
-  uuid: 94712dd9-17d8-4813-a118-cc487fadd137
-  network: tcp
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇮🇹(IT)-89.150.57.167
-  type: vless
-  server: 89.150.57.167
-  port: 443
-  uuid: 1c4aceb6-bff7-4737-8c5d-43afb3dc350b
-  network: tcp
-  tls: true
-  servername: hls-svod.itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-172.67.210.52
-  type: vless
-  server: 172.67.210.52
-  port: 443
-  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /185.186.245.40:81
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-172.66.128.70
-  type: vless
-  server: 172.66.128.70
-  port: 443
-  uuid: a6430e91-38ad-4254-b7db-d1fba6efd9e3
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /129.146.254.25:443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇵🇱(PL)-51.250.77.163
-  type: vless
-  server: 51.250.77.163
-  port: 443
-  uuid: 578f1637-e18d-45c3-b846-5124940c0121
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-185.241.193.60
-  type: vless
-  server: 185.241.193.60
-  port: 8443
-  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇫🇮(FI)-f1.springpaatogh8.store
-  type: vless
-  server: f1.springpaatogh8.store
-  port: 8443
-  uuid: 15a8a868-ddd3-4a8c-bf7a-bb81671bf157
-  network: ws
-  tls: true
-  servername: digikala.sorza.ir
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560/PuLaFreeBOT/Telegram/PuLaVPN/Telegram/PuLaVPN/Telegram/PuLaVPN
-    headers:
-      Host: takken.sorza.ir
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-de-2.tconnect.services
-  type: vless
-  server: de-2.tconnect.services
-  port: 443
-  uuid: ea9ba1ec-bfe7-407b-bd21-aeebc86da741
-  network: tcp
-  tls: true
-  servername: stackoverflow.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇨🇱(CL)-45.82.249.129
-  type: vless
-  server: 45.82.249.129
-  port: 8443
-  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.49.144
-  type: vless
-  server: 152.53.49.144
-  port: 22955
-  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-  network: grpc
-  tls: true
-  servername: one-piece.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-193.124.47.218
-  type: vless
-  server: 193.124.47.218
-  port: 443
-  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
-  network: tcp
-  tls: true
-  servername: www.jobinvest.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇬🇧(GB)-167.99.80.91
-  type: vless
-  server: 167.99.80.91
-  port: 443
+  server: 45.144.233.205
+  port: 2053
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   tls: true
   servername: sni.111000.indevs.in
   client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /?ed=2560
     headers:
       Host: sni.111000.indevs.in
-- name: VLESS-TCP-REALITY-🇸🇪(SE)-sweden.urban-network.space
-  type: vless
-  server: sweden.urban-network.space
-  port: 443
-  uuid: 94bc0da0-ef85-475a-95bc-d9b5eca5176c
-  network: tcp
-  tls: true
-  servername: sweden2.urban-network.space
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🌐(XX)-95.163.208.217
-  type: vless
-  server: 95.163.208.217
-  port: 443
-  uuid: e72b7b21-22ac-48cd-a42d-1ab653822d84
-  network: tcp
-  tls: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇮(FI)-fi.connectv.net
-  type: vless
-  server: fi.connectv.net
-  port: 443
-  uuid: 8b70357d-b654-4a29-85de-e5fef1afefbd
-  network: tcp
-  tls: true
-  servername: fi.connectv.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇮🇹(IT)-ita01-vlr02.tcp-reset-club.net
-  type: vless
-  server: ita01-vlr02.tcp-reset-club.net
-  port: 443
-  uuid: 1c4aceb6-bff7-4737-8c5d-43afb3dc350b
-  network: tcp
-  tls: true
-  servername: hls-svod.itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.51.29
-  type: vless
-  server: 152.53.51.29
-  port: 22955
-  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-  network: grpc
-  tls: true
-  servername: one-piece.com
-  client-fingerprint: chrome
-- name: VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.49.130
-  type: vless
-  server: 152.53.49.130
-  port: 22955
-  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-  network: grpc
-  tls: true
-  servername: one-piece.com
-  client-fingerprint: chrome
 - name: VLESS-WS-TLS-🇺🇸(US)-nodejs.org
   type: vless
   server: nodejs.org
@@ -2285,65 +2306,94 @@ proxies:
     path: /129.146.254.25:443
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_21
+- name: VLESS-TCP-TLS-🇸🇬(SG)-66.42.54.48
   type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /167.234.216.84=65501
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_22
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: 059b63df-e5bc-4eb3-aad2-494655d7b696
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /141.147.183.49=29876
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-84.201.129.161
-  type: vless
-  server: 84.201.129.161
-  port: 443
-  uuid: 578f1637-e18d-45c3-b846-5124940c0121
+  server: 66.42.54.48
+  port: 22539
+  uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
   network: tcp
   tls: true
-  servername: ads.x5.ru
+  servername: node1.nanonet.host
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇸🇪(SE)-85.239.59.149
-  type: vless
-  server: 85.239.59.149
-  port: 4349
-  uuid: 4c3a2f39-dc52-4322-ac66-83010d12bfc0
-  network: tcp
-  tls: true
-  servername: apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_23
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_28
   type: vless
   server: afrcloud22.mmv.kr
   port: 443
-  uuid: 7b906ed2-a5a8-41d2-a9cf-8621ec6e90a9
+  uuid: a2bb8800-245c-47d3-9539-02f04066e90e
   network: ws
   tls: true
   servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /158.101.11.204=15805
+    path: /140.83.59.158=15805
     headers:
       Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.157
+  type: vless
+  server: 109.172.55.157
+  port: 19547
+  uuid: f9cdb2e1-939c-4470-b322-14b7313dec48
+  network: tcp
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-51.250.65.209
+  type: vless
+  server: 51.250.65.209
+  port: 443
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+  network: tcp
+  tls: true
+  servername: api-maps.yandex.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.220
+  type: vless
+  server: 109.172.55.220
+  port: 58198
+  uuid: d5d52c15-f963-42b8-971b-613fc9c5e7e3
+  network: tcp
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🌐(XX)-144.31.197.124
+  type: vless
+  server: 144.31.197.124
+  port: 443
+  uuid: 8880a102-7c54-40fb-8508-88d7b28b2014
+  network: tcp
+  tls: true
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-TLS-🇸🇬(SG)-node1.nanonet.host
+  type: vless
+  server: node1.nanonet.host
+  port: 22539
+  uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
+  network: tcp
+  tls: true
+  servername: node1.nanonet.host
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇹🇷(TR)-77.83.245.171
+  type: vless
+  server: 77.83.245.171
+  port: 43816
+  uuid: a893f940-8725-4b3e-8b77-caa1380e95dc
+  network: tcp
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_2
+  type: vless
+  server: 5.129.249.134
+  port: 443
+  uuid: mega1698
+  network: tcp
+  tls: true
+  servername: ir.ozone.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇫🇮(FI)-85.239.59.149
   type: vless
   server: 85.239.59.149
@@ -2354,407 +2404,6 @@ proxies:
   servername: apple.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇩🇪(DE)-88.99.60.34
-  type: vless
-  server: 88.99.60.34
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.v6.navy
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳 @WangCai2
-    headers:
-      Host: sni.111000.v6.navy
-- name: VLESS-WS-TLS-🇫🇷(FR)-95.182.98.38
-  type: vless
-  server: 95.182.98.38
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.indevs.in
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.indevs.in
-- name: VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.48.224
-  type: vless
-  server: 152.53.48.224
-  port: 22955
-  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-  network: grpc
-  tls: true
-  servername: one-piece.com
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇳🇱(NL)-103.137.250.250
-  type: vless
-  server: 103.137.250.250
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.indevs.in
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳 @WangCai2
-    headers:
-      Host: sni.111000.indevs.in
-- name: VLESS-TCP-REALITY-🇵🇱(PL)-212.233.98.234
-  type: vless
-  server: 212.233.98.234
-  port: 8443
-  uuid: c31a27f6-42ae-4d8f-9564-3fd2dcc608a7
-  network: tcp
-  tls: true
-  servername: eh.vk.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇱🇻(LV)-194.8.6.33
-  type: vless
-  server: 194.8.6.33
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳 @WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-- name: VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.48.237
-  type: vless
-  server: 152.53.48.237
-  port: 22955
-  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-  network: grpc
-  tls: true
-  servername: one-piece.com
-  client-fingerprint: chrome
-- name: VLESS-GRPC-REALITY-🇦🇹(AT)-51.250.3.71
-  type: vless
-  server: 51.250.3.71
-  port: 445
-  uuid: 89c8f8a0-a98c-4091-b91b-f57d228afd29
-  network: grpc
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇫🇮(FI)-51.250.43.209
-  type: vless
-  server: 51.250.43.209
-  port: 8443
-  uuid: 621d5f40-707c-40f0-8b5c-253d38e1d0cb
-  network: tcp
-  tls: true
-  servername: max.ru
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇩🇪(DE)-141.95.127.132
-  type: vless
-  server: 141.95.127.132
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.indevs.in
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.indevs.in
-- name: VLESS-XHTTP-TLS-🇫🇮(FI)-8.6.112.0
-  type: vless
-  server: 8.6.112.0
-  port: 443
-  uuid: 8d5ebe3f-d0c5-45f2-9dde-21ee29fc0ee6
-  network: xhttp
-  tls: true
-  servername: fin.moell13.org
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_24
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: 52671c24-b81f-4731-b37b-fbb4101c12e1
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /140.83.57.20=13118
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-185.251.81.238
-  type: vless
-  server: 185.251.81.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.jpmj.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.jpmj.dev
-- name: VLESS-WS-TLS-🇩🇪(DE)-172.64.145.38
-  type: vless
-  server: 172.64.145.38
-  port: 2087
-  uuid: 41c55d8d-44dd-4437-90ff-4c1eb869a67c
-  network: ws
-  tls: true
-  servername: digikala.sorza.ir
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: gamepc.sorza.ir
-- name: VLESS-TCP-REALITY-🇺🇸(US)-185.241.193.60
-  type: vless
-  server: 185.241.193.60
-  port: 443
-  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
-  network: tcp
-  tls: true
-  servername: us.reality.tv123.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-104.26.7.13
-  type: vless
-  server: 104.26.7.13
-  port: 443
-  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /185.186.245.40:81
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-174.138.48.29
-  type: vless
-  server: 174.138.48.29
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.v6.navy
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.v6.navy
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_25
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: d22531a3-bd03-465f-a91a-efafdbbf8ce6
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /132.145.127.203=8443#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_26
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: 4a942a11-2178-4b10-af73-15b1cfee99df
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /185.186.245.205=81
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_27
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /158.101.152.6=2919
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇩🇪(DE)-199.247.23.140
-  type: vless
-  server: 199.247.23.140
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.indevs.in
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.indevs.in
-- name: VLESS-GRPC-REALITY-🇩🇪(DE)-free.spectrum.vu
-  type: vless
-  server: free.spectrum.vu
-  port: 444
-  uuid: 4bc7d558-1943-44de-bd82-56920bc9383e
-  network: grpc
-  tls: true
-  servername: free.spectrum.vu
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-193.46.81.73
-  type: vless
-  server: 193.46.81.73
-  port: 443
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-  network: tcp
-  tls: true
-  servername: de.cdn.stun.su
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-104.21.95.114
-  type: vless
-  server: 104.21.95.114
-  port: 443
-  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /185.186.245.40:81
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-free.spectrum.vu
-  type: vless
-  server: free.spectrum.vu
-  port: 443
-  uuid: 4bc7d558-1943-44de-bd82-56920bc9383e
-  network: tcp
-  tls: true
-  servername: free.spectrum.vu
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-104.16.143.237
-  type: vless
-  server: 104.16.143.237
-  port: 443
-  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /45.159.51.121=32199
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-TLS-🇸🇬(SG)-node1.nanonet.host
-  type: vless
-  server: node1.nanonet.host
-  port: 22539
-  uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
-  network: tcp
-  tls: true
-  servername: node1.nanonet.host
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇰🇿(KZ)-91.147.92.76
-  type: vless
-  server: 91.147.92.76
-  port: 443
-  uuid: 1c4aceb6-bff7-4737-8c5d-43afb3dc350b
-  network: tcp
-  tls: true
-  servername: hls-svod.itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇩🇪(DE)-51.91.101.216
-  type: vless
-  server: 51.91.101.216
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.v6.navy
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳 @WangCai2
-    headers:
-      Host: sni.111000.v6.navy
-- name: VLESS-TCP-TLS-🇸🇬(SG)-66.42.54.48
-  type: vless
-  server: 66.42.54.48
-  port: 22539
-  uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
-  network: tcp
-  tls: true
-  servername: node1.nanonet.host
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-wolfb16.servers1mart.ir
-  type: vless
-  server: wolfb16.servers1mart.ir
-  port: 2096
-  uuid: 3f42b528-59ef-45f9-9ba3-6292ca46f909
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-nodejs.org_1
-  type: vless
-  server: nodejs.org
-  port: 443
-  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /164.52.2.98=443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇲🇾(MY)-45.89.107.200
-  type: vless
-  server: 45.89.107.200
-  port: 8443
-  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_28
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: c4be5399-3a11-46ad-a92a-294b4f7b2690
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /64.176.36.17=443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_29
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: 919af912-eae0-4185-8957-d11d4893e746
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /158.101.131.94=2083
-    headers:
-      Host: afrcloud22.mmv.kr
 - name: VLESS-WS-TLS-🇹🇼(TW)-114.33.57.170
   type: vless
   server: 114.33.57.170
@@ -2768,30 +2417,247 @@ proxies:
     path: /114.33.57.170:443
     headers:
       Host: 63.hhhhh.eu.org
-- name: VLESS-WS-TLS-🇺🇸(US)-nodejs.org_2
+- name: VLESS-WS-TLS-🇨🇭(CH)-104.21.227.134
   type: vless
-  server: nodejs.org
+  server: 104.21.227.134
+  port: 2096
+  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
+  network: ws
+  tls: true
+  servername: ca.adobe-connect.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ca.adobe-connect.top
+- name: VLESS-TCP-REALITY-🇲🇾(MY)-45.89.107.200
+  type: vless
+  server: 45.89.107.200
+  port: 8443
+  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-185.241.193.60
+  type: vless
+  server: 185.241.193.60
+  port: 443
+  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
+  network: tcp
+  tls: true
+  servername: us.reality.tv123.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_29
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: 6eb4311c-e5cd-458f-a142-83417ac34245
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /129.158.198.241=8443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇰🇿(KZ)-91.147.92.14
+  type: vless
+  server: 91.147.92.14
+  port: 443
+  uuid: 1c4aceb6-bff7-4737-8c5d-43afb3dc350b
+  network: tcp
+  tls: true
+  servername: hls-svod.itunes.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-78.159.110.54
+  type: vless
+  server: 78.159.110.54
+  port: 443
+  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
+  network: tcp
+  tls: true
+  servername: www.jobinvest.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-144.31.17.80
+  type: vless
+  server: 144.31.17.80
+  port: 30677
+  uuid: b86c0cdc-8a02-4da4-8693-72ba27005587
+  network: tcp
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_3
+  type: vless
+  server: 104.26.15.21
+  port: 443
+  uuid: 7dbc427e-1afd-4f76-b916-f7349e8131ce
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /44.217.235.114=8443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_30
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: 31ded4f6-2460-41b1-8922-94632c5c5543
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /132.226.21.116=6056
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.232
+  type: vless
+  server: 109.172.55.232
+  port: 13760
+  uuid: 5fad3ad2-1a94-40d0-85bb-51eb83f5c7df
+  network: tcp
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_31
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: 931dc751-9096-44ce-84a5-89f10505bd65
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.151.132.228=19034
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_5
+  type: vless
+  server: 172.67.73.14
+  port: 443
+  uuid: 026f6d6a-8850-4394-8b3e-2145bef6ca81
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /44.244.220.166=443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-178.162.242.24
+  type: vless
+  server: 178.162.242.24
+  port: 443
+  uuid: f23b2b7e-c876-4f7f-bca5-20a4f57c3864
+  network: tcp
+  tls: true
+  servername: www.jobinvest.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇭🇰(HK)-141.98.234.40
+  type: vless
+  server: 141.98.234.40
+  port: 62520
+  uuid: be69896f-e641-41d9-bfc8-1e30885263d2
+  network: tcp
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇵🇱(PL)-pol2.linkey37.ru
+  type: vless
+  server: pol2.linkey37.ru
+  port: 443
+  uuid: 6824d622-0f9f-4327-9201-87e59808d0de
+  network: tcp
+  tls: true
+  servername: www.yandex.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_4
+  type: vless
+  server: 104.26.15.21
+  port: 443
+  uuid: 16068e83-af4c-49ba-8048-98fcff3e5e7b
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /131.186.26.129=30443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-172.67.210.52
+  type: vless
+  server: 172.67.210.52
   port: 443
   uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
   network: ws
   tls: true
-  servername: joinProxyVPN11.afrcloud22.mmv.kr
+  servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /150.109.11.223=443
+    path: /185.186.245.40:81
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39_1
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_32
   type: vless
-  server: 188.253.26.39
-  port: 442
-  uuid: e929f51d-5a95-5432-b66f-cfe725ea1f61
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: d22531a3-bd03-465f-a91a-efafdbbf8ce6
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /132.145.127.203=8443#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_6
+  type: vless
+  server: 104.26.14.21
+  port: 443
+  uuid: 1e681d1b-3f6e-4bd4-9fed-b8976bd1b3be
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /45.76.192.129=24434
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇸🇬(SG)-a.monohob.eu.org
+  type: vless
+  server: a.monohob.eu.org
+  port: 443
+  uuid: 4f4a8022-0a8e-4f55-9883-777b6830802e
+  network: ws
+  tls: true
+  servername: a.monohob.eu.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /vless
+    headers:
+      Host: a.monohob.eu.org
+- name: VLESS-TCP-REALITY-🇦🇺(AU)-45.15.185.69
+  type: vless
+  server: 45.15.185.69
+  port: 8443
+  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
   network: tcp
   tls: true
-  servername: yahoo.com
+  servername: www.cloudflare.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_30
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_33
   type: vless
   server: afrcloud22.mmv.kr
   port: 443
@@ -2802,6 +2668,81 @@ proxies:
   client-fingerprint: chrome
   ws-opts:
     path: /132.145.127.203=8443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-TCP-REALITY-🇦🇺(AU)-45.15.185.69_1
+  type: vless
+  server: 45.15.185.69
+  port: 8443
+  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_34
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: 6fab6cc6-e340-4073-93e1-c6c6802002c7
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /167.179.110.68=8443
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-104.26.7.13
+  type: vless
+  server: 104.26.7.13
+  port: 443
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /185.186.245.40:81
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_35
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: dfb16e58-dc01-4a0b-8575-0c99d8e25735
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /140.83.83.65=9872
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-104.21.95.114
+  type: vless
+  server: 104.21.95.114
+  port: 443
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /185.186.245.40:81
+    headers:
+      Host: afrcloud22.mmv.kr
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_36
+  type: vless
+  server: afrcloud22.mmv.kr
+  port: 443
+  uuid: fc8b6c4c-bbc4-4533-88a6-0cf225bf4a66
+  network: ws
+  tls: true
+  servername: afrcloud22.mmv.kr
+  client-fingerprint: chrome
+  ws-opts:
+    path: /3.0.50.69=443
     headers:
       Host: afrcloud22.mmv.kr
 - name: VLESS-WS-TLS-🇺🇸(US)-104.16.0.108
@@ -2817,22 +2758,22 @@ proxies:
     path: /5.223.47.32=443
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_2
+- name: VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_1
   type: vless
   server: chatgpt.com
   port: 443
-  uuid: fc8b6c4c-bbc4-4533-88a6-0cf225bf4a66
+  uuid: e8add82d-0a0a-4f3b-a22e-c74f83da73b9
   network: ws
   tls: true
   servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /3.0.50.69=443
+    path: /138.2.64.229=443
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-104.16.142.237
+- name: VLESS-WS-TLS-🇺🇸(US)-172.66.128.70_1
   type: vless
-  server: 104.16.142.237
+  server: 172.66.128.70
   port: 443
   uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
   network: ws
@@ -2840,72 +2781,10 @@ proxies:
   servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /45.159.51.121=32199
+    path: /164.52.2.98=443
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-185.254.98.164
-  type: vless
-  server: 185.254.98.164
-  port: 443
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-  network: tcp
-  tls: true
-  servername: de.cdn.stun.su
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_31
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: dfb16e58-dc01-4a0b-8575-0c99d8e25735
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /140.83.83.65=9872
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
-  type: vless
-  server: v2ray.codefyinc.com
-  port: 443
-  uuid: 0417be58-2ea8-49de-8083-9eff9b0137e5
-  network: ws
-  tls: true
-  servername: v2ray.codefyinc.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: v2ray.codefyinc.com
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_32
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: 6fab6cc6-e340-4073-93e1-c6c6802002c7
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /167.179.110.68=8443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-nodejs.org_3
-  type: vless
-  server: nodejs.org
-  port: 443
-  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /47.130.35.116=8888
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-nodejs.org_4
+- name: VLESS-WS-TLS-🇺🇸(US)-nodejs.org_1
   type: vless
   server: nodejs.org
   port: 443
@@ -2918,44 +2797,35 @@ proxies:
     path: /178.128.80.43=443
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_33
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_37
   type: vless
   server: afrcloud22.mmv.kr
   port: 443
-  uuid: fc8b6c4c-bbc4-4533-88a6-0cf225bf4a66
+  uuid: 919af912-eae0-4185-8957-d11d4893e746
   network: ws
   tls: true
   servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /3.0.50.69=443
+    path: /158.101.131.94=2083
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🌐(XX)-nl-amst-node.genadata.online
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_38
   type: vless
-  server: nl-amst-node.genadata.online
-  port: 2040
-  uuid: 14818654-7689-453a-9a1f-4c72f89782d5
-  network: tcp
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_5
-  type: vless
-  server: 104.26.14.21
+  server: afrcloud22.mmv.kr
   port: 443
-  uuid: 1e681d1b-3f6e-4bd4-9fed-b8976bd1b3be
+  uuid: 0ec1c958-0087-4ca6-b4b2-b846c0f62419
   network: ws
   tls: true
   servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /45.76.192.129=24434
+    path: /45.32.100.46=13802
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-udemy.com
+- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_39
   type: vless
-  server: udemy.com
+  server: afrcloud22.mmv.kr
   port: 443
   uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
   network: ws
@@ -2963,35 +2833,22 @@ proxies:
   servername: afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /45.159.51.121=32199
+    path: /103.6.207.108=8080
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_34
+- name: VLESS-WS-TLS-🇺🇸(US)-107.174.198.228
   type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: 8cd91b7a-9c3f-4228-b710-dea410234641
+  server: 107.174.198.228
+  port: 8443
+  uuid: 699fca60-533f-4436-38db-7881c2150fe2
   network: ws
   tls: true
-  servername: afrcloud22.mmv.kr
+  servername: 53e5ab44.lfree.cn.mt
   client-fingerprint: chrome
   ws-opts:
-    path: /193.123.253.225=4333
+    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
     headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_3
-  type: vless
-  server: chatgpt.com
-  port: 443
-  uuid: a1923428-524e-46c3-936d-16cda1656763
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /3.0.50.69=443
-    headers:
-      Host: afrcloud22.mmv.kr
+      Host: 53e5ab44.lfree.cn.mt
 - name: VLESS-WS-TLS-🇺🇸(US)-104.17.98.251
   type: vless
   server: 104.17.98.251
@@ -3002,49 +2859,10 @@ proxies:
   servername: joinProxyVPN11.afrcloud22.mmv.kr
   client-fingerprint: chrome
   ws-opts:
-    path: /150.109.11.223=443
+    path: /91.192.81.154=2053
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_35
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: 01036a14-7758-4795-b453-2625aa8ee2b5
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /138.2.89.238=43254
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_36
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: daa49cad-8a27-497f-9eba-716f1549f1ee
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /167.99.73.22=443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_4
-  type: vless
-  server: chatgpt.com
-  port: 443
-  uuid: e950cb3d-ddc9-4426-bfb5-7056de3ebe5e
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /129.150.58.86=57621
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-nodejs.org_5
+- name: VLESS-WS-TLS-🇺🇸(US)-nodejs.org_2
   type: vless
   server: nodejs.org
   port: 443
@@ -3057,342 +2875,258 @@ proxies:
     path: /146.235.18.248=45137
     headers:
       Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /209.97.173.243=443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_37
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: e950cb3d-ddc9-4426-bfb5-7056de3ebe5e
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /129.150.58.86=57621
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_5
-  type: vless
-  server: chatgpt.com
-  port: 443
-  uuid: daa49cad-8a27-497f-9eba-716f1549f1ee
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /167.99.73.22=443
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_6
-  type: vless
-  server: chatgpt.com
-  port: 443
-  uuid: 9751a75b-b27c-4766-9e67-380599588612
-  network: ws
-  tls: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  ws-opts:
-    path: /138.2.95.61=1111
-    headers:
-      Host: afrcloud22.mmv.kr
-- name: VLESS-TCP-REALITY-🇭🇰(HK)-141.98.234.40
-  type: vless
-  server: 141.98.234.40
-  port: 62520
-  uuid: be69896f-e641-41d9-bfc8-1e30885263d2
-  network: tcp
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-VLESS
   type: url-test
   proxies: &id001
-  - VLESS-WS-TLS-🇺🇸(US)-49.238.236.13
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21
-  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr
-  - VLESS-WS-TLS-🇺🇸(US)-blackshadow.dpdns.org
-  - VLESS-WS-TLS-🇺🇸(US)-cm.cf.090227.xyz
-  - VLESS-WS-TLS-🇺🇸(US)-nekocloud.tencentapp.cn
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21
-  - VLESS-TCP-REALITY-🇺🇸(US)-free-us.moscow-neversleep.digital
-  - VLESS-WS-TLS-🇺🇸(US)-199.119.137.95
-  - VLESS-WS-TLS-🇺🇸(US)-cdns.doon.eu.org
-  - VLESS-WS-TLS-🇺🇸(US)-162.159.12.151
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_1
-  - VLESS-TCP-REALITY-🇺🇸(US)-free-us.moscow-neversleep.digital_1
-  - VLESS-WS-TLS-🇺🇸(US)-ipbaz.ping-box.com
-  - VLESS-TCP-REALITY-🇺🇸(US)-172.234.130.82
-  - VLESS-WS-TLS-🇺🇸(US)-cf.cloudflare.182682.xyz
+  - VLESS-TCP-REALITY-🇺🇸(US)-7.cdnconn.com
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
+  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14
   - VLESS-WS-TLS-🇺🇸(US)-bestcf.030101.xyz
-  - VLESS-WS-TLS-🇺🇸(US)-185.158.133.138
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.195
+  - VLESS-TCP-REALITY-🇺🇸(US)-107.174.85.183
+  - VLESS-WS-TLS-🇺🇸(US)-cdns.doon.eu.org
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197
+  - VLESS-TCP-REALITY-🇺🇸(US)-142.248.80.157
+  - VLESS-WS-TLS-🇺🇸(US)-27.50.48.69
+  - VLESS-WS-TLS-🇺🇸(US)-cm.cf.090227.xyz
+  - VLESS-WS-TLS-🇺🇸(US)-185.18.250.238
   - VLESS-WS-TLS-🇺🇸(US)-mfa.gov.ua
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_2
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_1
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_1
+  - VLESS-WS-TLS-🇨🇦(CA)-cf.cloudflare.182682.xyz
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_2
+  - VLESS-WS-TLS-🇺🇸(US)-nekocloud.tencentapp.cn
+  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_1
+  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_2
+  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_3
   - VLESS-WS-TLS-🇺🇸(US)-saas.sin.fan
+  - VLESS-WS-TLS-🇺🇸(US)-212.183.88.238
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_2
+  - VLESS-WS-TLS-🇺🇸(US)-blackshadow.dpdns.org
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_3
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_3
+  - VLESS-TCP-REALITY-🇺🇸(US)-74.48.142.49
+  - VLESS-WS-TLS-🇺🇸(US)-cdnjs.com
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_4
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_5
-  - VLESS-WS-TLS-🇺🇸(US)-159.246.55.238
-  - VLESS-WS-TLS-🇺🇸(US)-154.194.12.238
-  - VLESS-WS-TLS-🇺🇸(US)-yg1.ygkkk.dpdns.org
-  - VLESS-WS-TLS-🇺🇸(US)-38.244.204.106
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_6
-  - VLESS-WS-TLS-🇺🇸(US)-212.183.88.238
-  - VLESS-TCP-REALITY-🇺🇸(US)-74.48.142.49
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_1
-  - VLESS-TCP-REALITY-🇺🇸(US)-107.174.85.183
-  - VLESS-WS-TLS-🇺🇸(US)-5.10.247.238
-  - VLESS-WS-TLS-🇺🇸(US)-104.129.166.238
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.195
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197
   - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
-  - VLESS-XHTTP-TLS-🇩🇪(DE)-chatgpt.com
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206
-  - VLESS-WS-TLS-🇺🇸(US)-185.148.104.238
-  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_1
-  - VLESS-WS-TLS-🇺🇸(US)-185.193.29.138
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_7
-  - VLESS-XHTTP-TLS-🇩🇪(DE)-cdn.speadmaster.ir
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.68.198.114
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_2
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.165.128
-  - VLESS-WS-TLS-🇺🇸(US)-f1.hamrahconf.ir
-  - VLESS-WS-TLS-🇺🇸(US)-27.50.48.69
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_8
-  - VLESS-XHTTP-TLS-🇩🇪(DE)-tunner4.shahrbazihzagros.ir
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_9
-  - VLESS-TCP-REALITY-🇬🇧(GB)-vb27.homianco.ir
-  - VLESS-WS-TLS-🇺🇸(US)-185.135.9.138
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_1
-  - VLESS-XHTTP-TLS-🇩🇪(DE)-cdn.speadmaster.ir_1
-  - VLESS-WS-TLS-🇨🇦(CA)-107.174.36.103
-  - VLESS-TCP-REALITY-🇬🇧(GB)-vb04.homianco.ir
-  - VLESS-WS-TLS-🇺🇸(US)-176.124.223.138
-  - VLESS-XHTTP-TLS-🇩🇪(DE)-tunner1.shahrbazihzagros.ir
-  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.197.124
-  - VLESS-TCP-REALITY-🇬🇧(GB)-87.120.219.99
-  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.63.7
-  - VLESS-TCP-REALITY-🇫🇷(FR)-195.154.200.13
   - VLESS-WS-TLS-🇺🇸(US)-104.18.0.144
-  - VLESS-TCP-REALITY-🇮🇪(IE)-45.141.234.196
-  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_2
-  - VLESS-WS-TLS-🇺🇸(US)-88.216.66.238
-  - VLESS-TCP-REALITY-🇩🇪(DE)-57.129.53.181
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_10
-  - VLESS-WS-TLS-🇫🇷(FR)-51.44.27.45
-  - VLESS-TCP-REALITY-🇸🇪(SE)-62.182.196.100
-  - VLESS-TCP-REALITY-🇫🇷(FR)-maxa06.gaterserver.ir
-  - VLESS-TCP-REALITY-🇳🇱(NL)-62.84.97.47
-  - VLESS-TCP-REALITY-🇫🇷(FR)-51.38.32.227
-  - VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.220
-  - VLESS-WS-TLS-🇺🇸(US)-47.251.95.178
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_11
-  - VLESS-TCP-REALITY-🇳🇱(NL)-37.16.74.19
-  - VLESS-TCP-REALITY-🇩🇪(DE)-57.129.53.182
-  - VLESS-WS-TLS-🇺🇸(US)-alalucarne.com
-  - VLESS-TCP-REALITY-🇩🇪(DE)-159.195.32.141
-  - VLESS-WS-TLS-🇺🇸(US)-104.18.32.47
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_12
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_13
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_6
   - VLESS-WS-TLS-🇺🇸(US)-chatgpt.com
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_3
-  - VLESS-WS-TLS-🇩🇪(DE)-18.153.205.232
-  - VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.157
-  - VLESS-TCP-REALITY-🇸🇪(SE)-62.182.195.78
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_14
-  - VLESS-GRPC-REALITY-🇩🇪(DE)-prime.dissertationhelpspecialist.com
-  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_3
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_15
-  - VLESS-WS-TLS-🇩🇪(DE)-3.78.14.11
-  - VLESS-TCP-REALITY-🇸🇪(SE)-62.182.196.132
-  - VLESS-WS-TLS-🇨🇭(CH)-104.21.227.134
+  - VLESS-TCP-REALITY-🇬🇧(GB)-87.120.219.99
+  - VLESS-XHTTP-TLS-🇩🇪(DE)-tunner4.shahrbazihzagros.ir
+  - VLESS-TCP-REALITY-🇳🇱(NL)-37.16.74.19
+  - VLESS-WS-TLS-🇺🇸(US)-ivyprotocol.com
   - VLESS-TCP-REALITY-🇳🇱(NL)-37.16.74.19_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-78.159.110.54
-  - VLESS-TCP-REALITY-🇩🇪(DE)-93.94.51.13
-  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.242.24
-  - VLESS-WS-TLS-🇺🇸(US)-45.130.125.69
-  - VLESS-TCP-REALITY-🇸🇪(SE)-62.182.196.134
-  - VLESS-TCP-REALITY-🇩🇪(DE)-80.253.251.122
-  - VLESS-WS-TLS-🇨🇭(CH)-104.21.224.5
-  - VLESS-TCP-REALITY-🇳🇱(NL)-nl.connectv.net
-  - VLESS-TCP-REALITY-🇬🇧(GB)-uk.connectv.net
-  - VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39
-  - VLESS-WS-TLS-🇺🇸(US)-194.59.5.238
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_2
-  - VLESS-TCP-REALITY-🇫🇮(FI)-2.cdnconn.com
-  - VLESS-TCP-REALITY-🇩🇪(DE)-78.159.110.55
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_16
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_3
-  - VLESS-TCP-REALITY-🇮🇪(IE)-45.141.234.159
-  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.242.23
-  - VLESS-WS-TLS-🇨🇭(CH)-172.66.47.45
-  - VLESS-WS-TLS-🇨🇭(CH)-v1.dabache.top
-  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.219.165
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_17
-  - VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.232
-  - VLESS-WS-TLS-🇨🇭(CH)-104.18.185.26
-  - VLESS-WS-TLS-🇺🇸(US)-209.141.33.79
-  - VLESS-WS-TLS-🇨🇭(CH)-172.66.44.211
-  - VLESS-WS-TLS-🇨🇭(CH)-172.66.47.45_1
-  - VLESS-GRPC-REALITY-🇪🇪(EE)-185.223.168.238
-  - VLESS-WS-TLS-🇨🇭(CH)-chatgpt.com
-  - VLESS-WS-TLS-🇺🇸(US)-165.227.11.101
-  - VLESS-TCP-REALITY-🇱🇻(LV)-185.145.245.21
-  - VLESS-TCP-REALITY-🇨🇿(CZ)-109.172.9.60
-  - VLESS-WS-TLS-🇺🇸(US)-146.235.196.203
-  - VLESS-GRPC-REALITY-🇩🇪(DE)-prime.dissertationhelpspecialist.com_1
-  - VLESS-WS-TLS-🇺🇸(US)-005.inc-electrocell-001-005-803.workers.dev
+  - VLESS-WS-TLS-🇺🇸(US)-sabasports.com
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_7
+  - VLESS-TCP-REALITY-🇬🇧(GB)-vb25.homianco.ir
+  - VLESS-TCP-REALITY-🇬🇧(GB)-51.68.198.114
+  - VLESS-WS-TLS-🇺🇸(US)-votewa.gov
   - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_4
-  - VLESS-WS-TLS-🇺🇸(US)-muddy-math-c1fc.tmpnriqueau89.workers.dev
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_18
-  - VLESS-WS-TLS-🇺🇸(US)-104.18.43.4
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_19
-  - VLESS-TCP-REALITY-🇱🇻(LV)-185.145.245.33
-  - VLESS-WS-TLS-🇨🇭(CH)-vip2.kaixincloud.top
-  - VLESS-TCP-REALITY-🇳🇱(NL)-104.234.1.101
-  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.219.117
-  - VLESS-TCP-REALITY-🌐(XX)-185.147.26.14
-  - VLESS-TCP-REALITY-🇩🇪(DE)-93.94.51.19
-  - VLESS-WS-TLS-🇬🇧(GB)-57.128.177.185
-  - VLESS-TCP-REALITY-🇷🇺(RU)-94.242.53.230
-  - VLESS-TCP-REALITY-🇷🇺(RU)-94.242.53.5
-  - VLESS-WS-TLS-🇨🇭(CH)-104.16.250.22
-  - VLESS-TCP-REALITY-🇸🇪(SE)-se.connectv.net
-  - VLESS-WS-TLS-🇨🇭(CH)-104.18.32.47
-  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134
-  - VLESS-TCP-REALITY-🇷🇺(RU)-94.242.51.28
-  - VLESS-WS-TLS-🇺🇸(US)-107.174.198.228
-  - VLESS-TCP-REALITY-🇸🇪(SE)-se.connectv.net_1
-  - VLESS-TCP-REALITY-🇵🇱(PL)-144.31.4.136
-  - VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_1
-  - VLESS-WS-TLS-🇳🇱(NL)-91.84.103.232
-  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_1
-  - VLESS-TCP-REALITY-🇫🇮(FI)-89.208.228.167
-  - VLESS-TCP-REALITY-🇵🇱(PL)-5.188.141.12
-  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_2
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_20
-  - VLESS-TCP-REALITY-🇷🇺(RU)-77.73.69.64
-  - VLESS-GRPC-REALITY-🇩🇪(DE)-144.31.117.60
-  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_3
-  - VLESS-TCP-REALITY-🇱🇻(LV)-45.43.79.73
-  - VLESS-TCP-REALITY-🇺🇦(UA)-5.cdnconn.com
-  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_4
-  - VLESS-TCP-REALITY-🇷🇺(RU)-46.243.233.78
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
-  - VLESS-TCP-REALITY-🇳🇱(NL)-185.241.193.60
-  - VLESS-TCP-REALITY-🇸🇪(SE)-84.201.132.223
-  - VLESS-TCP-REALITY-🇦🇹(AT)-152.53.66.46
-  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_5
-  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_6
-  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_4
+  - VLESS-WS-TLS-🇺🇸(US)-supportnation.com
+  - VLESS-XHTTP-TLS-🇩🇪(DE)-chatgpt.com
+  - VLESS-WS-TLS-🇺🇸(US)-concorsi-pubblici.org
+  - VLESS-WS-TLS-🇺🇸(US)-aaj.tv
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_8
+  - VLESS-WS-TLS-🇺🇸(US)-proxyelite.info
+  - VLESS-WS-TLS-🇺🇸(US)-erboristeriagiorgioni.it
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_9
+  - VLESS-TCP-REALITY-🇬🇧(GB)-vb13.homianco.ir
+  - VLESS-TCP-REALITY-🇮🇪(IE)-45.141.234.159
+  - VLESS-WS-TLS-🇺🇸(US)-146.235.196.203
+  - VLESS-WS-TLS-🇺🇸(US)-alalucarne.com
+  - VLESS-TCP-REALITY-🇩🇪(DE)-78.159.110.55
+  - VLESS-XHTTP-TLS-🇩🇪(DE)-172.67.190.220
+  - VLESS-XHTTP-TLS-🇩🇪(DE)-cdn.speadmaster.ir
+  - VLESS-WS-TLS-🇺🇸(US)-wpmap.org
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-prime.dissertationhelpspecialist.com
+  - VLESS-WS-TLS-🇺🇸(US)-209.141.33.79
+  - VLESS-TCP-REALITY-🇸🇪(SE)-62.182.196.134
+  - VLESS-XHTTP-TLS-🇩🇪(DE)-tunner1.shahrbazihzagros.ir
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_10
+  - VLESS-WS-TLS-🇺🇸(US)-b-nm.com
+  - VLESS-TCP-REALITY-🇫🇷(FR)-195.154.200.13
+  - VLESS-TCP-REALITY-🇸🇪(SE)-62.182.195.78
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-partners.dissertationhelpspecialist.com
+  - VLESS-XHTTP-TLS-🇩🇪(DE)-cdn.speadmaster.ir_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-57.129.53.182
+  - VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39
+  - VLESS-WS-TLS-🇫🇷(FR)-13.37.158.58
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-prime.dissertationhelpspecialist.com_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-80.253.251.122
+  - VLESS-TCP-REALITY-🇩🇪(DE)-93.94.51.13
+  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.242.23
+  - VLESS-TCP-REALITY-🇮🇪(IE)-45.141.234.196
+  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.219.165
+  - VLESS-TCP-REALITY-🇬🇧(GB)-uk.connectv.net
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_11
+  - VLESS-TCP-REALITY-🇩🇪(DE)-157.90.233.71
+  - VLESS-TCP-REALITY-🇫🇮(FI)-85.192.48.149
+  - VLESS-TCP-REALITY-🇩🇪(DE)-152.53.116.71
   - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.51.24
-  - VLESS-TCP-REALITY-🌐(XX)-4.cdnconn.com
-  - VLESS-TCP-REALITY-🇷🇺(RU)-51.250.103.29
-  - VLESS-TCP-REALITY-🇵🇱(PL)-3.cdnconn.com
-  - VLESS-TCP-REALITY-🇹🇷(TR)-77.83.245.189
-  - VLESS-TCP-REALITY-🇮🇹(IT)-89.150.57.167
-  - VLESS-WS-TLS-🇺🇸(US)-172.67.210.52
-  - VLESS-WS-TLS-🇺🇸(US)-172.66.128.70
-  - VLESS-TCP-REALITY-🇵🇱(PL)-51.250.77.163
-  - VLESS-TCP-REALITY-🇩🇪(DE)-185.241.193.60
-  - VLESS-WS-TLS-🇫🇮(FI)-f1.springpaatogh8.store
-  - VLESS-TCP-REALITY-🇩🇪(DE)-de-2.tconnect.services
-  - VLESS-TCP-REALITY-🇨🇱(CL)-45.82.249.129
-  - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.49.144
-  - VLESS-TCP-REALITY-🇷🇺(RU)-193.124.47.218
-  - VLESS-WS-TLS-🇬🇧(GB)-167.99.80.91
-  - VLESS-TCP-REALITY-🇸🇪(SE)-sweden.urban-network.space
-  - VLESS-TCP-REALITY-🌐(XX)-95.163.208.217
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_12
+  - VLESS-TCP-REALITY-🇫🇷(FR)-maxa06.gaterserver.ir
+  - VLESS-TCP-REALITY-🇫🇮(FI)-85.192.48.148
+  - VLESS-TCP-REALITY-🇵🇱(PL)-144.31.4.136
+  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.219.192
+  - VLESS-TCP-REALITY-🇫🇮(FI)-85.192.48.145
+  - VLESS-TCP-REALITY-🇫🇮(FI)-2.cdnconn.com
+  - VLESS-WS-TLS-🇩🇪(DE)-172.64.155.209
   - VLESS-TCP-REALITY-🇫🇮(FI)-fi.connectv.net
-  - VLESS-TCP-REALITY-🇮🇹(IT)-ita01-vlr02.tcp-reset-club.net
+  - VLESS-TCP-REALITY-🇱🇻(LV)-185.145.245.33
+  - VLESS-WS-TLS-🇩🇪(DE)-betty.ns.cloudflare.com
+  - VLESS-WS-TLS-🇩🇪(DE)-172.64.34.176
+  - VLESS-WS-TLS-🇩🇪(DE)-104.17.148.22
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_13
+  - VLESS-TCP-REALITY-🇱🇻(LV)-185.145.245.21
+  - VLESS-TCP-REALITY-🇫🇮(FI)-2.cdnconn.com_1
+  - VLESS-WS-TLS-🇩🇪(DE)-www.speedtest.net
+  - VLESS-TCP-REALITY-🇸🇪(SE)-se.connectv.net
+  - VLESS-WS-TLS-🇺🇸(US)-172.66.128.70
+  - VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39_1
+  - VLESS-WS-TLS-🇩🇪(DE)-172.64.35.45
+  - VLESS-WS-TLS-🇩🇪(DE)-108.162.193.217
+  - VLESS-WS-TLS-🇩🇪(DE)-52.57.206.229
+  - VLESS-WS-TLS-🇩🇪(DE)-cosmin.ns.cloudflare.com
+  - VLESS-TCP-REALITY-🇩🇪(DE)-103.27.157.79
+  - VLESS-TCP-REALITY-🇳🇱(NL)-104.234.1.101
+  - VLESS-TCP-REALITY-🇸🇪(SE)-se.connectv.net_1
+  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_4
+  - VLESS-WS-TLS-🇩🇪(DE)-king.pamelasli.ir
+  - VLESS-WS-TLS-🇩🇪(DE)-104.18.32.47
+  - VLESS-TCP-REALITY-🇫🇮(FI)-85.192.37.119
+  - VLESS-WS-TLS-🇩🇪(DE)-172.64.158.2
+  - VLESS-WS-TLS-🇩🇪(DE)-162.159.135.42
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_14
+  - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.48.237
+  - VLESS-TCP-REALITY-🇩🇪(DE)-93.94.51.19
+  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.219.117
+  - VLESS-TCP-REALITY-🇨🇿(CZ)-109.172.9.60
+  - VLESS-TCP-REALITY-🇨🇿(CZ)-109.172.9.60_1
+  - VLESS-WS-TLS-🇨🇭(CH)-172.66.47.45
+  - VLESS-TCP-REALITY-🇵🇱(PL)-3.cdnconn.com
+  - VLESS-WS-TLS-🇩🇪(DE)-108.162.194.99
+  - VLESS-WS-TLS-🇨🇭(CH)-104.21.224.5
+  - VLESS-TCP-REALITY-🇩🇪(DE)-152.53.116.71_1
+  - VLESS-WS-TLS-🇩🇪(DE)-173.245.58.75
+  - VLESS-WS-TLS-🇩🇪(DE)-vps.bkneed.ir
+  - VLESS-TCP-REALITY-🇸🇪(SE)-185.197.74.225
+  - VLESS-WS-TLS-🇩🇪(DE)-172.64.33.91
+  - VLESS-WS-TLS-🇩🇪(DE)-162.159.44.45
+  - VLESS-WS-TLS-🇨🇭(CH)-104.18.32.47
+  - VLESS-WS-TLS-🇨🇭(CH)-172.66.44.211
+  - VLESS-TCP-REALITY-🇩🇪(DE)-152.53.116.71_2
+  - VLESS-WS-TLS-🇩🇪(DE)-172.64.34.99
+  - VLESS-WS-TLS-🇺🇸(US)-005.inc-electrocell-001-005-803.workers.dev
+  - VLESS-WS-TLS-🇨🇭(CH)-104.16.250.22
+  - VLESS-WS-TLS-🇩🇪(DE)-delilah.ns.cloudflare.com
+  - VLESS-WS-TLS-🇨🇭(CH)-172.66.47.45_1
+  - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.48.224
+  - VLESS-WS-TLS-🇩🇪(DE)-108.162.194.176
+  - VLESS-TCP-REALITY-🇳🇱(NL)-185.241.193.60
+  - VLESS-TCP-REALITY-🇩🇪(DE)-185.241.195.90
+  - VLESS-WS-TLS-🇩🇪(DE)-173.245.59.91
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_15
+  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_16
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_17
+  - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.49.144
+  - VLESS-WS-TLS-🇨🇭(CH)-v1.dabache.top
   - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.51.29
+  - VLESS-WS-TLS-🇩🇪(DE)-108.162.192.75
+  - VLESS-WS-TLS-🇨🇭(CH)-chatgpt.com
+  - VLESS-TCP-REALITY-🇳🇱(NL)-185.241.195.90
+  - VLESS-TCP-REALITY-🇮🇹(IT)-ita01-vlr02.tcp-reset-club.net
+  - VLESS-TCP-REALITY-🇹🇷(TR)-77.83.245.189
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_18
+  - VLESS-WS-TLS-🇨🇭(CH)-104.18.185.26
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_5
+  - VLESS-TCP-REALITY-🇩🇪(DE)-185.241.193.60
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_19
+  - VLESS-TCP-REALITY-🇱🇻(LV)-45.43.79.73
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_20
+  - VLESS-TCP-REALITY-🇵🇱(PL)-45.144.51.22
+  - VLESS-WS-TLS-🇩🇪(DE)-172.64.32.75
   - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.49.130
-  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org
+  - VLESS-WS-TLS-🇩🇪(DE)-94.130.132.180
+  - VLESS-WS-TLS-🇩🇪(DE)-162.159.38.176
+  - VLESS-WS-TLS-🇨🇭(CH)-vip2.kaixincloud.top
+  - VLESS-TCP-REALITY-🇸🇪(SE)-85.239.59.149
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_21
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_22
-  - VLESS-TCP-REALITY-🇩🇪(DE)-84.201.129.161
-  - VLESS-TCP-REALITY-🇸🇪(SE)-85.239.59.149
+  - VLESS-TCP-REALITY-🇨🇱(CL)-45.82.249.129
+  - VLESS-WS-TLS-🇫🇮(FI)-moo1.valvehits.com
+  - VLESS-TCP-REALITY-🇨🇱(CL)-45.82.249.129_1
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-144.31.74.41
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_23
-  - VLESS-TCP-REALITY-🇫🇮(FI)-85.239.59.149
-  - VLESS-WS-TLS-🇩🇪(DE)-88.99.60.34
-  - VLESS-WS-TLS-🇫🇷(FR)-95.182.98.38
-  - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.48.224
-  - VLESS-WS-TLS-🇳🇱(NL)-103.137.250.250
-  - VLESS-TCP-REALITY-🇵🇱(PL)-212.233.98.234
-  - VLESS-WS-TLS-🇱🇻(LV)-194.8.6.33
-  - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.48.237
-  - VLESS-GRPC-REALITY-🇦🇹(AT)-51.250.3.71
-  - VLESS-TCP-REALITY-🇫🇮(FI)-51.250.43.209
-  - VLESS-WS-TLS-🇩🇪(DE)-141.95.127.132
-  - VLESS-XHTTP-TLS-🇫🇮(FI)-8.6.112.0
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_24
-  - VLESS-WS-TLS-🇺🇸(US)-185.251.81.238
-  - VLESS-WS-TLS-🇩🇪(DE)-172.64.145.38
-  - VLESS-TCP-REALITY-🇺🇸(US)-185.241.193.60
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.7.13
-  - VLESS-WS-TLS-🇺🇸(US)-174.138.48.29
+  - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.50.126
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-de.himikvpn.online
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_25
+  - VLESS-WS-TLS-🇺🇸(US)-104.18.43.4
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_26
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_27
-  - VLESS-WS-TLS-🇩🇪(DE)-199.247.23.140
-  - VLESS-GRPC-REALITY-🇩🇪(DE)-free.spectrum.vu
-  - VLESS-TCP-REALITY-🇬🇧(GB)-193.46.81.73
-  - VLESS-WS-TLS-🇺🇸(US)-104.21.95.114
-  - VLESS-TCP-REALITY-🇩🇪(DE)-free.spectrum.vu
-  - VLESS-WS-TLS-🇺🇸(US)-104.16.143.237
-  - VLESS-TCP-TLS-🇸🇬(SG)-node1.nanonet.host
-  - VLESS-TCP-REALITY-🇰🇿(KZ)-91.147.92.76
-  - VLESS-WS-TLS-🇩🇪(DE)-51.91.101.216
+  - VLESS-WS-TLS-🇫🇷(FR)-141.94.220.210
+  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_1
+  - VLESS-WS-TLS-🇩🇪(DE)-45.144.233.205
+  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org
   - VLESS-TCP-TLS-🇸🇬(SG)-66.42.54.48
-  - VLESS-TCP-REALITY-🇩🇪(DE)-wolfb16.servers1mart.ir
-  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org_1
-  - VLESS-TCP-REALITY-🇲🇾(MY)-45.89.107.200
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_28
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_29
+  - VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.157
+  - VLESS-TCP-REALITY-🇳🇱(NL)-51.250.65.209
+  - VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.220
+  - VLESS-TCP-REALITY-🌐(XX)-144.31.197.124
+  - VLESS-TCP-TLS-🇸🇬(SG)-node1.nanonet.host
+  - VLESS-TCP-REALITY-🇹🇷(TR)-77.83.245.171
+  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_2
+  - VLESS-TCP-REALITY-🇫🇮(FI)-85.239.59.149
   - VLESS-WS-TLS-🇹🇼(TW)-114.33.57.170
-  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org_2
-  - VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39_1
+  - VLESS-WS-TLS-🇨🇭(CH)-104.21.227.134
+  - VLESS-TCP-REALITY-🇲🇾(MY)-45.89.107.200
+  - VLESS-TCP-REALITY-🇺🇸(US)-185.241.193.60
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_29
+  - VLESS-TCP-REALITY-🇰🇿(KZ)-91.147.92.14
+  - VLESS-TCP-REALITY-🇩🇪(DE)-78.159.110.54
+  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.17.80
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_3
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_30
-  - VLESS-WS-TLS-🇺🇸(US)-104.16.0.108
-  - VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_2
-  - VLESS-WS-TLS-🇺🇸(US)-104.16.142.237
-  - VLESS-TCP-REALITY-🇩🇪(DE)-185.254.98.164
+  - VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.232
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_31
-  - VLESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_32
-  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org_3
-  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org_4
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_33
-  - VLESS-TCP-REALITY-🌐(XX)-nl-amst-node.genadata.online
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_5
-  - VLESS-WS-TLS-🇺🇸(US)-udemy.com
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_34
-  - VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_3
-  - VLESS-WS-TLS-🇺🇸(US)-104.17.98.251
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_35
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_36
-  - VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_4
-  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org_5
-  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_37
-  - VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_5
-  - VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_6
+  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_5
+  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.242.24
   - VLESS-TCP-REALITY-🇭🇰(HK)-141.98.234.40
+  - VLESS-TCP-REALITY-🇵🇱(PL)-pol2.linkey37.ru
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_4
+  - VLESS-WS-TLS-🇺🇸(US)-172.67.210.52
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_32
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_6
+  - VLESS-WS-TLS-🇸🇬(SG)-a.monohob.eu.org
+  - VLESS-TCP-REALITY-🇦🇺(AU)-45.15.185.69
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_33
+  - VLESS-TCP-REALITY-🇦🇺(AU)-45.15.185.69_1
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_34
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.7.13
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_35
+  - VLESS-WS-TLS-🇺🇸(US)-104.21.95.114
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_36
+  - VLESS-WS-TLS-🇺🇸(US)-104.16.0.108
+  - VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_1
+  - VLESS-WS-TLS-🇺🇸(US)-172.66.128.70_1
+  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org_1
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_37
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_38
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_39
+  - VLESS-WS-TLS-🇺🇸(US)-107.174.198.228
+  - VLESS-WS-TLS-🇺🇸(US)-104.17.98.251
+  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org_2
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -3409,277 +3143,254 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VLESS
   - 🔗 Auto-Failover-VLESS
-  - VLESS-WS-TLS-🇺🇸(US)-49.238.236.13
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21
-  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr
-  - VLESS-WS-TLS-🇺🇸(US)-blackshadow.dpdns.org
-  - VLESS-WS-TLS-🇺🇸(US)-cm.cf.090227.xyz
-  - VLESS-WS-TLS-🇺🇸(US)-nekocloud.tencentapp.cn
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21
-  - VLESS-TCP-REALITY-🇺🇸(US)-free-us.moscow-neversleep.digital
-  - VLESS-WS-TLS-🇺🇸(US)-199.119.137.95
-  - VLESS-WS-TLS-🇺🇸(US)-cdns.doon.eu.org
-  - VLESS-WS-TLS-🇺🇸(US)-162.159.12.151
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_1
-  - VLESS-TCP-REALITY-🇺🇸(US)-free-us.moscow-neversleep.digital_1
-  - VLESS-WS-TLS-🇺🇸(US)-ipbaz.ping-box.com
-  - VLESS-TCP-REALITY-🇺🇸(US)-172.234.130.82
-  - VLESS-WS-TLS-🇺🇸(US)-cf.cloudflare.182682.xyz
+  - VLESS-TCP-REALITY-🇺🇸(US)-7.cdnconn.com
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
+  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14
   - VLESS-WS-TLS-🇺🇸(US)-bestcf.030101.xyz
-  - VLESS-WS-TLS-🇺🇸(US)-185.158.133.138
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.195
+  - VLESS-TCP-REALITY-🇺🇸(US)-107.174.85.183
+  - VLESS-WS-TLS-🇺🇸(US)-cdns.doon.eu.org
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197
+  - VLESS-TCP-REALITY-🇺🇸(US)-142.248.80.157
+  - VLESS-WS-TLS-🇺🇸(US)-27.50.48.69
+  - VLESS-WS-TLS-🇺🇸(US)-cm.cf.090227.xyz
+  - VLESS-WS-TLS-🇺🇸(US)-185.18.250.238
   - VLESS-WS-TLS-🇺🇸(US)-mfa.gov.ua
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_2
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_1
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_1
+  - VLESS-WS-TLS-🇨🇦(CA)-cf.cloudflare.182682.xyz
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_2
+  - VLESS-WS-TLS-🇺🇸(US)-nekocloud.tencentapp.cn
+  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_1
+  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_2
+  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_3
   - VLESS-WS-TLS-🇺🇸(US)-saas.sin.fan
+  - VLESS-WS-TLS-🇺🇸(US)-212.183.88.238
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_2
+  - VLESS-WS-TLS-🇺🇸(US)-blackshadow.dpdns.org
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_3
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_3
+  - VLESS-TCP-REALITY-🇺🇸(US)-74.48.142.49
+  - VLESS-WS-TLS-🇺🇸(US)-cdnjs.com
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_4
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_5
-  - VLESS-WS-TLS-🇺🇸(US)-159.246.55.238
-  - VLESS-WS-TLS-🇺🇸(US)-154.194.12.238
-  - VLESS-WS-TLS-🇺🇸(US)-yg1.ygkkk.dpdns.org
-  - VLESS-WS-TLS-🇺🇸(US)-38.244.204.106
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_6
-  - VLESS-WS-TLS-🇺🇸(US)-212.183.88.238
-  - VLESS-TCP-REALITY-🇺🇸(US)-74.48.142.49
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_1
-  - VLESS-TCP-REALITY-🇺🇸(US)-107.174.85.183
-  - VLESS-WS-TLS-🇺🇸(US)-5.10.247.238
-  - VLESS-WS-TLS-🇺🇸(US)-104.129.166.238
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.195
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197
   - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
-  - VLESS-XHTTP-TLS-🇩🇪(DE)-chatgpt.com
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206
-  - VLESS-WS-TLS-🇺🇸(US)-185.148.104.238
-  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_1
-  - VLESS-WS-TLS-🇺🇸(US)-185.193.29.138
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_7
-  - VLESS-XHTTP-TLS-🇩🇪(DE)-cdn.speadmaster.ir
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.68.198.114
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_2
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.165.128
-  - VLESS-WS-TLS-🇺🇸(US)-f1.hamrahconf.ir
-  - VLESS-WS-TLS-🇺🇸(US)-27.50.48.69
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_8
-  - VLESS-XHTTP-TLS-🇩🇪(DE)-tunner4.shahrbazihzagros.ir
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_9
-  - VLESS-TCP-REALITY-🇬🇧(GB)-vb27.homianco.ir
-  - VLESS-WS-TLS-🇺🇸(US)-185.135.9.138
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_1
-  - VLESS-XHTTP-TLS-🇩🇪(DE)-cdn.speadmaster.ir_1
-  - VLESS-WS-TLS-🇨🇦(CA)-107.174.36.103
-  - VLESS-TCP-REALITY-🇬🇧(GB)-vb04.homianco.ir
-  - VLESS-WS-TLS-🇺🇸(US)-176.124.223.138
-  - VLESS-XHTTP-TLS-🇩🇪(DE)-tunner1.shahrbazihzagros.ir
-  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.197.124
-  - VLESS-TCP-REALITY-🇬🇧(GB)-87.120.219.99
-  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.63.7
-  - VLESS-TCP-REALITY-🇫🇷(FR)-195.154.200.13
   - VLESS-WS-TLS-🇺🇸(US)-104.18.0.144
-  - VLESS-TCP-REALITY-🇮🇪(IE)-45.141.234.196
-  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_2
-  - VLESS-WS-TLS-🇺🇸(US)-88.216.66.238
-  - VLESS-TCP-REALITY-🇩🇪(DE)-57.129.53.181
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_10
-  - VLESS-WS-TLS-🇫🇷(FR)-51.44.27.45
-  - VLESS-TCP-REALITY-🇸🇪(SE)-62.182.196.100
-  - VLESS-TCP-REALITY-🇫🇷(FR)-maxa06.gaterserver.ir
-  - VLESS-TCP-REALITY-🇳🇱(NL)-62.84.97.47
-  - VLESS-TCP-REALITY-🇫🇷(FR)-51.38.32.227
-  - VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.220
-  - VLESS-WS-TLS-🇺🇸(US)-47.251.95.178
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_11
-  - VLESS-TCP-REALITY-🇳🇱(NL)-37.16.74.19
-  - VLESS-TCP-REALITY-🇩🇪(DE)-57.129.53.182
-  - VLESS-WS-TLS-🇺🇸(US)-alalucarne.com
-  - VLESS-TCP-REALITY-🇩🇪(DE)-159.195.32.141
-  - VLESS-WS-TLS-🇺🇸(US)-104.18.32.47
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_12
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_13
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_6
   - VLESS-WS-TLS-🇺🇸(US)-chatgpt.com
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_3
-  - VLESS-WS-TLS-🇩🇪(DE)-18.153.205.232
-  - VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.157
-  - VLESS-TCP-REALITY-🇸🇪(SE)-62.182.195.78
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_14
-  - VLESS-GRPC-REALITY-🇩🇪(DE)-prime.dissertationhelpspecialist.com
-  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_3
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_15
-  - VLESS-WS-TLS-🇩🇪(DE)-3.78.14.11
-  - VLESS-TCP-REALITY-🇸🇪(SE)-62.182.196.132
-  - VLESS-WS-TLS-🇨🇭(CH)-104.21.227.134
+  - VLESS-TCP-REALITY-🇬🇧(GB)-87.120.219.99
+  - VLESS-XHTTP-TLS-🇩🇪(DE)-tunner4.shahrbazihzagros.ir
+  - VLESS-TCP-REALITY-🇳🇱(NL)-37.16.74.19
+  - VLESS-WS-TLS-🇺🇸(US)-ivyprotocol.com
   - VLESS-TCP-REALITY-🇳🇱(NL)-37.16.74.19_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-78.159.110.54
-  - VLESS-TCP-REALITY-🇩🇪(DE)-93.94.51.13
-  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.242.24
-  - VLESS-WS-TLS-🇺🇸(US)-45.130.125.69
-  - VLESS-TCP-REALITY-🇸🇪(SE)-62.182.196.134
-  - VLESS-TCP-REALITY-🇩🇪(DE)-80.253.251.122
-  - VLESS-WS-TLS-🇨🇭(CH)-104.21.224.5
-  - VLESS-TCP-REALITY-🇳🇱(NL)-nl.connectv.net
-  - VLESS-TCP-REALITY-🇬🇧(GB)-uk.connectv.net
-  - VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39
-  - VLESS-WS-TLS-🇺🇸(US)-194.59.5.238
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_2
-  - VLESS-TCP-REALITY-🇫🇮(FI)-2.cdnconn.com
-  - VLESS-TCP-REALITY-🇩🇪(DE)-78.159.110.55
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_16
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_3
-  - VLESS-TCP-REALITY-🇮🇪(IE)-45.141.234.159
-  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.242.23
-  - VLESS-WS-TLS-🇨🇭(CH)-172.66.47.45
-  - VLESS-WS-TLS-🇨🇭(CH)-v1.dabache.top
-  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.219.165
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_17
-  - VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.232
-  - VLESS-WS-TLS-🇨🇭(CH)-104.18.185.26
-  - VLESS-WS-TLS-🇺🇸(US)-209.141.33.79
-  - VLESS-WS-TLS-🇨🇭(CH)-172.66.44.211
-  - VLESS-WS-TLS-🇨🇭(CH)-172.66.47.45_1
-  - VLESS-GRPC-REALITY-🇪🇪(EE)-185.223.168.238
-  - VLESS-WS-TLS-🇨🇭(CH)-chatgpt.com
-  - VLESS-WS-TLS-🇺🇸(US)-165.227.11.101
-  - VLESS-TCP-REALITY-🇱🇻(LV)-185.145.245.21
-  - VLESS-TCP-REALITY-🇨🇿(CZ)-109.172.9.60
-  - VLESS-WS-TLS-🇺🇸(US)-146.235.196.203
-  - VLESS-GRPC-REALITY-🇩🇪(DE)-prime.dissertationhelpspecialist.com_1
-  - VLESS-WS-TLS-🇺🇸(US)-005.inc-electrocell-001-005-803.workers.dev
+  - VLESS-WS-TLS-🇺🇸(US)-sabasports.com
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_7
+  - VLESS-TCP-REALITY-🇬🇧(GB)-vb25.homianco.ir
+  - VLESS-TCP-REALITY-🇬🇧(GB)-51.68.198.114
+  - VLESS-WS-TLS-🇺🇸(US)-votewa.gov
   - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_4
-  - VLESS-WS-TLS-🇺🇸(US)-muddy-math-c1fc.tmpnriqueau89.workers.dev
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_18
-  - VLESS-WS-TLS-🇺🇸(US)-104.18.43.4
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_19
-  - VLESS-TCP-REALITY-🇱🇻(LV)-185.145.245.33
-  - VLESS-WS-TLS-🇨🇭(CH)-vip2.kaixincloud.top
-  - VLESS-TCP-REALITY-🇳🇱(NL)-104.234.1.101
-  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.219.117
-  - VLESS-TCP-REALITY-🌐(XX)-185.147.26.14
-  - VLESS-TCP-REALITY-🇩🇪(DE)-93.94.51.19
-  - VLESS-WS-TLS-🇬🇧(GB)-57.128.177.185
-  - VLESS-TCP-REALITY-🇷🇺(RU)-94.242.53.230
-  - VLESS-TCP-REALITY-🇷🇺(RU)-94.242.53.5
-  - VLESS-WS-TLS-🇨🇭(CH)-104.16.250.22
-  - VLESS-TCP-REALITY-🇸🇪(SE)-se.connectv.net
-  - VLESS-WS-TLS-🇨🇭(CH)-104.18.32.47
-  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134
-  - VLESS-TCP-REALITY-🇷🇺(RU)-94.242.51.28
-  - VLESS-WS-TLS-🇺🇸(US)-107.174.198.228
-  - VLESS-TCP-REALITY-🇸🇪(SE)-se.connectv.net_1
-  - VLESS-TCP-REALITY-🇵🇱(PL)-144.31.4.136
-  - VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_1
-  - VLESS-WS-TLS-🇳🇱(NL)-91.84.103.232
-  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_1
-  - VLESS-TCP-REALITY-🇫🇮(FI)-89.208.228.167
-  - VLESS-TCP-REALITY-🇵🇱(PL)-5.188.141.12
-  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_2
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_20
-  - VLESS-TCP-REALITY-🇷🇺(RU)-77.73.69.64
-  - VLESS-GRPC-REALITY-🇩🇪(DE)-144.31.117.60
-  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_3
-  - VLESS-TCP-REALITY-🇱🇻(LV)-45.43.79.73
-  - VLESS-TCP-REALITY-🇺🇦(UA)-5.cdnconn.com
-  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_4
-  - VLESS-TCP-REALITY-🇷🇺(RU)-46.243.233.78
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
-  - VLESS-TCP-REALITY-🇳🇱(NL)-185.241.193.60
-  - VLESS-TCP-REALITY-🇸🇪(SE)-84.201.132.223
-  - VLESS-TCP-REALITY-🇦🇹(AT)-152.53.66.46
-  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_5
-  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_6
-  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_4
+  - VLESS-WS-TLS-🇺🇸(US)-supportnation.com
+  - VLESS-XHTTP-TLS-🇩🇪(DE)-chatgpt.com
+  - VLESS-WS-TLS-🇺🇸(US)-concorsi-pubblici.org
+  - VLESS-WS-TLS-🇺🇸(US)-aaj.tv
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_8
+  - VLESS-WS-TLS-🇺🇸(US)-proxyelite.info
+  - VLESS-WS-TLS-🇺🇸(US)-erboristeriagiorgioni.it
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_9
+  - VLESS-TCP-REALITY-🇬🇧(GB)-vb13.homianco.ir
+  - VLESS-TCP-REALITY-🇮🇪(IE)-45.141.234.159
+  - VLESS-WS-TLS-🇺🇸(US)-146.235.196.203
+  - VLESS-WS-TLS-🇺🇸(US)-alalucarne.com
+  - VLESS-TCP-REALITY-🇩🇪(DE)-78.159.110.55
+  - VLESS-XHTTP-TLS-🇩🇪(DE)-172.67.190.220
+  - VLESS-XHTTP-TLS-🇩🇪(DE)-cdn.speadmaster.ir
+  - VLESS-WS-TLS-🇺🇸(US)-wpmap.org
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-prime.dissertationhelpspecialist.com
+  - VLESS-WS-TLS-🇺🇸(US)-209.141.33.79
+  - VLESS-TCP-REALITY-🇸🇪(SE)-62.182.196.134
+  - VLESS-XHTTP-TLS-🇩🇪(DE)-tunner1.shahrbazihzagros.ir
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_10
+  - VLESS-WS-TLS-🇺🇸(US)-b-nm.com
+  - VLESS-TCP-REALITY-🇫🇷(FR)-195.154.200.13
+  - VLESS-TCP-REALITY-🇸🇪(SE)-62.182.195.78
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-partners.dissertationhelpspecialist.com
+  - VLESS-XHTTP-TLS-🇩🇪(DE)-cdn.speadmaster.ir_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-57.129.53.182
+  - VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39
+  - VLESS-WS-TLS-🇫🇷(FR)-13.37.158.58
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-prime.dissertationhelpspecialist.com_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-80.253.251.122
+  - VLESS-TCP-REALITY-🇩🇪(DE)-93.94.51.13
+  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.242.23
+  - VLESS-TCP-REALITY-🇮🇪(IE)-45.141.234.196
+  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.219.165
+  - VLESS-TCP-REALITY-🇬🇧(GB)-uk.connectv.net
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_11
+  - VLESS-TCP-REALITY-🇩🇪(DE)-157.90.233.71
+  - VLESS-TCP-REALITY-🇫🇮(FI)-85.192.48.149
+  - VLESS-TCP-REALITY-🇩🇪(DE)-152.53.116.71
   - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.51.24
-  - VLESS-TCP-REALITY-🌐(XX)-4.cdnconn.com
-  - VLESS-TCP-REALITY-🇷🇺(RU)-51.250.103.29
-  - VLESS-TCP-REALITY-🇵🇱(PL)-3.cdnconn.com
-  - VLESS-TCP-REALITY-🇹🇷(TR)-77.83.245.189
-  - VLESS-TCP-REALITY-🇮🇹(IT)-89.150.57.167
-  - VLESS-WS-TLS-🇺🇸(US)-172.67.210.52
-  - VLESS-WS-TLS-🇺🇸(US)-172.66.128.70
-  - VLESS-TCP-REALITY-🇵🇱(PL)-51.250.77.163
-  - VLESS-TCP-REALITY-🇩🇪(DE)-185.241.193.60
-  - VLESS-WS-TLS-🇫🇮(FI)-f1.springpaatogh8.store
-  - VLESS-TCP-REALITY-🇩🇪(DE)-de-2.tconnect.services
-  - VLESS-TCP-REALITY-🇨🇱(CL)-45.82.249.129
-  - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.49.144
-  - VLESS-TCP-REALITY-🇷🇺(RU)-193.124.47.218
-  - VLESS-WS-TLS-🇬🇧(GB)-167.99.80.91
-  - VLESS-TCP-REALITY-🇸🇪(SE)-sweden.urban-network.space
-  - VLESS-TCP-REALITY-🌐(XX)-95.163.208.217
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_12
+  - VLESS-TCP-REALITY-🇫🇷(FR)-maxa06.gaterserver.ir
+  - VLESS-TCP-REALITY-🇫🇮(FI)-85.192.48.148
+  - VLESS-TCP-REALITY-🇵🇱(PL)-144.31.4.136
+  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.219.192
+  - VLESS-TCP-REALITY-🇫🇮(FI)-85.192.48.145
+  - VLESS-TCP-REALITY-🇫🇮(FI)-2.cdnconn.com
+  - VLESS-WS-TLS-🇩🇪(DE)-172.64.155.209
   - VLESS-TCP-REALITY-🇫🇮(FI)-fi.connectv.net
-  - VLESS-TCP-REALITY-🇮🇹(IT)-ita01-vlr02.tcp-reset-club.net
+  - VLESS-TCP-REALITY-🇱🇻(LV)-185.145.245.33
+  - VLESS-WS-TLS-🇩🇪(DE)-betty.ns.cloudflare.com
+  - VLESS-WS-TLS-🇩🇪(DE)-172.64.34.176
+  - VLESS-WS-TLS-🇩🇪(DE)-104.17.148.22
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_13
+  - VLESS-TCP-REALITY-🇱🇻(LV)-185.145.245.21
+  - VLESS-TCP-REALITY-🇫🇮(FI)-2.cdnconn.com_1
+  - VLESS-WS-TLS-🇩🇪(DE)-www.speedtest.net
+  - VLESS-TCP-REALITY-🇸🇪(SE)-se.connectv.net
+  - VLESS-WS-TLS-🇺🇸(US)-172.66.128.70
+  - VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39_1
+  - VLESS-WS-TLS-🇩🇪(DE)-172.64.35.45
+  - VLESS-WS-TLS-🇩🇪(DE)-108.162.193.217
+  - VLESS-WS-TLS-🇩🇪(DE)-52.57.206.229
+  - VLESS-WS-TLS-🇩🇪(DE)-cosmin.ns.cloudflare.com
+  - VLESS-TCP-REALITY-🇩🇪(DE)-103.27.157.79
+  - VLESS-TCP-REALITY-🇳🇱(NL)-104.234.1.101
+  - VLESS-TCP-REALITY-🇸🇪(SE)-se.connectv.net_1
+  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_4
+  - VLESS-WS-TLS-🇩🇪(DE)-king.pamelasli.ir
+  - VLESS-WS-TLS-🇩🇪(DE)-104.18.32.47
+  - VLESS-TCP-REALITY-🇫🇮(FI)-85.192.37.119
+  - VLESS-WS-TLS-🇩🇪(DE)-172.64.158.2
+  - VLESS-WS-TLS-🇩🇪(DE)-162.159.135.42
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_14
+  - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.48.237
+  - VLESS-TCP-REALITY-🇩🇪(DE)-93.94.51.19
+  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.219.117
+  - VLESS-TCP-REALITY-🇨🇿(CZ)-109.172.9.60
+  - VLESS-TCP-REALITY-🇨🇿(CZ)-109.172.9.60_1
+  - VLESS-WS-TLS-🇨🇭(CH)-172.66.47.45
+  - VLESS-TCP-REALITY-🇵🇱(PL)-3.cdnconn.com
+  - VLESS-WS-TLS-🇩🇪(DE)-108.162.194.99
+  - VLESS-WS-TLS-🇨🇭(CH)-104.21.224.5
+  - VLESS-TCP-REALITY-🇩🇪(DE)-152.53.116.71_1
+  - VLESS-WS-TLS-🇩🇪(DE)-173.245.58.75
+  - VLESS-WS-TLS-🇩🇪(DE)-vps.bkneed.ir
+  - VLESS-TCP-REALITY-🇸🇪(SE)-185.197.74.225
+  - VLESS-WS-TLS-🇩🇪(DE)-172.64.33.91
+  - VLESS-WS-TLS-🇩🇪(DE)-162.159.44.45
+  - VLESS-WS-TLS-🇨🇭(CH)-104.18.32.47
+  - VLESS-WS-TLS-🇨🇭(CH)-172.66.44.211
+  - VLESS-TCP-REALITY-🇩🇪(DE)-152.53.116.71_2
+  - VLESS-WS-TLS-🇩🇪(DE)-172.64.34.99
+  - VLESS-WS-TLS-🇺🇸(US)-005.inc-electrocell-001-005-803.workers.dev
+  - VLESS-WS-TLS-🇨🇭(CH)-104.16.250.22
+  - VLESS-WS-TLS-🇩🇪(DE)-delilah.ns.cloudflare.com
+  - VLESS-WS-TLS-🇨🇭(CH)-172.66.47.45_1
+  - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.48.224
+  - VLESS-WS-TLS-🇩🇪(DE)-108.162.194.176
+  - VLESS-TCP-REALITY-🇳🇱(NL)-185.241.193.60
+  - VLESS-TCP-REALITY-🇩🇪(DE)-185.241.195.90
+  - VLESS-WS-TLS-🇩🇪(DE)-173.245.59.91
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_15
+  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_16
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_17
+  - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.49.144
+  - VLESS-WS-TLS-🇨🇭(CH)-v1.dabache.top
   - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.51.29
+  - VLESS-WS-TLS-🇩🇪(DE)-108.162.192.75
+  - VLESS-WS-TLS-🇨🇭(CH)-chatgpt.com
+  - VLESS-TCP-REALITY-🇳🇱(NL)-185.241.195.90
+  - VLESS-TCP-REALITY-🇮🇹(IT)-ita01-vlr02.tcp-reset-club.net
+  - VLESS-TCP-REALITY-🇹🇷(TR)-77.83.245.189
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_18
+  - VLESS-WS-TLS-🇨🇭(CH)-104.18.185.26
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_5
+  - VLESS-TCP-REALITY-🇩🇪(DE)-185.241.193.60
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_19
+  - VLESS-TCP-REALITY-🇱🇻(LV)-45.43.79.73
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_20
+  - VLESS-TCP-REALITY-🇵🇱(PL)-45.144.51.22
+  - VLESS-WS-TLS-🇩🇪(DE)-172.64.32.75
   - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.49.130
-  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org
+  - VLESS-WS-TLS-🇩🇪(DE)-94.130.132.180
+  - VLESS-WS-TLS-🇩🇪(DE)-162.159.38.176
+  - VLESS-WS-TLS-🇨🇭(CH)-vip2.kaixincloud.top
+  - VLESS-TCP-REALITY-🇸🇪(SE)-85.239.59.149
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_21
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_22
-  - VLESS-TCP-REALITY-🇩🇪(DE)-84.201.129.161
-  - VLESS-TCP-REALITY-🇸🇪(SE)-85.239.59.149
+  - VLESS-TCP-REALITY-🇨🇱(CL)-45.82.249.129
+  - VLESS-WS-TLS-🇫🇮(FI)-moo1.valvehits.com
+  - VLESS-TCP-REALITY-🇨🇱(CL)-45.82.249.129_1
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-144.31.74.41
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_23
-  - VLESS-TCP-REALITY-🇫🇮(FI)-85.239.59.149
-  - VLESS-WS-TLS-🇩🇪(DE)-88.99.60.34
-  - VLESS-WS-TLS-🇫🇷(FR)-95.182.98.38
-  - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.48.224
-  - VLESS-WS-TLS-🇳🇱(NL)-103.137.250.250
-  - VLESS-TCP-REALITY-🇵🇱(PL)-212.233.98.234
-  - VLESS-WS-TLS-🇱🇻(LV)-194.8.6.33
-  - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.48.237
-  - VLESS-GRPC-REALITY-🇦🇹(AT)-51.250.3.71
-  - VLESS-TCP-REALITY-🇫🇮(FI)-51.250.43.209
-  - VLESS-WS-TLS-🇩🇪(DE)-141.95.127.132
-  - VLESS-XHTTP-TLS-🇫🇮(FI)-8.6.112.0
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_24
-  - VLESS-WS-TLS-🇺🇸(US)-185.251.81.238
-  - VLESS-WS-TLS-🇩🇪(DE)-172.64.145.38
-  - VLESS-TCP-REALITY-🇺🇸(US)-185.241.193.60
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.7.13
-  - VLESS-WS-TLS-🇺🇸(US)-174.138.48.29
+  - VLESS-GRPC-REALITY-🇦🇹(AT)-152.53.50.126
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-de.himikvpn.online
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_25
+  - VLESS-WS-TLS-🇺🇸(US)-104.18.43.4
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_26
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_27
-  - VLESS-WS-TLS-🇩🇪(DE)-199.247.23.140
-  - VLESS-GRPC-REALITY-🇩🇪(DE)-free.spectrum.vu
-  - VLESS-TCP-REALITY-🇬🇧(GB)-193.46.81.73
-  - VLESS-WS-TLS-🇺🇸(US)-104.21.95.114
-  - VLESS-TCP-REALITY-🇩🇪(DE)-free.spectrum.vu
-  - VLESS-WS-TLS-🇺🇸(US)-104.16.143.237
-  - VLESS-TCP-TLS-🇸🇬(SG)-node1.nanonet.host
-  - VLESS-TCP-REALITY-🇰🇿(KZ)-91.147.92.76
-  - VLESS-WS-TLS-🇩🇪(DE)-51.91.101.216
+  - VLESS-WS-TLS-🇫🇷(FR)-141.94.220.210
+  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_1
+  - VLESS-WS-TLS-🇩🇪(DE)-45.144.233.205
+  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org
   - VLESS-TCP-TLS-🇸🇬(SG)-66.42.54.48
-  - VLESS-TCP-REALITY-🇩🇪(DE)-wolfb16.servers1mart.ir
-  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org_1
-  - VLESS-TCP-REALITY-🇲🇾(MY)-45.89.107.200
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_28
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_29
+  - VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.157
+  - VLESS-TCP-REALITY-🇳🇱(NL)-51.250.65.209
+  - VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.220
+  - VLESS-TCP-REALITY-🌐(XX)-144.31.197.124
+  - VLESS-TCP-TLS-🇸🇬(SG)-node1.nanonet.host
+  - VLESS-TCP-REALITY-🇹🇷(TR)-77.83.245.171
+  - VLESS-TCP-REALITY-🇷🇺(RU)-5.129.249.134_2
+  - VLESS-TCP-REALITY-🇫🇮(FI)-85.239.59.149
   - VLESS-WS-TLS-🇹🇼(TW)-114.33.57.170
-  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org_2
-  - VLESS-TCP-REALITY-🇳🇱(NL)-188.253.26.39_1
+  - VLESS-WS-TLS-🇨🇭(CH)-104.21.227.134
+  - VLESS-TCP-REALITY-🇲🇾(MY)-45.89.107.200
+  - VLESS-TCP-REALITY-🇺🇸(US)-185.241.193.60
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_29
+  - VLESS-TCP-REALITY-🇰🇿(KZ)-91.147.92.14
+  - VLESS-TCP-REALITY-🇩🇪(DE)-78.159.110.54
+  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.17.80
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_3
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_30
-  - VLESS-WS-TLS-🇺🇸(US)-104.16.0.108
-  - VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_2
-  - VLESS-WS-TLS-🇺🇸(US)-104.16.142.237
-  - VLESS-TCP-REALITY-🇩🇪(DE)-185.254.98.164
+  - VLESS-TCP-REALITY-🇫🇷(FR)-109.172.55.232
   - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_31
-  - VLESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_32
-  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org_3
-  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org_4
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_33
-  - VLESS-TCP-REALITY-🌐(XX)-nl-amst-node.genadata.online
-  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_5
-  - VLESS-WS-TLS-🇺🇸(US)-udemy.com
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_34
-  - VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_3
-  - VLESS-WS-TLS-🇺🇸(US)-104.17.98.251
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_35
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_36
-  - VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_4
-  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org_5
-  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net
-  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_37
-  - VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_5
-  - VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_6
+  - VLESS-WS-TLS-🇺🇸(US)-172.67.73.14_5
+  - VLESS-TCP-REALITY-🇩🇪(DE)-178.162.242.24
   - VLESS-TCP-REALITY-🇭🇰(HK)-141.98.234.40
+  - VLESS-TCP-REALITY-🇵🇱(PL)-pol2.linkey37.ru
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.15.21_4
+  - VLESS-WS-TLS-🇺🇸(US)-172.67.210.52
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_32
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.14.21_6
+  - VLESS-WS-TLS-🇸🇬(SG)-a.monohob.eu.org
+  - VLESS-TCP-REALITY-🇦🇺(AU)-45.15.185.69
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_33
+  - VLESS-TCP-REALITY-🇦🇺(AU)-45.15.185.69_1
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_34
+  - VLESS-WS-TLS-🇺🇸(US)-104.26.7.13
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_35
+  - VLESS-WS-TLS-🇺🇸(US)-104.21.95.114
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_36
+  - VLESS-WS-TLS-🇺🇸(US)-104.16.0.108
+  - VLESS-WS-TLS-🇺🇸(US)-chatgpt.com_1
+  - VLESS-WS-TLS-🇺🇸(US)-172.66.128.70_1
+  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org_1
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_37
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_38
+  - VLESS-WS-TLS-🇺🇸(US)-afrcloud22.mmv.kr_39
+  - VLESS-WS-TLS-🇺🇸(US)-107.174.198.228
+  - VLESS-WS-TLS-🇺🇸(US)-104.17.98.251
+  - VLESS-WS-TLS-🇺🇸(US)-nodejs.org_2
 rule-providers:
   adblock:
     type: http
