@@ -14,50 +14,23 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.224.7.21
   type: trojan
-  server: 13.37.41.238
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_1
-  type: trojan
-  server: 13.37.41.238
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 13.37.41.238
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_2
-  type: trojan
-  server: 13.37.41.238
+  server: 15.224.7.21
   port: 22223
   uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: 15.224.7.21
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_3
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.57.181.116
   type: trojan
-  server: 13.37.41.238
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 13.37.41.238
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_4
-  type: trojan
-  server: 13.37.41.238
+  server: 52.57.181.116
   port: 22223
   uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: 13.37.41.238
+  servername: 52.57.181.116
   client-fingerprint: chrome
 - name: TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.248.219
   type: trojan
@@ -68,30 +41,47 @@ proxies:
   tls: true
   servername: aws.amazon.com
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
+- name: TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
   type: trojan
-  server: 104.21.75.193
+  server: 180.131.145.169
+  port: 18718
+  uuid: RmhZQ47pEm
+  network: grpc
+  tls: true
+  servername: www.tesla.com
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169_1
+  type: trojan
+  server: 180.131.145.169
+  port: 18718
+  uuid: RmhZQ47pEm
+  network: grpc
+  tls: true
+  servername: www.tesla.com
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
+  type: trojan
+  server: v2.dabache.top
   port: 443
-  uuid: bpb-trojan
+  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
   network: ws
   tls: true
-  servername: mashdt.pages.dev
+  servername: _acme-challenge.sb.cloudns.biz
   client-fingerprint: chrome
   ws-opts:
-    path: /tr?ed=2560
+    path: /
     headers:
-      Host: mashdt.pages.dev
+      Host: _acme-challenge.sb.cloudns.biz
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_2
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_3
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_4
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.224.7.21
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.181.116
   - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.248.219
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
+  - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
+  - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169_1
+  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -108,13 +98,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_2
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_3
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_4
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.224.7.21
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.181.116
   - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.248.219
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
+  - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
+  - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169_1
+  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
 rule-providers:
   adblock:
     type: http
