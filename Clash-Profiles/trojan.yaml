@@ -14,24 +14,32 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.224.7.21
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
-  server: 15.224.7.21
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
+  server: 172.67.180.227
+  port: 443
+  uuid: bpb-trojan
+  network: ws
   tls: true
-  servername: 15.224.7.21
+  servername: mashdt.pages.dev
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.57.181.116
+  ws-opts:
+    path: /tr?ed=2560
+    headers:
+      Host: mashdt.pages.dev
+- name: TROJAN-WS-TLS-🇨🇦(CA)-104.21.75.193
   type: trojan
-  server: 52.57.181.116
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
+  server: 104.21.75.193
+  port: 443
+  uuid: bpb-trojan
+  network: ws
   tls: true
-  servername: 52.57.181.116
+  servername: mashdt.pages.dev
   client-fingerprint: chrome
+  ws-opts:
+    path: /tr?ed=2560
+    headers:
+      Host: mashdt.pages.dev
 - name: TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.248.219
   type: trojan
   server: 91.108.248.219
@@ -41,23 +49,14 @@ proxies:
   tls: true
   servername: aws.amazon.com
   client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.29.103.93
   type: trojan
-  server: 180.131.145.169
-  port: 18718
-  uuid: RmhZQ47pEm
-  network: grpc
+  server: 52.29.103.93
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
   tls: true
-  servername: www.tesla.com
-  client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169_1
-  type: trojan
-  server: 180.131.145.169
-  port: 18718
-  uuid: RmhZQ47pEm
-  network: grpc
-  tls: true
-  servername: www.tesla.com
+  servername: 52.29.103.93
   client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
   type: trojan
@@ -76,11 +75,10 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.224.7.21
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.181.116
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.75.193
   - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.248.219
-  - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
-  - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.29.103.93
   - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
   tolerance: 50
   lazy: false
@@ -98,11 +96,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.224.7.21
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.181.116
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-WS-TLS-🇨🇦(CA)-104.21.75.193
   - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.248.219
-  - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169
-  - TROJAN-GRPC-REALITY-🇺🇸(US)-180.131.145.169_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-52.29.103.93
   - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
 rule-providers:
   adblock:
