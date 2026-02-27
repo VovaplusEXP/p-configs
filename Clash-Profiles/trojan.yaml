@@ -14,68 +14,11 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-🇺🇸(US)-162.159.33.95
-  type: trojan
-  server: 162.159.33.95
-  port: 80
-  uuid: 54aa90f6-46f5-417d-82ff-fe1197cf88fd
-  network: ws
-  tls: false
-  servername: 162.159.33.95
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: cool-snow-8be4.gjhgghg01.workers.dev
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238
   type: trojan
   server: 13.37.41.238
   port: 22222
   uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 13.37.41.238
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.57.206.229
-  type: trojan
-  server: 52.57.206.229
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: 52.57.206.229
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.176.199
-  type: trojan
-  server: 13.39.176.199
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.57.206.229_1
-  type: trojan
-  server: 52.57.206.229
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: 52.57.206.229
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.57.206.229_2
-  type: trojan
-  server: 52.57.206.229
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.57.206.229_3
-  type: trojan
-  server: 52.57.206.229
-  port: 22223
-  uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
@@ -89,15 +32,6 @@ proxies:
   tls: true
   servername: 13.37.41.238
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.176.199_1
-  type: trojan
-  server: 13.39.176.199
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: 13.39.176.199
-  client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_2
   type: trojan
   server: 13.37.41.238
@@ -107,19 +41,33 @@ proxies:
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_3
   type: trojan
-  server: irancell.buzzmuzzpanel.online
-  port: 443
-  uuid: freedom
-  network: ws
+  server: 13.37.41.238
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
   tls: true
-  servername: 047.eleCTROCelLco-Cf-047.woRkers.DEV
+  servername: 13.37.41.238
   client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoienRVUEM4N2p6dXE2Wm0iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
-    headers:
-      Host: 047.electrocellco-cf-047.workers.dev
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_4
+  type: trojan
+  server: 13.37.41.238
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: 13.37.41.238
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.248.219
+  type: trojan
+  server: 91.108.248.219
+  port: 23058
+  uuid: 2F7Pw5Jfim
+  network: grpc
+  tls: true
+  servername: aws.amazon.com
+  client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
   type: trojan
   server: 104.21.75.193
@@ -133,70 +81,17 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-52.57.206.229_4
-  type: trojan
-  server: 52.57.206.229
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 52.57.206.229
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_3
-  type: trojan
-  server: 13.37.41.238
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
-  type: trojan
-  server: usa.visa.com
-  port: 443
-  uuid: zWFjJENcljZm
-  network: ws
-  tls: true
-  servername: vahidqaz-7o61u7.vahidqaz.workers.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vahidqaz-7o61u7.vahidqaz.workers.dev
-- name: TROJAN-WS-TLS-🇸🇪(SE)-chatgpt.com
-  type: trojan
-  server: chatgpt.com
-  port: 8443
-  uuid: T9BpZIVMNv
-  network: ws
-  tls: true
-  servername: sweden.vmaxpanel.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /amd
-    headers:
-      Host: sweden.vmaxpanel.com
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-🇺🇸(US)-162.159.33.95
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.206.229
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.176.199
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.206.229_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.206.229_2
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.206.229_3
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.176.199_1
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_2
-  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.206.229_4
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_3
-  - TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
-  - TROJAN-WS-TLS-🇸🇪(SE)-chatgpt.com
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_4
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.248.219
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -213,22 +108,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-🇺🇸(US)-162.159.33.95
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.206.229
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.176.199
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.206.229_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.206.229_2
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.206.229_3
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.176.199_1
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_2
-  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
-  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
-  - TROJAN-TCP-TLS-🇩🇪(DE)-52.57.206.229_4
   - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_3
-  - TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
-  - TROJAN-WS-TLS-🇸🇪(SE)-chatgpt.com
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.41.238_4
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.248.219
+  - TROJAN-WS-TLS-🇺🇸(US)-104.21.75.193
 rule-providers:
   adblock:
     type: http
