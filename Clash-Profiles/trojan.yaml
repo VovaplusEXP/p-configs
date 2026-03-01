@@ -14,32 +14,32 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.66.187
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.157.43.29
   type: trojan
-  server: 13.39.66.187
+  server: 35.157.43.29
   port: 22223
   uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: 13.39.66.187
+  servername: 35.157.43.29
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.66.187_1
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.56
   type: trojan
-  server: 13.39.66.187
+  server: 13.39.197.56
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: 13.39.197.56
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.66.187_2
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.157.43.29_1
   type: trojan
-  server: 13.39.66.187
-  port: 22223
-  uuid: telegram-id-directvpn
+  server: 35.157.43.29
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: 35.157.43.29
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇬🇧(GB)-uk-1.fishchipsexpress.com
   type: trojan
@@ -50,7 +50,25 @@ proxies:
   tls: true
   servername: uk-1.fishchipsexpress.com
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.56_1
+  type: trojan
+  server: 13.39.197.56
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.157.43.29_2
+  type: trojan
+  server: 35.157.43.29
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇨🇦(CA)-irancell.buzzmuzzpanel.online
   type: trojan
   server: irancell.buzzmuzzpanel.online
   port: 443
@@ -63,53 +81,37 @@ proxies:
     path: /eyJqdW5rIjoienRVUEM4N2p6dXE2Wm0iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
     headers:
       Host: 047.electrocellco-cf-047.workers.dev
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.66.187_3
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.157.43.29_3
   type: trojan
-  server: 13.39.66.187
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: 35.157.43.29
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: 13.39.66.187
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.56_2
   type: trojan
-  server: v2.dabache.top
-  port: 443
-  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-  network: ws
+  server: 13.39.197.56
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
   tls: true
-  servername: _acme-challenge.sb.cloudns.biz
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: _acme-challenge.sb.cloudns.biz
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  type: trojan
-  server: 172.67.180.227
-  port: 443
-  uuid: bpb-trojan
-  network: ws
-  tls: true
-  servername: mashdt.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr?ed=2560
-    headers:
-      Host: mashdt.pages.dev
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.66.187
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.66.187_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.66.187_2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.43.29
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.56
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.43.29_1
   - TROJAN-TCP-TLS-🇬🇧(GB)-uk-1.fishchipsexpress.com
-  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.66.187_3
-  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.56_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.43.29_2
+  - TROJAN-WS-TLS-🇨🇦(CA)-irancell.buzzmuzzpanel.online
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.43.29_3
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.56_2
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -126,14 +128,15 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.66.187
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.66.187_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.66.187_2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.43.29
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.56
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.43.29_1
   - TROJAN-TCP-TLS-🇬🇧(GB)-uk-1.fishchipsexpress.com
-  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.66.187_3
-  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.56_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.43.29_2
+  - TROJAN-WS-TLS-🇨🇦(CA)-irancell.buzzmuzzpanel.online
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.43.29_3
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.56_2
 rule-providers:
   adblock:
     type: http
