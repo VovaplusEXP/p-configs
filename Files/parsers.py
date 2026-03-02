@@ -57,14 +57,21 @@ class Proxy:
     @property
     def unique_key(self):
         """Generates a unique key for deduplication purposes."""
+        # Only lowercase UUIDs for protocols that actually use a UUID,
+        # not a password like trojan.
+        if self.uuid:
+            norm_uuid = self.uuid.lower() if self.protocol != "trojan" else self.uuid
+        else:
+            norm_uuid = None
+
         if self.protocol == "vmess":
-            return ("vmess", self.host.lower(), self.port, self.uuid, self.transport, self.ws_path, self.ws_host, self.security)
+            return ("vmess", self.host.lower(), self.port, norm_uuid, self.transport, self.ws_path, self.ws_host, self.security, self.sni, self.grpc_service_name)
         elif self.protocol in ["vless", "trojan"]:
-            return (self.protocol, self.host.lower(), self.port, self.uuid, self.transport, self.security, self.ws_path, self.sni)
+            return (self.protocol, self.host.lower(), self.port, norm_uuid, self.transport, self.security, self.ws_path, self.ws_host, self.sni, self.grpc_service_name, self.publicKey, self.shortId, self.fingerprint)
         elif self.protocol == "ss":
             return ("ss", self.host.lower(), self.port, self.method, self.password)
         else: # tuic, hy2
-            return (self.protocol, self.host.lower(), self.port, self.uuid)
+            return (self.protocol, self.host.lower(), self.port, norm_uuid, self.sni)
 
 # --- Main Parser Function ---
 def parse_proxy(line: str) -> Optional[Proxy]:
@@ -107,13 +114,18 @@ def _parse_vmess(line: str) -> Optional[Proxy]:
     if not host or not port or not uuid or transport not in VALID_V_TRANSPORTS:
         return None
 
+    # In vmess JSON, gRPC serviceName is typically stored in the 'path' field
+    grpc_service_name = vmess_data.get("path") if transport == "grpc" else None
+    ws_path = vmess_data.get("path") if transport == "ws" else None
+
     return Proxy(
         protocol="vmess", original_line=line, host=host, port=port,
         name=vmess_data.get("ps"), uuid=uuid, alterId=int(vmess_data.get("aid", 0)),
         vmess_cipher=vmess_data.get("scy", "auto"), transport=transport,
         security="tls" if vmess_data.get("tls") in ["tls", True] else "none",
-        sni=vmess_data.get("host", host),
-        ws_path=vmess_data.get("path"), ws_host=vmess_data.get("host"),
+        sni=vmess_data.get("host", host) if vmess_data.get("host") else None,
+        ws_path=ws_path, ws_host=vmess_data.get("host"),
+        grpc_service_name=grpc_service_name,
         vmess_data=vmess_data
     )
 
