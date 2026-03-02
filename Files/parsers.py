@@ -57,14 +57,16 @@ class Proxy:
     @property
     def unique_key(self):
         """Generates a unique key for deduplication purposes."""
+        norm_uuid = self.uuid.lower() if self.uuid else None
+
         if self.protocol == "vmess":
-            return ("vmess", self.host.lower(), self.port, self.uuid, self.transport, self.ws_path, self.ws_host, self.security)
+            return ("vmess", self.host.lower(), self.port, norm_uuid, self.transport, self.ws_path, self.ws_host, self.security, self.grpc_service_name)
         elif self.protocol in ["vless", "trojan"]:
-            return (self.protocol, self.host.lower(), self.port, self.uuid, self.transport, self.security, self.ws_path, self.sni)
+            return (self.protocol, self.host.lower(), self.port, norm_uuid, self.transport, self.security, self.ws_path, self.ws_host, self.sni, self.grpc_service_name, self.publicKey, self.shortId, self.fingerprint)
         elif self.protocol == "ss":
             return ("ss", self.host.lower(), self.port, self.method, self.password)
         else: # tuic, hy2
-            return (self.protocol, self.host.lower(), self.port, self.uuid)
+            return (self.protocol, self.host.lower(), self.port, norm_uuid, self.sni)
 
 # --- Main Parser Function ---
 def parse_proxy(line: str) -> Optional[Proxy]:
