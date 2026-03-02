@@ -14,42 +14,30 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.159.99.186
+- name: TROJAN-WS-🇺🇸(US)-162.159.33.95
   type: trojan
-  server: 18.159.99.186
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.159.99.186_1
+  server: 162.159.33.95
+  port: 80
+  uuid: 54aa90f6-46f5-417d-82ff-fe1197cf88fd
+  network: ws
+  tls: false
+  servername: 162.159.33.95
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: cool-snow-8be4.gjhgghg01.workers.dev
+- name: TROJAN-WS-🇺🇸(US)-104.18.8.232
   type: trojan
-  server: 18.159.99.186
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 18.159.99.186
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.159.99.186_2
-  type: trojan
-  server: 18.159.99.186
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.159.99.186_3
-  type: trojan
-  server: 18.159.99.186
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: 18.159.99.186
-  client-fingerprint: chrome
+  server: 104.18.8.232
+  port: 2086
+  uuid: fsJC<a)2Atn;
+  network: ws
+  tls: false
+  servername: 104.18.8.232
+  ws-opts:
+    path: /eyJqdW5rIjoidm1qTWdrQzQxTyIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: hamedp71.123hp.workers.dev
 - name: TROJAN-WS-TLS-🇺🇸(US)-jquery.com
   type: trojan
   server: jquery.com
@@ -63,56 +51,51 @@ proxies:
     path: /eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
     headers:
       Host: letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev
-- name: TROJAN-WS-🇨🇦(CA)-104.18.8.232
+- name: TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.248.219
   type: trojan
-  server: 104.18.8.232
-  port: 2086
-  uuid: fsJC<a)2Atn;
-  network: ws
-  tls: false
-  servername: 104.18.8.232
-  ws-opts:
-    path: /eyJqdW5rIjoidm1qTWdrQzQxTyIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: hamedp71.123hp.workers.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-cf.090227.xyz
+  server: 91.108.248.219
+  port: 23058
+  uuid: 2F7Pw5Jfim
+  network: grpc
+  tls: true
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇸🇪(SE)-vip2.kaixincloud.top
   type: trojan
-  server: cf.090227.xyz
-  port: 443
-  uuid: 5a2c16f9
+  server: vip2.kaixincloud.top
+  port: 8443
+  uuid: T9BpZIVMNv
   network: ws
   tls: true
-  servername: pg.hhhhh.eu.org
+  servername: sweden.vmaxpanel.com
   client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /amd
     headers:
-      Host: pg.hhhhh.eu.org
-- name: TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
+      Host: sweden.vmaxpanel.com
+- name: TROJAN-WS-TLS-🇸🇪(SE)-104.18.185.26
   type: trojan
-  server: v2.dabache.top
-  port: 443
-  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+  server: 104.18.185.26
+  port: 8443
+  uuid: T9BpZIVMNv
   network: ws
   tls: true
-  servername: _acme-challenge.sb.cloudns.biz
+  servername: sweden.vmaxpanel.com
   client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /amd
     headers:
-      Host: _acme-challenge.sb.cloudns.biz
+      Host: sweden.vmaxpanel.com
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.159.99.186
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.159.99.186_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.159.99.186_2
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.159.99.186_3
+  - TROJAN-WS-🇺🇸(US)-162.159.33.95
+  - TROJAN-WS-🇺🇸(US)-104.18.8.232
   - TROJAN-WS-TLS-🇺🇸(US)-jquery.com
-  - TROJAN-WS-🇨🇦(CA)-104.18.8.232
-  - TROJAN-WS-TLS-🇺🇸(US)-cf.090227.xyz
-  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.248.219
+  - TROJAN-WS-TLS-🇸🇪(SE)-vip2.kaixincloud.top
+  - TROJAN-WS-TLS-🇸🇪(SE)-104.18.185.26
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -129,14 +112,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.159.99.186
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.159.99.186_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.159.99.186_2
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.159.99.186_3
+  - TROJAN-WS-🇺🇸(US)-162.159.33.95
+  - TROJAN-WS-🇺🇸(US)-104.18.8.232
   - TROJAN-WS-TLS-🇺🇸(US)-jquery.com
-  - TROJAN-WS-🇨🇦(CA)-104.18.8.232
-  - TROJAN-WS-TLS-🇺🇸(US)-cf.090227.xyz
-  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
+  - TROJAN-GRPC-REALITY-🇵🇱(PL)-91.108.248.219
+  - TROJAN-WS-TLS-🇸🇪(SE)-vip2.kaixincloud.top
+  - TROJAN-WS-TLS-🇸🇪(SE)-104.18.185.26
 rule-providers:
   adblock:
     type: http
