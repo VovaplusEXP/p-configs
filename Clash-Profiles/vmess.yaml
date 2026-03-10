@@ -44,24 +44,12 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-TCP-TLS-🇳🇱(NL)-141.11.21.219
-  type: vmess
-  server: 141.11.21.219
-  port: 50521
-  uuid: 7b4c6795-3be5-4a4e-b234-07a46f580c45
-  network: tcp
-  tls: true
-  servername: 141.11.21.219
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-TCP-TLS-🇳🇱(NL)-141.11.21.219
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -80,7 +68,6 @@ proxy-groups:
   - 🔗 Auto-Failover-VMESS
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-TCP-TLS-🇳🇱(NL)-141.11.21.219
 rule-providers:
   adblock:
     type: http
