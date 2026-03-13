@@ -14,6 +14,21 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  type: vmess
+  server: usaapp1.jisuyun.top
+  port: 2053
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  network: ws
+  tls: true
+  servername: usaapp1.jisuyun.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /usavm
+    headers:
+      Host: usaapp1.jisuyun.top
+  alterId: 0
+  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   type: vmess
   server: 172.233.137.157
@@ -29,19 +44,19 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+- name: VMESS-WS-TLS-🇦🇹(AT)-::ffff:ac40:9817
   type: vmess
-  server: usaapp1.jisuyun.top
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  server: ::ffff:ac40:9817
+  port: 443
+  uuid: ffece2a9-0296-46a9-8db8-742d29d240ff
   network: ws
   tls: true
-  servername: usaapp1.jisuyun.top
+  servername: www.mydriverlicence.com
   client-fingerprint: chrome
   ws-opts:
-    path: /usavm
+    path: KHl9KU9GR2Z6Py4pXkkhYHt8VDJHfjI9YSdgfE87YndOKyomb1UhXGAPF1VWZldyJEpAc08yYhgNAgcAXUsABCBYKDUU
     headers:
-      Host: usaapp1.jisuyun.top
+      Host: www.mydriverlicence.com
   alterId: 0
   cipher: auto
 - name: VMESS-WS-TLS-🇹🇷(TR)-chatgpt.com
@@ -63,8 +78,9 @@ proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
-  - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
+  - VMESS-WS-TLS-🇦🇹(AT)-::ffff:ac40:9817
   - VMESS-WS-TLS-🇹🇷(TR)-chatgpt.com
   tolerance: 50
   lazy: false
@@ -82,8 +98,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
-  - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
+  - VMESS-WS-TLS-🇦🇹(AT)-::ffff:ac40:9817
   - VMESS-WS-TLS-🇹🇷(TR)-chatgpt.com
 rule-providers:
   adblock:
