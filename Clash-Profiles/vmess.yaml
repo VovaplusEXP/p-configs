@@ -44,32 +44,6 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-TCP-TLS-🇳🇱(NL)-141.11.21.219
-  type: vmess
-  server: 141.11.21.219
-  port: 50521
-  uuid: 7b4c6795-3be5-4a4e-b234-07a46f580c45
-  network: tcp
-  tls: true
-  servername: 141.11.21.219
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
-- name: VMESS-WS-TLS-🇦🇹(AT)-::ffff:ac40:9817
-  type: vmess
-  server: ::ffff:ac40:9817
-  port: 443
-  uuid: ffece2a9-0296-46a9-8db8-742d29d240ff
-  network: ws
-  tls: true
-  servername: www.mydriverlicence.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: KHl9KU9GR2Z6Py4pXkkhYHt8VDJHfjI9YSdgfE87YndOKyomb1UhXGAPF1VWZldyJEpAc08yYhgNAgcAXUsABCBYKDUU
-    headers:
-      Host: www.mydriverlicence.com
-  alterId: 0
-  cipher: auto
 - name: VMESS-WS-TLS-🇹🇷(TR)-chatgpt.com
   type: vmess
   server: chatgpt.com
@@ -85,31 +59,13 @@ proxies:
       Host: tr-1.stunnel.cc
   alterId: 0
   cipher: none
-- name: VMESS-WS-TLS-🇫🇮(FI)-hiro.hodhodvconf.com
-  type: vmess
-  server: hiro.hodhodvconf.com
-  port: 443
-  uuid: 69d84191-11e2-4fea-804e-9f6381371c7d
-  network: ws
-  tls: true
-  servername: ccbrut.te1450.ir
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: ccbrut.te1450.ir
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-TCP-TLS-🇳🇱(NL)-141.11.21.219
-  - VMESS-WS-TLS-🇦🇹(AT)-::ffff:ac40:9817
   - VMESS-WS-TLS-🇹🇷(TR)-chatgpt.com
-  - VMESS-WS-TLS-🇫🇮(FI)-hiro.hodhodvconf.com
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -128,10 +84,7 @@ proxy-groups:
   - 🔗 Auto-Failover-VMESS
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-TCP-TLS-🇳🇱(NL)-141.11.21.219
-  - VMESS-WS-TLS-🇦🇹(AT)-::ffff:ac40:9817
   - VMESS-WS-TLS-🇹🇷(TR)-chatgpt.com
-  - VMESS-WS-TLS-🇫🇮(FI)-hiro.hodhodvconf.com
 rule-providers:
   adblock:
     type: http
