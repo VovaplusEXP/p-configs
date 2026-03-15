@@ -44,21 +44,6 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇹🇷(TR)-chatgpt.com
-  type: vmess
-  server: chatgpt.com
-  port: 8443
-  uuid: 39382035-3420-4937-a031-303220393820
-  network: ws
-  tls: true
-  servername: tr-1.stunnel.cc
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
-    headers:
-      Host: tr-1.stunnel.cc
-  alterId: 0
-  cipher: none
 - name: VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
   type: vmess
   server: v2ray.codefyinc.com
@@ -80,7 +65,6 @@ proxy-groups:
   proxies: &id001
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇹🇷(TR)-chatgpt.com
   - VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
   tolerance: 50
   lazy: false
@@ -100,7 +84,6 @@ proxy-groups:
   - 🔗 Auto-Failover-VMESS
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇹🇷(TR)-chatgpt.com
   - VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
 rule-providers:
   adblock:
