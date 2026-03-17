@@ -14,34 +14,26 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+- name: VMESS-TCP-TLS-🇳🇱(NL)-141.11.21.219
   type: vmess
-  server: usaapp1.jisuyun.top
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  network: ws
+  server: 141.11.21.219
+  port: 50521
+  uuid: 7b4c6795-3be5-4a4e-b234-07a46f580c45
+  network: tcp
   tls: true
-  servername: usaapp1.jisuyun.top
+  servername: 141.11.21.219
   client-fingerprint: chrome
-  ws-opts:
-    path: /usavm
-    headers:
-      Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
+- name: VMESS-TCP-TLS-🇳🇱(NL)-141.11.21.219_1
   type: vmess
-  server: 172.233.137.157
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  network: ws
+  server: 141.11.21.219
+  port: 50521
+  uuid: 7b4c6795-3be5-4a4e-b234-07a46f580c45
+  network: tcp
   tls: true
-  servername: usaapp1.jisuyun.top
+  servername: a.sezar.top
   client-fingerprint: chrome
-  ws-opts:
-    path: /usavm
-    headers:
-      Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
@@ -63,8 +55,8 @@ proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
+  - VMESS-TCP-TLS-🇳🇱(NL)-141.11.21.219
+  - VMESS-TCP-TLS-🇳🇱(NL)-141.11.21.219_1
   - VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
   tolerance: 50
   lazy: false
@@ -82,8 +74,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
+  - VMESS-TCP-TLS-🇳🇱(NL)-141.11.21.219
+  - VMESS-TCP-TLS-🇳🇱(NL)-141.11.21.219_1
   - VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
 rule-providers:
   adblock:
