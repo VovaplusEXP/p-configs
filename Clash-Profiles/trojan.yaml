@@ -35,8 +35,30 @@ proxies:
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-15.224.3.38
   type: trojan
   server: 15.224.3.38
-  port: 22222
-  uuid: telegram-id-privatevpns
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-bestcf.030101.xyz
+  type: trojan
+  server: bestcf.030101.xyz
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: true
+  servername: sni.111000.dynv6.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.224.3.38_1
+  type: trojan
+  server: 15.224.3.38
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: 15.224.3.38
@@ -63,18 +85,18 @@ proxies:
   type: trojan
   server: irancell.buzzmuzzpanel.online
   port: 443
-  uuid: freedom
+  uuid: )5,9FW.Kk166
   network: ws
   tls: true
-  servername: 047.eleCTROCelLco-Cf-047.woRkers.DEV
+  servername: 028.eLECtRocEllco-Cf-028.worKErS.dev
   client-fingerprint: chrome
   ws-opts:
-    path: /eyJqdW5rIjoienRVUEM4N2p6dXE2Wm0iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
+    path: /eyJqdW5rIjoiU2oxczB0b0tSIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
     headers:
-      Host: 047.electrocellco-cf-047.workers.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
+      Host: 028.electrocellco-cf-028.workers.dev
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.18.155.119
   type: trojan
-  server: 104.18.156.119
+  server: 104.18.155.119
   port: 443
   uuid: 988sR-269PKCKlb&3pMrFTEr
   network: ws
@@ -85,50 +107,85 @@ proxies:
     path: /eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
     headers:
       Host: letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
+- name: TROJAN-TCP-TLS-🇯🇵(JP)-harmless-pegasus.rooster465.autos
   type: trojan
-  server: v1.dabache.top
-  port: 443
-  uuid: bpb-trojan
-  network: ws
-  tls: true
-  servername: mashdt.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr
-    headers:
-      Host: mashdt.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-jp.111000.cc.cd
-  type: trojan
-  server: jp.111000.cc.cd
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: TROJAN-TCP-TLS-🇳🇱(NL)-nl-4.tr202512.com
-  type: trojan
-  server: nl-4.tr202512.com
-  port: 443
-  uuid: M08tvzYWtUEJNtbpHp
-  network: tcp
-  tls: true
-  servername: nl-4.tr202512.com
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇯🇵(JP)-thankful-mustang.rooster465.autos
-  type: trojan
-  server: thankful-mustang.rooster465.autos
+  server: harmless-pegasus.rooster465.autos
   port: 443
   uuid: IL37892054
   network: tcp
   tls: true
-  servername: thankful-mustang.rooster465.autos
+  servername: harmless-pegasus.rooster465.autos
   client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.224.3.38_2
+  type: trojan
+  server: 15.224.3.38
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-russia.com
+  type: trojan
+  server: russia.com
+  port: 443
+  uuid: bpb-trojan
+  network: ws
+  tls: true
+  servername: vless4.vlessvless.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tr?ed=2560
+    headers:
+      Host: vless4.vlessvless.top
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.224.3.38_3
+  type: trojan
+  server: 15.224.3.38
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 15.224.3.38
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇸🇪(SE)-141.101.121.127
+  type: trojan
+  server: 141.101.121.127
+  port: 8443
+  uuid: T9BpZIVMNv
+  network: ws
+  tls: true
+  servername: sweden.vmaxpanel.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /amd
+    headers:
+      Host: sweden.vmaxpanel.com
+- name: TROJAN-WS-TLS-🇺🇸(US)-jquery.com
+  type: trojan
+  server: jquery.com
+  port: 443
+  uuid: 988sR-269PKCKlb&3pMrFTEr
+  network: ws
+  tls: true
+  servername: LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
+    headers:
+      Host: letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev
+- name: TROJAN-WS-TLS-🇸🇪(SE)-104.16.250.22
+  type: trojan
+  server: 104.16.250.22
+  port: 8443
+  uuid: T9BpZIVMNv
+  network: ws
+  tls: true
+  servername: sweden.vmaxpanel.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /amd
+    headers:
+      Host: sweden.vmaxpanel.com
 - name: TROJAN-WS-TLS-🇸🇪(SE)-v1.dabache.top
   type: trojan
   server: v1.dabache.top
@@ -142,78 +199,32 @@ proxies:
     path: /amd
     headers:
       Host: sweden.vmaxpanel.com
-- name: TROJAN-TCP-TLS-🇯🇵(JP)-new-eagle.rooster465.autos
+- name: TROJAN-WS-TLS-🇸🇪(SE)-sweden.vmaxpanel.com
   type: trojan
-  server: new-eagle.rooster465.autos
-  port: 443
-  uuid: IL37892054
-  network: tcp
+  server: sweden.vmaxpanel.com
+  port: 8443
+  uuid: T9BpZIVMNv
+  network: ws
   tls: true
-  servername: new-eagle.rooster465.autos
+  servername: sweden.vmaxpanel.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇰🇷(KR)-glowing-deer.rooster465.autos
+  ws-opts:
+    path: /amd
+    headers:
+      Host: sweden.vmaxpanel.com
+- name: TROJAN-WS-TLS-🇸🇪(SE)-v3.dabache.top
   type: trojan
-  server: glowing-deer.rooster465.autos
-  port: 443
-  uuid: ZY07256934
-  network: tcp
+  server: v3.dabache.top
+  port: 8443
+  uuid: T9BpZIVMNv
+  network: ws
   tls: true
-  servername: glowing-deer.rooster465.autos
+  servername: sweden.vmaxpanel.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇸🇬(SG)-diverse-hawk.rooster465.autos
-  type: trojan
-  server: diverse-hawk.rooster465.autos
-  port: 443
-  uuid: IL37892054
-  network: tcp
-  tls: true
-  servername: diverse-hawk.rooster465.autos
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇸🇬(SG)-eternal-woodcock.rooster465.autos
-  type: trojan
-  server: eternal-woodcock.rooster465.autos
-  port: 443
-  uuid: IL37892054
-  network: tcp
-  tls: true
-  servername: eternal-woodcock.rooster465.autos
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇸🇬(SG)-lucky-chimp.rooster465.autos
-  type: trojan
-  server: lucky-chimp.rooster465.autos
-  port: 443
-  uuid: IL37892054
-  network: tcp
-  tls: true
-  servername: lucky-chimp.rooster465.autos
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇸🇬(SG)-picked-guinea.rooster465.autos
-  type: trojan
-  server: picked-guinea.rooster465.autos
-  port: 443
-  uuid: IL37892054
-  network: tcp
-  tls: true
-  servername: picked-guinea.rooster465.autos
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇸🇬(SG)-immense-seasnail.rooster465.autos
-  type: trojan
-  server: immense-seasnail.rooster465.autos
-  port: 443
-  uuid: IL37892054
-  network: tcp
-  tls: true
-  servername: immense-seasnail.rooster465.autos
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇸🇬(SG)-normal-macaque.rooster465.autos
-  type: trojan
-  server: normal-macaque.rooster465.autos
-  port: 443
-  uuid: IL37892054
-  network: tcp
-  tls: true
-  servername: normal-macaque.rooster465.autos
-  client-fingerprint: chrome
+  ws-opts:
+    path: /amd
+    headers:
+      Host: sweden.vmaxpanel.com
 - name: TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
   type: trojan
   server: v2.dabache.top
@@ -227,6 +238,54 @@ proxies:
     path: /
     headers:
       Host: _acme-challenge.sb.cloudns.biz
+- name: TROJAN-TCP-TLS-🌐(XX)-37.235.49.209
+  type: trojan
+  server: 37.235.49.209
+  port: 28099
+  uuid: qmBSKnAl6LYi9=z23Rs.Z
+  network: tcp
+  tls: true
+  servername: celestialcorset.crystalhamster.click
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇸🇪(SE)-sweden.vmaxpanel.com_1
+  type: trojan
+  server: sweden.vmaxpanel.com
+  port: 8443
+  uuid: T9BpZIVMNv
+  network: ws
+  tls: true
+  servername: sweden.vmaxpanel.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /amd
+    headers:
+      Host: sweden.vmaxpanel.com
+- name: TROJAN-WS-TLS-🇸🇪(SE)-chatgpt.com
+  type: trojan
+  server: chatgpt.com
+  port: 8443
+  uuid: T9BpZIVMNv
+  network: ws
+  tls: true
+  servername: sweden.vmaxpanel.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /amd
+    headers:
+      Host: sweden.vmaxpanel.com
+- name: TROJAN-WS-TLS-🇸🇪(SE)-v2.dabache.top
+  type: trojan
+  server: v2.dabache.top
+  port: 8443
+  uuid: T9BpZIVMNv
+  network: ws
+  tls: true
+  servername: sweden.vmaxpanel.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /amd
+    headers:
+      Host: sweden.vmaxpanel.com
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
@@ -234,24 +293,27 @@ proxy-groups:
   - TROJAN-TCP-TLS-🇺🇸(US)-142.171.67.200
   - TROJAN-TCP-TLS-🇺🇸(US)-142.171.67.200_1
   - TROJAN-TCP-TLS-🇫🇷(FR)-15.224.3.38
+  - TROJAN-WS-TLS-🇺🇸(US)-bestcf.030101.xyz
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.224.3.38_1
   - TROJAN-TCP-TLS-🇩🇪(DE)-cool-lioness.rooster465.autos
   - TROJAN-TCP-TLS-🇦🇱(AL)-78.159.131.12
   - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
-  - TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
-  - TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
-  - TROJAN-WS-TLS-🇺🇸(US)-jp.111000.cc.cd
-  - TROJAN-TCP-TLS-🇳🇱(NL)-nl-4.tr202512.com
-  - TROJAN-TCP-TLS-🇯🇵(JP)-thankful-mustang.rooster465.autos
+  - TROJAN-WS-TLS-🇺🇸(US)-104.18.155.119
+  - TROJAN-TCP-TLS-🇯🇵(JP)-harmless-pegasus.rooster465.autos
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.224.3.38_2
+  - TROJAN-WS-TLS-🇺🇸(US)-russia.com
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.224.3.38_3
+  - TROJAN-WS-TLS-🇸🇪(SE)-141.101.121.127
+  - TROJAN-WS-TLS-🇺🇸(US)-jquery.com
+  - TROJAN-WS-TLS-🇸🇪(SE)-104.16.250.22
   - TROJAN-WS-TLS-🇸🇪(SE)-v1.dabache.top
-  - TROJAN-TCP-TLS-🇯🇵(JP)-new-eagle.rooster465.autos
-  - TROJAN-TCP-TLS-🇰🇷(KR)-glowing-deer.rooster465.autos
-  - TROJAN-TCP-TLS-🇸🇬(SG)-diverse-hawk.rooster465.autos
-  - TROJAN-TCP-TLS-🇸🇬(SG)-eternal-woodcock.rooster465.autos
-  - TROJAN-TCP-TLS-🇸🇬(SG)-lucky-chimp.rooster465.autos
-  - TROJAN-TCP-TLS-🇸🇬(SG)-picked-guinea.rooster465.autos
-  - TROJAN-TCP-TLS-🇸🇬(SG)-immense-seasnail.rooster465.autos
-  - TROJAN-TCP-TLS-🇸🇬(SG)-normal-macaque.rooster465.autos
+  - TROJAN-WS-TLS-🇸🇪(SE)-sweden.vmaxpanel.com
+  - TROJAN-WS-TLS-🇸🇪(SE)-v3.dabache.top
   - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
+  - TROJAN-TCP-TLS-🌐(XX)-37.235.49.209
+  - TROJAN-WS-TLS-🇸🇪(SE)-sweden.vmaxpanel.com_1
+  - TROJAN-WS-TLS-🇸🇪(SE)-chatgpt.com
+  - TROJAN-WS-TLS-🇸🇪(SE)-v2.dabache.top
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -271,24 +333,27 @@ proxy-groups:
   - TROJAN-TCP-TLS-🇺🇸(US)-142.171.67.200
   - TROJAN-TCP-TLS-🇺🇸(US)-142.171.67.200_1
   - TROJAN-TCP-TLS-🇫🇷(FR)-15.224.3.38
+  - TROJAN-WS-TLS-🇺🇸(US)-bestcf.030101.xyz
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.224.3.38_1
   - TROJAN-TCP-TLS-🇩🇪(DE)-cool-lioness.rooster465.autos
   - TROJAN-TCP-TLS-🇦🇱(AL)-78.159.131.12
   - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
-  - TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
-  - TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
-  - TROJAN-WS-TLS-🇺🇸(US)-jp.111000.cc.cd
-  - TROJAN-TCP-TLS-🇳🇱(NL)-nl-4.tr202512.com
-  - TROJAN-TCP-TLS-🇯🇵(JP)-thankful-mustang.rooster465.autos
+  - TROJAN-WS-TLS-🇺🇸(US)-104.18.155.119
+  - TROJAN-TCP-TLS-🇯🇵(JP)-harmless-pegasus.rooster465.autos
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.224.3.38_2
+  - TROJAN-WS-TLS-🇺🇸(US)-russia.com
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.224.3.38_3
+  - TROJAN-WS-TLS-🇸🇪(SE)-141.101.121.127
+  - TROJAN-WS-TLS-🇺🇸(US)-jquery.com
+  - TROJAN-WS-TLS-🇸🇪(SE)-104.16.250.22
   - TROJAN-WS-TLS-🇸🇪(SE)-v1.dabache.top
-  - TROJAN-TCP-TLS-🇯🇵(JP)-new-eagle.rooster465.autos
-  - TROJAN-TCP-TLS-🇰🇷(KR)-glowing-deer.rooster465.autos
-  - TROJAN-TCP-TLS-🇸🇬(SG)-diverse-hawk.rooster465.autos
-  - TROJAN-TCP-TLS-🇸🇬(SG)-eternal-woodcock.rooster465.autos
-  - TROJAN-TCP-TLS-🇸🇬(SG)-lucky-chimp.rooster465.autos
-  - TROJAN-TCP-TLS-🇸🇬(SG)-picked-guinea.rooster465.autos
-  - TROJAN-TCP-TLS-🇸🇬(SG)-immense-seasnail.rooster465.autos
-  - TROJAN-TCP-TLS-🇸🇬(SG)-normal-macaque.rooster465.autos
+  - TROJAN-WS-TLS-🇸🇪(SE)-sweden.vmaxpanel.com
+  - TROJAN-WS-TLS-🇸🇪(SE)-v3.dabache.top
   - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
+  - TROJAN-TCP-TLS-🌐(XX)-37.235.49.209
+  - TROJAN-WS-TLS-🇸🇪(SE)-sweden.vmaxpanel.com_1
+  - TROJAN-WS-TLS-🇸🇪(SE)-chatgpt.com
+  - TROJAN-WS-TLS-🇸🇪(SE)-v2.dabache.top
 rule-providers:
   adblock:
     type: http
