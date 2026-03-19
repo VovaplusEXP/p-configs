@@ -59,6 +59,32 @@ proxies:
       Host: cg1d05.waimaojd.com
   alterId: 0
   cipher: auto
+- name: VMESS-TCP-TLS-🇫🇮(FI)-65.21.145.122
+  type: vmess
+  server: 65.21.145.122
+  port: 53442
+  uuid: cd13ae55-feca-457c-988e-8dba56fe006f
+  network: tcp
+  tls: true
+  servername: 65.21.145.122
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
+  type: vmess
+  server: v2ray.codefyinc.com
+  port: 443
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  network: ws
+  tls: true
+  servername: v2ray.codefyinc.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /vmessws
+    headers:
+      Host: v2ray.codefyinc.com
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
@@ -66,6 +92,8 @@ proxy-groups:
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇳🇱(NL)-cg1d05.waimaojd.com
+  - VMESS-TCP-TLS-🇫🇮(FI)-65.21.145.122
+  - VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -85,6 +113,8 @@ proxy-groups:
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇳🇱(NL)-cg1d05.waimaojd.com
+  - VMESS-TCP-TLS-🇫🇮(FI)-65.21.145.122
+  - VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
 rule-providers:
   adblock:
     type: http
