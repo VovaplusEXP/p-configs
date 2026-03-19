@@ -44,22 +44,18 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇳🇱(NL)-cg1d05.waimaojd.com
+- name: VMESS-TCP-TLS-🇫🇮(FI)-65.21.145.122
   type: vmess
-  server: cg1d05.waimaojd.com
-  port: 443
-  uuid: 6abe3ac8-e1f8-4b24-bb67-191bc23b5fab
-  network: ws
+  server: 65.21.145.122
+  port: 53442
+  uuid: cd13ae55-feca-457c-988e-8dba56fe006f
+  network: tcp
   tls: true
-  servername: cg1d05.waimaojd.com
+  servername: 65.21.145.122
   client-fingerprint: chrome
-  ws-opts:
-    path: /api/v1/graphql
-    headers:
-      Host: cg1d05.waimaojd.com
   alterId: 0
   cipher: auto
-- name: VMESS-TCP-TLS-🇫🇮(FI)-65.21.145.122
+- name: VMESS-TCP-TLS-🇫🇮(FI)-65.21.145.122_1
   type: vmess
   server: 65.21.145.122
   port: 53442
@@ -91,8 +87,8 @@ proxy-groups:
   proxies: &id001
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇳🇱(NL)-cg1d05.waimaojd.com
   - VMESS-TCP-TLS-🇫🇮(FI)-65.21.145.122
+  - VMESS-TCP-TLS-🇫🇮(FI)-65.21.145.122_1
   - VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
   tolerance: 50
   lazy: false
@@ -112,8 +108,8 @@ proxy-groups:
   - 🔗 Auto-Failover-VMESS
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇳🇱(NL)-cg1d05.waimaojd.com
   - VMESS-TCP-TLS-🇫🇮(FI)-65.21.145.122
+  - VMESS-TCP-TLS-🇫🇮(FI)-65.21.145.122_1
   - VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
 rule-providers:
   adblock:
