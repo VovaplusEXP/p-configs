@@ -14,82 +14,58 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
+- name: VMESS-WS-TLS-🇳🇱(NL)-cg1d05.waimaojd.com
   type: vmess
-  server: 172.233.137.157
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  network: ws
-  tls: true
-  servername: usaapp1.jisuyun.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /usavm
-    headers:
-      Host: usaapp1.jisuyun.top
-  alterId: 0
-  cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  type: vmess
-  server: usaapp1.jisuyun.top
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  network: ws
-  tls: true
-  servername: usaapp1.jisuyun.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /usavm
-    headers:
-      Host: usaapp1.jisuyun.top
-  alterId: 0
-  cipher: auto
-- name: VMESS-TCP-TLS-🇫🇮(FI)-65.21.145.122
-  type: vmess
-  server: 65.21.145.122
-  port: 53442
-  uuid: cd13ae55-feca-457c-988e-8dba56fe006f
-  network: tcp
-  tls: true
-  servername: 65.21.145.122
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
-- name: VMESS-TCP-TLS-🇫🇮(FI)-65.21.145.122_1
-  type: vmess
-  server: 65.21.145.122
-  port: 53442
-  uuid: cd13ae55-feca-457c-988e-8dba56fe006f
-  network: tcp
-  tls: true
-  servername: 65.21.145.122
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
-  type: vmess
-  server: v2ray.codefyinc.com
+  server: cg1d05.waimaojd.com
   port: 443
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  uuid: 6abe3ac8-e1f8-4b24-bb67-191bc23b5fab
   network: ws
   tls: true
-  servername: v2ray.codefyinc.com
+  servername: cg1d05.waimaojd.com
   client-fingerprint: chrome
   ws-opts:
-    path: /vmessws
+    path: /api/v1/graphql
     headers:
-      Host: v2ray.codefyinc.com
+      Host: cg1d05.waimaojd.com
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇦🇪(AE)-cg1c15.waimaojd.com
+  type: vmess
+  server: cg1c15.waimaojd.com
+  port: 443
+  uuid: 4378a67e-d277-44b5-a99b-a947fff1ee21
+  network: ws
+  tls: true
+  servername: cg1c15.waimaojd.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c15.waimaojd.com
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇦🇪(AE)-cg1c15.waimaojd.com_1
+  type: vmess
+  server: cg1c15.waimaojd.com
+  port: 443
+  uuid: 4378a67e-d277-44b5-a99b-a947fff1ee21
+  network: ws
+  tls: true
+  servername: cg1c15.waimaojd.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c15.waimaojd.com
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
-  - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-TCP-TLS-🇫🇮(FI)-65.21.145.122
-  - VMESS-TCP-TLS-🇫🇮(FI)-65.21.145.122_1
-  - VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
+  - VMESS-WS-TLS-🇳🇱(NL)-cg1d05.waimaojd.com
+  - VMESS-WS-TLS-🇦🇪(AE)-cg1c15.waimaojd.com
+  - VMESS-WS-TLS-🇦🇪(AE)-cg1c15.waimaojd.com_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -106,11 +82,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
-  - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-TCP-TLS-🇫🇮(FI)-65.21.145.122
-  - VMESS-TCP-TLS-🇫🇮(FI)-65.21.145.122_1
-  - VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
+  - VMESS-WS-TLS-🇳🇱(NL)-cg1d05.waimaojd.com
+  - VMESS-WS-TLS-🇦🇪(AE)-cg1c15.waimaojd.com
+  - VMESS-WS-TLS-🇦🇪(AE)-cg1c15.waimaojd.com_1
 rule-providers:
   adblock:
     type: http
