@@ -44,19 +44,30 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🌐(XX)-v2ray.codefyinc.com
+- name: VMESS-TCP-TLS-🇩🇪(DE)-178.104.67.88
   type: vmess
-  server: v2ray.codefyinc.com
+  server: 178.104.67.88
+  port: 33404
+  uuid: 94764502-387b-45c9-bc21-b8dc783690a3
+  network: tcp
+  tls: true
+  servername: 178.104.67.88
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net
+  type: vmess
+  server: d2fog4flcfgb8c.cloudfront.net
   port: 443
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  uuid: e070e567-7996-45a9-9016-0143420946ef
   network: ws
   tls: true
-  servername: v2ray.codefyinc.com
+  servername: d2fog4flcfgb8c.cloudfront.net
   client-fingerprint: chrome
   ws-opts:
-    path: /vmessws
+    path: /8536cb1926c24bbc99d7bd93350ec564
     headers:
-      Host: v2ray.codefyinc.com
+      Host: d2fog4flcfgb8c.cloudfront.net
   alterId: 0
   cipher: auto
 - name: VMESS-WS-TLS-🇦🇪(AE)-cg1c15.waimaojd.com
@@ -95,7 +106,8 @@ proxy-groups:
   proxies: &id001
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🌐(XX)-v2ray.codefyinc.com
+  - VMESS-TCP-TLS-🇩🇪(DE)-178.104.67.88
+  - VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net
   - VMESS-WS-TLS-🇦🇪(AE)-cg1c15.waimaojd.com
   - VMESS-WS-TLS-🇦🇪(AE)-cg1c15.waimaojd.com_1
   tolerance: 50
@@ -116,7 +128,8 @@ proxy-groups:
   - 🔗 Auto-Failover-VMESS
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🌐(XX)-v2ray.codefyinc.com
+  - VMESS-TCP-TLS-🇩🇪(DE)-178.104.67.88
+  - VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net
   - VMESS-WS-TLS-🇦🇪(AE)-cg1c15.waimaojd.com
   - VMESS-WS-TLS-🇦🇪(AE)-cg1c15.waimaojd.com_1
 rule-providers:
