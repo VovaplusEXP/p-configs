@@ -14,21 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  type: vmess
-  server: usaapp1.jisuyun.top
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  network: ws
-  tls: true
-  servername: usaapp1.jisuyun.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /usavm
-    headers:
-      Host: usaapp1.jisuyun.top
-  alterId: 0
-  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   type: vmess
   server: 172.233.137.157
@@ -44,15 +29,19 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-TCP-TLS-🇩🇪(DE)-178.104.67.88
+- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   type: vmess
-  server: 178.104.67.88
-  port: 33404
-  uuid: 94764502-387b-45c9-bc21-b8dc783690a3
-  network: tcp
+  server: usaapp1.jisuyun.top
+  port: 2053
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  network: ws
   tls: true
-  servername: 178.104.67.88
+  servername: usaapp1.jisuyun.top
   client-fingerprint: chrome
+  ws-opts:
+    path: /usavm
+    headers:
+      Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
 - name: VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net
@@ -104,9 +93,8 @@ proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
-  - VMESS-TCP-TLS-🇩🇪(DE)-178.104.67.88
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net
   - VMESS-WS-TLS-🇦🇪(AE)-cg1c15.waimaojd.com
   - VMESS-WS-TLS-🇦🇪(AE)-cg1c15.waimaojd.com_1
@@ -126,9 +114,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
-  - VMESS-TCP-TLS-🇩🇪(DE)-178.104.67.88
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net
   - VMESS-WS-TLS-🇦🇪(AE)-cg1c15.waimaojd.com
   - VMESS-WS-TLS-🇦🇪(AE)-cg1c15.waimaojd.com_1
