@@ -59,6 +59,36 @@ proxies:
       Host: d2fog4flcfgb8c.cloudfront.net
   alterId: 0
   cipher: auto
+- name: VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net_1
+  type: vmess
+  server: d2fog4flcfgb8c.cloudfront.net
+  port: 443
+  uuid: e070e567-7996-45a9-9016-0143420946ef
+  network: ws
+  tls: true
+  servername: d2fog4flcfgb8c.cloudfront.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /8536cb1926c24bbc99d7bd93350ec564
+    headers:
+      Host: d2fog4flcfgb8c.cloudfront.net
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇭🇰(HK)-cg1c15.waimaojd.com
+  type: vmess
+  server: cg1c15.waimaojd.com
+  port: 443
+  uuid: 4378a67e-d277-44b5-a99b-a947fff1ee21
+  network: ws
+  tls: true
+  servername: cg1c15.waimaojd.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c15.waimaojd.com
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
@@ -66,6 +96,8 @@ proxy-groups:
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net
+  - VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net_1
+  - VMESS-WS-TLS-🇭🇰(HK)-cg1c15.waimaojd.com
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -85,6 +117,8 @@ proxy-groups:
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net
+  - VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net_1
+  - VMESS-WS-TLS-🇭🇰(HK)-cg1c15.waimaojd.com
 rule-providers:
   adblock:
     type: http
