@@ -14,21 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  type: vmess
-  server: usaapp1.jisuyun.top
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  network: ws
-  tls: true
-  servername: usaapp1.jisuyun.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /usavm
-    headers:
-      Host: usaapp1.jisuyun.top
-  alterId: 0
-  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   type: vmess
   server: 172.233.137.157
@@ -44,44 +29,27 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net
+- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   type: vmess
-  server: d2fog4flcfgb8c.cloudfront.net
-  port: 443
-  uuid: e070e567-7996-45a9-9016-0143420946ef
+  server: usaapp1.jisuyun.top
+  port: 2053
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
   network: ws
   tls: true
-  servername: d2fog4flcfgb8c.cloudfront.net
+  servername: usaapp1.jisuyun.top
   client-fingerprint: chrome
   ws-opts:
-    path: /8536cb1926c24bbc99d7bd93350ec564
+    path: /usavm
     headers:
-      Host: d2fog4flcfgb8c.cloudfront.net
-  alterId: 0
-  cipher: auto
-- name: VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net_1
-  type: vmess
-  server: d2fog4flcfgb8c.cloudfront.net
-  port: 443
-  uuid: e070e567-7996-45a9-9016-0143420946ef
-  network: ws
-  tls: true
-  servername: d2fog4flcfgb8c.cloudfront.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /8536cb1926c24bbc99d7bd93350ec564
-    headers:
-      Host: d2fog4flcfgb8c.cloudfront.net
+      Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
-  - VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net
-  - VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net_1
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -98,10 +66,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
-  - VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net
-  - VMESS-WS-TLS-🇩🇪(DE)-d2fog4flcfgb8c.cloudfront.net_1
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
 rule-providers:
   adblock:
     type: http
