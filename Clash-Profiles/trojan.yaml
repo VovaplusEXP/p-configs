@@ -14,15 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇺🇸(US)-n2.chateditimage.com
-  type: trojan
-  server: n2.chateditimage.com
-  port: 443
-  uuid: 4123ae62-0999-4984-8ead-091630e594a9
-  network: tcp
-  tls: true
-  servername: n2.chateditimage.com
-  client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇺🇸(US)-n3.chateditimage.com
   type: trojan
   server: n3.chateditimage.com
@@ -31,6 +22,24 @@ proxies:
   network: tcp
   tls: true
   servername: n3.chateditimage.com
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇺🇸(US)-64.186.252.102
+  type: trojan
+  server: 64.186.252.102
+  port: 443
+  uuid: de7d6444-a7a8-4b3a-bf26-bc6939bb0279
+  network: tcp
+  tls: true
+  servername: n1.chateditimage.com
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55
+  type: trojan
+  server: 216.234.140.55
+  port: 47574
+  uuid: 3PfyPiLUGm
+  network: grpc
+  tls: true
+  servername: aws.amazon.com
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇺🇸(US)-n1.chateditimage.com
   type: trojan
@@ -41,23 +50,23 @@ proxies:
   tls: true
   servername: n1.chateditimage.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇺🇸(US)-n3.chateditimage.com_1
+- name: TROJAN-TCP-TLS-🇺🇸(US)-64.186.254.102
   type: trojan
-  server: n3.chateditimage.com
+  server: 64.186.254.102
   port: 443
-  uuid: de7d6444-a7a8-4b3a-bf26-bc6939bb0279
+  uuid: 4123ae62-0999-4984-8ead-091630e594a9
   network: tcp
   tls: true
-  servername: n3.chateditimage.com
+  servername: n2.chateditimage.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇺🇸(US)-n3.chateditimage.com_2
+- name: TROJAN-TCP-TLS-🇺🇸(US)-n2.chateditimage.com
   type: trojan
-  server: n3.chateditimage.com
+  server: n2.chateditimage.com
   port: 443
-  uuid: de7d6444-a7a8-4b3a-bf26-bc6939bb0279
+  uuid: 4123ae62-0999-4984-8ead-091630e594a9
   network: tcp
   tls: true
-  servername: n3.chateditimage.com
+  servername: n2.chateditimage.com
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇺🇸(US)-n2.chateditimage.com_1
   type: trojan
@@ -68,24 +77,6 @@ proxies:
   tls: true
   servername: n2.chateditimage.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇺🇸(US)-64.186.254.102
-  type: trojan
-  server: 64.186.254.102
-  port: 443
-  uuid: 4123ae62-0999-4984-8ead-091630e594a9
-  network: tcp
-  tls: true
-  servername: n2.chateditimage.com
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇺🇸(US)-n3.chateditimage.com_3
-  type: trojan
-  server: n3.chateditimage.com
-  port: 443
-  uuid: 4123ae62-0999-4984-8ead-091630e594a9
-  network: tcp
-  tls: true
-  servername: n3.chateditimage.com
-  client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇺🇸(US)-healthy-ewe.rooster465.autos
   type: trojan
   server: healthy-ewe.rooster465.autos
@@ -94,15 +85,6 @@ proxies:
   network: tcp
   tls: true
   servername: healthy-ewe.rooster465.autos
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇺🇸(US)-n2.chateditimage.com_2
-  type: trojan
-  server: n2.chateditimage.com
-  port: 443
-  uuid: 4123ae62-0999-4984-8ead-091630e594a9
-  network: tcp
-  tls: true
-  servername: n2.chateditimage.com
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇺🇸(US)-healthy-ewe.rooster465.autos_1
   type: trojan
@@ -113,103 +95,73 @@ proxies:
   tls: true
   servername: healthy-ewe.rooster465.autos
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
+- name: TROJAN-TCP-TLS-🇺🇸(US)-n3.chateditimage.com_1
   type: trojan
-  server: irancell.buzzmuzzpanel.online
+  server: n3.chateditimage.com
   port: 443
-  uuid: freedom
+  uuid: de7d6444-a7a8-4b3a-bf26-bc6939bb0279
+  network: tcp
+  tls: true
+  servername: n3.chateditimage.com
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇺🇸(US)-n1.chateditimage.com_1
+  type: trojan
+  server: n1.chateditimage.com
+  port: 443
+  uuid: de7d6444-a7a8-4b3a-bf26-bc6939bb0279
+  network: tcp
+  tls: true
+  servername: n1.chateditimage.com
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-blackshadow.dpdns.org
+  type: trojan
+  server: blackshadow.dpdns.org
+  port: 443
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
   network: ws
   tls: true
-  servername: 047.eleCTROCelLco-Cf-047.woRkers.DEV
+  servername: blackshadow.dpdns.org
   client-fingerprint: chrome
   ws-opts:
-    path: /eyJqdW5rIjoienRVUEM4N2p6dXE2Wm0iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
+    path: /195.123.218.174-443
     headers:
-      Host: 047.electrocellco-cf-047.workers.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-jquery.com
+      Host: blackshadow.dpdns.org
+- name: TROJAN-TCP-TLS-🇰🇷(KR)-select-marmoset.rooster465.autos
   type: trojan
-  server: jquery.com
+  server: select-marmoset.rooster465.autos
   port: 443
-  uuid: 988sR-269PKCKlb&3pMrFTEr
-  network: ws
+  uuid: IL37892054
+  network: tcp
   tls: true
-  servername: LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV
+  servername: select-marmoset.rooster465.autos
   client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
-    headers:
-      Host: letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.18.155.119
+- name: TROJAN-WS-TLS-🇺🇸(US)-vless.herogoing.top
   type: trojan
-  server: 104.18.155.119
-  port: 443
-  uuid: 988sR-269PKCKlb&3pMrFTEr
-  network: ws
-  tls: true
-  servername: LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
-    headers:
-      Host: letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
-  type: trojan
-  server: v1.dabache.top
+  server: vless.herogoing.top
   port: 443
   uuid: bpb-trojan
   network: ws
   tls: true
-  servername: mashdt.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr
-    headers:
-      Host: mashdt.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  type: trojan
-  server: 172.67.180.227
-  port: 443
-  uuid: bpb-trojan
-  network: ws
-  tls: true
-  servername: mashdt.pages.dev
+  servername: vless.herogoing.top
   client-fingerprint: chrome
   ws-opts:
     path: /tr?ed=2560
     headers:
-      Host: mashdt.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
+      Host: vless.herogoing.top
+- name: TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top
   type: trojan
-  server: 104.18.156.119
-  port: 443
-  uuid: 988sR-269PKCKlb&3pMrFTEr
+  server: bpbg.anguswen.top
+  port: 8443
+  uuid: '123456'
   network: ws
   tls: true
-  servername: LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV
+  servername: BPbG.AnguSWEN.Top
   client-fingerprint: chrome
   ws-opts:
-    path: /eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
+    path: /eyJqdW5rIjoiNDhOYUJ4WFhzc0EiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyJicGIueW91c2VmLmlzZWdhcm8uY29tIl19
     headers:
-      Host: letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev
-- name: TROJAN-GRPC-REALITY-🇪🇪(EE)-77.239.126.65
-  type: trojan
-  server: 77.239.126.65
-  port: 5540
-  uuid: mj5JfghL49jcoBbx4E1GsjQ7YFtC9pYG
-  network: grpc
-  tls: true
-  servername: eh.vk.com
-  client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇪🇪(EE)-77.239.126.65_1
-  type: trojan
-  server: 77.239.126.65
-  port: 5540
-  uuid: mj5JfghL49jcoBbx4E1GsjQ7YFtC9pYG
-  network: grpc
-  tls: true
-  servername: eh.vk.com
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online_1
+      Host: bpbg.anguswen.top
+- name: TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
   type: trojan
   server: irancell.buzzmuzzpanel.online
   port: 443
@@ -240,6 +192,76 @@ proxies:
   tls: true
   servername: glowing-deer.rooster465.autos
   client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-russia.com
+  type: trojan
+  server: russia.com
+  port: 443
+  uuid: bpb-trojan
+  network: ws
+  tls: true
+  servername: bpb.wdgg1979.nyc.mn
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tr?ed=2560
+    headers:
+      Host: bpb.wdgg1979.nyc.mn
+- name: TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online_1
+  type: trojan
+  server: irancell.buzzmuzzpanel.online
+  port: 443
+  uuid: freedom
+  network: ws
+  tls: true
+  servername: 047.eleCTROCelLco-Cf-047.woRkers.DEV
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoienRVUEM4N2p6dXE2Wm0iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
+    headers:
+      Host: 047.electrocellco-cf-047.workers.dev
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.210.125
+  type: trojan
+  server: 13.37.210.125
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
+  type: trojan
+  server: 104.18.156.119
+  port: 443
+  uuid: 988sR-269PKCKlb&3pMrFTEr
+  network: ws
+  tls: true
+  servername: LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
+    headers:
+      Host: letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev
+- name: TROJAN-TCP-TLS-🇰🇷(KR)-select-marmoset.rooster465.autos_1
+  type: trojan
+  server: select-marmoset.rooster465.autos
+  port: 443
+  uuid: IL37892054
+  network: tcp
+  tls: true
+  servername: select-marmoset.rooster465.autos
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-jquery.com
+  type: trojan
+  server: jquery.com
+  port: 443
+  uuid: 988sR-269PKCKlb&3pMrFTEr
+  network: ws
+  tls: true
+  servername: LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
+    headers:
+      Host: letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev
 - name: TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online_2
   type: trojan
   server: irancell.buzzmuzzpanel.online
@@ -253,6 +275,90 @@ proxies:
     path: /eyJqdW5rIjoiU2oxczB0b0tSIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
     headers:
       Host: 028.electrocellco-cf-028.workers.dev
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.18.155.119
+  type: trojan
+  server: 104.18.155.119
+  port: 443
+  uuid: 988sR-269PKCKlb&3pMrFTEr
+  network: ws
+  tls: true
+  servername: LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
+    headers:
+      Host: letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev
+- name: TROJAN-GRPC-REALITY-🇪🇪(EE)-77.239.126.65
+  type: trojan
+  server: 77.239.126.65
+  port: 5540
+  uuid: mj5JfghL49jcoBbx4E1GsjQ7YFtC9pYG
+  network: grpc
+  tls: true
+  servername: eh.vk.com
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.210.125_1
+  type: trojan
+  server: 13.37.210.125
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 13.37.210.125
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇪🇪(EE)-77.239.126.65_1
+  type: trojan
+  server: 77.239.126.65
+  port: 5540
+  uuid: mj5JfghL49jcoBbx4E1GsjQ7YFtC9pYG
+  network: grpc
+  tls: true
+  servername: eh.vk.com
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
+  type: trojan
+  server: v1.dabache.top
+  port: 443
+  uuid: bpb-trojan
+  network: ws
+  tls: true
+  servername: mashdt.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tr
+    headers:
+      Host: mashdt.pages.dev
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.210.125_2
+  type: trojan
+  server: 13.37.210.125
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇪🇪(EE)-77.239.126.65_2
+  type: trojan
+  server: 77.239.126.65
+  port: 5540
+  uuid: mj5JfghL49jcoBbx4E1GsjQ7YFtC9pYG
+  network: grpc
+  tls: true
+  servername: eh.vk.com
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
+  type: trojan
+  server: v2.dabache.top
+  port: 443
+  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+  network: ws
+  tls: true
+  servername: _acme-challenge.sb.cloudns.biz
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: _acme-challenge.sb.cloudns.biz
 - name: TROJAN-WS-TLS-🇺🇸(US)-join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
   type: trojan
   server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
@@ -266,54 +372,68 @@ proxies:
     path: /
     headers:
       Host: _acme-challenge.sb.cloudns.biz
-- name: TROJAN-TCP-TLS-🇰🇷(KR)-select-marmoset.rooster465.autos
+- name: TROJAN-WS-TLS-🇸🇪(SE)-104.18.185.26
   type: trojan
-  server: select-marmoset.rooster465.autos
-  port: 443
-  uuid: IL37892054
+  server: 104.18.185.26
+  port: 8443
+  uuid: T9BpZIVMNv
+  network: ws
+  tls: true
+  servername: sweden.vmaxpanel.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /amd
+    headers:
+      Host: sweden.vmaxpanel.com
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.210.125_3
+  type: trojan
+  server: 13.37.210.125
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: select-marmoset.rooster465.autos
-  client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇪🇪(EE)-77.239.126.65_2
-  type: trojan
-  server: 77.239.126.65
-  port: 5540
-  uuid: mj5JfghL49jcoBbx4E1GsjQ7YFtC9pYG
-  network: grpc
-  tls: true
-  servername: eh.vk.com
+  servername: 13.37.210.125
   client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇺🇸(US)-n2.chateditimage.com
   - TROJAN-TCP-TLS-🇺🇸(US)-n3.chateditimage.com
+  - TROJAN-TCP-TLS-🇺🇸(US)-64.186.252.102
+  - TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55
   - TROJAN-TCP-TLS-🇺🇸(US)-n1.chateditimage.com
-  - TROJAN-TCP-TLS-🇺🇸(US)-n3.chateditimage.com_1
-  - TROJAN-TCP-TLS-🇺🇸(US)-n3.chateditimage.com_2
-  - TROJAN-TCP-TLS-🇺🇸(US)-n2.chateditimage.com_1
   - TROJAN-TCP-TLS-🇺🇸(US)-64.186.254.102
-  - TROJAN-TCP-TLS-🇺🇸(US)-n3.chateditimage.com_3
+  - TROJAN-TCP-TLS-🇺🇸(US)-n2.chateditimage.com
+  - TROJAN-TCP-TLS-🇺🇸(US)-n2.chateditimage.com_1
   - TROJAN-TCP-TLS-🇺🇸(US)-healthy-ewe.rooster465.autos
-  - TROJAN-TCP-TLS-🇺🇸(US)-n2.chateditimage.com_2
   - TROJAN-TCP-TLS-🇺🇸(US)-healthy-ewe.rooster465.autos_1
+  - TROJAN-TCP-TLS-🇺🇸(US)-n3.chateditimage.com_1
+  - TROJAN-TCP-TLS-🇺🇸(US)-n1.chateditimage.com_1
+  - TROJAN-WS-TLS-🇺🇸(US)-blackshadow.dpdns.org
+  - TROJAN-TCP-TLS-🇰🇷(KR)-select-marmoset.rooster465.autos
+  - TROJAN-WS-TLS-🇺🇸(US)-vless.herogoing.top
+  - TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top
   - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
-  - TROJAN-WS-TLS-🇺🇸(US)-jquery.com
-  - TROJAN-WS-TLS-🇺🇸(US)-104.18.155.119
-  - TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
-  - TROJAN-GRPC-REALITY-🇪🇪(EE)-77.239.126.65
-  - TROJAN-GRPC-REALITY-🇪🇪(EE)-77.239.126.65_1
-  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online_1
   - TROJAN-TCP-TLS-🇰🇷(KR)-positive-bear.rooster465.autos
   - TROJAN-TCP-TLS-🇰🇷(KR)-glowing-deer.rooster465.autos
+  - TROJAN-WS-TLS-🇺🇸(US)-russia.com
+  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.210.125
+  - TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
+  - TROJAN-TCP-TLS-🇰🇷(KR)-select-marmoset.rooster465.autos_1
+  - TROJAN-WS-TLS-🇺🇸(US)-jquery.com
   - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online_2
-  - TROJAN-WS-TLS-🇺🇸(US)-join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  - TROJAN-TCP-TLS-🇰🇷(KR)-select-marmoset.rooster465.autos
+  - TROJAN-WS-TLS-🇺🇸(US)-104.18.155.119
+  - TROJAN-GRPC-REALITY-🇪🇪(EE)-77.239.126.65
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.210.125_1
+  - TROJAN-GRPC-REALITY-🇪🇪(EE)-77.239.126.65_1
+  - TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.210.125_2
   - TROJAN-GRPC-REALITY-🇪🇪(EE)-77.239.126.65_2
+  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
+  - TROJAN-WS-TLS-🇺🇸(US)-join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  - TROJAN-WS-TLS-🇸🇪(SE)-104.18.185.26
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.210.125_3
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -330,32 +450,42 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇺🇸(US)-n2.chateditimage.com
   - TROJAN-TCP-TLS-🇺🇸(US)-n3.chateditimage.com
+  - TROJAN-TCP-TLS-🇺🇸(US)-64.186.252.102
+  - TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55
   - TROJAN-TCP-TLS-🇺🇸(US)-n1.chateditimage.com
-  - TROJAN-TCP-TLS-🇺🇸(US)-n3.chateditimage.com_1
-  - TROJAN-TCP-TLS-🇺🇸(US)-n3.chateditimage.com_2
-  - TROJAN-TCP-TLS-🇺🇸(US)-n2.chateditimage.com_1
   - TROJAN-TCP-TLS-🇺🇸(US)-64.186.254.102
-  - TROJAN-TCP-TLS-🇺🇸(US)-n3.chateditimage.com_3
+  - TROJAN-TCP-TLS-🇺🇸(US)-n2.chateditimage.com
+  - TROJAN-TCP-TLS-🇺🇸(US)-n2.chateditimage.com_1
   - TROJAN-TCP-TLS-🇺🇸(US)-healthy-ewe.rooster465.autos
-  - TROJAN-TCP-TLS-🇺🇸(US)-n2.chateditimage.com_2
   - TROJAN-TCP-TLS-🇺🇸(US)-healthy-ewe.rooster465.autos_1
+  - TROJAN-TCP-TLS-🇺🇸(US)-n3.chateditimage.com_1
+  - TROJAN-TCP-TLS-🇺🇸(US)-n1.chateditimage.com_1
+  - TROJAN-WS-TLS-🇺🇸(US)-blackshadow.dpdns.org
+  - TROJAN-TCP-TLS-🇰🇷(KR)-select-marmoset.rooster465.autos
+  - TROJAN-WS-TLS-🇺🇸(US)-vless.herogoing.top
+  - TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top
   - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
-  - TROJAN-WS-TLS-🇺🇸(US)-jquery.com
-  - TROJAN-WS-TLS-🇺🇸(US)-104.18.155.119
-  - TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
-  - TROJAN-GRPC-REALITY-🇪🇪(EE)-77.239.126.65
-  - TROJAN-GRPC-REALITY-🇪🇪(EE)-77.239.126.65_1
-  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online_1
   - TROJAN-TCP-TLS-🇰🇷(KR)-positive-bear.rooster465.autos
   - TROJAN-TCP-TLS-🇰🇷(KR)-glowing-deer.rooster465.autos
+  - TROJAN-WS-TLS-🇺🇸(US)-russia.com
+  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.210.125
+  - TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
+  - TROJAN-TCP-TLS-🇰🇷(KR)-select-marmoset.rooster465.autos_1
+  - TROJAN-WS-TLS-🇺🇸(US)-jquery.com
   - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online_2
-  - TROJAN-WS-TLS-🇺🇸(US)-join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  - TROJAN-TCP-TLS-🇰🇷(KR)-select-marmoset.rooster465.autos
+  - TROJAN-WS-TLS-🇺🇸(US)-104.18.155.119
+  - TROJAN-GRPC-REALITY-🇪🇪(EE)-77.239.126.65
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.210.125_1
+  - TROJAN-GRPC-REALITY-🇪🇪(EE)-77.239.126.65_1
+  - TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.210.125_2
   - TROJAN-GRPC-REALITY-🇪🇪(EE)-77.239.126.65_2
+  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
+  - TROJAN-WS-TLS-🇺🇸(US)-join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  - TROJAN-WS-TLS-🇸🇪(SE)-104.18.185.26
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.210.125_3
 rule-providers:
   adblock:
     type: http
