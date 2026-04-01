@@ -14,6 +14,21 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: VMESS-WS-TLS-🇺🇸(US)-cg1c16.waimaojd.com
+  type: vmess
+  server: cg1c16.waimaojd.com
+  port: 443
+  uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10
+  network: ws
+  tls: true
+  servername: cg1c16.waimaojd.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c16.waimaojd.com
+  alterId: 0
+  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   type: vmess
   server: usaapp1.jisuyun.top
@@ -48,6 +63,7 @@ proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
+  - VMESS-WS-TLS-🇺🇸(US)-cg1c16.waimaojd.com
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   tolerance: 50
@@ -66,6 +82,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
+  - VMESS-WS-TLS-🇺🇸(US)-cg1c16.waimaojd.com
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
 rule-providers:
