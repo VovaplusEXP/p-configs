@@ -14,26 +14,22 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
+- name: VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org
   type: vmess
-  server: 172.233.137.157
+  server: node-uk.connectsuite.org
   port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  network: ws
+  uuid: c4ea2391-095d-407a-9dab-85fc7104b681
+  network: tcp
   tls: true
-  servername: usaapp1.jisuyun.top
+  servername: node-uk.connectsuite.org
   client-fingerprint: chrome
-  ws-opts:
-    path: /usavm
-    headers:
-      Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
-  - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
+  - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -50,7 +46,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
-  - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
+  - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org
 rule-providers:
   adblock:
     type: http
