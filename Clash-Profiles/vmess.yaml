@@ -25,19 +25,15 @@ proxies:
   client-fingerprint: chrome
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
+- name: VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org_1
   type: vmess
-  server: v2ray.codefyinc.com
-  port: 443
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-  network: ws
+  server: node-uk.connectsuite.org
+  port: 2053
+  uuid: c4ea2391-095d-407a-9dab-85fc7104b681
+  network: tcp
   tls: true
-  servername: v2ray.codefyinc.com
+  servername: node-uk.connectsuite.org
   client-fingerprint: chrome
-  ws-opts:
-    path: /vmessws
-    headers:
-      Host: v2ray.codefyinc.com
   alterId: 0
   cipher: auto
 proxy-groups:
@@ -45,7 +41,7 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org
-  - VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
+  - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -63,7 +59,7 @@ proxy-groups:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
   - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org
-  - VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
+  - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org_1
 rule-providers:
   adblock:
     type: http
