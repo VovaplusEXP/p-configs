@@ -44,17 +44,6 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-TCP-TLS-🇬🇧(GB)-51.195.235.71
-  type: vmess
-  server: 51.195.235.71
-  port: 2053
-  uuid: c4ea2391-095d-407a-9dab-85fc7104b681
-  network: tcp
-  tls: true
-  servername: 51.195.235.71
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
 - name: VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org
   type: vmess
   server: node-uk.connectsuite.org
@@ -77,6 +66,17 @@ proxies:
   client-fingerprint: chrome
   alterId: 0
   cipher: auto
+- name: VMESS-TCP-TLS-🇬🇧(GB)-51.195.235.71
+  type: vmess
+  server: 51.195.235.71
+  port: 2053
+  uuid: c4ea2391-095d-407a-9dab-85fc7104b681
+  network: tcp
+  tls: true
+  servername: 51.195.235.71
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: auto
 - name: VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org_2
   type: vmess
   server: node-uk.connectsuite.org
@@ -94,9 +94,9 @@ proxy-groups:
   proxies: &id001
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-TCP-TLS-🇬🇧(GB)-51.195.235.71
   - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org
   - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org_1
+  - VMESS-TCP-TLS-🇬🇧(GB)-51.195.235.71
   - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org_2
   tolerance: 50
   lazy: false
@@ -116,9 +116,9 @@ proxy-groups:
   - 🔗 Auto-Failover-VMESS
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-TCP-TLS-🇬🇧(GB)-51.195.235.71
   - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org
   - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org_1
+  - VMESS-TCP-TLS-🇬🇧(GB)-51.195.235.71
   - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org_2
 rule-providers:
   adblock:
