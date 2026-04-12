@@ -14,42 +14,58 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+- name: VMESS-WS-TLS-🇫🇮(FI)-104.18.12.149
   type: vmess
-  server: usaapp1.jisuyun.top
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  server: 104.18.12.149
+  port: 443
+  uuid: 4571389d-7e40-4a3d-b278-9e4a320a0f3c
   network: ws
   tls: true
-  servername: usaapp1.jisuyun.top
+  servername: work.clientserviceplatform.online
   client-fingerprint: chrome
   ws-opts:
-    path: /usavm
+    path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
     headers:
-      Host: usaapp1.jisuyun.top
+      Host: work.clientserviceplatform.online
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
+- name: VMESS-WS-TLS-🇹🇷(TR)-188.114.98.0
   type: vmess
-  server: 172.233.137.157
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  server: 188.114.98.0
+  port: 8443
+  uuid: 39382035-3420-4937-a031-303220393820
   network: ws
   tls: true
-  servername: usaapp1.jisuyun.top
+  servername: tr-1.stunnel.cc
   client-fingerprint: chrome
   ws-opts:
-    path: /usavm
+    path: /ws
     headers:
-      Host: usaapp1.jisuyun.top
+      Host: tr-1.stunnel.cc
   alterId: 0
-  cipher: auto
+  cipher: none
+- name: VMESS-WS-TLS-🇹🇷(TR)-104.18.12.149
+  type: vmess
+  server: 104.18.12.149
+  port: 8443
+  uuid: 39382035-3420-4937-a031-303220393820
+  network: ws
+  tls: true
+  servername: tr-1.stunnel.cc
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: tr-1.stunnel.cc
+  alterId: 0
+  cipher: none
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
+  - VMESS-WS-TLS-🇫🇮(FI)-104.18.12.149
+  - VMESS-WS-TLS-🇹🇷(TR)-188.114.98.0
+  - VMESS-WS-TLS-🇹🇷(TR)-104.18.12.149
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -66,8 +82,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
+  - VMESS-WS-TLS-🇫🇮(FI)-104.18.12.149
+  - VMESS-WS-TLS-🇹🇷(TR)-188.114.98.0
+  - VMESS-WS-TLS-🇹🇷(TR)-104.18.12.149
 rule-providers:
   adblock:
     type: http
