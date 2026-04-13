@@ -44,21 +44,6 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇫🇮(FI)-104.18.12.149
-  type: vmess
-  server: 104.18.12.149
-  port: 443
-  uuid: 4571389d-7e40-4a3d-b278-9e4a320a0f3c
-  network: ws
-  tls: true
-  servername: work.clientserviceplatform.online
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
-    headers:
-      Host: work.clientserviceplatform.online
-  alterId: 0
-  cipher: auto
 - name: VMESS-WS-TLS-🇹🇷(TR)-188.114.98.0
   type: vmess
   server: 188.114.98.0
@@ -74,6 +59,21 @@ proxies:
       Host: tr-1.stunnel.cc
   alterId: 0
   cipher: none
+- name: VMESS-WS-TLS-🇫🇮(FI)-104.18.12.149
+  type: vmess
+  server: 104.18.12.149
+  port: 443
+  uuid: 4571389d-7e40-4a3d-b278-9e4a320a0f3c
+  network: ws
+  tls: true
+  servername: work.clientserviceplatform.online
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
+    headers:
+      Host: work.clientserviceplatform.online
+  alterId: 0
+  cipher: auto
 - name: VMESS-WS-TLS-🇹🇷(TR)-104.18.12.149
   type: vmess
   server: 104.18.12.149
@@ -95,8 +95,8 @@ proxy-groups:
   proxies: &id001
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
-  - VMESS-WS-TLS-🇫🇮(FI)-104.18.12.149
   - VMESS-WS-TLS-🇹🇷(TR)-188.114.98.0
+  - VMESS-WS-TLS-🇫🇮(FI)-104.18.12.149
   - VMESS-WS-TLS-🇹🇷(TR)-104.18.12.149
   tolerance: 50
   lazy: false
@@ -116,8 +116,8 @@ proxy-groups:
   - 🔗 Auto-Failover-VMESS
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
-  - VMESS-WS-TLS-🇫🇮(FI)-104.18.12.149
   - VMESS-WS-TLS-🇹🇷(TR)-188.114.98.0
+  - VMESS-WS-TLS-🇫🇮(FI)-104.18.12.149
   - VMESS-WS-TLS-🇹🇷(TR)-104.18.12.149
 rule-providers:
   adblock:
