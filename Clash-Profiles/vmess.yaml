@@ -44,21 +44,6 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇫🇮(FI)-104.18.12.149
-  type: vmess
-  server: 104.18.12.149
-  port: 443
-  uuid: 4571389d-7e40-4a3d-b278-9e4a320a0f3c
-  network: ws
-  tls: true
-  servername: work.clientserviceplatform.online
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
-    headers:
-      Host: work.clientserviceplatform.online
-  alterId: 0
-  cipher: auto
 - name: VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org
   type: vmess
   server: node-uk.connectsuite.org
@@ -81,17 +66,6 @@ proxies:
   client-fingerprint: chrome
   alterId: 0
   cipher: auto
-- name: VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org_2
-  type: vmess
-  server: node-uk.connectsuite.org
-  port: 2053
-  uuid: c4ea2391-095d-407a-9dab-85fc7104b681
-  network: tcp
-  tls: true
-  servername: node-uk.connectsuite.org
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
 - name: VMESS-TCP-TLS-🇬🇧(GB)-51.195.235.71
   type: vmess
   server: 51.195.235.71
@@ -103,19 +77,30 @@ proxies:
   client-fingerprint: chrome
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
+- name: VMESS-WS-TLS-🇹🇷(TR)-188.114.98.0
   type: vmess
-  server: v2ray.codefyinc.com
-  port: 443
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  server: 188.114.98.0
+  port: 8443
+  uuid: 39382035-3420-4937-a031-303220393820
   network: ws
   tls: true
-  servername: v2ray.codefyinc.com
+  servername: tr-1.stunnel.cc
   client-fingerprint: chrome
   ws-opts:
-    path: /vmessws
+    path: /ws
     headers:
-      Host: v2ray.codefyinc.com
+      Host: tr-1.stunnel.cc
+  alterId: 0
+  cipher: none
+- name: VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org_2
+  type: vmess
+  server: node-uk.connectsuite.org
+  port: 2053
+  uuid: c4ea2391-095d-407a-9dab-85fc7104b681
+  network: tcp
+  tls: true
+  servername: node-uk.connectsuite.org
+  client-fingerprint: chrome
   alterId: 0
   cipher: auto
 - name: VMESS-WS-TLS-🇹🇷(TR)-104.18.12.149
@@ -139,12 +124,11 @@ proxy-groups:
   proxies: &id001
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇫🇮(FI)-104.18.12.149
   - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org
   - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org_1
-  - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org_2
   - VMESS-TCP-TLS-🇬🇧(GB)-51.195.235.71
-  - VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
+  - VMESS-WS-TLS-🇹🇷(TR)-188.114.98.0
+  - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org_2
   - VMESS-WS-TLS-🇹🇷(TR)-104.18.12.149
   tolerance: 50
   lazy: false
@@ -164,12 +148,11 @@ proxy-groups:
   - 🔗 Auto-Failover-VMESS
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇫🇮(FI)-104.18.12.149
   - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org
   - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org_1
-  - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org_2
   - VMESS-TCP-TLS-🇬🇧(GB)-51.195.235.71
-  - VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
+  - VMESS-WS-TLS-🇹🇷(TR)-188.114.98.0
+  - VMESS-TCP-TLS-🇬🇧(GB)-node-uk.connectsuite.org_2
   - VMESS-WS-TLS-🇹🇷(TR)-104.18.12.149
 rule-providers:
   adblock:
