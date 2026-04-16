@@ -14,21 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  type: vmess
-  server: usaapp1.jisuyun.top
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  network: ws
-  tls: true
-  servername: usaapp1.jisuyun.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /usavm
-    headers:
-      Host: usaapp1.jisuyun.top
-  alterId: 0
-  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
   type: vmess
   server: 172.233.137.157
@@ -44,26 +29,19 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
+- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   type: vmess
-  server: node-de.connectsuite.org
+  server: usaapp1.jisuyun.top
   port: 2053
-  uuid: 9309640e-d299-484a-a0e8-c9b975d94822
-  network: tcp
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  network: ws
   tls: true
-  servername: node-de.connectsuite.org
+  servername: usaapp1.jisuyun.top
   client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
-- name: VMESS-TCP-TLS-🇩🇪(DE)-57.129.121.230
-  type: vmess
-  server: 57.129.121.230
-  port: 2053
-  uuid: 9309640e-d299-484a-a0e8-c9b975d94822
-  network: tcp
-  tls: true
-  servername: 57.129.121.230
-  client-fingerprint: chrome
+  ws-opts:
+    path: /usavm
+    headers:
+      Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
 - name: VMESS-WS-TLS-🇹🇷(TR)-chatgpt.com
@@ -85,10 +63,8 @@ proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
-  - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
-  - VMESS-TCP-TLS-🇩🇪(DE)-57.129.121.230
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇹🇷(TR)-chatgpt.com
   tolerance: 50
   lazy: false
@@ -106,10 +82,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
-  - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
-  - VMESS-TCP-TLS-🇩🇪(DE)-57.129.121.230
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇹🇷(TR)-chatgpt.com
 rule-providers:
   adblock:
