@@ -29,6 +29,28 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
+- name: VMESS-TCP-TLS-🇩🇪(DE)-57.129.121.230
+  type: vmess
+  server: 57.129.121.230
+  port: 2053
+  uuid: 9309640e-d299-484a-a0e8-c9b975d94822
+  network: tcp
+  tls: true
+  servername: 57.129.121.230
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: auto
+- name: VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
+  type: vmess
+  server: node-de.connectsuite.org
+  port: 2053
+  uuid: 9309640e-d299-484a-a0e8-c9b975d94822
+  network: tcp
+  tls: true
+  servername: node-de.connectsuite.org
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   type: vmess
   server: usaapp1.jisuyun.top
@@ -44,44 +66,14 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
-  type: vmess
-  server: v2ray.codefyinc.com
-  port: 443
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-  network: ws
-  tls: true
-  servername: v2ray.codefyinc.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /vmessws
-    headers:
-      Host: v2ray.codefyinc.com
-  alterId: 0
-  cipher: auto
-- name: VMESS-WS-TLS-🇹🇷(TR)-chatgpt.com
-  type: vmess
-  server: chatgpt.com
-  port: 8443
-  uuid: 34392034-3920-4438-a039-392035362035
-  network: ws
-  tls: true
-  servername: tr-1.stunnel.cc
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
-    headers:
-      Host: tr-1.stunnel.cc
-  alterId: 0
-  cipher: none
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
+  - VMESS-TCP-TLS-🇩🇪(DE)-57.129.121.230
+  - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
-  - VMESS-WS-TLS-🇹🇷(TR)-chatgpt.com
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -99,9 +91,9 @@ proxy-groups:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
   - VMESS-WS-TLS-🇺🇸(US)-172.233.137.157
+  - VMESS-TCP-TLS-🇩🇪(DE)-57.129.121.230
+  - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-v2ray.codefyinc.com
-  - VMESS-WS-TLS-🇹🇷(TR)-chatgpt.com
 rule-providers:
   adblock:
     type: http
