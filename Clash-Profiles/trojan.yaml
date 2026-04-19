@@ -14,15 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55
-  type: trojan
-  server: 216.234.140.55
-  port: 47574
-  uuid: 3PfyPiLUGm
-  network: grpc
-  tls: true
-  servername: aws.amazon.com
-  client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.64.53.190
   type: trojan
   server: 172.64.53.190
@@ -49,28 +40,15 @@ proxies:
     path: /%2F
     headers:
       Host: snll667.pages.dev
-- name: TROJAN-TCP-REALITY-🇺🇸(US)-150.241.203.78
+- name: TROJAN-TCP-TLS-🇳🇱(NL)-194.124.216.192
   type: trojan
-  server: 150.241.203.78
+  server: 194.124.216.192
   port: 443
-  uuid: 2dd4ce71-37ad-48fa-920e-c668de152211
+  uuid: M08tvzYWtUEJNtbpHp
   network: tcp
   tls: true
-  servername: www.google.com
+  servername: 194.124.216.192
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.18.155.119
-  type: trojan
-  server: 104.18.155.119
-  port: 443
-  uuid: 988sR-269PKCKlb&3pMrFTEr
-  network: ws
-  tls: true
-  servername: LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
-    headers:
-      Host: letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
   server: 172.67.180.227
@@ -84,45 +62,37 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.18.12.149
+- name: TROJAN-TCP-TLS-🇳🇱(NL)-nl-4.tr202507.com
   type: trojan
-  server: 104.18.12.149
+  server: nl-4.tr202507.com
   port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: uThbm8eGmXZ7GKqnWy
+  network: tcp
+  tls: true
+  servername: nl-4.tr202507.com
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇳🇱(NL)-nl-4.tr202512.com
+  type: trojan
+  server: nl-4.tr202512.com
+  port: 443
+  uuid: M08tvzYWtUEJNtbpHp
+  network: tcp
+  tls: true
+  servername: nl-4.tr202512.com
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top
+  type: trojan
+  server: bpbg.anguswen.top
+  port: 8443
+  uuid: '123456'
   network: ws
   tls: true
-  servername: sni.111000.dynv6.net
+  servername: BpBg.ANGusWeN.top
   client-fingerprint: chrome
   ws-opts:
-    path: /Tel-@V2rayAlpha
+    path: /eyJqdW5rIjoiTUp4VFNoMTRLbSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0=?ed=2560
     headers:
-      Host: sni.111000.dynv6.net
-- name: TROJAN-WS-TLS-🇺🇸(US)-bestcf.030101.xyz
-  type: trojan
-  server: bestcf.030101.xyz
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: TROJAN-WS-TLS-🇺🇸(US)-jquery.com
-  type: trojan
-  server: jquery.com
-  port: 443
-  uuid: 988sR-269PKCKlb&3pMrFTEr
-  network: ws
-  tls: true
-  servername: LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
-    headers:
-      Host: letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev
+      Host: bpbg.anguswen.top
 - name: TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
   type: trojan
   server: 104.18.156.119
@@ -136,14 +106,40 @@ proxies:
     path: /eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
     headers:
       Host: letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev
-- name: TROJAN-TCP-TLS-🇳🇱(NL)-nl-4.tr202512.com
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.18.3.150
   type: trojan
-  server: nl-4.tr202512.com
+  server: 104.18.3.150
   port: 443
-  uuid: M08tvzYWtUEJNtbpHp
+  uuid: zWFjJENcljZm
+  network: ws
+  tls: true
+  servername: vahidqaz-7o61u7.vahidqaz.workers.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed%3D2560
+    headers:
+      Host: vahidqaz-7o61u7.vahidqaz.workers.dev
+- name: TROJAN-WS-TLS-🇺🇸(US)-vless.herogoing.top
+  type: trojan
+  server: vless.herogoing.top
+  port: 443
+  uuid: bpb-trojan
+  network: ws
+  tls: true
+  servername: vless.herogoing.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tr?ed=2560
+    headers:
+      Host: vless.herogoing.top
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.38.210.223
+  type: trojan
+  server: 13.38.210.223
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: nl-4.tr202512.com
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.16.188
   type: trojan
@@ -152,98 +148,24 @@ proxies:
   uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: 63.179.16.188
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-162.159.152.2
+- name: TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn
   type: trojan
-  server: 162.159.152.2
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: TROJAN-TCP-TLS-🇳🇱(NL)-nl-4.tr202507.com
-  type: trojan
-  server: nl-4.tr202507.com
-  port: 443
-  uuid: uThbm8eGmXZ7GKqnWy
-  network: tcp
-  tls: true
-  servername: nl-4.tr202507.com
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-freeyx.cloudflare88.eu.org
-  type: trojan
-  server: freeyx.cloudflare88.eu.org
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: TROJAN-WS-TLS-🇺🇸(US)-8.6.112.6
-  type: trojan
-  server: 8.6.112.6
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?proxyip=ip.111000.de5.net%3A443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.18.12.149_1
-  type: trojan
-  server: 104.18.12.149
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.dynv6.net
-- name: TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
-  type: trojan
-  server: v1.dabache.top
+  server: wing2452.nyc.mn
   port: 443
   uuid: bpb-trojan
   network: ws
   tls: true
-  servername: mashdt.pages.dev
+  servername: wing2452.nyc.mn
   client-fingerprint: chrome
   ws-opts:
-    path: /tr
+    path: /tr?ed=2560
     headers:
-      Host: mashdt.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
+      Host: wing2452.nyc.mn
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.18.16.56
   type: trojan
-  server: saas.sin.fan
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.18.12.149_2
-  type: trojan
-  server: 104.18.12.149
+  server: 104.18.16.56
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -254,6 +176,24 @@ proxies:
     path: /
     headers:
       Host: sni.111000.dynv6.net
+- name: TROJAN-TCP-REALITY-🇩🇪(DE)-159.195.6.151
+  type: trojan
+  server: 159.195.6.151
+  port: 443
+  uuid: 49197da7-4f74-4c34-8229-35561043c113
+  network: tcp
+  tls: true
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.38.210.223_1
+  type: trojan
+  server: 13.38.210.223
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: 13.38.210.223
+  client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.16.188_1
   type: trojan
   server: 63.179.16.188
@@ -263,19 +203,19 @@ proxies:
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.64.146.129
+- name: TROJAN-WS-TLS-🇨🇿(CZ)-91.184.250.116
   type: trojan
-  server: 172.64.146.129
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 91.184.250.116
+  port: 2083
+  uuid: q2jXRWncMA7pQren_VjQKhSQfoBWK_
   network: ws
   tls: true
-  servername: sni.111000.dynv6.net
+  servername: xo.e0f.cx
   client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560&proxyip=ip.111000.de5.net:443
+    path: /trojan-ws
     headers:
-      Host: sni.111000.dynv6.net
+      Host: xo.e0f.cx
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.16.188_2
   type: trojan
   server: 63.179.16.188
@@ -283,7 +223,16 @@ proxies:
   uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: 63.179.16.188
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇹🇷(TR)-tr-1.stunnel.cc
+  type: trojan
+  server: tr-1.stunnel.cc
+  port: 8441
+  uuid: tunnel-ljlcf
+  network: tcp
+  tls: true
+  servername: creativecommons.org
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-63.179.16.188_3
   type: trojan
@@ -294,48 +243,41 @@ proxies:
   tls: true
   servername: 63.179.16.188
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-104.16.80.73
+- name: TROJAN-GRPC-REALITY-🇭🇰(HK)-154.3.37.35
   type: trojan
-  server: 104.16.80.73
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
+  server: 154.3.37.35
+  port: 41916
+  uuid: hmR46dYjqH
+  network: grpc
   tls: true
-  servername: sni.111000.dynv6.net
+  servername: www.icloud.com
   client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.dynv6.net
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55
   - TROJAN-WS-TLS-🇺🇸(US)-172.64.53.190
   - TROJAN-WS-TLS-🇺🇸(US)-104.18.41.190
-  - TROJAN-TCP-REALITY-🇺🇸(US)-150.241.203.78
-  - TROJAN-WS-TLS-🇺🇸(US)-104.18.155.119
+  - TROJAN-TCP-TLS-🇳🇱(NL)-194.124.216.192
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-WS-TLS-🇺🇸(US)-104.18.12.149
-  - TROJAN-WS-TLS-🇺🇸(US)-bestcf.030101.xyz
-  - TROJAN-WS-TLS-🇺🇸(US)-jquery.com
-  - TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
-  - TROJAN-TCP-TLS-🇳🇱(NL)-nl-4.tr202512.com
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.16.188
-  - TROJAN-WS-TLS-🇺🇸(US)-162.159.152.2
   - TROJAN-TCP-TLS-🇳🇱(NL)-nl-4.tr202507.com
-  - TROJAN-WS-TLS-🇺🇸(US)-freeyx.cloudflare88.eu.org
-  - TROJAN-WS-TLS-🇺🇸(US)-8.6.112.6
-  - TROJAN-WS-TLS-🇺🇸(US)-104.18.12.149_1
-  - TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
-  - TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
-  - TROJAN-WS-TLS-🇺🇸(US)-104.18.12.149_2
+  - TROJAN-TCP-TLS-🇳🇱(NL)-nl-4.tr202512.com
+  - TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top
+  - TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
+  - TROJAN-WS-TLS-🇺🇸(US)-104.18.3.150
+  - TROJAN-WS-TLS-🇺🇸(US)-vless.herogoing.top
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.38.210.223
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.16.188
+  - TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn
+  - TROJAN-WS-TLS-🇺🇸(US)-104.18.16.56
+  - TROJAN-TCP-REALITY-🇩🇪(DE)-159.195.6.151
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.38.210.223_1
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.16.188_1
-  - TROJAN-WS-TLS-🇺🇸(US)-172.64.146.129
+  - TROJAN-WS-TLS-🇨🇿(CZ)-91.184.250.116
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.16.188_2
+  - TROJAN-TCP-TLS-🇹🇷(TR)-tr-1.stunnel.cc
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.16.188_3
-  - TROJAN-WS-TLS-🇺🇸(US)-104.16.80.73
+  - TROJAN-GRPC-REALITY-🇭🇰(HK)-154.3.37.35
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -352,31 +294,28 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55
   - TROJAN-WS-TLS-🇺🇸(US)-172.64.53.190
   - TROJAN-WS-TLS-🇺🇸(US)-104.18.41.190
-  - TROJAN-TCP-REALITY-🇺🇸(US)-150.241.203.78
-  - TROJAN-WS-TLS-🇺🇸(US)-104.18.155.119
+  - TROJAN-TCP-TLS-🇳🇱(NL)-194.124.216.192
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-WS-TLS-🇺🇸(US)-104.18.12.149
-  - TROJAN-WS-TLS-🇺🇸(US)-bestcf.030101.xyz
-  - TROJAN-WS-TLS-🇺🇸(US)-jquery.com
-  - TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
-  - TROJAN-TCP-TLS-🇳🇱(NL)-nl-4.tr202512.com
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.16.188
-  - TROJAN-WS-TLS-🇺🇸(US)-162.159.152.2
   - TROJAN-TCP-TLS-🇳🇱(NL)-nl-4.tr202507.com
-  - TROJAN-WS-TLS-🇺🇸(US)-freeyx.cloudflare88.eu.org
-  - TROJAN-WS-TLS-🇺🇸(US)-8.6.112.6
-  - TROJAN-WS-TLS-🇺🇸(US)-104.18.12.149_1
-  - TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
-  - TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
-  - TROJAN-WS-TLS-🇺🇸(US)-104.18.12.149_2
+  - TROJAN-TCP-TLS-🇳🇱(NL)-nl-4.tr202512.com
+  - TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top
+  - TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
+  - TROJAN-WS-TLS-🇺🇸(US)-104.18.3.150
+  - TROJAN-WS-TLS-🇺🇸(US)-vless.herogoing.top
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.38.210.223
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.16.188
+  - TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn
+  - TROJAN-WS-TLS-🇺🇸(US)-104.18.16.56
+  - TROJAN-TCP-REALITY-🇩🇪(DE)-159.195.6.151
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.38.210.223_1
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.16.188_1
-  - TROJAN-WS-TLS-🇺🇸(US)-172.64.146.129
+  - TROJAN-WS-TLS-🇨🇿(CZ)-91.184.250.116
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.16.188_2
+  - TROJAN-TCP-TLS-🇹🇷(TR)-tr-1.stunnel.cc
   - TROJAN-TCP-TLS-🇩🇪(DE)-63.179.16.188_3
-  - TROJAN-WS-TLS-🇺🇸(US)-104.16.80.73
+  - TROJAN-GRPC-REALITY-🇭🇰(HK)-154.3.37.35
 rule-providers:
   adblock:
     type: http
