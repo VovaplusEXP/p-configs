@@ -14,24 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55
-  type: trojan
-  server: 216.234.140.55
-  port: 47574
-  uuid: 3PfyPiLUGm
-  network: grpc
-  tls: true
-  servername: aws.amazon.com
-  client-fingerprint: chrome
-- name: TROJAN-TCP-REALITY-🇺🇸(US)-150.241.203.78
-  type: trojan
-  server: 150.241.203.78
-  port: 443
-  uuid: 2dd4ce71-37ad-48fa-920e-c668de152211
-  network: tcp
-  tls: true
-  servername: www.google.com
-  client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-104.18.41.190
   type: trojan
   server: 104.18.41.190
@@ -45,45 +27,6 @@ proxies:
     path: /%2F
     headers:
       Host: snll667.pages.dev
-- name: TROJAN-WS-TLS-🇨🇦(CA)-172.64.53.190
-  type: trojan
-  server: 172.64.53.190
-  port: 443
-  uuid: 823cbccd-3a71-4248-ac3c-3c460de1552d
-  network: ws
-  tls: true
-  servername: snll667.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: //
-    headers:
-      Host: snll667.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  type: trojan
-  server: 172.67.180.227
-  port: 443
-  uuid: bpb-trojan
-  network: ws
-  tls: true
-  servername: mashdt.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr?ed=2560
-    headers:
-      Host: mashdt.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
-  type: trojan
-  server: irancell.buzzmuzzpanel.online
-  port: 443
-  uuid: A4u^p(_UR*F6
-  network: ws
-  tls: true
-  servername: 027.eLECTROcelLCO-cf-027.WorKerS.Dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoidDJ0UDljR2ZIaVBQakg2byIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: 027.electrocellco-cf-027.workers.dev
 - name: TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn
   type: trojan
   server: wing2452.nyc.mn
@@ -94,9 +37,22 @@ proxies:
   servername: wing2452.nyc.mn
   client-fingerprint: chrome
   ws-opts:
-    path: /tr
+    path: /tr?ed=2560
     headers:
       Host: wing2452.nyc.mn
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.64.152.23
+  type: trojan
+  server: 172.64.152.23
+  port: 443
+  uuid: '162534'
+  network: ws
+  tls: true
+  servername: cchh2.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: cchh2.pages.dev
 - name: TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn_1
   type: trojan
   server: wing2452.nyc.mn
@@ -110,58 +66,6 @@ proxies:
     path: /tr
     headers:
       Host: wing2452.nyc.mn
-- name: TROJAN-WS-TLS-🇩🇪(DE)-138.124.229.34
-  type: trojan
-  server: 138.124.229.34
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn_2
-  type: trojan
-  server: wing2452.nyc.mn
-  port: 443
-  uuid: bpb-trojan
-  network: ws
-  tls: true
-  servername: wing2452.nyc.mn
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr?ed=2560
-    headers:
-      Host: wing2452.nyc.mn
-- name: TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
-  type: trojan
-  server: v1.dabache.top
-  port: 443
-  uuid: bpb-trojan
-  network: ws
-  tls: true
-  servername: mashdt.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr
-    headers:
-      Host: mashdt.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-jquery.com
-  type: trojan
-  server: jquery.com
-  port: 443
-  uuid: 988sR-269PKCKlb&3pMrFTEr
-  network: ws
-  tls: true
-  servername: LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
-    headers:
-      Host: letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev
 - name: TROJAN-WS-TLS-🇺🇸(US)-vless.herogoing.top
   type: trojan
   server: vless.herogoing.top
@@ -175,97 +79,88 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: vless.herogoing.top
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.190.72
+- name: TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
   type: trojan
-  server: 13.39.190.72
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇩🇪(DE)-185.58.159.150
-  type: trojan
-  server: 185.58.159.150
+  server: irancell.buzzmuzzpanel.online
   port: 443
-  uuid: '1234567890'
+  uuid: A4u^p(_UR*F6
   network: ws
   tls: true
-  servername: kfm-bn0.pages.dev
+  servername: 027.eLECTROcelLCO-cf-027.WorKerS.Dev
   client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    path: /eyJqdW5rIjoidDJ0UDljR2ZIaVBQakg2byIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn_3
+      Host: 027.electrocellco-cf-027.workers.dev
+- name: TROJAN-WS-TLS-🇺🇸(US)-russia.com
   type: trojan
-  server: wing2452.nyc.mn
+  server: russia.com
   port: 443
   uuid: bpb-trojan
   network: ws
   tls: true
-  servername: wing2452.nyc.mn
+  servername: 6982410.xyz
   client-fingerprint: chrome
   ws-opts:
-    path: /tr
+    path: /tr?ed=2560
     headers:
-      Host: wing2452.nyc.mn
-- name: TROJAN-WS-TLS-🇩🇪(DE)-45.140.43.6
+      Host: 6982410.xyz
+- name: TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top
   type: trojan
-  server: 45.140.43.6
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-38.246.33.245
-  type: trojan
-  server: 38.246.33.245
+  server: bpbg.anguswen.top
   port: 8443
-  uuid: '1234567890'
+  uuid: '123456'
   network: ws
   tls: true
-  servername: kfm-bn0.pages.dev
+  servername: BpBg.ANGusWeN.top
   client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    path: /eyJqdW5rIjoiTUp4VFNoMTRLbSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0=?ed=2560
     headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-95.164.53.228
+      Host: bpbg.anguswen.top
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.18.3.150
   type: trojan
-  server: 95.164.53.228
+  server: 104.18.3.150
   port: 443
-  uuid: '1234567890'
+  uuid: zWFjJENcljZm
   network: ws
   tls: true
-  servername: kfm-bn0.pages.dev
+  servername: vahidqaz-7o61u7.vahidqaz.workers.dev
   client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    path: /?ed%3D2560
     headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-138.124.240.36
+      Host: vahidqaz-7o61u7.vahidqaz.workers.dev
+- name: TROJAN-WS-TLS-🇺🇸(US)-jquery.com
   type: trojan
-  server: 138.124.240.36
+  server: jquery.com
   port: 443
-  uuid: '1234567890'
+  uuid: 988sR-269PKCKlb&3pMrFTEr
   network: ws
   tls: true
-  servername: kfm-bn0.pages.dev
+  servername: LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV
   client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    path: /eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
     headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-213.176.77.231
+      Host: letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
   type: trojan
-  server: 213.176.77.231
+  server: 104.18.156.119
   port: 443
+  uuid: 988sR-269PKCKlb&3pMrFTEr
+  network: ws
+  tls: true
+  servername: LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
+    headers:
+      Host: letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-77.83.86.169
+  type: trojan
+  server: 77.83.86.169
+  port: 2053
   uuid: '1234567890'
   network: ws
   tls: true
@@ -282,207 +177,37 @@ proxies:
   uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇩🇪(DE)-138.124.87.163
-  type: trojan
-  server: 138.124.87.163
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-77.83.86.169
-  type: trojan
-  server: 77.83.86.169
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-2.27.121.32
-  type: trojan
-  server: 2.27.121.32
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-109.122.198.72
-  type: trojan
-  server: 109.122.198.72
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.194.156.164
-  type: trojan
-  server: 104.194.156.164
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-144.31.188.6
-  type: trojan
-  server: 144.31.188.6
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-109.172.94.240
-  type: trojan
-  server: 109.172.94.240
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.190.72_1
-  type: trojan
-  server: 13.39.190.72
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 13.39.190.72
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇩🇪(DE)-45.146.202.28
-  type: trojan
-  server: 45.146.202.28
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-64.188.70.233
-  type: trojan
-  server: 64.188.70.233
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-88.198.82.146
-  type: trojan
-  server: 88.198.82.146
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-78.47.85.213
-  type: trojan
-  server: 78.47.85.213
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-159.223.27.68
-  type: trojan
-  server: 159.223.27.68
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-91.107.155.114
-  type: trojan
-  server: 91.107.155.114
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_1
-  type: trojan
-  server: 35.156.70.160
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
   servername: 35.156.70.160
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_2
+- name: TROJAN-WS-TLS-🇩🇪(DE)-193.168.201.18
   type: trojan
-  server: 35.156.70.160
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
+  server: 193.168.201.18
+  port: 443
+  uuid: '1234567890'
+  network: ws
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: kfm-bn0.pages.dev
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇩🇪(DE)-57.129.63.158
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-91.98.115.175
   type: trojan
-  server: 57.129.63.158
+  server: 91.98.115.175
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-159.195.39.241
+  type: trojan
+  server: 159.195.39.241
   port: 2053
   uuid: '1234567890'
   network: ws
@@ -493,322 +218,10 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-144.31.198.116
+- name: TROJAN-WS-TLS-🇩🇪(DE)-192.248.183.18
   type: trojan
-  server: 144.31.198.116
+  server: 192.248.183.18
   port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-144.31.255.102
-  type: trojan
-  server: 144.31.255.102
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-46.225.210.98
-  type: trojan
-  server: 46.225.210.98
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-109.70.74.67
-  type: trojan
-  server: 109.70.74.67
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳=
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-144.31.228.45
-  type: trojan
-  server: 144.31.228.45
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-86.110.36.87
-  type: trojan
-  server: 86.110.36.87
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-138.124.115.108
-  type: trojan
-  server: 138.124.115.108
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇳🇱(NL)-77.90.63.208
-  type: trojan
-  server: 77.90.63.208
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-144.31.104.154
-  type: trojan
-  server: 144.31.104.154
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-147.45.70.195
-  type: trojan
-  server: 147.45.70.195
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-138.124.28.78
-  type: trojan
-  server: 138.124.28.78
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-194.87.77.2
-  type: trojan
-  server: 194.87.77.2
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-198.105.115.82
-  type: trojan
-  server: 198.105.115.82
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-150.241.66.81
-  type: trojan
-  server: 150.241.66.81
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-178.104.107.40
-  type: trojan
-  server: 178.104.107.40
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-143.20.160.200
-  type: trojan
-  server: 143.20.160.200
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-23.88.112.241
-  type: trojan
-  server: 23.88.112.241
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-91.107.155.13
-  type: trojan
-  server: 91.107.155.13
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-94.141.123.243
-  type: trojan
-  server: 94.141.123.243
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-159.195.5.181
-  type: trojan
-  server: 159.195.5.181
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-194.58.33.158
-  type: trojan
-  server: 194.58.33.158
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳=
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-46.101.172.168
-  type: trojan
-  server: 46.101.172.168
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-178.104.32.63
-  type: trojan
-  server: 178.104.32.63
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-213.176.77.30
-  type: trojan
-  server: 213.176.77.30
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-213.165.38.108
-  type: trojan
-  server: 213.165.38.108
-  port: 2083
   uuid: '1234567890'
   network: ws
   tls: true
@@ -831,10 +244,10 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-185.170.153.115
+- name: TROJAN-WS-TLS-🇩🇪(DE)-207.154.242.240
   type: trojan
-  server: 185.170.153.115
-  port: 8443
+  server: 207.154.242.240
+  port: 2083
   uuid: '1234567890'
   network: ws
   tls: true
@@ -844,10 +257,23 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.249.73
+- name: TROJAN-WS-TLS-🇺🇸(US)-162.159.152.2
   type: trojan
-  server: 104.248.249.73
+  server: 162.159.152.2
   port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: true
+  servername: sni.111000.dynv6.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: TROJAN-WS-TLS-🇩🇪(DE)-135.125.234.148
+  type: trojan
+  server: 135.125.234.148
+  port: 2053
   uuid: '1234567890'
   network: ws
   tls: true
@@ -857,48 +283,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-157.230.111.133
+- name: TROJAN-WS-TLS-🇩🇪(DE)-165.22.85.220
   type: trojan
-  server: 157.230.111.133
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-64.188.96.123
-  type: trojan
-  server: 64.188.96.123
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-134.122.88.119
-  type: trojan
-  server: 134.122.88.119
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-103.109.234.64
-  type: trojan
-  server: 103.109.234.64
+  server: 165.22.85.220
   port: 443
   uuid: '1234567890'
   network: ws
@@ -919,25 +306,12 @@ proxies:
   servername: kfm-bn0.pages.dev
   client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    path: /?https://t.me/WangCai2🇨🇳=
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.194.156.164_1
+- name: TROJAN-WS-TLS-🇩🇪(DE)-103.109.234.64
   type: trojan
-  server: 104.194.156.164
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-37.120.169.217
-  type: trojan
-  server: 37.120.169.217
+  server: 103.109.234.64
   port: 443
   uuid: '1234567890'
   network: ws
@@ -948,31 +322,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.190.72_2
+- name: TROJAN-WS-TLS-🇩🇪(DE)-159.89.107.10
   type: trojan
-  server: 13.39.190.72
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇩🇪(DE)-83.242.100.181
-  type: trojan
-  server: 83.242.100.181
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-85.215.129.133
-  type: trojan
-  server: 85.215.129.133
+  server: 159.89.107.10
   port: 443
   uuid: '1234567890'
   network: ws
@@ -983,70 +335,18 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-138.124.230.45
-  type: trojan
-  server: 138.124.230.45
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-134.209.224.221
-  type: trojan
-  server: 134.209.224.221
-  port: 2096
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-178.104.2.249
-  type: trojan
-  server: 178.104.2.249
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-45.9.116.160
-  type: trojan
-  server: 45.9.116.160
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_3
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_1
   type: trojan
   server: 35.156.70.160
   port: 22223
   uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: 35.156.70.160
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.23.44
+- name: TROJAN-WS-TLS-🇩🇪(DE)-167.235.26.55
   type: trojan
-  server: 104.248.23.44
+  server: 167.235.26.55
   port: 443
   uuid: '1234567890'
   network: ws
@@ -1057,9 +357,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-51.195.101.75
+- name: TROJAN-WS-TLS-🇩🇪(DE)-128.140.32.214
   type: trojan
-  server: 51.195.101.75
+  server: 128.140.32.214
   port: 8443
   uuid: '1234567890'
   network: ws
@@ -1070,383 +370,15 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-178.104.15.200
+- name: TROJAN-TCP-REALITY-🇩🇪(DE)-159.195.6.151
   type: trojan
-  server: 178.104.15.200
+  server: 159.195.6.151
   port: 443
-  uuid: '1234567890'
-  network: ws
+  uuid: 49197da7-4f74-4c34-8229-35561043c113
+  network: tcp
   tls: true
-  servername: kfm-bn0.pages.dev
+  servername: www.google.com
   client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-144.31.241.145
-  type: trojan
-  server: 144.31.241.145
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-46.101.239.26
-  type: trojan
-  server: 46.101.239.26
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-206.189.54.122
-  type: trojan
-  server: 206.189.54.122
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-46.101.174.78
-  type: trojan
-  server: 46.101.174.78
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-109.70.74.67_1
-  type: trojan
-  server: 109.70.74.67
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-193.31.24.53
-  type: trojan
-  server: 193.31.24.53
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-109.122.197.95
-  type: trojan
-  server: 109.122.197.95
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-195.201.137.164
-  type: trojan
-  server: 195.201.137.164
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-159.223.19.10
-  type: trojan
-  server: 159.223.19.10
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-46.224.48.82
-  type: trojan
-  server: 46.224.48.82
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-172.104.252.102
-  type: trojan
-  server: 172.104.252.102
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-46.226.162.89
-  type: trojan
-  server: 46.226.162.89
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-178.104.26.247
-  type: trojan
-  server: 178.104.26.247
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-178.104.59.23
-  type: trojan
-  server: 178.104.59.23
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-209.38.225.64
-  type: trojan
-  server: 209.38.225.64
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-134.209.224.221_1
-  type: trojan
-  server: 134.209.224.221
-  port: 2087
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-57.129.63.143
-  type: trojan
-  server: 57.129.63.143
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-178.104.18.157
-  type: trojan
-  server: 178.104.18.157
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-64.188.105.7
-  type: trojan
-  server: 64.188.105.7
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇳🇱(NL)-154.83.129.134
-  type: trojan
-  server: 154.83.129.134
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-142.93.162.114
-  type: trojan
-  server: 142.93.162.114
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-150.241.105.243
-  type: trojan
-  server: 150.241.105.243
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-91.149.223.248
-  type: trojan
-  server: 91.149.223.248
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳=
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-150.241.79.197
-  type: trojan
-  server: 150.241.79.197
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-109.237.97.197
-  type: trojan
-  server: 109.237.97.197
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-144.31.120.120
-  type: trojan
-  server: 144.31.120.120
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-217.177.10.6
-  type: trojan
-  server: 217.177.10.6
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-64.226.112.70
-  type: trojan
-  server: 64.226.112.70
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
 - name: TROJAN-WS-TLS-🇮🇹(IT)-82.21.117.137
   type: trojan
   server: 82.21.117.137
@@ -1460,57 +392,18 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-194.87.77.226
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_2
   type: trojan
-  server: 194.87.77.226
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-148.253.210.74
-  type: trojan
-  server: 148.253.210.74
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-159.195.44.151
-  type: trojan
-  server: 159.195.44.151
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-TCP-TLS-🇯🇵(JP)-jp2-8sb.6121999.dpdns.org
-  type: trojan
-  server: jp2-8sb.6121999.dpdns.org
-  port: 24534
-  uuid: e136d465-0558-43b9-b50c-b1f45d4cb2c2
+  server: 35.156.70.160
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: jp2-8sb.6121999.dpdns.org
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇩🇪(DE)-178.104.15.139
+- name: TROJAN-WS-TLS-🇩🇪(DE)-37.1.194.237
   type: trojan
-  server: 178.104.15.139
+  server: 37.1.194.237
   port: 2053
   uuid: '1234567890'
   network: ws
@@ -1521,84 +414,19 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-195.245.239.124
+- name: TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55
   type: trojan
-  server: 195.245.239.124
-  port: 443
-  uuid: '1234567890'
-  network: ws
+  server: 216.234.140.55
+  port: 47574
+  uuid: 3PfyPiLUGm
+  network: grpc
   tls: true
-  servername: kfm-bn0.pages.dev
+  servername: aws.amazon.com
   client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-TCP-TLS-🇯🇵(JP)-jp2-8sb.6121999.dpdns.org_1
+- name: TROJAN-WS-TLS-🇩🇪(DE)-57.129.47.10
   type: trojan
-  server: jp2-8sb.6121999.dpdns.org
-  port: 24534
-  uuid: e136d465-0558-43b9-b50c-b1f45d4cb2c2
-  network: tcp
-  tls: true
-  servername: jp2-8sb.6121999.dpdns.org
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇩🇪(DE)-178.104.40.175
-  type: trojan
-  server: 178.104.40.175
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-202.61.226.121
-  type: trojan
-  server: 202.61.226.121
+  server: 57.129.47.10
   port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-172.64.152.23
-  type: trojan
-  server: 172.64.152.23
-  port: 443
-  uuid: '162534'
-  network: ws
-  tls: true
-  servername: cchh2.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-188.245.64.72
-  type: trojan
-  server: 188.245.64.72
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-138.68.102.184
-  type: trojan
-  server: 138.68.102.184
-  port: 443
   uuid: '1234567890'
   network: ws
   tls: true
@@ -1621,9 +449,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-194.87.25.136
+- name: TROJAN-WS-TLS-🇩🇪(DE)-185.125.102.33
   type: trojan
-  server: 194.87.25.136
+  server: 185.125.102.33
   port: 443
   uuid: '1234567890'
   network: ws
@@ -1634,74 +462,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-142.93.170.171
+- name: TROJAN-WS-TLS-🇩🇪(DE)-103.13.211.113
   type: trojan
-  server: 142.93.170.171
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.194.158.125
-  type: trojan
-  server: 104.194.158.125
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.73
-  type: trojan
-  server: 104.248.46.73
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-144.31.180.250
-  type: trojan
-  server: 144.31.180.250
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-172.86.92.227
-  type: trojan
-  server: 172.86.92.227
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-37.1.194.237
-  type: trojan
-  server: 37.1.194.237
+  server: 103.13.211.113
   port: 2053
   uuid: '1234567890'
   network: ws
@@ -1712,9 +475,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.42.90
+- name: TROJAN-WS-TLS-🇩🇪(DE)-161.35.64.81
   type: trojan
-  server: 104.248.42.90
+  server: 161.35.64.81
   port: 443
   uuid: '1234567890'
   network: ws
@@ -1725,9 +488,100 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-57.129.47.40
+- name: TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
   type: trojan
-  server: 57.129.47.40
+  server: v1.dabache.top
+  port: 443
+  uuid: bpb-trojan
+  network: ws
+  tls: true
+  servername: mashdt.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tr
+    headers:
+      Host: mashdt.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-46.101.252.80
+  type: trojan
+  server: 46.101.252.80
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-5.187.6.30
+  type: trojan
+  server: 5.187.6.30
+  port: 8443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳=
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-91.99.52.229
+  type: trojan
+  server: 91.99.52.229
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-185.207.139.113
+  type: trojan
+  server: 185.207.139.113
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-109.122.198.72
+  type: trojan
+  server: 109.122.198.72
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-178.104.61.155
+  type: trojan
+  server: 178.104.61.155
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-194.87.25.248
+  type: trojan
+  server: 194.87.25.248
   port: 2053
   uuid: '1234567890'
   network: ws
@@ -1738,9 +592,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-46.101.117.15
+- name: TROJAN-WS-TLS-🇩🇪(DE)-178.104.9.51
   type: trojan
-  server: 46.101.117.15
+  server: 178.104.9.51
   port: 443
   uuid: '1234567890'
   network: ws
@@ -1751,9 +605,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-178.104.48.116
+- name: TROJAN-WS-TLS-🇩🇪(DE)-87.106.162.236
   type: trojan
-  server: 178.104.48.116
+  server: 87.106.162.236
   port: 443
   uuid: '1234567890'
   network: ws
@@ -1764,9 +618,35 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇳🇱(NL)-92.51.36.219
+- name: TROJAN-WS-TLS-🇩🇪(DE)-46.101.172.168
   type: trojan
-  server: 92.51.36.219
+  server: 46.101.172.168
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-144.31.118.170
+  type: trojan
+  server: 144.31.118.170
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-49.13.194.13
+  type: trojan
+  server: 49.13.194.13
   port: 8443
   uuid: '1234567890'
   network: ws
@@ -1777,9 +657,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇳🇱(NL)-194.31.175.31
+- name: TROJAN-WS-TLS-🇳🇱(NL)-154.83.129.134
   type: trojan
-  server: 194.31.175.31
+  server: 154.83.129.134
   port: 8443
   uuid: '1234567890'
   network: ws
@@ -1790,204 +670,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-159.69.191.98
+- name: TROJAN-WS-TLS-🇩🇪(DE)-116.202.14.249
   type: trojan
-  server: 159.69.191.98
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-176.96.137.96
-  type: trojan
-  server: 176.96.137.96
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-138.124.34.36
-  type: trojan
-  server: 138.124.34.36
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-64.188.97.250
-  type: trojan
-  server: 64.188.97.250
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.136.46
-  type: trojan
-  server: 104.248.136.46
-  port: 2083
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-194.154.30.188
-  type: trojan
-  server: 194.154.30.188
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.128.139.249
-  type: trojan
-  server: 104.128.139.249
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-178.128.199.136
-  type: trojan
-  server: 178.128.199.136
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.194.156.84
-  type: trojan
-  server: 104.194.156.84
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-129.212.171.47
-  type: trojan
-  server: 129.212.171.47
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-167.99.244.254
-  type: trojan
-  server: 167.99.244.254
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-57.129.47.4
-  type: trojan
-  server: 57.129.47.4
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.73_1
-  type: trojan
-  server: 104.248.46.73
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-134.209.244.186
-  type: trojan
-  server: 134.209.244.186
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-165.22.87.79
-  type: trojan
-  server: 165.22.87.79
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-46.224.209.116
-  type: trojan
-  server: 46.224.209.116
+  server: 116.202.14.249
   port: 8443
   uuid: '1234567890'
   network: ws
@@ -2011,9 +696,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-68.183.67.126
+- name: TROJAN-WS-TLS-🇩🇪(DE)-144.31.85.72
   type: trojan
-  server: 68.183.67.126
+  server: 144.31.85.72
   port: 443
   uuid: '1234567890'
   network: ws
@@ -2024,9 +709,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-217.177.10.223
+- name: TROJAN-WS-TLS-🇩🇪(DE)-152.53.118.28
   type: trojan
-  server: 217.177.10.223
+  server: 152.53.118.28
   port: 443
   uuid: '1234567890'
   network: ws
@@ -2037,9 +722,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-144.31.139.103
+- name: TROJAN-WS-TLS-🇩🇪(DE)-85.215.129.133
   type: trojan
-  server: 144.31.139.103
+  server: 85.215.129.133
   port: 443
   uuid: '1234567890'
   network: ws
@@ -2050,9 +735,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-152.53.138.238
+- name: TROJAN-WS-TLS-🇩🇪(DE)-91.107.243.233
   type: trojan
-  server: 152.53.138.238
+  server: 91.107.243.233
   port: 443
   uuid: '1234567890'
   network: ws
@@ -2063,10 +748,23 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-84.200.192.87
+- name: TROJAN-WS-TLS-🇨🇿(CZ)-91.184.250.116
   type: trojan
-  server: 84.200.192.87
-  port: 2053
+  server: 91.184.250.116
+  port: 2083
+  uuid: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  network: ws
+  tls: true
+  servername: xo.e0f.cx
+  client-fingerprint: chrome
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: xo.e0f.cx
+- name: TROJAN-WS-TLS-🇩🇪(DE)-178.104.93.49
+  type: trojan
+  server: 178.104.93.49
+  port: 8443
   uuid: '1234567890'
   network: ws
   tls: true
@@ -2076,22 +774,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-135.125.191.180
+- name: TROJAN-WS-TLS-🇩🇪(DE)-91.107.220.103
   type: trojan
-  server: 135.125.191.180
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-167.172.163.190
-  type: trojan
-  server: 167.172.163.190
+  server: 91.107.220.103
   port: 443
   uuid: '1234567890'
   network: ws
@@ -2102,18 +787,57 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-TCP-TLS-🇹🇷(TR)-tr-1.stunnel.cc
+- name: TROJAN-WS-TLS-🇩🇪(DE)-104.194.156.164
   type: trojan
-  server: tr-1.stunnel.cc
-  port: 8441
-  uuid: tunnel-ljlcf
+  server: 104.194.156.164
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-207.154.202.76
+  type: trojan
+  server: 207.154.202.76
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-209.38.203.175
+  type: trojan
+  server: 209.38.203.175
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_3
+  type: trojan
+  server: 35.156.70.160
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: tr-1.stunnel.cc
+  servername: 35.156.70.160
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇩🇪(DE)-161.35.64.81
+- name: TROJAN-WS-TLS-🇩🇪(DE)-178.128.201.202
   type: trojan
-  server: 161.35.64.81
+  server: 178.128.201.202
   port: 443
   uuid: '1234567890'
   network: ws
@@ -2124,366 +848,6 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-134.122.84.25
-  type: trojan
-  server: 134.122.84.25
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-135.125.234.148
-  type: trojan
-  server: 135.125.234.148
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.245.101
-  type: trojan
-  server: 104.248.245.101
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-147.45.76.82
-  type: trojan
-  server: 147.45.76.82
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-134.122.69.33
-  type: trojan
-  server: 134.122.69.33
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-167.172.97.15
-  type: trojan
-  server: 167.172.97.15
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-165.227.172.171
-  type: trojan
-  server: 165.227.172.171
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-46.226.161.108
-  type: trojan
-  server: 46.226.161.108
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-185.219.84.221
-  type: trojan
-  server: 185.219.84.221
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-195.133.94.9
-  type: trojan
-  server: 195.133.94.9
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.132.134
-  type: trojan
-  server: 104.248.132.134
-  port: 2083
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-165.22.89.207
-  type: trojan
-  server: 165.22.89.207
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇳🇱(NL)-92.51.37.214
-  type: trojan
-  server: 92.51.37.214
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-185.230.163.33
-  type: trojan
-  server: 185.230.163.33
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-46.101.229.149
-  type: trojan
-  server: 46.101.229.149
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.132.134_1
-  type: trojan
-  server: 104.248.132.134
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-91.186.218.253
-  type: trojan
-  server: 91.186.218.253
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.132.134_2
-  type: trojan
-  server: 104.248.132.134
-  port: 2096
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-77.90.6.193_1
-  type: trojan
-  server: 77.90.6.193
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳=
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-217.144.188.147
-  type: trojan
-  server: 217.144.188.147
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇳🇱(NL)-194.31.175.31_1
-  type: trojan
-  server: 194.31.175.31
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳=
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.132.134_3
-  type: trojan
-  server: 104.248.132.134
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-158.180.49.11
-  type: trojan
-  server: 158.180.49.11
-  port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-134.122.84.25_1
-  type: trojan
-  server: 134.122.84.25
-  port: 2083
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-138.124.24.229
-  type: trojan
-  server: 138.124.24.229
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-164.90.172.179
-  type: trojan
-  server: 164.90.172.179
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-77.110.97.225
-  type: trojan
-  server: 77.110.97.225
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-TCP-TLS-🇯🇵(JP)-140.238.43.40
-  type: trojan
-  server: 140.238.43.40
-  port: 24534
-  uuid: e136d465-0558-43b9-b50c-b1f45d4cb2c2
-  network: tcp
-  tls: true
-  servername: jp2-8sb.6121999.dpdns.org
-  client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇩🇪(DE)-144.31.213.59
   type: trojan
   server: 144.31.213.59
@@ -2494,138 +858,12 @@ proxies:
   servername: kfm-bn0.pages.dev
   client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-134.209.252.120
-  type: trojan
-  server: 134.209.252.120
-  port: 2087
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-134.209.236.15
-  type: trojan
-  server: 134.209.236.15
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-46.101.152.234
-  type: trojan
-  server: 46.101.152.234
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-TCP-TLS-🇹🇷(TR)-tr-1.stunnel.cc_1
-  type: trojan
-  server: tr-1.stunnel.cc
-  port: 8441
-  uuid: tunnel-ljlcf
-  network: tcp
-  tls: true
-  servername: creativecommons.org
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇩🇪(DE)-148.253.210.141
-  type: trojan
-  server: 148.253.210.141
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇳🇱(NL)-45.95.235.210
-  type: trojan
-  server: 45.95.235.210
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-172.86.94.189
-  type: trojan
-  server: 172.86.94.189
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-164.90.235.19
-  type: trojan
-  server: 164.90.235.19
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-103.27.157.111
-  type: trojan
-  server: 103.27.157.111
-  port: 8443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
     path: /?https://t.me/WangCai2🇨🇳=
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
+- name: TROJAN-WS-TLS-🇩🇪(DE)-194.87.25.11
   type: trojan
-  server: v2.dabache.top
-  port: 443
-  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-  network: ws
-  tls: true
-  servername: _acme-challenge.sb.cloudns.biz
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: _acme-challenge.sb.cloudns.biz
-- name: TROJAN-WS-TLS-🇩🇪(DE)-167.172.182.52
-  type: trojan
-  server: 167.172.182.52
+  server: 194.87.25.11
   port: 443
   uuid: '1234567890'
   network: ws
@@ -2649,9 +887,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-167.235.60.23
+- name: TROJAN-WS-TLS-🇩🇪(DE)-46.225.232.103
   type: trojan
-  server: 167.235.60.23
+  server: 46.225.232.103
   port: 8443
   uuid: '1234567890'
   network: ws
@@ -2662,84 +900,114 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-57.129.47.55
+- name: TROJAN-WS-TLS-🇳🇱(NL)-92.51.37.214
   type: trojan
-  server: 57.129.47.55
+  server: 92.51.37.214
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.245.101
+  type: trojan
+  server: 104.248.245.101
+  port: 2096
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇧🇪(BE)-194.87.240.185
+  type: trojan
+  server: 194.87.240.185
+  port: 2083
+  uuid: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  network: ws
+  tls: true
+  servername: xo.e0f.cx
+  client-fingerprint: chrome
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: xo.e0f.cx
+- name: TROJAN-WS-TLS-🇩🇪(DE)-152.53.227.239
+  type: trojan
+  server: 152.53.227.239
+  port: 8443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-195.133.94.9
+  type: trojan
+  server: 195.133.94.9
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.64.146.129
+  type: trojan
+  server: 172.64.146.129
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: true
+  servername: sni.111000.dynv6.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: TROJAN-WS-TLS-🇩🇪(DE)-185.170.153.115
+  type: trojan
+  server: 185.170.153.115
+  port: 8443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-147.45.76.82
+  type: trojan
+  server: 147.45.76.82
+  port: 8443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳=
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-57.129.47.40
+  type: trojan
+  server: 57.129.47.40
   port: 2053
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-165.22.65.64
-  type: trojan
-  server: 165.22.65.64
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-193.23.199.106
-  type: trojan
-  server: 193.23.199.106
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-164.92.193.243
-  type: trojan
-  server: 164.92.193.243
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-80.253.249.66
-  type: trojan
-  server: 80.253.249.66
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-GRPC-REALITY-🇭🇰(HK)-154.3.37.35
-  type: trojan
-  server: 154.3.37.35
-  port: 41916
-  uuid: hmR46dYjqH
-  network: grpc
-  tls: true
-  servername: www.icloud.com
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇩🇪(DE)-193.168.201.18
-  type: trojan
-  server: 193.168.201.18
-  port: 443
   uuid: '1234567890'
   network: ws
   tls: true
@@ -2762,9 +1030,317 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-164.90.228.150
+- name: TROJAN-WS-TLS-🇩🇪(DE)-46.225.16.249
   type: trojan
-  server: 164.90.228.150
+  server: 46.225.16.249
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-64.226.124.38
+  type: trojan
+  server: 64.226.124.38
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇵🇱(PL)-144.31.191.159
+  type: trojan
+  server: 144.31.191.159
+  port: 8443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-TCP-REALITY-🇩🇪(DE)-159.195.6.151_1
+  type: trojan
+  server: 159.195.6.151
+  port: 443
+  uuid: 49197da7-4f74-4c34-8229-35561043c113
+  network: tcp
+  tls: true
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇩🇪(DE)-91.149.223.184
+  type: trojan
+  server: 91.149.223.184
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-46.101.193.56
+  type: trojan
+  server: 46.101.193.56
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-142.93.102.20
+  type: trojan
+  server: 142.93.102.20
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-165.22.91.60
+  type: trojan
+  server: 165.22.91.60
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-172.104.252.102
+  type: trojan
+  server: 172.104.252.102
+  port: 8443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇳🇱(NL)-92.51.36.219
+  type: trojan
+  server: 92.51.36.219
+  port: 8443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.73
+  type: trojan
+  server: 104.248.46.73
+  port: 2083
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.20.85
+  type: trojan
+  server: 104.248.20.85
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-165.22.87.79
+  type: trojan
+  server: 165.22.87.79
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-159.195.44.151
+  type: trojan
+  server: 159.195.44.151
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-46.101.168.160
+  type: trojan
+  server: 46.101.168.160
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  type: trojan
+  server: 172.67.180.227
+  port: 443
+  uuid: bpb-trojan
+  network: ws
+  tls: true
+  servername: mashdt.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tr?ed=2560
+    headers:
+      Host: mashdt.pages.dev
+- name: TROJAN-WS-TLS-🇳🇱(NL)-77.90.63.208
+  type: trojan
+  server: 77.90.63.208
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-46.101.139.47
+  type: trojan
+  server: 46.101.139.47
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-165.22.20.89
+  type: trojan
+  server: 165.22.20.89
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-164.90.172.179
+  type: trojan
+  server: 164.90.172.179
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-46.225.188.108
+  type: trojan
+  server: 46.225.188.108
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-139.59.147.28
+  type: trojan
+  server: 139.59.147.28
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇮🇹(IT)-167.17.182.98
+  type: trojan
+  server: 167.17.182.98
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.249.73
+  type: trojan
+  server: 104.248.249.73
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-150.241.79.197
+  type: trojan
+  server: 150.241.79.197
   port: 443
   uuid: '1234567890'
   network: ws
@@ -2785,12 +1361,38 @@ proxies:
   servername: kfm-bn0.pages.dev
   client-fingerprint: chrome
   ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳=
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-91.107.155.13
+  type: trojan
+  server: 91.107.155.13
+  port: 8443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.128.139.68
+- name: TROJAN-WS-TLS-🇩🇪(DE)-46.224.207.178
   type: trojan
-  server: 104.128.139.68
+  server: 46.224.207.178
+  port: 8443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-134.209.236.15
+  type: trojan
+  server: 134.209.236.15
   port: 443
   uuid: '1234567890'
   network: ws
@@ -2801,9 +1403,22 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-91.107.220.103
+- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.136.46
   type: trojan
-  server: 91.107.220.103
+  server: 104.248.136.46
+  port: 2087
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-46.101.149.103
+  type: trojan
+  server: 46.101.149.103
   port: 443
   uuid: '1234567890'
   network: ws
@@ -2814,22 +1429,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇸🇬(SG)-94.159.104.23
+- name: TROJAN-WS-TLS-🇩🇪(DE)-64.188.89.147_1
   type: trojan
-  server: 94.159.104.23
-  port: 443
-  uuid: '1234567890'
-  network: ws
-  tls: true
-  servername: kfm-bn0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇸🇬(SG)-94.159.104.23_1
-  type: trojan
-  server: 94.159.104.23
+  server: 64.188.89.147
   port: 8443
   uuid: '1234567890'
   network: ws
@@ -2853,10 +1455,10 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.245.101_1
+- name: TROJAN-WS-TLS-🇩🇪(DE)-167.172.182.52
   type: trojan
-  server: 104.248.245.101
-  port: 2096
+  server: 167.172.182.52
+  port: 443
   uuid: '1234567890'
   network: ws
   tls: true
@@ -2866,23 +1468,175 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: kfm-bn0.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-sni.111000.dynv6.net
+- name: TROJAN-WS-TLS-🇩🇪(DE)-164.90.209.253
   type: trojan
-  server: sni.111000.dynv6.net
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 164.90.209.253
+  port: 8443
+  uuid: '1234567890'
   network: ws
   tls: true
-  servername: sni.111000.dynv6.net
+  servername: kfm-bn0.pages.dev
   client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
-      Host: sni.111000.dynv6.net
-- name: TROJAN-WS-TLS-🇩🇪(DE)-164.92.132.232
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-57.129.63.143
   type: trojan
-  server: 164.92.132.232
+  server: 57.129.63.143
+  port: 2053
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-188.245.64.72
+  type: trojan
+  server: 188.245.64.72
   port: 8443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-164.90.209.5
+  type: trojan
+  server: 164.90.209.5
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-92.246.137.150
+  type: trojan
+  server: 92.246.137.150
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-159.195.79.8
+  type: trojan
+  server: 159.195.79.8
+  port: 8443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-GRPC-REALITY-🇭🇰(HK)-154.3.37.35
+  type: trojan
+  server: 154.3.37.35
+  port: 41916
+  uuid: hmR46dYjqH
+  network: grpc
+  tls: true
+  servername: www.icloud.com
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.73_1
+  type: trojan
+  server: 104.248.46.73
+  port: 8443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-134.209.252.120
+  type: trojan
+  server: 134.209.252.120
+  port: 2087
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-172.86.92.227
+  type: trojan
+  server: 172.86.92.227
+  port: 8443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳=
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-202.61.195.167
+  type: trojan
+  server: 202.61.195.167
+  port: 443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-94.16.113.129
+  type: trojan
+  server: 94.16.113.129
+  port: 8443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-103.228.171.213
+  type: trojan
+  server: 103.228.171.213
+  port: 8443
+  uuid: '1234567890'
+  network: ws
+  tls: true
+  servername: kfm-bn0.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-5.75.182.89
+  type: trojan
+  server: 5.75.182.89
+  port: 443
   uuid: '1234567890'
   network: ws
   tls: true
@@ -2896,232 +1650,134 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55
-  - TROJAN-TCP-REALITY-🇺🇸(US)-150.241.203.78
   - TROJAN-WS-TLS-🇺🇸(US)-104.18.41.190
-  - TROJAN-WS-TLS-🇨🇦(CA)-172.64.53.190
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
   - TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn
-  - TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.229.34
-  - TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn_2
-  - TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
-  - TROJAN-WS-TLS-🇺🇸(US)-jquery.com
-  - TROJAN-WS-TLS-🇺🇸(US)-vless.herogoing.top
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.190.72
-  - TROJAN-WS-TLS-🇩🇪(DE)-185.58.159.150
-  - TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn_3
-  - TROJAN-WS-TLS-🇩🇪(DE)-45.140.43.6
-  - TROJAN-WS-TLS-🇩🇪(DE)-38.246.33.245
-  - TROJAN-WS-TLS-🇩🇪(DE)-95.164.53.228
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.240.36
-  - TROJAN-WS-TLS-🇩🇪(DE)-213.176.77.231
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.87.163
-  - TROJAN-WS-TLS-🇩🇪(DE)-77.83.86.169
-  - TROJAN-WS-TLS-🇩🇪(DE)-2.27.121.32
-  - TROJAN-WS-TLS-🇩🇪(DE)-109.122.198.72
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.194.156.164
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.188.6
-  - TROJAN-WS-TLS-🇩🇪(DE)-109.172.94.240
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.190.72_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-45.146.202.28
-  - TROJAN-WS-TLS-🇩🇪(DE)-64.188.70.233
-  - TROJAN-WS-TLS-🇩🇪(DE)-88.198.82.146
-  - TROJAN-WS-TLS-🇩🇪(DE)-78.47.85.213
-  - TROJAN-WS-TLS-🇩🇪(DE)-159.223.27.68
-  - TROJAN-WS-TLS-🇩🇪(DE)-91.107.155.114
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_2
-  - TROJAN-WS-TLS-🇩🇪(DE)-57.129.63.158
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.198.116
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.255.102
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.225.210.98
-  - TROJAN-WS-TLS-🇩🇪(DE)-109.70.74.67
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.228.45
-  - TROJAN-WS-TLS-🇩🇪(DE)-86.110.36.87
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.115.108
-  - TROJAN-WS-TLS-🇳🇱(NL)-77.90.63.208
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.104.154
-  - TROJAN-WS-TLS-🇩🇪(DE)-147.45.70.195
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.28.78
-  - TROJAN-WS-TLS-🇩🇪(DE)-194.87.77.2
-  - TROJAN-WS-TLS-🇩🇪(DE)-198.105.115.82
-  - TROJAN-WS-TLS-🇩🇪(DE)-150.241.66.81
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.107.40
-  - TROJAN-WS-TLS-🇩🇪(DE)-143.20.160.200
-  - TROJAN-WS-TLS-🇩🇪(DE)-23.88.112.241
-  - TROJAN-WS-TLS-🇩🇪(DE)-91.107.155.13
-  - TROJAN-WS-TLS-🇩🇪(DE)-94.141.123.243
-  - TROJAN-WS-TLS-🇩🇪(DE)-159.195.5.181
-  - TROJAN-WS-TLS-🇩🇪(DE)-194.58.33.158
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.172.168
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.32.63
-  - TROJAN-WS-TLS-🇩🇪(DE)-213.176.77.30
-  - TROJAN-WS-TLS-🇩🇪(DE)-213.165.38.108
-  - TROJAN-WS-TLS-🇩🇪(DE)-95.85.232.148
-  - TROJAN-WS-TLS-🇩🇪(DE)-185.170.153.115
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.249.73
-  - TROJAN-WS-TLS-🇩🇪(DE)-157.230.111.133
-  - TROJAN-WS-TLS-🇩🇪(DE)-64.188.96.123
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.122.88.119
-  - TROJAN-WS-TLS-🇩🇪(DE)-103.109.234.64
-  - TROJAN-WS-TLS-🇩🇪(DE)-77.90.6.193
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.194.156.164_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-37.120.169.217
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.190.72_2
-  - TROJAN-WS-TLS-🇩🇪(DE)-83.242.100.181
-  - TROJAN-WS-TLS-🇩🇪(DE)-85.215.129.133
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.230.45
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.209.224.221
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.2.249
-  - TROJAN-WS-TLS-🇩🇪(DE)-45.9.116.160
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_3
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.23.44
-  - TROJAN-WS-TLS-🇩🇪(DE)-51.195.101.75
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.15.200
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.241.145
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.239.26
-  - TROJAN-WS-TLS-🇩🇪(DE)-206.189.54.122
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.174.78
-  - TROJAN-WS-TLS-🇩🇪(DE)-109.70.74.67_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-193.31.24.53
-  - TROJAN-WS-TLS-🇩🇪(DE)-109.122.197.95
-  - TROJAN-WS-TLS-🇩🇪(DE)-195.201.137.164
-  - TROJAN-WS-TLS-🇩🇪(DE)-159.223.19.10
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.224.48.82
-  - TROJAN-WS-TLS-🇩🇪(DE)-172.104.252.102
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.226.162.89
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.26.247
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.59.23
-  - TROJAN-WS-TLS-🇩🇪(DE)-209.38.225.64
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.209.224.221_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-57.129.63.143
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.18.157
-  - TROJAN-WS-TLS-🇩🇪(DE)-64.188.105.7
-  - TROJAN-WS-TLS-🇳🇱(NL)-154.83.129.134
-  - TROJAN-WS-TLS-🇩🇪(DE)-142.93.162.114
-  - TROJAN-WS-TLS-🇩🇪(DE)-150.241.105.243
-  - TROJAN-WS-TLS-🇩🇪(DE)-91.149.223.248
-  - TROJAN-WS-TLS-🇩🇪(DE)-150.241.79.197
-  - TROJAN-WS-TLS-🇩🇪(DE)-109.237.97.197
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.120.120
-  - TROJAN-WS-TLS-🇩🇪(DE)-217.177.10.6
-  - TROJAN-WS-TLS-🇩🇪(DE)-64.226.112.70
-  - TROJAN-WS-TLS-🇮🇹(IT)-82.21.117.137
-  - TROJAN-WS-TLS-🇩🇪(DE)-194.87.77.226
-  - TROJAN-WS-TLS-🇩🇪(DE)-148.253.210.74
-  - TROJAN-WS-TLS-🇩🇪(DE)-159.195.44.151
-  - TROJAN-TCP-TLS-🇯🇵(JP)-jp2-8sb.6121999.dpdns.org
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.15.139
-  - TROJAN-WS-TLS-🇩🇪(DE)-195.245.239.124
-  - TROJAN-TCP-TLS-🇯🇵(JP)-jp2-8sb.6121999.dpdns.org_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.40.175
-  - TROJAN-WS-TLS-🇩🇪(DE)-202.61.226.121
   - TROJAN-WS-TLS-🇺🇸(US)-172.64.152.23
-  - TROJAN-WS-TLS-🇩🇪(DE)-188.245.64.72
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.68.102.184
-  - TROJAN-WS-TLS-🇳🇱(NL)-72.56.111.177
-  - TROJAN-WS-TLS-🇩🇪(DE)-194.87.25.136
-  - TROJAN-WS-TLS-🇩🇪(DE)-142.93.170.171
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.194.158.125
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.73
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.180.250
-  - TROJAN-WS-TLS-🇩🇪(DE)-172.86.92.227
-  - TROJAN-WS-TLS-🇩🇪(DE)-37.1.194.237
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.42.90
-  - TROJAN-WS-TLS-🇩🇪(DE)-57.129.47.40
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.117.15
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.48.116
-  - TROJAN-WS-TLS-🇳🇱(NL)-92.51.36.219
-  - TROJAN-WS-TLS-🇳🇱(NL)-194.31.175.31
-  - TROJAN-WS-TLS-🇩🇪(DE)-159.69.191.98
-  - TROJAN-WS-TLS-🇩🇪(DE)-176.96.137.96
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.34.36
-  - TROJAN-WS-TLS-🇩🇪(DE)-64.188.97.250
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.136.46
-  - TROJAN-WS-TLS-🇩🇪(DE)-194.154.30.188
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.128.139.249
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.128.199.136
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.194.156.84
-  - TROJAN-WS-TLS-🇩🇪(DE)-129.212.171.47
-  - TROJAN-WS-TLS-🇩🇪(DE)-167.99.244.254
-  - TROJAN-WS-TLS-🇩🇪(DE)-57.129.47.4
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.73_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.209.244.186
-  - TROJAN-WS-TLS-🇩🇪(DE)-165.22.87.79
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.224.209.116
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.128.207.134
-  - TROJAN-WS-TLS-🇩🇪(DE)-68.183.67.126
-  - TROJAN-WS-TLS-🇩🇪(DE)-217.177.10.223
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.139.103
-  - TROJAN-WS-TLS-🇩🇪(DE)-152.53.138.238
-  - TROJAN-WS-TLS-🇩🇪(DE)-84.200.192.87
-  - TROJAN-WS-TLS-🇩🇪(DE)-135.125.191.180
-  - TROJAN-WS-TLS-🇩🇪(DE)-167.172.163.190
-  - TROJAN-TCP-TLS-🇹🇷(TR)-tr-1.stunnel.cc
-  - TROJAN-WS-TLS-🇩🇪(DE)-161.35.64.81
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.122.84.25
-  - TROJAN-WS-TLS-🇩🇪(DE)-135.125.234.148
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.245.101
-  - TROJAN-WS-TLS-🇩🇪(DE)-147.45.76.82
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.122.69.33
-  - TROJAN-WS-TLS-🇩🇪(DE)-167.172.97.15
-  - TROJAN-WS-TLS-🇩🇪(DE)-165.227.172.171
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.226.161.108
-  - TROJAN-WS-TLS-🇩🇪(DE)-185.219.84.221
-  - TROJAN-WS-TLS-🇩🇪(DE)-195.133.94.9
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.132.134
-  - TROJAN-WS-TLS-🇩🇪(DE)-165.22.89.207
-  - TROJAN-WS-TLS-🇳🇱(NL)-92.51.37.214
-  - TROJAN-WS-TLS-🇩🇪(DE)-185.230.163.33
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.229.149
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.132.134_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-91.186.218.253
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.132.134_2
-  - TROJAN-WS-TLS-🇩🇪(DE)-77.90.6.193_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-217.144.188.147
-  - TROJAN-WS-TLS-🇳🇱(NL)-194.31.175.31_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.132.134_3
-  - TROJAN-WS-TLS-🇩🇪(DE)-158.180.49.11
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.122.84.25_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.24.229
-  - TROJAN-WS-TLS-🇩🇪(DE)-164.90.172.179
-  - TROJAN-WS-TLS-🇩🇪(DE)-77.110.97.225
-  - TROJAN-TCP-TLS-🇯🇵(JP)-140.238.43.40
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.213.59
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.209.252.120
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.209.236.15
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.152.234
-  - TROJAN-TCP-TLS-🇹🇷(TR)-tr-1.stunnel.cc_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-148.253.210.141
-  - TROJAN-WS-TLS-🇳🇱(NL)-45.95.235.210
-  - TROJAN-WS-TLS-🇩🇪(DE)-172.86.94.189
-  - TROJAN-WS-TLS-🇩🇪(DE)-164.90.235.19
-  - TROJAN-WS-TLS-🇩🇪(DE)-103.27.157.111
-  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
-  - TROJAN-WS-TLS-🇩🇪(DE)-167.172.182.52
-  - TROJAN-WS-TLS-🇩🇪(DE)-167.172.171.113
-  - TROJAN-WS-TLS-🇩🇪(DE)-167.235.60.23
-  - TROJAN-WS-TLS-🇩🇪(DE)-57.129.47.55
-  - TROJAN-WS-TLS-🇩🇪(DE)-165.22.65.64
-  - TROJAN-WS-TLS-🇩🇪(DE)-193.23.199.106
-  - TROJAN-WS-TLS-🇩🇪(DE)-164.92.193.243
-  - TROJAN-WS-TLS-🇩🇪(DE)-80.253.249.66
-  - TROJAN-GRPC-REALITY-🇭🇰(HK)-154.3.37.35
+  - TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn_1
+  - TROJAN-WS-TLS-🇺🇸(US)-vless.herogoing.top
+  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
+  - TROJAN-WS-TLS-🇺🇸(US)-russia.com
+  - TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top
+  - TROJAN-WS-TLS-🇺🇸(US)-104.18.3.150
+  - TROJAN-WS-TLS-🇺🇸(US)-jquery.com
+  - TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
+  - TROJAN-WS-TLS-🇩🇪(DE)-77.83.86.169
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160
   - TROJAN-WS-TLS-🇩🇪(DE)-193.168.201.18
-  - TROJAN-WS-TLS-🇩🇪(DE)-162.19.158.37
-  - TROJAN-WS-TLS-🇩🇪(DE)-164.90.228.150
-  - TROJAN-WS-TLS-🇩🇪(DE)-64.188.89.147
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.128.139.68
+  - TROJAN-WS-TLS-🇩🇪(DE)-91.98.115.175
+  - TROJAN-WS-TLS-🇩🇪(DE)-159.195.39.241
+  - TROJAN-WS-TLS-🇩🇪(DE)-192.248.183.18
+  - TROJAN-WS-TLS-🇩🇪(DE)-95.85.232.148
+  - TROJAN-WS-TLS-🇩🇪(DE)-207.154.242.240
+  - TROJAN-WS-TLS-🇺🇸(US)-162.159.152.2
+  - TROJAN-WS-TLS-🇩🇪(DE)-135.125.234.148
+  - TROJAN-WS-TLS-🇩🇪(DE)-165.22.85.220
+  - TROJAN-WS-TLS-🇩🇪(DE)-77.90.6.193
+  - TROJAN-WS-TLS-🇩🇪(DE)-103.109.234.64
+  - TROJAN-WS-TLS-🇩🇪(DE)-159.89.107.10
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_1
+  - TROJAN-WS-TLS-🇩🇪(DE)-167.235.26.55
+  - TROJAN-WS-TLS-🇩🇪(DE)-128.140.32.214
+  - TROJAN-TCP-REALITY-🇩🇪(DE)-159.195.6.151
+  - TROJAN-WS-TLS-🇮🇹(IT)-82.21.117.137
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_2
+  - TROJAN-WS-TLS-🇩🇪(DE)-37.1.194.237
+  - TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55
+  - TROJAN-WS-TLS-🇩🇪(DE)-57.129.47.10
+  - TROJAN-WS-TLS-🇳🇱(NL)-72.56.111.177
+  - TROJAN-WS-TLS-🇩🇪(DE)-185.125.102.33
+  - TROJAN-WS-TLS-🇩🇪(DE)-103.13.211.113
+  - TROJAN-WS-TLS-🇩🇪(DE)-161.35.64.81
+  - TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.252.80
+  - TROJAN-WS-TLS-🇩🇪(DE)-5.187.6.30
+  - TROJAN-WS-TLS-🇩🇪(DE)-91.99.52.229
+  - TROJAN-WS-TLS-🇩🇪(DE)-185.207.139.113
+  - TROJAN-WS-TLS-🇩🇪(DE)-109.122.198.72
+  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.61.155
+  - TROJAN-WS-TLS-🇩🇪(DE)-194.87.25.248
+  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.9.51
+  - TROJAN-WS-TLS-🇩🇪(DE)-87.106.162.236
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.172.168
+  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.118.170
+  - TROJAN-WS-TLS-🇩🇪(DE)-49.13.194.13
+  - TROJAN-WS-TLS-🇳🇱(NL)-154.83.129.134
+  - TROJAN-WS-TLS-🇩🇪(DE)-116.202.14.249
+  - TROJAN-WS-TLS-🇩🇪(DE)-178.128.207.134
+  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.85.72
+  - TROJAN-WS-TLS-🇩🇪(DE)-152.53.118.28
+  - TROJAN-WS-TLS-🇩🇪(DE)-85.215.129.133
+  - TROJAN-WS-TLS-🇩🇪(DE)-91.107.243.233
+  - TROJAN-WS-TLS-🇨🇿(CZ)-91.184.250.116
+  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.93.49
   - TROJAN-WS-TLS-🇩🇪(DE)-91.107.220.103
-  - TROJAN-WS-TLS-🇸🇬(SG)-94.159.104.23
-  - TROJAN-WS-TLS-🇸🇬(SG)-94.159.104.23_1
+  - TROJAN-WS-TLS-🇩🇪(DE)-104.194.156.164
+  - TROJAN-WS-TLS-🇩🇪(DE)-207.154.202.76
+  - TROJAN-WS-TLS-🇩🇪(DE)-209.38.203.175
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_3
+  - TROJAN-WS-TLS-🇩🇪(DE)-178.128.201.202
+  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.213.59
+  - TROJAN-WS-TLS-🇩🇪(DE)-194.87.25.11
+  - TROJAN-WS-TLS-🇩🇪(DE)-167.172.171.113
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.225.232.103
+  - TROJAN-WS-TLS-🇳🇱(NL)-92.51.37.214
+  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.245.101
+  - TROJAN-WS-TLS-🇧🇪(BE)-194.87.240.185
+  - TROJAN-WS-TLS-🇩🇪(DE)-152.53.227.239
+  - TROJAN-WS-TLS-🇩🇪(DE)-195.133.94.9
+  - TROJAN-WS-TLS-🇺🇸(US)-172.64.146.129
+  - TROJAN-WS-TLS-🇩🇪(DE)-185.170.153.115
+  - TROJAN-WS-TLS-🇩🇪(DE)-147.45.76.82
+  - TROJAN-WS-TLS-🇩🇪(DE)-57.129.47.40
+  - TROJAN-WS-TLS-🇩🇪(DE)-162.19.158.37
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.225.16.249
+  - TROJAN-WS-TLS-🇩🇪(DE)-64.226.124.38
+  - TROJAN-WS-TLS-🇵🇱(PL)-144.31.191.159
+  - TROJAN-TCP-REALITY-🇩🇪(DE)-159.195.6.151_1
+  - TROJAN-WS-TLS-🇩🇪(DE)-91.149.223.184
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.193.56
+  - TROJAN-WS-TLS-🇩🇪(DE)-142.93.102.20
+  - TROJAN-WS-TLS-🇩🇪(DE)-165.22.91.60
+  - TROJAN-WS-TLS-🇩🇪(DE)-172.104.252.102
+  - TROJAN-WS-TLS-🇳🇱(NL)-92.51.36.219
+  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.73
+  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.20.85
+  - TROJAN-WS-TLS-🇩🇪(DE)-165.22.87.79
+  - TROJAN-WS-TLS-🇩🇪(DE)-159.195.44.151
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.168.160
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-WS-TLS-🇳🇱(NL)-77.90.63.208
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.139.47
+  - TROJAN-WS-TLS-🇩🇪(DE)-165.22.20.89
+  - TROJAN-WS-TLS-🇩🇪(DE)-164.90.172.179
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.225.188.108
+  - TROJAN-WS-TLS-🇩🇪(DE)-139.59.147.28
+  - TROJAN-WS-TLS-🇮🇹(IT)-167.17.182.98
+  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.249.73
+  - TROJAN-WS-TLS-🇩🇪(DE)-150.241.79.197
+  - TROJAN-WS-TLS-🇩🇪(DE)-64.188.89.147
+  - TROJAN-WS-TLS-🇩🇪(DE)-91.107.155.13
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.224.207.178
+  - TROJAN-WS-TLS-🇩🇪(DE)-134.209.236.15
+  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.136.46
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.149.103
+  - TROJAN-WS-TLS-🇩🇪(DE)-64.188.89.147_1
   - TROJAN-WS-TLS-🇩🇪(DE)-162.19.243.20
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.245.101_1
-  - TROJAN-WS-TLS-🇺🇸(US)-sni.111000.dynv6.net
-  - TROJAN-WS-TLS-🇩🇪(DE)-164.92.132.232
+  - TROJAN-WS-TLS-🇩🇪(DE)-167.172.182.52
+  - TROJAN-WS-TLS-🇩🇪(DE)-164.90.209.253
+  - TROJAN-WS-TLS-🇩🇪(DE)-57.129.63.143
+  - TROJAN-WS-TLS-🇩🇪(DE)-188.245.64.72
+  - TROJAN-WS-TLS-🇩🇪(DE)-164.90.209.5
+  - TROJAN-WS-TLS-🇩🇪(DE)-92.246.137.150
+  - TROJAN-WS-TLS-🇩🇪(DE)-159.195.79.8
+  - TROJAN-GRPC-REALITY-🇭🇰(HK)-154.3.37.35
+  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.73_1
+  - TROJAN-WS-TLS-🇩🇪(DE)-134.209.252.120
+  - TROJAN-WS-TLS-🇩🇪(DE)-172.86.92.227
+  - TROJAN-WS-TLS-🇩🇪(DE)-202.61.195.167
+  - TROJAN-WS-TLS-🇩🇪(DE)-94.16.113.129
+  - TROJAN-WS-TLS-🇩🇪(DE)-103.228.171.213
+  - TROJAN-WS-TLS-🇩🇪(DE)-5.75.182.89
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -3138,232 +1794,134 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55
-  - TROJAN-TCP-REALITY-🇺🇸(US)-150.241.203.78
   - TROJAN-WS-TLS-🇺🇸(US)-104.18.41.190
-  - TROJAN-WS-TLS-🇨🇦(CA)-172.64.53.190
-  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
   - TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn
-  - TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.229.34
-  - TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn_2
-  - TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
-  - TROJAN-WS-TLS-🇺🇸(US)-jquery.com
-  - TROJAN-WS-TLS-🇺🇸(US)-vless.herogoing.top
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.190.72
-  - TROJAN-WS-TLS-🇩🇪(DE)-185.58.159.150
-  - TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn_3
-  - TROJAN-WS-TLS-🇩🇪(DE)-45.140.43.6
-  - TROJAN-WS-TLS-🇩🇪(DE)-38.246.33.245
-  - TROJAN-WS-TLS-🇩🇪(DE)-95.164.53.228
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.240.36
-  - TROJAN-WS-TLS-🇩🇪(DE)-213.176.77.231
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.87.163
-  - TROJAN-WS-TLS-🇩🇪(DE)-77.83.86.169
-  - TROJAN-WS-TLS-🇩🇪(DE)-2.27.121.32
-  - TROJAN-WS-TLS-🇩🇪(DE)-109.122.198.72
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.194.156.164
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.188.6
-  - TROJAN-WS-TLS-🇩🇪(DE)-109.172.94.240
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.190.72_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-45.146.202.28
-  - TROJAN-WS-TLS-🇩🇪(DE)-64.188.70.233
-  - TROJAN-WS-TLS-🇩🇪(DE)-88.198.82.146
-  - TROJAN-WS-TLS-🇩🇪(DE)-78.47.85.213
-  - TROJAN-WS-TLS-🇩🇪(DE)-159.223.27.68
-  - TROJAN-WS-TLS-🇩🇪(DE)-91.107.155.114
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_2
-  - TROJAN-WS-TLS-🇩🇪(DE)-57.129.63.158
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.198.116
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.255.102
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.225.210.98
-  - TROJAN-WS-TLS-🇩🇪(DE)-109.70.74.67
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.228.45
-  - TROJAN-WS-TLS-🇩🇪(DE)-86.110.36.87
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.115.108
-  - TROJAN-WS-TLS-🇳🇱(NL)-77.90.63.208
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.104.154
-  - TROJAN-WS-TLS-🇩🇪(DE)-147.45.70.195
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.28.78
-  - TROJAN-WS-TLS-🇩🇪(DE)-194.87.77.2
-  - TROJAN-WS-TLS-🇩🇪(DE)-198.105.115.82
-  - TROJAN-WS-TLS-🇩🇪(DE)-150.241.66.81
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.107.40
-  - TROJAN-WS-TLS-🇩🇪(DE)-143.20.160.200
-  - TROJAN-WS-TLS-🇩🇪(DE)-23.88.112.241
-  - TROJAN-WS-TLS-🇩🇪(DE)-91.107.155.13
-  - TROJAN-WS-TLS-🇩🇪(DE)-94.141.123.243
-  - TROJAN-WS-TLS-🇩🇪(DE)-159.195.5.181
-  - TROJAN-WS-TLS-🇩🇪(DE)-194.58.33.158
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.172.168
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.32.63
-  - TROJAN-WS-TLS-🇩🇪(DE)-213.176.77.30
-  - TROJAN-WS-TLS-🇩🇪(DE)-213.165.38.108
-  - TROJAN-WS-TLS-🇩🇪(DE)-95.85.232.148
-  - TROJAN-WS-TLS-🇩🇪(DE)-185.170.153.115
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.249.73
-  - TROJAN-WS-TLS-🇩🇪(DE)-157.230.111.133
-  - TROJAN-WS-TLS-🇩🇪(DE)-64.188.96.123
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.122.88.119
-  - TROJAN-WS-TLS-🇩🇪(DE)-103.109.234.64
-  - TROJAN-WS-TLS-🇩🇪(DE)-77.90.6.193
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.194.156.164_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-37.120.169.217
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.190.72_2
-  - TROJAN-WS-TLS-🇩🇪(DE)-83.242.100.181
-  - TROJAN-WS-TLS-🇩🇪(DE)-85.215.129.133
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.230.45
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.209.224.221
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.2.249
-  - TROJAN-WS-TLS-🇩🇪(DE)-45.9.116.160
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_3
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.23.44
-  - TROJAN-WS-TLS-🇩🇪(DE)-51.195.101.75
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.15.200
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.241.145
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.239.26
-  - TROJAN-WS-TLS-🇩🇪(DE)-206.189.54.122
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.174.78
-  - TROJAN-WS-TLS-🇩🇪(DE)-109.70.74.67_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-193.31.24.53
-  - TROJAN-WS-TLS-🇩🇪(DE)-109.122.197.95
-  - TROJAN-WS-TLS-🇩🇪(DE)-195.201.137.164
-  - TROJAN-WS-TLS-🇩🇪(DE)-159.223.19.10
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.224.48.82
-  - TROJAN-WS-TLS-🇩🇪(DE)-172.104.252.102
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.226.162.89
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.26.247
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.59.23
-  - TROJAN-WS-TLS-🇩🇪(DE)-209.38.225.64
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.209.224.221_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-57.129.63.143
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.18.157
-  - TROJAN-WS-TLS-🇩🇪(DE)-64.188.105.7
-  - TROJAN-WS-TLS-🇳🇱(NL)-154.83.129.134
-  - TROJAN-WS-TLS-🇩🇪(DE)-142.93.162.114
-  - TROJAN-WS-TLS-🇩🇪(DE)-150.241.105.243
-  - TROJAN-WS-TLS-🇩🇪(DE)-91.149.223.248
-  - TROJAN-WS-TLS-🇩🇪(DE)-150.241.79.197
-  - TROJAN-WS-TLS-🇩🇪(DE)-109.237.97.197
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.120.120
-  - TROJAN-WS-TLS-🇩🇪(DE)-217.177.10.6
-  - TROJAN-WS-TLS-🇩🇪(DE)-64.226.112.70
-  - TROJAN-WS-TLS-🇮🇹(IT)-82.21.117.137
-  - TROJAN-WS-TLS-🇩🇪(DE)-194.87.77.226
-  - TROJAN-WS-TLS-🇩🇪(DE)-148.253.210.74
-  - TROJAN-WS-TLS-🇩🇪(DE)-159.195.44.151
-  - TROJAN-TCP-TLS-🇯🇵(JP)-jp2-8sb.6121999.dpdns.org
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.15.139
-  - TROJAN-WS-TLS-🇩🇪(DE)-195.245.239.124
-  - TROJAN-TCP-TLS-🇯🇵(JP)-jp2-8sb.6121999.dpdns.org_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.40.175
-  - TROJAN-WS-TLS-🇩🇪(DE)-202.61.226.121
   - TROJAN-WS-TLS-🇺🇸(US)-172.64.152.23
-  - TROJAN-WS-TLS-🇩🇪(DE)-188.245.64.72
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.68.102.184
-  - TROJAN-WS-TLS-🇳🇱(NL)-72.56.111.177
-  - TROJAN-WS-TLS-🇩🇪(DE)-194.87.25.136
-  - TROJAN-WS-TLS-🇩🇪(DE)-142.93.170.171
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.194.158.125
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.73
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.180.250
-  - TROJAN-WS-TLS-🇩🇪(DE)-172.86.92.227
-  - TROJAN-WS-TLS-🇩🇪(DE)-37.1.194.237
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.42.90
-  - TROJAN-WS-TLS-🇩🇪(DE)-57.129.47.40
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.117.15
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.48.116
-  - TROJAN-WS-TLS-🇳🇱(NL)-92.51.36.219
-  - TROJAN-WS-TLS-🇳🇱(NL)-194.31.175.31
-  - TROJAN-WS-TLS-🇩🇪(DE)-159.69.191.98
-  - TROJAN-WS-TLS-🇩🇪(DE)-176.96.137.96
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.34.36
-  - TROJAN-WS-TLS-🇩🇪(DE)-64.188.97.250
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.136.46
-  - TROJAN-WS-TLS-🇩🇪(DE)-194.154.30.188
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.128.139.249
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.128.199.136
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.194.156.84
-  - TROJAN-WS-TLS-🇩🇪(DE)-129.212.171.47
-  - TROJAN-WS-TLS-🇩🇪(DE)-167.99.244.254
-  - TROJAN-WS-TLS-🇩🇪(DE)-57.129.47.4
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.73_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.209.244.186
-  - TROJAN-WS-TLS-🇩🇪(DE)-165.22.87.79
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.224.209.116
-  - TROJAN-WS-TLS-🇩🇪(DE)-178.128.207.134
-  - TROJAN-WS-TLS-🇩🇪(DE)-68.183.67.126
-  - TROJAN-WS-TLS-🇩🇪(DE)-217.177.10.223
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.139.103
-  - TROJAN-WS-TLS-🇩🇪(DE)-152.53.138.238
-  - TROJAN-WS-TLS-🇩🇪(DE)-84.200.192.87
-  - TROJAN-WS-TLS-🇩🇪(DE)-135.125.191.180
-  - TROJAN-WS-TLS-🇩🇪(DE)-167.172.163.190
-  - TROJAN-TCP-TLS-🇹🇷(TR)-tr-1.stunnel.cc
-  - TROJAN-WS-TLS-🇩🇪(DE)-161.35.64.81
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.122.84.25
-  - TROJAN-WS-TLS-🇩🇪(DE)-135.125.234.148
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.245.101
-  - TROJAN-WS-TLS-🇩🇪(DE)-147.45.76.82
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.122.69.33
-  - TROJAN-WS-TLS-🇩🇪(DE)-167.172.97.15
-  - TROJAN-WS-TLS-🇩🇪(DE)-165.227.172.171
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.226.161.108
-  - TROJAN-WS-TLS-🇩🇪(DE)-185.219.84.221
-  - TROJAN-WS-TLS-🇩🇪(DE)-195.133.94.9
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.132.134
-  - TROJAN-WS-TLS-🇩🇪(DE)-165.22.89.207
-  - TROJAN-WS-TLS-🇳🇱(NL)-92.51.37.214
-  - TROJAN-WS-TLS-🇩🇪(DE)-185.230.163.33
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.229.149
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.132.134_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-91.186.218.253
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.132.134_2
-  - TROJAN-WS-TLS-🇩🇪(DE)-77.90.6.193_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-217.144.188.147
-  - TROJAN-WS-TLS-🇳🇱(NL)-194.31.175.31_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.132.134_3
-  - TROJAN-WS-TLS-🇩🇪(DE)-158.180.49.11
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.122.84.25_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.24.229
-  - TROJAN-WS-TLS-🇩🇪(DE)-164.90.172.179
-  - TROJAN-WS-TLS-🇩🇪(DE)-77.110.97.225
-  - TROJAN-TCP-TLS-🇯🇵(JP)-140.238.43.40
-  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.213.59
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.209.252.120
-  - TROJAN-WS-TLS-🇩🇪(DE)-134.209.236.15
-  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.152.234
-  - TROJAN-TCP-TLS-🇹🇷(TR)-tr-1.stunnel.cc_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-148.253.210.141
-  - TROJAN-WS-TLS-🇳🇱(NL)-45.95.235.210
-  - TROJAN-WS-TLS-🇩🇪(DE)-172.86.94.189
-  - TROJAN-WS-TLS-🇩🇪(DE)-164.90.235.19
-  - TROJAN-WS-TLS-🇩🇪(DE)-103.27.157.111
-  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
-  - TROJAN-WS-TLS-🇩🇪(DE)-167.172.182.52
-  - TROJAN-WS-TLS-🇩🇪(DE)-167.172.171.113
-  - TROJAN-WS-TLS-🇩🇪(DE)-167.235.60.23
-  - TROJAN-WS-TLS-🇩🇪(DE)-57.129.47.55
-  - TROJAN-WS-TLS-🇩🇪(DE)-165.22.65.64
-  - TROJAN-WS-TLS-🇩🇪(DE)-193.23.199.106
-  - TROJAN-WS-TLS-🇩🇪(DE)-164.92.193.243
-  - TROJAN-WS-TLS-🇩🇪(DE)-80.253.249.66
-  - TROJAN-GRPC-REALITY-🇭🇰(HK)-154.3.37.35
+  - TROJAN-WS-TLS-🇺🇸(US)-wing2452.nyc.mn_1
+  - TROJAN-WS-TLS-🇺🇸(US)-vless.herogoing.top
+  - TROJAN-WS-TLS-🇺🇸(US)-irancell.buzzmuzzpanel.online
+  - TROJAN-WS-TLS-🇺🇸(US)-russia.com
+  - TROJAN-WS-TLS-🇺🇸(US)-bpbg.anguswen.top
+  - TROJAN-WS-TLS-🇺🇸(US)-104.18.3.150
+  - TROJAN-WS-TLS-🇺🇸(US)-jquery.com
+  - TROJAN-WS-TLS-🇺🇸(US)-104.18.156.119
+  - TROJAN-WS-TLS-🇩🇪(DE)-77.83.86.169
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160
   - TROJAN-WS-TLS-🇩🇪(DE)-193.168.201.18
-  - TROJAN-WS-TLS-🇩🇪(DE)-162.19.158.37
-  - TROJAN-WS-TLS-🇩🇪(DE)-164.90.228.150
-  - TROJAN-WS-TLS-🇩🇪(DE)-64.188.89.147
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.128.139.68
+  - TROJAN-WS-TLS-🇩🇪(DE)-91.98.115.175
+  - TROJAN-WS-TLS-🇩🇪(DE)-159.195.39.241
+  - TROJAN-WS-TLS-🇩🇪(DE)-192.248.183.18
+  - TROJAN-WS-TLS-🇩🇪(DE)-95.85.232.148
+  - TROJAN-WS-TLS-🇩🇪(DE)-207.154.242.240
+  - TROJAN-WS-TLS-🇺🇸(US)-162.159.152.2
+  - TROJAN-WS-TLS-🇩🇪(DE)-135.125.234.148
+  - TROJAN-WS-TLS-🇩🇪(DE)-165.22.85.220
+  - TROJAN-WS-TLS-🇩🇪(DE)-77.90.6.193
+  - TROJAN-WS-TLS-🇩🇪(DE)-103.109.234.64
+  - TROJAN-WS-TLS-🇩🇪(DE)-159.89.107.10
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_1
+  - TROJAN-WS-TLS-🇩🇪(DE)-167.235.26.55
+  - TROJAN-WS-TLS-🇩🇪(DE)-128.140.32.214
+  - TROJAN-TCP-REALITY-🇩🇪(DE)-159.195.6.151
+  - TROJAN-WS-TLS-🇮🇹(IT)-82.21.117.137
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_2
+  - TROJAN-WS-TLS-🇩🇪(DE)-37.1.194.237
+  - TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55
+  - TROJAN-WS-TLS-🇩🇪(DE)-57.129.47.10
+  - TROJAN-WS-TLS-🇳🇱(NL)-72.56.111.177
+  - TROJAN-WS-TLS-🇩🇪(DE)-185.125.102.33
+  - TROJAN-WS-TLS-🇩🇪(DE)-103.13.211.113
+  - TROJAN-WS-TLS-🇩🇪(DE)-161.35.64.81
+  - TROJAN-WS-TLS-🇺🇸(US)-v1.dabache.top
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.252.80
+  - TROJAN-WS-TLS-🇩🇪(DE)-5.187.6.30
+  - TROJAN-WS-TLS-🇩🇪(DE)-91.99.52.229
+  - TROJAN-WS-TLS-🇩🇪(DE)-185.207.139.113
+  - TROJAN-WS-TLS-🇩🇪(DE)-109.122.198.72
+  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.61.155
+  - TROJAN-WS-TLS-🇩🇪(DE)-194.87.25.248
+  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.9.51
+  - TROJAN-WS-TLS-🇩🇪(DE)-87.106.162.236
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.172.168
+  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.118.170
+  - TROJAN-WS-TLS-🇩🇪(DE)-49.13.194.13
+  - TROJAN-WS-TLS-🇳🇱(NL)-154.83.129.134
+  - TROJAN-WS-TLS-🇩🇪(DE)-116.202.14.249
+  - TROJAN-WS-TLS-🇩🇪(DE)-178.128.207.134
+  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.85.72
+  - TROJAN-WS-TLS-🇩🇪(DE)-152.53.118.28
+  - TROJAN-WS-TLS-🇩🇪(DE)-85.215.129.133
+  - TROJAN-WS-TLS-🇩🇪(DE)-91.107.243.233
+  - TROJAN-WS-TLS-🇨🇿(CZ)-91.184.250.116
+  - TROJAN-WS-TLS-🇩🇪(DE)-178.104.93.49
   - TROJAN-WS-TLS-🇩🇪(DE)-91.107.220.103
-  - TROJAN-WS-TLS-🇸🇬(SG)-94.159.104.23
-  - TROJAN-WS-TLS-🇸🇬(SG)-94.159.104.23_1
+  - TROJAN-WS-TLS-🇩🇪(DE)-104.194.156.164
+  - TROJAN-WS-TLS-🇩🇪(DE)-207.154.202.76
+  - TROJAN-WS-TLS-🇩🇪(DE)-209.38.203.175
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.70.160_3
+  - TROJAN-WS-TLS-🇩🇪(DE)-178.128.201.202
+  - TROJAN-WS-TLS-🇩🇪(DE)-144.31.213.59
+  - TROJAN-WS-TLS-🇩🇪(DE)-194.87.25.11
+  - TROJAN-WS-TLS-🇩🇪(DE)-167.172.171.113
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.225.232.103
+  - TROJAN-WS-TLS-🇳🇱(NL)-92.51.37.214
+  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.245.101
+  - TROJAN-WS-TLS-🇧🇪(BE)-194.87.240.185
+  - TROJAN-WS-TLS-🇩🇪(DE)-152.53.227.239
+  - TROJAN-WS-TLS-🇩🇪(DE)-195.133.94.9
+  - TROJAN-WS-TLS-🇺🇸(US)-172.64.146.129
+  - TROJAN-WS-TLS-🇩🇪(DE)-185.170.153.115
+  - TROJAN-WS-TLS-🇩🇪(DE)-147.45.76.82
+  - TROJAN-WS-TLS-🇩🇪(DE)-57.129.47.40
+  - TROJAN-WS-TLS-🇩🇪(DE)-162.19.158.37
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.225.16.249
+  - TROJAN-WS-TLS-🇩🇪(DE)-64.226.124.38
+  - TROJAN-WS-TLS-🇵🇱(PL)-144.31.191.159
+  - TROJAN-TCP-REALITY-🇩🇪(DE)-159.195.6.151_1
+  - TROJAN-WS-TLS-🇩🇪(DE)-91.149.223.184
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.193.56
+  - TROJAN-WS-TLS-🇩🇪(DE)-142.93.102.20
+  - TROJAN-WS-TLS-🇩🇪(DE)-165.22.91.60
+  - TROJAN-WS-TLS-🇩🇪(DE)-172.104.252.102
+  - TROJAN-WS-TLS-🇳🇱(NL)-92.51.36.219
+  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.73
+  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.20.85
+  - TROJAN-WS-TLS-🇩🇪(DE)-165.22.87.79
+  - TROJAN-WS-TLS-🇩🇪(DE)-159.195.44.151
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.168.160
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
+  - TROJAN-WS-TLS-🇳🇱(NL)-77.90.63.208
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.139.47
+  - TROJAN-WS-TLS-🇩🇪(DE)-165.22.20.89
+  - TROJAN-WS-TLS-🇩🇪(DE)-164.90.172.179
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.225.188.108
+  - TROJAN-WS-TLS-🇩🇪(DE)-139.59.147.28
+  - TROJAN-WS-TLS-🇮🇹(IT)-167.17.182.98
+  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.249.73
+  - TROJAN-WS-TLS-🇩🇪(DE)-150.241.79.197
+  - TROJAN-WS-TLS-🇩🇪(DE)-64.188.89.147
+  - TROJAN-WS-TLS-🇩🇪(DE)-91.107.155.13
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.224.207.178
+  - TROJAN-WS-TLS-🇩🇪(DE)-134.209.236.15
+  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.136.46
+  - TROJAN-WS-TLS-🇩🇪(DE)-46.101.149.103
+  - TROJAN-WS-TLS-🇩🇪(DE)-64.188.89.147_1
   - TROJAN-WS-TLS-🇩🇪(DE)-162.19.243.20
-  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.245.101_1
-  - TROJAN-WS-TLS-🇺🇸(US)-sni.111000.dynv6.net
-  - TROJAN-WS-TLS-🇩🇪(DE)-164.92.132.232
+  - TROJAN-WS-TLS-🇩🇪(DE)-167.172.182.52
+  - TROJAN-WS-TLS-🇩🇪(DE)-164.90.209.253
+  - TROJAN-WS-TLS-🇩🇪(DE)-57.129.63.143
+  - TROJAN-WS-TLS-🇩🇪(DE)-188.245.64.72
+  - TROJAN-WS-TLS-🇩🇪(DE)-164.90.209.5
+  - TROJAN-WS-TLS-🇩🇪(DE)-92.246.137.150
+  - TROJAN-WS-TLS-🇩🇪(DE)-159.195.79.8
+  - TROJAN-GRPC-REALITY-🇭🇰(HK)-154.3.37.35
+  - TROJAN-WS-TLS-🇩🇪(DE)-104.248.46.73_1
+  - TROJAN-WS-TLS-🇩🇪(DE)-134.209.252.120
+  - TROJAN-WS-TLS-🇩🇪(DE)-172.86.92.227
+  - TROJAN-WS-TLS-🇩🇪(DE)-202.61.195.167
+  - TROJAN-WS-TLS-🇩🇪(DE)-94.16.113.129
+  - TROJAN-WS-TLS-🇩🇪(DE)-103.228.171.213
+  - TROJAN-WS-TLS-🇩🇪(DE)-5.75.182.89
 rule-providers:
   adblock:
     type: http
