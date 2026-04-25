@@ -14,19 +14,19 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VMESS-WS-TLS-🇺🇸(US)-172.235.36.46
+- name: VMESS-WS-TLS-🇺🇸(US)-10.a400.top
   type: vmess
-  server: 172.235.36.46
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  server: 10.a400.top
+  port: 44742
+  uuid: 691ebfe7-756a-4b7d-836a-f292ef3b2146
   network: ws
   tls: true
-  servername: usaapp1.jisuyun.top
+  servername: 10.a400.top
   client-fingerprint: chrome
   ws-opts:
-    path: /usavm
+    path: /
     headers:
-      Host: usaapp1.jisuyun.top
+      Host: 10.a400.top
   alterId: 0
   cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-142.171.36.82
@@ -44,9 +44,9 @@ proxies:
       Host: 10.a400.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+- name: VMESS-WS-TLS-🇺🇸(US)-172.235.36.46
   type: vmess
-  server: usaapp1.jisuyun.top
+  server: 172.235.36.46
   port: 2053
   uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
   network: ws
@@ -74,19 +74,19 @@ proxies:
       Host: usaapp2.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-10.a400.top
+- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   type: vmess
-  server: 10.a400.top
-  port: 44742
-  uuid: 691ebfe7-756a-4b7d-836a-f292ef3b2146
+  server: usaapp1.jisuyun.top
+  port: 2053
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
   network: ws
   tls: true
-  servername: 10.a400.top
+  servername: usaapp1.jisuyun.top
   client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /usavm
     headers:
-      Host: 10.a400.top
+      Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-10.a400.top_1
@@ -104,52 +104,16 @@ proxies:
       Host: 10.a400.top
   alterId: 0
   cipher: auto
-- name: VMESS-TCP-TLS-🇩🇪(DE)-57.129.121.230
-  type: vmess
-  server: 57.129.121.230
-  port: 2053
-  uuid: 9309640e-d299-484a-a0e8-c9b975d94822
-  network: tcp
-  tls: true
-  servername: 57.129.121.230
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
-- name: VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
-  type: vmess
-  server: node-de.connectsuite.org
-  port: 2053
-  uuid: 9309640e-d299-484a-a0e8-c9b975d94822
-  network: tcp
-  tls: true
-  servername: node-de.connectsuite.org
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
-- name: VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org_1
-  type: vmess
-  server: node-de.connectsuite.org
-  port: 2053
-  uuid: 9309640e-d299-484a-a0e8-c9b975d94822
-  network: tcp
-  tls: true
-  servername: node-de.connectsuite.org
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
-  - VMESS-WS-TLS-🇺🇸(US)-172.235.36.46
-  - VMESS-WS-TLS-🇺🇸(US)-142.171.36.82
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-10.a400.top
+  - VMESS-WS-TLS-🇺🇸(US)-142.171.36.82
+  - VMESS-WS-TLS-🇺🇸(US)-172.235.36.46
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-10.a400.top_1
-  - VMESS-TCP-TLS-🇩🇪(DE)-57.129.121.230
-  - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
-  - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -166,15 +130,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
-  - VMESS-WS-TLS-🇺🇸(US)-172.235.36.46
-  - VMESS-WS-TLS-🇺🇸(US)-142.171.36.82
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-10.a400.top
+  - VMESS-WS-TLS-🇺🇸(US)-142.171.36.82
+  - VMESS-WS-TLS-🇺🇸(US)-172.235.36.46
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-10.a400.top_1
-  - VMESS-TCP-TLS-🇩🇪(DE)-57.129.121.230
-  - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
-  - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org_1
 rule-providers:
   adblock:
     type: http
