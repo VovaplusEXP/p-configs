@@ -29,36 +29,6 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-142.171.36.82
-  type: vmess
-  server: 142.171.36.82
-  port: 44742
-  uuid: 691ebfe7-756a-4b7d-836a-f292ef3b2146
-  network: ws
-  tls: true
-  servername: 10.a400.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: 10.a400.top
-  alterId: 0
-  cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-10.a400.top
-  type: vmess
-  server: 10.a400.top
-  port: 44742
-  uuid: 691ebfe7-756a-4b7d-836a-f292ef3b2146
-  network: ws
-  tls: true
-  servername: 10.a400.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: 10.a400.top
-  alterId: 0
-  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   type: vmess
   server: usaapp1.jisuyun.top
@@ -89,7 +59,22 @@ proxies:
       Host: usaapp2.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-10.a400.top_1
+- name: VMESS-WS-TLS-🇺🇸(US)-142.171.36.82
+  type: vmess
+  server: 142.171.36.82
+  port: 44742
+  uuid: 691ebfe7-756a-4b7d-836a-f292ef3b2146
+  network: ws
+  tls: true
+  servername: 10.a400.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: 10.a400.top
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇺🇸(US)-10.a400.top
   type: vmess
   server: 10.a400.top
   port: 44742
@@ -104,17 +89,6 @@ proxies:
       Host: 10.a400.top
   alterId: 0
   cipher: auto
-- name: VMESS-TCP-TLS-🇩🇪(DE)-57.129.121.230
-  type: vmess
-  server: 57.129.121.230
-  port: 2053
-  uuid: 9309640e-d299-484a-a0e8-c9b975d94822
-  network: tcp
-  tls: true
-  servername: 57.129.121.230
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
 - name: VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
   type: vmess
   server: node-de.connectsuite.org
@@ -126,21 +100,6 @@ proxies:
   client-fingerprint: chrome
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇫🇮(FI)-aris3.arisping-ir.online
-  type: vmess
-  server: aris3.arisping-ir.online
-  port: 443
-  uuid: 08cecfe1-053b-4cac-81e9-834b2f4d7cea
-  network: ws
-  tls: true
-  servername: fi.arisping-ir.online
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: fi.arisping-ir.online
-  alterId: 0
-  cipher: auto
 - name: VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org_1
   type: vmess
   server: node-de.connectsuite.org
@@ -149,6 +108,32 @@ proxies:
   network: tcp
   tls: true
   servername: node-de.connectsuite.org
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇭🇰(HK)-hk.aicvideo.info
+  type: vmess
+  server: hk.aicvideo.info
+  port: 8810
+  uuid: c7075b83-2d8f-4b76-b6fd-cc829ae6d75a
+  network: ws
+  tls: true
+  servername: www.bing.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /dgs
+    headers:
+      Host: www.bing.com
+  alterId: 0
+  cipher: auto
+- name: VMESS-TCP-TLS-🇩🇪(DE)-57.129.121.230
+  type: vmess
+  server: 57.129.121.230
+  port: 2053
+  uuid: 9309640e-d299-484a-a0e8-c9b975d94822
+  network: tcp
+  tls: true
+  servername: 57.129.121.230
   client-fingerprint: chrome
   alterId: 0
   cipher: auto
@@ -172,15 +157,14 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - VMESS-WS-TLS-🇺🇸(US)-172.235.36.46
-  - VMESS-WS-TLS-🇺🇸(US)-142.171.36.82
-  - VMESS-WS-TLS-🇺🇸(US)-10.a400.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-10.a400.top_1
-  - VMESS-TCP-TLS-🇩🇪(DE)-57.129.121.230
+  - VMESS-WS-TLS-🇺🇸(US)-142.171.36.82
+  - VMESS-WS-TLS-🇺🇸(US)-10.a400.top
   - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
-  - VMESS-WS-TLS-🇫🇮(FI)-aris3.arisping-ir.online
   - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org_1
+  - VMESS-WS-TLS-🇭🇰(HK)-hk.aicvideo.info
+  - VMESS-TCP-TLS-🇩🇪(DE)-57.129.121.230
   - VMESS-WS-TLS-🇹🇷(TR)-creativecommons.org
   tolerance: 50
   lazy: false
@@ -199,15 +183,14 @@ proxy-groups:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
   - VMESS-WS-TLS-🇺🇸(US)-172.235.36.46
-  - VMESS-WS-TLS-🇺🇸(US)-142.171.36.82
-  - VMESS-WS-TLS-🇺🇸(US)-10.a400.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-10.a400.top_1
-  - VMESS-TCP-TLS-🇩🇪(DE)-57.129.121.230
+  - VMESS-WS-TLS-🇺🇸(US)-142.171.36.82
+  - VMESS-WS-TLS-🇺🇸(US)-10.a400.top
   - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
-  - VMESS-WS-TLS-🇫🇮(FI)-aris3.arisping-ir.online
   - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org_1
+  - VMESS-WS-TLS-🇭🇰(HK)-hk.aicvideo.info
+  - VMESS-TCP-TLS-🇩🇪(DE)-57.129.121.230
   - VMESS-WS-TLS-🇹🇷(TR)-creativecommons.org
 rule-providers:
   adblock:
