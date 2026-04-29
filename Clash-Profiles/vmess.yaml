@@ -59,32 +59,6 @@ proxies:
       Host: usaapp2.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-TCP-TLS-🇩🇪(DE)-162.19.204.71
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  network: tcp
-  tls: true
-  servername: 162.19.204.71
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: aes-128-gcm
-- name: VMESS-WS-TLS-🇭🇰(HK)-hk.aicvideo.info
-  type: vmess
-  server: hk.aicvideo.info
-  port: 8810
-  uuid: c7075b83-2d8f-4b76-b6fd-cc829ae6d75a
-  network: ws
-  tls: true
-  servername: www.bing.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /dgs
-    headers:
-      Host: www.bing.com
-  alterId: 0
-  cipher: auto
 - name: VMESS-WS-TLS-🇹🇷(TR)-creativecommons.org
   type: vmess
   server: creativecommons.org
@@ -107,8 +81,6 @@ proxy-groups:
   - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
-  - VMESS-TCP-TLS-🇩🇪(DE)-162.19.204.71
-  - VMESS-WS-TLS-🇭🇰(HK)-hk.aicvideo.info
   - VMESS-WS-TLS-🇹🇷(TR)-creativecommons.org
   tolerance: 50
   lazy: false
@@ -129,8 +101,6 @@ proxy-groups:
   - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
-  - VMESS-TCP-TLS-🇩🇪(DE)-162.19.204.71
-  - VMESS-WS-TLS-🇭🇰(HK)-hk.aicvideo.info
   - VMESS-WS-TLS-🇹🇷(TR)-creativecommons.org
 rule-providers:
   adblock:
