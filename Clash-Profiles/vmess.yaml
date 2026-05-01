@@ -29,6 +29,21 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
+- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  type: vmess
+  server: usaapp1.jisuyun.top
+  port: 2053
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  network: ws
+  tls: true
+  servername: usaapp1.jisuyun.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /usavm
+    headers:
+      Host: usaapp1.jisuyun.top
+  alterId: 0
+  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   type: vmess
   server: usaapp2.jisuyun.top
@@ -44,19 +59,64 @@ proxies:
       Host: usaapp2.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+- name: VMESS-WS-TLS-🇦🇹(AT)-::ffff:bc72:6200
   type: vmess
-  server: usaapp1.jisuyun.top
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  server: ::ffff:bc72:6200
+  port: 443
+  uuid: ffece2a9-0296-46a9-8db8-742d29d240ff
   network: ws
   tls: true
-  servername: usaapp1.jisuyun.top
+  servername: www.mydriverlicence.com
   client-fingerprint: chrome
   ws-opts:
-    path: /usavm
+    path: E2ciWyh2PFlbIzNXI08qRFt0Z1QRSCcxVixNBVdZBTchOXswf20xLX0HR2ZGFxh0
     headers:
-      Host: usaapp1.jisuyun.top
+      Host: www.mydriverlicence.com
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇳🇱(NL)-cg1c13.waimaojd.com
+  type: vmess
+  server: cg1c13.waimaojd.com
+  port: 443
+  uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10
+  network: ws
+  tls: true
+  servername: cg1c13.waimaojd.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c13.waimaojd.com
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇳🇱(NL)-cg1c13.waimaojd.com_1
+  type: vmess
+  server: cg1c13.waimaojd.com
+  port: 443
+  uuid: 3756f0f8-3973-4e40-97a3-54c811f34e5b
+  network: ws
+  tls: true
+  servername: cg1c13.waimaojd.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c13.waimaojd.com
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇯🇵(JP)-cg1c10.waimaojd.com
+  type: vmess
+  server: cg1c10.waimaojd.com
+  port: 443
+  uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10
+  network: ws
+  tls: true
+  servername: cg1c10.waimaojd.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c10.waimaojd.com
   alterId: 0
   cipher: auto
 - name: VMESS-WS-TLS-🇭🇰(HK)-hk.aicvideo.info
@@ -79,8 +139,12 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
+  - VMESS-WS-TLS-🇦🇹(AT)-::ffff:bc72:6200
+  - VMESS-WS-TLS-🇳🇱(NL)-cg1c13.waimaojd.com
+  - VMESS-WS-TLS-🇳🇱(NL)-cg1c13.waimaojd.com_1
+  - VMESS-WS-TLS-🇯🇵(JP)-cg1c10.waimaojd.com
   - VMESS-WS-TLS-🇭🇰(HK)-hk.aicvideo.info
   tolerance: 50
   lazy: false
@@ -99,8 +163,12 @@ proxy-groups:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
   - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
+  - VMESS-WS-TLS-🇦🇹(AT)-::ffff:bc72:6200
+  - VMESS-WS-TLS-🇳🇱(NL)-cg1c13.waimaojd.com
+  - VMESS-WS-TLS-🇳🇱(NL)-cg1c13.waimaojd.com_1
+  - VMESS-WS-TLS-🇯🇵(JP)-cg1c10.waimaojd.com
   - VMESS-WS-TLS-🇭🇰(HK)-hk.aicvideo.info
 rule-providers:
   adblock:
