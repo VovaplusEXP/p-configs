@@ -29,21 +29,6 @@ proxies:
       Host: usaapp2.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
-  type: vmess
-  server: 172.236.249.24
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  network: ws
-  tls: true
-  servername: usaapp1.jisuyun.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /usavm
-    headers:
-      Host: usaapp1.jisuyun.top
-  alterId: 0
-  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   type: vmess
   server: usaapp1.jisuyun.top
@@ -59,6 +44,36 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
+- name: VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
+  type: vmess
+  server: 172.236.249.24
+  port: 2053
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  network: ws
+  tls: true
+  servername: usaapp1.jisuyun.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /usavm
+    headers:
+      Host: usaapp1.jisuyun.top
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇭🇰(HK)-hk.aicvideo.info
+  type: vmess
+  server: hk.aicvideo.info
+  port: 8810
+  uuid: c7075b83-2d8f-4b76-b6fd-cc829ae6d75a
+  network: ws
+  tls: true
+  servername: www.bing.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /dgs
+    headers:
+      Host: www.bing.com
+  alterId: 0
+  cipher: auto
 - name: VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
   type: vmess
   server: 141.95.65.9
@@ -70,14 +85,27 @@ proxies:
   client-fingerprint: chrome
   alterId: 0
   cipher: aes-128-gcm
+- name: VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
+  type: vmess
+  server: pl6.connall.org
+  port: 2053
+  uuid: f296380f-719d-4d4d-9d9e-a2ce05637386
+  network: tcp
+  tls: true
+  servername: pl6.connall.org
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
+  - VMESS-WS-TLS-🇭🇰(HK)-hk.aicvideo.info
   - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
+  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -95,9 +123,11 @@ proxy-groups:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
+  - VMESS-WS-TLS-🇭🇰(HK)-hk.aicvideo.info
   - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
+  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
 rule-providers:
   adblock:
     type: http
