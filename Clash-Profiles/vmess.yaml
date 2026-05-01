@@ -70,51 +70,6 @@ proxies:
   client-fingerprint: chrome
   alterId: 0
   cipher: aes-128-gcm
-- name: VMESS-WS-TLS-🇳🇱(NL)-cg1c13.waimaojd.com
-  type: vmess
-  server: cg1c13.waimaojd.com
-  port: 443
-  uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10
-  network: ws
-  tls: true
-  servername: cg1c13.waimaojd.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /api/v1/graphql
-    headers:
-      Host: cg1c13.waimaojd.com
-  alterId: 0
-  cipher: auto
-- name: VMESS-WS-TLS-🇯🇵(JP)-cg1c10.waimaojd.com
-  type: vmess
-  server: cg1c10.waimaojd.com
-  port: 443
-  uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10
-  network: ws
-  tls: true
-  servername: cg1c10.waimaojd.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /api/v1/graphql
-    headers:
-      Host: cg1c10.waimaojd.com
-  alterId: 0
-  cipher: auto
-- name: VMESS-WS-TLS-🇭🇰(HK)-hk.aicvideo.info
-  type: vmess
-  server: hk.aicvideo.info
-  port: 8810
-  uuid: c7075b83-2d8f-4b76-b6fd-cc829ae6d75a
-  network: ws
-  tls: true
-  servername: www.bing.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /dgs
-    headers:
-      Host: www.bing.com
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
@@ -123,9 +78,6 @@ proxy-groups:
   - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
-  - VMESS-WS-TLS-🇳🇱(NL)-cg1c13.waimaojd.com
-  - VMESS-WS-TLS-🇯🇵(JP)-cg1c10.waimaojd.com
-  - VMESS-WS-TLS-🇭🇰(HK)-hk.aicvideo.info
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -146,9 +98,6 @@ proxy-groups:
   - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
-  - VMESS-WS-TLS-🇳🇱(NL)-cg1c13.waimaojd.com
-  - VMESS-WS-TLS-🇯🇵(JP)-cg1c10.waimaojd.com
-  - VMESS-WS-TLS-🇭🇰(HK)-hk.aicvideo.info
 rule-providers:
   adblock:
     type: http
