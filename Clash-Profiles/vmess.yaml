@@ -74,6 +74,21 @@ proxies:
       Host: dispatch-competent-portion-printer.trycloudflare.com
   alterId: 0
   cipher: auto
+- name: VMESS-WS-TLS-🇦🇹(AT)-::ffff:bc72:6200
+  type: vmess
+  server: ::ffff:bc72:6200
+  port: 443
+  uuid: ffece2a9-0296-46a9-8db8-742d29d240ff
+  network: ws
+  tls: true
+  servername: www.mydriverlicence.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: E2ciWyh2PFlbIzNXI08qRFt0Z1QRSCcxVixNBVdZBTchOXswf20xLX0HR2ZGFxh0
+    headers:
+      Host: www.mydriverlicence.com
+  alterId: 0
+  cipher: auto
 - name: VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
   type: vmess
   server: node-de.connectsuite.org
@@ -85,6 +100,17 @@ proxies:
   client-fingerprint: chrome
   alterId: 0
   cipher: auto
+- name: VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  network: tcp
+  tls: true
+  servername: 141.95.65.9
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: aes-128-gcm
 - name: VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
   type: vmess
   server: pl6.connall.org
@@ -107,17 +133,6 @@ proxies:
   client-fingerprint: chrome
   alterId: 0
   cipher: auto
-- name: VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  network: tcp
-  tls: true
-  servername: 141.95.65.9
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: aes-128-gcm
 - name: VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
   type: vmess
   server: pl6.connall.org
@@ -129,21 +144,6 @@ proxies:
   client-fingerprint: chrome
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇭🇰(HK)-cf.scpnb.top
-  type: vmess
-  server: cf.scpnb.top
-  port: 443
-  uuid: 740a0b1e-f894-4ce7-99ed-372d7961937c
-  network: ws
-  tls: true
-  servername: segment-self-united-variation.trycloudflare.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /740a0b1e-f894-4ce7-99ed-372d7961937c-vm
-    headers:
-      Host: segment-self-united-variation.trycloudflare.com
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
@@ -152,12 +152,12 @@ proxy-groups:
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-cf.scpnb.top
+  - VMESS-WS-TLS-🇦🇹(AT)-::ffff:bc72:6200
   - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
+  - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
-  - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
-  - VMESS-WS-TLS-🇭🇰(HK)-cf.scpnb.top
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -178,12 +178,12 @@ proxy-groups:
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-cf.scpnb.top
+  - VMESS-WS-TLS-🇦🇹(AT)-::ffff:bc72:6200
   - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
+  - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
-  - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
-  - VMESS-WS-TLS-🇭🇰(HK)-cf.scpnb.top
 rule-providers:
   adblock:
     type: http
