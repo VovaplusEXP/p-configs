@@ -14,19 +14,19 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+- name: VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   type: vmess
-  server: usaapp1.jisuyun.top
+  server: usaapp2.jisuyun.top
   port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  uuid: 95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd
   network: ws
   tls: true
-  servername: usaapp1.jisuyun.top
+  servername: usaapp2.jisuyun.top
   client-fingerprint: chrome
   ws-opts:
     path: /usavm
     headers:
-      Host: usaapp1.jisuyun.top
+      Host: usaapp2.jisuyun.top
   alterId: 0
   cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
@@ -44,19 +44,30 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
+- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   type: vmess
-  server: usaapp2.jisuyun.top
+  server: usaapp1.jisuyun.top
   port: 2053
-  uuid: 95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
   network: ws
   tls: true
-  servername: usaapp2.jisuyun.top
+  servername: usaapp1.jisuyun.top
   client-fingerprint: chrome
   ws-opts:
     path: /usavm
     headers:
-      Host: usaapp2.jisuyun.top
+      Host: usaapp1.jisuyun.top
+  alterId: 0
+  cipher: auto
+- name: VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
+  type: vmess
+  server: node-de.connectsuite.org
+  port: 2053
+  uuid: 9309640e-d299-484a-a0e8-c9b975d94822
+  network: tcp
+  tls: true
+  servername: node-de.connectsuite.org
+  client-fingerprint: chrome
   alterId: 0
   cipher: auto
 - name: VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
@@ -78,17 +89,6 @@ proxies:
   network: tcp
   tls: true
   servername: pl6.connall.org
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
-- name: VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
-  type: vmess
-  server: node-de.connectsuite.org
-  port: 2053
-  uuid: 9309640e-d299-484a-a0e8-c9b975d94822
-  network: tcp
-  tls: true
-  servername: node-de.connectsuite.org
   client-fingerprint: chrome
   alterId: 0
   cipher: auto
@@ -114,50 +114,18 @@ proxies:
   client-fingerprint: chrome
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇯🇵(JP)-node-jp-1.a2a3a4.top
-  type: vmess
-  server: node-jp-1.a2a3a4.top
-  port: 443
-  uuid: 0044bcaa-923f-4d99-9c21-080061b07af0
-  network: ws
-  tls: true
-  servername: node-jp-1.a2a3a4.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
-    headers:
-      Host: node-jp-1.a2a3a4.top
-  alterId: 16
-  cipher: auto
-- name: VMESS-WS-TLS-🇭🇰(HK)-cf.scpnb.top
-  type: vmess
-  server: cf.scpnb.top
-  port: 443
-  uuid: 16661981-312c-4b80-b314-c00c9c3bfef8
-  network: ws
-  tls: true
-  servername: formats-hobby-verbal-scenarios.trycloudflare.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /16661981-312c-4b80-b314-c00c9c3bfef8-vm
-    headers:
-      Host: formats-hobby-verbal-scenarios.trycloudflare.com
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
   - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
-  - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
-  - VMESS-WS-TLS-🇯🇵(JP)-node-jp-1.a2a3a4.top
-  - VMESS-WS-TLS-🇭🇰(HK)-cf.scpnb.top
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -174,16 +142,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
   - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
-  - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
-  - VMESS-WS-TLS-🇯🇵(JP)-node-jp-1.a2a3a4.top
-  - VMESS-WS-TLS-🇭🇰(HK)-cf.scpnb.top
 rule-providers:
   adblock:
     type: http
