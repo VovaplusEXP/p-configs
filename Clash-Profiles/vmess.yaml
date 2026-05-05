@@ -14,21 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VMESS-WS-TLS-🇺🇸(US)-cf.scpnb.top
-  type: vmess
-  server: cf.scpnb.top
-  port: 443
-  uuid: bee9e6f4-5731-43dc-a826-0c14e0c7111b
-  network: ws
-  tls: true
-  servername: samba-fri-labs-contain.trycloudflare.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /bee9e6f4-5731-43dc-a826-0c14e0c7111b-vm
-    headers:
-      Host: samba-fri-labs-contain.trycloudflare.com
-  alterId: 0
-  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   type: vmess
   server: 172.236.249.24
@@ -74,7 +59,40 @@ proxies:
       Host: usaapp2.jisuyun.top
   alterId: 0
   cipher: auto
+- name: VMESS-TCP-TLS-🇩🇪(DE)-51.89.41.22
+  type: vmess
+  server: 51.89.41.22
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  network: tcp
+  tls: true
+  servername: 51.89.41.22
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: aes-128-gcm
+- name: VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
+  type: vmess
+  server: node-de.connectsuite.org
+  port: 2053
+  uuid: 9309640e-d299-484a-a0e8-c9b975d94822
+  network: tcp
+  tls: true
+  servername: node-de.connectsuite.org
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: auto
 - name: VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
+  type: vmess
+  server: pl6.connall.org
+  port: 2053
+  uuid: f296380f-719d-4d4d-9d9e-a2ce05637386
+  network: tcp
+  tls: true
+  servername: pl6.connall.org
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: auto
+- name: VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
   type: vmess
   server: pl6.connall.org
   port: 2053
@@ -96,43 +114,6 @@ proxies:
   client-fingerprint: chrome
   alterId: 0
   cipher: aes-128-gcm
-- name: VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
-  type: vmess
-  server: node-de.connectsuite.org
-  port: 2053
-  uuid: 9309640e-d299-484a-a0e8-c9b975d94822
-  network: tcp
-  tls: true
-  servername: node-de.connectsuite.org
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
-- name: VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
-  type: vmess
-  server: pl6.connall.org
-  port: 2053
-  uuid: f296380f-719d-4d4d-9d9e-a2ce05637386
-  network: tcp
-  tls: true
-  servername: pl6.connall.org
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
-- name: VMESS-WS-TLS-🇭🇰(HK)-cf.scpnb.top
-  type: vmess
-  server: cf.scpnb.top
-  port: 443
-  uuid: 16661981-312c-4b80-b314-c00c9c3bfef8
-  network: ws
-  tls: true
-  servername: formats-hobby-verbal-scenarios.trycloudflare.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /16661981-312c-4b80-b314-c00c9c3bfef8-vm
-    headers:
-      Host: formats-hobby-verbal-scenarios.trycloudflare.com
-  alterId: 0
-  cipher: auto
 - name: VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
   type: vmess
   server: pl6.connall.org
@@ -148,15 +129,14 @@ proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
-  - VMESS-WS-TLS-🇺🇸(US)-cf.scpnb.top
   - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
-  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
-  - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
+  - VMESS-TCP-TLS-🇩🇪(DE)-51.89.41.22
   - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
+  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
-  - VMESS-WS-TLS-🇭🇰(HK)-cf.scpnb.top
+  - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
   tolerance: 50
   lazy: false
@@ -174,15 +154,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
-  - VMESS-WS-TLS-🇺🇸(US)-cf.scpnb.top
   - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
-  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
-  - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
+  - VMESS-TCP-TLS-🇩🇪(DE)-51.89.41.22
   - VMESS-TCP-TLS-🇩🇪(DE)-node-de.connectsuite.org
+  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
-  - VMESS-WS-TLS-🇭🇰(HK)-cf.scpnb.top
+  - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
 rule-providers:
   adblock:
