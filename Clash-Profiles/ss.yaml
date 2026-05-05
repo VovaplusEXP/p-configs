@@ -14,73 +14,38 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-149.28.255.6
-  type: ss
-  server: 149.28.255.6
-  port: 816
-  cipher: chacha20-ietf-poly1305
-  password: GyZ5Xo0ht41vYmW3H4
 - name: SS-C20P-🇺🇸(US)-142.93.73.182
   type: ss
   server: 142.93.73.182
   port: 45389
   cipher: chacha20-ietf-poly1305
   password: hk1SdyRWbYi3Igxeow9JdN
-- name: SS-C20P-🇺🇸(US)-hackney-latest-strike.freesocks.work
+- name: SS-C20P-🇺🇸(US)-149.28.255.6
   type: ss
-  server: hackney-latest-strike.freesocks.work
-  port: 443
+  server: 149.28.255.6
+  port: 816
   cipher: chacha20-ietf-poly1305
-  password: XUMTygEM1jVYIvysXKqA5T
-- name: SS-C20P-🇬🇧(GB)-138.68.153.223
-  type: ss
-  server: 138.68.153.223
-  port: 46576
-  cipher: chacha20-ietf-poly1305
-  password: idMvoewrSyLLvEvP03k9zR
+  password: GyZ5Xo0ht41vYmW3H4
 - name: SS-C20P-🇩🇪(DE)-46.101.196.138
   type: ss
   server: 46.101.196.138
   port: 23243
   cipher: chacha20-ietf-poly1305
   password: Q7cjiVD0oKNE2o9sUnZKQg
-- name: SS-C20P-🇳🇱(NL)-159.223.236.36
+- name: SS-C20P-🇬🇧(GB)-138.68.153.223
   type: ss
-  server: 159.223.236.36
-  port: 19582
+  server: 138.68.153.223
+  port: 46576
   cipher: chacha20-ietf-poly1305
-  password: WC0GbiCk67K8nHDaDHmYIX
-- name: SS-C20P-🇮🇪(IE)-31.57.56.193
-  type: ss
-  server: 31.57.56.193
-  port: 51523
-  cipher: chacha20-ietf-poly1305
-  password: R2MPY2rqL2Gf3Lb1sP5n5fdEkUJ1d-wp
-- name: SS-C20P-🇮🇳(IN)-139.59.87.22
-  type: ss
-  server: 139.59.87.22
-  port: 16970
-  cipher: chacha20-ietf-poly1305
-  password: 6ThD1AgwXc8Stpp7hEohLa
-- name: SS-C20P-🇺🇸(US)-168.144.98.231
-  type: ss
-  server: 168.144.98.231
-  port: 22688
-  cipher: chacha20-ietf-poly1305
-  password: HRegeKRyT4eUTWChfsUEnAeMDcswgN0acez3yVYVFug=
+  password: idMvoewrSyLLvEvP03k9zR
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-149.28.255.6
   - SS-C20P-🇺🇸(US)-142.93.73.182
-  - SS-C20P-🇺🇸(US)-hackney-latest-strike.freesocks.work
-  - SS-C20P-🇬🇧(GB)-138.68.153.223
+  - SS-C20P-🇺🇸(US)-149.28.255.6
   - SS-C20P-🇩🇪(DE)-46.101.196.138
-  - SS-C20P-🇳🇱(NL)-159.223.236.36
-  - SS-C20P-🇮🇪(IE)-31.57.56.193
-  - SS-C20P-🇮🇳(IN)-139.59.87.22
-  - SS-C20P-🇺🇸(US)-168.144.98.231
+  - SS-C20P-🇬🇧(GB)-138.68.153.223
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -97,15 +62,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-149.28.255.6
   - SS-C20P-🇺🇸(US)-142.93.73.182
-  - SS-C20P-🇺🇸(US)-hackney-latest-strike.freesocks.work
-  - SS-C20P-🇬🇧(GB)-138.68.153.223
+  - SS-C20P-🇺🇸(US)-149.28.255.6
   - SS-C20P-🇩🇪(DE)-46.101.196.138
-  - SS-C20P-🇳🇱(NL)-159.223.236.36
-  - SS-C20P-🇮🇪(IE)-31.57.56.193
-  - SS-C20P-🇮🇳(IN)-139.59.87.22
-  - SS-C20P-🇺🇸(US)-168.144.98.231
+  - SS-C20P-🇬🇧(GB)-138.68.153.223
 rule-providers:
   adblock:
     type: http
