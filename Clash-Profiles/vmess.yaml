@@ -14,6 +14,21 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
+  type: vmess
+  server: usaapp2.jisuyun.top
+  port: 2053
+  uuid: 95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd
+  network: ws
+  tls: true
+  servername: usaapp2.jisuyun.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /usavm
+    headers:
+      Host: usaapp2.jisuyun.top
+  alterId: 0
+  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   type: vmess
   server: usaapp1.jisuyun.top
@@ -44,21 +59,6 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
-  type: vmess
-  server: usaapp2.jisuyun.top
-  port: 2053
-  uuid: 95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd
-  network: ws
-  tls: true
-  servername: usaapp2.jisuyun.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /usavm
-    headers:
-      Host: usaapp2.jisuyun.top
-  alterId: 0
-  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
   type: vmess
   server: usaapp1.jisuyun.top
@@ -82,17 +82,6 @@ proxies:
   network: tcp
   tls: true
   servername: 51.89.41.22
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: aes-128-gcm
-- name: VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  network: tcp
-  tls: true
-  servername: 141.95.65.9
   client-fingerprint: chrome
   alterId: 0
   cipher: aes-128-gcm
@@ -133,12 +122,11 @@ proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
   - VMESS-TCP-TLS-🇩🇪(DE)-51.89.41.22
-  - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
@@ -158,12 +146,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
   - VMESS-TCP-TLS-🇩🇪(DE)-51.89.41.22
-  - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
   - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
