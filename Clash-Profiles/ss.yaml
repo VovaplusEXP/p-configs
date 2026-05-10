@@ -14,6 +14,12 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-C20P-🇺🇸(US)-149.28.255.6
+  type: ss
+  server: 149.28.255.6
+  port: 816
+  cipher: chacha20-ietf-poly1305
+  password: GyZ5Xo0ht41vYmW3H4
 - name: SS-A256GCM-🇺🇸(US)-54.196.98.148
   type: ss
   server: 54.196.98.148
@@ -26,47 +32,90 @@ proxies:
   port: 45389
   cipher: chacha20-ietf-poly1305
   password: hk1SdyRWbYi3Igxeow9JdN
-- name: SS-C20P-🇺🇸(US)-149.28.255.6
+- name: SS-C20P-🇬🇧(GB)-138.68.153.223
   type: ss
-  server: 149.28.255.6
-  port: 816
+  server: 138.68.153.223
+  port: 46576
   cipher: chacha20-ietf-poly1305
-  password: GyZ5Xo0ht41vYmW3H4
+  password: idMvoewrSyLLvEvP03k9zR
 - name: SS-C20P-🇩🇪(DE)-46.101.196.138
   type: ss
   server: 46.101.196.138
   port: 23243
   cipher: chacha20-ietf-poly1305
   password: Q7cjiVD0oKNE2o9sUnZKQg
-- name: SS-A256GCM-🇷🇺(RU)-195.58.49.26
-  type: ss
-  server: 195.58.49.26
-  port: 60129
-  cipher: aes-256-gcm
-  password: 3150466568eda87b
 - name: SS-C20P-🇸🇪(SE)-91.186.217.246
   type: ss
   server: 91.186.217.246
   port: 31764
   cipher: chacha20-ietf-poly1305
   password: Ftc17VH9ZXQON5vslJCYmv
-- name: SS-C20P-🇺🇸(US)-168.144.98.231
+- name: SS-C20P-🇹🇼(TW)-ncmrcg000139ss7.cybervena.com
   type: ss
-  server: 168.144.98.231
-  port: 22688
+  server: ncmrcg000139ss7.cybervena.com
+  port: 50099
   cipher: chacha20-ietf-poly1305
-  password: HRegeKRyT4eUTWChfsUEnAeMDcswgN0acez3yVYVFug=
+  password: a9a0d092-6f0e-4701-81ee-454643d6d506
+- name: SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  type: ss
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇹🇼(TW)-ncmrcg000139ss7.cybervena.com_1
+  type: ss
+  server: ncmrcg000139ss7.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56
+- name: SS-C20P-🇹🇼(TW)-r3mrcg007147vhp.cybervena.com
+  type: ss
+  server: r3mrcg007147vhp.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-A256GCM-🇷🇺(RU)-195.58.49.26
+  type: ss
+  server: 195.58.49.26
+  port: 60129
+  cipher: aes-256-gcm
+  password: 3150466568eda87b
+- name: SS-C20P-🇹🇼(TW)-111.248.100.170
+  type: ss
+  server: 111.248.100.170
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇹🇼(TW)-111.248.87.102
+  type: ss
+  server: 111.248.87.102
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇹🇼(TW)-36.224.132.218
+  type: ss
+  server: 36.224.132.218
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
+  - SS-C20P-🇺🇸(US)-149.28.255.6
   - SS-A256GCM-🇺🇸(US)-54.196.98.148
   - SS-C20P-🇺🇸(US)-142.93.73.182
-  - SS-C20P-🇺🇸(US)-149.28.255.6
+  - SS-C20P-🇬🇧(GB)-138.68.153.223
   - SS-C20P-🇩🇪(DE)-46.101.196.138
-  - SS-A256GCM-🇷🇺(RU)-195.58.49.26
   - SS-C20P-🇸🇪(SE)-91.186.217.246
-  - SS-C20P-🇺🇸(US)-168.144.98.231
+  - SS-C20P-🇹🇼(TW)-ncmrcg000139ss7.cybervena.com
+  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  - SS-C20P-🇹🇼(TW)-ncmrcg000139ss7.cybervena.com_1
+  - SS-C20P-🇹🇼(TW)-r3mrcg007147vhp.cybervena.com
+  - SS-A256GCM-🇷🇺(RU)-195.58.49.26
+  - SS-C20P-🇹🇼(TW)-111.248.100.170
+  - SS-C20P-🇹🇼(TW)-111.248.87.102
+  - SS-C20P-🇹🇼(TW)-36.224.132.218
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -83,13 +132,20 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
+  - SS-C20P-🇺🇸(US)-149.28.255.6
   - SS-A256GCM-🇺🇸(US)-54.196.98.148
   - SS-C20P-🇺🇸(US)-142.93.73.182
-  - SS-C20P-🇺🇸(US)-149.28.255.6
+  - SS-C20P-🇬🇧(GB)-138.68.153.223
   - SS-C20P-🇩🇪(DE)-46.101.196.138
-  - SS-A256GCM-🇷🇺(RU)-195.58.49.26
   - SS-C20P-🇸🇪(SE)-91.186.217.246
-  - SS-C20P-🇺🇸(US)-168.144.98.231
+  - SS-C20P-🇹🇼(TW)-ncmrcg000139ss7.cybervena.com
+  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  - SS-C20P-🇹🇼(TW)-ncmrcg000139ss7.cybervena.com_1
+  - SS-C20P-🇹🇼(TW)-r3mrcg007147vhp.cybervena.com
+  - SS-A256GCM-🇷🇺(RU)-195.58.49.26
+  - SS-C20P-🇹🇼(TW)-111.248.100.170
+  - SS-C20P-🇹🇼(TW)-111.248.87.102
+  - SS-C20P-🇹🇼(TW)-36.224.132.218
 rule-providers:
   adblock:
     type: http
