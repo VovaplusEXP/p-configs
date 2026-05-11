@@ -85,6 +85,39 @@ proxies:
   client-fingerprint: chrome
   alterId: 0
   cipher: aes-128-gcm
+- name: VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
+  type: vmess
+  server: pl6.connall.org
+  port: 2053
+  uuid: f296380f-719d-4d4d-9d9e-a2ce05637386
+  network: tcp
+  tls: true
+  servername: pl6.connall.org
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: auto
+- name: VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
+  type: vmess
+  server: pl6.connall.org
+  port: 2053
+  uuid: f296380f-719d-4d4d-9d9e-a2ce05637386
+  network: tcp
+  tls: true
+  servername: pl6.connall.org
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: auto
+- name: VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
+  type: vmess
+  server: pl6.connall.org
+  port: 2053
+  uuid: f296380f-719d-4d4d-9d9e-a2ce05637386
+  network: tcp
+  tls: true
+  servername: pl6.connall.org
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
@@ -94,6 +127,9 @@ proxy-groups:
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
   - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   - VMESS-TCP-TLS-🇩🇪(DE)-51.89.41.22
+  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
+  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
+  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -115,6 +151,9 @@ proxy-groups:
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
   - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   - VMESS-TCP-TLS-🇩🇪(DE)-51.89.41.22
+  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
+  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
+  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
 rule-providers:
   adblock:
     type: http
