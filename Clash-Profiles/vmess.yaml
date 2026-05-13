@@ -14,9 +14,9 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
+- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   type: vmess
-  server: 172.236.249.24
+  server: usaapp1.jisuyun.top
   port: 2053
   uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
   network: ws
@@ -29,9 +29,9 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+- name: VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   type: vmess
-  server: usaapp1.jisuyun.top
+  server: 172.236.249.24
   port: 2053
   uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
   network: ws
@@ -85,39 +85,6 @@ proxies:
   client-fingerprint: chrome
   alterId: 0
   cipher: aes-128-gcm
-- name: VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
-  type: vmess
-  server: pl6.connall.org
-  port: 2053
-  uuid: f296380f-719d-4d4d-9d9e-a2ce05637386
-  network: tcp
-  tls: true
-  servername: pl6.connall.org
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
-- name: VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
-  type: vmess
-  server: pl6.connall.org
-  port: 2053
-  uuid: f296380f-719d-4d4d-9d9e-a2ce05637386
-  network: tcp
-  tls: true
-  servername: pl6.connall.org
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
-- name: VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
-  type: vmess
-  server: pl6.connall.org
-  port: 2053
-  uuid: f296380f-719d-4d4d-9d9e-a2ce05637386
-  network: tcp
-  tls: true
-  servername: pl6.connall.org
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: auto
 - name: VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
   type: vmess
   server: 141.95.65.9
@@ -133,14 +100,11 @@ proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
-  - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
   - VMESS-TCP-TLS-🇩🇪(DE)-162.19.204.71
-  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
-  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
-  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
   - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
   tolerance: 50
   lazy: false
@@ -158,14 +122,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
-  - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
   - VMESS-TCP-TLS-🇩🇪(DE)-162.19.204.71
-  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
-  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
-  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
   - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
 rule-providers:
   adblock:
