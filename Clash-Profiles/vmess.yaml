@@ -14,9 +14,24 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+- name: VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   type: vmess
-  server: usaapp1.jisuyun.top
+  server: usaapp2.jisuyun.top
+  port: 2053
+  uuid: 95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd
+  network: ws
+  tls: true
+  servername: usaapp2.jisuyun.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /usavm
+    headers:
+      Host: usaapp2.jisuyun.top
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
+  type: vmess
+  server: 172.236.249.24
   port: 2053
   uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
   network: ws
@@ -29,9 +44,9 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
+- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   type: vmess
-  server: 172.236.249.24
+  server: usaapp1.jisuyun.top
   port: 2053
   uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
   network: ws
@@ -59,29 +74,50 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
+- name: VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
   type: vmess
-  server: usaapp2.jisuyun.top
+  server: pl6.connall.org
   port: 2053
-  uuid: 95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd
-  network: ws
+  uuid: f296380f-719d-4d4d-9d9e-a2ce05637386
+  network: tcp
   tls: true
-  servername: usaapp2.jisuyun.top
+  servername: pl6.connall.org
   client-fingerprint: chrome
-  ws-opts:
-    path: /usavm
-    headers:
-      Host: usaapp2.jisuyun.top
+  alterId: 0
+  cipher: auto
+- name: VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
+  type: vmess
+  server: pl6.connall.org
+  port: 2053
+  uuid: f296380f-719d-4d4d-9d9e-a2ce05637386
+  network: tcp
+  tls: true
+  servername: pl6.connall.org
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: auto
+- name: VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
+  type: vmess
+  server: pl6.connall.org
+  port: 2053
+  uuid: f296380f-719d-4d4d-9d9e-a2ce05637386
+  network: tcp
+  tls: true
+  servername: pl6.connall.org
+  client-fingerprint: chrome
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
+  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
+  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
+  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -98,10 +134,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
+  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org
+  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_1
+  - VMESS-TCP-TLS-🇵🇱(PL)-pl6.connall.org_2
 rule-providers:
   adblock:
     type: http
