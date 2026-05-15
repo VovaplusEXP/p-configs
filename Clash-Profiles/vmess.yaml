@@ -29,6 +29,21 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
+- name: VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
+  type: vmess
+  server: usaapp2.jisuyun.top
+  port: 2053
+  uuid: 95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd
+  network: ws
+  tls: true
+  servername: usaapp2.jisuyun.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /usavm
+    headers:
+      Host: usaapp2.jisuyun.top
+  alterId: 0
+  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   type: vmess
   server: usaapp1.jisuyun.top
@@ -44,19 +59,19 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
+- name: VMESS-WS-TLS-🇺🇸(US)-cf.scpnb.top
   type: vmess
-  server: usaapp2.jisuyun.top
-  port: 2053
-  uuid: 95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd
+  server: cf.scpnb.top
+  port: 443
+  uuid: b4bb30b1-b4a2-4b76-90ed-c7d54ec71d69
   network: ws
   tls: true
-  servername: usaapp2.jisuyun.top
+  servername: partition-shepherd-vic-behalf.trycloudflare.com
   client-fingerprint: chrome
   ws-opts:
-    path: /usavm
+    path: /b4bb30b1-b4a2-4b76-90ed-c7d54ec71d69-vm
     headers:
-      Host: usaapp2.jisuyun.top
+      Host: partition-shepherd-vic-behalf.trycloudflare.com
   alterId: 0
   cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
@@ -90,8 +105,9 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-cf.scpnb.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
   - VMESS-TCP-TLS-🇩🇪(DE)-162.19.204.71
   tolerance: 50
@@ -111,8 +127,9 @@ proxy-groups:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
   - VMESS-WS-TLS-🇺🇸(US)-172.236.249.24
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  - VMESS-WS-TLS-🇺🇸(US)-cf.scpnb.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
   - VMESS-TCP-TLS-🇩🇪(DE)-162.19.204.71
 rule-providers:
