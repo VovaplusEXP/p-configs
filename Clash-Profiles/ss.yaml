@@ -20,12 +20,6 @@ proxies:
   port: 45389
   cipher: chacha20-ietf-poly1305
   password: hk1SdyRWbYi3Igxeow9JdN
-- name: SS-C20P-🇺🇸(US)-45.55.40.127
-  type: ss
-  server: 45.55.40.127
-  port: 49726
-  cipher: chacha20-ietf-poly1305
-  password: elTuo73FsQwO90EbLo96Ve
 - name: SS-C20P-🇺🇸(US)-167.172.249.115
   type: ss
   server: 167.172.249.115
@@ -38,24 +32,42 @@ proxies:
   port: 816
   cipher: chacha20-ietf-poly1305
   password: GyZ5Xo0ht41vYmW3H4
-- name: SS-C20P-🇬🇧(GB)-138.68.153.223
-  type: ss
-  server: 138.68.153.223
-  port: 46576
-  cipher: chacha20-ietf-poly1305
-  password: idMvoewrSyLLvEvP03k9zR
 - name: SS-C20P-🇳🇱(NL)-159.223.236.36
   type: ss
   server: 159.223.236.36
   port: 19582
   cipher: chacha20-ietf-poly1305
   password: WC0GbiCk67K8nHDaDHmYIX
+- name: SS-C20P-🇬🇧(GB)-138.68.153.223
+  type: ss
+  server: 138.68.153.223
+  port: 46576
+  cipher: chacha20-ietf-poly1305
+  password: idMvoewrSyLLvEvP03k9zR
+- name: SS-C20P-🇩🇪(DE)-46.101.196.138
+  type: ss
+  server: 46.101.196.138
+  port: 23243
+  cipher: chacha20-ietf-poly1305
+  password: Q7cjiVD0oKNE2o9sUnZKQg
 - name: SS-C20P-🇹🇷(TR)-tr-1.stunnel.cc
   type: ss
   server: tr-1.stunnel.cc
   port: 8444
   cipher: chacha20-ietf-poly1305
   password: tunnel-fbrof
+- name: SS-C20P-🇹🇷(TR)-194.87.39.215
+  type: ss
+  server: 194.87.39.215
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: X6btbRvJCo3uTQ--yaaT8Mvh0CgqhYTL
+- name: SS-aes-128-gcm-🇷🇺(RU)-ru.safepass.click
+  type: ss
+  server: ru.safepass.click
+  port: 442
+  cipher: aes-128-gcm
+  password: 6784aee2-0dfe-474f-8446-480259ff9918
 - name: SS-C20P-🇹🇼(TW)-36.230.2.123
   type: ss
   server: 36.230.2.123
@@ -73,12 +85,14 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-142.93.73.182
-  - SS-C20P-🇺🇸(US)-45.55.40.127
   - SS-C20P-🇺🇸(US)-167.172.249.115
   - SS-C20P-🇺🇸(US)-149.28.255.6
-  - SS-C20P-🇬🇧(GB)-138.68.153.223
   - SS-C20P-🇳🇱(NL)-159.223.236.36
+  - SS-C20P-🇬🇧(GB)-138.68.153.223
+  - SS-C20P-🇩🇪(DE)-46.101.196.138
   - SS-C20P-🇹🇷(TR)-tr-1.stunnel.cc
+  - SS-C20P-🇹🇷(TR)-194.87.39.215
+  - SS-aes-128-gcm-🇷🇺(RU)-ru.safepass.click
   - SS-C20P-🇹🇼(TW)-36.230.2.123
   - SS-C20P-🇹🇼(TW)-r3mrcg001269pz2.cybervena.com
   tolerance: 50
@@ -98,12 +112,14 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-142.93.73.182
-  - SS-C20P-🇺🇸(US)-45.55.40.127
   - SS-C20P-🇺🇸(US)-167.172.249.115
   - SS-C20P-🇺🇸(US)-149.28.255.6
-  - SS-C20P-🇬🇧(GB)-138.68.153.223
   - SS-C20P-🇳🇱(NL)-159.223.236.36
+  - SS-C20P-🇬🇧(GB)-138.68.153.223
+  - SS-C20P-🇩🇪(DE)-46.101.196.138
   - SS-C20P-🇹🇷(TR)-tr-1.stunnel.cc
+  - SS-C20P-🇹🇷(TR)-194.87.39.215
+  - SS-aes-128-gcm-🇷🇺(RU)-ru.safepass.click
   - SS-C20P-🇹🇼(TW)-36.230.2.123
   - SS-C20P-🇹🇼(TW)-r3mrcg001269pz2.cybervena.com
 rule-providers:
