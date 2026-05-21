@@ -14,42 +14,42 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-167.172.249.115
-  type: ss
-  server: 167.172.249.115
-  port: 41195
-  cipher: chacha20-ietf-poly1305
-  password: SUSbr2eLCXmbc64xOHhgEt
-- name: SS-C20P-🇺🇸(US)-45.55.40.127
-  type: ss
-  server: 45.55.40.127
-  port: 49726
-  cipher: chacha20-ietf-poly1305
-  password: elTuo73FsQwO90EbLo96Ve
-- name: SS-C20P-🇺🇸(US)-142.93.73.182
-  type: ss
-  server: 142.93.73.182
-  port: 45389
-  cipher: chacha20-ietf-poly1305
-  password: hk1SdyRWbYi3Igxeow9JdN
-- name: SS-C20P-🇳🇱(NL)-159.223.236.36
-  type: ss
-  server: 159.223.236.36
-  port: 19582
-  cipher: chacha20-ietf-poly1305
-  password: WC0GbiCk67K8nHDaDHmYIX
-- name: SS-C20P-🇬🇧(GB)-138.68.153.223
-  type: ss
-  server: 138.68.153.223
-  port: 46576
-  cipher: chacha20-ietf-poly1305
-  password: idMvoewrSyLLvEvP03k9zR
 - name: SS-C20P-🇺🇸(US)-149.28.255.6
   type: ss
   server: 149.28.255.6
   port: 816
   cipher: chacha20-ietf-poly1305
   password: GyZ5Xo0ht41vYmW3H4
+- name: SS-C20P-🇺🇸(US)-142.93.73.182
+  type: ss
+  server: 142.93.73.182
+  port: 45389
+  cipher: chacha20-ietf-poly1305
+  password: hk1SdyRWbYi3Igxeow9JdN
+- name: SS-C20P-🇺🇸(US)-45.55.40.127
+  type: ss
+  server: 45.55.40.127
+  port: 49726
+  cipher: chacha20-ietf-poly1305
+  password: elTuo73FsQwO90EbLo96Ve
+- name: SS-C20P-🇺🇸(US)-167.172.249.115
+  type: ss
+  server: 167.172.249.115
+  port: 41195
+  cipher: chacha20-ietf-poly1305
+  password: SUSbr2eLCXmbc64xOHhgEt
+- name: SS-C20P-🇬🇧(GB)-138.68.153.223
+  type: ss
+  server: 138.68.153.223
+  port: 46576
+  cipher: chacha20-ietf-poly1305
+  password: idMvoewrSyLLvEvP03k9zR
+- name: SS-C20P-🇳🇱(NL)-159.223.236.36
+  type: ss
+  server: 159.223.236.36
+  port: 19582
+  cipher: chacha20-ietf-poly1305
+  password: WC0GbiCk67K8nHDaDHmYIX
 - name: SS-C20P-🇩🇪(DE)-46.101.196.138
   type: ss
   server: 46.101.196.138
@@ -68,26 +68,47 @@ proxies:
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: X6btbRvJCo3uTQ--yaaT8Mvh0CgqhYTL
-- name: SS-C20P-🇮🇳(IN)-139.59.87.22
+- name: SS-C20P-🇹🇼(TW)-36.230.2.123
   type: ss
-  server: 139.59.87.22
-  port: 16970
+  server: 36.230.2.123
+  port: 50099
   cipher: chacha20-ietf-poly1305
-  password: 6ThD1AgwXc8Stpp7hEohLa
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇹🇼(TW)-111.248.69.4
+  type: ss
+  server: 111.248.69.4
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇮🇳(IN)-209.182.232.30
+  type: ss
+  server: 209.182.232.30
+  port: 41348
+  cipher: chacha20-ietf-poly1305
+  password: UlGOeb1ImdVe3rc45c3J5wxd4cubJi0aVVRtGi
+- name: SS-C20P-🇹🇼(TW)-r3mrcg007147vhp.cybervena.com
+  type: ss
+  server: r3mrcg007147vhp.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-167.172.249.115
-  - SS-C20P-🇺🇸(US)-45.55.40.127
-  - SS-C20P-🇺🇸(US)-142.93.73.182
-  - SS-C20P-🇳🇱(NL)-159.223.236.36
-  - SS-C20P-🇬🇧(GB)-138.68.153.223
   - SS-C20P-🇺🇸(US)-149.28.255.6
+  - SS-C20P-🇺🇸(US)-142.93.73.182
+  - SS-C20P-🇺🇸(US)-45.55.40.127
+  - SS-C20P-🇺🇸(US)-167.172.249.115
+  - SS-C20P-🇬🇧(GB)-138.68.153.223
+  - SS-C20P-🇳🇱(NL)-159.223.236.36
   - SS-C20P-🇩🇪(DE)-46.101.196.138
   - SS-C20P-🇹🇷(TR)-tr-1.stunnel.cc
   - SS-C20P-🇹🇷(TR)-194.87.39.215
-  - SS-C20P-🇮🇳(IN)-139.59.87.22
+  - SS-C20P-🇹🇼(TW)-36.230.2.123
+  - SS-C20P-🇹🇼(TW)-111.248.69.4
+  - SS-C20P-🇮🇳(IN)-209.182.232.30
+  - SS-C20P-🇹🇼(TW)-r3mrcg007147vhp.cybervena.com
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -104,16 +125,19 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-167.172.249.115
-  - SS-C20P-🇺🇸(US)-45.55.40.127
-  - SS-C20P-🇺🇸(US)-142.93.73.182
-  - SS-C20P-🇳🇱(NL)-159.223.236.36
-  - SS-C20P-🇬🇧(GB)-138.68.153.223
   - SS-C20P-🇺🇸(US)-149.28.255.6
+  - SS-C20P-🇺🇸(US)-142.93.73.182
+  - SS-C20P-🇺🇸(US)-45.55.40.127
+  - SS-C20P-🇺🇸(US)-167.172.249.115
+  - SS-C20P-🇬🇧(GB)-138.68.153.223
+  - SS-C20P-🇳🇱(NL)-159.223.236.36
   - SS-C20P-🇩🇪(DE)-46.101.196.138
   - SS-C20P-🇹🇷(TR)-tr-1.stunnel.cc
   - SS-C20P-🇹🇷(TR)-194.87.39.215
-  - SS-C20P-🇮🇳(IN)-139.59.87.22
+  - SS-C20P-🇹🇼(TW)-36.230.2.123
+  - SS-C20P-🇹🇼(TW)-111.248.69.4
+  - SS-C20P-🇮🇳(IN)-209.182.232.30
+  - SS-C20P-🇹🇼(TW)-r3mrcg007147vhp.cybervena.com
 rule-providers:
   adblock:
     type: http
