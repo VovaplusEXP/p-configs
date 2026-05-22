@@ -23,14 +23,27 @@ proxies:
   tls: true
   servername: aws.amazon.com
   client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55_1
+- name: TROJAN-WS-TLS-🇺🇸(US)-vip3.kaixincloud.top
   type: trojan
-  server: 216.234.140.55
-  port: 47574
-  uuid: 3PfyPiLUGm
-  network: grpc
+  server: vip3.kaixincloud.top
+  port: 443
+  uuid: bpb-trojan
+  network: ws
   tls: true
-  servername: aws.amazon.com
+  servername: mashdt.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tr
+    headers:
+      Host: mashdt.pages.dev
+- name: TROJAN-TCP-TLS-🇦🇱(AL)-78.159.131.12
+  type: trojan
+  server: 78.159.131.12
+  port: 28259
+  uuid: MeaDiUmPlkWbZJ2BON8tz
+  network: tcp
+  tls: true
+  servername: 78.159.131.12
   client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
   type: trojan
@@ -45,33 +58,6 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: mashdt.pages.dev
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.10.101
-  type: trojan
-  server: 35.181.10.101
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: 35.181.10.101
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.38.186.226
-  type: trojan
-  server: 13.38.186.226
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 13.38.186.226
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.38.186.226_1
-  type: trojan
-  server: 13.38.186.226
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-51.75.86.196
   type: trojan
   server: 51.75.86.196
@@ -81,101 +67,31 @@ proxies:
   tls: true
   servername: 51.75.86.196
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.10.101_1
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.67.135.88
   type: trojan
-  server: 35.181.10.101
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.10.101_2
-  type: trojan
-  server: 35.181.10.101
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 35.181.10.101
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.38.186.226_2
-  type: trojan
-  server: 13.38.186.226
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇯🇵(JP)-142.91.108.54
-  type: trojan
-  server: 142.91.108.54
+  server: 172.67.135.88
   port: 443
-  uuid: '162534'
+  uuid: bpb-trojan
   network: ws
   tls: true
-  servername: cchh2.pages.dev
+  servername: vless.herogoing.top
   client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560
+    path: /tr?ed=2560
     headers:
-      Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇵🇱(PL)-185.237.219.224
+      Host: vless.herogoing.top
+- name: TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55_1
   type: trojan
-  server: 185.237.219.224
-  port: 2087
-  uuid: '162534'
-  network: ws
+  server: 216.234.140.55
+  port: 47574
+  uuid: 3PfyPiLUGm
+  network: grpc
   tls: true
-  servername: cchh2.pages.dev
+  servername: aws.amazon.com
   client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇸🇪(SE)-31.58.77.194
+- name: TROJAN-WS-TLS-🇸🇪(SE)-217.60.2.148
   type: trojan
-  server: 31.58.77.194
-  port: 8443
-  uuid: '162534'
-  network: ws
-  tls: true
-  servername: cchh2.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇸🇪(SE)-130.49.178.104
-  type: trojan
-  server: 130.49.178.104
-  port: 8443
-  uuid: '162534'
-  network: ws
-  tls: true
-  servername: cchh2.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇱🇹(LT)-185.22.175.125
-  type: trojan
-  server: 185.22.175.125
-  port: 8443
-  uuid: '162534'
-  network: ws
-  tls: true
-  servername: cchh2.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇸🇪(SE)-185.82.126.206
-  type: trojan
-  server: 185.82.126.206
+  server: 217.60.2.148
   port: 2053
   uuid: '162534'
   network: ws
@@ -186,9 +102,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇸🇪(SE)-138.124.86.149
+- name: TROJAN-WS-TLS-🇸🇪(SE)-193.168.172.162
   type: trojan
-  server: 138.124.86.149
+  server: 193.168.172.162
   port: 8443
   uuid: '162534'
   network: ws
@@ -212,9 +128,48 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇸🇪(SE)-217.60.2.148
+- name: TROJAN-WS-TLS-🇸🇪(SE)-138.124.86.149
   type: trojan
-  server: 217.60.2.148
+  server: 138.124.86.149
+  port: 8443
+  uuid: '162534'
+  network: ws
+  tls: true
+  servername: cchh2.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: cchh2.pages.dev
+- name: TROJAN-WS-TLS-🇸🇪(SE)-130.49.178.104
+  type: trojan
+  server: 130.49.178.104
+  port: 8443
+  uuid: '162534'
+  network: ws
+  tls: true
+  servername: cchh2.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: cchh2.pages.dev
+- name: TROJAN-WS-TLS-🇸🇪(SE)-103.45.246.200
+  type: trojan
+  server: 103.45.246.200
+  port: 8443
+  uuid: '162534'
+  network: ws
+  tls: true
+  servername: cchh2.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: cchh2.pages.dev
+- name: TROJAN-WS-TLS-🇩🇪(DE)-45.80.231.240
+  type: trojan
+  server: 45.80.231.240
   port: 8443
   uuid: '162534'
   network: ws
@@ -238,6 +193,45 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: cchh2.pages.dev
+- name: TROJAN-WS-TLS-🇸🇪(SE)-31.56.27.137
+  type: trojan
+  server: 31.56.27.137
+  port: 2053
+  uuid: '162534'
+  network: ws
+  tls: true
+  servername: cchh2.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: cchh2.pages.dev
+- name: TROJAN-WS-TLS-🇸🇪(SE)-185.82.126.206
+  type: trojan
+  server: 185.82.126.206
+  port: 2053
+  uuid: '162534'
+  network: ws
+  tls: true
+  servername: cchh2.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: cchh2.pages.dev
+- name: TROJAN-WS-TLS-🇸🇪(SE)-130.49.178.164
+  type: trojan
+  server: 130.49.178.164
+  port: 8443
+  uuid: '162534'
+  network: ws
+  tls: true
+  servername: cchh2.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: cchh2.pages.dev
 - name: TROJAN-WS-TLS-🇱🇹(LT)-5.34.209.139
   type: trojan
   server: 5.34.209.139
@@ -251,9 +245,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-64.188.81.3
+- name: TROJAN-WS-TLS-🇱🇹(LT)-77.73.71.6
   type: trojan
-  server: 64.188.81.3
+  server: 77.73.71.6
   port: 8443
   uuid: '162534'
   network: ws
@@ -264,58 +258,6 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇸🇪(SE)-31.56.27.137
-  type: trojan
-  server: 31.56.27.137
-  port: 8443
-  uuid: '162534'
-  network: ws
-  tls: true
-  servername: cchh2.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇸🇪(SE)-31.56.27.137_1
-  type: trojan
-  server: 31.56.27.137
-  port: 2053
-  uuid: '162534'
-  network: ws
-  tls: true
-  servername: cchh2.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇸🇪(SE)-91.218.143.126
-  type: trojan
-  server: 91.218.143.126
-  port: 2053
-  uuid: '162534'
-  network: ws
-  tls: true
-  servername: cchh2.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
-  type: trojan
-  server: v2.dabache.top
-  port: 443
-  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-  network: ws
-  tls: true
-  servername: _acme-challenge.sb.cloudns.biz
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: _acme-challenge.sb.cloudns.biz
 - name: TROJAN-WS-TLS-🇸🇪(SE)-91.223.169.88
   type: trojan
   server: 91.223.169.88
@@ -329,23 +271,10 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇯🇵(JP)-156.246.94.155
+- name: TROJAN-WS-TLS-🇵🇱(PL)-185.237.219.224
   type: trojan
-  server: 156.246.94.155
-  port: 8443
-  uuid: '162534'
-  network: ws
-  tls: true
-  servername: cchh2.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇱🇹(LT)-169.40.2.93
-  type: trojan
-  server: 169.40.2.93
-  port: 8443
+  server: 185.237.219.224
+  port: 2087
   uuid: '162534'
   network: ws
   tls: true
@@ -355,9 +284,35 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇱🇹(LT)-169.40.2.93_1
+- name: TROJAN-WS-TLS-🇩🇪(DE)-138.124.112.238
+  type: trojan
+  server: 138.124.112.238
+  port: 2053
+  uuid: '162534'
+  network: ws
+  tls: true
+  servername: cchh2.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: cchh2.pages.dev
+- name: TROJAN-WS-TLS-🇱🇹(LT)-169.40.2.93
   type: trojan
   server: 169.40.2.93
+  port: 2053
+  uuid: '162534'
+  network: ws
+  tls: true
+  servername: cchh2.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: cchh2.pages.dev
+- name: TROJAN-WS-TLS-🇸🇪(SE)-91.218.143.126
+  type: trojan
+  server: 91.218.143.126
   port: 2053
   uuid: '162534'
   network: ws
@@ -394,58 +349,6 @@ proxies:
     path: /?ed=2560
     headers:
       Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇭🇰(HK)-138.124.111.115
-  type: trojan
-  server: 138.124.111.115
-  port: 443
-  uuid: '162534'
-  network: ws
-  tls: true
-  servername: cchh2.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇯🇵(JP)-142.91.108.54_1
-  type: trojan
-  server: 142.91.108.54
-  port: 443
-  uuid: '162534'
-  network: ws
-  tls: true
-  servername: cchh2.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇩🇪(DE)-138.124.112.238
-  type: trojan
-  server: 138.124.112.238
-  port: 2053
-  uuid: '162534'
-  network: ws
-  tls: true
-  servername: cchh2.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇯🇵(JP)-158.101.132.216
-  type: trojan
-  server: 158.101.132.216
-  port: 8443
-  uuid: '162534'
-  network: ws
-  tls: true
-  servername: cchh2.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: cchh2.pages.dev
 - name: TROJAN-WS-TLS-🇭🇰(HK)-217.60.248.94
   type: trojan
   server: 217.60.248.94
@@ -456,12 +359,12 @@ proxies:
   servername: cchh2.pages.dev
   client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    path: /?ed=2560
     headers:
       Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇸🇪(SE)-103.45.246.200
+- name: TROJAN-WS-TLS-🇭🇰(HK)-154.3.32.164
   type: trojan
-  server: 103.45.246.200
+  server: 154.3.32.164
   port: 8443
   uuid: '162534'
   network: ws
@@ -472,9 +375,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: cchh2.pages.dev
-- name: TROJAN-WS-TLS-🇸🇪(SE)-193.168.172.162
+- name: TROJAN-WS-TLS-🇭🇰(HK)-217.60.248.94_1
   type: trojan
-  server: 193.168.172.162
+  server: 217.60.248.94
   port: 8443
   uuid: '162534'
   network: ws
@@ -490,44 +393,35 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55
-  - TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55_1
+  - TROJAN-WS-TLS-🇺🇸(US)-vip3.kaixincloud.top
+  - TROJAN-TCP-TLS-🇦🇱(AL)-78.159.131.12
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.10.101
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.38.186.226
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.38.186.226_1
   - TROJAN-TCP-TLS-🇩🇪(DE)-51.75.86.196
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.10.101_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.10.101_2
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.38.186.226_2
-  - TROJAN-WS-TLS-🇯🇵(JP)-142.91.108.54
-  - TROJAN-WS-TLS-🇵🇱(PL)-185.237.219.224
-  - TROJAN-WS-TLS-🇸🇪(SE)-31.58.77.194
-  - TROJAN-WS-TLS-🇸🇪(SE)-130.49.178.104
-  - TROJAN-WS-TLS-🇱🇹(LT)-185.22.175.125
-  - TROJAN-WS-TLS-🇸🇪(SE)-185.82.126.206
-  - TROJAN-WS-TLS-🇸🇪(SE)-138.124.86.149
-  - TROJAN-WS-TLS-🇸🇪(SE)-193.168.197.37
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.135.88
+  - TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55_1
   - TROJAN-WS-TLS-🇸🇪(SE)-217.60.2.148
+  - TROJAN-WS-TLS-🇸🇪(SE)-193.168.172.162
+  - TROJAN-WS-TLS-🇸🇪(SE)-193.168.197.37
+  - TROJAN-WS-TLS-🇸🇪(SE)-138.124.86.149
+  - TROJAN-WS-TLS-🇸🇪(SE)-130.49.178.104
+  - TROJAN-WS-TLS-🇸🇪(SE)-103.45.246.200
+  - TROJAN-WS-TLS-🇩🇪(DE)-45.80.231.240
   - TROJAN-WS-TLS-🇸🇪(SE)-193.168.197.37_1
-  - TROJAN-WS-TLS-🇱🇹(LT)-5.34.209.139
-  - TROJAN-WS-TLS-🇩🇪(DE)-64.188.81.3
   - TROJAN-WS-TLS-🇸🇪(SE)-31.56.27.137
-  - TROJAN-WS-TLS-🇸🇪(SE)-31.56.27.137_1
-  - TROJAN-WS-TLS-🇸🇪(SE)-91.218.143.126
-  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
+  - TROJAN-WS-TLS-🇸🇪(SE)-185.82.126.206
+  - TROJAN-WS-TLS-🇸🇪(SE)-130.49.178.164
+  - TROJAN-WS-TLS-🇱🇹(LT)-5.34.209.139
+  - TROJAN-WS-TLS-🇱🇹(LT)-77.73.71.6
   - TROJAN-WS-TLS-🇸🇪(SE)-91.223.169.88
-  - TROJAN-WS-TLS-🇯🇵(JP)-156.246.94.155
+  - TROJAN-WS-TLS-🇵🇱(PL)-185.237.219.224
+  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.112.238
   - TROJAN-WS-TLS-🇱🇹(LT)-169.40.2.93
-  - TROJAN-WS-TLS-🇱🇹(LT)-169.40.2.93_1
+  - TROJAN-WS-TLS-🇸🇪(SE)-91.218.143.126
   - TROJAN-WS-TLS-🇱🇹(LT)-169.40.4.148
   - TROJAN-WS-TLS-🇯🇵(JP)-198.13.37.176
-  - TROJAN-WS-TLS-🇭🇰(HK)-138.124.111.115
-  - TROJAN-WS-TLS-🇯🇵(JP)-142.91.108.54_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.112.238
-  - TROJAN-WS-TLS-🇯🇵(JP)-158.101.132.216
   - TROJAN-WS-TLS-🇭🇰(HK)-217.60.248.94
-  - TROJAN-WS-TLS-🇸🇪(SE)-103.45.246.200
-  - TROJAN-WS-TLS-🇸🇪(SE)-193.168.172.162
+  - TROJAN-WS-TLS-🇭🇰(HK)-154.3.32.164
+  - TROJAN-WS-TLS-🇭🇰(HK)-217.60.248.94_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -545,44 +439,35 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55
-  - TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55_1
+  - TROJAN-WS-TLS-🇺🇸(US)-vip3.kaixincloud.top
+  - TROJAN-TCP-TLS-🇦🇱(AL)-78.159.131.12
   - TROJAN-WS-TLS-🇺🇸(US)-172.67.180.227
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.10.101
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.38.186.226
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.38.186.226_1
   - TROJAN-TCP-TLS-🇩🇪(DE)-51.75.86.196
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.10.101_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.10.101_2
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.38.186.226_2
-  - TROJAN-WS-TLS-🇯🇵(JP)-142.91.108.54
-  - TROJAN-WS-TLS-🇵🇱(PL)-185.237.219.224
-  - TROJAN-WS-TLS-🇸🇪(SE)-31.58.77.194
-  - TROJAN-WS-TLS-🇸🇪(SE)-130.49.178.104
-  - TROJAN-WS-TLS-🇱🇹(LT)-185.22.175.125
-  - TROJAN-WS-TLS-🇸🇪(SE)-185.82.126.206
-  - TROJAN-WS-TLS-🇸🇪(SE)-138.124.86.149
-  - TROJAN-WS-TLS-🇸🇪(SE)-193.168.197.37
+  - TROJAN-WS-TLS-🇺🇸(US)-172.67.135.88
+  - TROJAN-GRPC-REALITY-🇺🇸(US)-216.234.140.55_1
   - TROJAN-WS-TLS-🇸🇪(SE)-217.60.2.148
+  - TROJAN-WS-TLS-🇸🇪(SE)-193.168.172.162
+  - TROJAN-WS-TLS-🇸🇪(SE)-193.168.197.37
+  - TROJAN-WS-TLS-🇸🇪(SE)-138.124.86.149
+  - TROJAN-WS-TLS-🇸🇪(SE)-130.49.178.104
+  - TROJAN-WS-TLS-🇸🇪(SE)-103.45.246.200
+  - TROJAN-WS-TLS-🇩🇪(DE)-45.80.231.240
   - TROJAN-WS-TLS-🇸🇪(SE)-193.168.197.37_1
-  - TROJAN-WS-TLS-🇱🇹(LT)-5.34.209.139
-  - TROJAN-WS-TLS-🇩🇪(DE)-64.188.81.3
   - TROJAN-WS-TLS-🇸🇪(SE)-31.56.27.137
-  - TROJAN-WS-TLS-🇸🇪(SE)-31.56.27.137_1
-  - TROJAN-WS-TLS-🇸🇪(SE)-91.218.143.126
-  - TROJAN-WS-TLS-🇺🇸(US)-v2.dabache.top
+  - TROJAN-WS-TLS-🇸🇪(SE)-185.82.126.206
+  - TROJAN-WS-TLS-🇸🇪(SE)-130.49.178.164
+  - TROJAN-WS-TLS-🇱🇹(LT)-5.34.209.139
+  - TROJAN-WS-TLS-🇱🇹(LT)-77.73.71.6
   - TROJAN-WS-TLS-🇸🇪(SE)-91.223.169.88
-  - TROJAN-WS-TLS-🇯🇵(JP)-156.246.94.155
+  - TROJAN-WS-TLS-🇵🇱(PL)-185.237.219.224
+  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.112.238
   - TROJAN-WS-TLS-🇱🇹(LT)-169.40.2.93
-  - TROJAN-WS-TLS-🇱🇹(LT)-169.40.2.93_1
+  - TROJAN-WS-TLS-🇸🇪(SE)-91.218.143.126
   - TROJAN-WS-TLS-🇱🇹(LT)-169.40.4.148
   - TROJAN-WS-TLS-🇯🇵(JP)-198.13.37.176
-  - TROJAN-WS-TLS-🇭🇰(HK)-138.124.111.115
-  - TROJAN-WS-TLS-🇯🇵(JP)-142.91.108.54_1
-  - TROJAN-WS-TLS-🇩🇪(DE)-138.124.112.238
-  - TROJAN-WS-TLS-🇯🇵(JP)-158.101.132.216
   - TROJAN-WS-TLS-🇭🇰(HK)-217.60.248.94
-  - TROJAN-WS-TLS-🇸🇪(SE)-103.45.246.200
-  - TROJAN-WS-TLS-🇸🇪(SE)-193.168.172.162
+  - TROJAN-WS-TLS-🇭🇰(HK)-154.3.32.164
+  - TROJAN-WS-TLS-🇭🇰(HK)-217.60.248.94_1
 rule-providers:
   adblock:
     type: http
