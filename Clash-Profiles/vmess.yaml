@@ -21,12 +21,12 @@ proxies:
   uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
   network: ws
   tls: true
-  servername: usaapp1.jisuyun.top
+  servername: 172.236.244.171
   client-fingerprint: chrome
   ws-opts:
     path: /usavm
     headers:
-      Host: usaapp1.jisuyun.top
+      Host: 172.236.244.171
   alterId: 0
   cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
@@ -44,21 +44,6 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-172.236.244.171_1
-  type: vmess
-  server: 172.236.244.171
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  network: ws
-  tls: true
-  servername: 172.236.244.171
-  client-fingerprint: chrome
-  ws-opts:
-    path: /usavm
-    headers:
-      Host: 172.236.244.171
-  alterId: 0
-  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-172.236.226.7
   type: vmess
   server: 172.236.226.7
@@ -72,6 +57,21 @@ proxies:
     path: /usavm
     headers:
       Host: usaapp2.jisuyun.top
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇺🇸(US)-172.236.244.171_1
+  type: vmess
+  server: 172.236.244.171
+  port: 2053
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  network: ws
+  tls: true
+  servername: usaapp1.jisuyun.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /usavm
+    headers:
+      Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: null
 - name: VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
@@ -88,7 +88,7 @@ proxies:
     headers:
       Host: usaapp2.jisuyun.top
   alterId: 0
-  cipher: auto
+  cipher: null
 - name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
   type: vmess
   server: usaapp1.jisuyun.top
@@ -136,8 +136,8 @@ proxy-groups:
   proxies: &id001
   - VMESS-WS-TLS-🇺🇸(US)-172.236.244.171
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-172.236.244.171_1
   - VMESS-WS-TLS-🇺🇸(US)-172.236.226.7
+  - VMESS-WS-TLS-🇺🇸(US)-172.236.244.171_1
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
   - VMESS-WS-TLS-🇺🇸(US)-cf.scpnb.top
@@ -160,8 +160,8 @@ proxy-groups:
   - 🔗 Auto-Failover-VMESS
   - VMESS-WS-TLS-🇺🇸(US)-172.236.244.171
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-172.236.244.171_1
   - VMESS-WS-TLS-🇺🇸(US)-172.236.226.7
+  - VMESS-WS-TLS-🇺🇸(US)-172.236.244.171_1
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
   - VMESS-WS-TLS-🇺🇸(US)-cf.scpnb.top

@@ -14,59 +14,38 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-C20P-🇺🇸(US)-167.172.249.115
+  type: ss
+  server: 167.172.249.115
+  port: 41195
+  cipher: chacha20-ietf-poly1305
+  password: SUSbr2eLCXmbc64xOHhgEt
+- name: SS-C20P-🇺🇸(US)-142.93.183.235
+  type: ss
+  server: 142.93.183.235
+  port: 20683
+  cipher: chacha20-ietf-poly1305
+  password: 5vldsNMbQ8B4cKDK0sROwj
 - name: SS-C20P-🇺🇸(US)-149.28.255.6
   type: ss
   server: 149.28.255.6
   port: 816
   cipher: chacha20-ietf-poly1305
   password: GyZ5Xo0ht41vYmW3H4
-- name: SS-C20P-🇹🇼(TW)-36.230.2.123
-  type: ss
-  server: 36.230.2.123
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: SS-C20P-🇹🇼(TW)-r3mrcg001269pz2.cybervena.com
-  type: ss
-  server: r3mrcg001269pz2.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: SS-C20P-🇹🇼(TW)-61.231.23.153
-  type: ss
-  server: 61.231.23.153
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: SS-C20P-🇹🇷(TR)-194.87.39.215
   type: ss
   server: 194.87.39.215
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: X6btbRvJCo3uTQ--yaaT8Mvh0CgqhYTL
-- name: SS-C20P-🇦🇺(AU)-45.15.185.70
-  type: ss
-  server: 45.15.185.70
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: SS-C20P-🇹🇼(TW)-r3mrcg007147vhp.cybervena.com
-  type: ss
-  server: r3mrcg007147vhp.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
+  - SS-C20P-🇺🇸(US)-167.172.249.115
+  - SS-C20P-🇺🇸(US)-142.93.183.235
   - SS-C20P-🇺🇸(US)-149.28.255.6
-  - SS-C20P-🇹🇼(TW)-36.230.2.123
-  - SS-C20P-🇹🇼(TW)-r3mrcg001269pz2.cybervena.com
-  - SS-C20P-🇹🇼(TW)-61.231.23.153
   - SS-C20P-🇹🇷(TR)-194.87.39.215
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
-  - SS-C20P-🇹🇼(TW)-r3mrcg007147vhp.cybervena.com
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -83,13 +62,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
+  - SS-C20P-🇺🇸(US)-167.172.249.115
+  - SS-C20P-🇺🇸(US)-142.93.183.235
   - SS-C20P-🇺🇸(US)-149.28.255.6
-  - SS-C20P-🇹🇼(TW)-36.230.2.123
-  - SS-C20P-🇹🇼(TW)-r3mrcg001269pz2.cybervena.com
-  - SS-C20P-🇹🇼(TW)-61.231.23.153
   - SS-C20P-🇹🇷(TR)-194.87.39.215
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
-  - SS-C20P-🇹🇼(TW)-r3mrcg007147vhp.cybervena.com
 rule-providers:
   adblock:
     type: http
