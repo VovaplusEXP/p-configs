@@ -14,18 +14,36 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-167.172.249.115
-  type: ss
-  server: 167.172.249.115
-  port: 41195
-  cipher: chacha20-ietf-poly1305
-  password: SUSbr2eLCXmbc64xOHhgEt
 - name: SS-C20P-🇺🇸(US)-142.93.183.235
   type: ss
   server: 142.93.183.235
   port: 20683
   cipher: chacha20-ietf-poly1305
   password: 5vldsNMbQ8B4cKDK0sROwj
+- name: SS-C20P-🇺🇸(US)-142.93.73.182
+  type: ss
+  server: 142.93.73.182
+  port: 45389
+  cipher: chacha20-ietf-poly1305
+  password: hk1SdyRWbYi3Igxeow9JdN
+- name: SS-C20P-🇩🇪(DE)-46.101.196.138
+  type: ss
+  server: 46.101.196.138
+  port: 23243
+  cipher: chacha20-ietf-poly1305
+  password: Q7cjiVD0oKNE2o9sUnZKQg
+- name: SS-C20P-🇳🇱(NL)-159.223.236.36
+  type: ss
+  server: 159.223.236.36
+  port: 19582
+  cipher: chacha20-ietf-poly1305
+  password: WC0GbiCk67K8nHDaDHmYIX
+- name: SS-C20P-🇬🇧(GB)-138.68.153.223
+  type: ss
+  server: 138.68.153.223
+  port: 46576
+  cipher: chacha20-ietf-poly1305
+  password: idMvoewrSyLLvEvP03k9zR
 - name: SS-C20P-🇺🇸(US)-149.28.255.6
   type: ss
   server: 149.28.255.6
@@ -38,14 +56,24 @@ proxies:
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: X6btbRvJCo3uTQ--yaaT8Mvh0CgqhYTL
+- name: SS-C20P-🇮🇳(IN)-139.59.87.22
+  type: ss
+  server: 139.59.87.22
+  port: 16970
+  cipher: chacha20-ietf-poly1305
+  password: 6ThD1AgwXc8Stpp7hEohLa
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-167.172.249.115
   - SS-C20P-🇺🇸(US)-142.93.183.235
+  - SS-C20P-🇺🇸(US)-142.93.73.182
+  - SS-C20P-🇩🇪(DE)-46.101.196.138
+  - SS-C20P-🇳🇱(NL)-159.223.236.36
+  - SS-C20P-🇬🇧(GB)-138.68.153.223
   - SS-C20P-🇺🇸(US)-149.28.255.6
   - SS-C20P-🇹🇷(TR)-194.87.39.215
+  - SS-C20P-🇮🇳(IN)-139.59.87.22
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -62,10 +90,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-167.172.249.115
   - SS-C20P-🇺🇸(US)-142.93.183.235
+  - SS-C20P-🇺🇸(US)-142.93.73.182
+  - SS-C20P-🇩🇪(DE)-46.101.196.138
+  - SS-C20P-🇳🇱(NL)-159.223.236.36
+  - SS-C20P-🇬🇧(GB)-138.68.153.223
   - SS-C20P-🇺🇸(US)-149.28.255.6
   - SS-C20P-🇹🇷(TR)-194.87.39.215
+  - SS-C20P-🇮🇳(IN)-139.59.87.22
 rule-providers:
   adblock:
     type: http
