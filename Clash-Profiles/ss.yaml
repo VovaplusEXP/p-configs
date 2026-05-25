@@ -14,17 +14,31 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-142.93.183.235
+- name: SS-C20P-🇺🇸(US)-38.135.24.131
   type: ss
-  server: 142.93.183.235
-  port: 20683
+  server: 38.135.24.131
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: 5vldsNMbQ8B4cKDK0sROwj
+  password: hbGrpfvNrJsUmKmPbR3iY2
+- name: SS-C20P-🇺🇸(US)-45.55.40.127
+  type: ss
+  server: 45.55.40.127
+  port: 49726
+  cipher: chacha20-ietf-poly1305
+  password: elTuo73FsQwO90EbLo96Ve
+- name: SS-C20P-🇺🇸(US)-tinkered-pennies-puppies.freesocks.work
+  type: ss
+  server: tinkered-pennies-puppies.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: hbGrpfvNrJsUmKmPbR3iY2
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-142.93.183.235
+  - SS-C20P-🇺🇸(US)-38.135.24.131
+  - SS-C20P-🇺🇸(US)-45.55.40.127
+  - SS-C20P-🇺🇸(US)-tinkered-pennies-puppies.freesocks.work
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -41,7 +55,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-142.93.183.235
+  - SS-C20P-🇺🇸(US)-38.135.24.131
+  - SS-C20P-🇺🇸(US)-45.55.40.127
+  - SS-C20P-🇺🇸(US)-tinkered-pennies-puppies.freesocks.work
 rule-providers:
   adblock:
     type: http
