@@ -14,6 +14,21 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
+  type: vmess
+  server: usaapp1.jisuyun.top
+  port: 2053
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  network: ws
+  tls: true
+  servername: usaapp1.jisuyun.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /usavm
+    headers:
+      Host: usaapp1.jisuyun.top
+  alterId: 0
+  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-172.236.226.7
   type: vmess
   server: 172.236.226.7
@@ -29,17 +44,6 @@ proxies:
       Host: usaapp2.jisuyun.top
   alterId: 0
   cipher: null
-- name: VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  network: tcp
-  tls: true
-  servername: 141.95.65.9
-  client-fingerprint: chrome
-  alterId: 0
-  cipher: aes-128-gcm
 - name: VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
   type: vmess
   server: usaapp2.jisuyun.top
@@ -55,29 +59,85 @@ proxies:
       Host: usaapp2.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-cf.scpnb.top
+- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
   type: vmess
-  server: cf.scpnb.top
-  port: 443
-  uuid: 6a4e7e55-9f07-4c54-abdd-72b9820f4cb3
+  server: usaapp1.jisuyun.top
+  port: 2053
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
   network: ws
   tls: true
-  servername: explicit-freeware-animation-greg.trycloudflare.com
+  servername: usaapp1.jisuyun.top
   client-fingerprint: chrome
   ws-opts:
-    path: /6a4e7e55-9f07-4c54-abdd-72b9820f4cb3-vm
+    path: /usavm
     headers:
-      Host: explicit-freeware-animation-greg.trycloudflare.com
+      Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
+- name: VMESS-WS-TLS-🇺🇸(US)-172.236.244.171
+  type: vmess
+  server: 172.236.244.171
+  port: 2053
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  network: ws
+  tls: true
+  servername: 172.236.244.171
+  client-fingerprint: chrome
+  ws-opts:
+    path: /usavm
+    headers:
+      Host: 172.236.244.171
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇺🇸(US)-172.236.244.171_1
+  type: vmess
+  server: 172.236.244.171
+  port: 2053
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  network: ws
+  tls: true
+  servername: usaapp1.jisuyun.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /usavm
+    headers:
+      Host: usaapp1.jisuyun.top
+  alterId: 0
+  cipher: auto
+- name: VMESS-TCP-TLS-🇩🇪(DE)-51.89.41.22
+  type: vmess
+  server: 51.89.41.22
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  network: tcp
+  tls: true
+  servername: 51.89.41.22
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: aes-128-gcm
+- name: VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  network: tcp
+  tls: true
+  servername: 141.95.65.9
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: aes-128-gcm
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.236.226.7
-  - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-cf.scpnb.top
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
+  - VMESS-WS-TLS-🇺🇸(US)-172.236.244.171
+  - VMESS-WS-TLS-🇺🇸(US)-172.236.244.171_1
+  - VMESS-TCP-TLS-🇩🇪(DE)-51.89.41.22
+  - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -94,10 +154,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.236.226.7
-  - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-cf.scpnb.top
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top_1
+  - VMESS-WS-TLS-🇺🇸(US)-172.236.244.171
+  - VMESS-WS-TLS-🇺🇸(US)-172.236.244.171_1
+  - VMESS-TCP-TLS-🇩🇪(DE)-51.89.41.22
+  - VMESS-TCP-TLS-🇩🇪(DE)-141.95.65.9
 rule-providers:
   adblock:
     type: http
