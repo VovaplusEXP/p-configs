@@ -20,25 +20,60 @@ proxies:
   port: 816
   cipher: chacha20-ietf-poly1305
   password: GyZ5Xo0ht41vYmW3H4
-- name: SS-C20P-🇹🇷(TR)-194.87.39.215
+- name: SS-C20P-🇹🇼(TW)-36.230.36.180
   type: ss
-  server: 194.87.39.215
-  port: 8388
+  server: 36.230.36.180
+  port: 50099
   cipher: chacha20-ietf-poly1305
-  password: X6btbRvJCo3uTQ--yaaT8Mvh0CgqhYTL
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
+  type: ss
+  server: r3mrcg001287h3p.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇬🇧(GB)-57.129.129.247
+  type: ss
+  server: 57.129.129.247
+  port: 19308
+  cipher: chacha20-ietf-poly1305
+  password: 4a055e9e903128a1
+- name: SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
+  type: ss
+  server: r3mrcg00129437x.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: SS-C20P-🇹🇼(TW)-nbmrcg0034686rw.cybervena.com
   type: ss
   server: nbmrcg0034686rw.cybervena.com
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇹🇼(TW)-61.231.8.4
+  type: ss
+  server: 61.231.8.4
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇹🇷(TR)-194.87.39.215
+  type: ss
+  server: 194.87.39.215
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: X6btbRvJCo3uTQ--yaaT8Mvh0CgqhYTL
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-149.28.255.6
-  - SS-C20P-🇹🇷(TR)-194.87.39.215
+  - SS-C20P-🇹🇼(TW)-36.230.36.180
+  - SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
+  - SS-C20P-🇬🇧(GB)-57.129.129.247
+  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
   - SS-C20P-🇹🇼(TW)-nbmrcg0034686rw.cybervena.com
+  - SS-C20P-🇹🇼(TW)-61.231.8.4
+  - SS-C20P-🇹🇷(TR)-194.87.39.215
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -56,8 +91,13 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-149.28.255.6
-  - SS-C20P-🇹🇷(TR)-194.87.39.215
+  - SS-C20P-🇹🇼(TW)-36.230.36.180
+  - SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
+  - SS-C20P-🇬🇧(GB)-57.129.129.247
+  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
   - SS-C20P-🇹🇼(TW)-nbmrcg0034686rw.cybervena.com
+  - SS-C20P-🇹🇼(TW)-61.231.8.4
+  - SS-C20P-🇹🇷(TR)-194.87.39.215
 rule-providers:
   adblock:
     type: http

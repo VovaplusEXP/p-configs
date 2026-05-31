@@ -29,21 +29,6 @@ proxies:
       Host: usaapp2.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
-  type: vmess
-  server: usaapp1.jisuyun.top
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  network: ws
-  tls: true
-  servername: usaapp1.jisuyun.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /usavm
-    headers:
-      Host: usaapp1.jisuyun.top
-  alterId: 0
-  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-172.236.226.7
   type: vmess
   server: 172.236.226.7
@@ -59,19 +44,19 @@ proxies:
       Host: usaapp2.jisuyun.top
   alterId: 0
   cipher: null
-- name: VMESS-WS-TLS-🇺🇸(US)-cf.scpnb.top
+- name: VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   type: vmess
-  server: cf.scpnb.top
-  port: 443
-  uuid: 7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed
+  server: usaapp1.jisuyun.top
+  port: 2053
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
   network: ws
   tls: true
-  servername: vienna-bread-threats-amendment.trycloudflare.com
+  servername: usaapp1.jisuyun.top
   client-fingerprint: chrome
   ws-opts:
-    path: /7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed-vm
+    path: /usavm
     headers:
-      Host: vienna-bread-threats-amendment.trycloudflare.com
+      Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-172.236.244.171
@@ -89,19 +74,19 @@ proxies:
       Host: usaapp1.jisuyun.top
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇺🇸(US)-172.236.244.171_1
+- name: VMESS-WS-TLS-🇭🇰(HK)-cf.scpnb.top
   type: vmess
-  server: 172.236.244.171
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  server: cf.scpnb.top
+  port: 443
+  uuid: 7fd8d1db-96ec-4e46-80a8-74ad9472384e
   network: ws
   tls: true
-  servername: 172.236.244.171
+  servername: graph-keep-beds-catalog.trycloudflare.com
   client-fingerprint: chrome
   ws-opts:
-    path: /usavm
+    path: /7fd8d1db-96ec-4e46-80a8-74ad9472384e-vm
     headers:
-      Host: 172.236.244.171
+      Host: graph-keep-beds-catalog.trycloudflare.com
   alterId: 0
   cipher: auto
 - name: VMESS-TCP-TLS-🇩🇪(DE)-de5.taskflowhub.org
@@ -115,14 +100,25 @@ proxies:
   client-fingerprint: chrome
   alterId: 0
   cipher: auto
-- name: VMESS-TCP-TLS-🇮🇹(IT)-it.connfull.org
+- name: VMESS-TCP-TLS-🇩🇪(DE)-de5.taskflowhub.org_1
   type: vmess
-  server: it.connfull.org
+  server: de5.taskflowhub.org
   port: 2053
-  uuid: 79e33f2e-6f88-4867-b311-844198e59270
+  uuid: ca58b165-0f7d-49aa-9fae-a017e8a0f884
   network: tcp
   tls: true
-  servername: it.connfull.org
+  servername: de5.taskflowhub.org
+  client-fingerprint: chrome
+  alterId: 0
+  cipher: auto
+- name: VMESS-TCP-TLS-🇩🇪(DE)-de5.taskflowhub.org_2
+  type: vmess
+  server: de5.taskflowhub.org
+  port: 2053
+  uuid: ca58b165-0f7d-49aa-9fae-a017e8a0f884
+  network: tcp
+  tls: true
+  servername: de5.taskflowhub.org
   client-fingerprint: chrome
   alterId: 0
   cipher: auto
@@ -131,13 +127,13 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.236.226.7
-  - VMESS-WS-TLS-🇺🇸(US)-cf.scpnb.top
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.236.244.171
-  - VMESS-WS-TLS-🇺🇸(US)-172.236.244.171_1
+  - VMESS-WS-TLS-🇭🇰(HK)-cf.scpnb.top
   - VMESS-TCP-TLS-🇩🇪(DE)-de5.taskflowhub.org
-  - VMESS-TCP-TLS-🇮🇹(IT)-it.connfull.org
+  - VMESS-TCP-TLS-🇩🇪(DE)-de5.taskflowhub.org_1
+  - VMESS-TCP-TLS-🇩🇪(DE)-de5.taskflowhub.org_2
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -155,13 +151,13 @@ proxy-groups:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
   - VMESS-WS-TLS-🇺🇸(US)-usaapp2.jisuyun.top
-  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.236.226.7
-  - VMESS-WS-TLS-🇺🇸(US)-cf.scpnb.top
+  - VMESS-WS-TLS-🇺🇸(US)-usaapp1.jisuyun.top
   - VMESS-WS-TLS-🇺🇸(US)-172.236.244.171
-  - VMESS-WS-TLS-🇺🇸(US)-172.236.244.171_1
+  - VMESS-WS-TLS-🇭🇰(HK)-cf.scpnb.top
   - VMESS-TCP-TLS-🇩🇪(DE)-de5.taskflowhub.org
-  - VMESS-TCP-TLS-🇮🇹(IT)-it.connfull.org
+  - VMESS-TCP-TLS-🇩🇪(DE)-de5.taskflowhub.org_1
+  - VMESS-TCP-TLS-🇩🇪(DE)-de5.taskflowhub.org_2
 rule-providers:
   adblock:
     type: http
