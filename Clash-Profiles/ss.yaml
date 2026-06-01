@@ -20,39 +20,60 @@ proxies:
   port: 816
   cipher: chacha20-ietf-poly1305
   password: GyZ5Xo0ht41vYmW3H4
-- name: SS-C20P-🇩🇪(DE)-135.125.219.2
+- name: SS-C20P-🇺🇸(US)-45.55.40.127
   type: ss
-  server: 135.125.219.2
-  port: 12911
+  server: 45.55.40.127
+  port: 49726
   cipher: chacha20-ietf-poly1305
-  password: 4368f055243e225f
-- name: SS-A256GCM-🇫🇷(FR)-51.254.128.106
+  password: elTuo73FsQwO90EbLo96Ve
+- name: SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
   type: ss
-  server: 51.254.128.106
-  port: 2083
-  cipher: aes-256-gcm
-  password: FjG3IPbny+0ZYU4/p1vULP84GcKpGoZpWKAay16VhIw=
-- name: SS-C20P-🇦🇪(AE)-77.74.201.171
-  type: ss
-  server: 77.74.201.171
-  port: 25891
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
   cipher: chacha20-ietf-poly1305
-  password: a9d727cd-330b-4edd-8911-7c224df6afd5
-- name: SS-A256GCM-🇩🇪(DE)-de5.taskflowhub.org
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
+  type: ss
+  server: r3mrcg001287h3p.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇹🇼(TW)-36.224.139.206
+  type: ss
+  server: 36.224.139.206
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇹🇼(TW)-36.224.187.125
+  type: ss
+  server: 36.224.187.125
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-A256GCM-🌐(XX)-de5.taskflowhub.org
   type: ss
   server: de5.taskflowhub.org
   port: 2083
   cipher: aes-256-gcm
   password: 7NuB0Y5m3aNzkKMKlFoMwkiajsu6F36c9ok4VKEZnB4=
+- name: SS-C20P-🇹🇼(TW)-36.228.154.213
+  type: ss
+  server: 36.228.154.213
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-149.28.255.6
-  - SS-C20P-🇩🇪(DE)-135.125.219.2
-  - SS-A256GCM-🇫🇷(FR)-51.254.128.106
-  - SS-C20P-🇦🇪(AE)-77.74.201.171
-  - SS-A256GCM-🇩🇪(DE)-de5.taskflowhub.org
+  - SS-C20P-🇺🇸(US)-45.55.40.127
+  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  - SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
+  - SS-C20P-🇹🇼(TW)-36.224.139.206
+  - SS-C20P-🇹🇼(TW)-36.224.187.125
+  - SS-A256GCM-🌐(XX)-de5.taskflowhub.org
+  - SS-C20P-🇹🇼(TW)-36.228.154.213
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -70,10 +91,13 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-149.28.255.6
-  - SS-C20P-🇩🇪(DE)-135.125.219.2
-  - SS-A256GCM-🇫🇷(FR)-51.254.128.106
-  - SS-C20P-🇦🇪(AE)-77.74.201.171
-  - SS-A256GCM-🇩🇪(DE)-de5.taskflowhub.org
+  - SS-C20P-🇺🇸(US)-45.55.40.127
+  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  - SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
+  - SS-C20P-🇹🇼(TW)-36.224.139.206
+  - SS-C20P-🇹🇼(TW)-36.224.187.125
+  - SS-A256GCM-🌐(XX)-de5.taskflowhub.org
+  - SS-C20P-🇹🇼(TW)-36.228.154.213
 rule-providers:
   adblock:
     type: http
