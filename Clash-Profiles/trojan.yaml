@@ -14,30 +14,36 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-XHTTP-REALITY-🇺🇸(US)-95.181.173.111
+- name: TROJAN-WS-🇺🇸(US)-172.64.35.196
   type: trojan
-  server: 95.181.173.111
-  port: 8443
-  uuid: SoftNetConnect
-  network: xhttp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: TROJAN-XHTTP-REALITY-🇩🇪(DE)-91.107.162.63
+  server: 172.64.35.196
+  port: 80
+  uuid: f05ee819-5f42-44b6-bd2a-bf4917cbf38e
+  network: ws
+  tls: false
+  servername: 172.64.35.196
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: hidden-pine-8798.amon-morningstar01.workers.dev
+- name: TROJAN-WS-🇺🇸(US)-small-resonance-1353.mrlolyeradbn.workers.dev
   type: trojan
-  server: 91.107.162.63
-  port: 8443
-  uuid: SoftNetConnect
-  network: xhttp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
+  server: small-resonance-1353.mrlolyeradbn.workers.dev
+  port: 2052
+  uuid: Y(Z^&|dg}eW$WCjF
+  network: ws
+  tls: false
+  servername: small-resonance-1353.mrlolyeradbn.workers.dev
+  ws-opts:
+    path: /eyJqdW5rIjoiNk9oTllzV2EiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyJuaW1hLm5zY2wuaXIiXX0=
+    headers:
+      Host: small-resonance-1353.mrlolyeradbn.workers.dev
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-XHTTP-REALITY-🇺🇸(US)-95.181.173.111
-  - TROJAN-XHTTP-REALITY-🇩🇪(DE)-91.107.162.63
+  - TROJAN-WS-🇺🇸(US)-172.64.35.196
+  - TROJAN-WS-🇺🇸(US)-small-resonance-1353.mrlolyeradbn.workers.dev
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -54,8 +60,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-XHTTP-REALITY-🇺🇸(US)-95.181.173.111
-  - TROJAN-XHTTP-REALITY-🇩🇪(DE)-91.107.162.63
+  - TROJAN-WS-🇺🇸(US)-172.64.35.196
+  - TROJAN-WS-🇺🇸(US)-small-resonance-1353.mrlolyeradbn.workers.dev
 rule-providers:
   adblock:
     type: http
