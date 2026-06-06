@@ -14,73 +14,59 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-149.28.255.6
-  type: ss
-  server: 149.28.255.6
-  port: 816
-  cipher: chacha20-ietf-poly1305
-  password: GyZ5Xo0ht41vYmW3H4
-- name: SS-A256GCM-🇫🇷(FR)-51.254.128.106
-  type: ss
-  server: 51.254.128.106
-  port: 2083
-  cipher: aes-256-gcm
-  password: FjG3IPbny+0ZYU4/p1vULP84GcKpGoZpWKAay16VhIw=
-- name: SS-A256GCM-🇮🇹(IT)-it5.taskflowhub.org
-  type: ss
-  server: it5.taskflowhub.org
-  port: 2083
-  cipher: aes-256-gcm
-  password: 34fItyZyz69uIrxkJ+cLR1pdclvG628pv8+fzUNTIC0=
-- name: SS-A256GCM-🇮🇹(IT)-57.131.28.246
-  type: ss
-  server: 57.131.28.246
-  port: 2083
-  cipher: aes-256-gcm
-  password: 34fItyZyz69uIrxkJ+cLR1pdclvG628pv8+fzUNTIC0=
 - name: SS-C20P-🇬🇧(GB)-57.129.129.247
   type: ss
   server: 57.129.129.247
   port: 19308
   cipher: chacha20-ietf-poly1305
   password: 4a055e9e903128a1
-- name: SS-C20P-🇩🇪(DE)-57.129.121.230
+- name: SS-A256GCM-🇮🇹(IT)-it5.taskflowhub.org
   type: ss
-  server: 57.129.121.230
-  port: 10443
-  cipher: chacha20-ietf-poly1305
-  password: uROuEqsL8IUMMVb4wDwnGU
+  server: it5.taskflowhub.org
+  port: 2083
+  cipher: aes-256-gcm
+  password: 34fItyZyz69uIrxkJ+cLR1pdclvG628pv8+fzUNTIC0=
 - name: SS-C20P-🇩🇪(DE)-135.125.219.2
   type: ss
   server: 135.125.219.2
   port: 12911
   cipher: chacha20-ietf-poly1305
   password: 4368f055243e225f
-- name: SS-C20P-🇫🇮(FI)-62.60.255.11
-  type: ss
-  server: 62.60.255.11
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: do1DZ-_QvkFWXzsjc_w8eT5-TeYP6U3Q
 - name: SS-C20P-🇬🇧(GB)-51.75.168.50
   type: ss
   server: 51.75.168.50
   port: 26179
   cipher: chacha20-ietf-poly1305
   password: 78b6e93e54225803
+- name: SS-C20P-🇫🇮(FI)-62.60.255.11
+  type: ss
+  server: 62.60.255.11
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: do1DZ-_QvkFWXzsjc_w8eT5-TeYP6U3Q
+- name: SS-C20P-🇩🇪(DE)-57.129.121.230
+  type: ss
+  server: 57.129.121.230
+  port: 10443
+  cipher: chacha20-ietf-poly1305
+  password: uROuEqsL8IUMMVb4wDwnGU
+- name: SS-A256GCM-🇩🇪(DE)-162.19.254.232
+  type: ss
+  server: 162.19.254.232
+  port: 2083
+  cipher: aes-256-gcm
+  password: 7NuB0Y5m3aNzkKMKlFoMwkiajsu6F36c9ok4VKEZnB4=
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-149.28.255.6
-  - SS-A256GCM-🇫🇷(FR)-51.254.128.106
-  - SS-A256GCM-🇮🇹(IT)-it5.taskflowhub.org
-  - SS-A256GCM-🇮🇹(IT)-57.131.28.246
   - SS-C20P-🇬🇧(GB)-57.129.129.247
-  - SS-C20P-🇩🇪(DE)-57.129.121.230
+  - SS-A256GCM-🇮🇹(IT)-it5.taskflowhub.org
   - SS-C20P-🇩🇪(DE)-135.125.219.2
-  - SS-C20P-🇫🇮(FI)-62.60.255.11
   - SS-C20P-🇬🇧(GB)-51.75.168.50
+  - SS-C20P-🇫🇮(FI)-62.60.255.11
+  - SS-C20P-🇩🇪(DE)-57.129.121.230
+  - SS-A256GCM-🇩🇪(DE)-162.19.254.232
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -97,15 +83,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-149.28.255.6
-  - SS-A256GCM-🇫🇷(FR)-51.254.128.106
-  - SS-A256GCM-🇮🇹(IT)-it5.taskflowhub.org
-  - SS-A256GCM-🇮🇹(IT)-57.131.28.246
   - SS-C20P-🇬🇧(GB)-57.129.129.247
-  - SS-C20P-🇩🇪(DE)-57.129.121.230
+  - SS-A256GCM-🇮🇹(IT)-it5.taskflowhub.org
   - SS-C20P-🇩🇪(DE)-135.125.219.2
-  - SS-C20P-🇫🇮(FI)-62.60.255.11
   - SS-C20P-🇬🇧(GB)-51.75.168.50
+  - SS-C20P-🇫🇮(FI)-62.60.255.11
+  - SS-C20P-🇩🇪(DE)-57.129.121.230
+  - SS-A256GCM-🇩🇪(DE)-162.19.254.232
 rule-providers:
   adblock:
     type: http
