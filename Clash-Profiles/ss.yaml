@@ -14,30 +14,12 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-A256GCM-🇮🇹(IT)-it5.taskflowhub.org
-  type: ss
-  server: it5.taskflowhub.org
-  port: 2083
-  cipher: aes-256-gcm
-  password: 34fItyZyz69uIrxkJ+cLR1pdclvG628pv8+fzUNTIC0=
 - name: SS-C20P-🇬🇧(GB)-57.129.129.247
   type: ss
   server: 57.129.129.247
   port: 19308
   cipher: chacha20-ietf-poly1305
   password: 4a055e9e903128a1
-- name: SS-A256GCM-🇩🇪(DE)-162.19.254.232
-  type: ss
-  server: 162.19.254.232
-  port: 2083
-  cipher: aes-256-gcm
-  password: 7NuB0Y5m3aNzkKMKlFoMwkiajsu6F36c9ok4VKEZnB4=
-- name: SS-A256GCM-🇮🇹(IT)-57.131.28.246
-  type: ss
-  server: 57.131.28.246
-  port: 2083
-  cipher: aes-256-gcm
-  password: 34fItyZyz69uIrxkJ+cLR1pdclvG628pv8+fzUNTIC0=
 - name: SS-C20P-🇩🇪(DE)-135.125.219.2
   type: ss
   server: 135.125.219.2
@@ -56,38 +38,14 @@ proxies:
   port: 26179
   cipher: chacha20-ietf-poly1305
   password: 78b6e93e54225803
-- name: SS-A256GCM-🇷🇺(RU)-46.29.163.200
-  type: ss
-  server: 46.29.163.200
-  port: 20129
-  cipher: aes-256-gcm
-  password: 32c0ea6e823341a2
-- name: SS-C20P-🇺🇸(US)-hackney-latest-strike.freesocks.work
-  type: ss
-  server: hackney-latest-strike.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: XUMTygEM1jVYIvysXKqA5T
-- name: SS-A256GCM-🇩🇪(DE)-de5.taskflowhub.org
-  type: ss
-  server: de5.taskflowhub.org
-  port: 2083
-  cipher: aes-256-gcm
-  password: 7NuB0Y5m3aNzkKMKlFoMwkiajsu6F36c9ok4VKEZnB4=
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-A256GCM-🇮🇹(IT)-it5.taskflowhub.org
   - SS-C20P-🇬🇧(GB)-57.129.129.247
-  - SS-A256GCM-🇩🇪(DE)-162.19.254.232
-  - SS-A256GCM-🇮🇹(IT)-57.131.28.246
   - SS-C20P-🇩🇪(DE)-135.125.219.2
   - SS-C20P-🇫🇮(FI)-62.60.255.11
   - SS-C20P-🇬🇧(GB)-51.75.168.50
-  - SS-A256GCM-🇷🇺(RU)-46.29.163.200
-  - SS-C20P-🇺🇸(US)-hackney-latest-strike.freesocks.work
-  - SS-A256GCM-🇩🇪(DE)-de5.taskflowhub.org
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -104,16 +62,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-A256GCM-🇮🇹(IT)-it5.taskflowhub.org
   - SS-C20P-🇬🇧(GB)-57.129.129.247
-  - SS-A256GCM-🇩🇪(DE)-162.19.254.232
-  - SS-A256GCM-🇮🇹(IT)-57.131.28.246
   - SS-C20P-🇩🇪(DE)-135.125.219.2
   - SS-C20P-🇫🇮(FI)-62.60.255.11
   - SS-C20P-🇬🇧(GB)-51.75.168.50
-  - SS-A256GCM-🇷🇺(RU)-46.29.163.200
-  - SS-C20P-🇺🇸(US)-hackney-latest-strike.freesocks.work
-  - SS-A256GCM-🇩🇪(DE)-de5.taskflowhub.org
 rule-providers:
   adblock:
     type: http
