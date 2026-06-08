@@ -14,76 +14,55 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-XHTTP-REALITY-🇩🇪(DE)-178.104.213.121
+- name: TROJAN-XHTTP-REALITY-🇺🇸(US)-213.165.45.15
   type: trojan
-  server: 178.104.213.121
+  server: 213.165.45.15
   port: 2087
   uuid: SoftNetConnect
   network: xhttp
   tls: true
   servername: www.icloud.com
   client-fingerprint: chrome
-- name: TROJAN-XHTTP-REALITY-🇩🇪(DE)-178.104.213.121_1
+- name: TROJAN-XHTTP-REALITY-🇺🇸(US)-213.165.45.14
   type: trojan
-  server: 178.104.213.121
-  port: 8443
+  server: 213.165.45.14
+  port: 443
   uuid: SoftNetConnect
   network: xhttp
   tls: true
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: TROJAN-XHTTP-REALITY-🇫🇮(FI)-46.62.201.63
+- name: TROJAN-XHTTP-REALITY-🇺🇸(US)-213.165.45.15_1
   type: trojan
-  server: 46.62.201.63
+  server: 213.165.45.15
+  port: 443
+  uuid: SoftNetConnect
+  network: xhttp
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: TROJAN-XHTTP-REALITY-🇺🇸(US)-213.165.45.14_1
+  type: trojan
+  server: 213.165.45.14
   port: 2087
   uuid: SoftNetConnect
   network: xhttp
   tls: true
   servername: www.icloud.com
   client-fingerprint: chrome
-- name: TROJAN-WS-🇺🇸(US)-small-resonance-1353.mrlolyeradbn.workers.dev
+- name: TROJAN-TCP-REALITY-🇺🇸(US)-213.165.45.15
   type: trojan
-  server: small-resonance-1353.mrlolyeradbn.workers.dev
-  port: 2052
-  uuid: Y(Z^&|dg}eW$WCjF
-  network: ws
-  tls: false
-  servername: small-resonance-1353.mrlolyeradbn.workers.dev
-  ws-opts:
-    path: /eyJqdW5rIjoiNk9oTllzV2EiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyJuaW1hLm5zY2wuaXIiXX0=
-    headers:
-      Host: small-resonance-1353.mrlolyeradbn.workers.dev
-- name: TROJAN-XHTTP-REALITY-🇫🇮(FI)-46.62.201.63_1
-  type: trojan
-  server: 46.62.201.63
+  server: 213.165.45.15
   port: 8443
   uuid: SoftNetConnect
-  network: xhttp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: TROJAN-TCP-REALITY-🇩🇪(DE)-178.104.213.121
-  type: trojan
-  server: 178.104.213.121
-  port: 443
-  uuid: SoftNetConnect
   network: tcp
   tls: true
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-REALITY-🇫🇮(FI)-46.62.201.63
+- name: TROJAN-TCP-REALITY-🇺🇸(US)-213.165.45.14
   type: trojan
-  server: 46.62.201.63
-  port: 443
-  uuid: SoftNetConnect
-  network: tcp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: TROJAN-TCP-REALITY-🇩🇪(DE)-178.104.213.121_1
-  type: trojan
-  server: 178.104.213.121
-  port: 443
+  server: 213.165.45.14
+  port: 8443
   uuid: SoftNetConnect
   network: tcp
   tls: true
@@ -93,14 +72,12 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-XHTTP-REALITY-🇩🇪(DE)-178.104.213.121
-  - TROJAN-XHTTP-REALITY-🇩🇪(DE)-178.104.213.121_1
-  - TROJAN-XHTTP-REALITY-🇫🇮(FI)-46.62.201.63
-  - TROJAN-WS-🇺🇸(US)-small-resonance-1353.mrlolyeradbn.workers.dev
-  - TROJAN-XHTTP-REALITY-🇫🇮(FI)-46.62.201.63_1
-  - TROJAN-TCP-REALITY-🇩🇪(DE)-178.104.213.121
-  - TROJAN-TCP-REALITY-🇫🇮(FI)-46.62.201.63
-  - TROJAN-TCP-REALITY-🇩🇪(DE)-178.104.213.121_1
+  - TROJAN-XHTTP-REALITY-🇺🇸(US)-213.165.45.15
+  - TROJAN-XHTTP-REALITY-🇺🇸(US)-213.165.45.14
+  - TROJAN-XHTTP-REALITY-🇺🇸(US)-213.165.45.15_1
+  - TROJAN-XHTTP-REALITY-🇺🇸(US)-213.165.45.14_1
+  - TROJAN-TCP-REALITY-🇺🇸(US)-213.165.45.15
+  - TROJAN-TCP-REALITY-🇺🇸(US)-213.165.45.14
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -117,14 +94,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-XHTTP-REALITY-🇩🇪(DE)-178.104.213.121
-  - TROJAN-XHTTP-REALITY-🇩🇪(DE)-178.104.213.121_1
-  - TROJAN-XHTTP-REALITY-🇫🇮(FI)-46.62.201.63
-  - TROJAN-WS-🇺🇸(US)-small-resonance-1353.mrlolyeradbn.workers.dev
-  - TROJAN-XHTTP-REALITY-🇫🇮(FI)-46.62.201.63_1
-  - TROJAN-TCP-REALITY-🇩🇪(DE)-178.104.213.121
-  - TROJAN-TCP-REALITY-🇫🇮(FI)-46.62.201.63
-  - TROJAN-TCP-REALITY-🇩🇪(DE)-178.104.213.121_1
+  - TROJAN-XHTTP-REALITY-🇺🇸(US)-213.165.45.15
+  - TROJAN-XHTTP-REALITY-🇺🇸(US)-213.165.45.14
+  - TROJAN-XHTTP-REALITY-🇺🇸(US)-213.165.45.15_1
+  - TROJAN-XHTTP-REALITY-🇺🇸(US)-213.165.45.14_1
+  - TROJAN-TCP-REALITY-🇺🇸(US)-213.165.45.15
+  - TROJAN-TCP-REALITY-🇺🇸(US)-213.165.45.14
 rule-providers:
   adblock:
     type: http
