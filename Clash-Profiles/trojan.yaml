@@ -14,80 +14,23 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-XHTTP-REALITY-🇩🇪(DE)-167.233.105.87
+- name: TROJAN-WS-🇺🇸(US)-172.64.35.196
   type: trojan
-  server: 167.233.105.87
-  port: 8443
-  uuid: SoftNetConnect
-  network: xhttp
-  tls: true
-  servername: www.icloud.com
-  client-fingerprint: chrome
-- name: TROJAN-XHTTP-REALITY-🇩🇪(DE)-167.233.105.87_1
-  type: trojan
-  server: 167.233.105.87
-  port: 443
-  uuid: SoftNetConnect
-  network: xhttp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: TROJAN-XHTTP-REALITY-🇩🇪(DE)-167.233.99.208
-  type: trojan
-  server: 167.233.99.208
-  port: 443
-  uuid: SoftNetConnect
-  network: xhttp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: TROJAN-TCP-REALITY-🇩🇪(DE)-167.233.99.208
-  type: trojan
-  server: 167.233.99.208
-  port: 2087
-  uuid: SoftNetConnect
-  network: tcp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇩🇪(DE)-167.233.99.208
-  type: trojan
-  server: 167.233.99.208
-  port: 2083
-  uuid: SoftNetConnect
-  network: grpc
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: TROJAN-TCP-REALITY-🇩🇪(DE)-167.233.105.87
-  type: trojan
-  server: 167.233.105.87
-  port: 2087
-  uuid: SoftNetConnect
-  network: tcp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇩🇪(DE)-167.233.105.87
-  type: trojan
-  server: 167.233.105.87
-  port: 2083
-  uuid: SoftNetConnect
-  network: grpc
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
+  server: 172.64.35.196
+  port: 80
+  uuid: f05ee819-5f42-44b6-bd2a-bf4917cbf38e
+  network: ws
+  tls: false
+  servername: 172.64.35.196
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: hidden-pine-8798.amon-morningstar01.workers.dev
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-XHTTP-REALITY-🇩🇪(DE)-167.233.105.87
-  - TROJAN-XHTTP-REALITY-🇩🇪(DE)-167.233.105.87_1
-  - TROJAN-XHTTP-REALITY-🇩🇪(DE)-167.233.99.208
-  - TROJAN-TCP-REALITY-🇩🇪(DE)-167.233.99.208
-  - TROJAN-GRPC-REALITY-🇩🇪(DE)-167.233.99.208
-  - TROJAN-TCP-REALITY-🇩🇪(DE)-167.233.105.87
-  - TROJAN-GRPC-REALITY-🇩🇪(DE)-167.233.105.87
+  - TROJAN-WS-🇺🇸(US)-172.64.35.196
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -104,13 +47,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-XHTTP-REALITY-🇩🇪(DE)-167.233.105.87
-  - TROJAN-XHTTP-REALITY-🇩🇪(DE)-167.233.105.87_1
-  - TROJAN-XHTTP-REALITY-🇩🇪(DE)-167.233.99.208
-  - TROJAN-TCP-REALITY-🇩🇪(DE)-167.233.99.208
-  - TROJAN-GRPC-REALITY-🇩🇪(DE)-167.233.99.208
-  - TROJAN-TCP-REALITY-🇩🇪(DE)-167.233.105.87
-  - TROJAN-GRPC-REALITY-🇩🇪(DE)-167.233.105.87
+  - TROJAN-WS-🇺🇸(US)-172.64.35.196
 rule-providers:
   adblock:
     type: http
