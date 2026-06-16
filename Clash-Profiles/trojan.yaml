@@ -14,23 +14,19 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-🇺🇸(US)-172.64.35.196
+- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102
   type: trojan
-  server: 172.64.35.196
-  port: 80
-  uuid: f05ee819-5f42-44b6-bd2a-bf4917cbf38e
-  network: ws
+  server: 89.167.82.102
+  port: 2080
+  uuid: Bhi3WHtOR7SGiDERv3KkOjhknaQNDWFm0NcmowUEsVE=
+  network: tcp
   tls: false
-  servername: 172.64.35.196
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: hidden-pine-8798.amon-morningstar01.workers.dev
+  servername: 89.167.82.102
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-🇺🇸(US)-172.64.35.196
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -47,7 +43,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-🇺🇸(US)-172.64.35.196
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102
 rule-providers:
   adblock:
     type: http
