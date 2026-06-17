@@ -14,19 +14,32 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102
+- name: TROJAN-WS-🇩🇪(DE)-45.130.125.156
   type: trojan
-  server: 89.167.82.102
-  port: 2080
-  uuid: Bhi3WHtOR7SGiDERv3KkOjhknaQNDWFm0NcmowUEsVE=
-  network: tcp
+  server: 45.130.125.156
+  port: 8080
+  uuid: VN3zRAL4Hq
+  network: ws
   tls: false
-  servername: 89.167.82.102
+  servername: 45.130.125.156
+  ws-opts:
+    path: /da
+    headers:
+      Host: s3.aananas.ir
+- name: TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
+  type: trojan
+  server: qwertyvpn.h4ck.me
+  port: 41818
+  uuid: fn1ppcjzco7l9ook
+  network: grpc
+  tls: false
+  servername: qwertyvpn.h4ck.me
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102
+  - TROJAN-WS-🇩🇪(DE)-45.130.125.156
+  - TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -43,7 +56,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102
+  - TROJAN-WS-🇩🇪(DE)-45.130.125.156
+  - TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
 rule-providers:
   adblock:
     type: http
