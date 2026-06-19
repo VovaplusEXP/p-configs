@@ -14,43 +14,7 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-🇩🇪(DE)-45.130.125.156
-  type: trojan
-  server: 45.130.125.156
-  port: 8080
-  uuid: VN3zRAL4Hq
-  network: ws
-  tls: false
-  servername: 45.130.125.156
-  ws-opts:
-    path: /da
-    headers:
-      Host: s3.aananas.ir
-- name: TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
-  type: trojan
-  server: qwertyvpn.h4ck.me
-  port: 41818
-  uuid: fn1ppcjzco7l9ook
-  network: grpc
-  tls: false
-  servername: qwertyvpn.h4ck.me
 - name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102
-  type: trojan
-  server: 89.167.82.102
-  port: 2053
-  uuid: dbWncIW7T26X5bZ8BUHQqcQ64Dqojg4PA393XBcUECw=
-  network: tcp
-  tls: false
-  servername: 89.167.82.102
-- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
-  type: trojan
-  server: 89.167.82.102
-  port: 2080
-  uuid: nhqAnGSvb5sNjWHvSNpishGMFK2vZnD+whcA1P7erYs=
-  network: tcp
-  tls: false
-  servername: 89.167.82.102
-- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
   type: trojan
   server: 89.167.82.102
   port: 2080
@@ -58,24 +22,11 @@ proxies:
   network: tcp
   tls: false
   servername: 89.167.82.102
-- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_3
-  type: trojan
-  server: 89.167.82.102
-  port: 2053
-  uuid: nhqAnGSvb5sNjWHvSNpishGMFK2vZnD+whcA1P7erYs=
-  network: tcp
-  tls: false
-  servername: 89.167.82.102
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-🇩🇪(DE)-45.130.125.156
-  - TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
   - TROJAN-TCP-🇩🇪(DE)-89.167.82.102
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_3
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -92,12 +43,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-🇩🇪(DE)-45.130.125.156
-  - TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
   - TROJAN-TCP-🇩🇪(DE)-89.167.82.102
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_3
 rule-providers:
   adblock:
     type: http
