@@ -30,39 +30,12 @@ proxies:
   network: tcp
   tls: false
   servername: 89.167.82.102
-- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
-  type: trojan
-  server: 89.167.82.102
-  port: 2053
-  uuid: nhqAnGSvb5sNjWHvSNpishGMFK2vZnD+whcA1P7erYs=
-  network: tcp
-  tls: false
-  servername: 89.167.82.102
-- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_3
-  type: trojan
-  server: 89.167.82.102
-  port: 2080
-  uuid: 4iZbv+W5BAAFM0EX0vLSSCZ03nBzESmmltE67ZCIPSA=
-  network: tcp
-  tls: false
-  servername: 89.167.82.102
-- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_4
-  type: trojan
-  server: 89.167.82.102
-  port: 2080
-  uuid: nhqAnGSvb5sNjWHvSNpishGMFK2vZnD+whcA1P7erYs=
-  network: tcp
-  tls: false
-  servername: 89.167.82.102
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-TCP-🇩🇪(DE)-89.167.82.102
   - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_3
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_4
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -81,9 +54,6 @@ proxy-groups:
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-🇩🇪(DE)-89.167.82.102
   - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_3
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_4
 rule-providers:
   adblock:
     type: http
