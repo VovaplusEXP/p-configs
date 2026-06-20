@@ -14,37 +14,55 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
+- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102
   type: trojan
-  server: qwertyvpn.h4ck.me
-  port: 41818
-  uuid: fn1ppcjzco7l9ook
-  network: grpc
+  server: 89.167.82.102
+  port: 2080
+  uuid: Bhi3WHtOR7SGiDERv3KkOjhknaQNDWFm0NcmowUEsVE=
+  network: tcp
   tls: false
-  servername: qwertyvpn.h4ck.me
-- name: TROJAN-GRPC-🇩🇪(DE)-94.159.103.5
+  servername: 89.167.82.102
+- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
   type: trojan
-  server: 94.159.103.5
-  port: 41818
-  uuid: fn1ppcjzco7l9ook
-  network: grpc
+  server: 89.167.82.102
+  port: 2080
+  uuid: Bhi3WHtOR7SGiDERv3KkOjhknaQNDWFm0NcmowUEsVE=
+  network: tcp
   tls: false
-  servername: 94.159.103.5
-- name: TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me_1
+  servername: 89.167.82.102
+- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
   type: trojan
-  server: qwertyvpn.h4ck.me
-  port: 41818
-  uuid: fn1ppcjzco7l9ook
-  network: grpc
+  server: 89.167.82.102
+  port: 2053
+  uuid: nhqAnGSvb5sNjWHvSNpishGMFK2vZnD+whcA1P7erYs=
+  network: tcp
   tls: false
-  servername: qwertyvpn.h4ck.me
+  servername: 89.167.82.102
+- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_3
+  type: trojan
+  server: 89.167.82.102
+  port: 2080
+  uuid: 4iZbv+W5BAAFM0EX0vLSSCZ03nBzESmmltE67ZCIPSA=
+  network: tcp
+  tls: false
+  servername: 89.167.82.102
+- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_4
+  type: trojan
+  server: 89.167.82.102
+  port: 2080
+  uuid: nhqAnGSvb5sNjWHvSNpishGMFK2vZnD+whcA1P7erYs=
+  network: tcp
+  tls: false
+  servername: 89.167.82.102
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
-  - TROJAN-GRPC-🇩🇪(DE)-94.159.103.5
-  - TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me_1
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_3
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_4
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -61,9 +79,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
-  - TROJAN-GRPC-🇩🇪(DE)-94.159.103.5
-  - TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me_1
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_3
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_4
 rule-providers:
   adblock:
     type: http
