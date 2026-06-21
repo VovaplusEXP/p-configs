@@ -26,30 +26,24 @@ proxies:
   port: 443
   cipher: chacha20-ietf-poly1305
   password: eDfN7SODQceIOmIAbtJJtK
-- name: SS-C20P-🇫🇷(FR)-51.254.142.162
+- name: SS-C20P-🇹🇼(TW)-36.230.16.90
   type: ss
-  server: 51.254.142.162
-  port: 8388
+  server: 36.230.16.90
+  port: 50099
   cipher: chacha20-ietf-poly1305
-  password: bjnrInsnyNlbYotSv9ykgy
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: SS-A256GCM-🇫🇷(FR)-fr5.taskflowhub.org
   type: ss
   server: fr5.taskflowhub.org
   port: 2083
   cipher: aes-256-gcm
   password: FjG3IPbny+0ZYU4/p1vULP84GcKpGoZpWKAay16VhIw=
-- name: SS-A256GCM-🇮🇹(IT)-57.131.28.246
+- name: SS-C20P-🇫🇷(FR)-51.254.142.162
   type: ss
-  server: 57.131.28.246
-  port: 2083
-  cipher: aes-256-gcm
-  password: 34fItyZyz69uIrxkJ+cLR1pdclvG628pv8+fzUNTIC0=
-- name: SS-A256GCM-🇩🇪(DE)-162.19.254.232
-  type: ss
-  server: 162.19.254.232
-  port: 2083
-  cipher: aes-256-gcm
-  password: 7NuB0Y5m3aNzkKMKlFoMwkiajsu6F36c9ok4VKEZnB4=
+  server: 51.254.142.162
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: bjnrInsnyNlbYotSv9ykgy
 - name: SS-C20P-🇳🇱(NL)-141.227.152.129
   type: ss
   server: 141.227.152.129
@@ -62,46 +56,59 @@ proxies:
   port: 2083
   cipher: aes-256-gcm
   password: 34fItyZyz69uIrxkJ+cLR1pdclvG628pv8+fzUNTIC0=
-- name: SS-A256GCM-🇩🇪(DE)-de5.taskflowhub.org
+- name: SS-A256GCM-🇮🇹(IT)-57.131.28.246
   type: ss
-  server: de5.taskflowhub.org
+  server: 57.131.28.246
   port: 2083
   cipher: aes-256-gcm
-  password: 7NuB0Y5m3aNzkKMKlFoMwkiajsu6F36c9ok4VKEZnB4=
-- name: SS-C20P-🇸🇪(SE)-148.253.211.190
-  type: ss
-  server: 148.253.211.190
-  port: 3478
-  cipher: chacha20-ietf-poly1305
-  password: yu2XnSPWhmQjxn83iJA3DA
-- name: SS-C20P-🇫🇮(FI)-62.60.255.11
-  type: ss
-  server: 62.60.255.11
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: do1DZ-_QvkFWXzsjc_w8eT5-TeYP6U3Q
+  password: 34fItyZyz69uIrxkJ+cLR1pdclvG628pv8+fzUNTIC0=
 - name: SS-A256GCM-🇸🇬(SG)-103.136.150.192
   type: ss
   server: 103.136.150.192
   port: 30129
   cipher: aes-256-gcm
   password: 7e1dd4c55bf85da5
+- name: SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  type: ss
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
+  type: ss
+  server: r3mrcg00129437x.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇫🇮(FI)-62.60.255.11
+  type: ss
+  server: 62.60.255.11
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: do1DZ-_QvkFWXzsjc_w8eT5-TeYP6U3Q
+- name: SS-C20P-🇷🇴(RO)-91.208.75.251
+  type: ss
+  server: 91.208.75.251
+  port: 3478
+  cipher: chacha20-ietf-poly1305
+  password: yu2XnSPWhmQjxn83iJA3DA
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-142.93.183.235
   - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇫🇷(FR)-51.254.142.162
+  - SS-C20P-🇹🇼(TW)-36.230.16.90
   - SS-A256GCM-🇫🇷(FR)-fr5.taskflowhub.org
-  - SS-A256GCM-🇮🇹(IT)-57.131.28.246
-  - SS-A256GCM-🇩🇪(DE)-162.19.254.232
+  - SS-C20P-🇫🇷(FR)-51.254.142.162
   - SS-C20P-🇳🇱(NL)-141.227.152.129
   - SS-A256GCM-🇮🇹(IT)-it5.taskflowhub.org
-  - SS-A256GCM-🇩🇪(DE)-de5.taskflowhub.org
-  - SS-C20P-🇸🇪(SE)-148.253.211.190
-  - SS-C20P-🇫🇮(FI)-62.60.255.11
+  - SS-A256GCM-🇮🇹(IT)-57.131.28.246
   - SS-A256GCM-🇸🇬(SG)-103.136.150.192
+  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
+  - SS-C20P-🇫🇮(FI)-62.60.255.11
+  - SS-C20P-🇷🇴(RO)-91.208.75.251
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -120,16 +127,17 @@ proxy-groups:
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-142.93.183.235
   - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇫🇷(FR)-51.254.142.162
+  - SS-C20P-🇹🇼(TW)-36.230.16.90
   - SS-A256GCM-🇫🇷(FR)-fr5.taskflowhub.org
-  - SS-A256GCM-🇮🇹(IT)-57.131.28.246
-  - SS-A256GCM-🇩🇪(DE)-162.19.254.232
+  - SS-C20P-🇫🇷(FR)-51.254.142.162
   - SS-C20P-🇳🇱(NL)-141.227.152.129
   - SS-A256GCM-🇮🇹(IT)-it5.taskflowhub.org
-  - SS-A256GCM-🇩🇪(DE)-de5.taskflowhub.org
-  - SS-C20P-🇸🇪(SE)-148.253.211.190
-  - SS-C20P-🇫🇮(FI)-62.60.255.11
+  - SS-A256GCM-🇮🇹(IT)-57.131.28.246
   - SS-A256GCM-🇸🇬(SG)-103.136.150.192
+  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
+  - SS-C20P-🇫🇮(FI)-62.60.255.11
+  - SS-C20P-🇷🇴(RO)-91.208.75.251
 rule-providers:
   adblock:
     type: http
