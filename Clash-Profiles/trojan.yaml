@@ -14,22 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102
-  type: trojan
-  server: 89.167.82.102
-  port: 2080
-  uuid: 9CrA8NokUfh4ND6tREVkDIhp8svpcMyZyY8ykw1xa+k=
-  network: tcp
-  tls: false
-  servername: 89.167.82.102
-- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
-  type: trojan
-  server: 89.167.82.102
-  port: 2053
-  uuid: 9CrA8NokUfh4ND6tREVkDIhp8svpcMyZyY8ykw1xa+k=
-  network: tcp
-  tls: false
-  servername: 89.167.82.102
 - name: TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
   type: trojan
   server: qwertyvpn.h4ck.me
@@ -38,13 +22,56 @@ proxies:
   network: grpc
   tls: false
   servername: qwertyvpn.h4ck.me
+- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102
+  type: trojan
+  server: 89.167.82.102
+  port: 2053
+  uuid: 9CrA8NokUfh4ND6tREVkDIhp8svpcMyZyY8ykw1xa+k=
+  network: tcp
+  tls: false
+  servername: 89.167.82.102
+- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
+  type: trojan
+  server: 89.167.82.102
+  port: 2080
+  uuid: nhqAnGSvb5sNjWHvSNpishGMFK2vZnD+whcA1P7erYs=
+  network: tcp
+  tls: false
+  servername: 89.167.82.102
+- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
+  type: trojan
+  server: 89.167.82.102
+  port: 2080
+  uuid: 9CrA8NokUfh4ND6tREVkDIhp8svpcMyZyY8ykw1xa+k=
+  network: tcp
+  tls: false
+  servername: 89.167.82.102
+- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_3
+  type: trojan
+  server: 89.167.82.102
+  port: 2053
+  uuid: nhqAnGSvb5sNjWHvSNpishGMFK2vZnD+whcA1P7erYs=
+  network: tcp
+  tls: false
+  servername: 89.167.82.102
+- name: TROJAN-GRPC-🇩🇪(DE)-94.159.103.5
+  type: trojan
+  server: 94.159.103.5
+  port: 41818
+  uuid: fn1ppcjzco7l9ook
+  network: grpc
+  tls: false
+  servername: 94.159.103.5
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
   - TROJAN-TCP-🇩🇪(DE)-89.167.82.102
   - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
-  - TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_3
+  - TROJAN-GRPC-🇩🇪(DE)-94.159.103.5
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -61,9 +88,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
   - TROJAN-TCP-🇩🇪(DE)-89.167.82.102
   - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
-  - TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_3
+  - TROJAN-GRPC-🇩🇪(DE)-94.159.103.5
 rule-providers:
   adblock:
     type: http
