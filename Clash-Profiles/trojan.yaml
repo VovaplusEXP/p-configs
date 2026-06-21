@@ -17,12 +17,44 @@ proxies:
 - name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102
   type: trojan
   server: 89.167.82.102
+  port: 2080
+  uuid: Bhi3WHtOR7SGiDERv3KkOjhknaQNDWFm0NcmowUEsVE=
+  network: tcp
+  tls: false
+  servername: 89.167.82.102
+- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
+  type: trojan
+  server: 89.167.82.102
+  port: 2053
+  uuid: nhqAnGSvb5sNjWHvSNpishGMFK2vZnD+whcA1P7erYs=
+  network: tcp
+  tls: false
+  servername: 89.167.82.102
+- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
+  type: trojan
+  server: 89.167.82.102
+  port: 2080
+  uuid: nhqAnGSvb5sNjWHvSNpishGMFK2vZnD+whcA1P7erYs=
+  network: tcp
+  tls: false
+  servername: 89.167.82.102
+- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_3
+  type: trojan
+  server: 89.167.82.102
+  port: 2080
+  uuid: Bhi3WHtOR7SGiDERv3KkOjhknaQNDWFm0NcmowUEsVE=
+  network: tcp
+  tls: false
+  servername: 89.167.82.102
+- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_4
+  type: trojan
+  server: 89.167.82.102
   port: 2053
   uuid: 9CrA8NokUfh4ND6tREVkDIhp8svpcMyZyY8ykw1xa+k=
   network: tcp
   tls: false
   servername: 89.167.82.102
-- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
+- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_5
   type: trojan
   server: 89.167.82.102
   port: 2080
@@ -30,21 +62,16 @@ proxies:
   network: tcp
   tls: false
   servername: 89.167.82.102
-- name: TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
-  type: trojan
-  server: qwertyvpn.h4ck.me
-  port: 41818
-  uuid: fn1ppcjzco7l9ook
-  network: grpc
-  tls: false
-  servername: qwertyvpn.h4ck.me
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-TCP-🇩🇪(DE)-89.167.82.102
   - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
-  - TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_3
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_4
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_5
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -63,7 +90,10 @@ proxy-groups:
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-🇩🇪(DE)-89.167.82.102
   - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
-  - TROJAN-GRPC-🇩🇪(DE)-qwertyvpn.h4ck.me
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_3
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_4
+  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_5
 rule-providers:
   adblock:
     type: http
