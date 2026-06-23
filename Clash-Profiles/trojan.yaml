@@ -14,37 +14,23 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102
+- name: TROJAN-WS-🇮🇹(IT)-151.101.242.172
   type: trojan
-  server: 89.167.82.102
-  port: 2080
-  uuid: Bhi3WHtOR7SGiDERv3KkOjhknaQNDWFm0NcmowUEsVE=
-  network: tcp
+  server: 151.101.242.172
+  port: 80
+  uuid: MITIVPN
+  network: ws
   tls: false
-  servername: 89.167.82.102
-- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
-  type: trojan
-  server: 89.167.82.102
-  port: 2080
-  uuid: Bhi3WHtOR7SGiDERv3KkOjhknaQNDWFm0NcmowUEsVE=
-  network: tcp
-  tls: false
-  servername: 89.167.82.102
-- name: TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
-  type: trojan
-  server: 89.167.82.102
-  port: 2080
-  uuid: 4iZbv+W5BAAFM0EX0vLSSCZ03nBzESmmltE67ZCIPSA=
-  network: tcp
-  tls: false
-  servername: 89.167.82.102
+  servername: 151.101.242.172
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: mitivpn--4.global.ssl.fastly.net
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
+  - TROJAN-WS-🇮🇹(IT)-151.101.242.172
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -61,9 +47,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_1
-  - TROJAN-TCP-🇩🇪(DE)-89.167.82.102_2
+  - TROJAN-WS-🇮🇹(IT)-151.101.242.172
 rule-providers:
   adblock:
     type: http

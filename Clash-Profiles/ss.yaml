@@ -20,39 +20,53 @@ proxies:
   port: 443
   cipher: chacha20-ietf-poly1305
   password: eDfN7SODQceIOmIAbtJJtK
-- name: SS-C20P-🇫🇷(FR)-51.254.142.162
+- name: SS-C20P-🇺🇸(US)-142.93.183.235
   type: ss
-  server: 51.254.142.162
-  port: 8388
+  server: 142.93.183.235
+  port: 20683
   cipher: chacha20-ietf-poly1305
-  password: bjnrInsnyNlbYotSv9ykgy
+  password: 5vldsNMbQ8B4cKDK0sROwj
 - name: SS-C20P-🇳🇱(NL)-141.227.152.129
   type: ss
   server: 141.227.152.129
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: VJeAjiJ40F2Il17Elv285W
+- name: SS-C20P-🇩🇪(DE)-57.129.121.230
+  type: ss
+  server: 57.129.121.230
+  port: 10443
+  cipher: chacha20-ietf-poly1305
+  password: uROuEqsL8IUMMVb4wDwnGU
 - name: SS-C20P-🇫🇮(FI)-62.60.255.11
   type: ss
   server: 62.60.255.11
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: do1DZ-_QvkFWXzsjc_w8eT5-TeYP6U3Q
-- name: SS-C20P-🇫🇷(FR)-137.74.119.18
+- name: SS-A256GCM-🇱🇻(LV)-95.182.85.39
   type: ss
-  server: 137.74.119.18
-  port: 10443
+  server: 95.182.85.39
+  port: 27934
+  cipher: aes-256-gcm
+  password: DL3kp/c9mw+VcPBg9pnCugQoz9kFUZlvtskhhqfSyKI=
+- name: SS-C20P-🇹🇼(TW)-36.230.16.90
+  type: ss
+  server: 36.230.16.90
+  port: 50099
   cipher: chacha20-ietf-poly1305
-  password: diOMBU5IDvJcFqyNPbRjYR
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇫🇷(FR)-51.254.142.162
+  - SS-C20P-🇺🇸(US)-142.93.183.235
   - SS-C20P-🇳🇱(NL)-141.227.152.129
+  - SS-C20P-🇩🇪(DE)-57.129.121.230
   - SS-C20P-🇫🇮(FI)-62.60.255.11
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
+  - SS-A256GCM-🇱🇻(LV)-95.182.85.39
+  - SS-C20P-🇹🇼(TW)-36.230.16.90
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -70,10 +84,12 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇫🇷(FR)-51.254.142.162
+  - SS-C20P-🇺🇸(US)-142.93.183.235
   - SS-C20P-🇳🇱(NL)-141.227.152.129
+  - SS-C20P-🇩🇪(DE)-57.129.121.230
   - SS-C20P-🇫🇮(FI)-62.60.255.11
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
+  - SS-A256GCM-🇱🇻(LV)-95.182.85.39
+  - SS-C20P-🇹🇼(TW)-36.230.16.90
 rule-providers:
   adblock:
     type: http
