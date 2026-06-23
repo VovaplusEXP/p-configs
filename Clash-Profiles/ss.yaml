@@ -14,59 +14,80 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-C20P-🇺🇸(US)-mosgo.javansystem.ir.usdtbama.site
+  type: ss
+  server: mosgo.javansystem.ir.usdtbama.site
+  port: 1081
+  cipher: chacha20-ietf-poly1305
+  password: 8baa4ead22db1d7e8fea063b6aefcc73
 - name: SS-C20P-🇺🇸(US)-198.98.53.130
   type: ss
   server: 198.98.53.130
   port: 443
   cipher: chacha20-ietf-poly1305
   password: eDfN7SODQceIOmIAbtJJtK
-- name: SS-C20P-🇺🇸(US)-142.93.183.235
+- name: SS-C20P-🇫🇷(FR)-51.254.142.162
   type: ss
-  server: 142.93.183.235
-  port: 20683
+  server: 51.254.142.162
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: 5vldsNMbQ8B4cKDK0sROwj
+  password: bjnrInsnyNlbYotSv9ykgy
 - name: SS-C20P-🇳🇱(NL)-141.227.152.129
   type: ss
   server: 141.227.152.129
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: VJeAjiJ40F2Il17Elv285W
+- name: SS-C20P-🇫🇷(FR)-137.74.119.18
+  type: ss
+  server: 137.74.119.18
+  port: 10443
+  cipher: chacha20-ietf-poly1305
+  password: diOMBU5IDvJcFqyNPbRjYR
 - name: SS-C20P-🇩🇪(DE)-57.129.121.230
   type: ss
   server: 57.129.121.230
   port: 10443
   cipher: chacha20-ietf-poly1305
   password: uROuEqsL8IUMMVb4wDwnGU
+- name: SS-C20P-🇩🇪(DE)-debug.php007.usdtbama.site
+  type: ss
+  server: debug.php007.usdtbama.site
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: a1ebf7650909af2e30dd560b9746e351
+- name: SS-C20P-🇩🇪(DE)-debug.php007.usdtbama.site_1
+  type: ss
+  server: debug.php007.usdtbama.site
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: 8baa4ead22db1d7e8fea063b6aefcc73
+- name: SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  type: ss
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: SS-C20P-🇫🇮(FI)-62.60.255.11
   type: ss
   server: 62.60.255.11
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: do1DZ-_QvkFWXzsjc_w8eT5-TeYP6U3Q
-- name: SS-A256GCM-🇱🇻(LV)-95.182.85.39
-  type: ss
-  server: 95.182.85.39
-  port: 27934
-  cipher: aes-256-gcm
-  password: DL3kp/c9mw+VcPBg9pnCugQoz9kFUZlvtskhhqfSyKI=
-- name: SS-C20P-🇹🇼(TW)-36.230.16.90
-  type: ss
-  server: 36.230.16.90
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
+  - SS-C20P-🇺🇸(US)-mosgo.javansystem.ir.usdtbama.site
   - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇺🇸(US)-142.93.183.235
+  - SS-C20P-🇫🇷(FR)-51.254.142.162
   - SS-C20P-🇳🇱(NL)-141.227.152.129
+  - SS-C20P-🇫🇷(FR)-137.74.119.18
   - SS-C20P-🇩🇪(DE)-57.129.121.230
+  - SS-C20P-🇩🇪(DE)-debug.php007.usdtbama.site
+  - SS-C20P-🇩🇪(DE)-debug.php007.usdtbama.site_1
+  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
   - SS-C20P-🇫🇮(FI)-62.60.255.11
-  - SS-A256GCM-🇱🇻(LV)-95.182.85.39
-  - SS-C20P-🇹🇼(TW)-36.230.16.90
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -83,13 +104,16 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
+  - SS-C20P-🇺🇸(US)-mosgo.javansystem.ir.usdtbama.site
   - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇺🇸(US)-142.93.183.235
+  - SS-C20P-🇫🇷(FR)-51.254.142.162
   - SS-C20P-🇳🇱(NL)-141.227.152.129
+  - SS-C20P-🇫🇷(FR)-137.74.119.18
   - SS-C20P-🇩🇪(DE)-57.129.121.230
+  - SS-C20P-🇩🇪(DE)-debug.php007.usdtbama.site
+  - SS-C20P-🇩🇪(DE)-debug.php007.usdtbama.site_1
+  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
   - SS-C20P-🇫🇮(FI)-62.60.255.11
-  - SS-A256GCM-🇱🇻(LV)-95.182.85.39
-  - SS-C20P-🇹🇼(TW)-36.230.16.90
 rule-providers:
   adblock:
     type: http

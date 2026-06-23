@@ -14,23 +14,23 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-🇮🇹(IT)-151.101.242.172
+- name: TROJAN-WS-🇺🇸(US)-151.101.1.194
   type: trojan
-  server: 151.101.242.172
+  server: 151.101.1.194
   port: 80
   uuid: MITIVPN
   network: ws
   tls: false
-  servername: 151.101.242.172
+  servername: 151.101.1.194
   ws-opts:
     path: /ed=mitivpn
     headers:
-      Host: mitivpn--4.global.ssl.fastly.net
+      Host: mitivpn--3.global.ssl.fastly.net
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-🇮🇹(IT)-151.101.242.172
+  - TROJAN-WS-🇺🇸(US)-151.101.1.194
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -47,7 +47,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-🇮🇹(IT)-151.101.242.172
+  - TROJAN-WS-🇺🇸(US)-151.101.1.194
 rule-providers:
   adblock:
     type: http
