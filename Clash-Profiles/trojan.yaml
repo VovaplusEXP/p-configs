@@ -23,10 +23,22 @@ proxies:
   tls: false
   servername: 151.101.1.194
   ws-opts:
-    path: /ed=mitivpn
+    path: /
     headers:
       Host: mitivpn--3.global.ssl.fastly.net
 - name: TROJAN-WS-🇮🇹(IT)-151.101.242.172
+  type: trojan
+  server: 151.101.242.172
+  port: 80
+  uuid: MITIVPN
+  network: ws
+  tls: false
+  servername: 151.101.242.172
+  ws-opts:
+    path: /
+    headers:
+      Host: mitivpn--4.global.ssl.fastly.net
+- name: TROJAN-WS-🇮🇹(IT)-151.101.242.172_1
   type: trojan
   server: 151.101.242.172
   port: 80
@@ -44,6 +56,7 @@ proxy-groups:
   proxies: &id001
   - TROJAN-WS-🇺🇸(US)-151.101.1.194
   - TROJAN-WS-🇮🇹(IT)-151.101.242.172
+  - TROJAN-WS-🇮🇹(IT)-151.101.242.172_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -62,6 +75,7 @@ proxy-groups:
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-WS-🇺🇸(US)-151.101.1.194
   - TROJAN-WS-🇮🇹(IT)-151.101.242.172
+  - TROJAN-WS-🇮🇹(IT)-151.101.242.172_1
 rule-providers:
   adblock:
     type: http
