@@ -14,44 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VLESS-TCP-REALITY-🇺🇸(US)-165.245.171.152
-  type: vless
-  server: 165.245.171.152
-  port: 2087
-  uuid: 08b278c5-2fe8-4525-827e-71158d27abcd
-  network: tcp
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: VLESS-GRPC-REALITY-🇺🇸(US)-45.90.12.239
-  type: vless
-  server: 45.90.12.239
-  port: 443
-  uuid: ad546c31-82ec-4558-ac49-5ce28883b59f
-  network: grpc
-  tls: true
-  servername: apple.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇺🇸(US)-104.167.198.198
-  type: vless
-  server: 104.167.198.198
-  port: 443
-  uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
-  network: tcp
-  tls: true
-  servername: www.nvidia.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇨🇦(CA)-15.223.121.250
-  type: vless
-  server: 15.223.121.250
-  port: 41087
-  uuid: 57d94cf7-ca36-4c2a-bec5-90cf38588cda
-  network: tcp
-  tls: true
-  servername: www.tesla.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇺🇸(US)-144.34.235.155
   type: vless
   server: 144.34.235.155
@@ -62,48 +24,18 @@ proxies:
   servername: www.speedtest.org
   client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: VLESS-GRPC-REALITY-🇺🇸(US)-45.90.12.239
+  type: vless
+  server: 45.90.12.239
+  port: 443
+  uuid: ad546c31-82ec-4558-ac49-5ce28883b59f
+  network: grpc
+  tls: true
+  servername: apple.com
+  client-fingerprint: chrome
 - name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.216
   type: vless
   server: 15.204.97.216
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
-  type: vless
-  server: 15.204.97.198
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197
-  type: vless
-  server: 15.204.97.197
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134
-  type: vless
-  server: 51.89.229.134
-  port: 443
-  uuid: 53821f3c-5b03-456a-89f3-f8379f130752
-  network: tcp
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206
-  type: vless
-  server: 15.204.97.206
   port: 23576
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   network: tcp
@@ -121,6 +53,66 @@ proxies:
   servername: www.tesla.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206
+  type: vless
+  server: 15.204.97.206
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197
+  type: vless
+  server: 15.204.97.197
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
+  type: vless
+  server: 15.204.97.198
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
+  type: vless
+  server: 15.204.97.214
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206_1
+  type: vless
+  server: 15.204.97.206
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198_1
+  type: vless
+  server: 15.204.97.198
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.216_1
   type: vless
   server: 15.204.97.216
@@ -131,15 +123,84 @@ proxies:
   servername: fuck.rkn
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-51.89.227.192
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197_1
   type: vless
-  server: 51.89.227.192
-  port: 443
-  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
+  server: 15.204.97.197
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.195
+  type: vless
+  server: 15.204.97.195
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-104.167.198.198
+  type: vless
+  server: 104.167.198.198
+  port: 443
+  uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
+  network: tcp
+  tls: true
+  servername: www.nvidia.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇬🇧(GB)-45.43.75.199
+  type: vless
+  server: 45.43.75.199
+  port: 7443
+  uuid: caa3af29-3b04-4099-9772-c64a1b7cca34
+  network: tcp
+  tls: true
+  servername: chat.deepseek.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56
+  type: vless
+  server: 144.31.219.56
+  port: 8443
+  uuid: cf038a28-8f85-41fc-9e86-ba99a3fdd0d9
+  network: tcp
+  tls: true
+  servername: cdn2.swaginozip.fun
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-GRPC-REALITY-🇳🇱(NL)-nl-2.coinbridge.nl
+  type: vless
+  server: nl-2.coinbridge.nl
+  port: 443
+  uuid: 3e9381fa-b6b0-42c8-8014-4818aa05b346
+  network: grpc
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
+- name: VLESS-XHTTP-REALITY-🇩🇪(DE)-167.233.87.60
+  type: vless
+  server: 167.233.87.60
+  port: 57682
+  uuid: c94fa744-2a11-45ed-8a3f-9f6da5161849
+  network: xhttp
   tls: true
   servername: play.google.com
   client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇫🇷(FR)-51.255.71.16
+  type: vless
+  server: 51.255.71.16
+  port: 443
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+  network: tcp
+  tls: true
+  servername: www.booking.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇬🇧(GB)-67.159.56.57
   type: vless
   server: 67.159.56.57
@@ -160,178 +221,34 @@ proxies:
   servername: uk.bvps.cloud
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-34.213.172.16_1
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-213.165.56.30
   type: vless
-  server: 34.213.172.16
-  port: 22189
-  uuid: 4889ee33-74e5-4819-86d8-b2a1a5bc8f46
+  server: 213.165.56.30
+  port: 9443
+  uuid: d56897c3-a83d-4572-9b97-25440bb189c5
   network: tcp
   tls: true
-  servername: www.tesla.com
+  servername: api-maps.yandex.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-57.128.81.193
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-138.124.113.18
   type: vless
-  server: 57.128.81.193
+  server: 138.124.113.18
   port: 443
-  uuid: 53821f3c-5b03-456a-89f3-f8379f130752
+  uuid: 1f4c983e-382c-d2fa-b2dc-7981f02b34de
   network: tcp
   tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206_1
-  type: vless
-  server: 15.204.97.206
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
+  servername: iamsterdam.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-45.43.75.199
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247
   type: vless
-  server: 45.43.75.199
-  port: 7443
-  uuid: caa3af29-3b04-4099-9772-c64a1b7cca34
-  network: tcp
-  tls: true
-  servername: chat.deepseek.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-all44.allenshop100.ir
-  type: vless
-  server: all44.allenshop100.ir
+  server: 5.75.207.247
   port: 443
-  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
+  uuid: bda55b66-6784-4d84-8f2f-cfb94f0dd79b
   network: tcp
   tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197_1
-  type: vless
-  server: 15.204.97.197
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56
-  type: vless
-  server: 144.31.219.56
-  port: 8443
-  uuid: cf038a28-8f85-41fc-9e86-ba99a3fdd0d9
-  network: tcp
-  tls: true
-  servername: cdn2.swaginozip.fun
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
-  type: vless
-  server: 15.204.97.214
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-XHTTP-REALITY-🇩🇪(DE)-167.233.87.60
-  type: vless
-  server: 167.233.87.60
-  port: 57682
-  uuid: c94fa744-2a11-45ed-8a3f-9f6da5161849
-  network: xhttp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-all27.allenshop100.ir
-  type: vless
-  server: all27.allenshop100.ir
-  port: 443
-  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-all44.allenshop100.ir_1
-  type: vless
-  server: all44.allenshop100.ir
-  port: 443
-  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.195
-  type: vless
-  server: 15.204.97.195
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-145.239.8.221
-  type: vless
-  server: 145.239.8.221
-  port: 443
-  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-  network: tcp
-  tls: true
-  servername: www.leboncoin.fr
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-138.124.53.198
-  type: vless
-  server: 138.124.53.198
-  port: 443
-  uuid: e96ffcc1-5acf-4e24-9b67-1b736a2f1c24
-  network: tcp
-  tls: true
-  servername: amazon.de
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198_1
-  type: vless
-  server: 15.204.97.198
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-GRPC-REALITY-🇳🇱(NL)-nl-2.coinbridge.nl
-  type: vless
-  server: nl-2.coinbridge.nl
-  port: 443
-  uuid: 3e9381fa-b6b0-42c8-8014-4818aa05b346
-  network: grpc
-  tls: true
-  servername: google.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-194.127.179.220
-  type: vless
-  server: 194.127.179.220
-  port: 443
-  uuid: eedcee2e-7517-4162-852d-b21b864b8e3f
-  network: tcp
-  tls: true
-  servername: web.max.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-51.255.71.16
-  type: vless
-  server: 51.255.71.16
-  port: 443
-  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-  network: tcp
-  tls: true
-  servername: www.booking.com
+  servername: www.nvidia.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇩🇪(DE)-159.195.148.47
@@ -344,6 +261,55 @@ proxies:
   servername: sellflow.org
   client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-159.195.148.47_1
+  type: vless
+  server: 159.195.148.47
+  port: 443
+  uuid: ff19693c-11f3-4df9-8713-79a85a5ca090
+  network: tcp
+  tls: true
+  servername: sellflow.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247_1
+  type: vless
+  server: 5.75.207.247
+  port: 4227
+  uuid: bda55b66-6784-4d84-8f2f-cfb94f0dd79b
+  network: tcp
+  tls: true
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247_2
+  type: vless
+  server: 5.75.207.247
+  port: 2886
+  uuid: bda55b66-6784-4d84-8f2f-cfb94f0dd79b
+  network: tcp
+  tls: true
+  servername: www.oracle.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-104.167.198.198_1
+  type: vless
+  server: 104.167.198.198
+  port: 443
+  uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
+  network: tcp
+  tls: true
+  servername: www.nvidia.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-213.165.55.34
+  type: vless
+  server: 213.165.55.34
+  port: 2083
+  uuid: 0a8ee840-04cb-443b-ba6a-fd5effb9e13b
+  network: tcp
+  tls: true
+  servername: www.amd.com
+  client-fingerprint: chrome
 - name: VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250
   type: vless
   server: 51.44.25.250
@@ -354,44 +320,16 @@ proxies:
   servername: yahoo.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-159.195.149.186
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247_3
   type: vless
-  server: 159.195.149.186
+  server: 5.75.207.247
   port: 443
-  uuid: ff19693c-11f3-4df9-8713-79a85a5ca090
+  uuid: bda55b66-6784-4d84-8f2f-cfb94f0dd79b
   network: tcp
   tls: true
-  servername: sellflow.org
+  servername: www.nvidia.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-159.195.148.104
-  type: vless
-  server: 159.195.148.104
-  port: 443
-  uuid: ff19693c-11f3-4df9-8713-79a85a5ca090
-  network: tcp
-  tls: true
-  servername: sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134_1
-  type: vless
-  server: 51.89.229.134
-  port: 443
-  uuid: 53821f3c-5b03-456a-89f3-f8379f130752
-  network: tcp
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-213.165.55.34
-  type: vless
-  server: 213.165.55.34
-  port: 2083
-  uuid: 0a8ee840-04cb-443b-ba6a-fd5effb9e13b
-  network: tcp
-  tls: true
-  servername: www.amd.com
-  client-fingerprint: chrome
 - name: VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250_1
   type: vless
   server: 51.44.25.250
@@ -402,24 +340,14 @@ proxies:
   servername: yahoo.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247
+- name: VLESS-TCP-REALITY-🇫🇮(FI)-85.192.49.4
   type: vless
-  server: 5.75.207.247
-  port: 44004
-  uuid: 8a7da057-3b64-4fbf-b78e-f9d064b84662
-  network: tcp
-  tls: true
-  servername: www.intel.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-159.195.151.6
-  type: vless
-  server: 159.195.151.6
+  server: 85.192.49.4
   port: 443
-  uuid: ff19693c-11f3-4df9-8713-79a85a5ca090
+  uuid: 2e146372-aafa-42e6-aaa6-b2a7185225ce
   network: tcp
   tls: true
-  servername: sellflow.org
+  servername: fll.gazladder.work
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇫🇮(FI)-45.144.52.21
@@ -432,105 +360,6 @@ proxies:
   servername: www.booking.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250_2
-  type: vless
-  server: 51.44.25.250
-  port: 44520
-  uuid: acd726d3-0128-44d8-a575-21013ff7740a
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-138.124.52.85
-  type: vless
-  server: 138.124.52.85
-  port: 443
-  uuid: 09a4bf7f-f997-4174-8bef-9fab75aa186e
-  network: tcp
-  tls: true
-  servername: www.google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇮(FI)-138.124.9.147
-  type: vless
-  server: 138.124.9.147
-  port: 443
-  uuid: 2e146372-aafa-42e6-aaa6-b2a7185225ce
-  network: tcp
-  tls: true
-  servername: fll.gazladder.work
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250_3
-  type: vless
-  server: 51.44.25.250
-  port: 44520
-  uuid: acd726d3-0128-44d8-a575-21013ff7740a
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇦🇹(AT)-77.110.110.81
-  type: vless
-  server: 77.110.110.81
-  port: 14302
-  uuid: 1dd5f2be-f124-4f35-9239-8abc042829c2
-  network: tcp
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-213.165.56.30
-  type: vless
-  server: 213.165.56.30
-  port: 9443
-  uuid: d56897c3-a83d-4572-9b97-25440bb189c5
-  network: tcp
-  tls: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134_2
-  type: vless
-  server: 51.89.229.134
-  port: 443
-  uuid: 53821f3c-5b03-456a-89f3-f8379f130752
-  network: tcp
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇦🇱(AL)-144.31.131.33
-  type: vless
-  server: 144.31.131.33
-  port: 443
-  uuid: ae852d97-85f5-45cf-82a4-254eba345480
-  network: tcp
-  tls: true
-  servername: cdn.cdnjst.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇦🇱(AL)-144.31.131.33_1
-  type: vless
-  server: 144.31.131.33
-  port: 443
-  uuid: ae852d97-85f5-45cf-82a4-254eba345480
-  network: tcp
-  tls: true
-  servername: cdn.cdnjst.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇵🇱(PL)-pl.xenovpn.top
-  type: vless
-  server: pl.xenovpn.top
-  port: 44443
-  uuid: 5de6c5e2-de2e-4656-96aa-102985752504
-  network: tcp
-  tls: true
-  servername: pl.xenovpn.top
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇩🇪(DE)-5.178.101.39
   type: vless
   server: 5.178.101.39
@@ -541,72 +370,54 @@ proxies:
   servername: tradingview.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇦🇱(AL)-cdn.cdnjst.org
+- name: VLESS-TCP-REALITY-🇫🇮(FI)-45.144.52.21_1
   type: vless
-  server: cdn.cdnjst.org
-  port: 443
-  uuid: ae852d97-85f5-45cf-82a4-254eba345480
+  server: 45.144.52.21
+  port: 9443
+  uuid: a3aa75be-89a0-4e32-93fd-2b50b5f031ad
   network: tcp
   tls: true
-  servername: cdn.cdnjst.org
+  servername: www.booking.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134_3
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56_1
   type: vless
-  server: 51.89.229.134
-  port: 443
-  uuid: 53821f3c-5b03-456a-89f3-f8379f130752
+  server: 144.31.219.56
+  port: 8443
+  uuid: cf038a28-8f85-41fc-9e86-ba99a3fdd0d9
   network: tcp
   tls: true
-  servername: www.samsung.com
+  servername: cdn2.swaginozip.fun
   client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247_1
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.208
+  type: vless
+  server: 144.31.219.208
+  port: 8443
+  uuid: cf038a28-8f85-41fc-9e86-ba99a3fdd0d9
+  network: tcp
+  tls: true
+  servername: cdn2.swaginozip.fun
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247_4
   type: vless
   server: 5.75.207.247
   port: 44004
-  uuid: ce5da62a-f43d-48a4-8cce-20f609fbb2bd
+  uuid: 3711a236-3270-4167-9654-c2edd8a57bca
   network: tcp
   tls: true
   servername: www.intel.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-64.188.91.92
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56_2
   type: vless
-  server: 64.188.91.92
-  port: 443
-  uuid: 2e146372-aafa-42e6-aaa6-b2a7185225ce
-  network: tcp
-  tls: true
-  servername: fast.gazladder.work
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇦🇱(AL)-cdn.cdnjst.org_1
-  type: vless
-  server: cdn.cdnjst.org
-  port: 443
-  uuid: ae852d97-85f5-45cf-82a4-254eba345480
-  network: tcp
-  tls: true
-  servername: cdn.cdnjst.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-GRPC-REALITY-🇩🇪(DE)-german.monopoli.shop
-  type: vless
-  server: german.monopoli.shop
-  port: 56626
-  uuid: f4f6ea1e-5a62-4c9b-8410-20e805a6774e
-  network: grpc
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇦🇹(AT)-62.60.239.210
-  type: vless
-  server: 62.60.239.210
+  server: 144.31.219.56
   port: 8443
-  uuid: e96ffcc1-5acf-4e24-9b67-1b736a2f1c24
+  uuid: cf038a28-8f85-41fc-9e86-ba99a3fdd0d9
   network: tcp
   tls: true
-  servername: amazon.de
+  servername: cdn2.swaginozip.fun
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: VLESS-XHTTP-REALITY-🇺🇸(US)-104.143.206.246
@@ -618,23 +429,92 @@ proxies:
   tls: true
   servername: www.intel.com
   client-fingerprint: chrome
-- name: VLESS-GRPC-REALITY-🇩🇪(DE)-german.monopoli.shop_1
+- name: VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250_2
   type: vless
-  server: german.monopoli.shop
-  port: 56626
-  uuid: f4f6ea1e-5a62-4c9b-8410-20e805a6774e
-  network: grpc
+  server: 51.44.25.250
+  port: 44520
+  uuid: acd726d3-0128-44d8-a575-21013ff7740a
+  network: tcp
   tls: true
-  servername: icloud.com
+  servername: yahoo.com
   client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇵🇱(PL)-45.144.48.119
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-138.124.53.198
   type: vless
-  server: 45.144.48.119
+  server: 138.124.53.198
   port: 443
-  uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
+  uuid: e96ffcc1-5acf-4e24-9b67-1b736a2f1c24
+  network: tcp
+  tls: true
+  servername: amazon.de
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇯🇵(JP)-13.231.185.74
+  type: vless
+  server: 13.231.185.74
+  port: 47381
+  uuid: c6508e59-dd68-4dc0-b14f-3192e84ef843
+  network: tcp
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇯🇵(JP)-13.231.185.74_1
+  type: vless
+  server: 13.231.185.74
+  port: 47381
+  uuid: c6508e59-dd68-4dc0-b14f-3192e84ef843
+  network: tcp
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247_5
+  type: vless
+  server: 5.75.207.247
+  port: 2360
+  uuid: bda55b66-6784-4d84-8f2f-cfb94f0dd79b
   network: tcp
   tls: true
   servername: www.intel.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-now.nexuschat.fun
+  type: vless
+  server: now.nexuschat.fun
+  port: 8080
+  uuid: 73bb419b-743f-4502-bfb5-08211272a325
+  network: tcp
+  tls: true
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+- name: VLESS-XHTTP-REALITY-🇹🇷(TR)-37.221.79.69
+  type: vless
+  server: 37.221.79.69
+  port: 8443
+  uuid: 15115772-74b5-4c9b-9049-d7237a9c68f9
+  network: xhttp
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇯🇵(JP)-13.159.91.226
+  type: vless
+  server: 13.159.91.226
+  port: 20312
+  uuid: 5cbdfbb1-cdcc-4448-95c2-b1f3aed8d9c5
+  network: tcp
+  tls: true
+  servername: www.amd.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇦🇹(AT)-62.60.239.210
+  type: vless
+  server: 62.60.239.210
+  port: 8443
+  uuid: e96ffcc1-5acf-4e24-9b67-1b736a2f1c24
+  network: tcp
+  tls: true
+  servername: amazon.de
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇩🇪(DE)-fast.gazladder.work
@@ -657,404 +537,35 @@ proxies:
   servername: github.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56_1
+- name: VLESS-GRPC-REALITY-🇩🇪(DE)-65.109.1.138
   type: vless
-  server: 144.31.219.56
-  port: 8443
-  uuid: cf038a28-8f85-41fc-9e86-ba99a3fdd0d9
-  network: tcp
-  tls: true
-  servername: cdn2.swaginozip.fun
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-all27.allenshop100.ir_1
-  type: vless
-  server: all27.allenshop100.ir
+  server: 65.109.1.138
   port: 443
-  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
-  network: tcp
+  uuid: 8108b2d5-a265-408d-bb9d-b7e5600251b7
+  network: grpc
+  tls: true
+  servername: speedtest.net
+  client-fingerprint: chrome
+- name: VLESS-GRPC-REALITY-🇳🇱(NL)-d2.cvbesty.ir
+  type: vless
+  server: d2.cvbesty.ir
+  port: 39980
+  uuid: f77bcbf0-76ac-462f-b789-22f99838bcd9
+  network: grpc
   tls: true
   servername: play.google.com
   client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇦🇱(AL)-144.31.131.33_2
+- name: VLESS-TCP-REALITY-🇫🇮(FI)-62.60.255.11
   type: vless
-  server: 144.31.131.33
+  server: 62.60.255.11
   port: 443
-  uuid: ae852d97-85f5-45cf-82a4-254eba345480
+  uuid: ad8a53f2-b109-4873-9156-fc3bcb0d7fe4
   network: tcp
   tls: true
-  servername: cdn.cdnjst.org
+  servername: ya.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-at.sarky.ru
-  type: vless
-  server: at.sarky.ru
-  port: 443
-  uuid: 29ffaeb3-0506-4632-bc51-e3c56647f508
-  network: tcp
-  tls: true
-  servername: at.sarky.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇮(FI)-85.192.49.4
-  type: vless
-  server: 85.192.49.4
-  port: 443
-  uuid: 2e146372-aafa-42e6-aaa6-b2a7185225ce
-  network: tcp
-  tls: true
-  servername: fll.gazladder.work
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-13.38.52.64
-  type: vless
-  server: 13.38.52.64
-  port: 15469
-  uuid: deb96819-bdaa-4f52-a536-d4751290ce47
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-138.124.52.85_1
-  type: vless
-  server: 138.124.52.85
-  port: 443
-  uuid: 09a4bf7f-f997-4174-8bef-9fab75aa186e
-  network: tcp
-  tls: true
-  servername: www.google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56_2
-  type: vless
-  server: 144.31.219.56
-  port: 8443
-  uuid: cf038a28-8f85-41fc-9e86-ba99a3fdd0d9
-  network: tcp
-  tls: true
-  servername: cdn2.swaginozip.fun
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇦🇱(AL)-144.31.131.33_3
-  type: vless
-  server: 144.31.131.33
-  port: 443
-  uuid: ae852d97-85f5-45cf-82a4-254eba345480
-  network: tcp
-  tls: true
-  servername: cdn.cdnjst.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134_4
-  type: vless
-  server: 51.89.229.134
-  port: 443
-  uuid: 53821f3c-5b03-456a-89f3-f8379f130752
-  network: tcp
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-all44.allenshop100.ir_2
-  type: vless
-  server: all44.allenshop100.ir
-  port: 443
-  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48
-  type: vless
-  server: 95.182.80.48
-  port: 15370
-  uuid: 8e13e299-1bbf-46da-a297-8ee19fe4c914
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇫🇮(FI)-fll.gazladder.work
-  type: vless
-  server: fll.gazladder.work
-  port: 443
-  uuid: 2e146372-aafa-42e6-aaa6-b2a7185225ce
-  network: tcp
-  tls: true
-  servername: fll.gazladder.work
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-195.184.247.178
-  type: vless
-  server: 195.184.247.178
-  port: 443
-  uuid: ea0a2f27-7e22-4337-820b-6703eca2d7b4
-  network: tcp
-  tls: true
-  servername: google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-51.158.62.94
-  type: vless
-  server: 51.158.62.94
-  port: 443
-  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-  network: tcp
-  tls: true
-  servername: www.laposte.fr
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇦🇱(AL)-cdn.cdnjst.org_2
-  type: vless
-  server: cdn.cdnjst.org
-  port: 443
-  uuid: ae852d97-85f5-45cf-82a4-254eba345480
-  network: tcp
-  tls: true
-  servername: cdn.cdnjst.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-159.195.148.47_1
-  type: vless
-  server: 159.195.148.47
-  port: 443
-  uuid: ff19693c-11f3-4df9-8713-79a85a5ca090
-  network: tcp
-  tls: true
-  servername: sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48_1
-  type: vless
-  server: 95.182.80.48
-  port: 15370
-  uuid: 8e13e299-1bbf-46da-a297-8ee19fe4c914
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-check08.allenshop2024.ir
-  type: vless
-  server: check08.allenshop2024.ir
-  port: 8443
-  uuid: 82da8e0a-c3db-4fea-8181-4c4db16ab43c
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.208
-  type: vless
-  server: 144.31.219.208
-  port: 8443
-  uuid: cf038a28-8f85-41fc-9e86-ba99a3fdd0d9
-  network: tcp
-  tls: true
-  servername: cdn2.swaginozip.fun
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇦🇱(AL)-cdn.cdnjst.org_3
-  type: vless
-  server: cdn.cdnjst.org
-  port: 443
-  uuid: ae852d97-85f5-45cf-82a4-254eba345480
-  network: tcp
-  tls: true
-  servername: cdn.cdnjst.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇦🇱(AL)-cdn.cdnjst.org_4
-  type: vless
-  server: cdn.cdnjst.org
-  port: 443
-  uuid: ae852d97-85f5-45cf-82a4-254eba345480
-  network: tcp
-  tls: true
-  servername: cdn.cdnjst.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134_5
-  type: vless
-  server: 51.89.229.134
-  port: 443
-  uuid: 53821f3c-5b03-456a-89f3-f8379f130752
-  network: tcp
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48_2
-  type: vless
-  server: 95.182.80.48
-  port: 15370
-  uuid: 8e13e299-1bbf-46da-a297-8ee19fe4c914
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-51.68.81.114
-  type: vless
-  server: 51.68.81.114
-  port: 2053
-  uuid: 850b3b19-a6e0-4942-b559-7b0bf3dc3843
-  network: tcp
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇸🇪(SE)-homa.letsconnectu.com
-  type: vless
-  server: homa.letsconnectu.com
-  port: 1000
-  uuid: 9b2558ad-f869-1bc9-283e-978ba192712d
-  network: tcp
-  tls: true
-  servername: knox.cdn-apple.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-89.208.113.157
-  type: vless
-  server: 89.208.113.157
-  port: 443
-  uuid: 1f4c983e-382c-d2fa-b2dc-7981f02b34de
-  network: tcp
-  tls: true
-  servername: parisjetaime.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇸🇪(SE)-46.226.161.161
-  type: vless
-  server: 46.226.161.161
-  port: 14302
-  uuid: 1dd5f2be-f124-4f35-9239-8abc042829c2
-  network: tcp
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-check08.allenshop2024.ir_1
-  type: vless
-  server: check08.allenshop2024.ir
-  port: 8443
-  uuid: 82da8e0a-c3db-4fea-8181-4c4db16ab43c
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇸🇪(SE)-89.22.228.57
-  type: vless
-  server: 89.22.228.57
-  port: 443
-  uuid: 1f4c983e-382c-d2fa-b2dc-7981f02b34de
-  network: tcp
-  tls: true
-  servername: stockholmresilience.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-217.60.252.19
-  type: vless
-  server: 217.60.252.19
-  port: 443
-  uuid: c527e65c-f7ad-480e-a2af-2708b8c69330
-  network: tcp
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-XHTTP-REALITY-🇹🇷(TR)-37.221.79.69
-  type: vless
-  server: 37.221.79.69
-  port: 8443
-  uuid: 15115772-74b5-4c9b-9049-d7237a9c68f9
-  network: xhttp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-89.208.228.221
-  type: vless
-  server: 89.208.228.221
-  port: 5443
-  uuid: 599907db-9e9e-4c50-b9f1-d1b42cdec21f
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-94.198.219.166
-  type: vless
-  server: 94.198.219.166
-  port: 6666
-  uuid: a3aa75be-89a0-4e32-93fd-2b50b5f031ad
-  network: tcp
-  tls: true
-  servername: drive.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-all40.allenshop100.ir
-  type: vless
-  server: all40.allenshop100.ir
-  port: 443
-  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇪🇪(EE)-ee.xenovpn.top
-  type: vless
-  server: ee.xenovpn.top
-  port: 443
-  uuid: 5de6c5e2-de2e-4656-96aa-102985752504
-  network: tcp
-  tls: true
-  servername: ee.xenovpn.top
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-147.45.175.79
-  type: vless
-  server: 147.45.175.79
-  port: 443
-  uuid: 33de2596-d95d-412b-a8c2-410be7060ca3
-  network: tcp
-  tls: true
-  servername: sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇸🇪(SE)-213.21.254.135
-  type: vless
-  server: 213.21.254.135
-  port: 443
-  uuid: a3aa75be-89a0-4e32-93fd-2b50b5f031ad
-  network: tcp
-  tls: true
-  servername: www.booking.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-46.224.83.170
-  type: vless
-  server: 46.224.83.170
-  port: 443
-  uuid: Join-t-me-V2RayyNGvpn
-  network: tcp
-  tls: true
-  servername: www.oracle.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇫🇮(FI)-104.238.29.241
-  type: vless
-  server: 104.238.29.241
-  port: 443
-  uuid: 1f4c983e-382c-d2fa-b2dc-7981f02b34de
-  network: tcp
-  tls: true
-  servername: helsinki.fi
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇮(FI)-s2.dipvpn.ru
-  type: vless
-  server: s2.dipvpn.ru
-  port: 443
-  uuid: 3559f1f7-7d70-46c9-82db-d2b46269300b
-  network: tcp
-  tls: true
-  servername: dipvpn.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-138.124.113.18
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-138.124.113.18_1
   type: vless
   server: 138.124.113.18
   port: 443
@@ -1064,53 +575,14 @@ proxies:
   servername: iamsterdam.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-138.124.52.85
   type: vless
-  server: 198.105.123.142
-  port: 7443
-  uuid: 6ca8ea5b-e47f-4c19-adee-365456e1e87c
-  network: tcp
-  tls: true
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-GRPC-REALITY-🇷🇺(RU)-89.208.228.221
-  type: vless
-  server: 89.208.228.221
-  port: 5445
-  uuid: 599907db-9e9e-4c50-b9f1-d1b42cdec21f
-  network: grpc
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142_1
-  type: vless
-  server: 198.105.123.142
-  port: 7443
-  uuid: 6ca8ea5b-e47f-4c19-adee-365456e1e87c
-  network: tcp
-  tls: true
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-89.208.228.221_1
-  type: vless
-  server: 89.208.228.221
-  port: 5443
-  uuid: 599907db-9e9e-4c50-b9f1-d1b42cdec21f
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇮(FI)-109.120.185.230
-  type: vless
-  server: 109.120.185.230
+  server: 138.124.52.85
   port: 443
-  uuid: 3559f1f7-7d70-46c9-82db-d2b46269300b
+  uuid: 09a4bf7f-f997-4174-8bef-9fab75aa186e
   network: tcp
   tls: true
-  servername: dipvpn.ru
+  servername: www.google.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇳🇱(NL)-79.137.195.157
@@ -1123,34 +595,6 @@ proxies:
   servername: amazon.de
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-GRPC-REALITY-🇷🇺(RU)-89.208.228.221_1
-  type: vless
-  server: 89.208.228.221
-  port: 5445
-  uuid: 599907db-9e9e-4c50-b9f1-d1b42cdec21f
-  network: grpc
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇫🇮(FI)-185.232.204.90
-  type: vless
-  server: 185.232.204.90
-  port: 443
-  uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
-  network: tcp
-  tls: true
-  servername: www.wikihow.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-check05.allenshop2024.ir
-  type: vless
-  server: check05.allenshop2024.ir
-  port: 8443
-  uuid: 82da8e0a-c3db-4fea-8181-4c4db16ab43c
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
 - name: VLESS-TCP-REALITY-🇫🇷(FR)-62.60.155.0
   type: vless
   server: 62.60.155.0
@@ -1161,6 +605,44 @@ proxies:
   servername: telegraph.co.uk
   client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-138.124.52.85_1
+  type: vless
+  server: 138.124.52.85
+  port: 443
+  uuid: 09a4bf7f-f997-4174-8bef-9fab75aa186e
+  network: tcp
+  tls: true
+  servername: www.google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48
+  type: vless
+  server: 95.182.80.48
+  port: 15370
+  uuid: 8e13e299-1bbf-46da-a297-8ee19fe4c914
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇹🇷(TR)-195.74.93.254
+  type: vless
+  server: 195.74.93.254
+  port: 443
+  uuid: 451ccfb4-4d9f-4d16-a748-48862ff46b86
+  network: tcp
+  tls: true
+  servername: web.max.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-GRPC-REALITY-🇳🇱(NL)-d2.cvbesty.ir_1
+  type: vless
+  server: d2.cvbesty.ir
+  port: 39980
+  uuid: f77bcbf0-76ac-462f-b789-22f99838bcd9
+  network: grpc
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
 - name: VLESS-TCP-REALITY-🇫🇷(FR)-89.208.97.95
   type: vless
   server: 89.208.97.95
@@ -1169,6 +651,140 @@ proxies:
   network: tcp
   tls: true
   servername: amazon.fr
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-GRPC-REALITY-🇩🇪(DE)-german.monopoli.shop
+  type: vless
+  server: german.monopoli.shop
+  port: 56626
+  uuid: f4f6ea1e-5a62-4c9b-8410-20e805a6774e
+  network: grpc
+  tls: true
+  servername: icloud.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇫🇷(FR)-13.38.52.64
+  type: vless
+  server: 13.38.52.64
+  port: 15469
+  uuid: deb96819-bdaa-4f52-a536-d4751290ce47
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇬🇧(GB)-all27.allenshop100.ir
+  type: vless
+  server: all27.allenshop100.ir
+  port: 443
+  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
+  network: tcp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇵🇱(PL)-45.144.48.119
+  type: vless
+  server: 45.144.48.119
+  port: 443
+  uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
+  network: tcp
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48_1
+  type: vless
+  server: 95.182.80.48
+  port: 15370
+  uuid: 8e13e299-1bbf-46da-a297-8ee19fe4c914
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48_2
+  type: vless
+  server: 95.182.80.48
+  port: 15370
+  uuid: 8e13e299-1bbf-46da-a297-8ee19fe4c914
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇸🇪(SE)-89.22.228.57
+  type: vless
+  server: 89.22.228.57
+  port: 443
+  uuid: 1f4c983e-382c-d2fa-b2dc-7981f02b34de
+  network: tcp
+  tls: true
+  servername: stockholmresilience.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-GRPC-REALITY-🇩🇪(DE)-german.monopoli.shop_1
+  type: vless
+  server: german.monopoli.shop
+  port: 56626
+  uuid: f4f6ea1e-5a62-4c9b-8410-20e805a6774e
+  network: grpc
+  tls: true
+  servername: icloud.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-144.31.217.99
+  type: vless
+  server: 144.31.217.99
+  port: 443
+  uuid: 749a5df1-2d12-45cf-80f3-f85ea6b2e405
+  network: tcp
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇫🇮(FI)-62.60.255.11_1
+  type: vless
+  server: 62.60.255.11
+  port: 443
+  uuid: ad8a53f2-b109-4873-9156-fc3bcb0d7fe4
+  network: tcp
+  tls: true
+  servername: ya.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134
+  type: vless
+  server: 51.89.229.134
+  port: 443
+  uuid: 53821f3c-5b03-456a-89f3-f8379f130752
+  network: tcp
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇸🇪(SE)-46.226.161.161
+  type: vless
+  server: 46.226.161.161
+  port: 14302
+  uuid: 1dd5f2be-f124-4f35-9239-8abc042829c2
+  network: tcp
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142
+  type: vless
+  server: 198.105.123.142
+  port: 7443
+  uuid: 6ca8ea5b-e47f-4c19-adee-365456e1e87c
+  network: tcp
+  tls: true
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142_1
+  type: vless
+  server: 198.105.123.142
+  port: 7443
+  uuid: 6ca8ea5b-e47f-4c19-adee-365456e1e87c
+  network: tcp
+  tls: true
+  servername: www.microsoft.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142_2
@@ -1181,127 +797,24 @@ proxies:
   servername: www.microsoft.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-138.124.53.198_1
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-144.31.217.99_1
   type: vless
-  server: 138.124.53.198
+  server: 144.31.217.99
   port: 443
-  uuid: e96ffcc1-5acf-4e24-9b67-1b736a2f1c24
-  network: tcp
-  tls: true
-  servername: amazon.de
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-all20.allenshop100.ir
-  type: vless
-  server: all20.allenshop100.ir
-  port: 443
-  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇫🇷(FR)-check05.allenshop2024.ir_1
-  type: vless
-  server: check05.allenshop2024.ir
-  port: 8443
-  uuid: 82da8e0a-c3db-4fea-8181-4c4db16ab43c
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇯🇵(JP)-13.159.91.226
-  type: vless
-  server: 13.159.91.226
-  port: 20312
-  uuid: 5cbdfbb1-cdcc-4448-95c2-b1f3aed8d9c5
-  network: tcp
-  tls: true
-  servername: www.amd.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇯🇵(JP)-13.231.185.74
-  type: vless
-  server: 13.231.185.74
-  port: 47381
-  uuid: c6508e59-dd68-4dc0-b14f-3192e84ef843
-  network: tcp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-all44.allenshop100.ir_3
-  type: vless
-  server: all44.allenshop100.ir
-  port: 443
-  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-XHTTP-REALITY-🇳🇱(NL)-176.120.17.18
-  type: vless
-  server: 176.120.17.18
-  port: 8443
-  uuid: d39664df-5bc0-4f49-9894-8f03b4150082
-  network: xhttp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇦🇲(AM)-77.91.68.70
-  type: vless
-  server: 77.91.68.70
-  port: 55983
-  uuid: f667a096-5231-4cfb-8759-92bb32473139
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-all20.allenshop100.ir_1
-  type: vless
-  server: all20.allenshop100.ir
-  port: 443
-  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142_3
-  type: vless
-  server: 198.105.123.142
-  port: 7443
-  uuid: 6ca8ea5b-e47f-4c19-adee-365456e1e87c
-  network: tcp
-  tls: true
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-103.109.234.138
-  type: vless
-  server: 103.109.234.138
-  port: 443
-  uuid: ea0a2f27-7e22-4337-820b-6703eca2d7b4
+  uuid: 749a5df1-2d12-45cf-80f3-f85ea6b2e405
   network: tcp
   tls: true
   servername: google.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-all20.allenshop100.ir_2
+- name: VLESS-TCP-REALITY-🇭🇰(HK)-64.49.46.222
   type: vless
-  server: all20.allenshop100.ir
-  port: 443
-  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
+  server: 64.49.46.222
+  port: 51008
+  uuid: a7e9b227-57bb-44b3-ac47-58367a40adf8
   network: tcp
   tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇭🇰(HK)-64.49.45.57
-  type: vless
-  server: 64.49.45.57
-  port: 15540
-  uuid: f8e32ccb-7e0b-4966-837a-2a9503bc3d82
-  network: tcp
-  tls: true
-  servername: www.intel.com
+  servername: www.amd.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇭🇰(HK)-64.49.46.182
@@ -1314,44 +827,14 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇭🇰(HK)-64.49.45.57_1
+- name: VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142_3
   type: vless
-  server: 64.49.45.57
-  port: 15540
-  uuid: f8e32ccb-7e0b-4966-837a-2a9503bc3d82
+  server: 198.105.123.142
+  port: 7443
+  uuid: 6ca8ea5b-e47f-4c19-adee-365456e1e87c
   network: tcp
   tls: true
-  servername: www.intel.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇭🇰(HK)-64.49.44.87
-  type: vless
-  server: 64.49.44.87
-  port: 19107
-  uuid: 9e13f74e-3ad7-437d-aba6-5def3c42b046
-  network: tcp
-  tls: true
-  servername: www.intel.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇦🇺(AU)-54.253.37.164
-  type: vless
-  server: 54.253.37.164
-  port: 23951
-  uuid: 3e62a6f1-f8cb-40eb-9c33-fc4ed39a080e
-  network: tcp
-  tls: true
-  servername: www.tesla.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇭🇰(HK)-64.49.46.182_1
-  type: vless
-  server: 64.49.46.182
-  port: 31435
-  uuid: b66d5953-8fed-4374-bf27-26dc07382b08
-  network: tcp
-  tls: true
-  servername: www.apple.com
+  servername: www.microsoft.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇦🇺(AU)-3.106.214.88
@@ -1364,149 +847,321 @@ proxies:
   servername: www.tesla.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇦🇺(AU)-54.253.37.164
+  type: vless
+  server: 54.253.37.164
+  port: 23951
+  uuid: 3e62a6f1-f8cb-40eb-9c33-fc4ed39a080e
+  network: tcp
+  tls: true
+  servername: www.tesla.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇬🇧(GB)-51.89.227.192
+  type: vless
+  server: 51.89.227.192
+  port: 443
+  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
+  network: tcp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇭🇰(HK)-64.49.46.223
+  type: vless
+  server: 64.49.46.223
+  port: 46638
+  uuid: 67fea8cc-7fbe-49ec-80b2-fc45b41f2e24
+  network: tcp
+  tls: true
+  servername: www.amd.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-GRPC-REALITY-🇳🇱(NL)-64.225.78.218
+  type: vless
+  server: 64.225.78.218
+  port: 39980
+  uuid: f77bcbf0-76ac-462f-b789-22f99838bcd9
+  network: grpc
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇦🇹(AT)-msk.fast-cone.com
+  type: vless
+  server: msk.fast-cone.com
+  port: 443
+  uuid: cf30deec-917f-4b1a-bb01-c48527cbc83a
+  network: tcp
+  tls: true
+  servername: msk.fast-cone.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇭🇰(HK)-64.49.44.87
+  type: vless
+  server: 64.49.44.87
+  port: 19107
+  uuid: 9e13f74e-3ad7-437d-aba6-5def3c42b046
+  network: tcp
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇭🇰(HK)-64.49.45.57
+  type: vless
+  server: 64.49.45.57
+  port: 15540
+  uuid: f8e32ccb-7e0b-4966-837a-2a9503bc3d82
+  network: tcp
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇭🇰(HK)-64.49.44.87_1
+  type: vless
+  server: 64.49.44.87
+  port: 19107
+  uuid: 9e13f74e-3ad7-437d-aba6-5def3c42b046
+  network: tcp
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇫🇮(FI)-104.238.29.241
+  type: vless
+  server: 104.238.29.241
+  port: 443
+  uuid: 1f4c983e-382c-d2fa-b2dc-7981f02b34de
+  network: tcp
+  tls: true
+  servername: helsinki.fi
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇭🇰(HK)-64.49.45.57_1
+  type: vless
+  server: 64.49.45.57
+  port: 15540
+  uuid: f8e32ccb-7e0b-4966-837a-2a9503bc3d82
+  network: tcp
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇭🇰(HK)-64.49.44.87_2
+  type: vless
+  server: 64.49.44.87
+  port: 19107
+  uuid: 9e13f74e-3ad7-437d-aba6-5def3c42b046
+  network: tcp
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🌐(XX)-all44.allenshop100.ir
+  type: vless
+  server: all44.allenshop100.ir
+  port: 443
+  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
+  network: tcp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇭🇰(HK)-64.49.46.182_1
+  type: vless
+  server: 64.49.46.182
+  port: 31435
+  uuid: b66d5953-8fed-4374-bf27-26dc07382b08
+  network: tcp
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇷🇺(RU)-178.253.55.236
+  type: vless
+  server: 178.253.55.236
+  port: 443
+  uuid: 39eb6d15-e27a-4f2e-b865-b49a15b2d5f6
+  network: tcp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: VLESS-GRPC-REALITY-🇳🇱(NL)-64.225.78.218_1
+  type: vless
+  server: 64.225.78.218
+  port: 39980
+  uuid: f77bcbf0-76ac-462f-b789-22f99838bcd9
+  network: grpc
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇸🇬(SG)-52.76.240.5
+  type: vless
+  server: 52.76.240.5
+  port: 35349
+  uuid: 66031b35-3a36-4fc1-9225-b7c39a7b4453
+  network: tcp
+  tls: true
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇸🇬(SG)-52.76.240.5_1
+  type: vless
+  server: 52.76.240.5
+  port: 35349
+  uuid: 66031b35-3a36-4fc1-9225-b7c39a7b4453
+  network: tcp
+  tls: true
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇸🇬(SG)-50.114.55.14
+  type: vless
+  server: 50.114.55.14
+  port: 10001
+  uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
+  network: tcp
+  tls: true
+  servername: www.icloud.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇸🇬(SG)-52.76.240.5_2
+  type: vless
+  server: 52.76.240.5
+  port: 35349
+  uuid: 66031b35-3a36-4fc1-9225-b7c39a7b4453
+  network: tcp
+  tls: true
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-195.184.247.178
+  type: vless
+  server: 195.184.247.178
+  port: 443
+  uuid: ea0a2f27-7e22-4337-820b-6703eca2d7b4
+  network: tcp
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇸🇬(SG)-54.169.248.107
+  type: vless
+  server: 54.169.248.107
+  port: 29746
+  uuid: 3fd28704-112e-4451-8c5f-d6657f8ecf44
+  network: tcp
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: ⚡ Auto-Select-VLESS
   type: url-test
   proxies: &id001
-  - VLESS-TCP-REALITY-🇺🇸(US)-165.245.171.152
-  - VLESS-GRPC-REALITY-🇺🇸(US)-45.90.12.239
-  - VLESS-TCP-REALITY-🇺🇸(US)-104.167.198.198
-  - VLESS-TCP-REALITY-🇨🇦(CA)-15.223.121.250
   - VLESS-TCP-REALITY-🇺🇸(US)-144.34.235.155
+  - VLESS-GRPC-REALITY-🇺🇸(US)-45.90.12.239
   - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.216
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206
   - VLESS-TCP-REALITY-🇺🇸(US)-34.213.172.16
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206_1
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198_1
   - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.216_1
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.227.192
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197_1
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.195
+  - VLESS-TCP-REALITY-🇺🇸(US)-104.167.198.198
+  - VLESS-TCP-REALITY-🇬🇧(GB)-45.43.75.199
+  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56
+  - VLESS-GRPC-REALITY-🇳🇱(NL)-nl-2.coinbridge.nl
+  - VLESS-XHTTP-REALITY-🇩🇪(DE)-167.233.87.60
+  - VLESS-TCP-REALITY-🇫🇷(FR)-51.255.71.16
   - VLESS-TCP-REALITY-🇬🇧(GB)-67.159.56.57
   - VLESS-TCP-REALITY-🇬🇧(GB)-67.159.56.57_1
-  - VLESS-TCP-REALITY-🇺🇸(US)-34.213.172.16_1
-  - VLESS-TCP-REALITY-🇫🇷(FR)-57.128.81.193
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206_1
-  - VLESS-TCP-REALITY-🇬🇧(GB)-45.43.75.199
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all44.allenshop100.ir
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
-  - VLESS-XHTTP-REALITY-🇩🇪(DE)-167.233.87.60
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all27.allenshop100.ir
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all44.allenshop100.ir_1
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.195
-  - VLESS-TCP-REALITY-🇫🇷(FR)-145.239.8.221
-  - VLESS-TCP-REALITY-🇩🇪(DE)-138.124.53.198
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198_1
-  - VLESS-GRPC-REALITY-🇳🇱(NL)-nl-2.coinbridge.nl
-  - VLESS-TCP-REALITY-🇳🇱(NL)-194.127.179.220
-  - VLESS-TCP-REALITY-🇫🇷(FR)-51.255.71.16
-  - VLESS-TCP-REALITY-🇩🇪(DE)-159.195.148.47
-  - VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250
-  - VLESS-TCP-REALITY-🇩🇪(DE)-159.195.149.186
-  - VLESS-TCP-REALITY-🇩🇪(DE)-159.195.148.104
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-213.165.55.34
-  - VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247
-  - VLESS-TCP-REALITY-🇩🇪(DE)-159.195.151.6
-  - VLESS-TCP-REALITY-🇫🇮(FI)-45.144.52.21
-  - VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250_2
-  - VLESS-TCP-REALITY-🇳🇱(NL)-138.124.52.85
-  - VLESS-TCP-REALITY-🇫🇮(FI)-138.124.9.147
-  - VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250_3
-  - VLESS-TCP-REALITY-🇦🇹(AT)-77.110.110.81
   - VLESS-TCP-REALITY-🇩🇪(DE)-213.165.56.30
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134_2
-  - VLESS-TCP-REALITY-🇦🇱(AL)-144.31.131.33
-  - VLESS-TCP-REALITY-🇦🇱(AL)-144.31.131.33_1
-  - VLESS-TCP-REALITY-🇵🇱(PL)-pl.xenovpn.top
-  - VLESS-TCP-REALITY-🇩🇪(DE)-5.178.101.39
-  - VLESS-TCP-REALITY-🇦🇱(AL)-cdn.cdnjst.org
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134_3
+  - VLESS-TCP-REALITY-🇳🇱(NL)-138.124.113.18
+  - VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247
+  - VLESS-TCP-REALITY-🇩🇪(DE)-159.195.148.47
+  - VLESS-TCP-REALITY-🇩🇪(DE)-159.195.148.47_1
   - VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-64.188.91.92
-  - VLESS-TCP-REALITY-🇦🇱(AL)-cdn.cdnjst.org_1
-  - VLESS-GRPC-REALITY-🇩🇪(DE)-german.monopoli.shop
-  - VLESS-TCP-REALITY-🇦🇹(AT)-62.60.239.210
+  - VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247_2
+  - VLESS-TCP-REALITY-🇺🇸(US)-104.167.198.198_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-213.165.55.34
+  - VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250
+  - VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247_3
+  - VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250_1
+  - VLESS-TCP-REALITY-🇫🇮(FI)-85.192.49.4
+  - VLESS-TCP-REALITY-🇫🇮(FI)-45.144.52.21
+  - VLESS-TCP-REALITY-🇩🇪(DE)-5.178.101.39
+  - VLESS-TCP-REALITY-🇫🇮(FI)-45.144.52.21_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.208
+  - VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247_4
+  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56_2
   - VLESS-XHTTP-REALITY-🇺🇸(US)-104.143.206.246
-  - VLESS-GRPC-REALITY-🇩🇪(DE)-german.monopoli.shop_1
-  - VLESS-TCP-REALITY-🇵🇱(PL)-45.144.48.119
+  - VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250_2
+  - VLESS-TCP-REALITY-🇩🇪(DE)-138.124.53.198
+  - VLESS-TCP-REALITY-🇯🇵(JP)-13.231.185.74
+  - VLESS-TCP-REALITY-🇯🇵(JP)-13.231.185.74_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247_5
+  - VLESS-TCP-REALITY-🇩🇪(DE)-now.nexuschat.fun
+  - VLESS-XHTTP-REALITY-🇹🇷(TR)-37.221.79.69
+  - VLESS-TCP-REALITY-🇯🇵(JP)-13.159.91.226
+  - VLESS-TCP-REALITY-🇦🇹(AT)-62.60.239.210
   - VLESS-TCP-REALITY-🇩🇪(DE)-fast.gazladder.work
   - VLESS-TCP-REALITY-🇩🇪(DE)-64.188.79.53
-  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56_1
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all27.allenshop100.ir_1
-  - VLESS-TCP-REALITY-🇦🇱(AL)-144.31.131.33_2
-  - VLESS-TCP-REALITY-🇩🇪(DE)-at.sarky.ru
-  - VLESS-TCP-REALITY-🇫🇮(FI)-85.192.49.4
-  - VLESS-TCP-REALITY-🇫🇷(FR)-13.38.52.64
-  - VLESS-TCP-REALITY-🇳🇱(NL)-138.124.52.85_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56_2
-  - VLESS-TCP-REALITY-🇦🇱(AL)-144.31.131.33_3
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134_4
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all44.allenshop100.ir_2
-  - VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48
-  - VLESS-TCP-REALITY-🇫🇮(FI)-fll.gazladder.work
-  - VLESS-TCP-REALITY-🇳🇱(NL)-195.184.247.178
-  - VLESS-TCP-REALITY-🇫🇷(FR)-51.158.62.94
-  - VLESS-TCP-REALITY-🇦🇱(AL)-cdn.cdnjst.org_2
-  - VLESS-TCP-REALITY-🇩🇪(DE)-159.195.148.47_1
-  - VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48_1
-  - VLESS-TCP-REALITY-🇫🇷(FR)-check08.allenshop2024.ir
-  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.208
-  - VLESS-TCP-REALITY-🇦🇱(AL)-cdn.cdnjst.org_3
-  - VLESS-TCP-REALITY-🇦🇱(AL)-cdn.cdnjst.org_4
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134_5
-  - VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48_2
-  - VLESS-TCP-REALITY-🇫🇷(FR)-51.68.81.114
-  - VLESS-TCP-REALITY-🇸🇪(SE)-homa.letsconnectu.com
-  - VLESS-TCP-REALITY-🇫🇷(FR)-89.208.113.157
-  - VLESS-TCP-REALITY-🇸🇪(SE)-46.226.161.161
-  - VLESS-TCP-REALITY-🇫🇷(FR)-check08.allenshop2024.ir_1
-  - VLESS-TCP-REALITY-🇸🇪(SE)-89.22.228.57
-  - VLESS-TCP-REALITY-🇫🇷(FR)-217.60.252.19
-  - VLESS-XHTTP-REALITY-🇹🇷(TR)-37.221.79.69
-  - VLESS-TCP-REALITY-🇷🇺(RU)-89.208.228.221
-  - VLESS-TCP-REALITY-🇷🇺(RU)-94.198.219.166
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all40.allenshop100.ir
-  - VLESS-TCP-REALITY-🇪🇪(EE)-ee.xenovpn.top
-  - VLESS-TCP-REALITY-🇷🇺(RU)-147.45.175.79
-  - VLESS-TCP-REALITY-🇸🇪(SE)-213.21.254.135
-  - VLESS-TCP-REALITY-🇩🇪(DE)-46.224.83.170
-  - VLESS-TCP-REALITY-🇫🇮(FI)-104.238.29.241
-  - VLESS-TCP-REALITY-🇫🇮(FI)-s2.dipvpn.ru
-  - VLESS-TCP-REALITY-🇳🇱(NL)-138.124.113.18
-  - VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142
-  - VLESS-GRPC-REALITY-🇷🇺(RU)-89.208.228.221
-  - VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142_1
-  - VLESS-TCP-REALITY-🇷🇺(RU)-89.208.228.221_1
-  - VLESS-TCP-REALITY-🇫🇮(FI)-109.120.185.230
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-65.109.1.138
+  - VLESS-GRPC-REALITY-🇳🇱(NL)-d2.cvbesty.ir
+  - VLESS-TCP-REALITY-🇫🇮(FI)-62.60.255.11
+  - VLESS-TCP-REALITY-🇳🇱(NL)-138.124.113.18_1
+  - VLESS-TCP-REALITY-🇳🇱(NL)-138.124.52.85
   - VLESS-TCP-REALITY-🇳🇱(NL)-79.137.195.157
-  - VLESS-GRPC-REALITY-🇷🇺(RU)-89.208.228.221_1
-  - VLESS-TCP-REALITY-🇫🇮(FI)-185.232.204.90
-  - VLESS-TCP-REALITY-🇫🇷(FR)-check05.allenshop2024.ir
   - VLESS-TCP-REALITY-🇫🇷(FR)-62.60.155.0
+  - VLESS-TCP-REALITY-🇳🇱(NL)-138.124.52.85_1
+  - VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48
+  - VLESS-TCP-REALITY-🇹🇷(TR)-195.74.93.254
+  - VLESS-GRPC-REALITY-🇳🇱(NL)-d2.cvbesty.ir_1
   - VLESS-TCP-REALITY-🇫🇷(FR)-89.208.97.95
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-german.monopoli.shop
+  - VLESS-TCP-REALITY-🇫🇷(FR)-13.38.52.64
+  - VLESS-TCP-REALITY-🇬🇧(GB)-all27.allenshop100.ir
+  - VLESS-TCP-REALITY-🇵🇱(PL)-45.144.48.119
+  - VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48_1
+  - VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48_2
+  - VLESS-TCP-REALITY-🇸🇪(SE)-89.22.228.57
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-german.monopoli.shop_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.217.99
+  - VLESS-TCP-REALITY-🇫🇮(FI)-62.60.255.11_1
+  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134
+  - VLESS-TCP-REALITY-🇸🇪(SE)-46.226.161.161
+  - VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142
+  - VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142_1
   - VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142_2
-  - VLESS-TCP-REALITY-🇩🇪(DE)-138.124.53.198_1
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all20.allenshop100.ir
-  - VLESS-TCP-REALITY-🇫🇷(FR)-check05.allenshop2024.ir_1
-  - VLESS-TCP-REALITY-🇯🇵(JP)-13.159.91.226
-  - VLESS-TCP-REALITY-🇯🇵(JP)-13.231.185.74
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all44.allenshop100.ir_3
-  - VLESS-XHTTP-REALITY-🇳🇱(NL)-176.120.17.18
-  - VLESS-TCP-REALITY-🇦🇲(AM)-77.91.68.70
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all20.allenshop100.ir_1
-  - VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142_3
-  - VLESS-TCP-REALITY-🇩🇪(DE)-103.109.234.138
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all20.allenshop100.ir_2
-  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.45.57
+  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.217.99_1
+  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.46.222
   - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.46.182
-  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.45.57_1
-  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.44.87
-  - VLESS-TCP-REALITY-🇦🇺(AU)-54.253.37.164
-  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.46.182_1
+  - VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142_3
   - VLESS-TCP-REALITY-🇦🇺(AU)-3.106.214.88
+  - VLESS-TCP-REALITY-🇦🇺(AU)-54.253.37.164
+  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.227.192
+  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.46.223
+  - VLESS-GRPC-REALITY-🇳🇱(NL)-64.225.78.218
+  - VLESS-TCP-REALITY-🇦🇹(AT)-msk.fast-cone.com
+  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.44.87
+  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.45.57
+  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.44.87_1
+  - VLESS-TCP-REALITY-🇫🇮(FI)-104.238.29.241
+  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.45.57_1
+  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.44.87_2
+  - VLESS-TCP-REALITY-🌐(XX)-all44.allenshop100.ir
+  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.46.182_1
+  - VLESS-TCP-REALITY-🇷🇺(RU)-178.253.55.236
+  - VLESS-GRPC-REALITY-🇳🇱(NL)-64.225.78.218_1
+  - VLESS-TCP-REALITY-🇸🇬(SG)-52.76.240.5
+  - VLESS-TCP-REALITY-🇸🇬(SG)-52.76.240.5_1
+  - VLESS-TCP-REALITY-🇸🇬(SG)-50.114.55.14
+  - VLESS-TCP-REALITY-🇸🇬(SG)-52.76.240.5_2
+  - VLESS-TCP-REALITY-🇳🇱(NL)-195.184.247.178
+  - VLESS-TCP-REALITY-🇸🇬(SG)-54.169.248.107
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -1523,145 +1178,112 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VLESS
   - 🔗 Auto-Failover-VLESS
-  - VLESS-TCP-REALITY-🇺🇸(US)-165.245.171.152
-  - VLESS-GRPC-REALITY-🇺🇸(US)-45.90.12.239
-  - VLESS-TCP-REALITY-🇺🇸(US)-104.167.198.198
-  - VLESS-TCP-REALITY-🇨🇦(CA)-15.223.121.250
   - VLESS-TCP-REALITY-🇺🇸(US)-144.34.235.155
+  - VLESS-GRPC-REALITY-🇺🇸(US)-45.90.12.239
   - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.216
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206
   - VLESS-TCP-REALITY-🇺🇸(US)-34.213.172.16
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206_1
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198_1
   - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.216_1
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.227.192
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197_1
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.195
+  - VLESS-TCP-REALITY-🇺🇸(US)-104.167.198.198
+  - VLESS-TCP-REALITY-🇬🇧(GB)-45.43.75.199
+  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56
+  - VLESS-GRPC-REALITY-🇳🇱(NL)-nl-2.coinbridge.nl
+  - VLESS-XHTTP-REALITY-🇩🇪(DE)-167.233.87.60
+  - VLESS-TCP-REALITY-🇫🇷(FR)-51.255.71.16
   - VLESS-TCP-REALITY-🇬🇧(GB)-67.159.56.57
   - VLESS-TCP-REALITY-🇬🇧(GB)-67.159.56.57_1
-  - VLESS-TCP-REALITY-🇺🇸(US)-34.213.172.16_1
-  - VLESS-TCP-REALITY-🇫🇷(FR)-57.128.81.193
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206_1
-  - VLESS-TCP-REALITY-🇬🇧(GB)-45.43.75.199
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all44.allenshop100.ir
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.197_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
-  - VLESS-XHTTP-REALITY-🇩🇪(DE)-167.233.87.60
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all27.allenshop100.ir
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all44.allenshop100.ir_1
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.195
-  - VLESS-TCP-REALITY-🇫🇷(FR)-145.239.8.221
-  - VLESS-TCP-REALITY-🇩🇪(DE)-138.124.53.198
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198_1
-  - VLESS-GRPC-REALITY-🇳🇱(NL)-nl-2.coinbridge.nl
-  - VLESS-TCP-REALITY-🇳🇱(NL)-194.127.179.220
-  - VLESS-TCP-REALITY-🇫🇷(FR)-51.255.71.16
-  - VLESS-TCP-REALITY-🇩🇪(DE)-159.195.148.47
-  - VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250
-  - VLESS-TCP-REALITY-🇩🇪(DE)-159.195.149.186
-  - VLESS-TCP-REALITY-🇩🇪(DE)-159.195.148.104
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-213.165.55.34
-  - VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247
-  - VLESS-TCP-REALITY-🇩🇪(DE)-159.195.151.6
-  - VLESS-TCP-REALITY-🇫🇮(FI)-45.144.52.21
-  - VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250_2
-  - VLESS-TCP-REALITY-🇳🇱(NL)-138.124.52.85
-  - VLESS-TCP-REALITY-🇫🇮(FI)-138.124.9.147
-  - VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250_3
-  - VLESS-TCP-REALITY-🇦🇹(AT)-77.110.110.81
   - VLESS-TCP-REALITY-🇩🇪(DE)-213.165.56.30
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134_2
-  - VLESS-TCP-REALITY-🇦🇱(AL)-144.31.131.33
-  - VLESS-TCP-REALITY-🇦🇱(AL)-144.31.131.33_1
-  - VLESS-TCP-REALITY-🇵🇱(PL)-pl.xenovpn.top
-  - VLESS-TCP-REALITY-🇩🇪(DE)-5.178.101.39
-  - VLESS-TCP-REALITY-🇦🇱(AL)-cdn.cdnjst.org
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134_3
+  - VLESS-TCP-REALITY-🇳🇱(NL)-138.124.113.18
+  - VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247
+  - VLESS-TCP-REALITY-🇩🇪(DE)-159.195.148.47
+  - VLESS-TCP-REALITY-🇩🇪(DE)-159.195.148.47_1
   - VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-64.188.91.92
-  - VLESS-TCP-REALITY-🇦🇱(AL)-cdn.cdnjst.org_1
-  - VLESS-GRPC-REALITY-🇩🇪(DE)-german.monopoli.shop
-  - VLESS-TCP-REALITY-🇦🇹(AT)-62.60.239.210
+  - VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247_2
+  - VLESS-TCP-REALITY-🇺🇸(US)-104.167.198.198_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-213.165.55.34
+  - VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250
+  - VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247_3
+  - VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250_1
+  - VLESS-TCP-REALITY-🇫🇮(FI)-85.192.49.4
+  - VLESS-TCP-REALITY-🇫🇮(FI)-45.144.52.21
+  - VLESS-TCP-REALITY-🇩🇪(DE)-5.178.101.39
+  - VLESS-TCP-REALITY-🇫🇮(FI)-45.144.52.21_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.208
+  - VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247_4
+  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56_2
   - VLESS-XHTTP-REALITY-🇺🇸(US)-104.143.206.246
-  - VLESS-GRPC-REALITY-🇩🇪(DE)-german.monopoli.shop_1
-  - VLESS-TCP-REALITY-🇵🇱(PL)-45.144.48.119
+  - VLESS-TCP-REALITY-🇫🇷(FR)-51.44.25.250_2
+  - VLESS-TCP-REALITY-🇩🇪(DE)-138.124.53.198
+  - VLESS-TCP-REALITY-🇯🇵(JP)-13.231.185.74
+  - VLESS-TCP-REALITY-🇯🇵(JP)-13.231.185.74_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-5.75.207.247_5
+  - VLESS-TCP-REALITY-🇩🇪(DE)-now.nexuschat.fun
+  - VLESS-XHTTP-REALITY-🇹🇷(TR)-37.221.79.69
+  - VLESS-TCP-REALITY-🇯🇵(JP)-13.159.91.226
+  - VLESS-TCP-REALITY-🇦🇹(AT)-62.60.239.210
   - VLESS-TCP-REALITY-🇩🇪(DE)-fast.gazladder.work
   - VLESS-TCP-REALITY-🇩🇪(DE)-64.188.79.53
-  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56_1
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all27.allenshop100.ir_1
-  - VLESS-TCP-REALITY-🇦🇱(AL)-144.31.131.33_2
-  - VLESS-TCP-REALITY-🇩🇪(DE)-at.sarky.ru
-  - VLESS-TCP-REALITY-🇫🇮(FI)-85.192.49.4
-  - VLESS-TCP-REALITY-🇫🇷(FR)-13.38.52.64
-  - VLESS-TCP-REALITY-🇳🇱(NL)-138.124.52.85_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.56_2
-  - VLESS-TCP-REALITY-🇦🇱(AL)-144.31.131.33_3
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134_4
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all44.allenshop100.ir_2
-  - VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48
-  - VLESS-TCP-REALITY-🇫🇮(FI)-fll.gazladder.work
-  - VLESS-TCP-REALITY-🇳🇱(NL)-195.184.247.178
-  - VLESS-TCP-REALITY-🇫🇷(FR)-51.158.62.94
-  - VLESS-TCP-REALITY-🇦🇱(AL)-cdn.cdnjst.org_2
-  - VLESS-TCP-REALITY-🇩🇪(DE)-159.195.148.47_1
-  - VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48_1
-  - VLESS-TCP-REALITY-🇫🇷(FR)-check08.allenshop2024.ir
-  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.219.208
-  - VLESS-TCP-REALITY-🇦🇱(AL)-cdn.cdnjst.org_3
-  - VLESS-TCP-REALITY-🇦🇱(AL)-cdn.cdnjst.org_4
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134_5
-  - VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48_2
-  - VLESS-TCP-REALITY-🇫🇷(FR)-51.68.81.114
-  - VLESS-TCP-REALITY-🇸🇪(SE)-homa.letsconnectu.com
-  - VLESS-TCP-REALITY-🇫🇷(FR)-89.208.113.157
-  - VLESS-TCP-REALITY-🇸🇪(SE)-46.226.161.161
-  - VLESS-TCP-REALITY-🇫🇷(FR)-check08.allenshop2024.ir_1
-  - VLESS-TCP-REALITY-🇸🇪(SE)-89.22.228.57
-  - VLESS-TCP-REALITY-🇫🇷(FR)-217.60.252.19
-  - VLESS-XHTTP-REALITY-🇹🇷(TR)-37.221.79.69
-  - VLESS-TCP-REALITY-🇷🇺(RU)-89.208.228.221
-  - VLESS-TCP-REALITY-🇷🇺(RU)-94.198.219.166
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all40.allenshop100.ir
-  - VLESS-TCP-REALITY-🇪🇪(EE)-ee.xenovpn.top
-  - VLESS-TCP-REALITY-🇷🇺(RU)-147.45.175.79
-  - VLESS-TCP-REALITY-🇸🇪(SE)-213.21.254.135
-  - VLESS-TCP-REALITY-🇩🇪(DE)-46.224.83.170
-  - VLESS-TCP-REALITY-🇫🇮(FI)-104.238.29.241
-  - VLESS-TCP-REALITY-🇫🇮(FI)-s2.dipvpn.ru
-  - VLESS-TCP-REALITY-🇳🇱(NL)-138.124.113.18
-  - VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142
-  - VLESS-GRPC-REALITY-🇷🇺(RU)-89.208.228.221
-  - VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142_1
-  - VLESS-TCP-REALITY-🇷🇺(RU)-89.208.228.221_1
-  - VLESS-TCP-REALITY-🇫🇮(FI)-109.120.185.230
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-65.109.1.138
+  - VLESS-GRPC-REALITY-🇳🇱(NL)-d2.cvbesty.ir
+  - VLESS-TCP-REALITY-🇫🇮(FI)-62.60.255.11
+  - VLESS-TCP-REALITY-🇳🇱(NL)-138.124.113.18_1
+  - VLESS-TCP-REALITY-🇳🇱(NL)-138.124.52.85
   - VLESS-TCP-REALITY-🇳🇱(NL)-79.137.195.157
-  - VLESS-GRPC-REALITY-🇷🇺(RU)-89.208.228.221_1
-  - VLESS-TCP-REALITY-🇫🇮(FI)-185.232.204.90
-  - VLESS-TCP-REALITY-🇫🇷(FR)-check05.allenshop2024.ir
   - VLESS-TCP-REALITY-🇫🇷(FR)-62.60.155.0
+  - VLESS-TCP-REALITY-🇳🇱(NL)-138.124.52.85_1
+  - VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48
+  - VLESS-TCP-REALITY-🇹🇷(TR)-195.74.93.254
+  - VLESS-GRPC-REALITY-🇳🇱(NL)-d2.cvbesty.ir_1
   - VLESS-TCP-REALITY-🇫🇷(FR)-89.208.97.95
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-german.monopoli.shop
+  - VLESS-TCP-REALITY-🇫🇷(FR)-13.38.52.64
+  - VLESS-TCP-REALITY-🇬🇧(GB)-all27.allenshop100.ir
+  - VLESS-TCP-REALITY-🇵🇱(PL)-45.144.48.119
+  - VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48_1
+  - VLESS-TCP-REALITY-🇱🇻(LV)-95.182.80.48_2
+  - VLESS-TCP-REALITY-🇸🇪(SE)-89.22.228.57
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-german.monopoli.shop_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.217.99
+  - VLESS-TCP-REALITY-🇫🇮(FI)-62.60.255.11_1
+  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.229.134
+  - VLESS-TCP-REALITY-🇸🇪(SE)-46.226.161.161
+  - VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142
+  - VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142_1
   - VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142_2
-  - VLESS-TCP-REALITY-🇩🇪(DE)-138.124.53.198_1
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all20.allenshop100.ir
-  - VLESS-TCP-REALITY-🇫🇷(FR)-check05.allenshop2024.ir_1
-  - VLESS-TCP-REALITY-🇯🇵(JP)-13.159.91.226
-  - VLESS-TCP-REALITY-🇯🇵(JP)-13.231.185.74
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all44.allenshop100.ir_3
-  - VLESS-XHTTP-REALITY-🇳🇱(NL)-176.120.17.18
-  - VLESS-TCP-REALITY-🇦🇲(AM)-77.91.68.70
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all20.allenshop100.ir_1
-  - VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142_3
-  - VLESS-TCP-REALITY-🇩🇪(DE)-103.109.234.138
-  - VLESS-TCP-REALITY-🇬🇧(GB)-all20.allenshop100.ir_2
-  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.45.57
+  - VLESS-TCP-REALITY-🇩🇪(DE)-144.31.217.99_1
+  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.46.222
   - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.46.182
-  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.45.57_1
-  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.44.87
-  - VLESS-TCP-REALITY-🇦🇺(AU)-54.253.37.164
-  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.46.182_1
+  - VLESS-TCP-REALITY-🇹🇷(TR)-198.105.123.142_3
   - VLESS-TCP-REALITY-🇦🇺(AU)-3.106.214.88
+  - VLESS-TCP-REALITY-🇦🇺(AU)-54.253.37.164
+  - VLESS-TCP-REALITY-🇬🇧(GB)-51.89.227.192
+  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.46.223
+  - VLESS-GRPC-REALITY-🇳🇱(NL)-64.225.78.218
+  - VLESS-TCP-REALITY-🇦🇹(AT)-msk.fast-cone.com
+  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.44.87
+  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.45.57
+  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.44.87_1
+  - VLESS-TCP-REALITY-🇫🇮(FI)-104.238.29.241
+  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.45.57_1
+  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.44.87_2
+  - VLESS-TCP-REALITY-🌐(XX)-all44.allenshop100.ir
+  - VLESS-TCP-REALITY-🇭🇰(HK)-64.49.46.182_1
+  - VLESS-TCP-REALITY-🇷🇺(RU)-178.253.55.236
+  - VLESS-GRPC-REALITY-🇳🇱(NL)-64.225.78.218_1
+  - VLESS-TCP-REALITY-🇸🇬(SG)-52.76.240.5
+  - VLESS-TCP-REALITY-🇸🇬(SG)-52.76.240.5_1
+  - VLESS-TCP-REALITY-🇸🇬(SG)-50.114.55.14
+  - VLESS-TCP-REALITY-🇸🇬(SG)-52.76.240.5_2
+  - VLESS-TCP-REALITY-🇳🇱(NL)-195.184.247.178
+  - VLESS-TCP-REALITY-🇸🇬(SG)-54.169.248.107
 rule-providers:
   adblock:
     type: http
