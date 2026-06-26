@@ -14,19 +14,36 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-🇳🇱(NL)-64.225.72.24
+- name: TROJAN-WS-🇺🇸(US)-www.speedtest.net
   type: trojan
-  server: 64.225.72.24
-  port: 443
-  uuid: dnhfub8n5pi4vwpn
-  network: tcp
+  server: www.speedtest.net
+  port: 8080
+  uuid: 2ebd88d01787434e8deed6bf5ef41d5c
+  network: ws
   tls: false
-  servername: 64.225.72.24
+  servername: www.speedtest.net
+  ws-opts:
+    path: /eyJqdW5rIjoidnNYUDlycUpyIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiNjIuNjAuMjE2LjE2OSJdfQ==?ed=2560
+    headers:
+      Host: mAiN-THunDer-51ed42.gHasEM-SOL.WOrkeRS.DEV
+- name: TROJAN-WS-🇺🇸(US)-188.114.96.3
+  type: trojan
+  server: 188.114.96.3
+  port: 8080
+  uuid: 2ebd88d01787434e8deed6bf5ef41d5c
+  network: ws
+  tls: false
+  servername: 188.114.96.3
+  ws-opts:
+    path: /eyJqdW5rIjoiUWFjeXVjQWxLaDMiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI3OS4xMzcuMjA1LjE4NCJdfQ==?ed=2560
+    headers:
+      Host: maIn-THUndER-51ED42.GHasEM-SOL.WorKeRS.Dev
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-🇳🇱(NL)-64.225.72.24
+  - TROJAN-WS-🇺🇸(US)-www.speedtest.net
+  - TROJAN-WS-🇺🇸(US)-188.114.96.3
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -43,7 +60,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-🇳🇱(NL)-64.225.72.24
+  - TROJAN-WS-🇺🇸(US)-www.speedtest.net
+  - TROJAN-WS-🇺🇸(US)-188.114.96.3
 rule-providers:
   adblock:
     type: http
