@@ -26,6 +26,30 @@ proxies:
     path: /eyJqdW5rIjoidnNYUDlycUpyIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiNjIuNjAuMjE2LjE2OSJdfQ==?ed=2560
     headers:
       Host: mAiN-THunDer-51ed42.gHasEM-SOL.WOrkeRS.DEV
+- name: TROJAN-WS-🇩🇪(DE)-146.75.116.140
+  type: trojan
+  server: 146.75.116.140
+  port: 80
+  uuid: Mitivpn
+  network: ws
+  tls: false
+  servername: 146.75.116.140
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
+- name: TROJAN-WS-🇺🇸(US)-151.101.0.0
+  type: trojan
+  server: 151.101.0.0
+  port: 80
+  uuid: Mitivpn
+  network: ws
+  tls: false
+  servername: 151.101.0.0
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
 - name: TROJAN-WS-🇺🇸(US)-188.114.96.3
   type: trojan
   server: 188.114.96.3
@@ -38,12 +62,53 @@ proxies:
     path: /eyJqdW5rIjoiUWFjeXVjQWxLaDMiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI3OS4xMzcuMjA1LjE4NCJdfQ==?ed=2560
     headers:
       Host: maIn-THUndER-51ED42.GHasEM-SOL.WorKeRS.Dev
+- name: TROJAN-WS-🇩🇪(DE)-146.75.116.134
+  type: trojan
+  server: 146.75.116.134
+  port: 80
+  uuid: Mitivpn
+  network: ws
+  tls: false
+  servername: 146.75.116.134
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
+- name: TROJAN-WS-🇩🇪(DE)-146.75.116.15
+  type: trojan
+  server: 146.75.116.15
+  port: 80
+  uuid: Mitivpn
+  network: ws
+  tls: false
+  servername: 146.75.116.15
+  ws-opts:
+    path: /?https://t.me/app_bedal🇨🇳
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
+- name: TROJAN-WS-🇩🇪(DE)-146.75.116.130
+  type: trojan
+  server: 146.75.116.130
+  port: 80
+  uuid: Mitivpn
+  network: ws
+  tls: false
+  servername: 146.75.116.130
+  ws-opts:
+    path: /?https://t.me/app_bedal🇨🇳
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-WS-🇺🇸(US)-www.speedtest.net
+  - TROJAN-WS-🇩🇪(DE)-146.75.116.140
+  - TROJAN-WS-🇺🇸(US)-151.101.0.0
   - TROJAN-WS-🇺🇸(US)-188.114.96.3
+  - TROJAN-WS-🇩🇪(DE)-146.75.116.134
+  - TROJAN-WS-🇩🇪(DE)-146.75.116.15
+  - TROJAN-WS-🇩🇪(DE)-146.75.116.130
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -61,7 +126,12 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-WS-🇺🇸(US)-www.speedtest.net
+  - TROJAN-WS-🇩🇪(DE)-146.75.116.140
+  - TROJAN-WS-🇺🇸(US)-151.101.0.0
   - TROJAN-WS-🇺🇸(US)-188.114.96.3
+  - TROJAN-WS-🇩🇪(DE)-146.75.116.134
+  - TROJAN-WS-🇩🇪(DE)-146.75.116.15
+  - TROJAN-WS-🇩🇪(DE)-146.75.116.130
 rule-providers:
   adblock:
     type: http
