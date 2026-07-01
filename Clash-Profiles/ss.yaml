@@ -14,87 +14,31 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-152.53.39.104
-  type: ss
-  server: 152.53.39.104
-  port: 9999
-  cipher: chacha20-ietf-poly1305
-  password: u1XghH0zJXNxDPNhM8DUjg1TGsVF1QXE
-- name: SS-C20P-🇫🇮(FI)-108.61.191.187
-  type: ss
-  server: 108.61.191.187
-  port: 1
-  cipher: chacha20-ietf-poly1305
-  password: Z5Qe7ODfrZTXF9wd5KGNqw
-- name: SS-C20P-🇫🇮(FI)-85.192.49.203
-  type: ss
-  server: 85.192.49.203
-  port: 9999
-  cipher: chacha20-ietf-poly1305
-  password: u1XghH0zJXNxDPNhM8DUjg1TGsVF1QXE
 - name: SS-C20P-🇫🇷(FR)-137.74.119.18
   type: ss
   server: 137.74.119.18
   port: 10443
   cipher: chacha20-ietf-poly1305
   password: diOMBU5IDvJcFqyNPbRjYR
-- name: SS-C20P-🇩🇪(DE)-152.53.133.72
+- name: SS-C20P-🇩🇪(DE)-46.224.2.35
   type: ss
-  server: 152.53.133.72
-  port: 9999
+  server: 46.224.2.35
+  port: 47199
   cipher: chacha20-ietf-poly1305
-  password: u1XghH0zJXNxDPNhM8DUjg1TGsVF1QXE
-- name: SS-C20P-🇩🇪(DE)-213.226.68.8
+  password: h2GNP6xzss0xQ5kf7BNcJI
+- name: SS-C20P-🇩🇪(DE)-57.129.121.230
   type: ss
-  server: 213.226.68.8
-  port: 31348
+  server: 57.129.121.230
+  port: 10443
   cipher: chacha20-ietf-poly1305
-  password: hkasb5cVrs4jE18jCEJxB4Gr55hVGW24y35gU9GIIeyT31Fw
-- name: SS-C20P-🇵🇱(PL)-144.31.3.243
-  type: ss
-  server: 144.31.3.243
-  port: 9999
-  cipher: chacha20-ietf-poly1305
-  password: u1XghH0zJXNxDPNhM8DUjg1TGsVF1QXE
-- name: SS-C20P-🇫🇷(FR)-152.228.133.47
-  type: ss
-  server: 152.228.133.47
-  port: 9999
-  cipher: chacha20-ietf-poly1305
-  password: u1XghH0zJXNxDPNhM8DUjg1TGsVF1QXE
-- name: SS-C20P-🇬🇧(GB)-141.133.175.194
-  type: ss
-  server: 141.133.175.194
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: cAqbBYBB0f9CAmpU_mc_7FyvvLCcwzt0
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187
-  type: ss
-  server: 141.164.45.187
-  port: 6679
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_1
-  type: ss
-  server: 141.164.45.187
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  password: uROuEqsL8IUMMVb4wDwnGU
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-152.53.39.104
-  - SS-C20P-🇫🇮(FI)-108.61.191.187
-  - SS-C20P-🇫🇮(FI)-85.192.49.203
   - SS-C20P-🇫🇷(FR)-137.74.119.18
-  - SS-C20P-🇩🇪(DE)-152.53.133.72
-  - SS-C20P-🇩🇪(DE)-213.226.68.8
-  - SS-C20P-🇵🇱(PL)-144.31.3.243
-  - SS-C20P-🇫🇷(FR)-152.228.133.47
-  - SS-C20P-🇬🇧(GB)-141.133.175.194
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_1
+  - SS-C20P-🇩🇪(DE)-46.224.2.35
+  - SS-C20P-🇩🇪(DE)-57.129.121.230
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -111,17 +55,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-152.53.39.104
-  - SS-C20P-🇫🇮(FI)-108.61.191.187
-  - SS-C20P-🇫🇮(FI)-85.192.49.203
   - SS-C20P-🇫🇷(FR)-137.74.119.18
-  - SS-C20P-🇩🇪(DE)-152.53.133.72
-  - SS-C20P-🇩🇪(DE)-213.226.68.8
-  - SS-C20P-🇵🇱(PL)-144.31.3.243
-  - SS-C20P-🇫🇷(FR)-152.228.133.47
-  - SS-C20P-🇬🇧(GB)-141.133.175.194
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_1
+  - SS-C20P-🇩🇪(DE)-46.224.2.35
+  - SS-C20P-🇩🇪(DE)-57.129.121.230
 rule-providers:
   adblock:
     type: http
