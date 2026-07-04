@@ -14,52 +14,38 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇦🇺(AU)-104.156.233.234
+- name: SS-C20P-🇺🇸(US)-130.51.22.8
   type: ss
-  server: 104.156.233.234
-  port: 27116
+  server: 130.51.22.8
+  port: 2096
   cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
-- name: SS-C20P-🇩🇪(DE)-46.224.2.35
-  type: ss
-  server: 46.224.2.35
-  port: 47199
-  cipher: chacha20-ietf-poly1305
-  password: Jx2HKJK7kiti86e8AnQIbX
-- name: SS-C20P-🇦🇺(AU)-45.77.232.213
-  type: ss
-  server: 45.77.232.213
-  port: 15675
-  cipher: chacha20-ietf-poly1305
-  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
-- name: SS-C20P-🇦🇺(AU)-67.219.106.119
-  type: ss
-  server: 67.219.106.119
-  port: 26286
-  cipher: chacha20-ietf-poly1305
-  password: xfscSDcb-SeEqqRb.omzVGgVgNpXh3bA1u
-- name: SS-C20P-🇩🇪(DE)-46.224.2.35_1
-  type: ss
-  server: 46.224.2.35
-  port: 47199
-  cipher: chacha20-ietf-poly1305
-  password: h2GNP6xzss0xQ5kf7BNcJI
+  password: SSUiN4nEoL7IV711WrmmsA
 - name: SS-C20P-🇫🇷(FR)-137.74.119.18
   type: ss
   server: 137.74.119.18
   port: 10443
   cipher: chacha20-ietf-poly1305
   password: diOMBU5IDvJcFqyNPbRjYR
+- name: SS-C20P-🇦🇺(AU)-104.156.233.234
+  type: ss
+  server: 104.156.233.234
+  port: 27116
+  cipher: chacha20-ietf-poly1305
+  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+- name: SS-C20P-🇯🇵(JP)-jp01.network-cdn-gw-yd.net
+  type: ss
+  server: jp01.network-cdn-gw-yd.net
+  port: 48801
+  cipher: chacha20-ietf-poly1305
+  password: 1348a838-9105-4f3e-bd04-699a9be10480
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-C20P-🇩🇪(DE)-46.224.2.35
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇦🇺(AU)-67.219.106.119
-  - SS-C20P-🇩🇪(DE)-46.224.2.35_1
+  - SS-C20P-🇺🇸(US)-130.51.22.8
   - SS-C20P-🇫🇷(FR)-137.74.119.18
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇯🇵(JP)-jp01.network-cdn-gw-yd.net
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -76,12 +62,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-C20P-🇩🇪(DE)-46.224.2.35
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇦🇺(AU)-67.219.106.119
-  - SS-C20P-🇩🇪(DE)-46.224.2.35_1
+  - SS-C20P-🇺🇸(US)-130.51.22.8
   - SS-C20P-🇫🇷(FR)-137.74.119.18
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇯🇵(JP)-jp01.network-cdn-gw-yd.net
 rule-providers:
   adblock:
     type: http
