@@ -14,66 +14,66 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-130.51.22.8
-  type: ss
-  server: 130.51.22.8
-  port: 2096
-  cipher: chacha20-ietf-poly1305
-  password: SSUiN4nEoL7IV711WrmmsA
 - name: SS-C20P-🇺🇸(US)-198.98.53.130
   type: ss
   server: 198.98.53.130
   port: 443
   cipher: chacha20-ietf-poly1305
   password: eDfN7SODQceIOmIAbtJJtK
+- name: SS-C20P-🇺🇸(US)-130.51.22.8
+  type: ss
+  server: 130.51.22.8
+  port: 2096
+  cipher: chacha20-ietf-poly1305
+  password: SSUiN4nEoL7IV711WrmmsA
 - name: SS-C20P-🇫🇷(FR)-137.74.119.18
   type: ss
   server: 137.74.119.18
   port: 10443
   cipher: chacha20-ietf-poly1305
   password: diOMBU5IDvJcFqyNPbRjYR
-- name: SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
-  type: ss
-  server: bot.sobhanpor.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: 0Ty41BOVvWp0xE2nQP54XZmpAsnUFETa
-- name: SS-C20P-🇷🇺(RU)-88.218.170.50
-  type: ss
-  server: 88.218.170.50
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: f9vrSj-T8Nc3wuRuWCp9Rg
 - name: SS-C20P-🇩🇪(DE)-57.129.121.230
   type: ss
   server: 57.129.121.230
   port: 10443
   cipher: chacha20-ietf-poly1305
   password: uROuEqsL8IUMMVb4wDwnGU
-- name: SS-C20P-🇦🇺(AU)-104.156.233.234
+- name: SS-A256GCM-🇪🇬(EG)-166.1.228.172
   type: ss
-  server: 104.156.233.234
-  port: 27116
-  cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
-- name: SS-C20P-🇳🇱(NL)-150.251.138.76
+  server: 166.1.228.172
+  port: 30888
+  cipher: aes-256-gcm
+  password: 2803361d6c196af8
+- name: SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
   type: ss
-  server: 150.251.138.76
-  port: 1234
+  server: bot.sobhanpor.ir
+  port: 1080
   cipher: chacha20-ietf-poly1305
-  password: 3o0bHRt8dtPRko9q60zt93k2toFn58xp
+  password: 0Ty41BOVvWp0xE2nQP54XZmpAsnUFETa
+- name: SS-C20P-🇩🇪(DE)-213.226.68.8
+  type: ss
+  server: 213.226.68.8
+  port: 31348
+  cipher: chacha20-ietf-poly1305
+  password: hkasb5cVrs4jE18jCEJxB4Gr55hVGW24y35gU9GIIeyT31Fw
+- name: SS-C20P-🇦🇺(AU)-45.77.232.213
+  type: ss
+  server: 45.77.232.213
+  port: 15675
+  cipher: chacha20-ietf-poly1305
+  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-130.51.22.8
   - SS-C20P-🇺🇸(US)-198.98.53.130
+  - SS-C20P-🇺🇸(US)-130.51.22.8
   - SS-C20P-🇫🇷(FR)-137.74.119.18
-  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
-  - SS-C20P-🇷🇺(RU)-88.218.170.50
   - SS-C20P-🇩🇪(DE)-57.129.121.230
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-C20P-🇳🇱(NL)-150.251.138.76
+  - SS-A256GCM-🇪🇬(EG)-166.1.228.172
+  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
+  - SS-C20P-🇩🇪(DE)-213.226.68.8
+  - SS-C20P-🇦🇺(AU)-45.77.232.213
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -90,14 +90,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-130.51.22.8
   - SS-C20P-🇺🇸(US)-198.98.53.130
+  - SS-C20P-🇺🇸(US)-130.51.22.8
   - SS-C20P-🇫🇷(FR)-137.74.119.18
-  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
-  - SS-C20P-🇷🇺(RU)-88.218.170.50
   - SS-C20P-🇩🇪(DE)-57.129.121.230
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-C20P-🇳🇱(NL)-150.251.138.76
+  - SS-A256GCM-🇪🇬(EG)-166.1.228.172
+  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
+  - SS-C20P-🇩🇪(DE)-213.226.68.8
+  - SS-C20P-🇦🇺(AU)-45.77.232.213
 rule-providers:
   adblock:
     type: http
