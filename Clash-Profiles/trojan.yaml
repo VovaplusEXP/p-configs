@@ -22,20 +22,24 @@ proxies:
   network: tcp
   tls: false
   servername: 91.107.181.155
-- name: TROJAN-TCP-🇫🇮(FI)-65.109.208.236
+- name: TROJAN-WS-🇩🇪(DE)-54.36.113.184
   type: trojan
-  server: 65.109.208.236
-  port: 54673
-  uuid: Ldbgt4IUYv0S+5cFrG4vcWEbvdf8RgPGmoIXhnnOEh4=
-  network: tcp
+  server: 54.36.113.184
+  port: 22646
+  uuid: 60spblglvg30h2j7
+  network: ws
   tls: false
-  servername: 65.109.208.236
+  servername: 54.36.113.184
+  ws-opts:
+    path: /arh
+    headers:
+      Host: 54.36.113.184
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-TCP-🇩🇪(DE)-91.107.181.155
-  - TROJAN-TCP-🇫🇮(FI)-65.109.208.236
+  - TROJAN-WS-🇩🇪(DE)-54.36.113.184
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -53,7 +57,7 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-🇩🇪(DE)-91.107.181.155
-  - TROJAN-TCP-🇫🇮(FI)-65.109.208.236
+  - TROJAN-WS-🇩🇪(DE)-54.36.113.184
 rule-providers:
   adblock:
     type: http
