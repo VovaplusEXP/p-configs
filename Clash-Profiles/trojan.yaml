@@ -14,6 +14,14 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-TCP-🇩🇪(DE)-91.107.181.155
+  type: trojan
+  server: 91.107.181.155
+  port: 10001
+  uuid: ZfzFChpuN4h08FphLPk52NOuMCve8nMU
+  network: tcp
+  tls: false
+  servername: 91.107.181.155
 - name: TROJAN-TCP-🇫🇮(FI)-65.109.208.236
   type: trojan
   server: 65.109.208.236
@@ -26,6 +34,7 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-TCP-🇩🇪(DE)-91.107.181.155
   - TROJAN-TCP-🇫🇮(FI)-65.109.208.236
   tolerance: 50
   lazy: false
@@ -43,6 +52,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-TCP-🇩🇪(DE)-91.107.181.155
   - TROJAN-TCP-🇫🇮(FI)-65.109.208.236
 rule-providers:
   adblock:
