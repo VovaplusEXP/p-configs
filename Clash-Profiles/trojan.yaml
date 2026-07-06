@@ -23,6 +23,15 @@ proxies:
   tls: true
   servername: promotion.yahoo.com
   client-fingerprint: chrome
+- name: TROJAN-TCP-REALITY-🇬🇧(GB)-179.237.75.217
+  type: trojan
+  server: 179.237.75.217
+  port: 51572
+  uuid: '------------BanV2ray------------'
+  network: tcp
+  tls: true
+  servername: promotion.yahoo.com
+  client-fingerprint: chrome
 - name: TROJAN-TCP-REALITY-🇸🇪(SE)-179.237.75.217_1
   type: trojan
   server: 179.237.75.217
@@ -32,10 +41,10 @@ proxies:
   tls: true
   servername: promotion.yahoo.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-REALITY-🇬🇧(GB)-179.237.75.217
+- name: TROJAN-TCP-REALITY-🇱🇻(LV)-179.237.75.217
   type: trojan
   server: 179.237.75.217
-  port: 51572
+  port: 5991
   uuid: '------------BanV2ray------------'
   network: tcp
   tls: true
@@ -46,8 +55,9 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - TROJAN-TCP-REALITY-🇸🇪(SE)-179.237.75.217
-  - TROJAN-TCP-REALITY-🇸🇪(SE)-179.237.75.217_1
   - TROJAN-TCP-REALITY-🇬🇧(GB)-179.237.75.217
+  - TROJAN-TCP-REALITY-🇸🇪(SE)-179.237.75.217_1
+  - TROJAN-TCP-REALITY-🇱🇻(LV)-179.237.75.217
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -65,8 +75,9 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-REALITY-🇸🇪(SE)-179.237.75.217
-  - TROJAN-TCP-REALITY-🇸🇪(SE)-179.237.75.217_1
   - TROJAN-TCP-REALITY-🇬🇧(GB)-179.237.75.217
+  - TROJAN-TCP-REALITY-🇸🇪(SE)-179.237.75.217_1
+  - TROJAN-TCP-REALITY-🇱🇻(LV)-179.237.75.217
 rule-providers:
   adblock:
     type: http
