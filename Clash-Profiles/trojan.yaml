@@ -14,36 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-REALITY-🇫🇷(FR)-179.237.75.217
-  type: trojan
-  server: 179.237.75.217
-  port: 13967
-  uuid: '------------BanV2ray------------'
-  network: tcp
-  tls: true
-  servername: promotion.yahoo.com
-  client-fingerprint: chrome
-- name: TROJAN-TCP-REALITY-🇬🇧(GB)-179.237.75.217
-  type: trojan
-  server: 179.237.75.217
-  port: 51572
-  uuid: '------------BanV2ray------------'
-  network: tcp
-  tls: true
-  servername: promotion.yahoo.com
-  client-fingerprint: chrome
-- name: TROJAN-WS-🇩🇪(DE)-54.36.113.184
-  type: trojan
-  server: 54.36.113.184
-  port: 22646
-  uuid: 60spblglvg30h2j7
-  network: ws
-  tls: false
-  servername: 54.36.113.184
-  ws-opts:
-    path: /arh
-    headers:
-      Host: 54.36.113.184
 - name: TROJAN-TCP-REALITY-🇸🇪(SE)-179.237.75.217
   type: trojan
   server: 179.237.75.217
@@ -62,15 +32,22 @@ proxies:
   tls: true
   servername: promotion.yahoo.com
   client-fingerprint: chrome
+- name: TROJAN-TCP-REALITY-🇬🇧(GB)-179.237.75.217
+  type: trojan
+  server: 179.237.75.217
+  port: 51572
+  uuid: '------------BanV2ray------------'
+  network: tcp
+  tls: true
+  servername: promotion.yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-REALITY-🇫🇷(FR)-179.237.75.217
-  - TROJAN-TCP-REALITY-🇬🇧(GB)-179.237.75.217
-  - TROJAN-WS-🇩🇪(DE)-54.36.113.184
   - TROJAN-TCP-REALITY-🇸🇪(SE)-179.237.75.217
   - TROJAN-TCP-REALITY-🇸🇪(SE)-179.237.75.217_1
+  - TROJAN-TCP-REALITY-🇬🇧(GB)-179.237.75.217
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -87,11 +64,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-REALITY-🇫🇷(FR)-179.237.75.217
-  - TROJAN-TCP-REALITY-🇬🇧(GB)-179.237.75.217
-  - TROJAN-WS-🇩🇪(DE)-54.36.113.184
   - TROJAN-TCP-REALITY-🇸🇪(SE)-179.237.75.217
   - TROJAN-TCP-REALITY-🇸🇪(SE)-179.237.75.217_1
+  - TROJAN-TCP-REALITY-🇬🇧(GB)-179.237.75.217
 rule-providers:
   adblock:
     type: http
