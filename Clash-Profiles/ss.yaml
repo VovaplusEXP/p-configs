@@ -14,45 +14,17 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇦🇺(AU)-104.156.233.234
-  type: ss
-  server: 104.156.233.234
-  port: 27116
-  cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
-- name: SS-C20P-🇩🇪(DE)-de2.v4trojn.xyz
-  type: ss
-  server: de2.v4trojn.xyz
-  port: 2096
-  cipher: chacha20-ietf-poly1305
-  password: rhZiP66_E1XGUTjPfZOWQw
 - name: SS-C20P-🇫🇮(FI)-95.217.161.87
   type: ss
   server: 95.217.161.87
   port: 63978
   cipher: chacha20-ietf-poly1305
   password: eHo0IqnoorbvYFdRPYr2nf
-- name: SS-C20P-🇹🇼(TW)-114.25.8.198
-  type: ss
-  server: 114.25.8.198
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: SS-C20P-🇦🇹(AT)-193.233.161.92
-  type: ss
-  server: 193.233.161.92
-  port: 8390
-  cipher: chacha20-ietf-poly1305
-  password: EyGy11BMfeP-6UHjsgajWw
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-C20P-🇩🇪(DE)-de2.v4trojn.xyz
   - SS-C20P-🇫🇮(FI)-95.217.161.87
-  - SS-C20P-🇹🇼(TW)-114.25.8.198
-  - SS-C20P-🇦🇹(AT)-193.233.161.92
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -69,11 +41,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-C20P-🇩🇪(DE)-de2.v4trojn.xyz
   - SS-C20P-🇫🇮(FI)-95.217.161.87
-  - SS-C20P-🇹🇼(TW)-114.25.8.198
-  - SS-C20P-🇦🇹(AT)-193.233.161.92
 rule-providers:
   adblock:
     type: http
