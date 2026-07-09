@@ -14,23 +14,80 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-🇺🇸(US)-172.67.147.237
+- name: TROJAN-GRPC-REALITY-🇨🇭(CH)-84.234.30.16
   type: trojan
-  server: 172.67.147.237
-  port: 80
-  uuid: hDSPGLBpv(g5
-  network: ws
-  tls: false
-  servername: 172.67.147.237
-  ws-opts:
-    path: /eyJqdW5rIjoieEN1dmdwUzJYUDJMViIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjkxLjEwNy4xNTguNzciXX0=?ed=2560
-    headers:
-      Host: bkq52w7fwykfngbkzbcdhlh0ni-9eonw.imjodakiamirwebstudio1300.workers.dev
+  server: 84.234.30.16
+  port: 27981
+  uuid: '---------BanV2ray--------'
+  network: grpc
+  tls: true
+  servername: chi.yahoo.com
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇨🇭(CH)-84.234.30.16_1
+  type: trojan
+  server: 84.234.30.16
+  port: 27981
+  uuid: '---------BanV2ray--------'
+  network: grpc
+  tls: true
+  servername: chi.yahoo.com
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇨🇭(CH)-84.234.30.16_2
+  type: trojan
+  server: 84.234.30.16
+  port: 27981
+  uuid: '---------BanV2ray--------'
+  network: grpc
+  tls: true
+  servername: chi.yahoo.com
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇸🇪(SE)-84.234.30.16
+  type: trojan
+  server: 84.234.30.16
+  port: 26653
+  uuid: '---------BanV2ray--------'
+  network: grpc
+  tls: true
+  servername: chi.yahoo.com
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇨🇭(CH)-84.234.30.16_3
+  type: trojan
+  server: 84.234.30.16
+  port: 27981
+  uuid: '---------BanV2ray--------'
+  network: grpc
+  tls: true
+  servername: chi.yahoo.com
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇨🇭(CH)-84.234.30.16_4
+  type: trojan
+  server: 84.234.30.16
+  port: 27981
+  uuid: '---------BanV2ray--------'
+  network: grpc
+  tls: true
+  servername: chi.yahoo.com
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇸🇪(SE)-84.234.30.16_1
+  type: trojan
+  server: 84.234.30.16
+  port: 26653
+  uuid: '---------BanV2ray--------'
+  network: grpc
+  tls: true
+  servername: chi.yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-🇺🇸(US)-172.67.147.237
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-84.234.30.16
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-84.234.30.16_1
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-84.234.30.16_2
+  - TROJAN-GRPC-REALITY-🇸🇪(SE)-84.234.30.16
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-84.234.30.16_3
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-84.234.30.16_4
+  - TROJAN-GRPC-REALITY-🇸🇪(SE)-84.234.30.16_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -47,7 +104,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-🇺🇸(US)-172.67.147.237
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-84.234.30.16
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-84.234.30.16_1
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-84.234.30.16_2
+  - TROJAN-GRPC-REALITY-🇸🇪(SE)-84.234.30.16
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-84.234.30.16_3
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-84.234.30.16_4
+  - TROJAN-GRPC-REALITY-🇸🇪(SE)-84.234.30.16_1
 rule-providers:
   adblock:
     type: http

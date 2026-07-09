@@ -14,94 +14,24 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-198.98.53.130
-  type: ss
-  server: 198.98.53.130
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-- name: SS-C20P-🇫🇮(FI)-62.238.41.102
-  type: ss
-  server: 62.238.41.102
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: 1w72_4vS68ge8ht2Vjc37ckI
-- name: SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
-  type: ss
-  server: bot.sobhanpor.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: 1w72_4vS68ge8ht2Vjc37ckI
-- name: SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir_1
-  type: ss
-  server: bot.sobhanpor.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: 9vC_Io7785o8zLkUJ8897NiK
-- name: SS-C20P-🇫🇷(FR)-137.74.119.18
-  type: ss
-  server: 137.74.119.18
-  port: 10443
-  cipher: chacha20-ietf-poly1305
-  password: diOMBU5IDvJcFqyNPbRjYR
 - name: SS-C20P-🇫🇮(FI)-95.217.161.87
   type: ss
   server: 95.217.161.87
-  port: 20014
+  port: 56308
   cipher: chacha20-ietf-poly1305
-  password: RQDfKHqad9wIx8hsuuCcfW
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187
+  password: bff8Cg4W5XQGoKHJnTvpux
+- name: SS-C20P-🇫🇮(FI)-95.217.161.87_1
   type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-- name: SS-C20P-🇦🇺(AU)-45.77.232.213
-  type: ss
-  server: 45.77.232.213
-  port: 15675
+  server: 95.217.161.87
+  port: 12602
   cipher: chacha20-ietf-poly1305
-  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_1
-  type: ss
-  server: 141.164.45.187
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_2
-  type: ss
-  server: 141.164.45.187
-  port: 2376
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_3
-  type: ss
-  server: 141.164.45.187
-  port: 6679
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_4
-  type: ss
-  server: 141.164.45.187
-  port: 7002
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  password: h3UTbp5dVQJVzVn3aN2Xac
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇫🇮(FI)-62.238.41.102
-  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
-  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir_1
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
   - SS-C20P-🇫🇮(FI)-95.217.161.87
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_1
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_2
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_3
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_4
+  - SS-C20P-🇫🇮(FI)-95.217.161.87_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -118,18 +48,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇫🇮(FI)-62.238.41.102
-  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
-  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir_1
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
   - SS-C20P-🇫🇮(FI)-95.217.161.87
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_1
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_2
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_3
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_4
+  - SS-C20P-🇫🇮(FI)-95.217.161.87_1
 rule-providers:
   adblock:
     type: http
