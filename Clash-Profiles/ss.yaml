@@ -14,52 +14,38 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇫🇷(FR)-15.236.226.166
+- name: SS-C20P-🇺🇸(US)-198.98.53.130
   type: ss
-  server: 15.236.226.166
-  port: 1010
+  server: 198.98.53.130
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: mdp65g6lfwphz2w6
-- name: SS-C20P-🇦🇺(AU)-104.156.233.234
+  password: eDfN7SODQceIOmIAbtJJtK
+- name: SS-C20P-🇫🇷(FR)-137.74.119.18
   type: ss
-  server: 104.156.233.234
-  port: 27116
+  server: 137.74.119.18
+  port: 10443
   cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+  password: diOMBU5IDvJcFqyNPbRjYR
+- name: SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
+  type: ss
+  server: bot.sobhanpor.ir
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: H7djNvUL_9QSNB5vvmfohtykX5BvgtuN
 - name: SS-C20P-🇦🇺(AU)-45.77.232.213
   type: ss
   server: 45.77.232.213
   port: 15675
   cipher: chacha20-ietf-poly1305
   password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
-- name: SS-C20P-🇹🇼(TW)-114.25.8.198
-  type: ss
-  server: 114.25.8.198
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
-  type: ss
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: SS-C20P-🇹🇼(TW)-114.25.13.29
-  type: ss
-  server: 114.25.13.29
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇫🇷(FR)-15.236.226.166
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇺🇸(US)-198.98.53.130
+  - SS-C20P-🇫🇷(FR)-137.74.119.18
+  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
   - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇹🇼(TW)-114.25.8.198
-  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
-  - SS-C20P-🇹🇼(TW)-114.25.13.29
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -76,12 +62,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇫🇷(FR)-15.236.226.166
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇺🇸(US)-198.98.53.130
+  - SS-C20P-🇫🇷(FR)-137.74.119.18
+  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
   - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇹🇼(TW)-114.25.8.198
-  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
-  - SS-C20P-🇹🇼(TW)-114.25.13.29
 rule-providers:
   adblock:
     type: http

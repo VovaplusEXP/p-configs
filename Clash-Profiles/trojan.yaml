@@ -14,7 +14,7 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-🇺🇸(US)-172.67.147.237
+- name: TROJAN-WS-🇨🇦(CA)-172.67.147.237
   type: trojan
   server: 172.67.147.237
   port: 80
@@ -39,7 +39,7 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-🇺🇸(US)-172.67.147.237
+  - TROJAN-WS-🇨🇦(CA)-172.67.147.237
   - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
   tolerance: 50
   lazy: false
@@ -57,7 +57,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-🇺🇸(US)-172.67.147.237
+  - TROJAN-WS-🇨🇦(CA)-172.67.147.237
   - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
 rule-providers:
   adblock:
