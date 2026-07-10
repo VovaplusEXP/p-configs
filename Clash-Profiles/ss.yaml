@@ -14,24 +14,18 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-198.98.53.130
+- name: SS-C20P-🇬🇧(GB)-52.56.143.46
   type: ss
-  server: 198.98.53.130
-  port: 443
+  server: 52.56.143.46
+  port: 1010
   cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-- name: SS-C20P-🇫🇷(FR)-137.74.119.18
+  password: mdp65g6lfwphz2w6
+- name: SS-C20P-🇦🇺(AU)-104.156.233.234
   type: ss
-  server: 137.74.119.18
-  port: 10443
+  server: 104.156.233.234
+  port: 27116
   cipher: chacha20-ietf-poly1305
-  password: diOMBU5IDvJcFqyNPbRjYR
-- name: SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
-  type: ss
-  server: bot.sobhanpor.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: H7djNvUL_9QSNB5vvmfohtykX5BvgtuN
+  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
 - name: SS-C20P-🇦🇺(AU)-45.77.232.213
   type: ss
   server: 45.77.232.213
@@ -42,9 +36,8 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
-  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
+  - SS-C20P-🇬🇧(GB)-52.56.143.46
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
   - SS-C20P-🇦🇺(AU)-45.77.232.213
   tolerance: 50
   lazy: false
@@ -62,9 +55,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
-  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
+  - SS-C20P-🇬🇧(GB)-52.56.143.46
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
   - SS-C20P-🇦🇺(AU)-45.77.232.213
 rule-providers:
   adblock:
