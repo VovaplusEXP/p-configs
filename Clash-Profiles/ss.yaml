@@ -14,66 +14,24 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇫🇷(FR)-137.74.119.18
+- name: SS-C20P-🇺🇸(US)-198.98.53.130
   type: ss
-  server: 137.74.119.18
-  port: 10443
+  server: 198.98.53.130
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: diOMBU5IDvJcFqyNPbRjYR
+  password: eDfN7SODQceIOmIAbtJJtK
 - name: SS-C20P-🇦🇺(AU)-104.156.233.234
   type: ss
   server: 104.156.233.234
   port: 27116
   cipher: chacha20-ietf-poly1305
   password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
-- name: SS-C20P-🇩🇪(DE)-57.129.121.230
-  type: ss
-  server: 57.129.121.230
-  port: 10443
-  cipher: chacha20-ietf-poly1305
-  password: uROuEqsL8IUMMVb4wDwnGU
-- name: SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
-  type: ss
-  server: bot.sobhanpor.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: _uwGoB4BeZzBgximq6bStfge
-- name: SS-C20P-🇹🇼(TW)-36.224.169.242
-  type: ss
-  server: 36.224.169.242
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
-  type: ss
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: SS-C20P-🇦🇺(AU)-45.77.232.213
-  type: ss
-  server: 45.77.232.213
-  port: 15675
-  cipher: chacha20-ietf-poly1305
-  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
-- name: SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
-  type: ss
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
+  - SS-C20P-🇺🇸(US)-198.98.53.130
   - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-C20P-🇩🇪(DE)-57.129.121.230
-  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
-  - SS-C20P-🇹🇼(TW)-36.224.169.242
-  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -90,14 +48,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
+  - SS-C20P-🇺🇸(US)-198.98.53.130
   - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-C20P-🇩🇪(DE)-57.129.121.230
-  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
-  - SS-C20P-🇹🇼(TW)-36.224.169.242
-  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
 rule-providers:
   adblock:
     type: http
