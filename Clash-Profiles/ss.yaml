@@ -20,25 +20,25 @@ proxies:
   port: 1234
   cipher: chacha20-ietf-poly1305
   password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
-- name: SS-C20P-🇫🇷(FR)-137.74.119.18
-  type: ss
-  server: 137.74.119.18
-  port: 10443
-  cipher: chacha20-ietf-poly1305
-  password: diOMBU5IDvJcFqyNPbRjYR
 - name: SS-C20P-🇩🇪(DE)-57.129.121.230
   type: ss
   server: 57.129.121.230
   port: 10443
   cipher: chacha20-ietf-poly1305
   password: uROuEqsL8IUMMVb4wDwnGU
+- name: SS-C20P-🇩🇪(DE)-2.144.23.23
+  type: ss
+  server: 2.144.23.23
+  port: 2053
+  cipher: chacha20-ietf-poly1305
+  password: KpikV0WcN54ul7ytP0QOGW7njSS9xqqy/Ji85PM4KQQ=
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-68.168.222.210
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
   - SS-C20P-🇩🇪(DE)-57.129.121.230
+  - SS-C20P-🇩🇪(DE)-2.144.23.23
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -56,8 +56,8 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-68.168.222.210
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
   - SS-C20P-🇩🇪(DE)-57.129.121.230
+  - SS-C20P-🇩🇪(DE)-2.144.23.23
 rule-providers:
   adblock:
     type: http
