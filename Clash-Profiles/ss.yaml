@@ -14,24 +14,31 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-198.98.53.130
+- name: SS-C20P-🇺🇸(US)-68.168.222.210
   type: ss
-  server: 198.98.53.130
-  port: 443
+  server: 68.168.222.210
+  port: 1234
   cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-- name: SS-C20P-🇦🇺(AU)-104.156.233.234
+  password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
+- name: SS-C20P-🇫🇷(FR)-137.74.119.18
   type: ss
-  server: 104.156.233.234
-  port: 27116
+  server: 137.74.119.18
+  port: 10443
   cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+  password: diOMBU5IDvJcFqyNPbRjYR
+- name: SS-C20P-🇩🇪(DE)-57.129.121.230
+  type: ss
+  server: 57.129.121.230
+  port: 10443
+  cipher: chacha20-ietf-poly1305
+  password: uROuEqsL8IUMMVb4wDwnGU
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇺🇸(US)-68.168.222.210
+  - SS-C20P-🇫🇷(FR)-137.74.119.18
+  - SS-C20P-🇩🇪(DE)-57.129.121.230
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -48,8 +55,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇺🇸(US)-68.168.222.210
+  - SS-C20P-🇫🇷(FR)-137.74.119.18
+  - SS-C20P-🇩🇪(DE)-57.129.121.230
 rule-providers:
   adblock:
     type: http
