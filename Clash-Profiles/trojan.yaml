@@ -14,6 +14,30 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
+  type: trojan
+  server: aged-silence-8d7d.tahaggs.workers.dev
+  port: 2086
+  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
+  network: ws
+  tls: false
+  servername: aged-silence-8d7d.tahaggs.workers.dev
+  ws-opts:
+    path: /taha3
+    headers:
+      Host: aged-silence-8d7d.tahaggs.workers.dev
+- name: TROJAN-WS-🇺🇸(US)-172.67.147.237
+  type: trojan
+  server: 172.67.147.237
+  port: 80
+  uuid: hDSPGLBpv(g5
+  network: ws
+  tls: false
+  servername: 172.67.147.237
+  ws-opts:
+    path: /eyJqdW5rIjoieEN1dmdwUzJYUDJMViIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjkxLjEwNy4xNTguNzciXX0=?ed=2560
+    headers:
+      Host: bkq52w7fwykfngbkzbcdhlh0ni-9eonw.imjodakiamirwebstudio1300.workers.dev
 - name: TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
   type: trojan
   server: 144.31.113.56
@@ -22,6 +46,24 @@ proxies:
   network: tcp
   tls: true
   servername: ymail.com
+  client-fingerprint: chrome
+- name: TROJAN-TCP-REALITY-🇩🇪(DE)-jazzghost.com
+  type: trojan
+  server: jazzghost.com
+  port: 8080
+  uuid: wXHhqoeF2OCjBkxci1FyVzjQonQcb26MdTKYRAUkqUU=
+  network: tcp
+  tls: true
+  servername: bale.ai
+  client-fingerprint: chrome
+- name: TROJAN-TCP-REALITY-🇩🇪(DE)-jazzghost.com_1
+  type: trojan
+  server: jazzghost.com
+  port: 8080
+  uuid: wXHhqoeF2OCjBkxci1FyVzjQonQcb26MdTKYRAUkqUU=
+  network: tcp
+  tls: true
+  servername: bale.ai
   client-fingerprint: chrome
 - name: TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56_1
   type: trojan
@@ -36,7 +78,11 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
+  - TROJAN-WS-🇺🇸(US)-172.67.147.237
   - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
+  - TROJAN-TCP-REALITY-🇩🇪(DE)-jazzghost.com
+  - TROJAN-TCP-REALITY-🇩🇪(DE)-jazzghost.com_1
   - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56_1
   tolerance: 50
   lazy: false
@@ -54,7 +100,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
+  - TROJAN-WS-🇺🇸(US)-172.67.147.237
   - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
+  - TROJAN-TCP-REALITY-🇩🇪(DE)-jazzghost.com
+  - TROJAN-TCP-REALITY-🇩🇪(DE)-jazzghost.com_1
   - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56_1
 rule-providers:
   adblock:
