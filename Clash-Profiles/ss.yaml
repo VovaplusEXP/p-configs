@@ -14,101 +14,31 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187
+- name: SS-C20P-🇺🇸(US)-68.168.222.210
   type: ss
-  server: 141.164.45.187
-  port: 6697
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_1
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_2
-  type: ss
-  server: 141.164.45.187
-  port: 7002
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_3
-  type: ss
-  server: 141.164.45.187
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_4
-  type: ss
-  server: 141.164.45.187
-  port: 2376
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_5
-  type: ss
-  server: 141.164.45.187
-  port: 6679
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_6
-  type: ss
-  server: 141.164.45.187
-  port: 8091
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_7
-  type: ss
-  server: 141.164.45.187
-  port: 5001
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_8
-  type: ss
-  server: 141.164.45.187
-  port: 8000
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-- name: SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
-  type: ss
-  server: bot.sobhanpor.ir
-  port: 1080
+  server: 68.168.222.210
+  port: 1234
   cipher: chacha20-ietf-poly1305
-  password: yLL5pI2Tqdc_75CVpe3UYD68
-- name: SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
+  password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
+- name: SS-C20P-🇫🇷(FR)-137.74.119.18
   type: ss
-  server: r3mrcg00129437x.cybervena.com
+  server: 137.74.119.18
+  port: 10443
+  cipher: chacha20-ietf-poly1305
+  password: diOMBU5IDvJcFqyNPbRjYR
+- name: SS-C20P-🇹🇼(TW)-36.224.158.182
+  type: ss
+  server: 36.224.158.182
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_9
-  type: ss
-  server: 141.164.45.187
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir_1
-  type: ss
-  server: bot.sobhanpor.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: 2byfO4TdOD984umYhUNq0R5tIutisIF1
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_1
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_2
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_3
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_4
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_5
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_6
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_7
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_8
-  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_9
-  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir_1
+  - SS-C20P-🇺🇸(US)-68.168.222.210
+  - SS-C20P-🇫🇷(FR)-137.74.119.18
+  - SS-C20P-🇹🇼(TW)-36.224.158.182
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -125,19 +55,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_1
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_2
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_3
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_4
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_5
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_6
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_7
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_8
-  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
-  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_9
-  - SS-C20P-🇫🇮(FI)-bot.sobhanpor.ir_1
+  - SS-C20P-🇺🇸(US)-68.168.222.210
+  - SS-C20P-🇫🇷(FR)-137.74.119.18
+  - SS-C20P-🇹🇼(TW)-36.224.158.182
 rule-providers:
   adblock:
     type: http
