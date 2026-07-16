@@ -14,27 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-GRPC-REALITY-🇪🇸(ES)-bnbnbbnbnbnbnbnbnbnbnbnbnvn.poki-pakipon.ir
-  type: trojan
-  server: bnbnbbnbnbnbnbnbnbnbnbnbnvn.poki-pakipon.ir
-  port: 5560
-  uuid: '-----------BanV2ray------------'
-  network: grpc
-  tls: true
-  servername: chi.yahoo.com
-  client-fingerprint: chrome
-- name: TROJAN-WS-🇺🇸(US)-172.67.147.237
-  type: trojan
-  server: 172.67.147.237
-  port: 80
-  uuid: hDSPGLBpv(g5
-  network: ws
-  tls: false
-  servername: 172.67.147.237
-  ws-opts:
-    path: /eyJqdW5rIjoieEN1dmdwUzJYUDJMViIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjkxLjEwNy4xNTguNzciXX0=?ed=2560
-    headers:
-      Host: bkq52w7fwykfngbkzbcdhlh0ni-9eonw.imjodakiamirwebstudio1300.workers.dev
 - name: TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
   type: trojan
   server: 144.31.113.56
@@ -43,15 +22,6 @@ proxies:
   network: tcp
   tls: true
   servername: ymail.com
-  client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇪🇸(ES)-bnbnbbnbnbnbnbnbnbnbnbnbnvn.poki-pakipon.ir_1
-  type: trojan
-  server: bnbnbbnbnbnbnbnbnbnbnbnbnvn.poki-pakipon.ir
-  port: 5560
-  uuid: '-----------BanV2ray------------'
-  network: grpc
-  tls: true
-  servername: chi.yahoo.com
   client-fingerprint: chrome
 - name: TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56_1
   type: trojan
@@ -62,25 +32,12 @@ proxies:
   tls: true
   servername: ymail.com
   client-fingerprint: chrome
-- name: TROJAN-TCP-REALITY-🇷🇴(RO)-38.79.154.34
-  type: trojan
-  server: 38.79.154.34
-  port: 1818
-  uuid: ewpvezqjycgfeebg
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-GRPC-REALITY-🇪🇸(ES)-bnbnbbnbnbnbnbnbnbnbnbnbnvn.poki-pakipon.ir
-  - TROJAN-WS-🇺🇸(US)-172.67.147.237
   - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
-  - TROJAN-GRPC-REALITY-🇪🇸(ES)-bnbnbbnbnbnbnbnbnbnbnbnbnvn.poki-pakipon.ir_1
   - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56_1
-  - TROJAN-TCP-REALITY-🇷🇴(RO)-38.79.154.34
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -97,12 +54,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-GRPC-REALITY-🇪🇸(ES)-bnbnbbnbnbnbnbnbnbnbnbnbnvn.poki-pakipon.ir
-  - TROJAN-WS-🇺🇸(US)-172.67.147.237
   - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
-  - TROJAN-GRPC-REALITY-🇪🇸(ES)-bnbnbbnbnbnbnbnbnbnbnbnbnvn.poki-pakipon.ir_1
   - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56_1
-  - TROJAN-TCP-REALITY-🇷🇴(RO)-38.79.154.34
 rule-providers:
   adblock:
     type: http
