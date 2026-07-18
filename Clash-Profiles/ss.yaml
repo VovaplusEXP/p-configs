@@ -20,81 +20,60 @@ proxies:
   port: 20111
   cipher: aes-256-gcm
   password: 2803361d6c196af8
-- name: SS-C20P-🇦🇺(AU)-104.156.233.234
-  type: ss
-  server: 104.156.233.234
-  port: 27116
-  cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
 - name: SS-C20P-🇫🇷(FR)-137.74.119.18
   type: ss
   server: 137.74.119.18
   port: 10443
   cipher: chacha20-ietf-poly1305
   password: diOMBU5IDvJcFqyNPbRjYR
-- name: SS-C20P-🇦🇺(AU)-45.77.232.213
-  type: ss
-  server: 45.77.232.213
-  port: 15675
-  cipher: chacha20-ietf-poly1305
-  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
-- name: SS-A256GCM-🌐(XX)-212.192.15.138
-  type: ss
-  server: 212.192.15.138
-  port: 10851
-  cipher: aes-256-gcm
-  password: 7e1dd4c55bf85da5
-- name: SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
-  type: ss
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: SS-A256GCM-🇮🇹(IT)-185.198.235.208
   type: ss
   server: 185.198.235.208
   port: 20129
   cipher: aes-256-gcm
   password: 6512030961473f21
+- name: SS-A256GCM-🇷🇺(RU)-195.133.23.45
+  type: ss
+  server: 195.133.23.45
+  port: 10125
+  cipher: aes-256-gcm
+  password: fbaf33bcffe53cf9
 - name: SS-A256GCM-🇷🇺(RU)-46.17.40.13
   type: ss
   server: 46.17.40.13
   port: 20111
   cipher: aes-256-gcm
   password: b24a80e79cee1d1f
-- name: SS-C20P-🇩🇪(DE)-57.129.121.230
+- name: SS-C20P-🇦🇺(AU)-45.77.232.213
   type: ss
-  server: 57.129.121.230
-  port: 10443
+  server: 45.77.232.213
+  port: 15675
   cipher: chacha20-ietf-poly1305
-  password: uROuEqsL8IUMMVb4wDwnGU
-- name: SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com_1
+  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
+- name: SS-C20P-🇦🇺(AU)-104.156.233.234
   type: ss
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
+  server: 104.156.233.234
+  port: 27116
   cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: SS-C20P-🇬🇧(GB)-194.164.92.198
+  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+- name: SS-A256GCM-🇭🇰(HK)-212.192.15.138
   type: ss
-  server: 194.164.92.198
-  port: 1234
-  cipher: chacha20-ietf-poly1305
-  password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
+  server: 212.192.15.138
+  port: 10851
+  cipher: aes-256-gcm
+  password: 7e1dd4c55bf85da5
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-A256GCM-🇨🇦(CA)-50.114.177.235
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
   - SS-C20P-🇫🇷(FR)-137.74.119.18
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-A256GCM-🌐(XX)-212.192.15.138
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
   - SS-A256GCM-🇮🇹(IT)-185.198.235.208
+  - SS-A256GCM-🇷🇺(RU)-195.133.23.45
   - SS-A256GCM-🇷🇺(RU)-46.17.40.13
-  - SS-C20P-🇩🇪(DE)-57.129.121.230
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com_1
-  - SS-C20P-🇬🇧(GB)-194.164.92.198
+  - SS-C20P-🇦🇺(AU)-45.77.232.213
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-A256GCM-🇭🇰(HK)-212.192.15.138
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -112,16 +91,13 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-A256GCM-🇨🇦(CA)-50.114.177.235
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
   - SS-C20P-🇫🇷(FR)-137.74.119.18
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-A256GCM-🌐(XX)-212.192.15.138
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
   - SS-A256GCM-🇮🇹(IT)-185.198.235.208
+  - SS-A256GCM-🇷🇺(RU)-195.133.23.45
   - SS-A256GCM-🇷🇺(RU)-46.17.40.13
-  - SS-C20P-🇩🇪(DE)-57.129.121.230
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com_1
-  - SS-C20P-🇬🇧(GB)-194.164.92.198
+  - SS-C20P-🇦🇺(AU)-45.77.232.213
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-A256GCM-🇭🇰(HK)-212.192.15.138
 rule-providers:
   adblock:
     type: http
