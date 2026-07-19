@@ -35,15 +35,6 @@ proxies:
   tls: true
   servername: chi.yahoo.com
   client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇨🇭(CH)-uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir_1
-  type: trojan
-  server: uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir
-  port: 26378
-  uuid: '-----------BanV2ray-----------'
-  network: grpc
-  tls: true
-  servername: chi.yahoo.com
-  client-fingerprint: chrome
 - name: TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
   type: trojan
   server: 144.31.113.56
@@ -52,6 +43,15 @@ proxies:
   network: tcp
   tls: true
   servername: ymail.com
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇨🇭(CH)-uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir_1
+  type: trojan
+  server: uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir
+  port: 26378
+  uuid: '-----------BanV2ray-----------'
+  network: grpc
+  tls: true
+  servername: chi.yahoo.com
   client-fingerprint: chrome
 - name: TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56_1
   type: trojan
@@ -62,35 +62,15 @@ proxies:
   tls: true
   servername: ymail.com
   client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇨🇭(CH)-uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir_2
-  type: trojan
-  server: uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir
-  port: 26378
-  uuid: '-----------BanV2ray-----------'
-  network: grpc
-  tls: true
-  servername: chi.yahoo.com
-  client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇨🇭(CH)-uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir_3
-  type: trojan
-  server: uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir
-  port: 26378
-  uuid: '-----------BanV2ray-----------'
-  network: grpc
-  tls: true
-  servername: chi.yahoo.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-WS-🇺🇸(US)-172.67.147.237
   - TROJAN-GRPC-REALITY-🇨🇭(CH)-uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir
-  - TROJAN-GRPC-REALITY-🇨🇭(CH)-uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir_1
   - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir_1
   - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56_1
-  - TROJAN-GRPC-REALITY-🇨🇭(CH)-uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir_2
-  - TROJAN-GRPC-REALITY-🇨🇭(CH)-uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir_3
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -109,11 +89,9 @@ proxy-groups:
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-WS-🇺🇸(US)-172.67.147.237
   - TROJAN-GRPC-REALITY-🇨🇭(CH)-uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir
-  - TROJAN-GRPC-REALITY-🇨🇭(CH)-uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir_1
   - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir_1
   - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56_1
-  - TROJAN-GRPC-REALITY-🇨🇭(CH)-uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir_2
-  - TROJAN-GRPC-REALITY-🇨🇭(CH)-uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir_3
 rule-providers:
   adblock:
     type: http
