@@ -14,42 +14,18 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-A256GCM-🇨🇦(CA)-50.114.177.235
-  type: ss
-  server: 50.114.177.235
-  port: 20111
-  cipher: aes-256-gcm
-  password: 2803361d6c196af8
 - name: SS-C20P-🇦🇺(AU)-104.156.233.234
   type: ss
   server: 104.156.233.234
   port: 27116
   cipher: chacha20-ietf-poly1305
   password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
-- name: SS-A256GCM-🇭🇰(HK)-212.192.15.138
+- name: SS-A256GCM-🇷🇺(RU)-46.17.40.13
   type: ss
-  server: 212.192.15.138
-  port: 10851
+  server: 46.17.40.13
+  port: 20111
   cipher: aes-256-gcm
-  password: 7e1dd4c55bf85da5
-- name: SS-C20P-🇫🇷(FR)-137.74.119.18
-  type: ss
-  server: 137.74.119.18
-  port: 10443
-  cipher: chacha20-ietf-poly1305
-  password: diOMBU5IDvJcFqyNPbRjYR
-- name: SS-C20P-🇩🇪(DE)-178.128.195.253
-  type: ss
-  server: 178.128.195.253
-  port: 10070
-  cipher: chacha20-ietf-poly1305
-  password: sarbazanshahid
-- name: SS-C20P-🇹🇼(TW)-36.224.162.159
-  type: ss
-  server: 36.224.162.159
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  password: b24a80e79cee1d1f
 - name: SS-A256GCM-🇷🇺(RU)-195.133.23.45
   type: ss
   server: 195.133.23.45
@@ -60,12 +36,8 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-A256GCM-🇨🇦(CA)-50.114.177.235
   - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-A256GCM-🇭🇰(HK)-212.192.15.138
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
-  - SS-C20P-🇩🇪(DE)-178.128.195.253
-  - SS-C20P-🇹🇼(TW)-36.224.162.159
+  - SS-A256GCM-🇷🇺(RU)-46.17.40.13
   - SS-A256GCM-🇷🇺(RU)-195.133.23.45
   tolerance: 50
   lazy: false
@@ -83,12 +55,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-A256GCM-🇨🇦(CA)-50.114.177.235
   - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-A256GCM-🇭🇰(HK)-212.192.15.138
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
-  - SS-C20P-🇩🇪(DE)-178.128.195.253
-  - SS-C20P-🇹🇼(TW)-36.224.162.159
+  - SS-A256GCM-🇷🇺(RU)-46.17.40.13
   - SS-A256GCM-🇷🇺(RU)-195.133.23.45
 rule-providers:
   adblock:
