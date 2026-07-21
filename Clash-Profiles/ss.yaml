@@ -20,51 +20,69 @@ proxies:
   port: 443
   cipher: chacha20-ietf-poly1305
   password: eDfN7SODQceIOmIAbtJJtK
-- name: SS-C20P-🇦🇺(AU)-45.77.232.213
-  type: ss
-  server: 45.77.232.213
-  port: 15675
-  cipher: chacha20-ietf-poly1305
-  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
 - name: SS-C20P-🇳🇱(NL)-141.227.152.129
   type: ss
   server: 141.227.152.129
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: bBnV36tzt7MKV75aDZTbzG
-- name: SS-C20P-🇫🇷(FR)-137.74.119.18
-  type: ss
-  server: 137.74.119.18
-  port: 10443
-  cipher: chacha20-ietf-poly1305
-  password: diOMBU5IDvJcFqyNPbRjYR
 - name: SS-C20P-🇬🇧(GB)-194.164.92.198
   type: ss
   server: 194.164.92.198
   port: 1234
   cipher: chacha20-ietf-poly1305
   password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
-- name: SS-C20P-🇹🇼(TW)-114.25.8.186
+- name: SS-C20P-🇫🇷(FR)-137.74.119.18
   type: ss
-  server: 114.25.8.186
-  port: 50099
+  server: 137.74.119.18
+  port: 10443
   cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: SS-C20P-🇹🇼(TW)-61.231.34.200
-  type: ss
-  server: 61.231.34.200
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  password: diOMBU5IDvJcFqyNPbRjYR
 - name: SS-A256GCM-🇮🇹(IT)-185.198.235.208
   type: ss
   server: 185.198.235.208
   port: 20129
   cipher: aes-256-gcm
   password: 6512030961473f21
-- name: SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
+- name: SS-C20P-🇩🇪(DE)-57.129.121.230
   type: ss
-  server: r3mrcg001287h3p.cybervena.com
+  server: 57.129.121.230
+  port: 10443
+  cipher: chacha20-ietf-poly1305
+  password: uROuEqsL8IUMMVb4wDwnGU
+- name: SS-C20P-🇦🇺(AU)-104.156.233.234
+  type: ss
+  server: 104.156.233.234
+  port: 27116
+  cipher: chacha20-ietf-poly1305
+  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187
+  type: ss
+  server: 141.164.45.187
+  port: 5001
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_1
+  type: ss
+  server: 141.164.45.187
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_2
+  type: ss
+  server: 141.164.45.187
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187_3
+  type: ss
+  server: 141.164.45.187
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: SS-C20P-🇹🇼(TW)-61.231.34.200
+  type: ss
+  server: 61.231.34.200
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
@@ -73,14 +91,17 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
   - SS-C20P-🇳🇱(NL)-141.227.152.129
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
   - SS-C20P-🇬🇧(GB)-194.164.92.198
-  - SS-C20P-🇹🇼(TW)-114.25.8.186
-  - SS-C20P-🇹🇼(TW)-61.231.34.200
+  - SS-C20P-🇫🇷(FR)-137.74.119.18
   - SS-A256GCM-🇮🇹(IT)-185.198.235.208
-  - SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
+  - SS-C20P-🇩🇪(DE)-57.129.121.230
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
+  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_1
+  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_2
+  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_3
+  - SS-C20P-🇹🇼(TW)-61.231.34.200
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -98,14 +119,17 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
   - SS-C20P-🇳🇱(NL)-141.227.152.129
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
   - SS-C20P-🇬🇧(GB)-194.164.92.198
-  - SS-C20P-🇹🇼(TW)-114.25.8.186
-  - SS-C20P-🇹🇼(TW)-61.231.34.200
+  - SS-C20P-🇫🇷(FR)-137.74.119.18
   - SS-A256GCM-🇮🇹(IT)-185.198.235.208
-  - SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
+  - SS-C20P-🇩🇪(DE)-57.129.121.230
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
+  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_1
+  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_2
+  - SS-A256GCM-🇰🇷(KR)-141.164.45.187_3
+  - SS-C20P-🇹🇼(TW)-61.231.34.200
 rule-providers:
   adblock:
     type: http
