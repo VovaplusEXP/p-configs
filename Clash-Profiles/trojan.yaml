@@ -26,11 +26,40 @@ proxies:
     path: /eyJqdW5rIjoieEN1dmdwUzJYUDJMViIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjkxLjEwNy4xNTguNzciXX0=?ed=2560
     headers:
       Host: bkq52w7fwykfngbkzbcdhlh0ni-9eonw.imjodakiamirwebstudio1300.workers.dev
+- name: TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
+  type: trojan
+  server: 144.31.113.56
+  port: 58371
+  uuid: e0847a89a1664221ad7dbfa85619afc3
+  network: tcp
+  tls: true
+  servername: ymail.com
+  client-fingerprint: chrome
+- name: TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56_1
+  type: trojan
+  server: 144.31.113.56
+  port: 58371
+  uuid: e0847a89a1664221ad7dbfa85619afc3
+  network: tcp
+  tls: true
+  servername: ymail.com
+  client-fingerprint: chrome
+- name: TROJAN-TCP-🇫🇮(FI)-65.109.219.124
+  type: trojan
+  server: 65.109.219.124
+  port: 41393
+  uuid: FNWzI4OwPTNgAFZUUUFjx19m5YfLo3qNXt07tCQ3lZw=
+  network: tcp
+  tls: false
+  servername: 65.109.219.124
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-WS-🇺🇸(US)-172.67.147.237
+  - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
+  - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56_1
+  - TROJAN-TCP-🇫🇮(FI)-65.109.219.124
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -48,6 +77,9 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-WS-🇺🇸(US)-172.67.147.237
+  - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
+  - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56_1
+  - TROJAN-TCP-🇫🇮(FI)-65.109.219.124
 rule-providers:
   adblock:
     type: http
