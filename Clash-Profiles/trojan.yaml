@@ -14,43 +14,30 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-🇺🇸(US)-172.67.147.237
+- name: TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
   type: trojan
-  server: 172.67.147.237
-  port: 80
-  uuid: hDSPGLBpv(g5
-  network: ws
-  tls: false
-  servername: 172.67.147.237
-  ws-opts:
-    path: /eyJqdW5rIjoieEN1dmdwUzJYUDJMViIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjkxLjEwNy4xNTguNzciXX0=?ed=2560
-    headers:
-      Host: bkq52w7fwykfngbkzbcdhlh0ni-9eonw.imjodakiamirwebstudio1300.workers.dev
-- name: TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60
-  type: trojan
-  server: 37.156.45.60
-  port: 4384
-  uuid: '------------BanV2ray-----------'
-  network: grpc
+  server: 144.31.113.56
+  port: 58371
+  uuid: e0847a89a1664221ad7dbfa85619afc3
+  network: tcp
   tls: true
-  servername: world.yahoo.com:443
+  servername: ymail.com
   client-fingerprint: chrome
-- name: TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60_1
+- name: TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56_1
   type: trojan
-  server: 37.156.45.60
-  port: 4384
-  uuid: '------------BanV2ray-----------'
-  network: grpc
+  server: 144.31.113.56
+  port: 58371
+  uuid: e0847a89a1664221ad7dbfa85619afc3
+  network: tcp
   tls: true
-  servername: world.yahoo.com:443
+  servername: ymail.com
   client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-🇺🇸(US)-172.67.147.237
-  - TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60
-  - TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60_1
+  - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
+  - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -67,9 +54,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-🇺🇸(US)-172.67.147.237
-  - TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60
-  - TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60_1
+  - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
+  - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56_1
 rule-providers:
   adblock:
     type: http
