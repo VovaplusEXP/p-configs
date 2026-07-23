@@ -14,24 +14,24 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-A256GCM-🇭🇰(HK)-212.192.15.52
+  type: ss
+  server: 212.192.15.52
+  port: 20166
+  cipher: aes-256-gcm
+  password: 7e1dd4c55bf85da5
 - name: SS-C20P-🇫🇮(FI)-kovirabest4.kovira2.ir
   type: ss
   server: kovirabest4.kovira2.ir
   port: 25026
   cipher: chacha20-ietf-poly1305
   password: ebk8meap37picetb
-- name: SS-C20P-🇦🇺(AU)-45.77.232.213
-  type: ss
-  server: 45.77.232.213
-  port: 15675
-  cipher: chacha20-ietf-poly1305
-  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
+  - SS-A256GCM-🇭🇰(HK)-212.192.15.52
   - SS-C20P-🇫🇮(FI)-kovirabest4.kovira2.ir
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -48,8 +48,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
+  - SS-A256GCM-🇭🇰(HK)-212.192.15.52
   - SS-C20P-🇫🇮(FI)-kovirabest4.kovira2.ir
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
 rule-providers:
   adblock:
     type: http
