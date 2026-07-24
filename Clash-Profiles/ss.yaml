@@ -20,25 +20,32 @@ proxies:
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: bBnV36tzt7MKV75aDZTbzG
-- name: SS-C20P-🇺🇸(US)-198.98.53.130
+- name: SS-C20P-🇦🇺(AU)-104.156.233.234
   type: ss
-  server: 198.98.53.130
-  port: 443
+  server: 104.156.233.234
+  port: 27116
   cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-- name: SS-C20P-🇫🇷(FR)-137.74.119.18
+  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+- name: SS-C20P-🇦🇺(AU)-45.77.232.213
   type: ss
-  server: 137.74.119.18
-  port: 10443
+  server: 45.77.232.213
+  port: 15675
   cipher: chacha20-ietf-poly1305
-  password: diOMBU5IDvJcFqyNPbRjYR
+  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
+- name: SS-C20P-🇹🇼(TW)-namrcg001640lrm.cybervena.com
+  type: ss
+  server: namrcg001640lrm.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: a9a0d092-6f0e-4701-81ee-454643d6d506
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇳🇱(NL)-141.227.152.129
-  - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇦🇺(AU)-45.77.232.213
+  - SS-C20P-🇹🇼(TW)-namrcg001640lrm.cybervena.com
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -56,8 +63,9 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇳🇱(NL)-141.227.152.129
-  - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇦🇺(AU)-45.77.232.213
+  - SS-C20P-🇹🇼(TW)-namrcg001640lrm.cybervena.com
 rule-providers:
   adblock:
     type: http
