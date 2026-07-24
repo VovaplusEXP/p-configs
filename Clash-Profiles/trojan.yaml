@@ -14,7 +14,54 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-WS-🇺🇸(US)-172.67.147.237
+  type: trojan
+  server: 172.67.147.237
+  port: 80
+  uuid: hDSPGLBpv(g5
+  network: ws
+  tls: false
+  servername: 172.67.147.237
+  ws-opts:
+    path: /eyJqdW5rIjoieEN1dmdwUzJYUDJMViIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjkxLjEwNy4xNTguNzciXX0=?ed=2560
+    headers:
+      Host: bkq52w7fwykfngbkzbcdhlh0ni-9eonw.imjodakiamirwebstudio1300.workers.dev
+- name: TROJAN-TCP-🇩🇪(DE)-91.107.159.216
+  type: trojan
+  server: 91.107.159.216
+  port: 20691
+  uuid: zfneB18KGBkbi9IXDaRd4q0Wx1HIZ4pDR8eneJALYkU=
+  network: tcp
+  tls: false
+  servername: 91.107.159.216
 - name: TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60
+  type: trojan
+  server: 37.156.45.60
+  port: 438
+  uuid: '-----------BanV2ray----------'
+  network: grpc
+  tls: true
+  servername: world.yahoo.com:443
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60_1
+  type: trojan
+  server: 37.156.45.60
+  port: 438
+  uuid: '-----------BanV2ray----------'
+  network: grpc
+  tls: true
+  servername: world.yahoo.com:443
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60_2
+  type: trojan
+  server: 37.156.45.60
+  port: 438
+  uuid: '-----------BanV2ray----------'
+  network: grpc
+  tls: true
+  servername: world.yahoo.com:443
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60_3
   type: trojan
   server: 37.156.45.60
   port: 438
@@ -27,7 +74,12 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-WS-🇺🇸(US)-172.67.147.237
+  - TROJAN-TCP-🇩🇪(DE)-91.107.159.216
   - TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60_1
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60_2
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60_3
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -44,7 +96,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-WS-🇺🇸(US)-172.67.147.237
+  - TROJAN-TCP-🇩🇪(DE)-91.107.159.216
   - TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60_1
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60_2
+  - TROJAN-GRPC-REALITY-🇨🇭(CH)-37.156.45.60_3
 rule-providers:
   adblock:
     type: http
