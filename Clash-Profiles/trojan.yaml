@@ -14,33 +14,23 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-🇺🇸(US)-172.67.147.237
+- name: TROJAN-WS-🇩🇪(DE)-de-d-178105.homelanderwins.com
   type: trojan
-  server: 172.67.147.237
-  port: 80
-  uuid: hDSPGLBpv(g5
+  server: de-d-178105.homelanderwins.com
+  port: 44600
+  uuid: ncnr1qxfkf4j1pg1
   network: ws
   tls: false
-  servername: 172.67.147.237
+  servername: de-d-178105.homelanderwins.com
   ws-opts:
-    path: /eyJqdW5rIjoieEN1dmdwUzJYUDJMViIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjkxLjEwNy4xNTguNzciXX0=?ed=2560
+    path: /t.me/defyxvpn_fa
     headers:
-      Host: bkq52w7fwykfngbkzbcdhlh0ni-9eonw.imjodakiamirwebstudio1300.workers.dev
-- name: TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
-  type: trojan
-  server: 144.31.113.56
-  port: 58371
-  uuid: e0847a89a1664221ad7dbfa85619afc3
-  network: tcp
-  tls: true
-  servername: ymail.com
-  client-fingerprint: chrome
+      Host: P30day.ir
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-🇺🇸(US)-172.67.147.237
-  - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
+  - TROJAN-WS-🇩🇪(DE)-de-d-178105.homelanderwins.com
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -57,8 +47,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-🇺🇸(US)-172.67.147.237
-  - TROJAN-TCP-REALITY-🇵🇱(PL)-144.31.113.56
+  - TROJAN-WS-🇩🇪(DE)-de-d-178105.homelanderwins.com
 rule-providers:
   adblock:
     type: http
