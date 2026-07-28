@@ -14,23 +14,19 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-🇺🇸(US)-172.67.147.237
+- name: TROJAN-TCP-🇩🇪(DE)-91.107.139.186
   type: trojan
-  server: 172.67.147.237
-  port: 80
-  uuid: hDSPGLBpv(g5
-  network: ws
+  server: 91.107.139.186
+  port: 30879
+  uuid: h1j3H7aFfh1kKPjusgOBfj2kWDelatQDAMWl3ayMioM=
+  network: tcp
   tls: false
-  servername: 172.67.147.237
-  ws-opts:
-    path: /eyJqdW5rIjoieEN1dmdwUzJYUDJMViIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjkxLjEwNy4xNTguNzciXX0=?ed=2560
-    headers:
-      Host: bkq52w7fwykfngbkzbcdhlh0ni-9eonw.imjodakiamirwebstudio1300.workers.dev
+  servername: 91.107.139.186
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-🇺🇸(US)-172.67.147.237
+  - TROJAN-TCP-🇩🇪(DE)-91.107.139.186
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -47,7 +43,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-🇺🇸(US)-172.67.147.237
+  - TROJAN-TCP-🇩🇪(DE)-91.107.139.186
 rule-providers:
   adblock:
     type: http
