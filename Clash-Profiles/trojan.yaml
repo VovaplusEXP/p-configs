@@ -14,15 +14,30 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-GRPC-REALITY-🇩🇪(DE)-de-d-178105.homelanderwins.com
+- name: TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
   type: trojan
-  server: de-d-178105.homelanderwins.com
-  port: 18617
-  uuid: ncnr1qxfkf4j1pg1
-  network: grpc
-  tls: true
-  servername: www.neshan.org
-  client-fingerprint: chrome
+  server: aged-silence-8d7d.tahaggs.workers.dev
+  port: 8080
+  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
+  network: ws
+  tls: false
+  servername: aged-silence-8d7d.tahaggs.workers.dev
+  ws-opts:
+    path: /taha3
+    headers:
+      Host: aged-silence-8d7d.tahaggs.workers.dev
+- name: TROJAN-WS-🇺🇸(US)-172.67.147.237
+  type: trojan
+  server: 172.67.147.237
+  port: 80
+  uuid: hDSPGLBpv(g5
+  network: ws
+  tls: false
+  servername: 172.67.147.237
+  ws-opts:
+    path: /eyJqdW5rIjoieEN1dmdwUzJYUDJMViIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjkxLjEwNy4xNTguNzciXX0=?ed=2560
+    headers:
+      Host: bkq52w7fwykfngbkzbcdhlh0ni-9eonw.imjodakiamirwebstudio1300.workers.dev
 - name: TROJAN-GRPC-REALITY-🇩🇪(DE)-178.105.213.105
   type: trojan
   server: 178.105.213.105
@@ -32,18 +47,15 @@ proxies:
   tls: true
   servername: www.neshan.org
   client-fingerprint: chrome
-- name: TROJAN-WS-🇩🇪(DE)-178.105.213.105
+- name: TROJAN-GRPC-REALITY-🇩🇪(DE)-de-d-178105.homelanderwins.com
   type: trojan
-  server: 178.105.213.105
-  port: 44600
+  server: de-d-178105.homelanderwins.com
+  port: 18617
   uuid: ncnr1qxfkf4j1pg1
-  network: ws
-  tls: false
-  servername: 178.105.213.105
-  ws-opts:
-    path: /t.me/defyxvpn_fa
-    headers:
-      Host: P30day.ir
+  network: grpc
+  tls: true
+  servername: www.neshan.org
+  client-fingerprint: chrome
 - name: TROJAN-WS-🇩🇪(DE)-de-d-178105.homelanderwins.com
   type: trojan
   server: de-d-178105.homelanderwins.com
@@ -56,14 +68,28 @@ proxies:
     path: /t.me/defyxvpn_fa
     headers:
       Host: P30day.ir
+- name: TROJAN-WS-🇩🇪(DE)-178.105.213.105
+  type: trojan
+  server: 178.105.213.105
+  port: 44600
+  uuid: ncnr1qxfkf4j1pg1
+  network: ws
+  tls: false
+  servername: 178.105.213.105
+  ws-opts:
+    path: /t.me/defyxvpn_fa
+    headers:
+      Host: P30day.ir
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-GRPC-REALITY-🇩🇪(DE)-de-d-178105.homelanderwins.com
+  - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
+  - TROJAN-WS-🇺🇸(US)-172.67.147.237
   - TROJAN-GRPC-REALITY-🇩🇪(DE)-178.105.213.105
-  - TROJAN-WS-🇩🇪(DE)-178.105.213.105
+  - TROJAN-GRPC-REALITY-🇩🇪(DE)-de-d-178105.homelanderwins.com
   - TROJAN-WS-🇩🇪(DE)-de-d-178105.homelanderwins.com
+  - TROJAN-WS-🇩🇪(DE)-178.105.213.105
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -80,10 +106,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-GRPC-REALITY-🇩🇪(DE)-de-d-178105.homelanderwins.com
+  - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
+  - TROJAN-WS-🇺🇸(US)-172.67.147.237
   - TROJAN-GRPC-REALITY-🇩🇪(DE)-178.105.213.105
-  - TROJAN-WS-🇩🇪(DE)-178.105.213.105
+  - TROJAN-GRPC-REALITY-🇩🇪(DE)-de-d-178105.homelanderwins.com
   - TROJAN-WS-🇩🇪(DE)-de-d-178105.homelanderwins.com
+  - TROJAN-WS-🇩🇪(DE)-178.105.213.105
 rule-providers:
   adblock:
     type: http
