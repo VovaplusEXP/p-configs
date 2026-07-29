@@ -14,30 +14,36 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-C20P-🇺🇸(US)-68.168.222.210
+  type: ss
+  server: 68.168.222.210
+  port: 1234
+  cipher: chacha20-ietf-poly1305
+  password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
 - name: SS-C20P-🇳🇱(NL)-141.227.152.129
   type: ss
   server: 141.227.152.129
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: bBnV36tzt7MKV75aDZTbzG
-- name: SS-C20P-🇫🇷(FR)-163.172.244.41
+- name: SS-C20P-🇬🇧(GB)-194.164.92.198
   type: ss
-  server: 163.172.244.41
-  port: 1080
+  server: 194.164.92.198
+  port: 1234
   cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: SS-C20P-🇩🇪(DE)-57.129.121.230
-  type: ss
-  server: 57.129.121.230
-  port: 10443
-  cipher: chacha20-ietf-poly1305
-  password: uROuEqsL8IUMMVb4wDwnGU
+  password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
 - name: SS-C20P-🌐(XX)-185.106.94.132
   type: ss
   server: 185.106.94.132
   port: 1081
   cipher: chacha20-ietf-poly1305
   password: XF0klw7870vXn3uQIxe19Q
+- name: SS-C20P-🇳🇱(NL)-213.109.147.242
+  type: ss
+  server: 213.109.147.242
+  port: 62685
+  cipher: chacha20-ietf-poly1305
+  password: VpKABcOpNNA0l5G2AVOmw8
 - name: SS-C20P-🇦🇺(AU)-45.77.232.213
   type: ss
   server: 45.77.232.213
@@ -48,10 +54,11 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
+  - SS-C20P-🇺🇸(US)-68.168.222.210
   - SS-C20P-🇳🇱(NL)-141.227.152.129
-  - SS-C20P-🇫🇷(FR)-163.172.244.41
-  - SS-C20P-🇩🇪(DE)-57.129.121.230
+  - SS-C20P-🇬🇧(GB)-194.164.92.198
   - SS-C20P-🌐(XX)-185.106.94.132
+  - SS-C20P-🇳🇱(NL)-213.109.147.242
   - SS-C20P-🇦🇺(AU)-45.77.232.213
   tolerance: 50
   lazy: false
@@ -69,10 +76,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
+  - SS-C20P-🇺🇸(US)-68.168.222.210
   - SS-C20P-🇳🇱(NL)-141.227.152.129
-  - SS-C20P-🇫🇷(FR)-163.172.244.41
-  - SS-C20P-🇩🇪(DE)-57.129.121.230
+  - SS-C20P-🇬🇧(GB)-194.164.92.198
   - SS-C20P-🌐(XX)-185.106.94.132
+  - SS-C20P-🇳🇱(NL)-213.109.147.242
   - SS-C20P-🇦🇺(AU)-45.77.232.213
 rule-providers:
   adblock:
