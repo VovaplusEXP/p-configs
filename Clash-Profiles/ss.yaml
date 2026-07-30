@@ -14,18 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇦🇺(AU)-104.156.233.234
-  type: ss
-  server: 104.156.233.234
-  port: 27116
-  cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
-- name: SS-C20P-🇦🇺(AU)-45.77.232.213
-  type: ss
-  server: 45.77.232.213
-  port: 15675
-  cipher: chacha20-ietf-poly1305
-  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
 - name: SS-C20P-🇳🇱(NL)-141.227.152.129
   type: ss
   server: 141.227.152.129
@@ -38,30 +26,18 @@ proxies:
   port: 1234
   cipher: chacha20-ietf-poly1305
   password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
-- name: SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
+- name: SS-C20P-🇳🇱(NL)-213.109.147.242
   type: ss
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
+  server: 213.109.147.242
+  port: 62685
   cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: SS-C20P-🇹🇼(TW)-61.231.49.122
+  password: VpKABcOpNNA0l5G2AVOmw8
+- name: SS-C20P-🇦🇺(AU)-45.77.232.213
   type: ss
-  server: 61.231.49.122
-  port: 50099
+  server: 45.77.232.213
+  port: 15675
   cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com_1
-  type: ss
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
-  type: ss
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
 - name: SS-C20P-🇫🇷(FR)-137.74.119.18
   type: ss
   server: 137.74.119.18
@@ -72,14 +48,10 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
   - SS-C20P-🇳🇱(NL)-141.227.152.129
   - SS-C20P-🇬🇧(GB)-194.164.92.198
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
-  - SS-C20P-🇹🇼(TW)-61.231.49.122
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com_1
-  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  - SS-C20P-🇳🇱(NL)-213.109.147.242
+  - SS-C20P-🇦🇺(AU)-45.77.232.213
   - SS-C20P-🇫🇷(FR)-137.74.119.18
   tolerance: 50
   lazy: false
@@ -97,14 +69,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
   - SS-C20P-🇳🇱(NL)-141.227.152.129
   - SS-C20P-🇬🇧(GB)-194.164.92.198
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
-  - SS-C20P-🇹🇼(TW)-61.231.49.122
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com_1
-  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  - SS-C20P-🇳🇱(NL)-213.109.147.242
+  - SS-C20P-🇦🇺(AU)-45.77.232.213
   - SS-C20P-🇫🇷(FR)-137.74.119.18
 rule-providers:
   adblock:
