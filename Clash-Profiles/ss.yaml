@@ -14,45 +14,17 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇳🇱(NL)-141.227.152.129
+- name: SS-C20P-🇬🇧(GB)-194.164.92.198
   type: ss
-  server: 141.227.152.129
-  port: 8388
+  server: 194.164.92.198
+  port: 1234
   cipher: chacha20-ietf-poly1305
-  password: bBnV36tzt7MKV75aDZTbzG
-- name: SS-A256GCM-🇷🇺(RU)-195.58.48.19
-  type: ss
-  server: 195.58.48.19
-  port: 10910
-  cipher: aes-256-gcm
-  password: 2027e830399d8d08
-- name: SS-C20P-🇦🇺(AU)-45.77.232.213
-  type: ss
-  server: 45.77.232.213
-  port: 15675
-  cipher: chacha20-ietf-poly1305
-  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
-- name: SS-C20P-🇦🇺(AU)-104.156.233.234
-  type: ss
-  server: 104.156.233.234
-  port: 27116
-  cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
-- name: SS-A256GCM-🇭🇰(HK)-212.192.13.25
-  type: ss
-  server: 212.192.13.25
-  port: 10910
-  cipher: aes-256-gcm
-  password: 72553320ae6bcc8f
+  password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇳🇱(NL)-141.227.152.129
-  - SS-A256GCM-🇷🇺(RU)-195.58.48.19
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-A256GCM-🇭🇰(HK)-212.192.13.25
+  - SS-C20P-🇬🇧(GB)-194.164.92.198
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -69,11 +41,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇳🇱(NL)-141.227.152.129
-  - SS-A256GCM-🇷🇺(RU)-195.58.48.19
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-A256GCM-🇭🇰(HK)-212.192.13.25
+  - SS-C20P-🇬🇧(GB)-194.164.92.198
 rule-providers:
   adblock:
     type: http
