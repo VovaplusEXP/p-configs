@@ -14,66 +14,45 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-68.168.222.210
+- name: SS-C20P-🇳🇱(NL)-141.227.152.129
   type: ss
-  server: 68.168.222.210
-  port: 1234
+  server: 141.227.152.129
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
+  password: bBnV36tzt7MKV75aDZTbzG
 - name: SS-A256GCM-🇷🇺(RU)-195.133.23.200
   type: ss
   server: 195.133.23.200
   port: 10991
   cipher: aes-256-gcm
   password: 81a20429165df87e
-- name: SS-A256GCM-🇷🇺(RU)-195.133.5.207
+- name: SS-C20P-🇫🇷(FR)-137.74.119.18
   type: ss
-  server: 195.133.5.207
-  port: 20188
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-- name: SS-C20P-🇦🇺(AU)-104.156.233.234
-  type: ss
-  server: 104.156.233.234
-  port: 27116
+  server: 137.74.119.18
+  port: 10443
   cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
-- name: SS-C20P-🇦🇺(AU)-45.77.232.213
-  type: ss
-  server: 45.77.232.213
-  port: 15675
-  cipher: chacha20-ietf-poly1305
-  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
-- name: SS-C20P-🇯🇵(JP)-xunlinknode.csdjhajkshdjkas.com
-  type: ss
-  server: xunlinknode.csdjhajkshdjkas.com
-  port: 40003
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
-- name: SS-C20P-🇲🇾(MY)-xunlinknode.csdjhajkshdjkas.com
-  type: ss
-  server: xunlinknode.csdjhajkshdjkas.com
-  port: 40006
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
+  password: diOMBU5IDvJcFqyNPbRjYR
 - name: SS-C20P-🇸🇪(SE)-creativeboxlv.zanity.net
   type: ss
   server: creativeboxlv.zanity.net
   port: 5228
   cipher: chacha20-ietf-poly1305
   password: JlOogWdbpnfIWiJ1KyvzMw
+- name: SS-C20P-🇦🇺(AU)-45.77.232.213
+  type: ss
+  server: 45.77.232.213
+  port: 15675
+  cipher: chacha20-ietf-poly1305
+  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-68.168.222.210
+  - SS-C20P-🇳🇱(NL)-141.227.152.129
   - SS-A256GCM-🇷🇺(RU)-195.133.23.200
-  - SS-A256GCM-🇷🇺(RU)-195.133.5.207
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇯🇵(JP)-xunlinknode.csdjhajkshdjkas.com
-  - SS-C20P-🇲🇾(MY)-xunlinknode.csdjhajkshdjkas.com
+  - SS-C20P-🇫🇷(FR)-137.74.119.18
   - SS-C20P-🇸🇪(SE)-creativeboxlv.zanity.net
+  - SS-C20P-🇦🇺(AU)-45.77.232.213
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -90,14 +69,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-68.168.222.210
+  - SS-C20P-🇳🇱(NL)-141.227.152.129
   - SS-A256GCM-🇷🇺(RU)-195.133.23.200
-  - SS-A256GCM-🇷🇺(RU)-195.133.5.207
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇯🇵(JP)-xunlinknode.csdjhajkshdjkas.com
-  - SS-C20P-🇲🇾(MY)-xunlinknode.csdjhajkshdjkas.com
+  - SS-C20P-🇫🇷(FR)-137.74.119.18
   - SS-C20P-🇸🇪(SE)-creativeboxlv.zanity.net
+  - SS-C20P-🇦🇺(AU)-45.77.232.213
 rule-providers:
   adblock:
     type: http
