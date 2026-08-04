@@ -14,45 +14,45 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-C20P-🇺🇸(US)-68.168.222.210
+  type: ss
+  server: 68.168.222.210
+  port: 1234
+  cipher: chacha20-ietf-poly1305
+  password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
 - name: SS-C20P-🇳🇱(NL)-141.227.152.129
   type: ss
   server: 141.227.152.129
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: bBnV36tzt7MKV75aDZTbzG
-- name: SS-A256GCM-🇷🇺(RU)-195.133.23.200
-  type: ss
-  server: 195.133.23.200
-  port: 10991
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-- name: SS-C20P-🇫🇷(FR)-137.74.119.18
-  type: ss
-  server: 137.74.119.18
-  port: 10443
-  cipher: chacha20-ietf-poly1305
-  password: diOMBU5IDvJcFqyNPbRjYR
-- name: SS-C20P-🇸🇪(SE)-creativeboxlv.zanity.net
-  type: ss
-  server: creativeboxlv.zanity.net
-  port: 5228
-  cipher: chacha20-ietf-poly1305
-  password: JlOogWdbpnfIWiJ1KyvzMw
 - name: SS-C20P-🇦🇺(AU)-45.77.232.213
   type: ss
   server: 45.77.232.213
   port: 15675
   cipher: chacha20-ietf-poly1305
   password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
+- name: SS-C20P-🇹🇼(TW)-ncmrcg000116egb.cybervena.com
+  type: ss
+  server: ncmrcg000116egb.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇸🇪(SE)-creativeboxlv.zanity.net
+  type: ss
+  server: creativeboxlv.zanity.net
+  port: 5228
+  cipher: chacha20-ietf-poly1305
+  password: JlOogWdbpnfIWiJ1KyvzMw
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
+  - SS-C20P-🇺🇸(US)-68.168.222.210
   - SS-C20P-🇳🇱(NL)-141.227.152.129
-  - SS-A256GCM-🇷🇺(RU)-195.133.23.200
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
-  - SS-C20P-🇸🇪(SE)-creativeboxlv.zanity.net
   - SS-C20P-🇦🇺(AU)-45.77.232.213
+  - SS-C20P-🇹🇼(TW)-ncmrcg000116egb.cybervena.com
+  - SS-C20P-🇸🇪(SE)-creativeboxlv.zanity.net
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -69,11 +69,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
+  - SS-C20P-🇺🇸(US)-68.168.222.210
   - SS-C20P-🇳🇱(NL)-141.227.152.129
-  - SS-A256GCM-🇷🇺(RU)-195.133.23.200
-  - SS-C20P-🇫🇷(FR)-137.74.119.18
-  - SS-C20P-🇸🇪(SE)-creativeboxlv.zanity.net
   - SS-C20P-🇦🇺(AU)-45.77.232.213
+  - SS-C20P-🇹🇼(TW)-ncmrcg000116egb.cybervena.com
+  - SS-C20P-🇸🇪(SE)-creativeboxlv.zanity.net
 rule-providers:
   adblock:
     type: http
