@@ -26,33 +26,40 @@ proxies:
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: bBnV36tzt7MKV75aDZTbzG
-- name: SS-C20P-🇦🇺(AU)-45.77.232.213
-  type: ss
-  server: 45.77.232.213
-  port: 15675
-  cipher: chacha20-ietf-poly1305
-  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
-- name: SS-C20P-🇹🇼(TW)-ncmrcg000116egb.cybervena.com
-  type: ss
-  server: ncmrcg000116egb.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: SS-C20P-🇸🇪(SE)-creativeboxlv.zanity.net
   type: ss
   server: creativeboxlv.zanity.net
   port: 5228
   cipher: chacha20-ietf-poly1305
   password: JlOogWdbpnfIWiJ1KyvzMw
+- name: SS-C20P-🇦🇺(AU)-104.156.233.234
+  type: ss
+  server: 104.156.233.234
+  port: 27116
+  cipher: chacha20-ietf-poly1305
+  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+- name: SS-C20P-🇦🇺(AU)-45.77.232.213
+  type: ss
+  server: 45.77.232.213
+  port: 15675
+  cipher: chacha20-ietf-poly1305
+  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
+- name: SS-C20P-🇹🇼(TW)-36.224.147.65
+  type: ss
+  server: 36.224.147.65
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-68.168.222.210
   - SS-C20P-🇳🇱(NL)-141.227.152.129
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇹🇼(TW)-ncmrcg000116egb.cybervena.com
   - SS-C20P-🇸🇪(SE)-creativeboxlv.zanity.net
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇦🇺(AU)-45.77.232.213
+  - SS-C20P-🇹🇼(TW)-36.224.147.65
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -71,9 +78,10 @@ proxy-groups:
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-68.168.222.210
   - SS-C20P-🇳🇱(NL)-141.227.152.129
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇹🇼(TW)-ncmrcg000116egb.cybervena.com
   - SS-C20P-🇸🇪(SE)-creativeboxlv.zanity.net
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇦🇺(AU)-45.77.232.213
+  - SS-C20P-🇹🇼(TW)-36.224.147.65
 rule-providers:
   adblock:
     type: http
