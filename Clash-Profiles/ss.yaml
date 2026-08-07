@@ -37,13 +37,19 @@ proxies:
   server: namrcg001640lrm.cybervena.com
   port: 50099
   cipher: chacha20-ietf-poly1305
-  password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56
-- name: SS-C20P-🇹🇼(TW)-namrcg001640lrm.cybervena.com_1
+  password: a9a0d092-6f0e-4701-81ee-454643d6d506
+- name: SS-C20P-🇹🇼(TW)-36.224.177.236
   type: ss
-  server: namrcg001640lrm.cybervena.com
+  server: 36.224.177.236
   port: 50099
   cipher: chacha20-ietf-poly1305
-  password: a9a0d092-6f0e-4701-81ee-454643d6d506
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇹🇼(TW)-36.224.147.65
+  type: ss
+  server: 36.224.147.65
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
@@ -52,7 +58,8 @@ proxy-groups:
   - SS-C20P-🇦🇺(AU)-45.77.232.213
   - SS-C20P-🇦🇺(AU)-104.156.233.234
   - SS-C20P-🇹🇼(TW)-namrcg001640lrm.cybervena.com
-  - SS-C20P-🇹🇼(TW)-namrcg001640lrm.cybervena.com_1
+  - SS-C20P-🇹🇼(TW)-36.224.177.236
+  - SS-C20P-🇹🇼(TW)-36.224.147.65
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -73,7 +80,8 @@ proxy-groups:
   - SS-C20P-🇦🇺(AU)-45.77.232.213
   - SS-C20P-🇦🇺(AU)-104.156.233.234
   - SS-C20P-🇹🇼(TW)-namrcg001640lrm.cybervena.com
-  - SS-C20P-🇹🇼(TW)-namrcg001640lrm.cybervena.com_1
+  - SS-C20P-🇹🇼(TW)-36.224.177.236
+  - SS-C20P-🇹🇼(TW)-36.224.147.65
 rule-providers:
   adblock:
     type: http
