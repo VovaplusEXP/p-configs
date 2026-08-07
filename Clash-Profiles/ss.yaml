@@ -20,46 +20,39 @@ proxies:
   port: 1234
   cipher: chacha20-ietf-poly1305
   password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
-- name: SS-C20P-🇦🇺(AU)-45.77.232.213
+- name: SS-C20P-🇬🇧(GB)-194.164.92.198
   type: ss
-  server: 45.77.232.213
-  port: 15675
+  server: 194.164.92.198
+  port: 1234
   cipher: chacha20-ietf-poly1305
-  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
+  password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
 - name: SS-C20P-🇦🇺(AU)-104.156.233.234
   type: ss
   server: 104.156.233.234
   port: 27116
   cipher: chacha20-ietf-poly1305
   password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+- name: SS-C20P-🇦🇺(AU)-45.77.232.213
+  type: ss
+  server: 45.77.232.213
+  port: 15675
+  cipher: chacha20-ietf-poly1305
+  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
 - name: SS-C20P-🇹🇼(TW)-namrcg001640lrm.cybervena.com
   type: ss
   server: namrcg001640lrm.cybervena.com
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: a9a0d092-6f0e-4701-81ee-454643d6d506
-- name: SS-C20P-🇹🇼(TW)-36.224.177.236
-  type: ss
-  server: 36.224.177.236
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: SS-C20P-🇹🇼(TW)-36.224.147.65
-  type: ss
-  server: 36.224.147.65
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-68.168.222.210
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
+  - SS-C20P-🇬🇧(GB)-194.164.92.198
   - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇦🇺(AU)-45.77.232.213
   - SS-C20P-🇹🇼(TW)-namrcg001640lrm.cybervena.com
-  - SS-C20P-🇹🇼(TW)-36.224.177.236
-  - SS-C20P-🇹🇼(TW)-36.224.147.65
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -77,11 +70,10 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-68.168.222.210
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
+  - SS-C20P-🇬🇧(GB)-194.164.92.198
   - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇦🇺(AU)-45.77.232.213
   - SS-C20P-🇹🇼(TW)-namrcg001640lrm.cybervena.com
-  - SS-C20P-🇹🇼(TW)-36.224.177.236
-  - SS-C20P-🇹🇼(TW)-36.224.147.65
 rule-providers:
   adblock:
     type: http
