@@ -14,45 +14,31 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-68.168.222.210
-  type: ss
-  server: 68.168.222.210
-  port: 1234
-  cipher: chacha20-ietf-poly1305
-  password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
-- name: SS-C20P-🇦🇺(AU)-104.156.233.234
-  type: ss
-  server: 104.156.233.234
-  port: 27116
-  cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
-- name: SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
-  type: ss
-  server: au1.levikogjgfdd.ir
-  port: 27116
-  cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
 - name: SS-C20P-🇦🇺(AU)-45.77.232.213
   type: ss
   server: 45.77.232.213
   port: 15675
   cipher: chacha20-ietf-poly1305
   password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
-- name: SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
+- name: SS-C20P-🇦🇺(AU)-104.156.233.234
   type: ss
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
+  server: 104.156.233.234
+  port: 27116
   cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+- name: SS-C20P-🇳🇱(NL)-213.109.147.242
+  type: ss
+  server: 213.109.147.242
+  port: 62685
+  cipher: chacha20-ietf-poly1305
+  password: VpKABcOpNNA0l5G2AVOmw8
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-68.168.222.210
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
   - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇳🇱(NL)-213.109.147.242
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -69,11 +55,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-68.168.222.210
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
   - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇳🇱(NL)-213.109.147.242
 rule-providers:
   adblock:
     type: http
