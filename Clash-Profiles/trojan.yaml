@@ -14,6 +14,18 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-WS-🇹🇷(TR)-nodejs.org
+  type: trojan
+  server: nodejs.org
+  port: 2086
+  uuid: pYzEFqrAjuhwAcVjdu9oMA
+  network: ws
+  tls: false
+  servername: nodejs.org
+  ws-opts:
+    path: /t-ws
+    headers:
+      Host: tr.web.doctor-alan-cloud.ir
 - name: TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
   type: trojan
   server: aged-silence-8d7d.tahaggs.workers.dev
@@ -26,24 +38,12 @@ proxies:
     path: /taha3
     headers:
       Host: aged-silence-8d7d.tahaggs.workers.dev
-- name: TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev_1
-  type: trojan
-  server: aged-silence-8d7d.tahaggs.workers.dev
-  port: 8080
-  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
-  network: ws
-  tls: false
-  servername: aged-silence-8d7d.tahaggs.workers.dev
-  ws-opts:
-    path: /taha3
-    headers:
-      Host: aged-silence-8d7d.tahaggs.workers.dev
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-WS-🇹🇷(TR)-nodejs.org
   - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
-  - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -60,8 +60,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-WS-🇹🇷(TR)-nodejs.org
   - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
-  - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev_1
 rule-providers:
   adblock:
     type: http
