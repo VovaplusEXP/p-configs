@@ -14,17 +14,38 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇫🇮(FI)-65.109.178.10
+- name: SS-C20P-🇺🇸(US)-68.168.222.210
   type: ss
-  server: 65.109.178.10
-  port: 1080
+  server: 68.168.222.210
+  port: 1234
   cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
+  password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
+- name: SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
+  type: ss
+  server: au1.levikogjgfdd.ir
+  port: 27116
+  cipher: chacha20-ietf-poly1305
+  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+- name: SS-C20P-🇦🇺(AU)-45.77.232.213
+  type: ss
+  server: 45.77.232.213
+  port: 15675
+  cipher: chacha20-ietf-poly1305
+  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
+- name: SS-C20P-🇦🇺(AU)-104.156.233.234
+  type: ss
+  server: 104.156.233.234
+  port: 27116
+  cipher: chacha20-ietf-poly1305
+  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇫🇮(FI)-65.109.178.10
+  - SS-C20P-🇺🇸(US)-68.168.222.210
+  - SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
+  - SS-C20P-🇦🇺(AU)-45.77.232.213
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -41,7 +62,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇫🇮(FI)-65.109.178.10
+  - SS-C20P-🇺🇸(US)-68.168.222.210
+  - SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
+  - SS-C20P-🇦🇺(AU)-45.77.232.213
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
 rule-providers:
   adblock:
     type: http
