@@ -22,11 +22,20 @@ proxies:
   network: tcp
   tls: false
   servername: 91.107.139.186
+- name: TROJAN-TCP-🇩🇪(DE)-91.107.139.186_1
+  type: trojan
+  server: 91.107.139.186
+  port: 24227
+  uuid: 0kzEU0GpjBdnug71Mf76r29FUctQg5c+zRy5E6E+5cE=
+  network: tcp
+  tls: false
+  servername: 91.107.139.186
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-TCP-🇩🇪(DE)-91.107.139.186
+  - TROJAN-TCP-🇩🇪(DE)-91.107.139.186_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -44,6 +53,7 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-🇩🇪(DE)-91.107.139.186
+  - TROJAN-TCP-🇩🇪(DE)-91.107.139.186_1
 rule-providers:
   adblock:
     type: http
