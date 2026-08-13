@@ -14,6 +14,18 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
+  type: trojan
+  server: aged-silence-8d7d.tahaggs.workers.dev
+  port: 2086
+  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
+  network: ws
+  tls: false
+  servername: aged-silence-8d7d.tahaggs.workers.dev
+  ws-opts:
+    path: /taha3
+    headers:
+      Host: aged-silence-8d7d.tahaggs.workers.dev
 - name: TROJAN-WS-🇹🇷(TR)-nodejs.org
   type: trojan
   server: nodejs.org
@@ -30,6 +42,7 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
   - TROJAN-WS-🇹🇷(TR)-nodejs.org
   tolerance: 50
   lazy: false
@@ -47,6 +60,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
   - TROJAN-WS-🇹🇷(TR)-nodejs.org
 rule-providers:
   adblock:
