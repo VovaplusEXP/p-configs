@@ -14,33 +14,33 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇵🇱(PL)-pl134.vpnbook.com
-  type: ss
-  server: pl134.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ytw2awn
 - name: SS-C20P-🇦🇺(AU)-45.77.232.213
   type: ss
   server: 45.77.232.213
   port: 15675
   cipher: chacha20-ietf-poly1305
   password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
-- name: SS-C20P-🇦🇺(AU)-104.156.233.234
-  type: ss
-  server: 104.156.233.234
-  port: 27116
-  cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
 - name: SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
   type: ss
   server: au1.levikogjgfdd.ir
   port: 27116
   cipher: chacha20-ietf-poly1305
   password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
-- name: SS-C20P-🇵🇱(PL)-54.36.174.134
+- name: SS-C20P-🇦🇺(AU)-104.156.233.234
   type: ss
-  server: 54.36.174.134
+  server: 104.156.233.234
+  port: 27116
+  cipher: chacha20-ietf-poly1305
+  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+- name: SS-C20P-🇳🇱(NL)-89.125.33.16
+  type: ss
+  server: 89.125.33.16
+  port: 1234
+  cipher: chacha20-ietf-poly1305
+  password: 36-MSsmwqV497atZ2dngqyJegd2kT6gf
+- name: SS-C20P-🇵🇱(PL)-pl134.vpnbook.com
+  type: ss
+  server: pl134.vpnbook.com
   port: 443
   cipher: chacha20-ietf-poly1305
   password: ytw2awn
@@ -48,11 +48,11 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇵🇱(PL)-pl134.vpnbook.com
   - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
   - SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
-  - SS-C20P-🇵🇱(PL)-54.36.174.134
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇳🇱(NL)-89.125.33.16
+  - SS-C20P-🇵🇱(PL)-pl134.vpnbook.com
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -69,11 +69,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇵🇱(PL)-pl134.vpnbook.com
   - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
   - SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
-  - SS-C20P-🇵🇱(PL)-54.36.174.134
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇳🇱(NL)-89.125.33.16
+  - SS-C20P-🇵🇱(PL)-pl134.vpnbook.com
 rule-providers:
   adblock:
     type: http
