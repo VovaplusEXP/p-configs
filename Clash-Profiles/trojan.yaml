@@ -14,19 +14,23 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-🇩🇪(DE)-91.107.139.186
+- name: TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
   type: trojan
-  server: 91.107.139.186
-  port: 24227
-  uuid: 0kzEU0GpjBdnug71Mf76r29FUctQg5c+zRy5E6E+5cE=
-  network: tcp
+  server: aged-silence-8d7d.tahaggs.workers.dev
+  port: 2086
+  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
+  network: ws
   tls: false
-  servername: 91.107.139.186
+  servername: aged-silence-8d7d.tahaggs.workers.dev
+  ws-opts:
+    path: /taha3
+    headers:
+      Host: aged-silence-8d7d.tahaggs.workers.dev
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-🇩🇪(DE)-91.107.139.186
+  - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -43,7 +47,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-🇩🇪(DE)-91.107.139.186
+  - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
 rule-providers:
   adblock:
     type: http
