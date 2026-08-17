@@ -14,24 +14,45 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇳🇱(NL)-37.252.20.41
+- name: SS-C20P-🇯🇵(JP)-108.61.223.231
   type: ss
-  server: 37.252.20.41
-  port: 150
+  server: 108.61.223.231
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: xKUIJK-B4eSS7l1_hgJP-A
+  password: WbEN0g6Rbnsye8EJZz94OF
+- name: SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
+  type: ss
+  server: au1.levikogjgfdd.ir
+  port: 27116
+  cipher: chacha20-ietf-poly1305
+  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
 - name: SS-C20P-🇦🇺(AU)-45.77.232.213
   type: ss
   server: 45.77.232.213
   port: 15675
   cipher: chacha20-ietf-poly1305
   password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
+- name: SS-C20P-🇦🇺(AU)-104.156.233.234
+  type: ss
+  server: 104.156.233.234
+  port: 27116
+  cipher: chacha20-ietf-poly1305
+  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+- name: SS-C20P-🇩🇪(DE)-51.195.126.38
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇳🇱(NL)-37.252.20.41
+  - SS-C20P-🇯🇵(JP)-108.61.223.231
+  - SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
   - SS-C20P-🇦🇺(AU)-45.77.232.213
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇩🇪(DE)-51.195.126.38
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -48,8 +69,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇳🇱(NL)-37.252.20.41
+  - SS-C20P-🇯🇵(JP)-108.61.223.231
+  - SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
   - SS-C20P-🇦🇺(AU)-45.77.232.213
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
+  - SS-C20P-🇩🇪(DE)-51.195.126.38
 rule-providers:
   adblock:
     type: http
