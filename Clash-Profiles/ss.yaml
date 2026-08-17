@@ -14,6 +14,12 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-C20P-🇳🇱(NL)-37.252.20.41
+  type: ss
+  server: 37.252.20.41
+  port: 150
+  cipher: chacha20-ietf-poly1305
+  password: xKUIJK-B4eSS7l1_hgJP-A
 - name: SS-C20P-🇦🇺(AU)-45.77.232.213
   type: ss
   server: 45.77.232.213
@@ -24,6 +30,7 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
+  - SS-C20P-🇳🇱(NL)-37.252.20.41
   - SS-C20P-🇦🇺(AU)-45.77.232.213
   tolerance: 50
   lazy: false
@@ -41,6 +48,7 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
+  - SS-C20P-🇳🇱(NL)-37.252.20.41
   - SS-C20P-🇦🇺(AU)-45.77.232.213
 rule-providers:
   adblock:
