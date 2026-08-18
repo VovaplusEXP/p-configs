@@ -38,12 +38,32 @@ proxies:
     path: /taha3
     headers:
       Host: aged-silence-8d7d.tahaggs.workers.dev
+- name: TROJAN-TCP-REALITY-🇳🇱(NL)-nl.techdatacloud.org
+  type: trojan
+  server: nl.techdatacloud.org
+  port: 8443
+  uuid: 5e19b3c8-c1dc-4163-95e2-895319c15d6c
+  network: tcp
+  tls: true
+  servername: cloud.mail.ru
+  client-fingerprint: chrome
+- name: TROJAN-TCP-REALITY-🇳🇱(NL)-nl2.techdatacloud.org
+  type: trojan
+  server: nl2.techdatacloud.org
+  port: 8443
+  uuid: 5e19b3c8-c1dc-4163-95e2-895319c15d6c
+  network: tcp
+  tls: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
   - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev_1
+  - TROJAN-TCP-REALITY-🇳🇱(NL)-nl.techdatacloud.org
+  - TROJAN-TCP-REALITY-🇳🇱(NL)-nl2.techdatacloud.org
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -62,6 +82,8 @@ proxy-groups:
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
   - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev_1
+  - TROJAN-TCP-REALITY-🇳🇱(NL)-nl.techdatacloud.org
+  - TROJAN-TCP-REALITY-🇳🇱(NL)-nl2.techdatacloud.org
 rule-providers:
   adblock:
     type: http
