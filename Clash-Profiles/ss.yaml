@@ -14,18 +14,12 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇵🇱(PL)-pl140.vpnbook.com
+- name: SS-A256GCM-🇨🇦(CA)-155.138.136.240
   type: ss
-  server: pl140.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ytw2awn
-- name: SS-C20P-🇫🇷(FR)-51.255.13.232
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
+  server: 155.138.136.240
+  port: 80
+  cipher: aes-256-gcm
+  password: sZSZi7tGs9wodT7k
 - name: SS-C20P-🇫🇷(FR)-fr3.levikogjgfdd.ir
   type: ss
   server: fr3.levikogjgfdd.ir
@@ -44,15 +38,21 @@ proxies:
   port: 443
   cipher: chacha20-ietf-poly1305
   password: ytw2awn
+- name: SS-C20P-🇫🇷(FR)-51.255.13.232
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+- name: SS-C20P-🇵🇱(PL)-pl140.vpnbook.com
+  type: ss
+  server: pl140.vpnbook.com
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: ytw2awn
 - name: SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
   type: ss
   server: au1.levikogjgfdd.ir
-  port: 27116
-  cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
-- name: SS-C20P-🇦🇺(AU)-104.156.233.234
-  type: ss
-  server: 104.156.233.234
   port: 27116
   cipher: chacha20-ietf-poly1305
   password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
@@ -62,6 +62,12 @@ proxies:
   port: 15675
   cipher: chacha20-ietf-poly1305
   password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
+- name: SS-C20P-🇦🇺(AU)-104.156.233.234
+  type: ss
+  server: 104.156.233.234
+  port: 27116
+  cipher: chacha20-ietf-poly1305
+  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
 - name: SS-C20P-🇨🇦(CA)-142.4.216.225
   type: ss
   server: 142.4.216.225
@@ -72,14 +78,15 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇵🇱(PL)-pl140.vpnbook.com
-  - SS-C20P-🇫🇷(FR)-51.255.13.232
+  - SS-A256GCM-🇨🇦(CA)-155.138.136.240
   - SS-C20P-🇫🇷(FR)-fr3.levikogjgfdd.ir
   - SS-C20P-🇩🇪(DE)-51.195.126.38
   - SS-C20P-🇵🇱(PL)-54.36.174.140
+  - SS-C20P-🇫🇷(FR)-51.255.13.232
+  - SS-C20P-🇵🇱(PL)-pl140.vpnbook.com
   - SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
   - SS-C20P-🇦🇺(AU)-45.77.232.213
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
   - SS-C20P-🇨🇦(CA)-142.4.216.225
   tolerance: 50
   lazy: false
@@ -97,14 +104,15 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇵🇱(PL)-pl140.vpnbook.com
-  - SS-C20P-🇫🇷(FR)-51.255.13.232
+  - SS-A256GCM-🇨🇦(CA)-155.138.136.240
   - SS-C20P-🇫🇷(FR)-fr3.levikogjgfdd.ir
   - SS-C20P-🇩🇪(DE)-51.195.126.38
   - SS-C20P-🇵🇱(PL)-54.36.174.140
+  - SS-C20P-🇫🇷(FR)-51.255.13.232
+  - SS-C20P-🇵🇱(PL)-pl140.vpnbook.com
   - SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
   - SS-C20P-🇦🇺(AU)-45.77.232.213
+  - SS-C20P-🇦🇺(AU)-104.156.233.234
   - SS-C20P-🇨🇦(CA)-142.4.216.225
 rule-providers:
   adblock:
