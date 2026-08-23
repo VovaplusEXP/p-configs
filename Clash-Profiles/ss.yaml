@@ -14,94 +14,59 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-A256GCM-🇨🇦(CA)-155.138.136.240
+- name: SS-A256GCM-🇭🇰(HK)-212.192.13.121
   type: ss
-  server: 155.138.136.240
-  port: 80
+  server: 212.192.13.121
+  port: 20990
   cipher: aes-256-gcm
-  password: sZSZi7tGs9wodT7k
-- name: SS-A256GCM-🇨🇦(CA)-155.138.136.240_1
+  password: 72553320ae6bcc8f
+- name: SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
   type: ss
-  server: 155.138.136.240
-  port: 443
-  cipher: aes-256-gcm
-  password: sZSZi7tGs9wodT7k
-- name: SS-C20P-🇨🇦(CA)-142.4.216.225
-  type: ss
-  server: 142.4.216.225
-  port: 443
+  server: r3mrcg00129437x.cybervena.com
+  port: 50099
   cipher: chacha20-ietf-poly1305
-  password: ytw2awn
-- name: SS-C20P-🇵🇱(PL)-pl140.vpnbook.com
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+- name: SS-aes-128-gcm-🇮🇳(IN)-mn.qwer-cn.org
   type: ss
-  server: pl140.vpnbook.com
-  port: 443
+  server: mn.qwer-cn.org
+  port: 10928
+  cipher: aes-128-gcm
+  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+- name: SS-C20P-🇹🇼(TW)-114.25.9.70
+  type: ss
+  server: 114.25.9.70
+  port: 50099
   cipher: chacha20-ietf-poly1305
-  password: ytw2awn
-- name: SS-C20P-🇵🇱(PL)-54.36.174.140
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+- name: SS-aes-128-gcm-🇹🇼(TW)-mn.qwer-cn.org
   type: ss
-  server: 54.36.174.140
-  port: 443
+  server: mn.qwer-cn.org
+  port: 10936
+  cipher: aes-128-gcm
+  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+- name: SS-aes-128-gcm-🇦🇺(AU)-mn.qwer-cn.org
+  type: ss
+  server: mn.qwer-cn.org
+  port: 10927
+  cipher: aes-128-gcm
+  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+- name: SS-C20P-🇹🇼(TW)-114.25.9.70_1
+  type: ss
+  server: 114.25.9.70
+  port: 50099
   cipher: chacha20-ietf-poly1305
-  password: ytw2awn
-- name: SS-C20P-🇩🇪(DE)-51.195.126.38
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-- name: SS-A256GCM-🇮🇹(IT)-194.87.47.97
-  type: ss
-  server: 194.87.47.97
-  port: 10901
-  cipher: aes-256-gcm
-  password: d1fa2f4b98a38bc8
-- name: SS-A256GCM-🇷🇺(RU)-46.17.40.234
-  type: ss
-  server: 46.17.40.234
-  port: 40112
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-- name: SS-C20P-🇫🇮(FI)-62.210.249.24
-  type: ss
-  server: 62.210.249.24
-  port: 33
-  cipher: chacha20-ietf-poly1305
-  password: qDzHgyQ3wFYKE3Uw0r8huBrFSHj_PuUW
-- name: SS-C20P-🇦🇺(AU)-104.156.233.234
-  type: ss
-  server: 104.156.233.234
-  port: 27116
-  cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
-- name: SS-C20P-🇦🇺(AU)-45.77.232.213
-  type: ss
-  server: 45.77.232.213
-  port: 15675
-  cipher: chacha20-ietf-poly1305
-  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
-- name: SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
-  type: ss
-  server: au1.levikogjgfdd.ir
-  port: 27116
-  cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-A256GCM-🇨🇦(CA)-155.138.136.240
-  - SS-A256GCM-🇨🇦(CA)-155.138.136.240_1
-  - SS-C20P-🇨🇦(CA)-142.4.216.225
-  - SS-C20P-🇵🇱(PL)-pl140.vpnbook.com
-  - SS-C20P-🇵🇱(PL)-54.36.174.140
-  - SS-C20P-🇩🇪(DE)-51.195.126.38
-  - SS-A256GCM-🇮🇹(IT)-194.87.47.97
-  - SS-A256GCM-🇷🇺(RU)-46.17.40.234
-  - SS-C20P-🇫🇮(FI)-62.210.249.24
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
+  - SS-A256GCM-🇭🇰(HK)-212.192.13.121
+  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
+  - SS-aes-128-gcm-🇮🇳(IN)-mn.qwer-cn.org
+  - SS-C20P-🇹🇼(TW)-114.25.9.70
+  - SS-aes-128-gcm-🇹🇼(TW)-mn.qwer-cn.org
+  - SS-aes-128-gcm-🇦🇺(AU)-mn.qwer-cn.org
+  - SS-C20P-🇹🇼(TW)-114.25.9.70_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -118,18 +83,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-A256GCM-🇨🇦(CA)-155.138.136.240
-  - SS-A256GCM-🇨🇦(CA)-155.138.136.240_1
-  - SS-C20P-🇨🇦(CA)-142.4.216.225
-  - SS-C20P-🇵🇱(PL)-pl140.vpnbook.com
-  - SS-C20P-🇵🇱(PL)-54.36.174.140
-  - SS-C20P-🇩🇪(DE)-51.195.126.38
-  - SS-A256GCM-🇮🇹(IT)-194.87.47.97
-  - SS-A256GCM-🇷🇺(RU)-46.17.40.234
-  - SS-C20P-🇫🇮(FI)-62.210.249.24
-  - SS-C20P-🇦🇺(AU)-104.156.233.234
-  - SS-C20P-🇦🇺(AU)-45.77.232.213
-  - SS-C20P-🇦🇺(AU)-au1.levikogjgfdd.ir
+  - SS-A256GCM-🇭🇰(HK)-212.192.13.121
+  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
+  - SS-aes-128-gcm-🇮🇳(IN)-mn.qwer-cn.org
+  - SS-C20P-🇹🇼(TW)-114.25.9.70
+  - SS-aes-128-gcm-🇹🇼(TW)-mn.qwer-cn.org
+  - SS-aes-128-gcm-🇦🇺(AU)-mn.qwer-cn.org
+  - SS-C20P-🇹🇼(TW)-114.25.9.70_1
 rule-providers:
   adblock:
     type: http
