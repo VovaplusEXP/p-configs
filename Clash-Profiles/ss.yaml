@@ -14,101 +14,80 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-152.67.250.45
+- name: SS-A256GCM-🇨🇦(CA)-155.138.136.240
   type: ss
-  server: 152.67.250.45
-  port: 52345
-  cipher: chacha20-ietf-poly1305
-  password: 5d79906d-89ab-430b-acbc-3327568a5be3
-- name: SS-C20P-🇫🇷(FR)-104.105.202.31
-  type: ss
-  server: 104.105.202.31
-  port: 1959
-  cipher: chacha20-ietf-poly1305
-  password: Y8TaKQMncgi8nl_dNnLjQRUAmT4hZga7
-- name: SS-C20P-🇫🇷(FR)-104.105.202.31_1
-  type: ss
-  server: 104.105.202.31
-  port: 1111
-  cipher: chacha20-ietf-poly1305
-  password: Y8TaKQMncgi8nl_dNnLjQRUAmT4hZga7
-- name: SS-C20P-🇫🇷(FR)-141.253.107.174
-  type: ss
-  server: 141.253.107.174
-  port: 22345
-  cipher: chacha20-ietf-poly1305
-  password: 5d79906d-89ab-430b-acbc-3327568a5be3
-- name: SS-C20P-🇫🇷(FR)-fr3.levikogjgfdd.ir
-  type: ss
-  server: fr3.levikogjgfdd.ir
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: SS-C20P-🇫🇷(FR)-51.255.13.232
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: SS-C20P-🇵🇱(PL)-pl140.vpnbook.com
-  type: ss
-  server: pl140.vpnbook.com
+  server: 155.138.136.240
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ytw2awn
+  cipher: aes-256-gcm
+  password: sZSZi7tGs9wodT7k
 - name: SS-C20P-🇵🇱(PL)-54.36.174.140
   type: ss
   server: 54.36.174.140
   port: 443
   cipher: chacha20-ietf-poly1305
   password: ytw2awn
-- name: SS-A256GCM-🇸🇬(SG)-139.180.133.90
+- name: SS-C20P-🇵🇱(PL)-pl140.vpnbook.com
   type: ss
-  server: 139.180.133.90
-  port: 80
-  cipher: aes-256-gcm
-  password: jSU7bGKupQ96YFvf
-- name: SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
-  type: ss
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
+  server: pl140.vpnbook.com
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  password: ytw2awn
+- name: SS-C20P-🇫🇷(FR)-fr3.levikogjgfdd.ir
   type: ss
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
+  server: fr3.levikogjgfdd.ir
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  password: BqnqToih0PbU
+- name: SS-C20P-🇵🇱(PL)-pl134.vpnbook.com
+  type: ss
+  server: pl134.vpnbook.com
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: ytw2awn
+- name: SS-C20P-🇩🇪(DE)-51.195.126.38
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
 - name: SS-C20P-🇱🇹(LT)-144.31.243.2
   type: ss
   server: 144.31.243.2
   port: 16015
   cipher: chacha20-ietf-poly1305
   password: J1InuU6QRT5JOh1mQfkjU2
-- name: SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com_1
+- name: SS-A256GCM-🇩🇰(DK)-iran-kala.xyz
   type: ss
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  server: iran-kala.xyz
+  port: 27112
+  cipher: aes-256-gcm
+  password: ad06bdb6897c43c5b3a20f0f8b569acf
+- name: SS-A256GCM-🇸🇬(SG)-139.180.133.90
+  type: ss
+  server: 139.180.133.90
+  port: 80
+  cipher: aes-256-gcm
+  password: jSU7bGKupQ96YFvf
+- name: SS-A256GCM-🇸🇬(SG)-139.180.133.90_1
+  type: ss
+  server: 139.180.133.90
+  port: 443
+  cipher: aes-256-gcm
+  password: jSU7bGKupQ96YFvf
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-152.67.250.45
-  - SS-C20P-🇫🇷(FR)-104.105.202.31
-  - SS-C20P-🇫🇷(FR)-104.105.202.31_1
-  - SS-C20P-🇫🇷(FR)-141.253.107.174
-  - SS-C20P-🇫🇷(FR)-fr3.levikogjgfdd.ir
-  - SS-C20P-🇫🇷(FR)-51.255.13.232
-  - SS-C20P-🇵🇱(PL)-pl140.vpnbook.com
+  - SS-A256GCM-🇨🇦(CA)-155.138.136.240
   - SS-C20P-🇵🇱(PL)-54.36.174.140
-  - SS-A256GCM-🇸🇬(SG)-139.180.133.90
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
-  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  - SS-C20P-🇵🇱(PL)-pl140.vpnbook.com
+  - SS-C20P-🇫🇷(FR)-fr3.levikogjgfdd.ir
+  - SS-C20P-🇵🇱(PL)-pl134.vpnbook.com
+  - SS-C20P-🇩🇪(DE)-51.195.126.38
   - SS-C20P-🇱🇹(LT)-144.31.243.2
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com_1
+  - SS-A256GCM-🇩🇰(DK)-iran-kala.xyz
+  - SS-A256GCM-🇸🇬(SG)-139.180.133.90
+  - SS-A256GCM-🇸🇬(SG)-139.180.133.90_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -125,19 +104,16 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-152.67.250.45
-  - SS-C20P-🇫🇷(FR)-104.105.202.31
-  - SS-C20P-🇫🇷(FR)-104.105.202.31_1
-  - SS-C20P-🇫🇷(FR)-141.253.107.174
-  - SS-C20P-🇫🇷(FR)-fr3.levikogjgfdd.ir
-  - SS-C20P-🇫🇷(FR)-51.255.13.232
-  - SS-C20P-🇵🇱(PL)-pl140.vpnbook.com
+  - SS-A256GCM-🇨🇦(CA)-155.138.136.240
   - SS-C20P-🇵🇱(PL)-54.36.174.140
-  - SS-A256GCM-🇸🇬(SG)-139.180.133.90
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
-  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  - SS-C20P-🇵🇱(PL)-pl140.vpnbook.com
+  - SS-C20P-🇫🇷(FR)-fr3.levikogjgfdd.ir
+  - SS-C20P-🇵🇱(PL)-pl134.vpnbook.com
+  - SS-C20P-🇩🇪(DE)-51.195.126.38
   - SS-C20P-🇱🇹(LT)-144.31.243.2
-  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com_1
+  - SS-A256GCM-🇩🇰(DK)-iran-kala.xyz
+  - SS-A256GCM-🇸🇬(SG)-139.180.133.90
+  - SS-A256GCM-🇸🇬(SG)-139.180.133.90_1
 rule-providers:
   adblock:
     type: http
