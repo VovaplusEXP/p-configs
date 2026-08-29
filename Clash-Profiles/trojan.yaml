@@ -17,6 +17,18 @@ proxies:
 - name: TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
   type: trojan
   server: aged-silence-8d7d.tahaggs.workers.dev
+  port: 8080
+  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
+  network: ws
+  tls: false
+  servername: aged-silence-8d7d.tahaggs.workers.dev
+  ws-opts:
+    path: /taha3
+    headers:
+      Host: aged-silence-8d7d.tahaggs.workers.dev
+- name: TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev_1
+  type: trojan
+  server: aged-silence-8d7d.tahaggs.workers.dev
   port: 2086
   uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
   network: ws
@@ -26,63 +38,38 @@ proxies:
     path: /taha3
     headers:
       Host: aged-silence-8d7d.tahaggs.workers.dev
-- name: TROJAN-WS-🇺🇸(US)-www.speedtest.net
+- name: TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
   type: trojan
-  server: www.speedtest.net
-  port: 2082
-  uuid: 3cdc222f5fb8f018
+  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  port: 2052
+  uuid: 73796e63-0000-4000-8000-000000000000
   network: ws
   tls: false
-  servername: www.speedtest.net
+  servername: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
   ws-opts:
-    path: /tr/HEGRVuvT3RGjwTkwdVM?ed=2560
+    path: /eyJqdW5rIjoiYjNXNmtMdjh1ME8iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo2fQ==
     headers:
-      Host: channel-fixping.fixpingchannelatomicmailiosaccount.workers.dev
-- name: TROJAN-WS-🇺🇸(US)-www.speedtest.net_1
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev_1
   type: trojan
-  server: www.speedtest.net
-  port: 8080
-  uuid: 3cdc222f5fb8f018
+  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  port: 2052
+  uuid: 73796e63-0000-4000-8000-000000000000
   network: ws
   tls: false
-  servername: www.speedtest.net
+  servername: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
   ws-opts:
-    path: /tr/6WL8AChpUVojSgjFlXXx18XzUEIdMPo?ed=2560
+    path: /eyJqdW5rIjoiYjNXNmtMdjh1ME8iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo2fQ==
     headers:
-      Host: channel-fixping.fixpingchannelatomicmailiosaccount.workers.dev
-- name: TROJAN-WS-🇺🇸(US)-104.21.73.238
-  type: trojan
-  server: 104.21.73.238
-  port: 2082
-  uuid: 3cdc222f5fb8f018
-  network: ws
-  tls: false
-  servername: 104.21.73.238
-  ws-opts:
-    path: /tr/lwQjblUV8zcUyws2lNxpRnN?ed=2560
-    headers:
-      Host: channel-fixping.fixpingchannelatomicmailiosaccount.workers.dev
-- name: TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev_1
-  type: trojan
-  server: aged-silence-8d7d.tahaggs.workers.dev
-  port: 8080
-  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
-  network: ws
-  tls: false
-  servername: aged-silence-8d7d.tahaggs.workers.dev
-  ws-opts:
-    path: /taha3
-    headers:
-      Host: aged-silence-8d7d.tahaggs.workers.dev
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
-  - TROJAN-WS-🇺🇸(US)-www.speedtest.net
-  - TROJAN-WS-🇺🇸(US)-www.speedtest.net_1
-  - TROJAN-WS-🇺🇸(US)-104.21.73.238
   - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev_1
+  - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -100,10 +87,9 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
-  - TROJAN-WS-🇺🇸(US)-www.speedtest.net
-  - TROJAN-WS-🇺🇸(US)-www.speedtest.net_1
-  - TROJAN-WS-🇺🇸(US)-104.21.73.238
   - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev_1
+  - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev_1
 rule-providers:
   adblock:
     type: http
