@@ -26,6 +26,14 @@ proxies:
     path: /tr/kp0IOvZwWV0X35ln0vIh?ed=2560
     headers:
       Host: 47hr9isj-655383snd63hjap38q6t.k-f3vpqaltfsxbtaxe.workers.dev
+- name: TROJAN-TCP-🇩🇪(DE)-91.107.242.197
+  type: trojan
+  server: 91.107.242.197
+  port: 33522
+  uuid: TNTo3rwa1WFSlr50tkUUiucgF8JUWsksw6xrlw+h4xc=
+  network: tcp
+  tls: false
+  servername: 91.107.242.197
 - name: TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
   type: trojan
   server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
@@ -38,43 +46,13 @@ proxies:
     path: /eyJqdW5rIjoiYjNXNmtMdjh1ME8iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo2fQ==
     headers:
       Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-- name: TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev_1
-  type: trojan
-  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  port: 2052
-  uuid: 73796e63-0000-4000-8000-000000000000
-  network: ws
-  tls: false
-  servername: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  ws-opts:
-    path: /eyJqdW5rIjoiYjNXNmtMdjh1ME8iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo2fQ==
-    headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-- name: TROJAN-TCP-🇫🇮(FI)-65.109.215.50
-  type: trojan
-  server: 65.109.215.50
-  port: 51773
-  uuid: Htb6AwARYBt+193LFyDnfe1fS+QDu9JHsiSw1waN0uc=
-  network: tcp
-  tls: false
-  servername: 65.109.215.50
-- name: TROJAN-TCP-🇫🇮(FI)-65.109.215.50_1
-  type: trojan
-  server: 65.109.215.50
-  port: 51773
-  uuid: B+gmrP1txQliTTw0NNVoHZ+wjNAL3nKHZopLtqlEAnI=
-  network: tcp
-  tls: false
-  servername: 65.109.215.50
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-WS-🇺🇸(US)-104.21.70.21
+  - TROJAN-TCP-🇩🇪(DE)-91.107.242.197
   - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev_1
-  - TROJAN-TCP-🇫🇮(FI)-65.109.215.50
-  - TROJAN-TCP-🇫🇮(FI)-65.109.215.50_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -92,10 +70,8 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-WS-🇺🇸(US)-104.21.70.21
+  - TROJAN-TCP-🇩🇪(DE)-91.107.242.197
   - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev_1
-  - TROJAN-TCP-🇫🇮(FI)-65.109.215.50
-  - TROJAN-TCP-🇫🇮(FI)-65.109.215.50_1
 rule-providers:
   adblock:
     type: http
