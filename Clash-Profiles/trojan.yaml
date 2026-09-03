@@ -14,6 +14,18 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
+  type: trojan
+  server: aged-silence-8d7d.tahaggs.workers.dev
+  port: 2086
+  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
+  network: ws
+  tls: false
+  servername: aged-silence-8d7d.tahaggs.workers.dev
+  ws-opts:
+    path: /taha3
+    headers:
+      Host: aged-silence-8d7d.tahaggs.workers.dev
 - name: TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
   type: trojan
   server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
@@ -26,18 +38,18 @@ proxies:
     path: /eyJqdW5rIjoiYjNXNmtMdjh1ME8iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo2fQ==
     headers:
       Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-- name: TROJAN-WS-🇺🇸(US)-104.21.70.21
+- name: TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev_1
   type: trojan
-  server: 104.21.70.21
+  server: aged-silence-8d7d.tahaggs.workers.dev
   port: 8080
-  uuid: Telegram_healer_config
+  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
   network: ws
   tls: false
-  servername: 104.21.70.21
+  servername: aged-silence-8d7d.tahaggs.workers.dev
   ws-opts:
-    path: /tr/kp0IOvZwWV0X35ln0vIh?ed=2560
+    path: /taha3
     headers:
-      Host: 47hr9isj-655383snd63hjap38q6t.k-f3vpqaltfsxbtaxe.workers.dev
+      Host: aged-silence-8d7d.tahaggs.workers.dev
 - name: TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev_1
   type: trojan
   server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
@@ -54,8 +66,9 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
   - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  - TROJAN-WS-🇺🇸(US)-104.21.70.21
+  - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev_1
   - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev_1
   tolerance: 50
   lazy: false
@@ -73,8 +86,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev
   - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  - TROJAN-WS-🇺🇸(US)-104.21.70.21
+  - TROJAN-WS-🇺🇸(US)-aged-silence-8d7d.tahaggs.workers.dev_1
   - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev_1
 rule-providers:
   adblock:
