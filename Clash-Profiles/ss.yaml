@@ -14,59 +14,31 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇫🇷(FR)-51.255.13.232
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: SS-C20P-🇩🇪(DE)-51.195.126.38
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
 - name: SS-C20P-🇵🇱(PL)-31.76.82.131
   type: ss
   server: 31.76.82.131
   port: 34260
   cipher: chacha20-ietf-poly1305
   password: cTAObwg4OWWXkZJQs0ZdgC
-- name: SS-A256GCM-🇮🇹(IT)-194.87.47.204
+- name: SS-C20P-🇩🇪(DE)-51.195.126.38
   type: ss
-  server: 194.87.47.204
-  port: 10901
-  cipher: aes-256-gcm
-  password: d1fa2f4b98a38bc8
-- name: SS-C20P-🇹🇼(TW)-36.224.151.80
-  type: ss
-  server: 36.224.151.80
-  port: 50099
+  server: 51.195.126.38
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  password: 2YdE4lFOid5a
 - name: SS-C20P-🇱🇹(LT)-144.31.243.2
   type: ss
   server: 144.31.243.2
   port: 16015
   cipher: chacha20-ietf-poly1305
   password: J1InuU6QRT5JOh1mQfkjU2
-- name: SS-C20P-🇹🇼(TW)-36.224.152.189
-  type: ss
-  server: 36.224.152.189
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇫🇷(FR)-51.255.13.232
-  - SS-C20P-🇩🇪(DE)-51.195.126.38
   - SS-C20P-🇵🇱(PL)-31.76.82.131
-  - SS-A256GCM-🇮🇹(IT)-194.87.47.204
-  - SS-C20P-🇹🇼(TW)-36.224.151.80
+  - SS-C20P-🇩🇪(DE)-51.195.126.38
   - SS-C20P-🇱🇹(LT)-144.31.243.2
-  - SS-C20P-🇹🇼(TW)-36.224.152.189
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -83,13 +55,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇫🇷(FR)-51.255.13.232
-  - SS-C20P-🇩🇪(DE)-51.195.126.38
   - SS-C20P-🇵🇱(PL)-31.76.82.131
-  - SS-A256GCM-🇮🇹(IT)-194.87.47.204
-  - SS-C20P-🇹🇼(TW)-36.224.151.80
+  - SS-C20P-🇩🇪(DE)-51.195.126.38
   - SS-C20P-🇱🇹(LT)-144.31.243.2
-  - SS-C20P-🇹🇼(TW)-36.224.152.189
 rule-providers:
   adblock:
     type: http
