@@ -26,24 +26,11 @@ proxies:
     path: /eyJqdW5rIjoiYjNXNmtMdjh1ME8iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo2fQ==
     headers:
       Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-- name: TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev_1
-  type: trojan
-  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  port: 2052
-  uuid: 73796e63-0000-4000-8000-000000000000
-  network: ws
-  tls: false
-  servername: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  ws-opts:
-    path: /eyJqdW5rIjoiYjNXNmtMdjh1ME8iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo2fQ==
-    headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -61,7 +48,6 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev_1
 rule-providers:
   adblock:
     type: http
