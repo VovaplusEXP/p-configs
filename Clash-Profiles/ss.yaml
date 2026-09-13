@@ -20,32 +20,60 @@ proxies:
   port: 443
   cipher: chacha20-ietf-poly1305
   password: eDfN7SODQceIOmIAbtJJtK
-- name: SS-C20P-🇹🇼(TW)-36.224.152.189
+- name: SS-C20P-🇨🇦(CA)-142.4.216.225
   type: ss
-  server: 36.224.152.189
-  port: 50099
+  server: 142.4.216.225
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
+  password: 3ssumf2
+- name: SS-C20P-🇨🇦(CA)-ca225.vpnbook.com
   type: ss
-  server: r3mrcg001287h3p.cybervena.com
-  port: 50099
+  server: ca225.vpnbook.com
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  password: 3ssumf2
+- name: SS-A256GCM-🇨🇦(CA)-166.88.130.218
+  type: ss
+  server: 166.88.130.218
+  port: 60111
+  cipher: aes-256-gcm
+  password: fbcec76953a2d173
+- name: SS-C20P-🇺🇸(US)-5.78.51.123
+  type: ss
+  server: 5.78.51.123
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: 8tmnvX5zYuWGVIDP2jglZw
+- name: SS-C20P-🇬🇧(GB)-158.173.221.214
+  type: ss
+  server: 158.173.221.214
+  port: 11001
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
 - name: SS-C20P-🇩🇪(DE)-51.195.126.38
   type: ss
   server: 51.195.126.38
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: 2YdE4lFOid5a
+- name: SS-C20P-🇫🇮(FI)-65.109.215.118
+  type: ss
+  server: 65.109.215.118
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇹🇼(TW)-36.224.152.189
-  - SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
+  - SS-C20P-🇨🇦(CA)-142.4.216.225
+  - SS-C20P-🇨🇦(CA)-ca225.vpnbook.com
+  - SS-A256GCM-🇨🇦(CA)-166.88.130.218
+  - SS-C20P-🇺🇸(US)-5.78.51.123
+  - SS-C20P-🇬🇧(GB)-158.173.221.214
   - SS-C20P-🇩🇪(DE)-51.195.126.38
+  - SS-C20P-🇫🇮(FI)-65.109.215.118
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -63,9 +91,13 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇹🇼(TW)-36.224.152.189
-  - SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
+  - SS-C20P-🇨🇦(CA)-142.4.216.225
+  - SS-C20P-🇨🇦(CA)-ca225.vpnbook.com
+  - SS-A256GCM-🇨🇦(CA)-166.88.130.218
+  - SS-C20P-🇺🇸(US)-5.78.51.123
+  - SS-C20P-🇬🇧(GB)-158.173.221.214
   - SS-C20P-🇩🇪(DE)-51.195.126.38
+  - SS-C20P-🇫🇮(FI)-65.109.215.118
 rule-providers:
   adblock:
     type: http
