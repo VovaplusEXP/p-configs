@@ -20,30 +20,30 @@ proxies:
   port: 443
   cipher: chacha20-ietf-poly1305
   password: eDfN7SODQceIOmIAbtJJtK
-- name: SS-C20P-🇹🇼(TW)-36.224.152.189
+- name: SS-C20P-🇺🇸(US)-5.78.51.123
   type: ss
-  server: 36.224.152.189
-  port: 50099
+  server: 5.78.51.123
+  port: 1080
   cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: SS-C20P-🇬🇧(GB)-158.173.221.214
+  password: 8tmnvX5zYuWGVIDP2jglZw
+- name: SS-C20P-🇵🇱(PL)-31.76.82.131
   type: ss
-  server: 158.173.221.214
-  port: 11001
+  server: 31.76.82.131
+  port: 34260
   cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-- name: SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
+  password: cTAObwg4OWWXkZJQs0ZdgC
+- name: SS-A256GCM-🇮🇹(IT)-57.131.48.45
   type: ss
-  server: r3mrcg001287h3p.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: SS-C20P-🇩🇪(DE)-51.195.126.38
-  type: ss
-  server: 51.195.126.38
+  server: 57.131.48.45
   port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: SS-A256GCM-🇷🇺(RU)-46.17.40.234
+  type: ss
+  server: 46.17.40.234
+  port: 50111
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
 - name: SS-C20P-🇱🇹(LT)-144.31.243.2
   type: ss
   server: 144.31.243.2
@@ -55,10 +55,10 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇹🇼(TW)-36.224.152.189
-  - SS-C20P-🇬🇧(GB)-158.173.221.214
-  - SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
-  - SS-C20P-🇩🇪(DE)-51.195.126.38
+  - SS-C20P-🇺🇸(US)-5.78.51.123
+  - SS-C20P-🇵🇱(PL)-31.76.82.131
+  - SS-A256GCM-🇮🇹(IT)-57.131.48.45
+  - SS-A256GCM-🇷🇺(RU)-46.17.40.234
   - SS-C20P-🇱🇹(LT)-144.31.243.2
   tolerance: 50
   lazy: false
@@ -77,10 +77,10 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇹🇼(TW)-36.224.152.189
-  - SS-C20P-🇬🇧(GB)-158.173.221.214
-  - SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
-  - SS-C20P-🇩🇪(DE)-51.195.126.38
+  - SS-C20P-🇺🇸(US)-5.78.51.123
+  - SS-C20P-🇵🇱(PL)-31.76.82.131
+  - SS-A256GCM-🇮🇹(IT)-57.131.48.45
+  - SS-A256GCM-🇷🇺(RU)-46.17.40.234
   - SS-C20P-🇱🇹(LT)-144.31.243.2
 rule-providers:
   adblock:
