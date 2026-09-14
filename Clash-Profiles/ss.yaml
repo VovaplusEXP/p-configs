@@ -14,18 +14,36 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-198.98.53.130
-  type: ss
-  server: 198.98.53.130
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
 - name: SS-C20P-🇺🇸(US)-5.78.51.123
   type: ss
   server: 5.78.51.123
   port: 1080
   cipher: chacha20-ietf-poly1305
   password: 8tmnvX5zYuWGVIDP2jglZw
+- name: SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
+  type: ss
+  server: r3mrcg001287h3p.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇹🇼(TW)-36.224.152.189
+  type: ss
+  server: 36.224.152.189
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇹🇼(TW)-36.224.152.189_1
+  type: ss
+  server: 36.224.152.189
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+- name: SS-A256GCM-🇷🇺(RU)-46.17.42.166
+  type: ss
+  server: 46.17.42.166
+  port: 50111
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
 - name: SS-C20P-🇫🇮(FI)-65.109.215.118
   type: ss
   server: 65.109.215.118
@@ -38,28 +56,24 @@ proxies:
   port: 16015
   cipher: chacha20-ietf-poly1305
   password: J1InuU6QRT5JOh1mQfkjU2
-- name: SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
+- name: SS-A256GCM-🇮🇹(IT)-57.131.48.45
   type: ss
-  server: r3mrcg001287h3p.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: SS-C20P-🇹🇼(TW)-36.224.152.189
-  type: ss
-  server: 36.224.152.189
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  server: 57.131.48.45
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-198.98.53.130
   - SS-C20P-🇺🇸(US)-5.78.51.123
-  - SS-C20P-🇫🇮(FI)-65.109.215.118
-  - SS-C20P-🇱🇹(LT)-144.31.243.2
   - SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
   - SS-C20P-🇹🇼(TW)-36.224.152.189
+  - SS-C20P-🇹🇼(TW)-36.224.152.189_1
+  - SS-A256GCM-🇷🇺(RU)-46.17.42.166
+  - SS-C20P-🇫🇮(FI)-65.109.215.118
+  - SS-C20P-🇱🇹(LT)-144.31.243.2
+  - SS-A256GCM-🇮🇹(IT)-57.131.48.45
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -76,12 +90,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-198.98.53.130
   - SS-C20P-🇺🇸(US)-5.78.51.123
-  - SS-C20P-🇫🇮(FI)-65.109.215.118
-  - SS-C20P-🇱🇹(LT)-144.31.243.2
   - SS-C20P-🇹🇼(TW)-r3mrcg001287h3p.cybervena.com
   - SS-C20P-🇹🇼(TW)-36.224.152.189
+  - SS-C20P-🇹🇼(TW)-36.224.152.189_1
+  - SS-A256GCM-🇷🇺(RU)-46.17.42.166
+  - SS-C20P-🇫🇮(FI)-65.109.215.118
+  - SS-C20P-🇱🇹(LT)-144.31.243.2
+  - SS-A256GCM-🇮🇹(IT)-57.131.48.45
 rule-providers:
   adblock:
     type: http
