@@ -14,59 +14,52 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-198.98.53.130
-  type: ss
-  server: 198.98.53.130
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
 - name: SS-C20P-🇺🇸(US)-5.78.51.123
   type: ss
   server: 5.78.51.123
   port: 1080
   cipher: chacha20-ietf-poly1305
   password: 8tmnvX5zYuWGVIDP2jglZw
+- name: SS-C20P-🇫🇷(FR)-51.255.13.232
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
 - name: SS-C20P-🇬🇧(GB)-158.173.221.214
   type: ss
   server: 158.173.221.214
   port: 11001
   cipher: chacha20-ietf-poly1305
   password: c58d16e593d44f42
+- name: SS-A256GCM-🇷🇺(RU)-195.133.23.200
+  type: ss
+  server: 195.133.23.200
+  port: 7018
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
 - name: SS-C20P-🇫🇮(FI)-65.109.215.118
   type: ss
   server: 65.109.215.118
   port: 1080
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
-- name: SS-A256GCM-🇷🇺(RU)-46.17.42.166
+- name: SS-A256GCM-🇨🇦(CA)-166.88.130.218
   type: ss
-  server: 46.17.42.166
-  port: 50111
+  server: 166.88.130.218
+  port: 7018
   cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
-- name: SS-A256GCM-🇮🇹(IT)-57.131.48.45
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: SS-C20P-🇱🇹(LT)-144.31.243.2
-  type: ss
-  server: 144.31.243.2
-  port: 16015
-  cipher: chacha20-ietf-poly1305
-  password: J1InuU6QRT5JOh1mQfkjU2
+  password: fbcec76953a2d173
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-198.98.53.130
   - SS-C20P-🇺🇸(US)-5.78.51.123
+  - SS-C20P-🇫🇷(FR)-51.255.13.232
   - SS-C20P-🇬🇧(GB)-158.173.221.214
+  - SS-A256GCM-🇷🇺(RU)-195.133.23.200
   - SS-C20P-🇫🇮(FI)-65.109.215.118
-  - SS-A256GCM-🇷🇺(RU)-46.17.42.166
-  - SS-A256GCM-🇮🇹(IT)-57.131.48.45
-  - SS-C20P-🇱🇹(LT)-144.31.243.2
+  - SS-A256GCM-🇨🇦(CA)-166.88.130.218
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -83,13 +76,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-198.98.53.130
   - SS-C20P-🇺🇸(US)-5.78.51.123
+  - SS-C20P-🇫🇷(FR)-51.255.13.232
   - SS-C20P-🇬🇧(GB)-158.173.221.214
+  - SS-A256GCM-🇷🇺(RU)-195.133.23.200
   - SS-C20P-🇫🇮(FI)-65.109.215.118
-  - SS-A256GCM-🇷🇺(RU)-46.17.42.166
-  - SS-A256GCM-🇮🇹(IT)-57.131.48.45
-  - SS-C20P-🇱🇹(LT)-144.31.243.2
+  - SS-A256GCM-🇨🇦(CA)-166.88.130.218
 rule-providers:
   adblock:
     type: http
