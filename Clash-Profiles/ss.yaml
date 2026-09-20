@@ -20,46 +20,74 @@ proxies:
   port: 443
   cipher: chacha20-ietf-poly1305
   password: eDfN7SODQceIOmIAbtJJtK
-- name: SS-C20P-🇨🇦(CA)-142.4.216.225
+- name: SS-A256GCM-🇫🇮(FI)-87.58.148.70
   type: ss
-  server: 142.4.216.225
+  server: 87.58.148.70
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
-- name: SS-C20P-🇫🇷(FR)-51.255.13.232
+  cipher: aes-256-gcm
+  password: rg0g3xp9rk9nk9o0
+- name: SS-C20P-🇹🇼(TW)-36.224.185.173
   type: ss
-  server: 51.255.13.232
-  port: 8388
+  server: 36.224.185.173
+  port: 50099
   cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: SS-C20P-🇬🇧(GB)-158.173.221.214
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+- name: SS-C20P-🇹🇼(TW)-36.224.185.143
   type: ss
-  server: 158.173.221.214
-  port: 11001
+  server: 36.224.185.143
+  port: 50099
   cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: SS-A256GCM-🇮🇹(IT)-57.131.48.45
   type: ss
   server: 57.131.48.45
   port: 8388
   cipher: aes-256-gcm
   password: itzvpn@321
-- name: SS-C20P-🇹🇷(TR)-jgzt1997.qivfelo.ir
+- name: SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
   type: ss
-  server: jgzt1997.qivfelo.ir
-  port: 5052
+  server: r3mrcg00129437x.cybervena.com
+  port: 50099
   cipher: chacha20-ietf-poly1305
-  password: ept2V6yarWzazZStMu0CqM-jx3NN2wG0
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇸🇬(SG)-194.233.74.160
+  type: ss
+  server: 194.233.74.160
+  port: 2342
+  cipher: chacha20-ietf-poly1305
+  password: XV4bvaJIWoxl3IYEC1e6W7
+- name: SS-C20P-🇹🇼(TW)-36.224.185.173_1
+  type: ss
+  server: 36.224.185.173
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  type: ss
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SS-C20P-🇫🇷(FR)-51.255.13.232
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇨🇦(CA)-142.4.216.225
-  - SS-C20P-🇫🇷(FR)-51.255.13.232
-  - SS-C20P-🇬🇧(GB)-158.173.221.214
+  - SS-A256GCM-🇫🇮(FI)-87.58.148.70
+  - SS-C20P-🇹🇼(TW)-36.224.185.173
+  - SS-C20P-🇹🇼(TW)-36.224.185.143
   - SS-A256GCM-🇮🇹(IT)-57.131.48.45
-  - SS-C20P-🇹🇷(TR)-jgzt1997.qivfelo.ir
+  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
+  - SS-C20P-🇸🇬(SG)-194.233.74.160
+  - SS-C20P-🇹🇼(TW)-36.224.185.173_1
+  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  - SS-C20P-🇫🇷(FR)-51.255.13.232
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -77,11 +105,15 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇨🇦(CA)-142.4.216.225
-  - SS-C20P-🇫🇷(FR)-51.255.13.232
-  - SS-C20P-🇬🇧(GB)-158.173.221.214
+  - SS-A256GCM-🇫🇮(FI)-87.58.148.70
+  - SS-C20P-🇹🇼(TW)-36.224.185.173
+  - SS-C20P-🇹🇼(TW)-36.224.185.143
   - SS-A256GCM-🇮🇹(IT)-57.131.48.45
-  - SS-C20P-🇹🇷(TR)-jgzt1997.qivfelo.ir
+  - SS-C20P-🇹🇼(TW)-r3mrcg00129437x.cybervena.com
+  - SS-C20P-🇸🇬(SG)-194.233.74.160
+  - SS-C20P-🇹🇼(TW)-36.224.185.173_1
+  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
+  - SS-C20P-🇫🇷(FR)-51.255.13.232
 rule-providers:
   adblock:
     type: http
