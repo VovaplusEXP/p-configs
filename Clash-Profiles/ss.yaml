@@ -20,102 +20,53 @@ proxies:
   port: 1080
   cipher: chacha20-ietf-poly1305
   password: 8tmnvX5zYuWGVIDP2jglZw
-- name: SS-C20P-🇨🇦(CA)-142.4.216.225
+- name: SS-A256GCM-🇩🇪(DE)-206.189.52.4
   type: ss
-  server: 142.4.216.225
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
-- name: SS-C20P-🇺🇸(US)-198.98.53.130
-  type: ss
-  server: 198.98.53.130
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-- name: SS-C20P-🇬🇧(GB)-158.173.221.214
-  type: ss
-  server: 158.173.221.214
-  port: 11001
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-- name: SS-C20P-🇫🇷(FR)-51.255.13.232
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: SS-C20P-🇩🇪(DE)-94.249.187.46
-  type: ss
-  server: 94.249.187.46
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: IXa3ylzS_jBOAsQy071tIQ
-- name: SS-A256GCM-🇳🇱(NL)-146.190.236.129
-  type: ss
-  server: 146.190.236.129
+  server: 206.189.52.4
   port: 17000
   cipher: aes-256-gcm
   password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-- name: SS-C20P-🇵🇱(PL)-54.36.174.134
-  type: ss
-  server: 54.36.174.134
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
 - name: SS-A256GCM-🇮🇹(IT)-57.131.48.45
   type: ss
   server: 57.131.48.45
   port: 8388
   cipher: aes-256-gcm
   password: itzvpn@321
-- name: SS-A256GCM-🇨🇿(CZ)-141.227.134.63
+- name: SS-C20P-🇵🇱(PL)-54.36.174.134
   type: ss
-  server: 141.227.134.63
-  port: 17000
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-- name: SS-C20P-🇵🇱(PL)-54.36.174.140
-  type: ss
-  server: 54.36.174.140
+  server: 54.36.174.134
   port: 443
   cipher: chacha20-ietf-poly1305
   password: mrs2e9a
+- name: SS-C20P-🇫🇷(FR)-51.255.13.232
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
 - name: SS-A256GCM-🇸🇪(SE)-172.238.244.13
   type: ss
   server: 172.238.244.13
   port: 17000
   cipher: aes-256-gcm
   password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-- name: SS-C20P-🇹🇼(TW)-36.224.141.124
+- name: SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
   type: ss
-  server: 36.224.141.124
+  server: r3mrcg001286ek2.cybervena.com
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: SS-C20P-🇹🇼(TW)-namrcg001640lrm.cybervena.com
-  type: ss
-  server: namrcg001640lrm.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: a9a0d092-6f0e-4701-81ee-454643d6d506
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-5.78.51.123
-  - SS-C20P-🇨🇦(CA)-142.4.216.225
-  - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇬🇧(GB)-158.173.221.214
-  - SS-C20P-🇫🇷(FR)-51.255.13.232
-  - SS-C20P-🇩🇪(DE)-94.249.187.46
-  - SS-A256GCM-🇳🇱(NL)-146.190.236.129
-  - SS-C20P-🇵🇱(PL)-54.36.174.134
+  - SS-A256GCM-🇩🇪(DE)-206.189.52.4
   - SS-A256GCM-🇮🇹(IT)-57.131.48.45
-  - SS-A256GCM-🇨🇿(CZ)-141.227.134.63
-  - SS-C20P-🇵🇱(PL)-54.36.174.140
+  - SS-C20P-🇵🇱(PL)-54.36.174.134
+  - SS-C20P-🇫🇷(FR)-51.255.13.232
   - SS-A256GCM-🇸🇪(SE)-172.238.244.13
-  - SS-C20P-🇹🇼(TW)-36.224.141.124
-  - SS-C20P-🇹🇼(TW)-namrcg001640lrm.cybervena.com
+  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -133,19 +84,12 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-5.78.51.123
-  - SS-C20P-🇨🇦(CA)-142.4.216.225
-  - SS-C20P-🇺🇸(US)-198.98.53.130
-  - SS-C20P-🇬🇧(GB)-158.173.221.214
-  - SS-C20P-🇫🇷(FR)-51.255.13.232
-  - SS-C20P-🇩🇪(DE)-94.249.187.46
-  - SS-A256GCM-🇳🇱(NL)-146.190.236.129
-  - SS-C20P-🇵🇱(PL)-54.36.174.134
+  - SS-A256GCM-🇩🇪(DE)-206.189.52.4
   - SS-A256GCM-🇮🇹(IT)-57.131.48.45
-  - SS-A256GCM-🇨🇿(CZ)-141.227.134.63
-  - SS-C20P-🇵🇱(PL)-54.36.174.140
+  - SS-C20P-🇵🇱(PL)-54.36.174.134
+  - SS-C20P-🇫🇷(FR)-51.255.13.232
   - SS-A256GCM-🇸🇪(SE)-172.238.244.13
-  - SS-C20P-🇹🇼(TW)-36.224.141.124
-  - SS-C20P-🇹🇼(TW)-namrcg001640lrm.cybervena.com
+  - SS-C20P-🇹🇼(TW)-r3mrcg001286ek2.cybervena.com
 rule-providers:
   adblock:
     type: http
