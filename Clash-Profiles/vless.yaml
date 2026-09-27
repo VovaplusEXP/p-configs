@@ -14,49 +14,30 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.209
+- name: VLESS-TCP-REALITY-🇺🇸(US)-195.211.98.43
   type: vless
-  server: 15.204.97.209
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-XHTTP-REALITY-🇺🇸(US)-45.150.192.26
-  type: vless
-  server: 45.150.192.26
-  port: 42411
-  uuid: 900e2cca-4798-47f6-b972-5288a77c8093
-  network: xhttp
-  tls: true
-  servername: www.oracle.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇨🇾(CY)-2.56.123.227
-  type: vless
-  server: 2.56.123.227
+  server: 195.211.98.43
   port: 443
-  uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
+  uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
   network: tcp
   tls: true
-  servername: www.amazon.com
+  servername: www.cloudflare.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-GRPC-REALITY-🇺🇸(US)-216.227.161.95
+- name: VLESS-TCP-REALITY-🇨🇦(CA)-66.70.179.198
   type: vless
-  server: 216.227.161.95
-  port: 7443
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-  network: grpc
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  network: tcp
   tls: true
-  servername: media3.abvphelp.cc
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: VLESS-TCP-REALITY-🇺🇸(US)-23.191.200.207
   type: vless
   server: 23.191.200.207
   port: 443
-  uuid: 09a0a4a4-81b8-4261-a23c-424ab42f48f5
+  uuid: 715569e9-ee89-4b7d-b276-e73c8b4e964b
   network: tcp
   tls: true
   servername: dl.google.com
@@ -72,16 +53,6 @@ proxies:
   servername: sheetpeek.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-2.24.124.64
-  type: vless
-  server: 2.24.124.64
-  port: 443
-  uuid: 719b9354-45e2-4718-8709-d965b64554db
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇺🇸(US)-162.35.96.20
   type: vless
   server: 162.35.96.20
@@ -92,11 +63,30 @@ proxies:
   servername: sheetpeek.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-5.34.178.120
+- name: VLESS-TCP-REALITY-🇺🇸(US)-162.35.104.143_1
   type: vless
-  server: 5.34.178.120
+  server: 162.35.104.143
   port: 443
-  uuid: 9063f9fb-e88a-4ee0-b4a4-a92ca7316a9f
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: tcp
+  tls: true
+  servername: sheetpeek.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-GRPC-REALITY-🇺🇸(US)-216.227.161.95
+  type: vless
+  server: 216.227.161.95
+  port: 7443
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  network: grpc
+  tls: true
+  servername: media3.abvphelp.cc
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇺🇸(US)-2.24.124.64
+  type: vless
+  server: 2.24.124.64
+  port: 443
+  uuid: 719b9354-45e2-4718-8709-d965b64554db
   network: tcp
   tls: true
   servername: www.cloudflare.com
@@ -112,92 +102,14 @@ proxies:
   servername: www.speedtest.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇯🇵(JP)-18.183.215.124
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.209
   type: vless
-  server: 18.183.215.124
-  port: 28573
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  server: 15.204.97.209
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   network: tcp
   tls: true
-  servername: www.sony.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇨🇦(CA)-66.70.179.198
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-3.9.135.156
-  type: vless
-  server: 3.9.135.156
-  port: 51847
-  uuid: 391a01e9-b664-407b-9158-610fab3f5920
-  network: tcp
-  tls: true
-  servername: www.tesla.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-23.81.34.204
-  type: vless
-  server: 23.81.34.204
-  port: 443
-  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
-  network: tcp
-  tls: true
-  servername: speed.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-31.77.161.15
-  type: vless
-  server: 31.77.161.15
-  port: 443
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  network: tcp
-  tls: true
-  servername: nvidia.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-31.77.161.15_1
-  type: vless
-  server: 31.77.161.15
-  port: 443
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  network: tcp
-  tls: true
-  servername: nvidia.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-162.55.242.208
-  type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-51.68.215.88
-  type: vless
-  server: 51.68.215.88
-  port: 443
-  uuid: 0774160b-be44-4781-aad7-1a1745a36659
-  network: tcp
-  tls: true
-  servername: www.icloud.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🌐(XX)-159.69.103.251
-  type: vless
-  server: 159.69.103.251
-  port: 80
-  uuid: 1bbef2cd-2851-4f00-b37e-a2478a1e5a70
-  network: tcp
-  tls: true
-  servername: www.yahoo.com
+  servername: fuck.rkn
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.216
@@ -210,44 +122,24 @@ proxies:
   servername: fuck.rkn
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇯🇵(JP)-154.31.114.248
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
   type: vless
-  server: 154.31.114.248
-  port: 50159
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  server: 15.204.97.214
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   network: tcp
   tls: true
-  servername: www.cloudflare.com
+  servername: fuck.rkn
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇬🇧(GB)-51.68.215.88_1
+- name: VLESS-TCP-REALITY-🇬🇧(GB)-23.81.34.204
   type: vless
-  server: 51.68.215.88
+  server: 23.81.34.204
   port: 443
-  uuid: 0774160b-be44-4781-aad7-1a1745a36659
+  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
   network: tcp
   tls: true
-  servername: www.icloud.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇨🇭(CH)-45.90.59.15
-  type: vless
-  server: 45.90.59.15
-  port: 443
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-150.241.105.184
-  type: vless
-  server: 150.241.105.184
-  port: 443
-  uuid: 4cf9c712-11c4-47d8-aa31-a1693a1aa4e5
-  network: tcp
-  tls: true
-  servername: www.v2host.ru
+  servername: speed.cloudflare.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇳🇱(NL)-107.189.26.239
@@ -260,34 +152,63 @@ proxies:
   servername: cdn.dodostatic.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-31.76.64.248
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-31.77.161.15
   type: vless
-  server: 31.76.64.248
+  server: 31.77.161.15
   port: 443
-  uuid: 0a322246-8c1a-47cd-9865-cccebbb2e5c1
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
   network: tcp
   tls: true
-  servername: blog.api.www.cloudflare.com
+  servername: nvidia.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-31.76.7.154
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.216_1
   type: vless
-  server: 31.76.7.154
-  port: 7443
-  uuid: d7cad038-0c3f-4cce-8f8a-36464aaf66c0
+  server: 15.204.97.216
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   network: tcp
   tls: true
-  servername: ya.ru
+  servername: fuck.rkn
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-107.189.26.239_1
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-162.55.242.208
   type: vless
-  server: 107.189.26.239
-  port: 443
-  uuid: 820a850b-6e10-45e6-8142-2df17a394504
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
   network: tcp
   tls: true
-  servername: cdn.dodostatic.net
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-77.91.76.156
+  type: vless
+  server: 77.91.76.156
+  port: 57160
+  uuid: 68ad9a6d-2463-4c31-92a7-31547b9d4783
+  network: tcp
+  tls: true
+  servername: funpay.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-87.120.216.144
+  type: vless
+  server: 87.120.216.144
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  network: tcp
+  tls: true
+  servername: gerwai1488.vvzzkontaktezzvv.garden
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇦🇹(AT)-152.53.1.40
+  type: vless
+  server: 152.53.1.40
+  port: 443
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  network: tcp
+  tls: true
+  servername: at.quattro-tech.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇳🇱(NL)-94.156.154.65
@@ -300,74 +221,44 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇵🇱(PL)-82.118.22.161
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-194.146.223.231
   type: vless
-  server: 82.118.22.161
+  server: 194.146.223.231
   port: 443
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  uuid: bf8c3d34-c16c-423f-8ff0-9341d6621e97
+  network: tcp
+  tls: true
+  servername: blog.api.www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.195
+  type: vless
+  server: 15.204.97.195
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇷🇴(RO)-46.28.67.55
+  type: vless
+  server: 46.28.67.55
+  port: 443
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
   network: tcp
   tls: true
   servername: www.cloudflare.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🌐(XX)-185.249.153.108
+- name: VLESS-TCP-REALITY-🇷🇴(RO)-46.28.67.55_1
   type: vless
-  server: 185.249.153.108
+  server: 46.28.67.55
   port: 443
-  uuid: 4cf9c712-11c4-47d8-aa31-a1693a1aa4e5
-  network: tcp
-  tls: true
-  servername: www.nordivablog.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇪🇸(ES)-esbe.vihodest.net
-  type: vless
-  server: esbe.vihodest.net
-  port: 443
-  uuid: 88956de8-38db-449c-8410-4b70a4fb5c9b
-  network: tcp
-  tls: true
-  servername: esbe.vihodest.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-151.242.2.81
-  type: vless
-  server: 151.242.2.81
-  port: 8443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  network: tcp
-  tls: true
-  servername: www.google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇦🇪(AE)-217.60.177.195
-  type: vless
-  server: 217.60.177.195
-  port: 443
-  uuid: 02bd8b5a-170b-4a79-8e68-9cec710272c7
-  network: tcp
-  tls: true
-  servername: est1.gursub.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇵🇱(PL)-82.118.22.161_1
-  type: vless
-  server: 82.118.22.161
-  port: 443
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
   network: tcp
   tls: true
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-150.241.105.184_1
-  type: vless
-  server: 150.241.105.184
-  port: 443
-  uuid: 4cf9c712-11c4-47d8-aa31-a1693a1aa4e5
-  network: tcp
-  tls: true
-  servername: www.v2host.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇪🇸(ES)-46.28.71.247
@@ -380,100 +271,124 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇮🇹(IT)-57.131.38.163
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-gerwai1488.vvzzkontaktezzvv.garden
   type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  network: tcp
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇸🇬(SG)-146.235.16.130
-  type: vless
-  server: 146.235.16.130
-  port: 19825
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  network: tcp
-  tls: true
-  servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇪🇪(EE)-144.31.170.72
-  type: vless
-  server: 144.31.170.72
+  server: gerwai1488.vvzzkontaktezzvv.garden
   port: 443
-  uuid: deea5046-3543-4b1b-a17f-3d08a65db91d
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   network: tcp
   tls: true
-  servername: est.bopen.bond
+  servername: gerwai1488.vvzzkontaktezzvv.garden
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇸🇬(SG)-5.223.74.174
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-31.76.7.154
   type: vless
-  server: 5.223.74.174
-  port: 2053
-  uuid: 29b81e1a-1989-4778-b0cb-a7223730f59d
+  server: 31.76.7.154
+  port: 7443
+  uuid: d7cad038-0c3f-4cce-8f8a-36464aaf66c0
   network: tcp
   tls: true
-  servername: 5.223.74.174
+  servername: ya.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-ger-asli.jorzel.ir
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-185.249.153.108
   type: vless
-  server: ger-asli.jorzel.ir
-  port: 8087
-  uuid: 280e6d2e-b93e-4f51-bc9e-bf2bb709c81c
+  server: 185.249.153.108
+  port: 443
+  uuid: 4cf9c712-11c4-47d8-aa31-a1693a1aa4e5
   network: tcp
   tls: true
-  servername: forum.powerampapp.com
+  servername: www.nordivablog.ru
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇱🇻(LV)-31.76.62.32
+  type: vless
+  server: 31.76.62.32
+  port: 443
+  uuid: 8e66d40e-6f62-4243-a7d8-ebe83e4c2e77
+  network: tcp
+  tls: true
+  servername: lv-rix-1.koolb.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇬🇧(GB)-51.68.215.88
+  type: vless
+  server: 51.68.215.88
+  port: 443
+  uuid: 0774160b-be44-4781-aad7-1a1745a36659
+  network: tcp
+  tls: true
+  servername: www.icloud.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-31.76.64.248
+  type: vless
+  server: 31.76.64.248
+  port: 443
+  uuid: 0a322246-8c1a-47cd-9865-cccebbb2e5c1
+  network: tcp
+  tls: true
+  servername: blog.api.www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.216_2
+  type: vless
+  server: 15.204.97.216
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇵🇱(PL)-82.118.22.161
+  type: vless
+  server: 82.118.22.161
+  port: 443
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: ⚡ Auto-Select-VLESS
   type: url-test
   proxies: &id001
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.209
-  - VLESS-XHTTP-REALITY-🇺🇸(US)-45.150.192.26
-  - VLESS-TCP-REALITY-🇨🇾(CY)-2.56.123.227
-  - VLESS-GRPC-REALITY-🇺🇸(US)-216.227.161.95
+  - VLESS-TCP-REALITY-🇺🇸(US)-195.211.98.43
+  - VLESS-TCP-REALITY-🇨🇦(CA)-66.70.179.198
   - VLESS-TCP-REALITY-🇺🇸(US)-23.191.200.207
   - VLESS-TCP-REALITY-🇺🇸(US)-162.35.104.143
-  - VLESS-TCP-REALITY-🇺🇸(US)-2.24.124.64
   - VLESS-TCP-REALITY-🇺🇸(US)-162.35.96.20
-  - VLESS-TCP-REALITY-🇺🇸(US)-5.34.178.120
+  - VLESS-TCP-REALITY-🇺🇸(US)-162.35.104.143_1
+  - VLESS-GRPC-REALITY-🇺🇸(US)-216.227.161.95
+  - VLESS-TCP-REALITY-🇺🇸(US)-2.24.124.64
   - VLESS-TCP-REALITY-🇨🇦(CA)-158.69.112.254
-  - VLESS-TCP-REALITY-🇯🇵(JP)-18.183.215.124
-  - VLESS-TCP-REALITY-🇨🇦(CA)-66.70.179.198
-  - VLESS-TCP-REALITY-🇬🇧(GB)-3.9.135.156
-  - VLESS-TCP-REALITY-🇬🇧(GB)-23.81.34.204
-  - VLESS-TCP-REALITY-🇩🇪(DE)-31.77.161.15
-  - VLESS-TCP-REALITY-🇩🇪(DE)-31.77.161.15_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-162.55.242.208
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.68.215.88
-  - VLESS-TCP-REALITY-🌐(XX)-159.69.103.251
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.209
   - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.216
-  - VLESS-TCP-REALITY-🇯🇵(JP)-154.31.114.248
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.68.215.88_1
-  - VLESS-TCP-REALITY-🇨🇭(CH)-45.90.59.15
-  - VLESS-TCP-REALITY-🇩🇪(DE)-150.241.105.184
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
+  - VLESS-TCP-REALITY-🇬🇧(GB)-23.81.34.204
   - VLESS-TCP-REALITY-🇳🇱(NL)-107.189.26.239
-  - VLESS-TCP-REALITY-🇩🇪(DE)-31.76.64.248
-  - VLESS-TCP-REALITY-🇩🇪(DE)-31.76.7.154
-  - VLESS-TCP-REALITY-🇳🇱(NL)-107.189.26.239_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-31.77.161.15
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.216_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-162.55.242.208
+  - VLESS-TCP-REALITY-🇩🇪(DE)-77.91.76.156
+  - VLESS-TCP-REALITY-🇩🇪(DE)-87.120.216.144
+  - VLESS-TCP-REALITY-🇦🇹(AT)-152.53.1.40
   - VLESS-TCP-REALITY-🇳🇱(NL)-94.156.154.65
-  - VLESS-TCP-REALITY-🇵🇱(PL)-82.118.22.161
-  - VLESS-TCP-REALITY-🌐(XX)-185.249.153.108
-  - VLESS-TCP-REALITY-🇪🇸(ES)-esbe.vihodest.net
-  - VLESS-TCP-REALITY-🇳🇱(NL)-151.242.2.81
-  - VLESS-TCP-REALITY-🇦🇪(AE)-217.60.177.195
-  - VLESS-TCP-REALITY-🇵🇱(PL)-82.118.22.161_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-150.241.105.184_1
+  - VLESS-TCP-REALITY-🇳🇱(NL)-194.146.223.231
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.195
+  - VLESS-TCP-REALITY-🇷🇴(RO)-46.28.67.55
+  - VLESS-TCP-REALITY-🇷🇴(RO)-46.28.67.55_1
   - VLESS-TCP-REALITY-🇪🇸(ES)-46.28.71.247
-  - VLESS-TCP-REALITY-🇮🇹(IT)-57.131.38.163
-  - VLESS-TCP-REALITY-🇸🇬(SG)-146.235.16.130
-  - VLESS-TCP-REALITY-🇪🇪(EE)-144.31.170.72
-  - VLESS-TCP-REALITY-🇸🇬(SG)-5.223.74.174
-  - VLESS-TCP-REALITY-🇩🇪(DE)-ger-asli.jorzel.ir
+  - VLESS-TCP-REALITY-🇩🇪(DE)-gerwai1488.vvzzkontaktezzvv.garden
+  - VLESS-TCP-REALITY-🇩🇪(DE)-31.76.7.154
+  - VLESS-TCP-REALITY-🇩🇪(DE)-185.249.153.108
+  - VLESS-TCP-REALITY-🇱🇻(LV)-31.76.62.32
+  - VLESS-TCP-REALITY-🇬🇧(GB)-51.68.215.88
+  - VLESS-TCP-REALITY-🇩🇪(DE)-31.76.64.248
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.216_2
+  - VLESS-TCP-REALITY-🇵🇱(PL)-82.118.22.161
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -490,48 +405,40 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VLESS
   - 🔗 Auto-Failover-VLESS
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.209
-  - VLESS-XHTTP-REALITY-🇺🇸(US)-45.150.192.26
-  - VLESS-TCP-REALITY-🇨🇾(CY)-2.56.123.227
-  - VLESS-GRPC-REALITY-🇺🇸(US)-216.227.161.95
+  - VLESS-TCP-REALITY-🇺🇸(US)-195.211.98.43
+  - VLESS-TCP-REALITY-🇨🇦(CA)-66.70.179.198
   - VLESS-TCP-REALITY-🇺🇸(US)-23.191.200.207
   - VLESS-TCP-REALITY-🇺🇸(US)-162.35.104.143
-  - VLESS-TCP-REALITY-🇺🇸(US)-2.24.124.64
   - VLESS-TCP-REALITY-🇺🇸(US)-162.35.96.20
-  - VLESS-TCP-REALITY-🇺🇸(US)-5.34.178.120
+  - VLESS-TCP-REALITY-🇺🇸(US)-162.35.104.143_1
+  - VLESS-GRPC-REALITY-🇺🇸(US)-216.227.161.95
+  - VLESS-TCP-REALITY-🇺🇸(US)-2.24.124.64
   - VLESS-TCP-REALITY-🇨🇦(CA)-158.69.112.254
-  - VLESS-TCP-REALITY-🇯🇵(JP)-18.183.215.124
-  - VLESS-TCP-REALITY-🇨🇦(CA)-66.70.179.198
-  - VLESS-TCP-REALITY-🇬🇧(GB)-3.9.135.156
-  - VLESS-TCP-REALITY-🇬🇧(GB)-23.81.34.204
-  - VLESS-TCP-REALITY-🇩🇪(DE)-31.77.161.15
-  - VLESS-TCP-REALITY-🇩🇪(DE)-31.77.161.15_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-162.55.242.208
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.68.215.88
-  - VLESS-TCP-REALITY-🌐(XX)-159.69.103.251
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.209
   - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.216
-  - VLESS-TCP-REALITY-🇯🇵(JP)-154.31.114.248
-  - VLESS-TCP-REALITY-🇬🇧(GB)-51.68.215.88_1
-  - VLESS-TCP-REALITY-🇨🇭(CH)-45.90.59.15
-  - VLESS-TCP-REALITY-🇩🇪(DE)-150.241.105.184
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
+  - VLESS-TCP-REALITY-🇬🇧(GB)-23.81.34.204
   - VLESS-TCP-REALITY-🇳🇱(NL)-107.189.26.239
-  - VLESS-TCP-REALITY-🇩🇪(DE)-31.76.64.248
-  - VLESS-TCP-REALITY-🇩🇪(DE)-31.76.7.154
-  - VLESS-TCP-REALITY-🇳🇱(NL)-107.189.26.239_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-31.77.161.15
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.216_1
+  - VLESS-TCP-REALITY-🇩🇪(DE)-162.55.242.208
+  - VLESS-TCP-REALITY-🇩🇪(DE)-77.91.76.156
+  - VLESS-TCP-REALITY-🇩🇪(DE)-87.120.216.144
+  - VLESS-TCP-REALITY-🇦🇹(AT)-152.53.1.40
   - VLESS-TCP-REALITY-🇳🇱(NL)-94.156.154.65
-  - VLESS-TCP-REALITY-🇵🇱(PL)-82.118.22.161
-  - VLESS-TCP-REALITY-🌐(XX)-185.249.153.108
-  - VLESS-TCP-REALITY-🇪🇸(ES)-esbe.vihodest.net
-  - VLESS-TCP-REALITY-🇳🇱(NL)-151.242.2.81
-  - VLESS-TCP-REALITY-🇦🇪(AE)-217.60.177.195
-  - VLESS-TCP-REALITY-🇵🇱(PL)-82.118.22.161_1
-  - VLESS-TCP-REALITY-🇩🇪(DE)-150.241.105.184_1
+  - VLESS-TCP-REALITY-🇳🇱(NL)-194.146.223.231
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.195
+  - VLESS-TCP-REALITY-🇷🇴(RO)-46.28.67.55
+  - VLESS-TCP-REALITY-🇷🇴(RO)-46.28.67.55_1
   - VLESS-TCP-REALITY-🇪🇸(ES)-46.28.71.247
-  - VLESS-TCP-REALITY-🇮🇹(IT)-57.131.38.163
-  - VLESS-TCP-REALITY-🇸🇬(SG)-146.235.16.130
-  - VLESS-TCP-REALITY-🇪🇪(EE)-144.31.170.72
-  - VLESS-TCP-REALITY-🇸🇬(SG)-5.223.74.174
-  - VLESS-TCP-REALITY-🇩🇪(DE)-ger-asli.jorzel.ir
+  - VLESS-TCP-REALITY-🇩🇪(DE)-gerwai1488.vvzzkontaktezzvv.garden
+  - VLESS-TCP-REALITY-🇩🇪(DE)-31.76.7.154
+  - VLESS-TCP-REALITY-🇩🇪(DE)-185.249.153.108
+  - VLESS-TCP-REALITY-🇱🇻(LV)-31.76.62.32
+  - VLESS-TCP-REALITY-🇬🇧(GB)-51.68.215.88
+  - VLESS-TCP-REALITY-🇩🇪(DE)-31.76.64.248
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.216_2
+  - VLESS-TCP-REALITY-🇵🇱(PL)-82.118.22.161
 rule-providers:
   adblock:
     type: http
