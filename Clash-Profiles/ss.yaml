@@ -14,12 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇳🇱(NL)-176.120.17.22
-  type: ss
-  server: 176.120.17.22
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: vUtLhCy8T6zoZv9Y6EP2G9oyWXFFUv-d
 - name: SS-C20P-🇺🇸(US)-198.98.53.130
   type: ss
   server: 198.98.53.130
@@ -30,7 +24,6 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇳🇱(NL)-176.120.17.22
   - SS-C20P-🇺🇸(US)-198.98.53.130
   tolerance: 50
   lazy: false
@@ -48,7 +41,6 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇳🇱(NL)-176.120.17.22
   - SS-C20P-🇺🇸(US)-198.98.53.130
 rule-providers:
   adblock:
