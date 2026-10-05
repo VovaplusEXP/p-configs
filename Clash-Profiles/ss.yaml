@@ -20,11 +20,18 @@ proxies:
   port: 1080
   cipher: chacha20-ietf-poly1305
   password: 8tmnvX5zYuWGVIDP2jglZw
+- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187
+  type: ss
+  server: 141.164.45.187
+  port: 9101
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-5.78.51.123
+  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -42,6 +49,7 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-5.78.51.123
+  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
 rule-providers:
   adblock:
     type: http
