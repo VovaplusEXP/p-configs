@@ -14,30 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-🇺🇸(US)-172.67.213.2
-  type: trojan
-  server: 172.67.213.2
-  port: 2082
-  uuid: +c$0AUvoK98XeKgH
-  network: ws
-  tls: false
-  servername: 172.67.213.2
-  ws-opts:
-    path: /eyJqdW5rIjoiQ0dROXVhMW4iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560
-    headers:
-      Host: shrill-lake-231c.jachhitachi69.workers.dev
-- name: TROJAN-WS-🇺🇸(US)-172.67.213.2_1
-  type: trojan
-  server: 172.67.213.2
-  port: 2052
-  uuid: +c$0AUvoK98XeKgH
-  network: ws
-  tls: false
-  servername: 172.67.213.2
-  ws-opts:
-    path: /eyJqdW5rIjoiZ21jWVk1YmoiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560
-    headers:
-      Host: shrill-lake-231c.jachhitachi69.workers.dev
 - name: TROJAN-TCP-REALITY-🇨🇭(CH)-195.15.202.111
   type: trojan
   server: 195.15.202.111
@@ -47,26 +23,21 @@ proxies:
   tls: true
   servername: play-apps-features.googleusercontent.com
   client-fingerprint: chrome
-- name: TROJAN-WS-🇺🇸(US)-104.21.75.42
+- name: TROJAN-TCP-REALITY-🇨🇭(CH)-195.15.202.111_1
   type: trojan
-  server: 104.21.75.42
-  port: 8880
-  uuid: +c$0AUvoK98XeKgH
-  network: ws
-  tls: false
-  servername: 104.21.75.42
-  ws-opts:
-    path: /eyJqdW5rIjoiUmhNbWVZTVVvMHM4IiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560
-    headers:
-      Host: shrill-lake-231c.jachhitachi69.workers.dev
+  server: 195.15.202.111
+  port: 4455
+  uuid: g44i2hzwivmm7r29
+  network: tcp
+  tls: true
+  servername: play-apps-features.googleusercontent.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-🇺🇸(US)-172.67.213.2
-  - TROJAN-WS-🇺🇸(US)-172.67.213.2_1
   - TROJAN-TCP-REALITY-🇨🇭(CH)-195.15.202.111
-  - TROJAN-WS-🇺🇸(US)-104.21.75.42
+  - TROJAN-TCP-REALITY-🇨🇭(CH)-195.15.202.111_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -83,10 +54,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-🇺🇸(US)-172.67.213.2
-  - TROJAN-WS-🇺🇸(US)-172.67.213.2_1
   - TROJAN-TCP-REALITY-🇨🇭(CH)-195.15.202.111
-  - TROJAN-WS-🇺🇸(US)-104.21.75.42
+  - TROJAN-TCP-REALITY-🇨🇭(CH)-195.15.202.111_1
 rule-providers:
   adblock:
     type: http
