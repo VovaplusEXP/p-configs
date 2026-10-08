@@ -20,32 +20,32 @@ proxies:
   port: 1080
   cipher: chacha20-ietf-poly1305
   password: 8tmnvX5zYuWGVIDP2jglZw
-- name: SS-C20P-🇫🇷(FR)-51.255.13.232
+- name: SS-C20P-🇺🇸(US)-198.98.53.130
   type: ss
-  server: 51.255.13.232
+  server: 198.98.53.130
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: eDfN7SODQceIOmIAbtJJtK
+- name: SS-C20P-🇩🇪(DE)-57.129.113.16
+  type: ss
+  server: 57.129.113.16
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: SS-A256GCM-🇮🇹(IT)-57.131.48.45
+  password: NcAXc0UZI6yQJE1p8QmOv8
+- name: SS-C20P-🇹🇷(TR)-bale.xv98.ir
   type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: SS-aes-128-gcm-🇨🇦(CA)-catnet-other.kunlun04dns.com
-  type: ss
-  server: catnet-other.kunlun04dns.com
-  port: 28046
-  cipher: aes-128-gcm
-  password: b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41
+  server: bale.xv98.ir
+  port: 5051
+  cipher: chacha20-ietf-poly1305
+  password: 68mL2QkZEBlxWa3hcslGDw
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇺🇸(US)-5.78.51.123
-  - SS-C20P-🇫🇷(FR)-51.255.13.232
-  - SS-A256GCM-🇮🇹(IT)-57.131.48.45
-  - SS-aes-128-gcm-🇨🇦(CA)-catnet-other.kunlun04dns.com
+  - SS-C20P-🇺🇸(US)-198.98.53.130
+  - SS-C20P-🇩🇪(DE)-57.129.113.16
+  - SS-C20P-🇹🇷(TR)-bale.xv98.ir
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -63,9 +63,9 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇺🇸(US)-5.78.51.123
-  - SS-C20P-🇫🇷(FR)-51.255.13.232
-  - SS-A256GCM-🇮🇹(IT)-57.131.48.45
-  - SS-aes-128-gcm-🇨🇦(CA)-catnet-other.kunlun04dns.com
+  - SS-C20P-🇺🇸(US)-198.98.53.130
+  - SS-C20P-🇩🇪(DE)-57.129.113.16
+  - SS-C20P-🇹🇷(TR)-bale.xv98.ir
 rule-providers:
   adblock:
     type: http

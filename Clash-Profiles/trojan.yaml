@@ -14,6 +14,42 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-WS-🇺🇸(US)-188.114.96.1
+  type: trojan
+  server: 188.114.96.1
+  port: 8880
+  uuid: +c$0AUvoK98XeKgH
+  network: ws
+  tls: false
+  servername: 188.114.96.1
+  ws-opts:
+    path: /eyJqdW5rIjoiN2h5NUNFdlBiUSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560
+    headers:
+      Host: shrill-lake-231c.jachhitachi69.workers.dev
+- name: TROJAN-WS-🇺🇸(US)-shrill-lake-231c.jachhitachi69.workers.dev
+  type: trojan
+  server: shrill-lake-231c.jachhitachi69.workers.dev
+  port: 8880
+  uuid: +c$0AUvoK98XeKgH
+  network: ws
+  tls: false
+  servername: shrill-lake-231c.jachhitachi69.workers.dev
+  ws-opts:
+    path: /eyJqdW5rIjoiWEZqeDFoODRSazVEVGoiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560
+    headers:
+      Host: shrill-lake-231c.jachhitachi69.workers.dev
+- name: TROJAN-WS-🇲🇦(MA)-shrill-lake-231c.jachhitachi69.workers.dev
+  type: trojan
+  server: shrill-lake-231c.jachhitachi69.workers.dev
+  port: 80
+  uuid: +c$0AUvoK98XeKgH
+  network: ws
+  tls: false
+  servername: shrill-lake-231c.jachhitachi69.workers.dev
+  ws-opts:
+    path: /eyJqdW5rIjoiWXp4NVFTbzJlS3d4WSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560
+    headers:
+      Host: shrill-lake-231c.jachhitachi69.workers.dev
 - name: TROJAN-TCP-REALITY-🇨🇭(CH)-195.15.202.111
   type: trojan
   server: 195.15.202.111
@@ -23,11 +59,27 @@ proxies:
   tls: true
   servername: play-apps-features.googleusercontent.com
   client-fingerprint: chrome
+- name: TROJAN-WS-🇺🇸(US)-172.67.213.2
+  type: trojan
+  server: 172.67.213.2
+  port: 2082
+  uuid: +c$0AUvoK98XeKgH
+  network: ws
+  tls: false
+  servername: 172.67.213.2
+  ws-opts:
+    path: /eyJqdW5rIjoiNE5rTDRYRlpwbSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560
+    headers:
+      Host: shrill-lake-231c.jachhitachi69.workers.dev
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-WS-🇺🇸(US)-188.114.96.1
+  - TROJAN-WS-🇺🇸(US)-shrill-lake-231c.jachhitachi69.workers.dev
+  - TROJAN-WS-🇲🇦(MA)-shrill-lake-231c.jachhitachi69.workers.dev
   - TROJAN-TCP-REALITY-🇨🇭(CH)-195.15.202.111
+  - TROJAN-WS-🇺🇸(US)-172.67.213.2
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -44,7 +96,11 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-WS-🇺🇸(US)-188.114.96.1
+  - TROJAN-WS-🇺🇸(US)-shrill-lake-231c.jachhitachi69.workers.dev
+  - TROJAN-WS-🇲🇦(MA)-shrill-lake-231c.jachhitachi69.workers.dev
   - TROJAN-TCP-REALITY-🇨🇭(CH)-195.15.202.111
+  - TROJAN-WS-🇺🇸(US)-172.67.213.2
 rule-providers:
   adblock:
     type: http
