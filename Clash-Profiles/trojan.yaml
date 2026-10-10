@@ -14,11 +14,47 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-WS-🇺🇸(US)-104.21.64.198
+  type: trojan
+  server: 104.21.64.198
+  port: 2052
+  uuid: 73796e63-0000-4000-8000-000000000000
+  network: ws
+  tls: false
+  servername: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  ws-opts:
+    path: /eyJqdW5rIjoiYjNXNmtMdjh1ME8iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo2fQ==
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: TROJAN-WS-🇺🇸(US)-172.67.155.136
+  type: trojan
+  server: 172.67.155.136
+  port: 2052
+  uuid: 73796e63-0000-4000-8000-000000000000
+  network: ws
+  tls: false
+  servername: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  ws-opts:
+    path: /eyJqdW5rIjoiYjNXNmtMdjh1ME8iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo2fQ==
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  type: trojan
+  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  port: 2052
+  uuid: 73796e63-0000-4000-8000-000000000000
+  network: ws
+  tls: false
+  servername: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  ws-opts:
+    path: /eyJqdW5rIjoiYjNXNmtMdjh1ME8iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo2fQ==
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 - name: TROJAN-TCP-REALITY-🇨🇭(CH)-195.15.202.111
   type: trojan
   server: 195.15.202.111
   port: 4455
-  uuid: g44i2hzwivmm7r29
+  uuid: ea4y8s7qdshp547j
   network: tcp
   tls: true
   servername: play-apps-features.googleusercontent.com
@@ -27,6 +63,9 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-WS-🇺🇸(US)-104.21.64.198
+  - TROJAN-WS-🇺🇸(US)-172.67.155.136
+  - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
   - TROJAN-TCP-REALITY-🇨🇭(CH)-195.15.202.111
   tolerance: 50
   lazy: false
@@ -44,6 +83,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-WS-🇺🇸(US)-104.21.64.198
+  - TROJAN-WS-🇺🇸(US)-172.67.155.136
+  - TROJAN-WS-🇺🇸(US)-vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
   - TROJAN-TCP-REALITY-🇨🇭(CH)-195.15.202.111
 rule-providers:
   adblock:
